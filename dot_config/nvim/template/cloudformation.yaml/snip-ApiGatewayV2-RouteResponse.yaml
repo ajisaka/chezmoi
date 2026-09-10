@@ -1,0 +1,11 @@
+  ApiGatewayV2RouteResponse:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-routeresponse.html
+    Type: AWS::ApiGatewayV2::RouteResponse
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-routeresponse.html
+      RouteResponseKey: # String
+      # ResponseParameters: # Json
+      RouteId: # String
+      # ModelSelectionExpression: # String
+      ApiId: # String
+      # ResponseModels: # Json

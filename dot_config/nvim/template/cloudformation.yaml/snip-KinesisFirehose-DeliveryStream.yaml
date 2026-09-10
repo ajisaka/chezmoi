@@ -1,0 +1,352 @@
+  KinesisFirehoseDeliveryStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html
+    Type: AWS::KinesisFirehose::DeliveryStream
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html
+      # DeliveryStreamEncryptionConfigurationInput:
+      #   # KeyARN: # String
+      #   KeyType: # String
+      # DeliveryStreamName: # String
+      # DeliveryStreamType: # String
+      # ElasticsearchDestinationConfiguration:
+      #   # BufferingHints:
+      #   # # IntervalInSeconds: # Integer
+      #   # # SizeInMBs: # Integer
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # DomainARN: # String
+      #   IndexName: # String
+      #   # IndexRotationPeriod: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   # RetryOptions:
+      #   # # DurationInSeconds: # Integer
+      #   RoleARN: # String
+      #   # S3BackupMode: # String
+      #   # S3Configuration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      #   # ClusterEndpoint: # String
+      #   # TypeName: # String
+      #   # VpcConfiguration:
+      #   # RoleARN: # String
+      #   # SubnetIds:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      # AmazonopensearchserviceDestinationConfiguration:
+      #   # BufferingHints:
+      #   # # IntervalInSeconds: # Integer
+      #   # # SizeInMBs: # Integer
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # DomainARN: # String
+      #   IndexName: # String
+      #   # IndexRotationPeriod: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   # RetryOptions:
+      #   # # DurationInSeconds: # Integer
+      #   RoleARN: # String
+      #   # S3BackupMode: # String
+      #   # S3Configuration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      #   # ClusterEndpoint: # String
+      #   # TypeName: # String
+      #   # VpcConfiguration:
+      #   # RoleARN: # String
+      #   # SubnetIds:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      # ExtendedS3DestinationConfiguration:
+      #   BucketARN: # String
+      #   # BufferingHints:
+      #   # # IntervalInSeconds: # Integer
+      #   # # SizeInMBs: # Integer
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # CompressionFormat: # String
+      #   # DataFormatConversionConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # InputFormatConfiguration:
+      #   #   # # Deserializer:
+      #   #   #   # # HiveJsonSerDe:
+      #   #   #   #   # # TimestampFormats:
+      #   #   #   #   #   # - # String
+      #   #   #   # # OpenXJsonSerDe:
+      #   #   #   #   # # CaseInsensitive: # Boolean
+      #   #   #   #   # # ColumnToJsonKeyMappings:
+      #   #   #   #   #   # ANY_KEY: # String
+      #   #   #   #   # # ConvertDotsInJsonKeysToUnderscores: # Boolean
+      #   # # OutputFormatConfiguration:
+      #   #   # # Serializer:
+      #   #   #   # # OrcSerDe:
+      #   #   #   #   # # BlockSizeBytes: # Integer
+      #   #   #   #   # # BloomFilterColumns:
+      #   #   #   #   #   # - # String
+      #   #   #   #   # # BloomFilterFalsePositiveProbability: # Double
+      #   #   #   #   # # Compression: # String
+      #   #   #   #   # # DictionaryKeyThreshold: # Double
+      #   #   #   #   # # EnablePadding: # Boolean
+      #   #   #   #   # # FormatVersion: # String
+      #   #   #   #   # # PaddingTolerance: # Double
+      #   #   #   #   # # RowIndexStride: # Integer
+      #   #   #   #   # # StripeSizeBytes: # Integer
+      #   #   #   # # ParquetSerDe:
+      #   #   #   #   # # BlockSizeBytes: # Integer
+      #   #   #   #   # # Compression: # String
+      #   #   #   #   # # EnableDictionaryCompression: # Boolean
+      #   #   #   #   # # MaxPaddingBytes: # Integer
+      #   #   #   #   # # PageSizeBytes: # Integer
+      #   #   #   #   # # WriterVersion: # String
+      #   # # SchemaConfiguration:
+      #   #   # # CatalogId: # String
+      #   #   # # DatabaseName: # String
+      #   #   # # Region: # String
+      #   #   # # RoleARN: # String
+      #   #   # # TableName: # String
+      #   #   # # VersionId: # String
+      #   # DynamicPartitioningConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # RetryOptions:
+      #   #   # # DurationInSeconds: # Integer
+      #   # EncryptionConfiguration:
+      #   # # KMSEncryptionConfig:
+      #   #   # AWSKMSKeyARN: # String
+      #   # # NoEncryptionConfig: # String
+      #   # ErrorOutputPrefix: # String
+      #   # Prefix: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   RoleARN: # String
+      #   # S3BackupConfiguration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      #   # S3BackupMode: # String
+      # KinesisStreamSourceConfiguration:
+      #   KinesisStreamARN: # String
+      #   RoleARN: # String
+      # RedshiftDestinationConfiguration:
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   ClusterJDBCURL: # String
+      #   # CopyCommand:
+      #   # # CopyOptions: # String
+      #   # # DataTableColumns: # String
+      #   # DataTableName: # String
+      #   Password: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   # RetryOptions:
+      #   # # DurationInSeconds: # Integer
+      #   RoleARN: # String
+      #   # S3BackupConfiguration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      #   # S3BackupMode: # String
+      #   # S3Configuration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      #   Username: # String
+      # S3DestinationConfiguration:
+      #   BucketARN: # String
+      #   # BufferingHints:
+      #   # # IntervalInSeconds: # Integer
+      #   # # SizeInMBs: # Integer
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # CompressionFormat: # String
+      #   # EncryptionConfiguration:
+      #   # # KMSEncryptionConfig:
+      #   #   # AWSKMSKeyARN: # String
+      #   # # NoEncryptionConfig: # String
+      #   # ErrorOutputPrefix: # String
+      #   # Prefix: # String
+      #   RoleARN: # String
+      # SplunkDestinationConfiguration:
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # HECAcknowledgmentTimeoutInSeconds: # Integer
+      #   HECEndpoint: # String
+      #   HECEndpointType: # String
+      #   HECToken: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   # RetryOptions:
+      #   # # DurationInSeconds: # Integer
+      #   # S3BackupMode: # String
+      #   # S3Configuration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      # HttpEndpointDestinationConfiguration:
+      #   # RoleARN: # String
+      #   # EndpointConfiguration:
+      #   # Url: # String
+      #   # # AccessKey: # String
+      #   # # Name: # String
+      #   # RequestConfiguration:
+      #   # # ContentEncoding: # String
+      #   # # CommonAttributes:
+      #   #   # - AttributeName: # String
+      #   #   # AttributeValue: # String
+      #   # BufferingHints:
+      #   # # IntervalInSeconds: # Integer
+      #   # # SizeInMBs: # Integer
+      #   # CloudWatchLoggingOptions:
+      #   # # Enabled: # Boolean
+      #   # # LogGroupName: # String
+      #   # # LogStreamName: # String
+      #   # ProcessingConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # Processors:
+      #   #   # - # Parameters:
+      #   #   #     # - ParameterName: # String
+      #   #   #     # ParameterValue: # String
+      #   #   # Type: # String
+      #   # RetryOptions:
+      #   # # DurationInSeconds: # Integer
+      #   # S3BackupMode: # String
+      #   # S3Configuration:
+      #   # BucketARN: # String
+      #   # # BufferingHints:
+      #   #   # # IntervalInSeconds: # Integer
+      #   #   # # SizeInMBs: # Integer
+      #   # # CloudWatchLoggingOptions:
+      #   #   # # Enabled: # Boolean
+      #   #   # # LogGroupName: # String
+      #   #   # # LogStreamName: # String
+      #   # # CompressionFormat: # String
+      #   # # EncryptionConfiguration:
+      #   #   # # KMSEncryptionConfig:
+      #   #   #   # AWSKMSKeyARN: # String
+      #   #   # # NoEncryptionConfig: # String
+      #   # # ErrorOutputPrefix: # String
+      #   # # Prefix: # String
+      #   # RoleARN: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

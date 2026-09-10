@@ -1,0 +1,15 @@
+  EC2EIP:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-eip.html
+    Type: AWS::EC2::EIP
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-eip.html
+      # Domain: # String
+      # NetworkBorderGroup: # String
+      # TransferAddress: # String
+      # InstanceId: # String
+      # PublicIpv4Pool: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PublicIp (String)
+    # !GetAtt THIS.AllocationId (String)

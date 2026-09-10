@@ -1,0 +1,11 @@
+  IVSPlaybackKeyPair:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ivs-playbackkeypair.html
+    Type: AWS::IVS::PlaybackKeyPair
+    Properties:
+      # Name: # String
+      PublicKeyMaterial: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Fingerprint (String)
+    # !GetAtt THIS.Arn (String)

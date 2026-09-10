@@ -1,0 +1,23 @@
+  ApiGatewayDomainName:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html
+      # DomainName: # String
+      # EndpointConfiguration:
+      #   # Types:
+      #   # - # String
+      # MutualTlsAuthentication:
+      #   # TruststoreUri: # String
+      #   # TruststoreVersion: # String
+      # CertificateArn: # String
+      # RegionalCertificateArn: # String
+      # OwnershipVerificationCertificateArn: # String
+      # SecurityPolicy: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DistributionDomainName (String)
+    # !GetAtt THIS.DistributionHostedZoneId (String)
+    # !GetAtt THIS.RegionalDomainName (String)
+    # !GetAtt THIS.RegionalHostedZoneId (String)

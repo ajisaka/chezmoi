@@ -1,0 +1,17 @@
+  IoTFleetWiseVehicle:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-vehicle.html
+    Type: AWS::IoTFleetWise::Vehicle
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-vehicle.html
+      # AssociationBehavior: # String
+      # Attributes:
+      #   ANY_KEY: # String
+      DecoderManifestArn: # String
+      Name: # String
+      ModelManifestArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.LastModificationTime (String)

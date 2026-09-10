@@ -1,0 +1,131 @@
+  CodeBuildProject:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html
+    Type: AWS::CodeBuild::Project
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html
+      # Description: # String
+      # ResourceAccessRole: # String
+      # VpcConfig:
+      #   # Subnets:
+      #   # - # String
+      #   # VpcId: # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      # SecondarySources:
+      #   - Type: # String
+      #     # ReportBuildStatus: # Boolean
+      #     # Auth:
+      #     # Type: # String
+      #     # # Resource: # String
+      #     # SourceIdentifier: # String
+      #     # BuildSpec: # String
+      #     # GitCloneDepth: # Integer
+      #     # BuildStatusConfig:
+      #     # # Context: # String
+      #     # # TargetUrl: # String
+      #     # GitSubmodulesConfig:
+      #     # FetchSubmodules: # Boolean
+      #     # InsecureSsl: # Boolean
+      #     # Location: # String
+      # EncryptionKey: # String
+      # SourceVersion: # String
+      # Triggers:
+      #   # FilterGroups:
+      #   # - - Pattern: # String
+      #   # Type: # String
+      #   # # ExcludeMatchedPattern: # Boolean
+      #   # BuildType: # String
+      #   # Webhook: # Boolean
+      # SecondaryArtifacts:
+      #   - # Path: # String
+      #     Type: # String
+      #     # ArtifactIdentifier: # String
+      #     # OverrideArtifactName: # Boolean
+      #     # Packaging: # String
+      #     # EncryptionDisabled: # Boolean
+      #     # Location: # String
+      #     # Name: # String
+      #     # NamespaceType: # String
+      # Source:
+      #   Type: # String
+      #   # ReportBuildStatus: # Boolean
+      #   # Auth:
+      #   # Type: # String
+      #   # # Resource: # String
+      #   # SourceIdentifier: # String
+      #   # BuildSpec: # String
+      #   # GitCloneDepth: # Integer
+      #   # BuildStatusConfig:
+      #   # # Context: # String
+      #   # # TargetUrl: # String
+      #   # GitSubmodulesConfig:
+      #   # FetchSubmodules: # Boolean
+      #   # InsecureSsl: # Boolean
+      #   # Location: # String
+      # Name: # String
+      # Artifacts:
+      #   # Path: # String
+      #   Type: # String
+      #   # ArtifactIdentifier: # String
+      #   # OverrideArtifactName: # Boolean
+      #   # Packaging: # String
+      #   # EncryptionDisabled: # Boolean
+      #   # Location: # String
+      #   # Name: # String
+      #   # NamespaceType: # String
+      # BadgeEnabled: # Boolean
+      # LogsConfig:
+      #   # CloudWatchLogs:
+      #   # Status: # String
+      #   # # GroupName: # String
+      #   # # StreamName: # String
+      #   # S3Logs:
+      #   # Status: # String
+      #   # # EncryptionDisabled: # Boolean
+      #   # # Location: # String
+      ServiceRole: # String
+      # QueuedTimeoutInMinutes: # Integer
+      # FileSystemLocations:
+      #   - MountPoint: # String
+      #     Type: # String
+      #     Identifier: # String
+      #     # MountOptions: # String
+      #     Location: # String
+      # Environment:
+      #   Type: # String
+      #   # EnvironmentVariables:
+      #   # - # Type: # String
+      #   # Value: # String
+      #   # Name: # String
+      #   # PrivilegedMode: # Boolean
+      #   # ImagePullCredentialsType: # String
+      #   Image: # String
+      #   # RegistryCredential:
+      #   # Credential: # String
+      #   # CredentialProvider: # String
+      #   ComputeType: # String
+      #   # Certificate: # String
+      # SecondarySourceVersions:
+      #   - SourceIdentifier: # String
+      #     # SourceVersion: # String
+      # ConcurrentBuildLimit: # Integer
+      # Visibility: # String
+      # BuildBatchConfig:
+      #   # CombineArtifacts: # Boolean
+      #   # ServiceRole: # String
+      #   # BatchReportMode: # String
+      #   # TimeoutInMins: # Integer
+      #   # Restrictions:
+      #   # # ComputeTypesAllowed:
+      #   #   # - # String
+      #   # # MaximumBuildsAllowed: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TimeoutInMinutes: # Integer
+      # Cache:
+      #   # Modes:
+      #   # - # String
+      #   Type: # String
+      #   # Location: # String
+    # !GetAtt THIS.Arn (String)

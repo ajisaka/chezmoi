@@ -1,0 +1,19 @@
+  CEAnomalySubscription:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-anomalysubscription.html
+    Type: AWS::CE::AnomalySubscription
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-anomalysubscription.html
+      SubscriptionName: # String
+      MonitorArnList:
+        - # String
+      Subscribers:
+        - Address: # String
+          # Status: # String
+          Type: # String
+      Threshold: # Double
+      Frequency: # String
+      # ResourceTags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.SubscriptionArn (String)
+    # !GetAtt THIS.AccountId (String)

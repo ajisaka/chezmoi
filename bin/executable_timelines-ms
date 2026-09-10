@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# set -euC
+# set -x
+
+# delay1=$(date +%s%3N)
+# delay2=$(date +%s%3N)
+# delay=$(( delay2 - delay1 ))
+
+
+first=$(date +%s%3N)
+prev="$first"
+
+function pt {
+  now=$(date +%s%3N)
+  printf ' [%3d/%4d]\n' $(( now - prev )) $(( now - first ))
+}
+
+"$@" 2>&1 | while read -r it
+do
+  pt
+  echo -ne "$it"
+  prev=$(date +%s%3N)
+done
+
+pt

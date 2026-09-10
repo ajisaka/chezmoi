@@ -1,0 +1,146 @@
+# chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+# vim: set noet ts=2 sw=2 ft=gitconfig :
+ 
+ # User {{{
+[[[ if has .chezmoi.hostname .hosts.private -]]]
+[includeIf "gitdir:~/forge/"]
+	[user]
+		name = anekos
+		email = anekos@snca.net
+
+[includeIf "gitdir:~/project/"]
+	[user]
+		name = anekos
+		email = anekos@snca.net
+[[[- else -]]]
+[user]
+	name = ajisaka.seiya
+	email = ajisaka.seiya@synergy101.jp
+[[[- end ]]]
+# }}}
+
+[alias] # {{{
+	# for typo
+	# ignore
+	# log graph
+	# safety http://d.hatena.ne.jp/thinca/20120924/1348491052
+	# stash
+	aa = add --all
+	ap = add --patch
+	br = branch
+	cancel = !git commit --no-verify -a -m \"Temporary commit for cancel at `date`\" && git reset --hard HEAD~
+	cch= "!f() { git cherry -v "$@" | awk '{ if($1 == \"+\"){ color = \"green\" } if($1 == \"-\"){ color = \"red\" } cmd = \"git show --date=short --no-notes --pretty=format:\\047%C\" color $1 \" %h %Cgreen%cd %Creset%s\\047 --summary \" $2; cmd | getline t; close(cmd); print t }' ;}; f"
+	ci = commit --verbose
+	cin = commit --verbose --no-verify
+	co = checkout
+	di = diff --color --find-renames --find-copies
+	dich = diff --cached --find-renames --find-copies
+	dimo = diff master origin/master
+	fe = fetch
+	find-merge = "!sh -c 'commit=$0 && branch=${1:-HEAD} && (git rev-list $commit..$branch --ancestry-path | cat -n; git rev-list $commit..$branch --first-parent | cat -n) | sort -k2 -s | uniq -f1 -d | sort -n | tail -1 | cut -f2'"
+	show-merge = "!sh -c 'merge=$(git find-merge $0 $1) && [ -n \"$merge\" ] && git show $merge'"
+	glog = log --graph
+	ignore = update-index --assume-unchanged
+	ignored = !git ls-files -v | grep "^[a-z]"
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lg3 = log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --date=short
+	lg4 = log --graph --pretty='format:%C(yellow)%h%Cblue%d%Creset %s %C(black bold)%an, %ar%Creset'
+	logrep = log --grep
+	lp = log --patch
+	ls = log --stat --oneline
+	ls-untracked = ls-files --others --exclude-standard
+	me = merge
+	mt = mergetool
+	pl = pull
+	ps = push --recurse-submodules check
+	psn = push --recurse-submodules check --no-verify
+	pscb = push-current-branch
+	ra = rebase --abort
+	ranking = shortlog --summary --numbered --no-merges
+	rc = rebase --continue
+	ri = rebase --interactive
+	sh = show --find-renames --find-copies # --color-words 
+	shs = show --stat
+	st = status --branch --short
+	tree = "forest --pretty=format:\"%C(red)%h %C(blue)%an %C(reset)%s\" --style=15 --reverse"
+	tree = log --graph --pretty=oneline --abbrev-commit --decorate
+	unignore = update-index --no-assume-unchanged
+	# Gitでマージ済みブランチを一括削除 - Qiita - https://qiita.com/hajimeni/items/73d2155fc59e152630c4
+	vacuum = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main|master|dev-master'|xargs git branch -d; };f"
+	wip = commit --no-verify -m WIP
+	z = stash
+	zl = stash list
+	zp = stash pop
+	zs = stash show
+	zsp = stash show -p
+	zz = stash save
+	nyaaps = commit -a -m 'Nyaaps'
+	shorten = !"sh -c 'curl -i http://git.io/ -F url=$1 `[ -n \"$2\" ] && echo -F code=$2`' -"
+# }}}
+
+[color] # {{{
+	branch = auto
+	diff = auto
+	grep = auto
+	interactive = auto
+	status = auto
+	ui = auto
+# }}}
+
+[core] # {{{
+	# git での改行コード - http://qiita.com/shuhei@github/items/2da839de8803cb335f86
+	autocrlf = false
+	safecrlf = false
+	# ファイルモードの変更を毎回検出して UZZZeeee 問題 (cygwin)
+	# filemode = false
+	# マルチバイトなファイル名が化ける問題
+	quotepath = false
+	# editor = panty summon -w -r git -b ':cd '$PWD'<CR>'
+	# editor = panty summon --nofork --role git --after 'xmessage important "$PANTY_WINDOWID"'
+	# editor = panty summon --nofork --role git --after '/tmp/xmosh/imp "$PANTY_WINDOWID"'
+	editor = ~/bin/editor
+	excludesfile = ~/.gitignore
+	precomposeunicode = true # for Mac OS X - http://faithandbrave.hateblo.jp/entry/2016/02/08/144948
+# }}}
+
+# Misc {{{
+# [http]
+# 	sslVerify = false
+
+[init]
+	templatedir = ~/.git-templates
+	defaultBranch = main
+
+[i18n]
+	commitencoding = UTF-8
+
+[merge]
+	ff = false
+	tool = meld
+
+[pull]
+	rebase = merges
+
+[push]
+	default = simple # カレントブランチと同名のリモートブランチが存在する場合のみ、カレントブランチのpushが行われる - http://dqn.sakusakutto.jp/2012/10/git_push.html
+
+[rerere]
+	enabled = true
+
+[user]
+	useConfigOnly = true
+# }}}
+
+# App {{{
+[tig "bind"]
+	generic = g move-first-line
+	generic = G move-last-line
+	generic = <Ctrl-G> toggle-rev-graph
+# }}}
+
+[[[ if eq .chezmoi.os "darwin" -]]]
+[credential]
+	helper = osxkeychain
+[[[ end -]]]

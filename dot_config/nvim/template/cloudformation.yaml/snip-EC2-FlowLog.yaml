@@ -1,0 +1,19 @@
+  EC2FlowLog:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
+    Type: AWS::EC2::FlowLog
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
+      # DeliverLogsPermissionArn: # String
+      # LogDestination: # String
+      # LogDestinationType: # String
+      # LogFormat: # String
+      # LogGroupName: # String
+      # MaxAggregationInterval: # Integer
+      ResourceId: # String
+      ResourceType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TrafficType: # String
+      # DestinationOptions: # Json
+    # !GetAtt THIS.Id (String)

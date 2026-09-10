@@ -1,0 +1,13 @@
+  Route53RecoveryControlControlPanel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoverycontrol-controlpanel.html
+    Type: AWS::Route53RecoveryControl::ControlPanel
+    Properties:
+      # ClusterArn: # String
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ControlPanelArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.DefaultControlPanel (Boolean)
+    # !GetAtt THIS.RoutingControlCount (Integer)

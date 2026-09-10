@@ -1,0 +1,20 @@
+  EC2VPC:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
+    Type: AWS::EC2::VPC
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
+      # CidrBlock: # String
+      # EnableDnsHostnames: # Boolean
+      # EnableDnsSupport: # Boolean
+      # InstanceTenancy: # String
+      # Ipv4IpamPoolId: # String
+      # Ipv4NetmaskLength: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.VpcId (String)
+    # !GetAtt THIS.CidrBlock (String)
+    # !GetAtt THIS.CidrBlockAssociations (List)
+    # !GetAtt THIS.DefaultNetworkAcl (String)
+    # !GetAtt THIS.DefaultSecurityGroup (String)
+    # !GetAtt THIS.Ipv6CidrBlocks (List)

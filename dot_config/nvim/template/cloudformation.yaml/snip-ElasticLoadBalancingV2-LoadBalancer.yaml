@@ -1,0 +1,29 @@
+  ElasticLoadBalancingV2LoadBalancer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html
+      # IpAddressType: # String
+      # LoadBalancerAttributes:
+      #   - # Key: # String
+      #     # Value: # String
+      # Name: # String
+      # Scheme: # String
+      # SecurityGroups:
+      #   - # String
+      # SubnetMappings:
+      #   - # AllocationId: # String
+      #     # IPv6Address: # String
+      #     # PrivateIPv4Address: # String
+      #     SubnetId: # String
+      # Subnets:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Type: # String
+    # !GetAtt THIS.CanonicalHostedZoneID (String)
+    # !GetAtt THIS.DNSName (String)
+    # !GetAtt THIS.LoadBalancerFullName (String)
+    # !GetAtt THIS.LoadBalancerName (String)
+    # !GetAtt THIS.SecurityGroups (List)

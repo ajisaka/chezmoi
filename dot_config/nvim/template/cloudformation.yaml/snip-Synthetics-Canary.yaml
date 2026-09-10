@@ -1,0 +1,49 @@
+  SyntheticsCanary:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html
+    Type: AWS::Synthetics::Canary
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html
+      Name: # String
+      # Code:
+      #   # S3Bucket: # String
+      #   # S3Key: # String
+      #   # S3ObjectVersion: # String
+      #   # Script: # String
+      #   Handler: # String
+      ArtifactS3Location: # String
+      # ArtifactConfig:
+      #   # S3Encryption:
+      #   # # EncryptionMode: # String
+      #   # # KmsKeyArn: # String
+      # Schedule:
+      #   Expression: # String
+      #   # DurationInSeconds: # String
+      ExecutionRoleArn: # String
+      RuntimeVersion: # String
+      # SuccessRetentionPeriod: # Integer
+      # FailureRetentionPeriod: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VPCConfig:
+      #   # VpcId: # String
+      #   SubnetIds:
+      #     - # String
+      #   SecurityGroupIds:
+      #     - # String
+      # RunConfig:
+      #   # TimeoutInSeconds: # Integer
+      #   # MemoryInMB: # Integer
+      #   # ActiveTracing: # Boolean
+      #   # EnvironmentVariables:
+      #   # ANY_KEY: # String
+      StartCanaryAfterCreation: # Boolean
+      # VisualReference:
+      #   BaseCanaryRunId: # String
+      #   # BaseScreenshots:
+      #   # - ScreenshotName: # String
+      #   # # IgnoreCoordinates:
+      #   #     # - # String
+      # DeleteLambdaResourcesOnCanaryDeletion: # Boolean
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.State (String)

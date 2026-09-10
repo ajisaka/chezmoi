@@ -1,0 +1,23 @@
+  AmplifyUIBuilderTheme:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-theme.html
+    Type: AWS::AmplifyUIBuilder::Theme
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-theme.html
+      Name: # String
+      # Overrides:
+      #   - # Key: # String
+      #     # Value:
+      #     # # Value: # String
+      #     # # Children: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-theme-themevalue.html#cfn-amplifyuibuilder-theme-themevalue-children', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ThemeValues'}
+      # Tags:
+      #   ANY_KEY: # String
+      Values:
+        - # Key: # String
+          # Value:
+          #   # Value: # String
+          #   # Children: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-theme-themevalue.html#cfn-amplifyuibuilder-theme-themevalue-children', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ThemeValues'}
+    # !GetAtt THIS.AppId (String)
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.EnvironmentName (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.ModifiedAt (String)

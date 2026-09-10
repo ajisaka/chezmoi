@@ -1,0 +1,24 @@
+#!/bin/sh
+
+remote="${1:-}"
+
+if [ -z "$remote" ]
+then
+  remotes=$(git remote | wc -l)
+  if [ "$remotes" -eq 1 ]
+  then
+    remote=$(git remote)
+  fi
+else
+  shift 1
+fi
+
+if [ -z "$remote" ]
+then
+  echo "git push-current <REMOTE>" 2>&1
+  exit 1
+fi
+
+name=$(git rev-parse --abbrev-ref HEAD)
+
+git push --recurse-submodules check --set-upstream "$remote" "$name" "$@"

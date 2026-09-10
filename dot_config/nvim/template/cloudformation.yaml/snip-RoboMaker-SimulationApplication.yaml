@@ -1,0 +1,25 @@
+  RoboMakerSimulationApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html
+    Type: AWS::RoboMaker::SimulationApplication
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html
+      # Name: # String
+      # CurrentRevisionId: # String
+      # RenderingEngine:
+      #   Name: # String
+      #   Version: # String
+      # RobotSoftwareSuite:
+      #   Name: # String
+      #   # Version: # String
+      # SimulationSoftwareSuite:
+      #   Name: # String
+      #   # Version: # String
+      # Sources:
+      #   - S3Bucket: # String
+      #     S3Key: # String
+      #     Architecture: # String
+      # Environment: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CurrentRevisionId (String)

@@ -1,0 +1,18 @@
+  IoTProvisioningTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-provisioningtemplate.html
+    Type: AWS::IoT::ProvisioningTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-provisioningtemplate.html
+      # TemplateName: # String
+      # Description: # String
+      # Enabled: # Boolean
+      ProvisioningRoleArn: # String
+      TemplateBody: # String
+      # TemplateType: # String
+      # PreProvisioningHook:
+      #   # TargetArn: # String
+      #   # PayloadVersion: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.TemplateArn (String)

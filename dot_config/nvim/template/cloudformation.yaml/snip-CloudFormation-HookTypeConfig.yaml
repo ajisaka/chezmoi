@@ -1,0 +1,10 @@
+  CloudFormationHookTypeConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-hooktypeconfig.html
+    Type: AWS::CloudFormation::HookTypeConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-hooktypeconfig.html
+      # TypeArn: # String
+      # TypeName: # String
+      Configuration: # String
+      # ConfigurationAlias: # String
+    # !GetAtt THIS.ConfigurationArn (String)

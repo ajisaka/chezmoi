@@ -1,0 +1,7 @@
+  EC2SubnetNetworkAclAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      NetworkAclId: # String
+      SubnetId: # String
+    # !GetAtt THIS.AssociationId (String)

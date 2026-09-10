@@ -1,0 +1,52 @@
+  AmplifyApp:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-app.html
+    Type: AWS::Amplify::App
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-app.html
+      # AccessToken: # String
+      # AutoBranchCreationConfig:
+      #   # AutoBranchCreationPatterns:
+      #   # - # String
+      #   # BasicAuthConfig:
+      #   # # EnableBasicAuth: # Boolean
+      #   # # Username: # String
+      #   # # Password: # String
+      #   # BuildSpec: # String
+      #   # EnableAutoBranchCreation: # Boolean
+      #   # EnableAutoBuild: # Boolean
+      #   # EnablePerformanceMode: # Boolean
+      #   # EnablePullRequestPreview: # Boolean
+      #   # EnvironmentVariables:
+      #   # - Name: # String
+      #   # Value: # String
+      #   # Framework: # String
+      #   # PullRequestEnvironmentName: # String
+      #   # Stage: # String
+      # BasicAuthConfig:
+      #   # EnableBasicAuth: # Boolean
+      #   # Username: # String
+      #   # Password: # String
+      # BuildSpec: # String
+      # CustomHeaders: # String
+      # CustomRules:
+      #   - # Condition: # String
+      #     # Status: # String
+      #     Target: # String
+      #     Source: # String
+      # Description: # String
+      # EnableBranchAutoDeletion: # Boolean
+      # EnvironmentVariables:
+      #   - Name: # String
+      #     Value: # String
+      # IAMServiceRole: # String
+      Name: # String
+      # OauthToken: # String
+      # Platform: # String
+      # Repository: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AppId (String)
+    # !GetAtt THIS.AppName (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DefaultDomain (String)

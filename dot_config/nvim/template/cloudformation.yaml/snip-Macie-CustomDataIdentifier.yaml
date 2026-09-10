@@ -1,0 +1,15 @@
+  MacieCustomDataIdentifier:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-customdataidentifier.html
+    Type: AWS::Macie::CustomDataIdentifier
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-customdataidentifier.html
+      Name: # String
+      # Description: # String
+      Regex: # String
+      # MaximumMatchDistance: # Integer
+      # Keywords:
+      #   - # String
+      # IgnoreWords:
+      #   - # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

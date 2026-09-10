@@ -1,0 +1,17 @@
+  ECSCapacityProvider:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-capacityprovider.html
+    Type: AWS::ECS::CapacityProvider
+    Properties:
+      # AutoScalingGroupProvider:
+      #   AutoScalingGroupArn: # String
+      #   # ManagedScaling:
+      #   # # MinimumScalingStepSize: # Integer
+      #   # # MaximumScalingStepSize: # Integer
+      #   # # Status: # String
+      #   # # TargetCapacity: # Integer
+      #   # # InstanceWarmupPeriod: # Integer
+      #   # ManagedTerminationProtection: # String
+      # Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

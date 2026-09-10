@@ -1,0 +1,42 @@
+  GreengrassResourceDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html
+    Type: AWS::Greengrass::ResourceDefinition
+    Properties:
+      # InitialVersion:
+      #   Resources:
+      #     - # ResourceDataContainer:
+      #       # # SecretsManagerSecretResourceData:
+      #       #   # ARN: # String
+      #       #   # # AdditionalStagingLabelsToDownload:
+      #       #   #   # - # String
+      #       # # SageMakerMachineLearningModelResourceData:
+      #       #   # # OwnerSetting:
+      #       #   #   # GroupOwner: # String
+      #       #   #   # GroupPermission: # String
+      #       #   # DestinationPath: # String
+      #       #   # SageMakerJobArn: # String
+      #       # # LocalVolumeResourceData:
+      #       #   # SourcePath: # String
+      #       #   # DestinationPath: # String
+      #       #   # # GroupOwnerSetting:
+      #       #   #   # AutoAddGroupOwner: # Boolean
+      #       #   #   # # GroupOwner: # String
+      #       # # LocalDeviceResourceData:
+      #       #   # SourcePath: # String
+      #       #   # # GroupOwnerSetting:
+      #       #   #   # AutoAddGroupOwner: # Boolean
+      #       #   #   # # GroupOwner: # String
+      #       # # S3MachineLearningModelResourceData:
+      #       #   # # OwnerSetting:
+      #       #   #   # GroupOwner: # String
+      #       #   #   # GroupPermission: # String
+      #       #   # DestinationPath: # String
+      #       #   # S3Uri: # String
+      #       Id: # String
+      #       Name: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.LatestVersionArn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

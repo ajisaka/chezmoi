@@ -1,0 +1,7 @@
+  EC2GatewayRouteTableAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-gatewayroutetableassociation.html
+    Type: AWS::EC2::GatewayRouteTableAssociation
+    Properties:
+      RouteTableId: # String
+      GatewayId: # String
+    # !GetAtt THIS.AssociationId (String)

@@ -1,0 +1,10 @@
+  PersonalizeDatasetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-personalize-datasetgroup.html
+    Type: AWS::Personalize::DatasetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-personalize-datasetgroup.html
+      Name: # String
+      # KmsKeyArn: # String
+      # RoleArn: # String
+      # Domain: # String
+    # !GetAtt THIS.DatasetGroupArn (String)

@@ -1,0 +1,69 @@
+  ElasticsearchDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
+    Type: AWS::Elasticsearch::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
+      # AccessPolicies: # Json
+      # AdvancedOptions:
+      #   ANY_KEY: # String
+      # AdvancedSecurityOptions:
+      #   # AnonymousAuthEnabled: # Boolean
+      #   # Enabled: # Boolean
+      #   # InternalUserDatabaseEnabled: # Boolean
+      #   # MasterUserOptions:
+      #   # # MasterUserARN: # String
+      #   # # MasterUserName: # String
+      #   # # MasterUserPassword: # String
+      # CognitoOptions:
+      #   # Enabled: # Boolean
+      #   # IdentityPoolId: # String
+      #   # RoleArn: # String
+      #   # UserPoolId: # String
+      # DomainEndpointOptions:
+      #   # CustomEndpoint: # String
+      #   # CustomEndpointCertificateArn: # String
+      #   # CustomEndpointEnabled: # Boolean
+      #   # EnforceHTTPS: # Boolean
+      #   # TLSSecurityPolicy: # String
+      # DomainName: # String
+      # EBSOptions:
+      #   # EBSEnabled: # Boolean
+      #   # Iops: # Integer
+      #   # VolumeSize: # Integer
+      #   # VolumeType: # String
+      # ElasticsearchClusterConfig:
+      #   # ColdStorageOptions:
+      #   # # Enabled: # Boolean
+      #   # DedicatedMasterCount: # Integer
+      #   # DedicatedMasterEnabled: # Boolean
+      #   # DedicatedMasterType: # String
+      #   # InstanceCount: # Integer
+      #   # InstanceType: # String
+      #   # WarmCount: # Integer
+      #   # WarmEnabled: # Boolean
+      #   # WarmType: # String
+      #   # ZoneAwarenessConfig:
+      #   # # AvailabilityZoneCount: # Integer
+      #   # ZoneAwarenessEnabled: # Boolean
+      # ElasticsearchVersion: # String
+      # EncryptionAtRestOptions:
+      #   # Enabled: # Boolean
+      #   # KmsKeyId: # String
+      # LogPublishingOptions:
+      #   ANY_KEY: # CloudWatchLogsLogGroupArn: # String
+      #     # Enabled: # Boolean
+      # NodeToNodeEncryptionOptions:
+      #   # Enabled: # Boolean
+      # SnapshotOptions:
+      #   # AutomatedSnapshotStartHour: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VPCOptions:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DomainArn (String)
+    # !GetAtt THIS.DomainEndpoint (String)

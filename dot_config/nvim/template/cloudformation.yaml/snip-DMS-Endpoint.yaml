@@ -1,0 +1,254 @@
+  DMSEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
+    Type: AWS::DMS::Endpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
+      # SybaseSettings:
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      # RedisSettings:
+      #   # SslSecurityProtocol: # String
+      #   # AuthUserName: # String
+      #   # ServerName: # String
+      #   # Port: # Double
+      #   # SslCaCertificateArn: # String
+      #   # AuthPassword: # String
+      #   # AuthType: # String
+      # OracleSettings:
+      #   # AsmPassword: # String
+      #   # DirectPathParallelLoad: # Boolean
+      #   # AdditionalArchivedLogDestId: # Integer
+      #   # SpatialDataOptionToGeoJsonFunctionName: # String
+      #   # ReplacePathPrefix: # Boolean
+      #   # FailTasksOnLobTruncation: # Boolean
+      #   # AsmServer: # String
+      #   # SecretsManagerOracleAsmAccessRoleArn: # String
+      #   # OraclePathPrefix: # String
+      #   # ReadAheadBlocks: # Integer
+      #   # StandbyDelayTime: # Integer
+      #   # AllowSelectNestedTables: # Boolean
+      #   # AddSupplementalLogging: # Boolean
+      #   # SecretsManagerSecretId: # String
+      #   # UseBFile: # Boolean
+      #   # EnableHomogenousTablespace: # Boolean
+      #   # AsmUser: # String
+      #   # UseDirectPathFullLoad: # Boolean
+      #   # SecurityDbEncryption: # String
+      #   # ParallelAsmReadThreads: # Integer
+      #   # ArchivedLogDestId: # Integer
+      #   # UsePathPrefix: # String
+      #   # UseLogminerReader: # Boolean
+      #   # SecurityDbEncryptionName: # String
+      #   # DirectPathNoLog: # Boolean
+      #   # SecretsManagerOracleAsmSecretId: # String
+      #   # CharLengthSemantics: # String
+      #   # NumberDatatypeScale: # Integer
+      #   # ReadTableSpaceName: # Boolean
+      #   # AccessAlternateDirectly: # Boolean
+      #   # UseAlternateFolderForOnline: # Boolean
+      #   # ArchivedLogsOnly: # Boolean
+      #   # ExtraArchivedLogDestIds:
+      #   # - # Integer
+      #   # RetryInterval: # Integer
+      #   # SecretsManagerAccessRoleArn: # String
+      # KafkaSettings:
+      #   # Broker: # String
+      #   # SaslPassword: # String
+      #   # MessageFormat: # String
+      #   # SslClientCertificateArn: # String
+      #   # IncludeTransactionDetails: # Boolean
+      #   # SecurityProtocol: # String
+      #   # IncludeTableAlterOperations: # Boolean
+      #   # SslCaCertificateArn: # String
+      #   # IncludeControlDetails: # Boolean
+      #   # IncludePartitionValue: # Boolean
+      #   # NoHexPrefix: # Boolean
+      #   # SslClientKeyArn: # String
+      #   # SslClientKeyPassword: # String
+      #   # SaslUserName: # String
+      #   # MessageMaxBytes: # Integer
+      #   # Topic: # String
+      #   # PartitionIncludeSchemaTable: # Boolean
+      #   # IncludeNullAndEmpty: # Boolean
+      # Port: # Integer
+      # MySqlSettings:
+      #   # ServerTimezone: # String
+      #   # EventsPollInterval: # Integer
+      #   # ParallelLoadThreads: # Integer
+      #   # AfterConnectScript: # String
+      #   # MaxFileSize: # Integer
+      #   # TargetDbType: # String
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # CleanSourceMetadataOnMismatch: # Boolean
+      # S3Settings:
+      #   # TimestampColumnName: # String
+      #   # EnableStatistics: # Boolean
+      #   # DatePartitionSequence: # String
+      #   # IncludeOpForFullLoad: # Boolean
+      #   # CsvNullValue: # String
+      #   # CdcInsertsAndUpdates: # Boolean
+      #   # BucketName: # String
+      #   # ServerSideEncryptionKmsKeyId: # String
+      #   # UseTaskStartTimeForFullLoadTimestamp: # Boolean
+      #   # DataFormat: # String
+      #   # CsvDelimiter: # String
+      #   # IgnoreHeaderRows: # Integer
+      #   # CannedAclForObjects: # String
+      #   # Rfc4180: # Boolean
+      #   # ServiceAccessRoleArn: # String
+      #   # ParquetTimestampInMillisecond: # Boolean
+      #   # PreserveTransactions: # Boolean
+      #   # BucketFolder: # String
+      #   # DatePartitionDelimiter: # String
+      #   # EncodingType: # String
+      #   # ParquetVersion: # String
+      #   # AddColumnName: # Boolean
+      #   # CdcMinFileSize: # Integer
+      #   # ExternalTableDefinition: # String
+      #   # UseCsvNoSupValue: # Boolean
+      #   # MaxFileSize: # Integer
+      #   # CsvNoSupValue: # String
+      #   # CdcPath: # String
+      #   # CsvRowDelimiter: # String
+      #   # RowGroupLength: # Integer
+      #   # CdcMaxBatchInterval: # Integer
+      #   # DataPageSize: # Integer
+      #   # DictPageSizeLimit: # Integer
+      #   # DatePartitionEnabled: # Boolean
+      #   # CompressionType: # String
+      #   # DatePartitionTimezone: # String
+      #   # CdcInsertsOnly: # Boolean
+      #   # EncryptionMode: # String
+      # ResourceIdentifier: # String
+      # KinesisSettings:
+      #   # MessageFormat: # String
+      #   # IncludeTransactionDetails: # Boolean
+      #   # IncludeTableAlterOperations: # Boolean
+      #   # IncludeControlDetails: # Boolean
+      #   # IncludePartitionValue: # Boolean
+      #   # StreamArn: # String
+      #   # ServiceAccessRoleArn: # String
+      #   # NoHexPrefix: # Boolean
+      #   # PartitionIncludeSchemaTable: # Boolean
+      #   # IncludeNullAndEmpty: # Boolean
+      # SslMode: # String
+      # RedshiftSettings:
+      #   # ConnectionTimeout: # Integer
+      #   # AfterConnectScript: # String
+      #   # FileTransferUploadStreams: # Integer
+      #   # BucketName: # String
+      #   # ServerSideEncryptionKmsKeyId: # String
+      #   # ExplicitIds: # Boolean
+      #   # SecretsManagerSecretId: # String
+      #   # TruncateColumns: # Boolean
+      #   # ServiceAccessRoleArn: # String
+      #   # ReplaceChars: # String
+      #   # TimeFormat: # String
+      #   # BucketFolder: # String
+      #   # ReplaceInvalidChars: # String
+      #   # RemoveQuotes: # Boolean
+      #   # LoadTimeout: # Integer
+      #   # MaxFileSize: # Integer
+      #   # TrimBlanks: # Boolean
+      #   # DateFormat: # String
+      #   # CompUpdate: # Boolean
+      #   # AcceptAnyDate: # Boolean
+      #   # WriteBufferSize: # Integer
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # CaseSensitiveNames: # Boolean
+      #   # EmptyAsNull: # Boolean
+      #   # EncryptionMode: # String
+      EndpointType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Password: # String
+      # MongoDbSettings:
+      #   # Port: # Integer
+      #   # ExtractDocId: # String
+      #   # DatabaseName: # String
+      #   # AuthSource: # String
+      #   # AuthMechanism: # String
+      #   # Username: # String
+      #   # DocsToInvestigate: # String
+      #   # ServerName: # String
+      #   # SecretsManagerSecretId: # String
+      #   # AuthType: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # Password: # String
+      #   # NestingLevel: # String
+      # IbmDb2Settings:
+      #   # SetDataCaptureChanges: # Boolean
+      #   # CurrentLsn: # String
+      #   # MaxKBytesPerRead: # Integer
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      # KmsKeyId: # String
+      # DatabaseName: # String
+      # NeptuneSettings:
+      #   # MaxRetryCount: # Integer
+      #   # MaxFileSize: # Integer
+      #   # S3BucketFolder: # String
+      #   # ErrorRetryDuration: # Integer
+      #   # IamAuthEnabled: # Boolean
+      #   # S3BucketName: # String
+      #   # ServiceAccessRoleArn: # String
+      # ElasticsearchSettings:
+      #   # EndpointUri: # String
+      #   # FullLoadErrorPercentage: # Integer
+      #   # ErrorRetryDuration: # Integer
+      #   # ServiceAccessRoleArn: # String
+      EngineName: # String
+      # DocDbSettings:
+      #   # DocsToInvestigate: # Integer
+      #   # ExtractDocId: # Boolean
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # NestingLevel: # String
+      # DynamoDbSettings:
+      #   # ServiceAccessRoleArn: # String
+      # Username: # String
+      # MicrosoftSqlServerSettings:
+      #   # ReadBackupOnly: # Boolean
+      #   # BcpPacketSize: # Integer
+      #   # QuerySingleAlwaysOnNode: # Boolean
+      #   # SafeguardPolicy: # String
+      #   # UseThirdPartyBackupDevice: # Boolean
+      #   # SecretsManagerSecretId: # String
+      #   # ControlTablesFileGroup: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # UseBcpFullLoad: # Boolean
+      # GcpMySQLSettings:
+      #   # AfterConnectScript: # String
+      #   # Port: # Integer
+      #   # DatabaseName: # String
+      #   # CleanSourceMetadataOnMismatch: # Boolean
+      #   # ServerTimezone: # String
+      #   # EventsPollInterval: # Integer
+      #   # ParallelLoadThreads: # Integer
+      #   # Username: # String
+      #   # MaxFileSize: # Integer
+      #   # ServerName: # String
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # Password: # String
+      # ServerName: # String
+      # ExtraConnectionAttributes: # String
+      # EndpointIdentifier: # String
+      # CertificateArn: # String
+      # PostgreSqlSettings:
+      #   # PluginName: # String
+      #   # AfterConnectScript: # String
+      #   # ExecuteTimeout: # Integer
+      #   # DdlArtifactsSchema: # String
+      #   # FailTasksOnLobTruncation: # Boolean
+      #   # HeartbeatEnable: # Boolean
+      #   # CaptureDdls: # Boolean
+      #   # MaxFileSize: # Integer
+      #   # HeartbeatFrequency: # Integer
+      #   # SecretsManagerSecretId: # String
+      #   # SecretsManagerAccessRoleArn: # String
+      #   # HeartbeatSchema: # String
+      #   # SlotName: # String
+    # !GetAtt THIS.ExternalId (String)

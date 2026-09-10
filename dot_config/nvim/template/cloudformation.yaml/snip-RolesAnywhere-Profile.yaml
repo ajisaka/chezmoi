@@ -1,0 +1,19 @@
+  RolesAnywhereProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-profile.html
+    Type: AWS::RolesAnywhere::Profile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-profile.html
+      # DurationSeconds: # Double
+      # Enabled: # Boolean
+      # ManagedPolicyArns:
+      #   - # String
+      # Name: # String
+      # RequireInstanceProperties: # Boolean
+      # RoleArns:
+      #   - # String
+      # SessionPolicy: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ProfileArn (String)
+    # !GetAtt THIS.ProfileId (String)

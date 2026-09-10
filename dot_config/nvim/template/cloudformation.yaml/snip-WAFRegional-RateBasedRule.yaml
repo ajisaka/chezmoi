@@ -1,0 +1,13 @@
+  WAFRegionalRateBasedRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html
+    Type: AWS::WAFRegional::RateBasedRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ratebasedrule.html
+      MetricName: # String
+      RateLimit: # Integer
+      # MatchPredicates:
+      #   - Type: # String
+      #     DataId: # String
+      #     Negated: # Boolean
+      RateKey: # String
+      Name: # String

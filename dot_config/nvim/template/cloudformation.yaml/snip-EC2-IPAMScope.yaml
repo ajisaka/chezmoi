@@ -1,0 +1,15 @@
+  EC2IPAMScope:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipamscope.html
+    Type: AWS::EC2::IPAMScope
+    Properties:
+      IpamId: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.IpamScopeId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.IpamArn (String)
+    # !GetAtt THIS.IpamScopeType (String)
+    # !GetAtt THIS.IsDefault (Boolean)
+    # !GetAtt THIS.PoolCount (Integer)

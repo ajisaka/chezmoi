@@ -1,0 +1,21 @@
+  MediaConvertJobTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-jobtemplate.html
+    Type: AWS::MediaConvert::JobTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-jobtemplate.html
+      # Category: # String
+      # Description: # String
+      # AccelerationSettings:
+      #   Mode: # String
+      # Priority: # Integer
+      # StatusUpdateInterval: # String
+      SettingsJson: # Json
+      # Queue: # String
+      # HopDestinations:
+      #   - # WaitMinutes: # Integer
+      #     # Priority: # Integer
+      #     # Queue: # String
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

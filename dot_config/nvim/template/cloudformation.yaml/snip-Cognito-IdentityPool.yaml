@@ -1,0 +1,28 @@
+  CognitoIdentityPool:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
+    Type: AWS::Cognito::IdentityPool
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
+      # PushSync:
+      #   # ApplicationArns:
+      #   # - # String
+      #   # RoleArn: # String
+      # CognitoIdentityProviders:
+      #   - # ServerSideTokenCheck: # Boolean
+      #     # ProviderName: # String
+      #     # ClientId: # String
+      # CognitoEvents: # Json
+      # DeveloperProviderName: # String
+      # CognitoStreams:
+      #   # StreamingStatus: # String
+      #   # StreamName: # String
+      #   # RoleArn: # String
+      # IdentityPoolName: # String
+      AllowUnauthenticatedIdentities: # Boolean
+      # SupportedLoginProviders: # Json
+      # SamlProviderARNs:
+      #   - # String
+      # OpenIdConnectProviderARNs:
+      #   - # String
+      # AllowClassicFlow: # Boolean
+    # !GetAtt THIS.Name (String)

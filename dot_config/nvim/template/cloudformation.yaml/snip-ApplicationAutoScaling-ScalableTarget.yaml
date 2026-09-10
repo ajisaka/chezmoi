@@ -1,0 +1,24 @@
+  ApplicationAutoScalingScalableTarget:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
+    Type: AWS::ApplicationAutoScaling::ScalableTarget
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
+      MaxCapacity: # Integer
+      MinCapacity: # Integer
+      ResourceId: # String
+      RoleARN: # String
+      ScalableDimension: # String
+      # ScheduledActions:
+      #   - # EndTime: # Timestamp
+      #     # ScalableTargetAction:
+      #     # # MaxCapacity: # Integer
+      #     # # MinCapacity: # Integer
+      #     Schedule: # String
+      #     ScheduledActionName: # String
+      #     # StartTime: # Timestamp
+      #     # Timezone: # String
+      ServiceNamespace: # String
+      # SuspendedState:
+      #   # DynamicScalingInSuspended: # Boolean
+      #   # DynamicScalingOutSuspended: # Boolean
+      #   # ScheduledScalingSuspended: # Boolean

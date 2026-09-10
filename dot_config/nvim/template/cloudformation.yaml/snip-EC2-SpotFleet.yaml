@@ -1,0 +1,205 @@
+  EC2SpotFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html
+    Type: AWS::EC2::SpotFleet
+    Properties:
+      # SpotFleetRequestConfigData:
+      #   # AllocationStrategy: # String
+      #   # Context: # String
+      #   # ExcessCapacityTerminationPolicy: # String
+      #   IamFleetRole: # String
+      #   # InstanceInterruptionBehavior: # String
+      #   # InstancePoolsToUseCount: # Integer
+      #   # LaunchSpecifications:
+      #   # - # BlockDeviceMappings:
+      #   #     # - DeviceName: # String
+      #   #     # # Ebs:
+      #   #     #     # # DeleteOnTermination: # Boolean
+      #   #     #     # # Encrypted: # Boolean
+      #   #     #     # # Iops: # Integer
+      #   #     #     # # SnapshotId: # String
+      #   #     #     # # VolumeSize: # Integer
+      #   #     #     # # VolumeType: # String
+      #   #     # # NoDevice: # String
+      #   #     # # VirtualName: # String
+      #   # # EbsOptimized: # Boolean
+      #   # # IamInstanceProfile:
+      #   #     # # Arn: # String
+      #   # ImageId: # String
+      #   # # InstanceType: # String
+      #   # # KernelId: # String
+      #   # # KeyName: # String
+      #   # # Monitoring:
+      #   #     # # Enabled: # Boolean
+      #   # # NetworkInterfaces:
+      #   #     # - # AssociatePublicIpAddress: # Boolean
+      #   #     # # DeleteOnTermination: # Boolean
+      #   #     # # Description: # String
+      #   #     # # DeviceIndex: # Integer
+      #   #     # # Groups:
+      #   #     #     # - # String
+      #   #     # # Ipv6AddressCount: # Integer
+      #   #     # # Ipv6Addresses:
+      #   #     #     # - Ipv6Address: # String
+      #   #     # # NetworkInterfaceId: # String
+      #   #     # # PrivateIpAddresses:
+      #   #     #     # - # Primary: # Boolean
+      #   #     #     # PrivateIpAddress: # String
+      #   #     # # SecondaryPrivateIpAddressCount: # Integer
+      #   #     # # SubnetId: # String
+      #   # # Placement:
+      #   #     # # AvailabilityZone: # String
+      #   #     # # GroupName: # String
+      #   #     # # Tenancy: # String
+      #   # # RamdiskId: # String
+      #   # # SecurityGroups:
+      #   #     # - GroupId: # String
+      #   # # SpotPrice: # String
+      #   # # SubnetId: # String
+      #   # # TagSpecifications:
+      #   #     # - # ResourceType: # String
+      #   #     # # Tags:
+      #   #     #     # - Key: # String
+      #   #     #     # Value: # String
+      #   # # UserData: # String
+      #   # # WeightedCapacity: # Double
+      #   # # InstanceRequirements:
+      #   #     # # VCpuCount:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   #     # # MemoryMiB:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   #     # # CpuManufacturers:
+      #   #     #   # - # String
+      #   #     # # MemoryGiBPerVCpu:
+      #   #     #   # # Min: # Double
+      #   #     #   # # Max: # Double
+      #   #     # # AllowedInstanceTypes:
+      #   #     #   # - # String
+      #   #     # # ExcludedInstanceTypes:
+      #   #     #   # - # String
+      #   #     # # InstanceGenerations:
+      #   #     #   # - # String
+      #   #     # # SpotMaxPricePercentageOverLowestPrice: # Integer
+      #   #     # # OnDemandMaxPricePercentageOverLowestPrice: # Integer
+      #   #     # # BareMetal: # String
+      #   #     # # BurstablePerformance: # String
+      #   #     # # RequireHibernateSupport: # Boolean
+      #   #     # # NetworkBandwidthGbps:
+      #   #     #   # # Min: # Double
+      #   #     #   # # Max: # Double
+      #   #     # # NetworkInterfaceCount:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   #     # # LocalStorage: # String
+      #   #     # # LocalStorageTypes:
+      #   #     #   # - # String
+      #   #     # # TotalLocalStorageGB:
+      #   #     #   # # Min: # Double
+      #   #     #   # # Max: # Double
+      #   #     # # BaselineEbsBandwidthMbps:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   #     # # AcceleratorTypes:
+      #   #     #   # - # String
+      #   #     # # AcceleratorCount:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   #     # # AcceleratorManufacturers:
+      #   #     #   # - # String
+      #   #     # # AcceleratorNames:
+      #   #     #   # - # String
+      #   #     # # AcceleratorTotalMemoryMiB:
+      #   #     #   # # Min: # Integer
+      #   #     #   # # Max: # Integer
+      #   # LaunchTemplateConfigs:
+      #   # - # LaunchTemplateSpecification:
+      #   #     # # LaunchTemplateId: # String
+      #   #     # # LaunchTemplateName: # String
+      #   #     # Version: # String
+      #   # # Overrides:
+      #   #     # - # AvailabilityZone: # String
+      #   #     # # InstanceType: # String
+      #   #     # # SpotPrice: # String
+      #   #     # # SubnetId: # String
+      #   #     # # WeightedCapacity: # Double
+      #   #     # # InstanceRequirements:
+      #   #     #     # # VCpuCount:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     #     # # MemoryMiB:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     #     # # CpuManufacturers:
+      #   #     #     #   # - # String
+      #   #     #     # # MemoryGiBPerVCpu:
+      #   #     #     #   # # Min: # Double
+      #   #     #     #   # # Max: # Double
+      #   #     #     # # AllowedInstanceTypes:
+      #   #     #     #   # - # String
+      #   #     #     # # ExcludedInstanceTypes:
+      #   #     #     #   # - # String
+      #   #     #     # # InstanceGenerations:
+      #   #     #     #   # - # String
+      #   #     #     # # SpotMaxPricePercentageOverLowestPrice: # Integer
+      #   #     #     # # OnDemandMaxPricePercentageOverLowestPrice: # Integer
+      #   #     #     # # BareMetal: # String
+      #   #     #     # # BurstablePerformance: # String
+      #   #     #     # # RequireHibernateSupport: # Boolean
+      #   #     #     # # NetworkBandwidthGbps:
+      #   #     #     #   # # Min: # Double
+      #   #     #     #   # # Max: # Double
+      #   #     #     # # NetworkInterfaceCount:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     #     # # LocalStorage: # String
+      #   #     #     # # LocalStorageTypes:
+      #   #     #     #   # - # String
+      #   #     #     # # TotalLocalStorageGB:
+      #   #     #     #   # # Min: # Double
+      #   #     #     #   # # Max: # Double
+      #   #     #     # # BaselineEbsBandwidthMbps:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     #     # # AcceleratorTypes:
+      #   #     #     #   # - # String
+      #   #     #     # # AcceleratorCount:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     #     # # AcceleratorManufacturers:
+      #   #     #     #   # - # String
+      #   #     #     # # AcceleratorNames:
+      #   #     #     #   # - # String
+      #   #     #     # # AcceleratorTotalMemoryMiB:
+      #   #     #     #   # # Min: # Integer
+      #   #     #     #   # # Max: # Integer
+      #   #     # # Priority: # Double
+      #   # LoadBalancersConfig:
+      #   # # ClassicLoadBalancersConfig:
+      #   #   # ClassicLoadBalancers:
+      #   #   # - Name: # String
+      #   # # TargetGroupsConfig:
+      #   #   # TargetGroups:
+      #   #   # - Arn: # String
+      #   # OnDemandAllocationStrategy: # String
+      #   # OnDemandMaxTotalPrice: # String
+      #   # OnDemandTargetCapacity: # Integer
+      #   # ReplaceUnhealthyInstances: # Boolean
+      #   # SpotMaintenanceStrategies:
+      #   # # CapacityRebalance:
+      #   #   # # ReplacementStrategy: # String
+      #   #   # # TerminationDelay: # Integer
+      #   # SpotMaxTotalPrice: # String
+      #   # SpotPrice: # String
+      #   TargetCapacity: # Integer
+      #   # TerminateInstancesWithExpiration: # Boolean
+      #   # Type: # String
+      #   # ValidFrom: # String
+      #   # ValidUntil: # String
+      #   # TagSpecifications:
+      #   # - # ResourceType: # String
+      #   # # Tags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # TargetCapacityUnitType: # String
+    # !GetAtt THIS.Id (String)

@@ -1,0 +1,11 @@
+  Route53ResolverResolverQueryLoggingConfigAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html
+    Type: AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation
+    Properties:
+      # ResolverQueryLogConfigId: # String
+      # ResourceId: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.Error (String)
+    # !GetAtt THIS.ErrorMessage (String)
+    # !GetAtt THIS.CreationTime (String)

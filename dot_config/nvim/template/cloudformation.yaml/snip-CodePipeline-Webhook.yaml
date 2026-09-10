@@ -1,0 +1,18 @@
+  CodePipelineWebhook:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
+    Type: AWS::CodePipeline::Webhook
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
+      # AuthenticationConfiguration:
+      #   # AllowedIPRange: # String
+      #   # SecretToken: # String
+      Filters:
+        - JsonPath: # String
+          # MatchEquals: # String
+      Authentication: # String
+      TargetPipeline: # String
+      TargetAction: # String
+      # Name: # String
+      TargetPipelineVersion: # Integer
+      # RegisterWithThirdParty: # Boolean
+    # !GetAtt THIS.Url (String)

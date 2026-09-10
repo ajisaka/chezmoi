@@ -1,0 +1,49 @@
+  BatchComputeEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
+    Type: AWS::Batch::ComputeEnvironment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
+      # ComputeEnvironmentName: # String
+      # ComputeResources:
+      #   # AllocationStrategy: # String
+      #   # BidPercentage: # Integer
+      #   # DesiredvCpus: # Integer
+      #   # Ec2Configuration:
+      #   # - # ImageIdOverride: # String
+      #   # ImageType: # String
+      #   # # ImageKubernetesVersion: # String
+      #   # Ec2KeyPair: # String
+      #   # ImageId: # String
+      #   # InstanceRole: # String
+      #   # InstanceTypes:
+      #   # - # String
+      #   # LaunchTemplate:
+      #   # # LaunchTemplateId: # String
+      #   # # LaunchTemplateName: # String
+      #   # # Version: # String
+      #   MaxvCpus: # Integer
+      #   # MinvCpus: # Integer
+      #   # PlacementGroup: # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SpotIamFleetRole: # String
+      #   Subnets:
+      #     - # String
+      #   # Tags:
+      #   # ANY_KEY: # String
+      #   Type: # String
+      #   # UpdateToLatestImageVersion: # Boolean
+      # ReplaceComputeEnvironment: # Boolean
+      # ServiceRole: # String
+      # State: # String
+      # Tags:
+      #   ANY_KEY: # String
+      Type: # String
+      # UpdatePolicy:
+      #   # TerminateJobsOnUpdate: # Boolean
+      #   # JobExecutionTimeoutMinutes: # Integer
+      # UnmanagedvCpus: # Integer
+      # EksConfiguration:
+      #   EksClusterArn: # String
+      #   KubernetesNamespace: # String
+    # !GetAtt THIS.ComputeEnvironmentArn (String)

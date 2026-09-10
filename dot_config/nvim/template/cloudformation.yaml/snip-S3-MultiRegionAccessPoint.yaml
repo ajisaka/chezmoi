@@ -1,0 +1,14 @@
+  S3MultiRegionAccessPoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-multiregionaccesspoint.html
+    Type: AWS::S3::MultiRegionAccessPoint
+    Properties:
+      # PublicAccessBlockConfiguration:
+      #   # RestrictPublicBuckets: # Boolean
+      #   # BlockPublicPolicy: # Boolean
+      #   # BlockPublicAcls: # Boolean
+      #   # IgnorePublicAcls: # Boolean
+      Regions:
+        - Bucket: # String
+      # Name: # String
+    # !GetAtt THIS.Alias (String)
+    # !GetAtt THIS.CreatedAt (String)

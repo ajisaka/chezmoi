@@ -1,0 +1,12 @@
+  GlobalAcceleratorListener:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html
+    Type: AWS::GlobalAccelerator::Listener
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-listener.html
+      AcceleratorArn: # String
+      PortRanges:
+        - FromPort: # Integer
+          ToPort: # Integer
+      Protocol: # String
+      # ClientAffinity: # String
+    # !GetAtt THIS.ListenerArn (String)

@@ -1,0 +1,6 @@
+  SupportAppAccountAlias:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-supportapp-accountalias.html
+    Type: AWS::SupportApp::AccountAlias
+    Properties:
+      AccountAlias: # String
+    # !GetAtt THIS.AccountAliasResourceId (String)

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+
+[ "${XDG_BACKEND:-}" = wayland ] && exec wl-paste --type 'text/plain;charset=utf-8' --no-newline
+# [ "${XDG_BACKEND:-}" = wayland ] && exec clipse -p
+
+[ "${HOST_OS_TYPE:-}" = windows ] && exec gopaste
+[[ "${TERM_PROGRAM:-}" =~ .*\.app$  ]] && exec pbpaste
+[ "${TERM_PROGRAM:-}" = 'Apple_Terminal' ] && exec pbpaste
+[ -n "${__CFBundleIdentifier:-}" ] && exec pbpaste
+exec xclip -o

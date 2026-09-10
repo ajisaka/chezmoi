@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# set -euC
+# set -x
+
+if [ "$#" = 0 ]
+then
+  cat
+else
+  "$@" 2>&1
+fi  | while read -r it
+do
+  at=$(date '+%Y-%m-%dT%H:%M:%S')
+  echo "$at $it"
+done

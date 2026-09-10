@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+function main() {
+  local selected="$1" use_sandbox="$2"
+  local created_pane_id
+
+  if [ -n "$selected" ]
+  then
+    selected=$(realpath "$selected")
+  else
+    if on-gui
+    then
+      selected=$(zoxide query --list --all | anything)
+    else
+      selected=$(zoxide query --interactive --all)
+    fi
+  fi
+
+  created_pane_id=$(
+    herdr workspace create --cwd "$selected" --focus \
+      | jq --raw-output '.result.root_pane.pane_id'
+  )
+  if [ "$use_sandbox" -eq 1 ]
+  then
+    herdr pane send-text "$created_pane_id" ccs
+  else
+    herdr pane send-text "$created_pane_id" claude
+  fi
+  herdr pane send-keys "$created_pane_id" Return
+}
+
+function usage() {
+  echo "Usage: $0 [-s] [<path>]"
+  echo "Options:"
+  echo "  -s    Use sandbox mode (default: off)"
+  echo "  -h    Show this help message"
+}
+
+use_sandbox=0
+
+while getopts 'sh' OPTION
+do
+  case "$OPTION" in
+    s)
+      use_sandbox=1
+      ;;
+    h)
+      usage
+      exit
+    ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+main "${1:-}" "$use_sandbox"

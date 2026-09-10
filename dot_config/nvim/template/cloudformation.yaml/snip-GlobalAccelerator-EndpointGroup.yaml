@@ -1,0 +1,21 @@
+  GlobalAcceleratorEndpointGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html
+    Type: AWS::GlobalAccelerator::EndpointGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-globalaccelerator-endpointgroup.html
+      ListenerArn: # String
+      EndpointGroupRegion: # String
+      # EndpointConfigurations:
+      #   - EndpointId: # String
+      #     # Weight: # Integer
+      #     # ClientIPPreservationEnabled: # Boolean
+      # TrafficDialPercentage: # Double
+      # HealthCheckPort: # Integer
+      # HealthCheckProtocol: # String
+      # HealthCheckPath: # String
+      # HealthCheckIntervalSeconds: # Integer
+      # ThresholdCount: # Integer
+      # PortOverrides:
+      #   - ListenerPort: # Integer
+      #     EndpointPort: # Integer
+    # !GetAtt THIS.EndpointGroupArn (String)

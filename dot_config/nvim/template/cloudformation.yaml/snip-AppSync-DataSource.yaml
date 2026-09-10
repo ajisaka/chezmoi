@@ -1,0 +1,44 @@
+  AppSyncDataSource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
+    Type: AWS::AppSync::DataSource
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
+      Type: # String
+      # OpenSearchServiceConfig:
+      #   AwsRegion: # String
+      #   Endpoint: # String
+      # Description: # String
+      # ServiceRoleArn: # String
+      # HttpConfig:
+      #   Endpoint: # String
+      #   # AuthorizationConfig:
+      #   # # AwsIamConfig:
+      #   #   # # SigningRegion: # String
+      #   #   # # SigningServiceName: # String
+      #   # AuthorizationType: # String
+      # RelationalDatabaseConfig:
+      #   # RdsHttpEndpointConfig:
+      #   # AwsRegion: # String
+      #   # # Schema: # String
+      #   # # DatabaseName: # String
+      #   # DbClusterIdentifier: # String
+      #   # AwsSecretStoreArn: # String
+      #   RelationalDatabaseSourceType: # String
+      # LambdaConfig:
+      #   LambdaFunctionArn: # String
+      ApiId: # String
+      Name: # String
+      # DynamoDBConfig:
+      #   TableName: # String
+      #   AwsRegion: # String
+      #   # Versioned: # Boolean
+      #   # DeltaSyncConfig:
+      #   # BaseTableTTL: # String
+      #   # DeltaSyncTableTTL: # String
+      #   # DeltaSyncTableName: # String
+      #   # UseCallerCredentials: # Boolean
+      # ElasticsearchConfig:
+      #   AwsRegion: # String
+      #   Endpoint: # String
+    # !GetAtt THIS.DataSourceArn (String)
+    # !GetAtt THIS.Name (String)

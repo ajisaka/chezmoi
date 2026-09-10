@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# set -euC
+# set -x
+
+
+prev=$(date +%s)
+
+function pt {
+  now=$(date +%s)
+  printf ' [%3d]\n' $(( now - prev ))
+}
+
+if [ "$#" = 0 ]
+then
+  cat
+else
+  "$@" 2>&1
+fi  | while read -r it
+do
+  pt
+  echo -ne "$it"
+  prev=$(date +%s)
+done
+
+pt

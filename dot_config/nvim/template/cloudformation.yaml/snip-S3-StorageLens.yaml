@@ -1,0 +1,62 @@
+  S3StorageLens:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-storagelens.html
+    Type: AWS::S3::StorageLens
+    Properties:
+      # StorageLensConfiguration:
+      #   Id: # String
+      #   # Include:
+      #   # # Buckets:
+      #   #   # - # String
+      #   # # Regions:
+      #   #   # - # String
+      #   # Exclude:
+      #   # # Buckets:
+      #   #   # - # String
+      #   # # Regions:
+      #   #   # - # String
+      #   # AwsOrg:
+      #   # Arn: # String
+      #   # AccountLevel:
+      #   # # ActivityMetrics:
+      #   #   # # IsEnabled: # Boolean
+      #   # # AdvancedCostOptimizationMetrics:
+      #   #   # # IsEnabled: # Boolean
+      #   # # AdvancedDataProtectionMetrics:
+      #   #   # # IsEnabled: # Boolean
+      #   # # DetailedStatusCodesMetrics:
+      #   #   # # IsEnabled: # Boolean
+      #   # # BucketLevel:
+      #   #   # # ActivityMetrics:
+      #   #   #   # # IsEnabled: # Boolean
+      #   #   # # AdvancedCostOptimizationMetrics:
+      #   #   #   # # IsEnabled: # Boolean
+      #   #   # # AdvancedDataProtectionMetrics:
+      #   #   #   # # IsEnabled: # Boolean
+      #   #   # # DetailedStatusCodesMetrics:
+      #   #   #   # # IsEnabled: # Boolean
+      #   #   # # PrefixLevel:
+      #   #   #   # # StorageMetrics:
+      #   #   #   #   # # IsEnabled: # Boolean
+      #   #   #   #   # # SelectionCriteria:
+      #   #   #   #   #   # # MaxDepth: # Integer
+      #   #   #   #   #   # # Delimiter: # String
+      #   #   #   #   #   # # MinStorageBytesPercentage: # Double
+      #   # DataExport:
+      #   # # S3BucketDestination:
+      #   #   # OutputSchemaVersion: # String
+      #   #   # Format: # String
+      #   #   # AccountId: # String
+      #   #   # Arn: # String
+      #   #   # # Prefix: # String
+      #   #   # # Encryption:
+      #   #   #   # # SSES3: # Json
+      #   #   #   # # SSEKMS:
+      #   #   #   #   # KeyId: # String
+      #   # # CloudWatchMetrics:
+      #   #   # IsEnabled: # Boolean
+      #   IsEnabled: # Boolean
+      #   # StorageLensArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.StorageLensConfiguration.StorageLensArn (String)

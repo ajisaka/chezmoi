@@ -1,0 +1,31 @@
+  SageMakerEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html
+    Type: AWS::SageMaker::Endpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html
+      # RetainAllVariantProperties: # Boolean
+      # EndpointName: # String
+      # ExcludeRetainedVariantProperties:
+      #   - # VariantPropertyType: # String
+      EndpointConfigName: # String
+      # DeploymentConfig:
+      #   # AutoRollbackConfiguration:
+      #   # Alarms:
+      #   # - AlarmName: # String
+      #   # BlueGreenUpdatePolicy:
+      #   # # MaximumExecutionTimeoutInSeconds: # Integer
+      #   # # TerminationWaitInSeconds: # Integer
+      #   # # TrafficRoutingConfiguration:
+      #   #   # Type: # String
+      #   #   # # LinearStepSize:
+      #   #   #   # Type: # String
+      #   #   #   # Value: # Integer
+      #   #   # # CanarySize:
+      #   #   #   # Type: # String
+      #   #   #   # Value: # Integer
+      #   #   # # WaitIntervalInSeconds: # Integer
+      # RetainDeploymentConfig: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EndpointName (String)

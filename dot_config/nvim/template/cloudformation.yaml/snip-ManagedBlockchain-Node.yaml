@@ -1,0 +1,13 @@
+  ManagedBlockchainNode:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-node.html
+    Type: AWS::ManagedBlockchain::Node
+    Properties:
+      # MemberId: # String
+      NetworkId: # String
+      # NodeConfiguration:
+      #   AvailabilityZone: # String
+      #   InstanceType: # String
+    # !GetAtt THIS.MemberId (String)
+    # !GetAtt THIS.NodeId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.NetworkId (String)

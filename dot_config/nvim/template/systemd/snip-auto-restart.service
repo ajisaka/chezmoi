@@ -1,0 +1,3 @@
+Restart=always
+StartLimitInterval=60
+StartLimiBurst=3

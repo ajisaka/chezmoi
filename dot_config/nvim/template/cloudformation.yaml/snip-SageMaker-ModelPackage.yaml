@@ -1,0 +1,247 @@
+  SageMakerModelPackage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelpackage.html
+    Type: AWS::SageMaker::ModelPackage
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelpackage.html
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AdditionalInferenceSpecifications:
+      #   - Containers:
+      #       - # ContainerHostname: # String
+      #         # Environment: # Json
+      #         # ModelInput: # Json
+      #         Image: # String
+      #         # ImageDigest: # String
+      #         # ModelDataUrl: # String
+      #         # ProductId: # String
+      #         # Framework: # String
+      #         # FrameworkVersion: # String
+      #         # NearestModelName: # String
+      #     # Description: # String
+      #     Name: # String
+      #     # SupportedContentTypes:
+      #     # - # String
+      #     # SupportedRealtimeInferenceInstanceTypes:
+      #     # - # String
+      #     # SupportedResponseMIMETypes:
+      #     # - # String
+      #     # SupportedTransformInstanceTypes:
+      #     # - # String
+      # AdditionalInferenceSpecificationDefinition:
+      #   Containers:
+      #     - # ContainerHostname: # String
+      #       # Environment: # Json
+      #       # ModelInput: # Json
+      #       Image: # String
+      #       # ImageDigest: # String
+      #       # ModelDataUrl: # String
+      #       # ProductId: # String
+      #       # Framework: # String
+      #       # FrameworkVersion: # String
+      #       # NearestModelName: # String
+      #   # Description: # String
+      #   Name: # String
+      #   # SupportedContentTypes:
+      #   # - # String
+      #   # SupportedRealtimeInferenceInstanceTypes:
+      #   # - # String
+      #   # SupportedResponseMIMETypes:
+      #   # - # String
+      #   # SupportedTransformInstanceTypes:
+      #   # - # String
+      # CertifyForMarketplace: # Boolean
+      # ClientToken: # String
+      # CustomerMetadataProperties:
+      #   ANY_KEY: # String
+      # Domain: # String
+      # DriftCheckBaselines:
+      #   # Bias:
+      #   # # PostTrainingConstraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # PreTrainingConstraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # ConfigFile:
+      #   #   # # ContentDigest: # String
+      #   #   # # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # Explainability:
+      #   # # Constraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # ConfigFile:
+      #   #   # # ContentDigest: # String
+      #   #   # # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # ModelDataQuality:
+      #   # # Constraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # Statistics:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # ModelQuality:
+      #   # # Constraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # Statistics:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      # InferenceSpecification:
+      #   Containers:
+      #     - # ContainerHostname: # String
+      #       # Environment: # Json
+      #       # ModelInput: # Json
+      #       Image: # String
+      #       # ImageDigest: # String
+      #       # ModelDataUrl: # String
+      #       # ProductId: # String
+      #       # Framework: # String
+      #       # FrameworkVersion: # String
+      #       # NearestModelName: # String
+      #   SupportedContentTypes:
+      #     - # String
+      #   # SupportedRealtimeInferenceInstanceTypes:
+      #   # - # String
+      #   SupportedResponseMIMETypes:
+      #     - # String
+      #   # SupportedTransformInstanceTypes:
+      #   # - # String
+      # MetadataProperties:
+      #   # CommitId: # String
+      #   # GeneratedBy: # String
+      #   # ProjectId: # String
+      #   # Repository: # String
+      # ModelApprovalStatus: # String
+      # ModelMetrics:
+      #   # Bias:
+      #   # # Report:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # PreTrainingReport:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # PostTrainingReport:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # Explainability:
+      #   # # Report:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # ModelDataQuality:
+      #   # # Constraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # Statistics:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # ModelQuality:
+      #   # # Constraints:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      #   # # Statistics:
+      #   #   # # ContentDigest: # String
+      #   #   # ContentType: # String
+      #   #   # S3Uri: # String
+      # ModelPackageDescription: # String
+      # ModelPackageGroupName: # String
+      # ModelPackageName: # String
+      # SamplePayloadUrl: # String
+      # SourceAlgorithmSpecification:
+      #   SourceAlgorithms:
+      #     - AlgorithmName: # String
+      #       # ModelDataUrl: # String
+      # Task: # String
+      # ValidationSpecification:
+      #   ValidationProfiles:
+      #     - # TransformJobDefinition:
+      #       # # Environment: # Json
+      #       # # BatchStrategy: # String
+      #       # # MaxConcurrentTransforms: # Integer
+      #       # # MaxPayloadInMB: # Integer
+      #       # # TransformInput:
+      #       #   # # CompressionType: # String
+      #       #   # # ContentType: # String
+      #       #   # # DataSource:
+      #       #   #   # # S3DataSource:
+      #       #   #   #   # S3DataType: # String
+      #       #   #   #   # S3Uri: # String
+      #       #   # # SplitType: # String
+      #       # # TransformOutput:
+      #       #   # # Accept: # String
+      #       #   # # KmsKeyId: # String
+      #       #   # S3OutputPath: # String
+      #       #   # # AssembleWith: # String
+      #       # # TransformResources:
+      #       #   # InstanceCount: # Integer
+      #       #   # InstanceType: # String
+      #       #   # # VolumeKmsKeyId: # String
+      #       ProfileName: # String
+      #   ValidationRole: # String
+      # ApprovalDescription: # String
+      # LastModifiedBy:
+      #   # DomainId: # String
+      #   # UserProfileArn: # String
+      #   # UserProfileName: # String
+      # LastModifiedTime: # String
+      # ModelPackageVersion: # Integer
+      # AdditionalInferenceSpecificationsToAdd:
+      #   - Containers:
+      #       - # ContainerHostname: # String
+      #         # Environment: # Json
+      #         # ModelInput: # Json
+      #         Image: # String
+      #         # ImageDigest: # String
+      #         # ModelDataUrl: # String
+      #         # ProductId: # String
+      #         # Framework: # String
+      #         # FrameworkVersion: # String
+      #         # NearestModelName: # String
+      #     # Description: # String
+      #     Name: # String
+      #     # SupportedContentTypes:
+      #     # - # String
+      #     # SupportedRealtimeInferenceInstanceTypes:
+      #     # - # String
+      #     # SupportedResponseMIMETypes:
+      #     # - # String
+      #     # SupportedTransformInstanceTypes:
+      #     # - # String
+      # ModelPackageStatusDetails:
+      #   # ImageScanStatuses:
+      #   # - # FailureReason: # String
+      #   # Name: # String
+      #   # Status: # String
+      #   ValidationStatuses:
+      #     - # FailureReason: # String
+      #       Name: # String
+      #       Status: # String
+      # ModelPackageStatusItem:
+      #   # FailureReason: # String
+      #   Name: # String
+      #   Status: # String
+      # CreatedBy:
+      #   # DomainId: # String
+      #   # UserProfileArn: # String
+      #   # UserProfileName: # String
+      # Environment:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.ModelPackageArn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.ModelPackageStatus (String)

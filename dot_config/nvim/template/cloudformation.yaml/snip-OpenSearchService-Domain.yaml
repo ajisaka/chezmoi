@@ -1,0 +1,68 @@
+  OpenSearchServiceDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html
+    Type: AWS::OpenSearchService::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opensearchservice-domain.html
+      # ClusterConfig:
+      #   # InstanceCount: # Integer
+      #   # WarmEnabled: # Boolean
+      #   # WarmCount: # Integer
+      #   # DedicatedMasterEnabled: # Boolean
+      #   # ZoneAwarenessConfig:
+      #   # # AvailabilityZoneCount: # Integer
+      #   # DedicatedMasterCount: # Integer
+      #   # InstanceType: # String
+      #   # WarmType: # String
+      #   # ZoneAwarenessEnabled: # Boolean
+      #   # DedicatedMasterType: # String
+      # DomainName: # String
+      # AccessPolicies: # Json
+      # EngineVersion: # String
+      # AdvancedOptions:
+      #   ANY_KEY: # String
+      # LogPublishingOptions:
+      #   ANY_KEY: # CloudWatchLogsLogGroupArn: # String
+      #     # Enabled: # Boolean
+      # SnapshotOptions:
+      #   # AutomatedSnapshotStartHour: # Integer
+      # VPCOptions:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # NodeToNodeEncryptionOptions:
+      #   # Enabled: # Boolean
+      # DomainEndpointOptions:
+      #   # CustomEndpointCertificateArn: # String
+      #   # CustomEndpointEnabled: # Boolean
+      #   # EnforceHTTPS: # Boolean
+      #   # CustomEndpoint: # String
+      #   # TLSSecurityPolicy: # String
+      # CognitoOptions:
+      #   # Enabled: # Boolean
+      #   # IdentityPoolId: # String
+      #   # UserPoolId: # String
+      #   # RoleArn: # String
+      # AdvancedSecurityOptions:
+      #   # Enabled: # Boolean
+      #   # MasterUserOptions:
+      #   # # MasterUserPassword: # String
+      #   # # MasterUserName: # String
+      #   # # MasterUserARN: # String
+      #   # InternalUserDatabaseEnabled: # Boolean
+      # EBSOptions:
+      #   # EBSEnabled: # Boolean
+      #   # VolumeType: # String
+      #   # Iops: # Integer
+      #   # VolumeSize: # Integer
+      #   # Throughput: # Integer
+      # EncryptionAtRestOptions:
+      #   # KmsKeyId: # String
+      #   # Enabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DomainEndpoint (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DomainArn (String)

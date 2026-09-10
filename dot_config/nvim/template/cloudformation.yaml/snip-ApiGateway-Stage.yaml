@@ -1,0 +1,39 @@
+  ApiGatewayStage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
+    Type: AWS::ApiGateway::Stage
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
+      # AccessLogSetting:
+      #   # DestinationArn: # String
+      #   # Format: # String
+      # CacheClusterEnabled: # Boolean
+      # CacheClusterSize: # String
+      # CanarySetting:
+      #   # DeploymentId: # String
+      #   # PercentTraffic: # Double
+      #   # StageVariableOverrides:
+      #   # ANY_KEY: # String
+      #   # UseStageCache: # Boolean
+      # ClientCertificateId: # String
+      # DeploymentId: # String
+      # Description: # String
+      # DocumentationVersion: # String
+      # MethodSettings:
+      #   - # CacheDataEncrypted: # Boolean
+      #     # CacheTtlInSeconds: # Integer
+      #     # CachingEnabled: # Boolean
+      #     # DataTraceEnabled: # Boolean
+      #     # HttpMethod: # String
+      #     # LoggingLevel: # String
+      #     # MetricsEnabled: # Boolean
+      #     # ResourcePath: # String
+      #     # ThrottlingBurstLimit: # Integer
+      #     # ThrottlingRateLimit: # Double
+      RestApiId: # String
+      # StageName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TracingEnabled: # Boolean
+      # Variables:
+      #   ANY_KEY: # String

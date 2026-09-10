@@ -1,0 +1,17 @@
+  ElasticBeanstalkApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-application.html
+    Type: AWS::ElasticBeanstalk::Application
+    Properties:
+      # ApplicationName: # String
+      # Description: # String
+      # ResourceLifecycleConfig:
+      #   # ServiceRole: # String
+      #   # VersionLifecycleConfig:
+      #   # # MaxAgeRule:
+      #   #   # # DeleteSourceFromS3: # Boolean
+      #   #   # # Enabled: # Boolean
+      #   #   # # MaxAgeInDays: # Integer
+      #   # # MaxCountRule:
+      #   #   # # DeleteSourceFromS3: # Boolean
+      #   #   # # Enabled: # Boolean
+      #   #   # # MaxCount: # Integer

@@ -1,0 +1,21 @@
+  ConnectInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-instance.html
+    Type: AWS::Connect::Instance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-instance.html
+      IdentityManagementType: # String
+      # InstanceAlias: # String
+      # DirectoryId: # String
+      # Attributes:
+      #   InboundCalls: # Boolean
+      #   OutboundCalls: # Boolean
+      #   # ContactflowLogs: # Boolean
+      #   # ContactLens: # Boolean
+      #   # AutoResolveBestVoices: # Boolean
+      #   # UseCustomTTSVoices: # Boolean
+      #   # EarlyMedia: # Boolean
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.ServiceRole (String)
+    # !GetAtt THIS.InstanceStatus (String)

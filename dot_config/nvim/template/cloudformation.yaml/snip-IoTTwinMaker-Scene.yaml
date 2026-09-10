@@ -1,0 +1,16 @@
+  IoTTwinMakerScene:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iottwinmaker-scene.html
+    Type: AWS::IoTTwinMaker::Scene
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iottwinmaker-scene.html
+      SceneId: # String
+      # Description: # String
+      ContentLocation: # String
+      # Tags:
+      #   ANY_KEY: # String
+      WorkspaceId: # String
+      # Capabilities:
+      #   - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationDateTime (String)
+    # !GetAtt THIS.UpdateDateTime (String)

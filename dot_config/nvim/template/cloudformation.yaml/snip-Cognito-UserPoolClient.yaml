@@ -1,0 +1,45 @@
+  CognitoUserPoolClient:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
+      # AnalyticsConfiguration:
+      #   # ApplicationArn: # String
+      #   # UserDataShared: # Boolean
+      #   # ExternalId: # String
+      #   # ApplicationId: # String
+      #   # RoleArn: # String
+      # GenerateSecret: # Boolean
+      # CallbackURLs:
+      #   - # String
+      # EnablePropagateAdditionalUserContextData: # Boolean
+      # IdTokenValidity: # Integer
+      # AuthSessionValidity: # Integer
+      # AllowedOAuthScopes:
+      #   - # String
+      # TokenValidityUnits:
+      #   # IdToken: # String
+      #   # RefreshToken: # String
+      #   # AccessToken: # String
+      # ReadAttributes:
+      #   - # String
+      # AllowedOAuthFlowsUserPoolClient: # Boolean
+      # DefaultRedirectURI: # String
+      # SupportedIdentityProviders:
+      #   - # String
+      # ClientName: # String
+      UserPoolId: # String
+      # AllowedOAuthFlows:
+      #   - # String
+      # ExplicitAuthFlows:
+      #   - # String
+      # LogoutURLs:
+      #   - # String
+      # AccessTokenValidity: # Integer
+      # RefreshTokenValidity: # Integer
+      # WriteAttributes:
+      #   - # String
+      # PreventUserExistenceErrors: # String
+      # EnableTokenRevocation: # Boolean
+    # !GetAtt THIS.ClientSecret (String)
+    # !GetAtt THIS.Name (String)

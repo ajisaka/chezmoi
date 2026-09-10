@@ -1,0 +1,6 @@
+  ECRPullThroughCacheRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-pullthroughcacherule.html
+    Type: AWS::ECR::PullThroughCacheRule
+    Properties:
+      # EcrRepositoryPrefix: # String
+      # UpstreamRegistryUrl: # String

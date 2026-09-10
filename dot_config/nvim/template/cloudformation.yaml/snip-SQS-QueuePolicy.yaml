@@ -1,0 +1,7 @@
+  SQSQueuePolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      PolicyDocument: # Json
+      Queues:
+        - # String

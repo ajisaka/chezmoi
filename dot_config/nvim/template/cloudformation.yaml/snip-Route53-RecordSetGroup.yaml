@@ -1,0 +1,33 @@
+  Route53RecordSetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html
+      # Comment: # String
+      # HostedZoneId: # String
+      # HostedZoneName: # String
+      # RecordSets:
+      #   - # AliasTarget:
+      #     # DNSName: # String
+      #     # # EvaluateTargetHealth: # Boolean
+      #     # HostedZoneId: # String
+      #     # CidrRoutingConfig:
+      #     # CollectionId: # String
+      #     # LocationName: # String
+      #     # Failover: # String
+      #     # GeoLocation:
+      #     # # ContinentCode: # String
+      #     # # CountryCode: # String
+      #     # # SubdivisionCode: # String
+      #     # HealthCheckId: # String
+      #     # HostedZoneId: # String
+      #     # HostedZoneName: # String
+      #     # MultiValueAnswer: # Boolean
+      #     Name: # String
+      #     # Region: # String
+      #     # ResourceRecords:
+      #     # - # String
+      #     # SetIdentifier: # String
+      #     # TTL: # String
+      #     Type: # String
+      #     # Weight: # Integer

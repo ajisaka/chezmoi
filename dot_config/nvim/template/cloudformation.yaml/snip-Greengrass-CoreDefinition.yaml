@@ -1,0 +1,16 @@
+  GreengrassCoreDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html
+    Type: AWS::Greengrass::CoreDefinition
+    Properties:
+      # InitialVersion:
+      #   Cores:
+      #     - # SyncShadow: # Boolean
+      #       ThingArn: # String
+      #       Id: # String
+      #       CertificateArn: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.LatestVersionArn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

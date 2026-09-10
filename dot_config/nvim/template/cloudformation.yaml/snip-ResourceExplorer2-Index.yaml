@@ -1,0 +1,9 @@
+  ResourceExplorer2Index:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourceexplorer2-index.html
+    Type: AWS::ResourceExplorer2::Index
+    Properties:
+      # Tags:
+      #   ANY_KEY: # String
+      Type: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.IndexState (String)

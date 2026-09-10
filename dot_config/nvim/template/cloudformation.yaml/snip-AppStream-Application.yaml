@@ -1,0 +1,26 @@
+  AppStreamApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-application.html
+    Type: AWS::AppStream::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-application.html
+      Name: # String
+      # DisplayName: # String
+      # Description: # String
+      LaunchPath: # String
+      # LaunchParameters: # String
+      # WorkingDirectory: # String
+      InstanceFamilies:
+        - # String
+      # IconS3Location:
+      #   S3Bucket: # String
+      #   S3Key: # String
+      AppBlockArn: # String
+      Platforms:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AttributesToDelete:
+      #   - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)

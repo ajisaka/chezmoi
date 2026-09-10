@@ -1,0 +1,164 @@
+  CloudFrontDistribution:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      # DistributionConfig:
+      #   # Logging:
+      #   # # IncludeCookies: # Boolean
+      #   # Bucket: # String
+      #   # # Prefix: # String
+      #   # Comment: # String
+      #   # DefaultRootObject: # String
+      #   # Origins:
+      #   # - # ConnectionTimeout: # Integer
+      #   # # OriginAccessControlId: # String
+      #   # # ConnectionAttempts: # Integer
+      #   # # OriginCustomHeaders:
+      #   #     # - HeaderValue: # String
+      #   #     # HeaderName: # String
+      #   # DomainName: # String
+      #   # # OriginShield:
+      #   #     # # OriginShieldRegion: # String
+      #   #     # # Enabled: # Boolean
+      #   # # S3OriginConfig:
+      #   #     # # OriginAccessIdentity: # String
+      #   # # OriginPath: # String
+      #   # Id: # String
+      #   # # CustomOriginConfig:
+      #   #     # # OriginReadTimeout: # Integer
+      #   #     # # HTTPSPort: # Integer
+      #   #     # # OriginKeepaliveTimeout: # Integer
+      #   #     # # OriginSSLProtocols:
+      #   #     #   # - # String
+      #   #     # # HTTPPort: # Integer
+      #   #     # OriginProtocolPolicy: # String
+      #   # ViewerCertificate:
+      #   # # IamCertificateId: # String
+      #   # # SslSupportMethod: # String
+      #   # # MinimumProtocolVersion: # String
+      #   # # CloudFrontDefaultCertificate: # Boolean
+      #   # # AcmCertificateArn: # String
+      #   # PriceClass: # String
+      #   # CustomOrigin:
+      #   # # HTTPSPort: # Integer
+      #   # OriginSSLProtocols:
+      #   # - # String
+      #   # DNSName: # String
+      #   # # HTTPPort: # Integer
+      #   # OriginProtocolPolicy: # String
+      #   # S3Origin:
+      #   # # OriginAccessIdentity: # String
+      #   # DNSName: # String
+      #   # DefaultCacheBehavior:
+      #   # # Compress: # Boolean
+      #   # # FunctionAssociations:
+      #   #   # - # FunctionARN: # String
+      #   #   # # EventType: # String
+      #   # # LambdaFunctionAssociations:
+      #   #   # - # IncludeBody: # Boolean
+      #   #   # # EventType: # String
+      #   #   # # LambdaFunctionARN: # String
+      #   # TargetOriginId: # String
+      #   # ViewerProtocolPolicy: # String
+      #   # # ResponseHeadersPolicyId: # String
+      #   # # RealtimeLogConfigArn: # String
+      #   # # TrustedSigners:
+      #   #   # - # String
+      #   # # DefaultTTL: # Double
+      #   # # FieldLevelEncryptionId: # String
+      #   # # TrustedKeyGroups:
+      #   #   # - # String
+      #   # # AllowedMethods:
+      #   #   # - # String
+      #   # # CachedMethods:
+      #   #   # - # String
+      #   # # SmoothStreaming: # Boolean
+      #   # # ForwardedValues:
+      #   #   # # Cookies:
+      #   #   #   # # WhitelistedNames:
+      #   #   #   #   # - # String
+      #   #   #   # Forward: # String
+      #   #   # # Headers:
+      #   #   #   # - # String
+      #   #   # QueryString: # Boolean
+      #   #   # # QueryStringCacheKeys:
+      #   #   #   # - # String
+      #   # # OriginRequestPolicyId: # String
+      #   # # MinTTL: # Double
+      #   # # CachePolicyId: # String
+      #   # # MaxTTL: # Double
+      #   # CustomErrorResponses:
+      #   # - # ResponseCode: # Integer
+      #   # # ErrorCachingMinTTL: # Double
+      #   # ErrorCode: # Integer
+      #   # # ResponsePagePath: # String
+      #   # OriginGroups:
+      #   # Quantity: # Integer
+      #   # # Items:
+      #   #   # - Id: # String
+      #   #   # # FailoverCriteria:
+      #   #   #     # # StatusCodes:
+      #   #   #     #   # Quantity: # Integer
+      #   #   #     #   # Items:
+      #   #   #     #   # - # Integer
+      #   #   # # Members:
+      #   #   #     # Quantity: # Integer
+      #   #   #     # Items:
+      #   #   #     # - OriginId: # String
+      #   Enabled: # Boolean
+      #   # Aliases:
+      #   # - # String
+      #   # IPV6Enabled: # Boolean
+      #   # CNAMEs:
+      #   # - # String
+      #   # WebACLId: # String
+      #   # HttpVersion: # String
+      #   # Restrictions:
+      #   # # GeoRestriction:
+      #   #   # # Locations:
+      #   #   #   # - # String
+      #   #   # RestrictionType: # String
+      #   # CacheBehaviors:
+      #   # - # Compress: # Boolean
+      #   # # FunctionAssociations:
+      #   #     # - # FunctionARN: # String
+      #   #     # # EventType: # String
+      #   # # LambdaFunctionAssociations:
+      #   #     # - # IncludeBody: # Boolean
+      #   #     # # EventType: # String
+      #   #     # # LambdaFunctionARN: # String
+      #   # TargetOriginId: # String
+      #   # ViewerProtocolPolicy: # String
+      #   # # ResponseHeadersPolicyId: # String
+      #   # # RealtimeLogConfigArn: # String
+      #   # # TrustedSigners:
+      #   #     # - # String
+      #   # # DefaultTTL: # Double
+      #   # # FieldLevelEncryptionId: # String
+      #   # # TrustedKeyGroups:
+      #   #     # - # String
+      #   # # AllowedMethods:
+      #   #     # - # String
+      #   # PathPattern: # String
+      #   # # CachedMethods:
+      #   #     # - # String
+      #   # # SmoothStreaming: # Boolean
+      #   # # ForwardedValues:
+      #   #     # # Cookies:
+      #   #     #   # # WhitelistedNames:
+      #   #     #   #   # - # String
+      #   #     #   # Forward: # String
+      #   #     # # Headers:
+      #   #     #   # - # String
+      #   #     # QueryString: # Boolean
+      #   #     # # QueryStringCacheKeys:
+      #   #     #   # - # String
+      #   # # OriginRequestPolicyId: # String
+      #   # # MinTTL: # Double
+      #   # # CachePolicyId: # String
+      #   # # MaxTTL: # Double
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DomainName (String)
+    # !GetAtt THIS.Id (String)

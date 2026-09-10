@@ -1,0 +1,19 @@
+  EC2NetworkAclEntry:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkaclentry.html
+    Type: AWS::EC2::NetworkAclEntry
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkaclentry.html
+      # PortRange:
+      #   # From: # Integer
+      #   # To: # Integer
+      NetworkAclId: # String
+      RuleAction: # String
+      # CidrBlock: # String
+      # Egress: # Boolean
+      RuleNumber: # Integer
+      # Ipv6CidrBlock: # String
+      Protocol: # Integer
+      # Icmp:
+      #   # Code: # Integer
+      #   # Type: # Integer
+    # !GetAtt THIS.Id (String)

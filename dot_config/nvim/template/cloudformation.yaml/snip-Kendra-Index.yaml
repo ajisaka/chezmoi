@@ -1,0 +1,48 @@
+  KendraIndex:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kendra-index.html
+    Type: AWS::Kendra::Index
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kendra-index.html
+      # Description: # String
+      # ServerSideEncryptionConfiguration:
+      #   # KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+      RoleArn: # String
+      Edition: # String
+      # DocumentMetadataConfigurations:
+      #   - Name: # String
+      #     Type: # String
+      #     # Relevance:
+      #     # # Freshness: # Boolean
+      #     # # Importance: # Integer
+      #     # # Duration: # String
+      #     # # RankOrder: # String
+      #     # # ValueImportanceItems:
+      #     #   # - # Key: # String
+      #     #   # # Value: # Integer
+      #     # Search:
+      #     # # Facetable: # Boolean
+      #     # # Searchable: # Boolean
+      #     # # Displayable: # Boolean
+      #     # # Sortable: # Boolean
+      # CapacityUnits:
+      #   StorageCapacityUnits: # Integer
+      #   QueryCapacityUnits: # Integer
+      # UserContextPolicy: # String
+      # UserTokenConfigurations:
+      #   - # JwtTokenTypeConfiguration:
+      #     # KeyLocation: # String
+      #     # # URL: # String
+      #     # # SecretManagerArn: # String
+      #     # # UserNameAttributeField: # String
+      #     # # GroupAttributeField: # String
+      #     # # Issuer: # String
+      #     # # ClaimRegex: # String
+      #     # JsonTokenTypeConfiguration:
+      #     # UserNameAttributeField: # String
+      #     # GroupAttributeField: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

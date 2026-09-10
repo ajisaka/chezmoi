@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# vim: set ft=sh :
+
+# https://github.com/ajeetdsouza/zoxide/issues/1123
+
+# Search for all unreachable paths in the zoxide DB and removes them.
+comm -23 \
+  <(zoxide query -l -a | sort) \
+  <(zoxide query -l | sort) |
+  xargs -r zoxide remove

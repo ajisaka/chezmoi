@@ -1,0 +1,30 @@
+  ServerlessStateMachine:
+    # https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+    Type: AWS::Serverless::StateMachine
+    Properties:
+      # https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+      # Definition: # Json
+      # DefinitionSubstitutions:
+      #   ANY_KEY: # String
+      # DefinitionUri:
+      #   # ref: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+      # Events:
+      #   ANY_KEY: Type: # String
+      #     Properties:
+      #       # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#event-source-types
+      # Logging:
+      #   Destinations:
+      #     - # CloudWatchLogsLogGroup:
+      #       # LogGroupArn: # String
+      #   IncludeExecutionData: # Boolean
+      #   Level: # String
+      # Name: # String
+      # PermissionsBoundaries: # String
+      # Policies:
+      #   # ref: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-statemachine.html
+      # Role: # String
+      # Tags:
+      #   ANY_KEY: # String
+      # Tracing:
+      #   # Enabled: # Boolean
+      # Type: # String

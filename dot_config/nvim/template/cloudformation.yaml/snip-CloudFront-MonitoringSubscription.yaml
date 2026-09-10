@@ -1,0 +1,8 @@
+  CloudFrontMonitoringSubscription:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-monitoringsubscription.html
+    Type: AWS::CloudFront::MonitoringSubscription
+    Properties:
+      DistributionId: # String
+      # MonitoringSubscription:
+      #   # RealtimeMetricsSubscriptionConfig:
+      #   # RealtimeMetricsSubscriptionStatus: # String

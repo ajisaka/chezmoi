@@ -1,0 +1,16 @@
+  PanoramaPackage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-panorama-package.html
+    Type: AWS::Panorama::Package
+    Properties:
+      PackageName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PackageId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.StorageLocation.Bucket (String)
+    # !GetAtt THIS.StorageLocation.RepoPrefixLocation (String)
+    # !GetAtt THIS.StorageLocation.GeneratedPrefixLocation (String)
+    # !GetAtt THIS.StorageLocation.BinaryPrefixLocation (String)
+    # !GetAtt THIS.StorageLocation.ManifestPrefixLocation (String)
+    # !GetAtt THIS.CreatedTime (Integer)

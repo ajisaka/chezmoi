@@ -1,0 +1,22 @@
+  GlueDevEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
+    Type: AWS::Glue::DevEndpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
+      # ExtraJarsS3Path: # String
+      # PublicKey: # String
+      # NumberOfNodes: # Integer
+      # Arguments: # Json
+      # SubnetId: # String
+      # PublicKeys:
+      #   - # String
+      # SecurityGroupIds:
+      #   - # String
+      RoleArn: # String
+      # WorkerType: # String
+      # EndpointName: # String
+      # GlueVersion: # String
+      # ExtraPythonLibsS3Path: # String
+      # SecurityConfiguration: # String
+      # NumberOfWorkers: # Integer
+      # Tags: # Json

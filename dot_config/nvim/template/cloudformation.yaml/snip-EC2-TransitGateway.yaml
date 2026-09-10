@@ -1,0 +1,21 @@
+  EC2TransitGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html
+    Type: AWS::EC2::TransitGateway
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgateway.html
+      # DefaultRouteTablePropagation: # String
+      # Description: # String
+      # AutoAcceptSharedAttachments: # String
+      # DefaultRouteTableAssociation: # String
+      # VpnEcmpSupport: # String
+      # DnsSupport: # String
+      # MulticastSupport: # String
+      # AmazonSideAsn: # Integer
+      # TransitGatewayCidrBlocks:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AssociationDefaultRouteTableId: # String
+      # PropagationDefaultRouteTableId: # String
+    # !GetAtt THIS.Id (String)

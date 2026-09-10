@@ -1,0 +1,18 @@
+  QLDBStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qldb-stream.html
+    Type: AWS::QLDB::Stream
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qldb-stream.html
+      LedgerName: # String
+      StreamName: # String
+      RoleArn: # String
+      InclusiveStartTime: # String
+      # ExclusiveEndTime: # String
+      # KinesisConfiguration:
+      #   # StreamArn: # String
+      #   # AggregationEnabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

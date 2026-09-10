@@ -1,0 +1,17 @@
+  DataSyncLocationFSxWindows:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxwindows.html
+    Type: AWS::DataSync::LocationFSxWindows
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxwindows.html
+      # Domain: # String
+      FsxFilesystemArn: # String
+      Password: # String
+      SecurityGroupArns:
+        - # String
+      # Subdirectory: # String
+      User: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

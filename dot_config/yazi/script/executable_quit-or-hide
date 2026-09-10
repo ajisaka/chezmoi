@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+if [ "${ANEKOS_FLOAT_ID:-}" = 'yazi' ]
+then
+  nyprctl floating-term -c -m large -i yazi -- ~/.config/hypr/script/yazi
+else
+  ya emit quit
+fi

@@ -1,0 +1,12 @@
+#!/bin/bash
+# {{ range glob (printf "%s/dot_config/waybar/**/*.*" .chezmoi.sourceDir) }}
+# {{ . }}: {{ include . | sha256sum }}
+# {{ end }}
+
+set -euC
+# set -o pipefail
+
+if [ -x ~/.config/hypr/script/palette/reload-waybar ]
+then
+  ~/.config/hypr/script/palette/reload-waybar
+fi

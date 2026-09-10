@@ -1,0 +1,17 @@
+  LakeFormationDataCellsFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-datacellsfilter.html
+    Type: AWS::LakeFormation::DataCellsFilter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-datacellsfilter.html
+      TableCatalogId: # String
+      DatabaseName: # String
+      TableName: # String
+      Name: # String
+      # RowFilter:
+      #   # FilterExpression: # String
+      #   # AllRowsWildcard: # Json
+      # ColumnNames:
+      #   - # String
+      # ColumnWildcard:
+      #   # ExcludedColumnNames:
+      #   # - # String

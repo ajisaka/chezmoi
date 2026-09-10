@@ -1,0 +1,16 @@
+  SSMParameter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
+    Type: AWS::SSM::Parameter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
+      Type: # String
+      # Description: # String
+      # Policies: # String
+      # AllowedPattern: # String
+      # Tier: # String
+      Value: # String
+      # DataType: # String
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Type (String)
+    # !GetAtt THIS.Value (String)

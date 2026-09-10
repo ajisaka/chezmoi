@@ -1,0 +1,48 @@
+  IoTWirelessServiceProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-serviceprofile.html
+    Type: AWS::IoTWireless::ServiceProfile
+    Properties:
+      # Name: # String
+      # LoRaWAN:
+      #   # UlRate: # Integer
+      #   # UlBucketSize: # Integer
+      #   # UlRatePolicy: # String
+      #   # DlRate: # Integer
+      #   # DlBucketSize: # Integer
+      #   # DlRatePolicy: # String
+      #   # AddGwMetadata: # Boolean
+      #   # DevStatusReqFreq: # Integer
+      #   # ReportDevStatusBattery: # Boolean
+      #   # ReportDevStatusMargin: # Boolean
+      #   # DrMin: # Integer
+      #   # DrMax: # Integer
+      #   # ChannelMask: # String
+      #   # PrAllowed: # Boolean
+      #   # HrAllowed: # Boolean
+      #   # RaAllowed: # Boolean
+      #   # NwkGeoLoc: # Boolean
+      #   # TargetPer: # Integer
+      #   # MinGwDiversity: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LoRaWAN.UlRate (Integer)
+    # !GetAtt THIS.LoRaWAN.UlBucketSize (Integer)
+    # !GetAtt THIS.LoRaWAN.UlRatePolicy (String)
+    # !GetAtt THIS.LoRaWAN.DlRate (Integer)
+    # !GetAtt THIS.LoRaWAN.DlBucketSize (Integer)
+    # !GetAtt THIS.LoRaWAN.DlRatePolicy (String)
+    # !GetAtt THIS.LoRaWAN.DevStatusReqFreq (Integer)
+    # !GetAtt THIS.LoRaWAN.ReportDevStatusBattery (Boolean)
+    # !GetAtt THIS.LoRaWAN.ReportDevStatusMargin (Boolean)
+    # !GetAtt THIS.LoRaWAN.DrMin (Integer)
+    # !GetAtt THIS.LoRaWAN.DrMax (Integer)
+    # !GetAtt THIS.LoRaWAN.ChannelMask (String)
+    # !GetAtt THIS.LoRaWAN.PrAllowed (Boolean)
+    # !GetAtt THIS.LoRaWAN.HrAllowed (Boolean)
+    # !GetAtt THIS.LoRaWAN.RaAllowed (Boolean)
+    # !GetAtt THIS.LoRaWAN.NwkGeoLoc (Boolean)
+    # !GetAtt THIS.LoRaWAN.TargetPer (Integer)
+    # !GetAtt THIS.LoRaWAN.MinGwDiversity (Integer)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

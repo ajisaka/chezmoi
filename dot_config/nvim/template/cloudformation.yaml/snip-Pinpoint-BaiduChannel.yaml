@@ -1,0 +1,9 @@
+  PinpointBaiduChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-baiduchannel.html
+    Type: AWS::Pinpoint::BaiduChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-baiduchannel.html
+      SecretKey: # String
+      ApiKey: # String
+      # Enabled: # Boolean
+      ApplicationId: # String

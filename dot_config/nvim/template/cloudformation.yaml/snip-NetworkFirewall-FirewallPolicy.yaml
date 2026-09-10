@@ -1,0 +1,35 @@
+  NetworkFirewallFirewallPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewallpolicy.html
+    Type: AWS::NetworkFirewall::FirewallPolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewallpolicy.html
+      FirewallPolicyName: # String
+      # FirewallPolicy:
+      #   StatelessDefaultActions:
+      #     - # String
+      #   StatelessFragmentDefaultActions:
+      #     - # String
+      #   # StatelessCustomActions:
+      #   # - ActionName: # String
+      #   # # ActionDefinition:
+      #   #     # # PublishMetricAction:
+      #   #     #   # Dimensions:
+      #   #     #   # - Value: # String
+      #   # StatelessRuleGroupReferences:
+      #   # - ResourceArn: # String
+      #   # Priority: # Integer
+      #   # StatefulRuleGroupReferences:
+      #   # - ResourceArn: # String
+      #   # # Priority: # Integer
+      #   # # Override:
+      #   #     # # Action: # String
+      #   # StatefulDefaultActions:
+      #   # - # String
+      #   # StatefulEngineOptions:
+      #   # # RuleOrder: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.FirewallPolicyArn (String)
+    # !GetAtt THIS.FirewallPolicyId (String)

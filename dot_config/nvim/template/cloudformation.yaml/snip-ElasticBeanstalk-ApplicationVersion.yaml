@@ -1,0 +1,10 @@
+  ElasticBeanstalkApplicationVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-applicationversion.html
+    Type: AWS::ElasticBeanstalk::ApplicationVersion
+    Properties:
+      ApplicationName: # String
+      # Description: # String
+      # SourceBundle:
+      #   S3Bucket: # String
+      #   S3Key: # String
+    # !GetAtt THIS.Id (String)

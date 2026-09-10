@@ -1,0 +1,28 @@
+  SSMResourceDataSync:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
+    Type: AWS::SSM::ResourceDataSync
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
+      # S3Destination:
+      #   # KMSKeyArn: # String
+      #   # BucketPrefix: # String
+      #   BucketName: # String
+      #   BucketRegion: # String
+      #   SyncFormat: # String
+      # KMSKeyArn: # String
+      # SyncSource:
+      #   # IncludeFutureRegions: # Boolean
+      #   SourceRegions:
+      #     - # String
+      #   SourceType: # String
+      #   # AwsOrganizationsSource:
+      #   # # OrganizationalUnits:
+      #   #   # - # String
+      #   # OrganizationSourceType: # String
+      # BucketName: # String
+      # BucketRegion: # String
+      # SyncFormat: # String
+      SyncName: # String
+      # SyncType: # String
+      # BucketPrefix: # String
+    # !GetAtt THIS.SyncName (String)

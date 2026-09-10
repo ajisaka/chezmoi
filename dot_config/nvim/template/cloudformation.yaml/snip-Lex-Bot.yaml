@@ -1,0 +1,542 @@
+  LexBot:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-bot.html
+    Type: AWS::Lex::Bot
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-bot.html
+      Name: # String
+      # Description: # String
+      RoleArn: # String
+      DataPrivacy: # Json
+      IdleSessionTTLInSeconds: # Integer
+      # BotLocales:
+      #   - LocaleId: # String
+      #     # Description: # String
+      #     # VoiceSettings:
+      #     # VoiceId: # String
+      #     # # Engine: # String
+      #     NluConfidenceThreshold: # Double
+      #     # Intents:
+      #     # - Name: # String
+      #     # # Description: # String
+      #     # # ParentIntentSignature: # String
+      #     # # SampleUtterances:
+      #     #     # - Utterance: # String
+      #     # # DialogCodeHook:
+      #     #     # Enabled: # Boolean
+      #     # # FulfillmentCodeHook:
+      #     #     # # FulfillmentUpdatesSpecification:
+      #     #     #   # # StartResponse:
+      #     #     #   #   # MessageGroups:
+      #     #     #   #   # - # Message:
+      #     #     #   #   #       # # PlainTextMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #   # Title: # String
+      #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #   #   #       #   # # Buttons:
+      #     #     #   #   #       #   #   # - Text: # String
+      #     #     #   #   #       #   #   # Value: # String
+      #     #     #   #   # # Variations:
+      #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #     # Title: # String
+      #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #   #   #       #     # # Buttons:
+      #     #     #   #   #       #     #   # - Text: # String
+      #     #     #   #   #       #     #   # Value: # String
+      #     #     #   #   # DelayInSeconds: # Integer
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #   # # UpdateResponse:
+      #     #     #   #   # MessageGroups:
+      #     #     #   #   # - # Message:
+      #     #     #   #   #       # # PlainTextMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #   # Title: # String
+      #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #   #   #       #   # # Buttons:
+      #     #     #   #   #       #   #   # - Text: # String
+      #     #     #   #   #       #   #   # Value: # String
+      #     #     #   #   # # Variations:
+      #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #     # Title: # String
+      #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #   #   #       #     # # Buttons:
+      #     #     #   #   #       #     #   # - Text: # String
+      #     #     #   #   #       #     #   # Value: # String
+      #     #     #   #   # FrequencyInSeconds: # Integer
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #   # # TimeoutInSeconds: # Integer
+      #     #     #   # Active: # Boolean
+      #     #     # # PostFulfillmentStatusSpecification:
+      #     #     #   # # SuccessResponse:
+      #     #     #   #   # MessageGroupsList:
+      #     #     #   #   # - # Message:
+      #     #     #   #   #       # # PlainTextMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #   # Title: # String
+      #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #   #   #       #   # # Buttons:
+      #     #     #   #   #       #   #   # - Text: # String
+      #     #     #   #   #       #   #   # Value: # String
+      #     #     #   #   # # Variations:
+      #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #     # Title: # String
+      #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #   #   #       #     # # Buttons:
+      #     #     #   #   #       #     #   # - Text: # String
+      #     #     #   #   #       #     #   # Value: # String
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #   # # FailureResponse:
+      #     #     #   #   # MessageGroupsList:
+      #     #     #   #   # - # Message:
+      #     #     #   #   #       # # PlainTextMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #   # Title: # String
+      #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #   #   #       #   # # Buttons:
+      #     #     #   #   #       #   #   # - Text: # String
+      #     #     #   #   #       #   #   # Value: # String
+      #     #     #   #   # # Variations:
+      #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #     # Title: # String
+      #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #   #   #       #     # # Buttons:
+      #     #     #   #   #       #     #   # - Text: # String
+      #     #     #   #   #       #     #   # Value: # String
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #   # # TimeoutResponse:
+      #     #     #   #   # MessageGroupsList:
+      #     #     #   #   # - # Message:
+      #     #     #   #   #       # # PlainTextMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #   # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #   # Title: # String
+      #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #   #   #       #   # # Buttons:
+      #     #     #   #   #       #   #   # - Text: # String
+      #     #     #   #   #       #   #   # Value: # String
+      #     #     #   #   # # Variations:
+      #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # CustomPayload:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # SSMLMessage:
+      #     #     #   #   #       #     # Value: # String
+      #     #     #   #   #       # # ImageResponseCard:
+      #     #     #   #   #       #     # Title: # String
+      #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #   #   #       #     # # Buttons:
+      #     #     #   #   #       #     #   # - Text: # String
+      #     #     #   #   #       #     #   # Value: # String
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     # Enabled: # Boolean
+      #     # # IntentConfirmationSetting:
+      #     #     # # PromptSpecification:
+      #     #     #   # MessageGroupsList:
+      #     #     #   # - # Message:
+      #     #     #   #       # # PlainTextMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #   # Title: # String
+      #     #     #   #       #   # # Subtitle: # String
+      #     #     #   #       #   # # ImageUrl: # String
+      #     #     #   #       #   # # Buttons:
+      #     #     #   #       #   #   # - Text: # String
+      #     #     #   #       #   #   # Value: # String
+      #     #     #   # # Variations:
+      #     #     #   #       # - # PlainTextMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #     # Title: # String
+      #     #     #   #       #     # # Subtitle: # String
+      #     #     #   #       #     # # ImageUrl: # String
+      #     #     #   #       #     # # Buttons:
+      #     #     #   #       #     #   # - Text: # String
+      #     #     #   #       #     #   # Value: # String
+      #     #     #   # MaxRetries: # Integer
+      #     #     #   # # AllowInterrupt: # Boolean
+      #     #     #   # # MessageSelectionStrategy: # String
+      #     #     #   # # PromptAttemptsSpecification:
+      #     #     #   #   # ANY_KEY: # AllowedInputTypes:
+      #     #     #   #   #     # AllowAudioInput: # Boolean
+      #     #     #   #   #     # AllowDTMFInput: # Boolean
+      #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #   #   # # AudioAndDTMFInputSpecification:
+      #     #     #   #   #     # StartTimeoutMs: # Integer
+      #     #     #   #   #     # # DTMFSpecification:
+      #     #     #   #   #     #   # DeletionCharacter: # String
+      #     #     #   #   #     #   # EndCharacter: # String
+      #     #     #   #   #     #   # EndTimeoutMs: # Integer
+      #     #     #   #   #     #   # MaxLength: # Integer
+      #     #     #   #   #     # # AudioSpecification:
+      #     #     #   #   #     #   # EndTimeoutMs: # Integer
+      #     #     #   #   #     #   # MaxLengthMs: # Integer
+      #     #     #   #   # # TextInputSpecification:
+      #     #     #   #   #     # StartTimeoutMs: # Integer
+      #     #     # # DeclinationResponse:
+      #     #     #   # MessageGroupsList:
+      #     #     #   # - # Message:
+      #     #     #   #       # # PlainTextMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #   # Title: # String
+      #     #     #   #       #   # # Subtitle: # String
+      #     #     #   #       #   # # ImageUrl: # String
+      #     #     #   #       #   # # Buttons:
+      #     #     #   #       #   #   # - Text: # String
+      #     #     #   #       #   #   # Value: # String
+      #     #     #   # # Variations:
+      #     #     #   #       # - # PlainTextMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #     # Title: # String
+      #     #     #   #       #     # # Subtitle: # String
+      #     #     #   #       #     # # ImageUrl: # String
+      #     #     #   #       #     # # Buttons:
+      #     #     #   #       #     #   # - Text: # String
+      #     #     #   #       #     #   # Value: # String
+      #     #     #   # # AllowInterrupt: # Boolean
+      #     #     # # IsActive: # Boolean
+      #     # # IntentClosingSetting:
+      #     #     # # ClosingResponse:
+      #     #     #   # MessageGroupsList:
+      #     #     #   # - # Message:
+      #     #     #   #       # # PlainTextMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #   # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #   # Title: # String
+      #     #     #   #       #   # # Subtitle: # String
+      #     #     #   #       #   # # ImageUrl: # String
+      #     #     #   #       #   # # Buttons:
+      #     #     #   #       #   #   # - Text: # String
+      #     #     #   #       #   #   # Value: # String
+      #     #     #   # # Variations:
+      #     #     #   #       # - # PlainTextMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # CustomPayload:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # SSMLMessage:
+      #     #     #   #       #     # Value: # String
+      #     #     #   #       # # ImageResponseCard:
+      #     #     #   #       #     # Title: # String
+      #     #     #   #       #     # # Subtitle: # String
+      #     #     #   #       #     # # ImageUrl: # String
+      #     #     #   #       #     # # Buttons:
+      #     #     #   #       #     #   # - Text: # String
+      #     #     #   #       #     #   # Value: # String
+      #     #     #   # # AllowInterrupt: # Boolean
+      #     #     # # IsActive: # Boolean
+      #     # # InputContexts:
+      #     #     # - Name: # String
+      #     # # OutputContexts:
+      #     #     # - Name: # String
+      #     #     # TimeToLiveInSeconds: # Integer
+      #     #     # TurnsToLive: # Integer
+      #     # # KendraConfiguration:
+      #     #     # KendraIndex: # String
+      #     #     # # QueryFilterStringEnabled: # Boolean
+      #     #     # # QueryFilterString: # String
+      #     # # SlotPriorities:
+      #     #     # - Priority: # Integer
+      #     #     # SlotName: # String
+      #     # # Slots:
+      #     #     # - Name: # String
+      #     #     # # Description: # String
+      #     #     # SlotTypeName: # String
+      #     #     # # ValueElicitationSetting:
+      #     #     #     # # DefaultValueSpecification:
+      #     #     #     #   # DefaultValueList:
+      #     #     #     #   # - DefaultValue: # String
+      #     #     #     # SlotConstraint: # String
+      #     #     #     # # PromptSpecification:
+      #     #     #     #   # MessageGroupsList:
+      #     #     #     #   # - # Message:
+      #     #     #     #   #       # # PlainTextMessage:
+      #     #     #     #   #       #   # Value: # String
+      #     #     #     #   #       # # CustomPayload:
+      #     #     #     #   #       #   # Value: # String
+      #     #     #     #   #       # # SSMLMessage:
+      #     #     #     #   #       #   # Value: # String
+      #     #     #     #   #       # # ImageResponseCard:
+      #     #     #     #   #       #   # Title: # String
+      #     #     #     #   #       #   # # Subtitle: # String
+      #     #     #     #   #       #   # # ImageUrl: # String
+      #     #     #     #   #       #   # # Buttons:
+      #     #     #     #   #       #   #   # - Text: # String
+      #     #     #     #   #       #   #   # Value: # String
+      #     #     #     #   # # Variations:
+      #     #     #     #   #       # - # PlainTextMessage:
+      #     #     #     #   #       #     # Value: # String
+      #     #     #     #   #       # # CustomPayload:
+      #     #     #     #   #       #     # Value: # String
+      #     #     #     #   #       # # SSMLMessage:
+      #     #     #     #   #       #     # Value: # String
+      #     #     #     #   #       # # ImageResponseCard:
+      #     #     #     #   #       #     # Title: # String
+      #     #     #     #   #       #     # # Subtitle: # String
+      #     #     #     #   #       #     # # ImageUrl: # String
+      #     #     #     #   #       #     # # Buttons:
+      #     #     #     #   #       #     #   # - Text: # String
+      #     #     #     #   #       #     #   # Value: # String
+      #     #     #     #   # MaxRetries: # Integer
+      #     #     #     #   # # AllowInterrupt: # Boolean
+      #     #     #     #   # # MessageSelectionStrategy: # String
+      #     #     #     #   # # PromptAttemptsSpecification:
+      #     #     #     #   #   # ANY_KEY: # AllowedInputTypes:
+      #     #     #     #   #   #     # AllowAudioInput: # Boolean
+      #     #     #     #   #   #     # AllowDTMFInput: # Boolean
+      #     #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #     #   #   # # AudioAndDTMFInputSpecification:
+      #     #     #     #   #   #     # StartTimeoutMs: # Integer
+      #     #     #     #   #   #     # # DTMFSpecification:
+      #     #     #     #   #   #     #   # DeletionCharacter: # String
+      #     #     #     #   #   #     #   # EndCharacter: # String
+      #     #     #     #   #   #     #   # EndTimeoutMs: # Integer
+      #     #     #     #   #   #     #   # MaxLength: # Integer
+      #     #     #     #   #   #     # # AudioSpecification:
+      #     #     #     #   #   #     #   # EndTimeoutMs: # Integer
+      #     #     #     #   #   #     #   # MaxLengthMs: # Integer
+      #     #     #     #   #   # # TextInputSpecification:
+      #     #     #     #   #   #     # StartTimeoutMs: # Integer
+      #     #     #     # # SampleUtterances:
+      #     #     #     #   # - Utterance: # String
+      #     #     #     # # WaitAndContinueSpecification:
+      #     #     #     #   # # WaitingResponse:
+      #     #     #     #   #   # MessageGroupsList:
+      #     #     #     #   #   # - # Message:
+      #     #     #     #   #   #       # # PlainTextMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #   # Title: # String
+      #     #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #     #   #   #       #   # # Buttons:
+      #     #     #     #   #   #       #   #   # - Text: # String
+      #     #     #     #   #   #       #   #   # Value: # String
+      #     #     #     #   #   # # Variations:
+      #     #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #     # Title: # String
+      #     #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #     #   #   #       #     # # Buttons:
+      #     #     #     #   #   #       #     #   # - Text: # String
+      #     #     #     #   #   #       #     #   # Value: # String
+      #     #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #     #   # # ContinueResponse:
+      #     #     #     #   #   # MessageGroupsList:
+      #     #     #     #   #   # - # Message:
+      #     #     #     #   #   #       # # PlainTextMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #   # Title: # String
+      #     #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #     #   #   #       #   # # Buttons:
+      #     #     #     #   #   #       #   #   # - Text: # String
+      #     #     #     #   #   #       #   #   # Value: # String
+      #     #     #     #   #   # # Variations:
+      #     #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #     # Title: # String
+      #     #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #     #   #   #       #     # # Buttons:
+      #     #     #     #   #   #       #     #   # - Text: # String
+      #     #     #     #   #   #       #     #   # Value: # String
+      #     #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #     #   # # StillWaitingResponse:
+      #     #     #     #   #   # MessageGroupsList:
+      #     #     #     #   #   # - # Message:
+      #     #     #     #   #   #       # # PlainTextMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #   # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #   # Title: # String
+      #     #     #     #   #   #       #   # # Subtitle: # String
+      #     #     #     #   #   #       #   # # ImageUrl: # String
+      #     #     #     #   #   #       #   # # Buttons:
+      #     #     #     #   #   #       #   #   # - Text: # String
+      #     #     #     #   #   #       #   #   # Value: # String
+      #     #     #     #   #   # # Variations:
+      #     #     #     #   #   #       # - # PlainTextMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # CustomPayload:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # SSMLMessage:
+      #     #     #     #   #   #       #     # Value: # String
+      #     #     #     #   #   #       # # ImageResponseCard:
+      #     #     #     #   #   #       #     # Title: # String
+      #     #     #     #   #   #       #     # # Subtitle: # String
+      #     #     #     #   #   #       #     # # ImageUrl: # String
+      #     #     #     #   #   #       #     # # Buttons:
+      #     #     #     #   #   #       #     #   # - Text: # String
+      #     #     #     #   #   #       #     #   # Value: # String
+      #     #     #     #   #   # FrequencyInSeconds: # Integer
+      #     #     #     #   #   # TimeoutInSeconds: # Integer
+      #     #     #     #   #   # # AllowInterrupt: # Boolean
+      #     #     #     #   # # IsActive: # Boolean
+      #     #     # # ObfuscationSetting:
+      #     #     #     # ObfuscationSettingType: # String
+      #     #     # # MultipleValuesSetting:
+      #     #     #     # # AllowMultipleValues: # Boolean
+      #     # SlotTypes:
+      #     # - Name: # String
+      #     # # Description: # String
+      #     # # ParentSlotTypeSignature: # String
+      #     # # SlotTypeValues:
+      #     #     # - # SampleValue:
+      #     #     #     # Value: # String
+      #     #     # # Synonyms:
+      #     #     #     # - Value: # String
+      #     # # ValueSelectionSetting:
+      #     #     # ResolutionStrategy: # String
+      #     #     # # RegexFilter:
+      #     #     #   # Pattern: # String
+      #     #     # # AdvancedRecognitionSetting:
+      #     #     #   # # AudioRecognitionStrategy: # String
+      #     # # ExternalSourceSetting:
+      #     #     # # GrammarSlotTypeSetting:
+      #     #     #   # # Source:
+      #     #     #   #   # S3BucketName: # String
+      #     #     #   #   # S3ObjectKey: # String
+      #     #     #   #   # # KmsKeyArn: # String
+      #     # CustomVocabulary:
+      #     # CustomVocabularyItems:
+      #     # - Phrase: # String
+      #     # # Weight: # Integer
+      # BotFileS3Location:
+      #   S3Bucket: # String
+      #   S3ObjectKey: # String
+      #   # S3ObjectVersion: # String
+      # BotTags:
+      #   - Key: # String
+      #     Value: # String
+      # TestBotAliasTags:
+      #   - Key: # String
+      #     Value: # String
+      # AutoBuildBotLocales: # Boolean
+      # TestBotAliasSettings:
+      #   # BotAliasLocaleSettings:
+      #   # - LocaleId: # String
+      #   # # BotAliasLocaleSetting:
+      #   #     # # CodeHookSpecification:
+      #   #     #   # # LambdaCodeHook:
+      #   #     #   #   # CodeHookInterfaceVersion: # String
+      #   #     #   #   # LambdaArn: # String
+      #   #     # Enabled: # Boolean
+      #   # ConversationLogSettings:
+      #   # # AudioLogSettings:
+      #   #   # - # Destination:
+      #   #   #     # # S3Bucket:
+      #   #   #     #   # S3BucketArn: # String
+      #   #   #     #   # LogPrefix: # String
+      #   #   #     #   # # KmsKeyArn: # String
+      #   #   # Enabled: # Boolean
+      #   # # TextLogSettings:
+      #   #   # - # Destination:
+      #   #   #     # # CloudWatch:
+      #   #   #     #   # CloudWatchLogGroupArn: # String
+      #   #   #     #   # LogPrefix: # String
+      #   #   # Enabled: # Boolean
+      #   # Description: # String
+      #   # SentimentAnalysisSettings: # Json
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

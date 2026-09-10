@@ -1,0 +1,24 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+# Insert issue number {{{
+branch_name="$(git rev-parse --abbrev-ref HEAD)"
+
+task_number="${branch_name##*/}"
+task_number="${task_number%%-*}"
+
+chars_in_head="$(head -n 1 "$COMMIT_MSG_FILE" | wc -c)"
+
+if [ "$chars_in_head" -le 1 ]
+then
+  if [[ "$task_number" =~ ^[0-9]+$ ]]
+  then
+    sed -i.bak -e "1i#${task_number}" "$COMMIT_MSG_FILE"
+  fi
+fi
+# }}}
+
+# acg generate-commit-message --write "$COMMIT_MSG_FILE"

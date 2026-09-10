@@ -1,0 +1,8 @@
+  MediaLiveInputSecurityGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-inputsecuritygroup.html
+    Type: AWS::MediaLive::InputSecurityGroup
+    Properties:
+      # WhitelistRules:
+      #   - # Cidr: # String
+      # Tags: # Json
+    # !GetAtt THIS.Arn (String)

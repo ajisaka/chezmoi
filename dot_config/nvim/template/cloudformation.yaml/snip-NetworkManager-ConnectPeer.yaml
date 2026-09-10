@@ -1,0 +1,20 @@
+  NetworkManagerConnectPeer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-connectpeer.html
+    Type: AWS::NetworkManager::ConnectPeer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-connectpeer.html
+      # PeerAddress: # String
+      # CoreNetworkAddress: # String
+      # BgpOptions:
+      #   # PeerAsn: # Double
+      # InsideCidrBlocks:
+      #   - # String
+      # ConnectAttachmentId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CoreNetworkId (String)
+    # !GetAtt THIS.ConnectPeerId (String)
+    # !GetAtt THIS.EdgeLocation (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.CreatedAt (String)

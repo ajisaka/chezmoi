@@ -1,0 +1,45 @@
+  GlueCrawler:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
+    Type: AWS::Glue::Crawler
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
+      # Classifiers:
+      #   - # String
+      # Description: # String
+      # SchemaChangePolicy:
+      #   # UpdateBehavior: # String
+      #   # DeleteBehavior: # String
+      # Configuration: # String
+      # RecrawlPolicy:
+      #   # RecrawlBehavior: # String
+      # DatabaseName: # String
+      # Targets:
+      #   # S3Targets:
+      #   # - # ConnectionName: # String
+      #   # # Path: # String
+      #   # # SampleSize: # Integer
+      #   # # Exclusions:
+      #   #     # - # String
+      #   # # DlqEventQueueArn: # String
+      #   # # EventQueueArn: # String
+      #   # CatalogTargets:
+      #   # - # DatabaseName: # String
+      #   # # Tables:
+      #   #     # - # String
+      #   # MongoDBTargets:
+      #   # - # ConnectionName: # String
+      #   # # Path: # String
+      #   # JdbcTargets:
+      #   # - # ConnectionName: # String
+      #   # # Path: # String
+      #   # # Exclusions:
+      #   #     # - # String
+      #   # DynamoDBTargets:
+      #   # - # Path: # String
+      # CrawlerSecurityConfiguration: # String
+      # Name: # String
+      Role: # String
+      # Schedule:
+      #   # ScheduleExpression: # String
+      # TablePrefix: # String
+      # Tags: # Json

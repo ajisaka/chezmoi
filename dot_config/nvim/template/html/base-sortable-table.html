@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+        integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+  </head>
+  <style>
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 0.5rem;
+    }
+    </style>
+  <body>
+    <table border="1" class="tablesorter">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left">Data 1</td>
+            <td align="right">Data 2</td>
+            <td align="right">Data 3</td>
+            <td align="right">Data 4</td>
+            <td align="center">Data 5</td>
+          </tr>
+        </tbody>
+    <ol>
+    <script>
+        $(document).ready(function() { $('table').tablesorter(); });
+    </script>
+  </body>
+</html>

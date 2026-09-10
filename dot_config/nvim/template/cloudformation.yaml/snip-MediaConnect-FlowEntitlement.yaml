@@ -1,0 +1,23 @@
+  MediaConnectFlowEntitlement:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flowentitlement.html
+    Type: AWS::MediaConnect::FlowEntitlement
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flowentitlement.html
+      FlowArn: # String
+      # DataTransferSubscriberFeePercent: # Integer
+      Description: # String
+      # Encryption:
+      #   Algorithm: # String
+      #   # ConstantInitializationVector: # String
+      #   # DeviceId: # String
+      #   # KeyType: # String
+      #   # Region: # String
+      #   # ResourceId: # String
+      #   RoleArn: # String
+      #   # SecretArn: # String
+      #   # Url: # String
+      # EntitlementStatus: # String
+      Name: # String
+      Subscribers:
+        - # String
+    # !GetAtt THIS.EntitlementArn (String)

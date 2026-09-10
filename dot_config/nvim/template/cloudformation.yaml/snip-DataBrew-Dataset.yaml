@@ -1,0 +1,67 @@
+  DataBrewDataset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-dataset.html
+    Type: AWS::DataBrew::Dataset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-dataset.html
+      Name: # String
+      # Format: # String
+      # FormatOptions:
+      #   # Json:
+      #   # # MultiLine: # Boolean
+      #   # Excel:
+      #   # # SheetNames:
+      #   #   # - # String
+      #   # # SheetIndexes:
+      #   #   # - # Integer
+      #   # # HeaderRow: # Boolean
+      #   # Csv:
+      #   # # Delimiter: # String
+      #   # # HeaderRow: # Boolean
+      # Input:
+      #   # S3InputDefinition:
+      #   # Bucket: # String
+      #   # # Key: # String
+      #   # DataCatalogInputDefinition:
+      #   # # CatalogId: # String
+      #   # # DatabaseName: # String
+      #   # # TableName: # String
+      #   # # TempDirectory:
+      #   #   # Bucket: # String
+      #   #   # # Key: # String
+      #   # DatabaseInputDefinition:
+      #   # GlueConnectionName: # String
+      #   # # DatabaseTableName: # String
+      #   # # TempDirectory:
+      #   #   # Bucket: # String
+      #   #   # # Key: # String
+      #   # # QueryString: # String
+      #   # Metadata:
+      #   # # SourceArn: # String
+      # PathOptions:
+      #   # FilesLimit:
+      #   # MaxFiles: # Integer
+      #   # # OrderedBy: # String
+      #   # # Order: # String
+      #   # LastModifiedDateCondition:
+      #   # Expression: # String
+      #   # ValuesMap:
+      #   # - ValueReference: # String
+      #   # Value: # String
+      #   # Parameters:
+      #   # - PathParameterName: # String
+      #   # # DatasetParameter:
+      #   #     # Name: # String
+      #   #     # Type: # String
+      #   #     # # DatetimeOptions:
+      #   #     #   # Format: # String
+      #   #     #   # # TimezoneOffset: # String
+      #   #     #   # # LocaleCode: # String
+      #   #     # # CreateColumn: # Boolean
+      #   #     # # Filter:
+      #   #     #   # Expression: # String
+      #   #     #   # ValuesMap:
+      #   #     #   # - ValueReference: # String
+      #   #     #   # Value: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

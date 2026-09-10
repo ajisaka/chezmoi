@@ -1,0 +1,29 @@
+  M2Environment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-m2-environment.html
+    Type: AWS::M2::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-m2-environment.html
+      # Description: # String
+      EngineType: # String
+      # EngineVersion: # String
+      # HighAvailabilityConfig:
+      #   DesiredCapacity: # Integer
+      InstanceType: # String
+      Name: # String
+      # PreferredMaintenanceWindow: # String
+      # PubliclyAccessible: # Boolean
+      # SecurityGroupIds:
+      #   - # String
+      # StorageConfigurations:
+      #   - # Efs:
+      #     # FileSystemId: # String
+      #     # MountPoint: # String
+      #     # Fsx:
+      #     # FileSystemId: # String
+      #     # MountPoint: # String
+      # SubnetIds:
+      #   - # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.EnvironmentArn (String)
+    # !GetAtt THIS.EnvironmentId (String)

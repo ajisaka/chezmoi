@@ -1,0 +1,12 @@
+  EC2TrafficMirrorTarget:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrortarget.html
+    Type: AWS::EC2::TrafficMirrorTarget
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrortarget.html
+      # NetworkLoadBalancerArn: # String
+      # Description: # String
+      # NetworkInterfaceId: # String
+      # GatewayLoadBalancerEndpointId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

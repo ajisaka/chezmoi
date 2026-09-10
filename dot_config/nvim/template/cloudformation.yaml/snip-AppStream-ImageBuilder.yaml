@@ -1,0 +1,29 @@
+  AppStreamImageBuilder:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html
+    Type: AWS::AppStream::ImageBuilder
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html
+      # Description: # String
+      # VpcConfig:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # EnableDefaultInternetAccess: # Boolean
+      # DomainJoinInfo:
+      #   # OrganizationalUnitDistinguishedName: # String
+      #   # DirectoryName: # String
+      # AppstreamAgentVersion: # String
+      Name: # String
+      # ImageName: # String
+      # DisplayName: # String
+      # IamRoleArn: # String
+      InstanceType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ImageArn: # String
+      # AccessEndpoints:
+      #   - EndpointType: # String
+      #     VpceId: # String
+    # !GetAtt THIS.StreamingUrl (String)

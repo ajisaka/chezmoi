@@ -1,0 +1,10 @@
+  SageMakerImageVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-imageversion.html
+    Type: AWS::SageMaker::ImageVersion
+    Properties:
+      ImageName: # String
+      BaseImage: # String
+    # !GetAtt THIS.ImageArn (String)
+    # !GetAtt THIS.ImageVersionArn (String)
+    # !GetAtt THIS.ContainerImage (String)
+    # !GetAtt THIS.Version (Integer)

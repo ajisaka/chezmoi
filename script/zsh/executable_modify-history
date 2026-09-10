@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+default=~/.zsh_history
+[ -f "$default" ] || default=~/buffer/home/.zsh_history
+
+target="${1:-$default}"
+
+tmpfn=$(mktemp)
+trap clean EXIT
+
+function clean () {
+  rm "$tmpfn"
+}
+
+~/script/zsh/unmetafy-history "$target" > "$tmpfn"
+
+if bash -c "$EDITOR $tmpfn"
+then
+  diff -u "$tmpfn" <(~/script/zsh/unmetafy-history "$target")
+
+  echo -n 'modify? (yes/no)'
+  read it
+
+  if [ "$it" = 'yes' ]
+  then
+    ~/script/zsh/metafy-history "$tmpfn" > "$target"
+    echo 'modified'
+  else
+    echo 'canceled'
+  fi
+fi

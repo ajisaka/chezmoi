@@ -1,0 +1,21 @@
+  ConnectHoursOfOperation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-hoursofoperation.html
+    Type: AWS::Connect::HoursOfOperation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-hoursofoperation.html
+      InstanceArn: # String
+      Name: # String
+      # Description: # String
+      TimeZone: # String
+      Config:
+        - Day: # String
+          # StartTime:
+          #   Hours: # Integer
+          #   Minutes: # Integer
+          # EndTime:
+          #   Hours: # Integer
+          #   Minutes: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.HoursOfOperationArn (String)

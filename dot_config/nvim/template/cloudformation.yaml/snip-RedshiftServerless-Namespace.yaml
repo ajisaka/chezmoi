@@ -1,0 +1,20 @@
+  RedshiftServerlessNamespace:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshiftserverless-namespace.html
+    Type: AWS::RedshiftServerless::Namespace
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshiftserverless-namespace.html
+      # AdminUserPassword: # String
+      # AdminUsername: # String
+      # DbName: # String
+      # DefaultIamRoleArn: # String
+      # IamRoles:
+      #   - # String
+      # KmsKeyId: # String
+      # LogExports:
+      #   - # String
+      NamespaceName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # FinalSnapshotName: # String
+      # FinalSnapshotRetentionPeriod: # Integer

@@ -1,0 +1,11 @@
+  AthenaNamedQuery:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
+      # Name: # String
+      Database: # String
+      # Description: # String
+      QueryString: # String
+      # WorkGroup: # String
+    # !GetAtt THIS.NamedQueryId (String)

@@ -1,0 +1,10 @@
+  GlueWorkflow:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-workflow.html
+    Type: AWS::Glue::Workflow
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-workflow.html
+      # Description: # String
+      # DefaultRunProperties: # Json
+      # Tags: # Json
+      # Name: # String
+      # MaxConcurrentRuns: # Integer

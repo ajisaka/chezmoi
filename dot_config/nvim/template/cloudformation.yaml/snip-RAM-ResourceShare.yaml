@@ -1,0 +1,17 @@
+  RAMResourceShare:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html
+    Type: AWS::RAM::ResourceShare
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ram-resourceshare.html
+      # PermissionArns:
+      #   - # String
+      # Principals:
+      #   - # String
+      # AllowExternalPrincipals: # Boolean
+      # ResourceArns:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+    # !GetAtt THIS.Arn (String)

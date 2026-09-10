@@ -1,0 +1,22 @@
+  WisdomKnowledgeBase:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wisdom-knowledgebase.html
+    Type: AWS::Wisdom::KnowledgeBase
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wisdom-knowledgebase.html
+      # Description: # String
+      KnowledgeBaseType: # String
+      Name: # String
+      # RenderingConfiguration:
+      #   # TemplateUri: # String
+      # ServerSideEncryptionConfiguration:
+      #   # KmsKeyId: # String
+      # SourceConfiguration:
+      #   # AppIntegrations:
+      #   # ObjectFields:
+      #   # - # String
+      #   # AppIntegrationArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.KnowledgeBaseArn (String)
+    # !GetAtt THIS.KnowledgeBaseId (String)

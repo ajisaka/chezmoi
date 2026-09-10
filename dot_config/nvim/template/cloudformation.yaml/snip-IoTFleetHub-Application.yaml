@@ -1,0 +1,19 @@
+  IoTFleetHubApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleethub-application.html
+    Type: AWS::IoTFleetHub::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleethub-application.html
+      ApplicationName: # String
+      # ApplicationDescription: # String
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ApplicationId (String)
+    # !GetAtt THIS.ApplicationArn (String)
+    # !GetAtt THIS.ApplicationUrl (String)
+    # !GetAtt THIS.ApplicationState (String)
+    # !GetAtt THIS.ApplicationCreationDate (Integer)
+    # !GetAtt THIS.ApplicationLastUpdateDate (Integer)
+    # !GetAtt THIS.SsoClientId (String)
+    # !GetAtt THIS.ErrorMessage (String)

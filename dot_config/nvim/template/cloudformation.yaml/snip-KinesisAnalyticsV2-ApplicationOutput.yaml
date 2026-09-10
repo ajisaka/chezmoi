@@ -1,0 +1,15 @@
+  KinesisAnalyticsV2ApplicationOutput:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html
+    Type: AWS::KinesisAnalyticsV2::ApplicationOutput
+    Properties:
+      ApplicationName: # String
+      # Output:
+      #   # DestinationSchema:
+      #   # # RecordFormatType: # String
+      #   # LambdaOutput:
+      #   # ResourceARN: # String
+      #   # KinesisFirehoseOutput:
+      #   # ResourceARN: # String
+      #   # KinesisStreamsOutput:
+      #   # ResourceARN: # String
+      #   # Name: # String

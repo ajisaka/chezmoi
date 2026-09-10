@@ -1,0 +1,8 @@
+customCommands:
+  - key: "C"
+    context: "files"
+    command: "git commit -v"
+    description: "Commit changes using git editor with diff"
+    output: terminal
+gui:
+  showIcons: true

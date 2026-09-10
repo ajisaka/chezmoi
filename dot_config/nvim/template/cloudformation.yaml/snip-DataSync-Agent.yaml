@@ -1,0 +1,17 @@
+  DataSyncAgent:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-agent.html
+    Type: AWS::DataSync::Agent
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-agent.html
+      # AgentName: # String
+      ActivationKey: # String
+      # SecurityGroupArns:
+      #   - # String
+      # SubnetArns:
+      #   - # String
+      # VpcEndpointId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EndpointType (String)
+    # !GetAtt THIS.AgentArn (String)

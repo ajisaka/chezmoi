@@ -1,0 +1,69 @@
+  MSKCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html
+    Type: AWS::MSK::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-cluster.html
+      # BrokerNodeGroupInfo:
+      #   # StorageInfo:
+      #   # # EBSStorageInfo:
+      #   #   # # VolumeSize: # Integer
+      #   #   # # ProvisionedThroughput:
+      #   #   #   # # Enabled: # Boolean
+      #   #   #   # # VolumeThroughput: # Integer
+      #   # ConnectivityInfo:
+      #   # # PublicAccess:
+      #   #   # # Type: # String
+      #   # SecurityGroups:
+      #   # - # String
+      #   # BrokerAZDistribution: # String
+      #   ClientSubnets:
+      #     - # String
+      #   InstanceType: # String
+      # EnhancedMonitoring: # String
+      KafkaVersion: # String
+      NumberOfBrokerNodes: # Integer
+      # EncryptionInfo:
+      #   # EncryptionAtRest:
+      #   # DataVolumeKMSKeyId: # String
+      #   # EncryptionInTransit:
+      #   # # InCluster: # Boolean
+      #   # # ClientBroker: # String
+      # OpenMonitoring:
+      #   # Prometheus:
+      #   # # JmxExporter:
+      #   #   # EnabledInBroker: # Boolean
+      #   # # NodeExporter:
+      #   #   # EnabledInBroker: # Boolean
+      ClusterName: # String
+      # CurrentVersion: # String
+      # ClientAuthentication:
+      #   # Tls:
+      #   # # CertificateAuthorityArnList:
+      #   #   # - # String
+      #   # # Enabled: # Boolean
+      #   # Sasl:
+      #   # # Scram:
+      #   #   # Enabled: # Boolean
+      #   # # Iam:
+      #   #   # Enabled: # Boolean
+      #   # Unauthenticated:
+      #   # Enabled: # Boolean
+      # LoggingInfo:
+      #   # BrokerLogs:
+      #   # # S3:
+      #   #   # Enabled: # Boolean
+      #   #   # # Prefix: # String
+      #   #   # # Bucket: # String
+      #   # # CloudWatchLogs:
+      #   #   # # LogGroup: # String
+      #   #   # Enabled: # Boolean
+      #   # # Firehose:
+      #   #   # Enabled: # Boolean
+      #   #   # # DeliveryStream: # String
+      # Tags:
+      #   ANY_KEY: # String
+      # ConfigurationInfo:
+      #   Revision: # Integer
+      #   Arn: # String
+      # StorageMode: # String
+    # !GetAtt THIS.Arn (String)

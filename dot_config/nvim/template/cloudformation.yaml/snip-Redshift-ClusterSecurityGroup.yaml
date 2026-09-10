@@ -1,0 +1,8 @@
+  RedshiftClusterSecurityGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html
+    Type: AWS::Redshift::ClusterSecurityGroup
+    Properties:
+      Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

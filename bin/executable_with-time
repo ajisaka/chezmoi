@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Usage
+#   with-time [<PREFIX> [<SUFFIX>]]
+#   標準入力からテキストを読み込み、各行にタイムスタンプと経過時間を追加して出力する
+
+prefix="${1:-}"
+suffix="${2:-}"
+
+
+at_start=$(date +'%s')
+
+while read -r line
+do
+  t=$(date +'%s')
+  min=$(( (t - at_start) / 60 ))
+  # shellcheck disable=1087
+  echo "$prefix[$(date '+%Y-%m-%dT%H:%M:%S' -d @"$t") ($min min)]$suffix $line"
+done

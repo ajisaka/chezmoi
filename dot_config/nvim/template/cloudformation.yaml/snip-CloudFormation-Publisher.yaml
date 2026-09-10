@@ -1,0 +1,10 @@
+  CloudFormationPublisher:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-publisher.html
+    Type: AWS::CloudFormation::Publisher
+    Properties:
+      AcceptTermsAndConditions: # Boolean
+      # ConnectionArn: # String
+    # !GetAtt THIS.PublisherId (String)
+    # !GetAtt THIS.PublisherStatus (String)
+    # !GetAtt THIS.PublisherProfile (String)
+    # !GetAtt THIS.IdentityProvider (String)

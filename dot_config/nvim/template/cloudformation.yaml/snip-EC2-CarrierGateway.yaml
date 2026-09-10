@@ -1,0 +1,11 @@
+  EC2CarrierGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-carriergateway.html
+    Type: AWS::EC2::CarrierGateway
+    Properties:
+      VpcId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CarrierGatewayId (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.OwnerId (String)

@@ -1,0 +1,39 @@
+  FMSPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fms-policy.html
+    Type: AWS::FMS::Policy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fms-policy.html
+      # ExcludeMap:
+      #   # ACCOUNT:
+      #   # - # String
+      #   # ORGUNIT:
+      #   # - # String
+      ExcludeResourceTags: # Boolean
+      # IncludeMap:
+      #   # ACCOUNT:
+      #   # - # String
+      #   # ORGUNIT:
+      #   # - # String
+      PolicyName: # String
+      RemediationEnabled: # Boolean
+      # ResourceTags:
+      #   - Key: # String
+      #     # Value: # String
+      ResourceType: # String
+      # ResourceTypeList:
+      #   - # String
+      # SecurityServicePolicyData:
+      #   # ManagedServiceData: # String
+      #   Type: # String
+      #   # PolicyOption:
+      #   # # NetworkFirewallPolicy:
+      #   #   # FirewallDeploymentModel: # String
+      #   # # ThirdPartyFirewallPolicy:
+      #   #   # FirewallDeploymentModel: # String
+      # DeleteAllPolicyResources: # Boolean
+      # ResourcesCleanUp: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

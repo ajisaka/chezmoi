@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+export ENVRC_LOADED=0
+# shellcheck disable=SC1090
+source ~/.envrc
+
+# export QT_SCALE_FACTOR=2
+# export GDK_SCALE=2
+
+if [ "$XDG_BACKEND" = wayland ]
+then
+  export XMODIFIERS=@im=fcitx
+  export GTK_IM_MODULE=fcitx
+  export QT_IM_MODULE=fcitx
+
+  # Workaround for font corruption - https://nox.local.anekos.com/doc/view/issue/Neovim%20Rendering%20Corruption
+  # export QT_QPA_PLATFORM=xcb nvim-qt
+  export QT_QPA_PLATFORM=wayland
+  export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+  unset ANEKOS_FLOAT_ID
+
+  export NVIM_QT_LINUX=1
+  exec nvim-qt "$@"
+  # exec neoray "$@"
+  # exec neovide --fork --no-multigrid --no-vsync "$@"
+  # exec goneovim "$@"
+else
+  exec nvim-qt "$@"
+fi

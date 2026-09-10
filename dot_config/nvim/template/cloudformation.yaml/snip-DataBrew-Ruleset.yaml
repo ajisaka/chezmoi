@@ -1,0 +1,25 @@
+  DataBrewRuleset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-ruleset.html
+    Type: AWS::DataBrew::Ruleset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-ruleset.html
+      Name: # String
+      # Description: # String
+      TargetArn: # String
+      Rules:
+        - Name: # String
+          # Disabled: # Boolean
+          CheckExpression: # String
+          # SubstitutionMap:
+          #   - ValueReference: # String
+          #     Value: # String
+          # Threshold:
+          #   Value: # Double
+          #   # Type: # String
+          #   # Unit: # String
+          # ColumnSelectors:
+          #   - # Regex: # String
+          #     # Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

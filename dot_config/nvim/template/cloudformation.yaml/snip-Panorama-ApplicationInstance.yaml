@@ -1,0 +1,27 @@
+  PanoramaApplicationInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-panorama-applicationinstance.html
+    Type: AWS::Panorama::ApplicationInstance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-panorama-applicationinstance.html
+      # Name: # String
+      # Description: # String
+      # ManifestPayload:
+      #   # PayloadData: # String
+      # ManifestOverridesPayload:
+      #   # PayloadData: # String
+      # RuntimeRoleArn: # String
+      DefaultRuntimeContextDevice: # String
+      # ApplicationInstanceIdToReplace: # String
+      # DeviceId: # String
+      # StatusFilter: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DefaultRuntimeContextDeviceName (String)
+    # !GetAtt THIS.ApplicationInstanceId (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.HealthStatus (String)
+    # !GetAtt THIS.StatusDescription (String)
+    # !GetAtt THIS.CreatedTime (Integer)
+    # !GetAtt THIS.LastUpdatedTime (Integer)
+    # !GetAtt THIS.Arn (String)

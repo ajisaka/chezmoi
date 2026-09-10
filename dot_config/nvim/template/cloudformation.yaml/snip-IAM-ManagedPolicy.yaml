@@ -1,0 +1,15 @@
+  IAMManagedPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
+      # Description: # String
+      # Groups:
+      #   - # String
+      # ManagedPolicyName: # String
+      # Path: # String
+      PolicyDocument: # Json
+      # Roles:
+      #   - # String
+      # Users:
+      #   - # String

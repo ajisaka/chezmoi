@@ -1,0 +1,9 @@
+  SESReceiptFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html
+    Type: AWS::SES::ReceiptFilter
+    Properties:
+      # Filter:
+      #   # IpFilter:
+      #   # Policy: # String
+      #   # Cidr: # String
+      #   # Name: # String

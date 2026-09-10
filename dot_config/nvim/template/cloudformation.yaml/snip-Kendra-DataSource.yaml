@@ -1,0 +1,318 @@
+  KendraDataSource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kendra-datasource.html
+    Type: AWS::Kendra::DataSource
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kendra-datasource.html
+      Name: # String
+      IndexId: # String
+      Type: # String
+      # DataSourceConfiguration:
+      #   # S3Configuration:
+      #   # BucketName: # String
+      #   # # InclusionPrefixes:
+      #   #   # - # String
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # # DocumentsMetadataConfiguration:
+      #   #   # # S3Prefix: # String
+      #   # # AccessControlListConfiguration:
+      #   #   # # KeyPath: # String
+      #   # SharePointConfiguration:
+      #   # SharePointVersion: # String
+      #   # Urls:
+      #   # - # String
+      #   # SecretArn: # String
+      #   # # CrawlAttachments: # Boolean
+      #   # # UseChangeLog: # Boolean
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # # VpcConfiguration:
+      #   #   # SubnetIds:
+      #   #   # - # String
+      #   #   # SecurityGroupIds:
+      #   #   # - # String
+      #   # # FieldMappings:
+      #   #   # - DataSourceFieldName: # String
+      #   #   # # DateFieldFormat: # String
+      #   #   # IndexFieldName: # String
+      #   # # DocumentTitleFieldName: # String
+      #   # # DisableLocalGroups: # Boolean
+      #   # # SslCertificateS3Path:
+      #   #   # Bucket: # String
+      #   #   # Key: # String
+      #   # SalesforceConfiguration:
+      #   # ServerUrl: # String
+      #   # SecretArn: # String
+      #   # # StandardObjectConfigurations:
+      #   #   # - Name: # String
+      #   #   # DocumentDataFieldName: # String
+      #   #   # # DocumentTitleFieldName: # String
+      #   #   # # FieldMappings:
+      #   #   #     # - DataSourceFieldName: # String
+      #   #   #     # # DateFieldFormat: # String
+      #   #   #     # IndexFieldName: # String
+      #   # # KnowledgeArticleConfiguration:
+      #   #   # IncludedStates:
+      #   #   # - # String
+      #   #   # # StandardKnowledgeArticleTypeConfiguration:
+      #   #   #   # DocumentDataFieldName: # String
+      #   #   #   # # DocumentTitleFieldName: # String
+      #   #   #   # # FieldMappings:
+      #   #   #   #   # - DataSourceFieldName: # String
+      #   #   #   #   # # DateFieldFormat: # String
+      #   #   #   #   # IndexFieldName: # String
+      #   #   # # CustomKnowledgeArticleTypeConfigurations:
+      #   #   #   # - Name: # String
+      #   #   #   # DocumentDataFieldName: # String
+      #   #   #   # # DocumentTitleFieldName: # String
+      #   #   #   # # FieldMappings:
+      #   #   #   #     # - DataSourceFieldName: # String
+      #   #   #   #     # # DateFieldFormat: # String
+      #   #   #   #     # IndexFieldName: # String
+      #   # # ChatterFeedConfiguration:
+      #   #   # DocumentDataFieldName: # String
+      #   #   # # DocumentTitleFieldName: # String
+      #   #   # # FieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   #   # # IncludeFilterTypes:
+      #   #   #   # - # String
+      #   # # CrawlAttachments: # Boolean
+      #   # # StandardObjectAttachmentConfiguration:
+      #   #   # # DocumentTitleFieldName: # String
+      #   #   # # FieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # # IncludeAttachmentFilePatterns:
+      #   #   # - # String
+      #   # # ExcludeAttachmentFilePatterns:
+      #   #   # - # String
+      #   # OneDriveConfiguration:
+      #   # TenantDomain: # String
+      #   # SecretArn: # String
+      #   # # OneDriveUsers:
+      #   #   # # OneDriveUserList:
+      #   #   #   # - # String
+      #   #   # # OneDriveUserS3Path:
+      #   #   #   # Bucket: # String
+      #   #   #   # Key: # String
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # # FieldMappings:
+      #   #   # - DataSourceFieldName: # String
+      #   #   # # DateFieldFormat: # String
+      #   #   # IndexFieldName: # String
+      #   # # DisableLocalGroups: # Boolean
+      #   # ServiceNowConfiguration:
+      #   # HostUrl: # String
+      #   # SecretArn: # String
+      #   # ServiceNowBuildVersion: # String
+      #   # # AuthenticationType: # String
+      #   # # KnowledgeArticleConfiguration:
+      #   #   # # CrawlAttachments: # Boolean
+      #   #   # # IncludeAttachmentFilePatterns:
+      #   #   #   # - # String
+      #   #   # # ExcludeAttachmentFilePatterns:
+      #   #   #   # - # String
+      #   #   # DocumentDataFieldName: # String
+      #   #   # # DocumentTitleFieldName: # String
+      #   #   # # FieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   #   # # FilterQuery: # String
+      #   # # ServiceCatalogConfiguration:
+      #   #   # # CrawlAttachments: # Boolean
+      #   #   # # IncludeAttachmentFilePatterns:
+      #   #   #   # - # String
+      #   #   # # ExcludeAttachmentFilePatterns:
+      #   #   #   # - # String
+      #   #   # DocumentDataFieldName: # String
+      #   #   # # DocumentTitleFieldName: # String
+      #   #   # # FieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # DatabaseConfiguration:
+      #   # DatabaseEngineType: # String
+      #   # # ConnectionConfiguration:
+      #   #   # DatabaseHost: # String
+      #   #   # DatabasePort: # Integer
+      #   #   # DatabaseName: # String
+      #   #   # TableName: # String
+      #   #   # SecretArn: # String
+      #   # # VpcConfiguration:
+      #   #   # SubnetIds:
+      #   #   # - # String
+      #   #   # SecurityGroupIds:
+      #   #   # - # String
+      #   # # ColumnConfiguration:
+      #   #   # DocumentIdColumnName: # String
+      #   #   # DocumentDataColumnName: # String
+      #   #   # # DocumentTitleColumnName: # String
+      #   #   # # FieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   #   # ChangeDetectingColumns:
+      #   #   # - # String
+      #   # # AclConfiguration:
+      #   #   # AllowedGroupsColumnName: # String
+      #   # # SqlConfiguration:
+      #   #   # # QueryIdentifiersEnclosingOption: # String
+      #   # ConfluenceConfiguration:
+      #   # ServerUrl: # String
+      #   # SecretArn: # String
+      #   # Version: # String
+      #   # # SpaceConfiguration:
+      #   #   # # CrawlPersonalSpaces: # Boolean
+      #   #   # # CrawlArchivedSpaces: # Boolean
+      #   #   # # IncludeSpaces:
+      #   #   #   # - # String
+      #   #   # # ExcludeSpaces:
+      #   #   #   # - # String
+      #   #   # # SpaceFieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # # PageConfiguration:
+      #   #   # # PageFieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # # BlogConfiguration:
+      #   #   # # BlogFieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # # AttachmentConfiguration:
+      #   #   # # CrawlAttachments: # Boolean
+      #   #   # # AttachmentFieldMappings:
+      #   #   #   # - DataSourceFieldName: # String
+      #   #   #   # # DateFieldFormat: # String
+      #   #   #   # IndexFieldName: # String
+      #   # # VpcConfiguration:
+      #   #   # SubnetIds:
+      #   #   # - # String
+      #   #   # SecurityGroupIds:
+      #   #   # - # String
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # GoogleDriveConfiguration:
+      #   # SecretArn: # String
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # # FieldMappings:
+      #   #   # - DataSourceFieldName: # String
+      #   #   # # DateFieldFormat: # String
+      #   #   # IndexFieldName: # String
+      #   # # ExcludeMimeTypes:
+      #   #   # - # String
+      #   # # ExcludeUserAccounts:
+      #   #   # - # String
+      #   # # ExcludeSharedDrives:
+      #   #   # - # String
+      #   # WebCrawlerConfiguration:
+      #   # # Urls:
+      #   #   # # SeedUrlConfiguration:
+      #   #   #   # SeedUrls:
+      #   #   #   # - # String
+      #   #   #   # # WebCrawlerMode: # String
+      #   #   # # SiteMapsConfiguration:
+      #   #   #   # SiteMaps:
+      #   #   #   # - # String
+      #   # # CrawlDepth: # Integer
+      #   # # MaxLinksPerPage: # Integer
+      #   # # MaxContentSizePerPageInMegaBytes: # Double
+      #   # # MaxUrlsPerMinuteCrawlRate: # Integer
+      #   # # UrlInclusionPatterns:
+      #   #   # - # String
+      #   # # UrlExclusionPatterns:
+      #   #   # - # String
+      #   # # ProxyConfiguration:
+      #   #   # Host: # String
+      #   #   # Port: # Integer
+      #   #   # # Credentials: # String
+      #   # # AuthenticationConfiguration:
+      #   #   # # BasicAuthentication:
+      #   #   #   # - Host: # String
+      #   #   #   # Port: # Integer
+      #   #   #   # Credentials: # String
+      #   # WorkDocsConfiguration:
+      #   # OrganizationId: # String
+      #   # # CrawlComments: # Boolean
+      #   # # UseChangeLog: # Boolean
+      #   # # InclusionPatterns:
+      #   #   # - # String
+      #   # # ExclusionPatterns:
+      #   #   # - # String
+      #   # # FieldMappings:
+      #   #   # - DataSourceFieldName: # String
+      #   #   # # DateFieldFormat: # String
+      #   #   # IndexFieldName: # String
+      # Description: # String
+      # Schedule: # String
+      # RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CustomDocumentEnrichmentConfiguration:
+      #   # InlineConfigurations:
+      #   # - # Condition:
+      #   #     # ConditionDocumentAttributeKey: # String
+      #   #     # Operator: # String
+      #   #     # # ConditionOnValue:
+      #   #     #   # # StringValue: # String
+      #   #     #   # # StringListValue:
+      #   #     #   #   # - # String
+      #   #     #   # # LongValue: # Integer
+      #   #     #   # # DateValue: # String
+      #   # # Target:
+      #   #     # TargetDocumentAttributeKey: # String
+      #   #     # # TargetDocumentAttributeValueDeletion: # Boolean
+      #   #     # # TargetDocumentAttributeValue:
+      #   #     #   # # StringValue: # String
+      #   #     #   # # StringListValue:
+      #   #     #   #   # - # String
+      #   #     #   # # LongValue: # Integer
+      #   #     #   # # DateValue: # String
+      #   # # DocumentContentDeletion: # Boolean
+      #   # PreExtractionHookConfiguration:
+      #   # # InvocationCondition:
+      #   #   # ConditionDocumentAttributeKey: # String
+      #   #   # Operator: # String
+      #   #   # # ConditionOnValue:
+      #   #   #   # # StringValue: # String
+      #   #   #   # # StringListValue:
+      #   #   #   #   # - # String
+      #   #   #   # # LongValue: # Integer
+      #   #   #   # # DateValue: # String
+      #   # LambdaArn: # String
+      #   # S3Bucket: # String
+      #   # PostExtractionHookConfiguration:
+      #   # # InvocationCondition:
+      #   #   # ConditionDocumentAttributeKey: # String
+      #   #   # Operator: # String
+      #   #   # # ConditionOnValue:
+      #   #   #   # # StringValue: # String
+      #   #   #   # # StringListValue:
+      #   #   #   #   # - # String
+      #   #   #   # # LongValue: # Integer
+      #   #   #   # # DateValue: # String
+      #   # LambdaArn: # String
+      #   # S3Bucket: # String
+      #   # RoleArn: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

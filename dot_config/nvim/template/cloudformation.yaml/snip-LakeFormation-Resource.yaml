@@ -1,0 +1,7 @@
+  LakeFormationResource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-resource.html
+    Type: AWS::LakeFormation::Resource
+    Properties:
+      ResourceArn: # String
+      UseServiceLinkedRole: # Boolean
+      # RoleArn: # String

@@ -1,0 +1,14 @@
+  AutoScalingScheduledAction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-scheduledaction.html
+    Type: AWS::AutoScaling::ScheduledAction
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-scheduledaction.html
+      # MinSize: # Integer
+      # Recurrence: # String
+      # TimeZone: # String
+      # EndTime: # String
+      AutoScalingGroupName: # String
+      # StartTime: # String
+      # DesiredCapacity: # Integer
+      # MaxSize: # Integer
+    # !GetAtt THIS.ScheduledActionName (String)

@@ -1,0 +1,12 @@
+  DataBrewSchedule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-schedule.html
+    Type: AWS::DataBrew::Schedule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-schedule.html
+      # JobNames:
+      #   - # String
+      CronExpression: # String
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

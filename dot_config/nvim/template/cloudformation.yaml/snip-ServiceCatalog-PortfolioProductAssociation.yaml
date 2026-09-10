@@ -1,0 +1,9 @@
+  ServiceCatalogPortfolioProductAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html
+    Type: AWS::ServiceCatalog::PortfolioProductAssociation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html
+      # SourcePortfolioId: # String
+      # AcceptLanguage: # String
+      PortfolioId: # String
+      ProductId: # String

@@ -1,0 +1,26 @@
+  MediaConnectFlowOutput:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flowoutput.html
+    Type: AWS::MediaConnect::FlowOutput
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flowoutput.html
+      FlowArn: # String
+      # CidrAllowList:
+      #   - # String
+      # Encryption:
+      #   # Algorithm: # String
+      #   # KeyType: # String
+      #   RoleArn: # String
+      #   SecretArn: # String
+      # Description: # String
+      # Destination: # String
+      # MaxLatency: # Integer
+      # MinLatency: # Integer
+      # Name: # String
+      # Port: # Integer
+      Protocol: # String
+      # RemoteId: # String
+      # SmoothingLatency: # Integer
+      # StreamId: # String
+      # VpcInterfaceAttachment:
+      #   # VpcInterfaceName: # String
+    # !GetAtt THIS.OutputArn (String)

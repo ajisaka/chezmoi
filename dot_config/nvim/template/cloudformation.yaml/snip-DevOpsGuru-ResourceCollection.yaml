@@ -1,0 +1,13 @@
+  DevOpsGuruResourceCollection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-resourcecollection.html
+    Type: AWS::DevOpsGuru::ResourceCollection
+    Properties:
+      # ResourceCollectionFilter:
+      #   # CloudFormation:
+      #   # # StackNames:
+      #   #   # - # String
+      #   # Tags:
+      #   # - # AppBoundaryKey: # String
+      #   # # TagValues:
+      #   #     # - # String
+    # !GetAtt THIS.ResourceCollectionType (String)

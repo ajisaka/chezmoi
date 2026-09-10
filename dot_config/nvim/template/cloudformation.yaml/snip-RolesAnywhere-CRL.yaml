@@ -1,0 +1,13 @@
+  RolesAnywhereCRL:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-crl.html
+    Type: AWS::RolesAnywhere::CRL
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-crl.html
+      # CrlData: # String
+      # Enabled: # Boolean
+      # Name: # String
+      # TrustAnchorArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CrlId (String)

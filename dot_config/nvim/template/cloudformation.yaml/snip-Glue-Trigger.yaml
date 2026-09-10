@@ -1,0 +1,31 @@
+  GlueTrigger:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
+    Type: AWS::Glue::Trigger
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
+      Type: # String
+      # StartOnCreation: # Boolean
+      # Description: # String
+      Actions:
+        - # NotificationProperty:
+          #   # NotifyDelayAfter: # Integer
+          # CrawlerName: # String
+          # Timeout: # Integer
+          # JobName: # String
+          # Arguments: # Json
+          # SecurityConfiguration: # String
+      # EventBatchingCondition:
+      #   BatchSize: # Integer
+      #   # BatchWindow: # Integer
+      # WorkflowName: # String
+      # Schedule: # String
+      # Tags: # Json
+      # Name: # String
+      # Predicate:
+      #   # Logical: # String
+      #   # Conditions:
+      #   # - # CrawlerName: # String
+      #   # # State: # String
+      #   # # CrawlState: # String
+      #   # # LogicalOperator: # String
+      #   # # JobName: # String

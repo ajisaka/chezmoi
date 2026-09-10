@@ -1,0 +1,22 @@
+  AmplifyDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html
+    Type: AWS::Amplify::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html
+      AppId: # String
+      # AutoSubDomainCreationPatterns:
+      #   - # String
+      # AutoSubDomainIAMRole: # String
+      DomainName: # String
+      # EnableAutoSubDomain: # Boolean
+      SubDomainSettings:
+        - Prefix: # String
+          BranchName: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.AutoSubDomainCreationPatterns (List)
+    # !GetAtt THIS.AutoSubDomainIAMRole (String)
+    # !GetAtt THIS.CertificateRecord (String)
+    # !GetAtt THIS.DomainName (String)
+    # !GetAtt THIS.DomainStatus (String)
+    # !GetAtt THIS.EnableAutoSubDomain (Boolean)
+    # !GetAtt THIS.StatusReason (String)

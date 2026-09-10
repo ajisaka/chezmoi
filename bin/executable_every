@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+usage () {
+  echo "$0 [-l] [-h] [-i <INTERVAL>] [-c] <COMMAND_LINE...>
+
+Options:
+  -l    Output with linebreak
+  -h    This help
+  -i    Interval (seconds, default: 1)
+  -c    Use 'bash -c'
+"
+}
+
+interval=1
+linebreak=0
+bash_c=0
+
+# 後ろに `:` があるオプションは値を取る
+# 先頭に `:` があると、自動エラー検知が省略される
+while getopts 'lhi:c' OPTION
+do
+  case "$OPTION" in
+    c)
+      bash_c=1
+      ;;
+    l)
+      linebreak=1
+      ;;
+    i)
+      interval=$OPTARG
+      ;;
+    h)
+      usage
+      exit
+    ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+while sleep "$interval"
+do
+  if [ "$bash_c" -eq 1 ]
+  then
+    bash -c "$*"
+  else
+    "$@"
+  fi
+  [ "$linebreak" -eq 1 ] && echo ''
+done
+

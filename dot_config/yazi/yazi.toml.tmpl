@@ -1,0 +1,324 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+# Preset: https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/yazi-default.toml
+# Manual: https://yazi-rs.github.io/docs/configuration/yazi
+
+# - %s … 選択ファイルパス群（旧 $@ / %*）
+# - %sN … N番目の選択ファイル（旧 $N / %N）
+# - %h … ホバーファイルのパス（旧 $0 / %0）
+# - %d / %dN … 選択ファイル（N番目）のディレクトリ名
+# - 大文字版 %S / %SN / %H / %D / %DN … 同じ対象を URL 形式（Splatter/UrlLike によるリモート/アーカイブ内パス対応）で取得
+# - %% … % 自体のエスケープ
+
+[mgr]
+
+title_format = '{cwd} - yazi'
+scroll_off = 10
+# ratio = [2, 5, 10]
+# linemode = "page_count"
+
+[preview]
+
+max_width = 1280
+max_height = 960
+cache_dir = '~/.cache/yazi/preview'
+image_quality = 60
+
+[input]
+
+cursor_blink = true
+
+
+[plugin]
+
+# Piper - https://github.com/yazi-rs/plugins/tree/main/piper.yazi
+prepend_previewers = [
+  { mime = "message/rfc822", run = 'piper -- uv run --project ~/.config/yazi/script python ~/.config/yazi/script/preview-email %s1' },
+  { url = "*.md", run = 'piper -- bat -p --color=always "$1"' },
+  { url = "*.stl", run = "openscad" },
+  { url = "*.3mf", run = "openscad" },
+  # { name = "*.csv", run = "duckdb" },
+  # { name = "*.tsv", run = "duckdb" },
+  # { name = "*.json", run = "duckdb" },
+  # { name = "*.parquet", run = "duckdb" },
+  # { name = "*.txt", run = "duckdb" },
+  # { name = "*.xlsx", run = "duckdb" },
+  # { name = "*.db", run = "duckdb" },
+  # { name = "*.duckdb", run = "duckdb" },
+]
+
+prepend_preloaders = [
+  # { name = "*.csv", run = "duckdb", multi = false },
+  # { name = "*.tsv", run = "duckdb", multi = false },
+  # { name = "*.json", run = "duckdb", multi = false },
+  # { name = "*.parquet", run = "duckdb", multi = false },
+  # { name = "*.txt", run = "duckdb", multi = false },
+  # { name = "*.xlsx", run = "duckdb", multi = false },
+  { url = "*.stl", run = "openscad" },
+  { url = "*.3mf", run = "openscad" },
+  # { name = "*.pdf", run = "page_count" },
+]
+
+[opener]
+
+animation_wallaper = [
+  { run = '~/res/animation-wallpaper/script/update main %s', desc = 'Wallpaper main', orphan = true, for = "unix" },
+  { run = '~/res/animation-wallpaper/script/update top %s', desc = 'Wallpaper top', orphan = true, for = "unix" },
+  { run = '~/res/animation-wallpaper/script/update right %s', desc = 'Wallpaper right', orphan = true, for = "unix" },
+]
+
+archive = [
+  { run = 'lsar %s | less', desc = 'Show archive contents', orphan = false, block = true, for = "unix" },
+]
+
+audio = [
+  { run = 'mpv --no-video %s', desc = 'mpv w/o window', orphan = true, block = false },
+  { run = 'oa -s m amberol %s', desc = 'amberol', orphan = true, block = false },
+]
+
+book = [
+  { run = 'oa -f -d okular %s', desc = 'Okular', block = false, orphan = true },
+  { run = 'oa -f -d evince --presentation %s', desc = 'Evince', block = false, orphan = true },
+  { run = '~/script/file/manage-book --push %s', desc = 'Push to android device', orphan = false, block = true },
+]
+
+chezmoi = [
+  { run = '~/script/work/chezmoi/mark4work %s', desc = 'Mark for work', block = false, orphan = true },
+]
+
+ebook = [
+  { run = 'to-pdf %s', desc = 'Convert to PDF', block = true, orphan = false },
+]
+
+comic = [
+  { run = 'oa -f -d chrysoberyl %s', desc = 'Chrysoberyl', block = false, orphan = true },
+  { run = 'book-manager local open chrysoberyl --session %s1', desc = 'From Bookmarked', block = false, orphan = true },
+  { run = 'oa -f -d zathura %s', desc = 'Zatuhra', block = false, orphan = true },
+]
+
+directory = [
+  { run = 'ya emit enter', desc = 'Enter' },
+  { run = 'nemo %s', orphan = true, block = false },
+  { run = 'thumbpick %s', orphan = true, block = false },
+  { run = 'rmdir %s', orphan = false, block = true },
+  { run = 'hrdd %s', orphan = false, block = true, desc = "hrder" },
+  { run = 'hrdd -s %s', orphan = false, block = true, desc = "herdr in sandbox" },
+]
+
+gcode = [
+  { run = 'creality-command upload --print %s1', desc = 'Print', block = false, orphan = true },
+  { run = 'creality-command upload %s1', desc = 'Upload', block = false, orphan = true },
+]
+
+html = [{ run = 'xdg-open %s', desc = 'XDG Open' }]
+
+image = [
+  { run = 'oa -f -d chrysoberyl %s @@expand', desc = 'Chrysoberyl', orphan = true, block = false, for = "linux" },
+  { run = 'oa -f -d swayimg %s', desc = 'swayimg', orphan = true, block = false, for = "linux" },
+  { run = 'oa -f -d rsiv %s', desc = 'rsiv', orphan = true, block = false, for = "linux" },
+  { run = 'satty --filename %s', desc = 'satty', orphan = true, block = false, for = "linux" },
+  { run = 'krita %s', desc = 'Krita', orphan = true, block = false, for = "linux" },
+  { run = 'open -a Preview %s', desc = 'Preview', orphan = true, block = false, for = "macos" },
+  { run = 'open -a Photos %s', desc = 'Photos', orphan = true, block = false, for = "macos" },
+  { run = '~/.config/yazi/script/convert-image jpg %s', desc = 'To JPEG', orphan = false, block = true },
+  { run = '~/.config/yazi/script/convert-image png %s', desc = 'To PNG', orphan = false, block = true },
+]
+
+liname = [{ run = 'liname %s', desc = 'Liname files', block = true }]
+
+markdown = [
+  { run = 'viv %s', desc = 'View by viv', orphan = true, block = false },
+  { run = 'marker --preview %s', desc = 'View by Marker', orphan = true, block = false },
+  { run = 'ghostwriter %s', desc = 'Edit by Ghost Writer', orphan = true, block = false },
+]
+
+media = [
+  { run = 'oa -f -d mpv --force-window %s', desc = 'mpv in other workspace', orphan = true, for = "unix" },
+  { run = 'oa -f -d vlc %s', orphan = true, block = false },
+]
+
+music = [
+  { run = 'mpd-add %s', desc = 'Add files to MPD', orphan = false, block = true },
+]
+
+pdf = [
+  { run = '~/script/pdf/crop-frames %s', desc = 'Crop frames', orphan = false, block = true },
+  { run = '~/script/pdf/cut-lasts %s', desc = 'Cut last pages', orphan = false, block = true },
+  { run = 'book-manager edit run %s1 -- oa -f -d pdfarranger %s1', desc = 'Arrange PDF', orphan = true, block = false },
+]
+
+scanned = [
+  { run = 'oa -f -s c chrysoberyl @@set rotation 3 @@map input period @cover @@ %s', desc = '@cover', block = false, orphan = true },
+]
+
+stl = [
+  { run = 'oa -f -d fstl %s', block = false, orphan = true },
+  { run = 'OrcaSlicer %s', desc = 'Orca Slicer', block = false, orphan = true },
+  { run = 'CrealityPrint5 %s', desc = 'Creality Print v5', block = false, orphan = true },
+  { run = 'CrealityPrint7 %s', desc = 'Creality Print v7', block = false, orphan = true },
+  { run = 'stl-manipulator split %s', desc = 'Split STL', block = true, orphan = false },
+]
+
+text = [
+  { run = 'nvim -- %s', block = true, desc = 'Edit by nvim' },
+  { run = 'nv -- %s', orphan = true, block = false, desc = 'Edit by GUI nvim' },
+]
+
+url = [
+  { run = 'open-url %s', desc = 'Open the URL', orphan = true, block = false },
+]
+
+# Temporary {{{
+unsorted = [
+  { run = '~/script/chezmoi/restore %s', desc = 'Restore', block = true, orphan = false },
+]
+temp_book_pdf = [
+  { run = 'oa -f -s c chrysoberyl @@map input period @cover @@ %s', desc = '@cover', block = false, orphan = true },
+]
+temp_book_entry = [
+  { run = '~/script/temporary/book/done %s', desc = '@done', block = false, orphan = true },
+  { run = '~/script/temporary/book/pdf-and-done %s', desc = '@pdf-and-done', block = true, orphan = true },
+]
+# }}}
+
+[open]
+
+prepend_rules = [
+  [[[ if has .chezmoi.hostname .hosts.private -]]]
+  # Unsorted {{{
+  { url = '/home/[[[ .chezmoi.username ]]]/temp/script/**/*', use = [
+    'unsorted',
+    'text',
+  ] },
+  { url = '/home/[[[ .chezmoi.username ]]]/my/env/**/*', use = [
+    'unsorted',
+    'text',
+  ] },
+  # }}}
+  # Chezmoi {{{
+  { url = '/home/[[[ .chezmoi.username ]]]/.local/share/chezmoi/**/*', use = [
+    'text',
+    'chezmoi',
+  ] },
+  { url = '/home/[[[ .chezmoi.username ]]]/.local/share/chezmoi/**/*/', use = [
+    'directory',
+    'chezmoi',
+  ] },
+  # }}}
+  # Temporary {{{
+  { url = '/mnt/syno/data/backup/book/todo/**/*.pdf', use = [
+    'temp_book_pdf',
+    'temp_book_entry',
+    'pdf',
+    'comic',
+    'book',
+  ] },
+  { url = '/mnt/syno/data/backup/book/todo/**/*.zip', use = [
+    'comic',
+    'temp_book_entry',
+    'book',
+    'archive',
+  ] },
+  { url = '/mnt/syno/data/backup/book/todo/**/*.*', use = [
+    'comic',
+    'temp_book_entry',
+    'book',
+  ] },
+  { url = '/mnt/syno/data/backup/book/todo/**/*/', use = [
+    'directory',
+    'temp_book_entry',
+  ] },
+  # }}}
+  # Books {{{
+  { url = '/mnt/syno/data/mac/scan/**/*.pdf', use = [
+    'scanned',
+    'comic',
+    'book',
+    'pdf',
+    'extract',
+    'reveal',
+  ] },
+  { url = '/mnt/syno/data/book/**/*.pdf', use = [
+    'comic',
+    'book',
+    'pdf',
+    'extract',
+    'reveal',
+  ] },
+  # }}}
+  # Musics {{{
+  { url = '/mnt/sub/music/**/*.*', use = [
+    'audio',
+    'music',
+  ] },
+  { url = '/mnt/sub/music/**/', use = [
+    'directory',
+    'audio',
+    'music',
+  ] },
+  # }}}
+  [[[ end -]]]
+  # File types {{{
+  { url = '\s**/URL.txt', use = [
+    'url',
+    'text',
+  ] },
+  { url = '**/*.azw3', use = [
+    'ebook',
+  ] },
+  { mime = 'application/epub+zip', use = [
+    'ebook',
+  ] },
+  { mime = 'audio/*', use = [
+    'audio',
+    'media',
+  ] },
+  { mime = 'video/*', use = [
+    'media',
+    'animation_wallaper',
+  ] },
+  { mime = 'image/*', use = [
+    'image',
+    'media',
+  ] },
+  { url = '*.stl', use = [
+    'stl',
+    'text',
+  ] },
+  { url = '*.gcode', use = [
+    'gcode',
+    'text',
+  ] },
+  { mime = 'text/html', use = [
+    'html',
+    'text',
+  ] },
+  { url = '*.json', use = [
+    'text',
+    'json',
+  ] },
+  { url = '*.md', use = [
+    'markdown',
+    'text',
+    'html',
+  ] },
+  { mime = 'application/pdf', use = [
+    'comic',
+    'book',
+    'pdf',
+  ] },
+  { mime = 'text/*', use = 'text' },
+  { url = '*/', use = [
+    'directory',
+    'liname',
+  ] },
+  { mime = 'message/*', use = [
+    'text',
+  ] },
+  { mime = 'application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*,pdf}', use = [
+    'comic',
+    'extract',
+    'reveal',
+    'archive',
+  ] },
+  # }}}
+]

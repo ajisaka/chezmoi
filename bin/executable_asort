@@ -1,0 +1,93 @@
+#!/bin/ruby
+
+require 'optparse'
+
+
+class Sorter
+  def initialize (option)
+    @option = option
+  end
+
+  def sort (items)
+    items = items.dup
+
+    items.sort_by! {|it| extract_key(it) }
+    items.reverse! if @option.reverse
+
+    items
+  end
+
+  def keys (items)
+    items.map {|it| extract_key(it) }
+  end
+
+  def extract_key (line)
+    value = line.split(@option.separator)[@option.field - 1]
+    if @option.numerical
+      value ? value.to_f : 0
+    else
+      value ? value : ''
+    end
+  end
+end
+
+class App
+  def initialize (option)
+    @option = option
+    @sorter = Sorter.new(option)
+  end
+
+  def process (items)
+    result =
+      if @option.print_keys
+        @sorter.keys(items)
+      else
+        @sorter.sort(items)
+      end
+
+    result.each(&get_printer)
+  end
+
+  def get_printer
+    if @option.output_fields
+      proc do
+        |line|
+        fields =line.split(@option.separator)
+        result = @option.output_fields.map {|f| fields[f - 1] || '' }
+        puts(result.join(@option.delimiter))
+      end
+    else
+      proc {|line| puts(line) }
+    end
+  end
+end
+
+class Option
+  attr_reader :field, :separator, :numerical, :reverse, :print_keys, :output_fields, :delimiter
+
+  def initialize (argv)
+    @separator = /\s+/
+    @delimiter = ' '
+    @field = 1
+
+    OptionParser.new do
+      |opt|
+      opt.on('-F <SEPARATOR>',  'Separator (regxp)')              {|v| @separator = Regexp.new(v) }
+      opt.on('-k <FIELD>',      'Field (1 origin)')               {|v| @field = v.to_i }
+      opt.on('-n',              'Numerical sort')                 { @numerical = true }
+      opt.on('-r',              'Reverse')                        { @reverse = true }
+      opt.on('-p',              'Print keys (debug)')             { @print_keys = true }
+      opt.on('-o <FIELDS>',     'Output fields (comma sperated)') {|v| @output_fields = v.split(/\s*,\s*/).map(&:to_i) }
+      opt.parse!(argv)
+    end
+  end
+end
+
+if __FILE__ == $0
+  option = Option.new(ARGV)
+  app = App.new(option)
+  begin
+    app.process(ARGF.readlines)
+  rescue Errno::EPIPE
+  end
+end

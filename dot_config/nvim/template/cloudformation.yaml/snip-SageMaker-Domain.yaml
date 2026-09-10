@@ -1,0 +1,71 @@
+  SageMakerDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-domain.html
+    Type: AWS::SageMaker::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-domain.html
+      # AppNetworkAccessType: # String
+      AuthMode: # String
+      # DefaultUserSettings:
+      #   # ExecutionRole: # String
+      #   # JupyterServerAppSettings:
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   #   # # LifecycleConfigArn: # String
+      #   # KernelGatewayAppSettings:
+      #   # # CustomImages:
+      #   #   # - AppImageConfigName: # String
+      #   #   # ImageName: # String
+      #   #   # # ImageVersionNumber: # Integer
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   #   # # LifecycleConfigArn: # String
+      #   # RStudioServerProAppSettings:
+      #   # # AccessStatus: # String
+      #   # # UserGroup: # String
+      #   # RSessionAppSettings:
+      #   # # CustomImages:
+      #   #   # - AppImageConfigName: # String
+      #   #   # ImageName: # String
+      #   #   # # ImageVersionNumber: # Integer
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   #   # # LifecycleConfigArn: # String
+      #   # SecurityGroups:
+      #   # - # String
+      #   # SharingSettings:
+      #   # # NotebookOutputOption: # String
+      #   # # S3KmsKeyId: # String
+      #   # # S3OutputPath: # String
+      DomainName: # String
+      # KmsKeyId: # String
+      SubnetIds:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      VpcId: # String
+      # DomainSettings:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # RStudioServerProDomainSettings:
+      #   # DomainExecutionRoleArn: # String
+      #   # # RStudioConnectUrl: # String
+      #   # # RStudioPackageManagerUrl: # String
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   #   # # LifecycleConfigArn: # String
+      # AppSecurityGroupManagement: # String
+    # !GetAtt THIS.DomainArn (String)
+    # !GetAtt THIS.Url (String)
+    # !GetAtt THIS.DomainId (String)
+    # !GetAtt THIS.HomeEfsFileSystemId (String)
+    # !GetAtt THIS.SingleSignOnManagedApplicationInstanceId (String)
+    # !GetAtt THIS.SecurityGroupIdForDomainBoundary (String)

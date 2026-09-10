@@ -1,0 +1,16 @@
+  IoTTopicRuleDestination:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicruledestination.html
+    Type: AWS::IoT::TopicRuleDestination
+    Properties:
+      # Status: # String
+      # HttpUrlProperties:
+      #   # ConfirmationUrl: # String
+      # VpcProperties:
+      #   # SubnetIds:
+      #   # - # String
+      #   # SecurityGroups:
+      #   # - # String
+      #   # VpcId: # String
+      #   # RoleArn: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.StatusReason (String)

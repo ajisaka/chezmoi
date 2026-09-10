@@ -1,0 +1,92 @@
+  AppMeshVirtualGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualgateway.html
+    Type: AWS::AppMesh::VirtualGateway
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualgateway.html
+      # VirtualGatewayName: # String
+      MeshName: # String
+      # MeshOwner: # String
+      # Spec:
+      #   # Logging:
+      #   # # AccessLog:
+      #   #   # # File:
+      #   #   #   # Path: # String
+      #   #   #   # # Format:
+      #   #   #   #   # # Text: # String
+      #   #   #   #   # # Json:
+      #   #   #   #   #   # - Value: # String
+      #   #   #   #   #   # Key: # String
+      #   Listeners:
+      #     - # ConnectionPool:
+      #       # # HTTP2:
+      #       #   # MaxRequests: # Integer
+      #       # # HTTP:
+      #       #   # MaxConnections: # Integer
+      #       #   # # MaxPendingRequests: # Integer
+      #       # # GRPC:
+      #       #   # MaxRequests: # Integer
+      #       # HealthCheck:
+      #       # # Path: # String
+      #       # UnhealthyThreshold: # Integer
+      #       # # Port: # Integer
+      #       # HealthyThreshold: # Integer
+      #       # TimeoutMillis: # Integer
+      #       # Protocol: # String
+      #       # IntervalMillis: # Integer
+      #       # TLS:
+      #       # # Validation:
+      #       #   # # SubjectAlternativeNames:
+      #       #   #   # # Match:
+      #       #   #   #   # # Exact:
+      #       #   #   #   #   # - # String
+      #       #   # # Trust:
+      #       #   #   # # SDS:
+      #       #   #   #   # SecretName: # String
+      #       #   #   # # File:
+      #       #   #   #   # CertificateChain: # String
+      #       # Mode: # String
+      #       # # Certificate:
+      #       #   # # SDS:
+      #       #   #   # SecretName: # String
+      #       #   # # ACM:
+      #       #   #   # CertificateArn: # String
+      #       #   # # File:
+      #       #   #   # PrivateKey: # String
+      #       #   #   # CertificateChain: # String
+      #       # PortMapping:
+      #       # Port: # Integer
+      #       # Protocol: # String
+      #   # BackendDefaults:
+      #   # # ClientPolicy:
+      #   #   # # TLS:
+      #   #   #   # # Validation:
+      #   #   #   #   # # SubjectAlternativeNames:
+      #   #   #   #   #   # # Match:
+      #   #   #   #   #   #   # # Exact:
+      #   #   #   #   #   #   #   # - # String
+      #   #   #   #   # # Trust:
+      #   #   #   #   #   # # SDS:
+      #   #   #   #   #   #   # SecretName: # String
+      #   #   #   #   #   # # ACM:
+      #   #   #   #   #   #   # CertificateAuthorityArns:
+      #   #   #   #   #   #   # - # String
+      #   #   #   #   #   # # File:
+      #   #   #   #   #   #   # CertificateChain: # String
+      #   #   #   # # Enforce: # Boolean
+      #   #   #   # # Ports:
+      #   #   #   #   # - # Integer
+      #   #   #   # # Certificate:
+      #   #   #   #   # # SDS:
+      #   #   #   #   #   # SecretName: # String
+      #   #   #   #   # # File:
+      #   #   #   #   #   # PrivateKey: # String
+      #   #   #   #   #   # CertificateChain: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.VirtualGatewayName (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,13 @@
+  VoiceIDDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-voiceid-domain.html
+    Type: AWS::VoiceID::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-voiceid-domain.html
+      # Description: # String
+      Name: # String
+      # ServerSideEncryptionConfiguration:
+      #   KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DomainId (String)

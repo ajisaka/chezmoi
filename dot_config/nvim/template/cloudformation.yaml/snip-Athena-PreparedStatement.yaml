@@ -1,0 +1,9 @@
+  AthenaPreparedStatement:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-preparedstatement.html
+    Type: AWS::Athena::PreparedStatement
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-preparedstatement.html
+      StatementName: # String
+      WorkGroup: # String
+      # Description: # String
+      QueryStatement: # String

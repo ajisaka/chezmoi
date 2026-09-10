@@ -1,0 +1,165 @@
+  ECSTaskDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
+      # Family: # String
+      # ContainerDefinitions:
+      #   - # Command:
+      #     # - # String
+      #     # Cpu: # Integer
+      #     # DependsOn:
+      #     # - # ContainerName: # String
+      #     # # Condition: # String
+      #     # DisableNetworking: # Boolean
+      #     # DnsSearchDomains:
+      #     # - # String
+      #     # DnsServers:
+      #     # - # String
+      #     # DockerLabels:
+      #     # ANY_KEY: # String
+      #     # DockerSecurityOptions:
+      #     # - # String
+      #     # EntryPoint:
+      #     # - # String
+      #     # Environment:
+      #     # - # Name: # String
+      #     # # Value: # String
+      #     # EnvironmentFiles:
+      #     # - # Value: # String
+      #     # # Type: # String
+      #     # Essential: # Boolean
+      #     # ExtraHosts:
+      #     # - # Hostname: # String
+      #     # # IpAddress: # String
+      #     # FirelensConfiguration:
+      #     # # Type: # String
+      #     # # Options:
+      #     #   # ANY_KEY: # String
+      #     # HealthCheck:
+      #     # # Command:
+      #     #   # - # String
+      #     # # Interval: # Integer
+      #     # # Timeout: # Integer
+      #     # # Retries: # Integer
+      #     # # StartPeriod: # Integer
+      #     # Hostname: # String
+      #     Image: # String
+      #     # Links:
+      #     # - # String
+      #     # LinuxParameters:
+      #     # # Capabilities:
+      #     #   # # Add:
+      #     #   #   # - # String
+      #     #   # # Drop:
+      #     #   #   # - # String
+      #     # # Devices:
+      #     #   # - # ContainerPath: # String
+      #     #   # # HostPath: # String
+      #     #   # # Permissions:
+      #     #   #     # - # String
+      #     # # InitProcessEnabled: # Boolean
+      #     # # MaxSwap: # Integer
+      #     # # SharedMemorySize: # Integer
+      #     # # Swappiness: # Integer
+      #     # # Tmpfs:
+      #     #   # - # ContainerPath: # String
+      #     #   # # MountOptions:
+      #     #   #     # - # String
+      #     #   # Size: # Integer
+      #     # LogConfiguration:
+      #     # LogDriver: # String
+      #     # # Options:
+      #     #   # ANY_KEY: # String
+      #     # # SecretOptions:
+      #     #   # - Name: # String
+      #     #   # ValueFrom: # String
+      #     # Memory: # Integer
+      #     # MemoryReservation: # Integer
+      #     # MountPoints:
+      #     # - # ContainerPath: # String
+      #     # # ReadOnly: # Boolean
+      #     # # SourceVolume: # String
+      #     Name: # String
+      #     # PortMappings:
+      #     # - # Name: # String
+      #     # # ContainerPort: # Integer
+      #     # # HostPort: # Integer
+      #     # # Protocol: # String
+      #     # # AppProtocol: # String
+      #     # Privileged: # Boolean
+      #     # ReadonlyRootFilesystem: # Boolean
+      #     # RepositoryCredentials:
+      #     # # CredentialsParameter: # String
+      #     # ResourceRequirements:
+      #     # - Type: # String
+      #     # Value: # String
+      #     # Secrets:
+      #     # - Name: # String
+      #     # ValueFrom: # String
+      #     # StartTimeout: # Integer
+      #     # StopTimeout: # Integer
+      #     # Ulimits:
+      #     # - HardLimit: # Integer
+      #     # Name: # String
+      #     # SoftLimit: # Integer
+      #     # User: # String
+      #     # VolumesFrom:
+      #     # - # ReadOnly: # Boolean
+      #     # # SourceContainer: # String
+      #     # WorkingDirectory: # String
+      #     # Interactive: # Boolean
+      #     # PseudoTerminal: # Boolean
+      #     # SystemControls:
+      #     # - # Namespace: # String
+      #     # # Value: # String
+      # Cpu: # String
+      # ExecutionRoleArn: # String
+      # EphemeralStorage:
+      #   # SizeInGiB: # Integer
+      # InferenceAccelerators:
+      #   - # DeviceName: # String
+      #     # DeviceType: # String
+      # Memory: # String
+      # NetworkMode: # String
+      # PlacementConstraints:
+      #   - Type: # String
+      #     # Expression: # String
+      # ProxyConfiguration:
+      #   ContainerName: # String
+      #   # ProxyConfigurationProperties:
+      #   # - # Name: # String
+      #   # # Value: # String
+      #   # Type: # String
+      # RequiresCompatibilities:
+      #   - # String
+      # TaskRoleArn: # String
+      # Volumes:
+      #   - # DockerVolumeConfiguration:
+      #     # # Autoprovision: # Boolean
+      #     # # Driver: # String
+      #     # # DriverOpts:
+      #     #   # ANY_KEY: # String
+      #     # # Labels:
+      #     #   # ANY_KEY: # String
+      #     # # Scope: # String
+      #     # EFSVolumeConfiguration:
+      #     # FilesystemId: # String
+      #     # # RootDirectory: # String
+      #     # # TransitEncryption: # String
+      #     # # TransitEncryptionPort: # Integer
+      #     # # AuthorizationConfig:
+      #     #   # # IAM: # String
+      #     #   # # AccessPointId: # String
+      #     # Host:
+      #     # # SourcePath: # String
+      #     # Name: # String
+      # PidMode: # String
+      # RuntimePlatform:
+      #   # CpuArchitecture: # String
+      #   # OperatingSystemFamily: # String
+      # IpcMode: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.TaskDefinitionArn (String)

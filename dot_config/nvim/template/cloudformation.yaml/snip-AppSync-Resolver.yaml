@@ -1,0 +1,35 @@
+  AppSyncResolver:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html
+    Type: AWS::AppSync::Resolver
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html
+      TypeName: # String
+      # PipelineConfig:
+      #   # Functions:
+      #   # - # String
+      # RequestMappingTemplate: # String
+      # ResponseMappingTemplate: # String
+      # MaxBatchSize: # Integer
+      # SyncConfig:
+      #   # ConflictHandler: # String
+      #   ConflictDetection: # String
+      #   # LambdaConflictHandlerConfig:
+      #   # # LambdaConflictHandlerArn: # String
+      # Code: # String
+      # ResponseMappingTemplateS3Location: # String
+      # Runtime:
+      #   RuntimeVersion: # String
+      #   Name: # String
+      # CodeS3Location: # String
+      # DataSourceName: # String
+      # Kind: # String
+      # CachingConfig:
+      #   # CachingKeys:
+      #   # - # String
+      #   Ttl: # Double
+      # RequestMappingTemplateS3Location: # String
+      ApiId: # String
+      FieldName: # String
+    # !GetAtt THIS.TypeName (String)
+    # !GetAtt THIS.ResolverArn (String)
+    # !GetAtt THIS.FieldName (String)

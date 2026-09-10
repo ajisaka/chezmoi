@@ -1,0 +1,10 @@
+  ServiceCatalogAppRegistryResourceAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-resourceassociation.html
+    Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
+    Properties:
+      Application: # String
+      Resource: # String
+      ResourceType: # String
+    # !GetAtt THIS.ApplicationArn (String)
+    # !GetAtt THIS.ResourceArn (String)
+    # !GetAtt THIS.Id (String)

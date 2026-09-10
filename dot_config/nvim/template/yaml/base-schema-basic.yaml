@@ -1,0 +1,11 @@
+---
+"$schema": http://json-schema.org/draft-04/schema#
+title: Product
+description: せつめい
+type: object
+properties:
+  id:
+    description: The unique identifier for a product
+    type: integer
+required:
+- id

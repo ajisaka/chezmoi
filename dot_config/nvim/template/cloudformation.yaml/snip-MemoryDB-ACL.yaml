@@ -1,0 +1,12 @@
+  MemoryDBACL:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-acl.html
+    Type: AWS::MemoryDB::ACL
+    Properties:
+      ACLName: # String
+      # UserNames:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.Arn (String)

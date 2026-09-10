@@ -1,0 +1,21 @@
+  Cloud9EnvironmentEC2:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html
+    Type: AWS::Cloud9::EnvironmentEC2
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html
+      # Repositories:
+      #   - PathComponent: # String
+      #     RepositoryUrl: # String
+      # OwnerArn: # String
+      # Description: # String
+      # ConnectionType: # String
+      # AutomaticStopTimeMinutes: # Integer
+      # ImageId: # String
+      # SubnetId: # String
+      InstanceType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

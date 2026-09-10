@@ -1,0 +1,10 @@
+  WAFRegionalRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html
+    Type: AWS::WAFRegional::Rule
+    Properties:
+      MetricName: # String
+      # Predicates:
+      #   - Type: # String
+      #     DataId: # String
+      #     Negated: # Boolean
+      Name: # String

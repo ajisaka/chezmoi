@@ -1,0 +1,55 @@
+  CloudFrontResponseHeadersPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-responseheaderspolicy.html
+    Type: AWS::CloudFront::ResponseHeadersPolicy
+    Properties:
+      # ResponseHeadersPolicyConfig:
+      #   # Comment: # String
+      #   # CorsConfig:
+      #   # AccessControlAllowCredentials: # Boolean
+      #   # # AccessControlAllowHeaders:
+      #   #   # Items:
+      #   #   # - # String
+      #   # # AccessControlAllowMethods:
+      #   #   # Items:
+      #   #   # - # String
+      #   # # AccessControlAllowOrigins:
+      #   #   # Items:
+      #   #   # - # String
+      #   # # AccessControlExposeHeaders:
+      #   #   # Items:
+      #   #   # - # String
+      #   # # AccessControlMaxAgeSec: # Integer
+      #   # OriginOverride: # Boolean
+      #   # CustomHeadersConfig:
+      #   # Items:
+      #   # - Header: # String
+      #   # Override: # Boolean
+      #   # Value: # String
+      #   Name: # String
+      #   # SecurityHeadersConfig:
+      #   # # ContentSecurityPolicy:
+      #   #   # ContentSecurityPolicy: # String
+      #   #   # Override: # Boolean
+      #   # # ContentTypeOptions:
+      #   #   # Override: # Boolean
+      #   # # FrameOptions:
+      #   #   # FrameOption: # String
+      #   #   # Override: # Boolean
+      #   # # ReferrerPolicy:
+      #   #   # Override: # Boolean
+      #   #   # ReferrerPolicy: # String
+      #   # # StrictTransportSecurity:
+      #   #   # AccessControlMaxAgeSec: # Integer
+      #   #   # # IncludeSubdomains: # Boolean
+      #   #   # Override: # Boolean
+      #   #   # # Preload: # Boolean
+      #   # # XSSProtection:
+      #   #   # # ModeBlock: # Boolean
+      #   #   # Override: # Boolean
+      #   #   # Protection: # Boolean
+      #   #   # # ReportUri: # String
+      #   # ServerTimingHeadersConfig:
+      #   # Enabled: # Boolean
+      #   # # SamplingRate: # Double
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.LastModifiedTime (String)

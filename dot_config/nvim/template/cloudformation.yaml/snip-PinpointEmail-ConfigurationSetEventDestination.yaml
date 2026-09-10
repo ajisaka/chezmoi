@@ -1,0 +1,22 @@
+  PinpointEmailConfigurationSetEventDestination:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-configurationseteventdestination.html
+    Type: AWS::PinpointEmail::ConfigurationSetEventDestination
+    Properties:
+      EventDestinationName: # String
+      ConfigurationSetName: # String
+      # EventDestination:
+      #   # SnsDestination:
+      #   # TopicArn: # String
+      #   # CloudWatchDestination:
+      #   # # DimensionConfigurations:
+      #   #   # - DimensionValueSource: # String
+      #   #   # DefaultDimensionValue: # String
+      #   #   # DimensionName: # String
+      #   # Enabled: # Boolean
+      #   MatchingEventTypes:
+      #     - # String
+      #   # PinpointDestination:
+      #   # # ApplicationArn: # String
+      #   # KinesisFirehoseDestination:
+      #   # DeliveryStreamArn: # String
+      #   # IamRoleArn: # String

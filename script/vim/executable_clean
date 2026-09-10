@@ -1,0 +1,15 @@
+#!/bin/sh
+
+exec 2> /dev/null
+
+/bin/rm ~/.vim-temp/swap/*.*
+/bin/rm ~/.vim-temp/swap/.*
+/bin/rm ~/.vim-temp/swap/*
+/bin/rm ~/.vim-temp/info/*
+
+# /bin/rm ~/.vim-temp/view/*.*
+# /bin/rm ~/.vim-temp/view/.*
+# /bin/rm ~/.vim-temp/view/*
+
+# rm ~/.vim-temp/backup/*.*
+

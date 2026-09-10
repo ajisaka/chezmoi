@@ -1,0 +1,15 @@
+  EC2TransitGatewayPeeringAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewaypeeringattachment.html
+    Type: AWS::EC2::TransitGatewayPeeringAttachment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewaypeeringattachment.html
+      TransitGatewayId: # String
+      PeerTransitGatewayId: # String
+      PeerAccountId: # String
+      PeerRegion: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.TransitGatewayAttachmentId (String)

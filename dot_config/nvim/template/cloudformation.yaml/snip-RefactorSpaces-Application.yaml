@@ -1,0 +1,23 @@
+  RefactorSpacesApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-application.html
+    Type: AWS::RefactorSpaces::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-application.html
+      # ApiGatewayProxy:
+      #   # StageName: # String
+      #   # EndpointType: # String
+      # EnvironmentIdentifier: # String
+      # Name: # String
+      # ProxyType: # String
+      # VpcId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ApiGatewayId (String)
+    # !GetAtt THIS.VpcLinkId (String)
+    # !GetAtt THIS.NlbArn (String)
+    # !GetAtt THIS.NlbName (String)
+    # !GetAtt THIS.ApplicationIdentifier (String)
+    # !GetAtt THIS.StageName (String)
+    # !GetAtt THIS.ProxyUrl (String)

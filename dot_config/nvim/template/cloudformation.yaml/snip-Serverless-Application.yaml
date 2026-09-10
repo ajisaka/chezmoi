@@ -1,0 +1,14 @@
+  ServerlessApplication:
+    # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapplication
+    Type: AWS::Serverless::Application
+    Properties:
+      # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapplication
+      Location:
+        # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapplication
+      # Parameters:
+      #   ANY_KEY: # String
+      # NotificationArns:
+      #   - # String
+      # Tags:
+      #   ANY_KEY: # String
+      # TimeoutInMinutes: # Integer

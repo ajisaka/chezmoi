@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+DEFAULT_MODEL=""
+
+NEW='- new -'
+
+ARGS=("$@")
+
+function list_workspace() {
+  echo "common"
+  find ~/workspace/claude-code -maxdepth 1 -mindepth 1 -type d -not -name '.git' \
+    | sed 's|.*/||' \
+    | grep -v "^common$" \
+    | sort
+  echo "$NEW"
+}
+
+function list_env() {
+  echo "sandbox
+host"
+}
+
+selected_workspace=$(list_workspace | anything)
+
+if [[ "$selected_workspace" == "$NEW" ]]
+then
+  read -r -p "Enter name for new workspace: " selected_workspace
+fi
+
+wd="${HOME}/workspace/claude-code/${selected_workspace}"
+mkdir -p "$wd"
+
+cd "$wd"
+
+if [ ! -d .git ]
+then
+  echo "Initializing git repository in ${wd}"
+  git init .
+fi
+
+echo -ne '\e[1;33m'
+
+if [ -f "${wd}/BANNER" ]
+then
+  cat "${wd}/BANNER"
+  echo ""
+fi
+
+echo -ne '\e[1;36m'
+
+if [ -d .claude/skills ]
+then
+  echo "Local skills: "
+  find .claude/skills -maxdepth 1 -mindepth 1 -type d \
+    | sed 's/.*\///g' \
+    | sed 's/^/  /'
+  echo ""
+fi
+
+if [ -n "$DEFAULT_MODEL" ]
+then
+  ARGS+=("--model" "$DEFAULT_MODEL")
+  echo -e "Default model: \e[1;32m$DEFAULT_MODEL\e[1;36m"
+fi
+
+echo -ne '\e[0m'
+
+cd "$wd" || exit 1
+
+created=$(
+  herdr workspace create --cwd "$wd" --focus
+)
+
+pane_id=$(
+  echo "$created" | jq --raw-output '.result.root_pane.pane_id'
+)
+
+# herdr agent start lead --kind claude --pane "$pane_id" "${ARGS[@]}"
+herdr pane send-text "$pane_id" "HERDR_AGENT=claude claude"
+herdr pane send-keys "$pane_id" Return

@@ -1,0 +1,32 @@
+  ECSTaskSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskset.html
+    Type: AWS::ECS::TaskSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskset.html
+      Cluster: # String
+      # ExternalId: # String
+      # LaunchType: # String
+      # LoadBalancers:
+      #   - # ContainerName: # String
+      #     # ContainerPort: # Integer
+      #     # LoadBalancerName: # String
+      #     # TargetGroupArn: # String
+      # NetworkConfiguration:
+      #   # AwsVpcConfiguration:
+      #   # # AssignPublicIp: # String
+      #   # # SecurityGroups:
+      #   #   # - # String
+      #   # Subnets:
+      #   # - # String
+      # PlatformVersion: # String
+      # Scale:
+      #   # Unit: # String
+      #   # Value: # Double
+      Service: # String
+      # ServiceRegistries:
+      #   - # ContainerName: # String
+      #     # ContainerPort: # Integer
+      #     # Port: # Integer
+      #     # RegistryArn: # String
+      TaskDefinition: # String
+    # !GetAtt THIS.Id (String)

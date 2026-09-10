@@ -1,0 +1,31 @@
+  LightsailDatabase:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-database.html
+    Type: AWS::Lightsail::Database
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-database.html
+      RelationalDatabaseName: # String
+      # AvailabilityZone: # String
+      RelationalDatabaseBlueprintId: # String
+      RelationalDatabaseBundleId: # String
+      MasterDatabaseName: # String
+      MasterUsername: # String
+      # MasterUserPassword: # String
+      # PreferredBackupWindow: # String
+      # PreferredMaintenanceWindow: # String
+      # PubliclyAccessible: # Boolean
+      # CaCertificateIdentifier: # String
+      # BackupRetention: # Boolean
+      # RotateMasterUserPassword: # Boolean
+      # RelationalDatabaseParameters:
+      #   - # AllowedValues: # String
+      #     # ApplyMethod: # String
+      #     # ApplyType: # String
+      #     # DataType: # String
+      #     # Description: # String
+      #     # IsModifiable: # Boolean
+      #     # ParameterName: # String
+      #     # ParameterValue: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DatabaseArn (String)

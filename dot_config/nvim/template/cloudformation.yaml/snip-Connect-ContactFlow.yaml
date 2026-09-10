@@ -1,0 +1,15 @@
+  ConnectContactFlow:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-contactflow.html
+    Type: AWS::Connect::ContactFlow
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-contactflow.html
+      InstanceArn: # String
+      Name: # String
+      Content: # String
+      # Description: # String
+      # State: # String
+      Type: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ContactFlowArn (String)

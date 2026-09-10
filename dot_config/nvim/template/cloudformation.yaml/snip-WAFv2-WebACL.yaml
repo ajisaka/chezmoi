@@ -1,0 +1,365 @@
+  WAFv2WebACL:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html
+    Type: AWS::WAFv2::WebACL
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html
+      # DefaultAction:
+      #   # Allow:
+      #   # # CustomRequestHandling:
+      #   #   # InsertHeaders:
+      #   #   # - Name: # String
+      #   #   # Value: # String
+      #   # Block:
+      #   # # CustomResponse:
+      #   #   # ResponseCode: # Integer
+      #   #   # # CustomResponseBodyKey: # String
+      #   #   # # ResponseHeaders:
+      #   #   #   # - Name: # String
+      #   #   #   # Value: # String
+      # Description: # String
+      # Name: # String
+      Scope: # String
+      # Rules:
+      #   - Name: # String
+      #     Priority: # Integer
+      #     # Statement:
+      #     # # ByteMatchStatement:
+      #     #   # # SearchString: # String
+      #     #   # # SearchStringBase64: # String
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     #   # PositionalConstraint: # String
+      #     # # SqliMatchStatement:
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     #   # # SensitivityLevel: # String
+      #     # # XssMatchStatement:
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     # # SizeConstraintStatement:
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # ComparisonOperator: # String
+      #     #   # Size: # Double
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     # # GeoMatchStatement:
+      #     #   # # CountryCodes:
+      #     #   #   # - # String
+      #     #   # # ForwardedIPConfig:
+      #     #   #   # HeaderName: # String
+      #     #   #   # FallbackBehavior: # String
+      #     # # RuleGroupReferenceStatement:
+      #     #   # Arn: # String
+      #     #   # # ExcludedRules:
+      #     #   #   # - Name: # String
+      #     # # IPSetReferenceStatement:
+      #     #   # Arn: # String
+      #     #   # # IPSetForwardedIPConfig:
+      #     #   #   # HeaderName: # String
+      #     #   #   # FallbackBehavior: # String
+      #     #   #   # Position: # String
+      #     # # RegexPatternSetReferenceStatement:
+      #     #   # Arn: # String
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     # # ManagedRuleGroupStatement:
+      #     #   # Name: # String
+      #     #   # VendorName: # String
+      #     #   # # Version: # String
+      #     #   # # ExcludedRules:
+      #     #   #   # - Name: # String
+      #     #   # # ScopeDownStatement: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-managedrulegroupstatement.html#cfn-wafv2-webacl-managedrulegroupstatement-scopedownstatement', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'Statement'}
+      #     #   # # ManagedRuleGroupConfigs:
+      #     #   #   # - # LoginPath: # String
+      #     #   #   # # PayloadType: # String
+      #     #   #   # # UsernameField:
+      #     #   #   #     # Identifier: # String
+      #     #   #   # # PasswordField:
+      #     #   #   #     # Identifier: # String
+      #     # # RateBasedStatement:
+      #     #   # Limit: # Integer
+      #     #   # AggregateKeyType: # String
+      #     #   # # ScopeDownStatement: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-ratebasedstatement.html#cfn-wafv2-webacl-ratebasedstatement-scopedownstatement', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'Statement'}
+      #     #   # # ForwardedIPConfig:
+      #     #   #   # HeaderName: # String
+      #     #   #   # FallbackBehavior: # String
+      #     # # AndStatement:
+      #     #   # Statements: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-andstatement.html#cfn-wafv2-webacl-andstatement-statements', 'UpdateType': 'Mutable', 'Required': True, 'Type': 'List', 'ItemType': 'Statement'}
+      #     # # OrStatement:
+      #     #   # Statements: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-orstatement.html#cfn-wafv2-webacl-orstatement-statements', 'UpdateType': 'Mutable', 'Required': True, 'Type': 'List', 'ItemType': 'Statement'}
+      #     # # NotStatement:
+      #     #   # Statement: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafv2-webacl-notstatement.html#cfn-wafv2-webacl-notstatement-statement', 'UpdateType': 'Mutable', 'Required': True, 'Type': 'Statement'}
+      #     # # LabelMatchStatement:
+      #     #   # Scope: # String
+      #     #   # Key: # String
+      #     # # RegexMatchStatement:
+      #     #   # RegexString: # String
+      #     #   # # FieldToMatch:
+      #     #   #   # # SingleHeader: # Json
+      #     #   #   # # SingleQueryArgument: # Json
+      #     #   #   # # AllQueryArguments: # Json
+      #     #   #   # # UriPath: # Json
+      #     #   #   # # QueryString: # Json
+      #     #   #   # # Body:
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Method: # Json
+      #     #   #   # # JsonBody:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedPaths:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # # InvalidFallbackBehavior: # String
+      #     #   #   #   # # OversizeHandling: # String
+      #     #   #   # # Headers:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedHeaders:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   #   # # Cookies:
+      #     #   #   #   # # MatchPattern:
+      #     #   #   #   #   # # All: # Json
+      #     #   #   #   #   # # IncludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   #   # # ExcludedCookies:
+      #     #   #   #   #   #   # - # String
+      #     #   #   #   # MatchScope: # String
+      #     #   #   #   # OversizeHandling: # String
+      #     #   # TextTransformations:
+      #     #   # - Priority: # Integer
+      #     #   # Type: # String
+      #     # Action:
+      #     # # Allow:
+      #     #   # # CustomRequestHandling:
+      #     #   #   # InsertHeaders:
+      #     #   #   # - Name: # String
+      #     #   #   # Value: # String
+      #     # # Block:
+      #     #   # # CustomResponse:
+      #     #   #   # ResponseCode: # Integer
+      #     #   #   # # CustomResponseBodyKey: # String
+      #     #   #   # # ResponseHeaders:
+      #     #   #   #   # - Name: # String
+      #     #   #   #   # Value: # String
+      #     # # Count:
+      #     #   # # CustomRequestHandling:
+      #     #   #   # InsertHeaders:
+      #     #   #   # - Name: # String
+      #     #   #   # Value: # String
+      #     # # Captcha:
+      #     #   # # CustomRequestHandling:
+      #     #   #   # InsertHeaders:
+      #     #   #   # - Name: # String
+      #     #   #   # Value: # String
+      #     # OverrideAction:
+      #     # # Count: # Json
+      #     # # None: # Json
+      #     # RuleLabels:
+      #     # - Name: # String
+      #     # VisibilityConfig:
+      #     # SampledRequestsEnabled: # Boolean
+      #     # CloudWatchMetricsEnabled: # Boolean
+      #     # MetricName: # String
+      #     # CaptchaConfig:
+      #     # # ImmunityTimeProperty:
+      #     #   # ImmunityTime: # Integer
+      # VisibilityConfig:
+      #   SampledRequestsEnabled: # Boolean
+      #   CloudWatchMetricsEnabled: # Boolean
+      #   MetricName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CustomResponseBodies:
+      #   ANY_KEY: ContentType: # String
+      #     Content: # String
+      # CaptchaConfig:
+      #   # ImmunityTimeProperty:
+      #   # ImmunityTime: # Integer
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Capacity (Integer)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.LabelNamespace (String)

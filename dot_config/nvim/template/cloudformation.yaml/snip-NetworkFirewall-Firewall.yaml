@@ -1,0 +1,20 @@
+  NetworkFirewallFirewall:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewall.html
+    Type: AWS::NetworkFirewall::Firewall
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewall.html
+      FirewallName: # String
+      FirewallPolicyArn: # String
+      VpcId: # String
+      SubnetMappings:
+        - SubnetId: # String
+      # DeleteProtection: # Boolean
+      # SubnetChangeProtection: # Boolean
+      # FirewallPolicyChangeProtection: # Boolean
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.FirewallArn (String)
+    # !GetAtt THIS.FirewallId (String)
+    # !GetAtt THIS.EndpointIds (List)

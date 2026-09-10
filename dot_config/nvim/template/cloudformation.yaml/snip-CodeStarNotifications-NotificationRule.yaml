@@ -1,0 +1,19 @@
+  CodeStarNotificationsNotificationRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestarnotifications-notificationrule.html
+    Type: AWS::CodeStarNotifications::NotificationRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestarnotifications-notificationrule.html
+      # EventTypeId: # String
+      # CreatedBy: # String
+      # TargetAddress: # String
+      EventTypeIds:
+        - # String
+      # Status: # String
+      DetailType: # String
+      Resource: # String
+      Targets:
+        - TargetType: # String
+          TargetAddress: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.Arn (String)

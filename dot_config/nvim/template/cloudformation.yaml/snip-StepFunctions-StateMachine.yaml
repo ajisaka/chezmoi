@@ -1,0 +1,29 @@
+  StepFunctionsStateMachine:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html
+    Type: AWS::StepFunctions::StateMachine
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html
+      # DefinitionString: # String
+      RoleArn: # String
+      # StateMachineName: # String
+      # StateMachineType: # String
+      # LoggingConfiguration:
+      #   # Level: # String
+      #   # IncludeExecutionData: # Boolean
+      #   # Destinations:
+      #   # - # CloudWatchLogsLogGroup:
+      #   #     # # LogGroupArn: # String
+      # TracingConfiguration:
+      #   # Enabled: # Boolean
+      # DefinitionS3Location:
+      #   Bucket: # String
+      #   Key: # String
+      #   # Version: # String
+      # DefinitionSubstitutions:
+      #   ANY_KEY: # Json
+      # Definition: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

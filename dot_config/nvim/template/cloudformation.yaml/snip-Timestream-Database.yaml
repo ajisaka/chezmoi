@@ -1,0 +1,10 @@
+  TimestreamDatabase:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-timestream-database.html
+    Type: AWS::Timestream::Database
+    Properties:
+      # DatabaseName: # String
+      # KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

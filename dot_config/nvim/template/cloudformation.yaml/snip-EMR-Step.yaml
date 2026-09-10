@@ -1,0 +1,16 @@
+  EMRStep:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
+    Type: AWS::EMR::Step
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
+      ActionOnFailure: # String
+      # HadoopJarStep:
+      #   # Args:
+      #   # - # String
+      #   Jar: # String
+      #   # MainClass: # String
+      #   # StepProperties:
+      #   # - # Key: # String
+      #   # # Value: # String
+      JobFlowId: # String
+      Name: # String

@@ -1,0 +1,8 @@
+  CloudFormationHookDefaultVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-hookdefaultversion.html
+    Type: AWS::CloudFormation::HookDefaultVersion
+    Properties:
+      # TypeVersionArn: # String
+      # TypeName: # String
+      # VersionId: # String
+    # !GetAtt THIS.Arn (String)

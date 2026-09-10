@@ -1,0 +1,22 @@
+  AppMeshVirtualRouter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html
+    Type: AWS::AppMesh::VirtualRouter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html
+      MeshName: # String
+      # VirtualRouterName: # String
+      # MeshOwner: # String
+      # Spec:
+      #   Listeners:
+      #     - # PortMapping:
+      #       # Port: # Integer
+      #       # Protocol: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.VirtualRouterName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,28 @@
+  MediaStoreContainer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html
+    Type: AWS::MediaStore::Container
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html
+      # Policy: # String
+      # MetricPolicy:
+      #   ContainerLevelMetrics: # String
+      #   # MetricPolicyRules:
+      #   # - ObjectGroup: # String
+      #   # ObjectGroupName: # String
+      ContainerName: # String
+      # CorsPolicy:
+      #   - # AllowedMethods:
+      #     # - # String
+      #     # AllowedOrigins:
+      #     # - # String
+      #     # ExposeHeaders:
+      #     # - # String
+      #     # MaxAgeSeconds: # Integer
+      #     # AllowedHeaders:
+      #     # - # String
+      # LifecyclePolicy: # String
+      # AccessLoggingEnabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Endpoint (String)

@@ -1,0 +1,9 @@
+  RekognitionCollection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rekognition-collection.html
+    Type: AWS::Rekognition::Collection
+    Properties:
+      CollectionId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

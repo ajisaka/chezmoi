@@ -1,0 +1,36 @@
+  IoTWirelessTaskDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-taskdefinition.html
+    Type: AWS::IoTWireless::TaskDefinition
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-taskdefinition.html
+      # Name: # String
+      AutoCreateTasks: # Boolean
+      # Update:
+      #   # UpdateDataSource: # String
+      #   # UpdateDataRole: # String
+      #   # LoRaWAN:
+      #   # # UpdateSignature: # String
+      #   # # SigKeyCrc: # Integer
+      #   # # CurrentVersion:
+      #   #   # # PackageVersion: # String
+      #   #   # # Model: # String
+      #   #   # # Station: # String
+      #   # # UpdateVersion:
+      #   #   # # PackageVersion: # String
+      #   #   # # Model: # String
+      #   #   # # Station: # String
+      # LoRaWANUpdateGatewayTaskEntry:
+      #   # CurrentVersion:
+      #   # # PackageVersion: # String
+      #   # # Model: # String
+      #   # # Station: # String
+      #   # UpdateVersion:
+      #   # # PackageVersion: # String
+      #   # # Model: # String
+      #   # # Station: # String
+      # TaskDefinitionType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

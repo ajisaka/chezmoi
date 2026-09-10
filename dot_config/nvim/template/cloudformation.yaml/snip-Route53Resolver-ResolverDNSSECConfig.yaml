@@ -1,0 +1,8 @@
+  Route53ResolverResolverDNSSECConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverdnssecconfig.html
+    Type: AWS::Route53Resolver::ResolverDNSSECConfig
+    Properties:
+      # ResourceId: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.OwnerId (String)
+    # !GetAtt THIS.ValidationStatus (String)

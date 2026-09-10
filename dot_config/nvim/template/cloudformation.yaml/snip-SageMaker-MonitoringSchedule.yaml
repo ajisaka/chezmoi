@@ -1,0 +1,86 @@
+  SageMakerMonitoringSchedule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-monitoringschedule.html
+    Type: AWS::SageMaker::MonitoringSchedule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-monitoringschedule.html
+      MonitoringScheduleName: # String
+      # MonitoringScheduleConfig:
+      #   # MonitoringJobDefinition:
+      #   # # BaselineConfig:
+      #   #   # # ConstraintsResource:
+      #   #   #   # # S3Uri: # String
+      #   #   # # StatisticsResource:
+      #   #   #   # # S3Uri: # String
+      #   # # Environment:
+      #   #   # ANY_KEY: # String
+      #   # # MonitoringAppSpecification:
+      #   #   # # ContainerArguments:
+      #   #   #   # - # String
+      #   #   # # ContainerEntrypoint:
+      #   #   #   # - # String
+      #   #   # ImageUri: # String
+      #   #   # # PostAnalyticsProcessorSourceUri: # String
+      #   #   # # RecordPreprocessorSourceUri: # String
+      #   # MonitoringInputs:
+      #   # - # EndpointInput:
+      #   #       # EndpointName: # String
+      #   #       # LocalPath: # String
+      #   #       # # S3DataDistributionType: # String
+      #   #       # # S3InputMode: # String
+      #   # # BatchTransformInput:
+      #   #       # DataCapturedDestinationS3Uri: # String
+      #   #       # # DatasetFormat:
+      #   #       #   # # Csv:
+      #   #       #   #   # # Header: # Boolean
+      #   #       #   # # Json:
+      #   #       #   #   # # Line: # Boolean
+      #   #       #   # # Parquet: # Boolean
+      #   #       # LocalPath: # String
+      #   #       # # S3DataDistributionType: # String
+      #   #       # # S3InputMode: # String
+      #   # # MonitoringOutputConfig:
+      #   #   # # KmsKeyId: # String
+      #   #   # MonitoringOutputs:
+      #   #   # - # S3Output:
+      #   #   #       # LocalPath: # String
+      #   #   #       # # S3UploadMode: # String
+      #   #   #       # S3Uri: # String
+      #   # # MonitoringResources:
+      #   #   # # ClusterConfig:
+      #   #   #   # InstanceCount: # Integer
+      #   #   #   # InstanceType: # String
+      #   #   #   # # VolumeKmsKeyId: # String
+      #   #   #   # VolumeSizeInGB: # Integer
+      #   # # NetworkConfig:
+      #   #   # # EnableInterContainerTrafficEncryption: # Boolean
+      #   #   # # EnableNetworkIsolation: # Boolean
+      #   #   # # VpcConfig:
+      #   #   #   # SecurityGroupIds:
+      #   #   #   # - # String
+      #   #   #   # Subnets:
+      #   #   #   # - # String
+      #   # RoleArn: # String
+      #   # # StoppingCondition:
+      #   #   # MaxRuntimeInSeconds: # Integer
+      #   # MonitoringJobDefinitionName: # String
+      #   # MonitoringType: # String
+      #   # ScheduleConfig:
+      #   # ScheduleExpression: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EndpointName: # String
+      # FailureReason: # String
+      # LastMonitoringExecutionSummary:
+      #   CreationTime: # String
+      #   # EndpointName: # String
+      #   # FailureReason: # String
+      #   LastModifiedTime: # String
+      #   MonitoringExecutionStatus: # String
+      #   MonitoringScheduleName: # String
+      #   # ProcessingJobArn: # String
+      #   ScheduledTime: # String
+      # MonitoringScheduleStatus: # String
+    # !GetAtt THIS.MonitoringScheduleArn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.LastModifiedTime (String)

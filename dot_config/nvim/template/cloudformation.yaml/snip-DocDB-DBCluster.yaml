@@ -1,0 +1,37 @@
+  DocDBDBCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html
+    Type: AWS::DocDB::DBCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html
+      # StorageEncrypted: # Boolean
+      # RestoreToTime: # String
+      # EngineVersion: # String
+      # KmsKeyId: # String
+      # AvailabilityZones:
+      #   - # String
+      # SnapshotIdentifier: # String
+      # Port: # Integer
+      # DBClusterIdentifier: # String
+      # PreferredMaintenanceWindow: # String
+      # DBSubnetGroupName: # String
+      # DeletionProtection: # Boolean
+      # PreferredBackupWindow: # String
+      # UseLatestRestorableTime: # Boolean
+      # MasterUserPassword: # String
+      # VpcSecurityGroupIds:
+      #   - # String
+      # SourceDBClusterIdentifier: # String
+      # MasterUsername: # String
+      # DBClusterParameterGroupName: # String
+      # CopyTagsToSnapshot: # Boolean
+      # BackupRetentionPeriod: # Integer
+      # RestoreType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EnableCloudwatchLogsExports:
+      #   - # String
+    # !GetAtt THIS.ClusterResourceId (String)
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.Port (String)
+    # !GetAtt THIS.ReadEndpoint (String)

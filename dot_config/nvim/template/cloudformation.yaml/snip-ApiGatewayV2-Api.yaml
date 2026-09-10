@@ -1,0 +1,39 @@
+  ApiGatewayV2Api:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html
+    Type: AWS::ApiGatewayV2::Api
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-api.html
+      # RouteSelectionExpression: # String
+      # BodyS3Location:
+      #   # Etag: # String
+      #   # Bucket: # String
+      #   # Version: # String
+      #   # Key: # String
+      # Description: # String
+      # BasePath: # String
+      # FailOnWarnings: # Boolean
+      # DisableExecuteApiEndpoint: # Boolean
+      # DisableSchemaValidation: # Boolean
+      # Name: # String
+      # Target: # String
+      # CredentialsArn: # String
+      # CorsConfiguration:
+      #   # AllowOrigins:
+      #   # - # String
+      #   # AllowCredentials: # Boolean
+      #   # ExposeHeaders:
+      #   # - # String
+      #   # AllowHeaders:
+      #   # - # String
+      #   # MaxAge: # Integer
+      #   # AllowMethods:
+      #   # - # String
+      # Version: # String
+      # ProtocolType: # String
+      # RouteKey: # String
+      # Body: # Json
+      # Tags:
+      #   ANY_KEY: # String
+      # ApiKeySelectionExpression: # String
+    # !GetAtt THIS.ApiEndpoint (String)
+    # !GetAtt THIS.ApiId (String)

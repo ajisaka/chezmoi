@@ -1,0 +1,133 @@
+#!/usr/bin/ruby
+# vim: set fileencoding=UTF-8 :
+
+# XXX `caching` コマンドを使っている!!
+
+require 'open-uri'
+require 'date'
+require 'stringio'
+require 'pathname'
+require 'json'
+
+
+
+
+class WCalDate < Struct.new(:name, :year, :month, :day)
+end
+
+class Holidays
+  include Enumerable
+
+  attr_reader :days
+
+  def initialize ()
+    # https://holidays-jp.github.io/
+    url = 'https://holidays-jp.github.io/api/v1/date.json'
+    json = JSON.parse(`caching -t 7d curl --silent #{url}`)
+    @days = json.map do
+      |k, v|
+      WCalDate.new(v, *k.split('-').map(&:to_i))
+    end
+  end
+
+  def each (&block)
+    @days.each(&block)
+  end
+end
+
+class WCal
+  CALENDAR_PADDING = 2
+  CALENDAR_WIDTH = 21
+
+  def initialize (pages = 3)
+    today = Date.today
+    @start_year = today.year
+    @start_month = today.month - 1
+    if @start_month < 1
+      @start_month = 12
+      @start_year -= 1
+    end
+    @holidays = Holidays.new()
+    @pages = pages
+  end
+
+  def draw
+    y, m = @start_year, @start_month
+    num = (`tput cols`.to_i + CALENDAR_PADDING + 1) / (CALENDAR_WIDTH + CALENDAR_PADDING)
+
+    1.step(@pages, num).each do
+      |n|
+      (n...[(n + num), @pages + 1].min).map do
+        make(y, m).split(/\n/, -1).tap do
+          m += 1
+          if m > 12
+            y += 1
+            m = 1
+          end
+        end
+      end.transpose.map do
+        |it|
+        it.map {|it| it + (' ' * (CALENDAR_WIDTH - it.gsub(/\e[^m]+m/, '').size)) }
+      end.each do
+        |it|
+        puts(it.join(' ' * CALENDAR_PADDING))
+      end
+    end
+  end
+
+  def make (year, month)
+    out = StringIO.new
+
+    today = Date.today
+
+    ptr = Date.new(year, month, 1)
+    out.print('   ' * ((ptr.wday + 6) % 7))
+
+    working_days, holidays = 0, 0
+    lines = 0
+    while ptr.month == month
+      if holiday?(ptr) or ptr.wday == 0 or ptr.wday == 6
+        holidays += 1
+      else
+        working_days += 1
+      end
+
+      out.print("\e[1;4;5m") if today == ptr
+      if holiday?(ptr)
+        out.print("\e[41;37m%2d\e[0m " % ptr.day)
+      elsif ptr.wday == 0 or ptr.wday == 6
+        out.print("\e[44;37m%2d\e[0m " % ptr.day)
+      else
+        out.print("%2d\e[0m " % ptr.day)
+      end
+
+      if ptr.wday == 0
+        out.puts('')
+        lines += 1
+      end
+
+      ptr = ptr.succ
+    end
+
+    (6 - lines).times { out.puts('') }
+
+    header = StringIO.new
+    header.puts("\e[46;1m   %.2d-%4d  \e[0;46m%.2d+%.2d   \e[0m" % [month, year, working_days, holidays])
+    header.puts("\e[42;1mMo Tu We Th Fr Sa Su\e[0m")
+
+    header.rewind
+    out.rewind
+    header.read + out.read
+  end
+
+  def holiday?(date)
+    @holidays.any? do
+      |h|
+      h.year == date.year and h.month == date.month and h.day == date.day
+    end
+  end
+end
+
+STDOUT.set_encoding('UTF-8')
+WCal.new((ARGV.first || '3').to_i).draw
+

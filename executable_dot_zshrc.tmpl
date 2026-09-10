@@ -1,0 +1,1607 @@
+# chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+
+# コメントアウトを外すと、 .zshrc の処理時間を表示する (猫も走らない)
+# __anekos_start_at=$(date +%s.%3N)
+
+# コメントアウトを外すと、プロファイリングが最後に表示される
+# zmodload zsh/zprof && zprof
+
+# Util functions {{{
+
+function has-command () {
+  local it
+  for it in "$@"
+  do
+    which "$it" > /dev/null 2>&1 || return 1
+  done
+  return 0
+}
+
+function has-package () {
+  has-command pacman || return 1
+  case "$HOST"  in
+    *)
+      pacman -Qi "$1" > /dev/null 2>&1
+    ;;
+  esac
+}
+
+function parent-pid () {
+  ps -h -o ppid -p "$1" | tr -d ' '
+}
+
+function file-size () {
+  stat --format '%s' "$@"
+}
+
+# ウィンドウが、表示されていなければ 1
+function is-unmapped () {
+  if [ -z "$WINDOWID" ]
+  then
+    return 1
+  else
+    # 一度、親(端末)のウィンドウが削除された後に、復活していると WINDOWID が不正なものになる
+    # tmux attach などで起る
+    # ので、エラー出力は捨ててしまう
+    xwininfo -id "$WINDOWID" 2>&1 | grep '^  Map State: IsUnMapped' &> /dev/null
+  fi
+}
+
+function define-lazy-command () {
+  local command_names="$1"
+  local initialization_code="$2"
+
+  for command_name in $(echo "$command_names")
+  do
+    eval "$(
+      printf '
+      function %q () {
+        local args=("$@")
+        for n in $(echo %q)
+        do
+          unset -f "$n"
+        done
+        %s
+        %q "${args[@]}"
+      }
+      ' "$command_name" "$command_names" "$initialization_code" "$command_name"
+    )"
+  done
+}
+
+# }}}
+
+# Start {{{
+
+NOTMUX=1
+if has-command tmux
+then
+  function __anekos_maybe-spawn-tmux () {
+    [ -z "$NOTMUX" ] || return
+    [ -z "$TMUX" ] || return
+    [ -z "$XMONAD_SHELL" ] || return
+    [ -z "$XMONAD_LAUNCHER" ] || return
+    [ "$TERM" = screen ] && return
+    [ -n "$SSH_CLIENT" ] && return
+    [ -n "$KITTY_WINDOW_ID" ] && return
+    [ -n "$VIM_TERMINAL" ] && return
+    exec tmux
+  }
+  __anekos_maybe-spawn-tmux
+fi
+
+# }}}
+
+# ENV {{{
+
+[ -f ~/.envrc ] && source ~/.envrc
+
+export LINAME_EDITOR='gvim -f'
+
+export DARCS_ALWAYS_COLOR=1
+
+case "$OSTYPE" in
+  linux*)
+    export TERMCMD=urxvt
+  ;;
+esac
+
+export ANSIBLE_COW_SELECTION=random
+
+HOST_OS_TYPE=linux
+[ -n "${WSL_INTEROP:-}" ] && HOST_OS_TYPE=windows
+
+# }}}
+
+# AUTOLOAD {{{
+
+# if [ -d ~/.zsh_func ]
+# then
+#   fpath=($fpath ~/.zsh_func)
+#   autoload -U ~/.zsh_func/*(:t)
+# fi
+
+autoload -Uz is-at-least
+
+autoload -U compinit
+compinit
+
+autoload -U colors
+colors
+
+autoload -Uz add-zsh-hook
+
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+# http://d.hatena.ne.jp/sugyan/20100712/1278869962
+autoload -U select-word-style
+# select-word-style bash
+# WORDCHARS='*?_-.,[]~=&;!#$%^(){}<>'
+# zstyle ':zle:*' word-chars " _-./;@"
+# zstyle ':zle:*' word-style unspecified
+
+autoload zargs
+
+# }}}
+
+# MODULES {{{
+
+zmodload -i zsh/mathfunc
+
+# }}}
+
+# COMPLETION {{{
+
+# zshの補完を強化するTips - Qiita [キータ] - http://qiita.com/PSP_T/items/ed2d36698a5cc314557d
+# zshのzstyleでの補完時の挙動について - voidy21の日記 - http://voidy21.hatenablog.jp/entry/20090902/1251918174
+# 補完関数の表示を強化する
+zstyle ':completion:*' verbose yes
+zstyle ':completion:*' completer _expand _complete _match _prefix _list _approximate # _history
+zstyle ':completion:*:messages' format '%F{YELLOW}%d'$DEFAULT
+zstyle ':completion:*:warnings' format '%F{RED}No matches for:''%F{YELLOW} %d'$DEFAULT
+zstyle ':completion:*:descriptions' format '%F{YELLOW}completing %B%d%b'$DEFAULT
+zstyle ':completion:*:options' description 'yes'
+zstyle ':completion:*:descriptions' format '%F{yellow}Completing %B%d%b%f'$DEFAULT
+
+# マッチ種別を別々に表示
+zstyle ':completion:*' group-name ''
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z} m:{A-Z}={a-z}'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
+
+# 補完候補が複数ある時、一覧表示 (auto_list) せず、すぐに最初の候補を補完する
+#setopt menu_complete
+
+# 一覧表示された補完候補を C-p C-n などで選択可能にする
+zstyle ':completion:*:default' menu select=1
+
+# 補完リストを詰めて表示
+setopt list_packed
+
+# エイリアスを展開して補完
+setopt complete_aliases
+
+# カーソルの位置に補なうことで単語を完成させようとする。
+setopt complete_in_word
+
+# *.o とかは補完しない
+zstyle ':completion:*:*files' ignored-patterns '*?.hi' '*?.o' '*?~' '*\#'
+
+# }}}
+
+# OPTION {{{
+
+# based by http://devel.aquahill.net/zsh/zshoptions
+
+# 複数の zsh を同時に使う時など history ファイルに上書きせず追加する
+setopt append_history
+
+# 指定したコマンド名がなく、ディレクトリ名と一致した場合 cd する
+setopt auto_cd
+
+# 補完候補が複数ある時に、一覧表示する
+setopt auto_list
+
+# 補完キー（Tab, Ctrl+I) を連打するだけで順に補完候補を自動で補完する
+setopt auto_menu
+
+# カッコの対応などを自動的に補完する
+setopt auto_param_keys
+
+# ディレクトリ名の補完で末尾の / を自動的に付加し、次の補完に備える
+setopt auto_param_slash
+
+# cd -[tab] でpushd
+setopt autopushd
+
+# {a-c} を a b c に展開する機能を使えるようにする
+setopt brace_ccl
+
+# コマンドのスペルチェックをする
+setopt correct
+
+# =command を command のパス名に展開する
+setopt equals
+
+# ファイル名で #, ~, ^ の 3 文字を正規表現っぽく使えるように
+setopt extended_glob
+
+# zsh の開始・終了時刻をヒストリファイルに書き込む
+setopt extended_history
+
+# 直前と同じコマンドラインはヒストリに追加しない
+setopt hist_ignore_dups
+
+# 履歴を重複して登録しないようにする
+setopt hist_ignore_dups
+
+# コマンドラインの先頭がスペースで始まる場合ヒストリに追加しない
+setopt hist_ignore_space
+
+# history (fc -l) コマンドをヒストリリストから取り除く。
+setopt hist_no_store
+
+# ヒストリを呼び出してから実行する間に一旦編集できる状態になる
+setopt hist_verify
+
+# Ctrl+D では終了しないようになる（exit, logout などを使う）
+setopt ignore_eof
+
+# コマンドラインでも # 以降をコメントと見なす
+setopt interactive_comments
+
+# auto_list の補完候補一覧で、ls -F のようにファイルの種別をマーク表示
+setopt list_types
+
+# 内部コマンド jobs の出力をデフォルトで jobs -l にする
+setopt long_list_jobs
+
+# コマンドラインの引数で --prefix=/usr などの = 以降でも補完できる
+setopt magic_equal_subst
+
+# ファイル名の展開でディレクトリにマッチした場合末尾に / を付加する
+setopt mark_dirs
+
+# 複数のリダイレクトやパイプなど、必要に応じて tee や cat の機能が使われる
+setopt multios
+
+# ファイル名の展開で、辞書順ではなく数値的にソートされるようになる
+setopt numeric_glob_sort
+
+# 8 ビット目を通すようになり、日本語のファイル名などを見れるようになる
+setopt print_eightbit
+
+# 色を使う(エスケープシーケンスを通す)
+setopt prompt_subst
+
+# ディレクトリスタックに同じディレクトリを追加しないようになる
+setopt pushd_ignore_dups
+
+# rm_star_silent の逆で、10 秒間反応しなくなり、頭を冷ます時間が与えられる
+setopt rm_star_wait
+
+# シェルのプロセスごとに履歴を共有
+setopt share_history
+
+# for, repeat, select, if, function などで簡略文法が使えるようになる
+setopt short_loops
+
+#コピペの時rpromptを非表示する
+setopt transient_rprompt
+
+# ビープ音を鳴らさないようにする
+unsetopt beep
+unsetopt listbeep
+
+# Ctrl+S/Ctrl+Q によるフロー制御を使わないようにする
+unsetopt flow_control
+
+# シェルが終了しても裏ジョブに HUP シグナルを送らないようにする
+unsetopt hup
+
+# 文字列末尾に改行コードが無い場合でも表示する
+unsetopt promptcr
+
+# }}}
+
+# keys {{{
+
+# emacs 風のバインド
+bindkey -e
+
+# 履歴検索
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+
+# コマンドラインの入力を退避
+bindkey '^Xx' push-line-or-edit
+bindkey '^X^X' push-line-or-edit
+
+# }}}
+
+# 左プロンプト {{{
+
+# ホストに寄って色を変える
+# http://absolute-area.com/post/6664864690/zsh
+
+function pcolor () {
+  for ((f = 0; f < 255; f++)); do
+    printf "\e[38;5;%dm %3d#\e[m" $f $f
+    if [[ $f%8 -eq 7 ]] then
+      printf "\n"
+    fi
+  done
+  echo
+}
+
+if [ -f ~/.hostname ]
+then
+  local LOCAL_HOSTNAME=$(head -1 ~/.hostname | tr --delete '\n')
+else
+  if has-command hostname
+  then
+    local LOCAL_HOSTNAME=$(hostname)
+  else
+    local LOCAL_HOSTNAME=unknown
+  fi
+fi
+local DEFAULTC=$'%{\e[m%}'
+
+function _anekos_prompt_precmd () {
+  local ec="$?"
+  if [ "$ec" = "0" ]
+  then
+    _anekos_prompt_lrc=""
+  else
+    _anekos_prompt_lrc=" ∴$ec∴ "
+  fi
+
+  case "$X_TERMINAL_NAME" in
+    mlterm |  konsole | termite)
+      _anekos_prompt_clock=" $(char-clock)"
+      ;;
+    *)
+      _anekos_prompt_clock=''
+      ;;
+  esac
+
+  if [ -n "$AWS_PROFILE" ]
+  then
+    _anekos_prompt_aws=" ☁️ ${AWS_PROFILE}@${AWS_DEFAULT_REGION}"
+  else
+    _anekos_prompt_aws=''
+  fi
+
+  if [ -n "$X_GIT_SSH_PROFILE" ]
+  then
+    _anekos_prompt_gitssh=" 🚩 $X_GIT_SSH_PROFILE"
+  else
+    _anekos_prompt_gitssh=''
+  fi
+}
+
+precmd_functions=($precmd_functions _anekos_prompt_precmd)
+
+if [ "$TERM" = linux ]
+then
+  :
+else
+  PROMPT="%F{red}┏%F{yellow}%B\${_anekos_prompt_lrc}%b%f[${LOCAL_HOSTNAME}:%~] %F{green}%D{%H:%M}${DEFAULTC}\${_anekos_prompt_aws}\${_anekos_prompt_gitssh}\${_anekos_prompt_clock}
+%F{red}┗%F{blue}▶%f "
+fi
+#〽【】
+
+# }}}
+
+# SET {{{
+
+# 履歴
+if [ -d ~/buffer ]
+then
+  HISTFILE=~/buffer/home/.zsh_history
+else
+  HISTFILE=~/.zsh_history
+fi
+HISTSIZE=1000000
+SAVEHIST=1000000 # 100万パワー
+
+# }}}
+
+# zsh 終了時の処理 {{{
+
+function on_zsh_exit () {
+  [ -f ~/.zexit ] && source ~/.zexit
+}
+
+trap on_zsh_exit EXIT
+
+# }}}
+
+# 文字装飾 {{{
+
+# ref: http://ascii-table.com/ansi-escape-sequences.php
+
+TEXT_FG_Black=30
+TEXT_FG_Red=31
+TEXT_FG_Green=32
+TEXT_FG_Yellow=33
+TEXT_FG_Blue=34
+TEXT_FG_Magenta=35
+TEXT_FG_Cyan=36
+TEXT_FG_White=37
+
+TEXT_BG_Black=40
+TEXT_BG_Red=41
+TEXT_BG_Green=42
+TEXT_BG_Yellow=43
+TEXT_BG_Blue=44
+TEXT_BG_Magenta=45
+TEXT_BG_Cyan=46
+TEXT_BG_White=47
+
+TEXT_Clear=0
+TEXT_Bold=1
+TEXT_Italic=3
+TEXT_Underscore=4
+TEXT_Blink=5
+TEXT_Reversed=7
+TEXT_Concealed=8
+
+function colorname2number {
+  local background=0
+
+  while getopts :b opt "$@"
+  do
+    case $opt in
+      b)
+        local background=1
+        ;;
+      \?)
+        return 2
+        ;;
+    esac
+  done
+
+  shift $((OPTIND-1))
+
+  case "$1" in
+    black)
+      local code=30
+      ;;
+    red)
+      local code=31
+      ;;
+    green)
+      local code=32
+      ;;
+    brown)
+      local code=33
+      ;;
+    blue)
+      local code=34
+      ;;
+    magenta)
+      local code=35
+      ;;
+    cyan)
+      local code=36
+      ;;
+    white)
+      local code=37
+      ;;
+    bblack)
+      local code=30
+      ;;
+    bred)
+      local code=31
+      ;;
+    bgreen)
+      local code=32
+      ;;
+    bbrown)
+      local code=33
+      ;;
+    bblue)
+      local code=34
+      ;;
+    bmagenta)
+      local code=35
+      ;;
+    bcyan)
+      local code=36
+      ;;
+    bwhite)
+      local code=37
+      ;;
+    *)
+      echo "Invalid color name: $1
+  Valid names: red, green, brown, blue, magenta, cyan, white
+               (background color: 'b<color>')" >&2
+      return 1
+    ;;
+  esac
+
+  if [ $background = 1 ]
+  then
+    code=$((code + 10))
+  fi
+
+  echo "$code"
+}
+
+# }}}
+
+# Aliases {{{
+
+# Fail safe
+has-command trash-put && alias rm=trash-put
+alias crontab='crontab -i'
+
+# short
+if has-command rifle
+then
+  alias o=rifle
+elif has-command exo-open
+then
+  alias o=exo-open
+fi
+
+if has-command tmux
+then
+  funciton ta () {
+    if tmux list-sessions -F '#{session_attached}' | grep 0 > /dev/null 2>&1
+    then
+      exec tmux attach -d
+    else
+      echo 'No session' 2>&1
+    fi
+  }
+
+  alias tm='exec tmux'
+fi
+
+if has-command notify-send
+then
+  alias ns='notify-send -u normal'
+  alias nsl='notify-send -u low'
+  alias nsc='notify-send -u critical'
+fi
+
+# override
+if has-command exa
+then
+  alias ls='exa'
+  alias ll='exa   --long --all --classify --header --group --git                                --time-style=long-iso'
+  alias lt='exa   --long --all --classify --header         --git --tree --git-ignore            --time-style=long-iso'
+  alias lr='exa   --long --all --classify --header --group --git --sort modified                --time-style=long-iso'
+  alias lrc='exa  --long --all --classify --header --group --git --sort created  --time created --time-style=long-iso'
+else
+  alias ls='ls --color=auto'
+  if [[ "$(uname -a)" =~ Darwin ]]
+  then
+    alias ll='ls -lah'
+    alias lr='ls -ltrah'
+  else
+    alias ll='ls -lah --time-style=long-iso'
+    alias lr='ls -ltrah --time-style=long-iso'
+  fi
+fi
+has-command hub && alias git='hub'
+
+# override with rlwrap
+has-command rlwrap && has-command sbcl && alias sbcl='rlwrap sbcl --noinform'
+
+# simple
+alias g=git
+alias lg=lazygit
+alias ki='git tree'
+alias om=openscad-make
+alias op='openscad --hardwarnings --viewall'
+alias say='voicevox-play -m -p'
+alias jless=/usr/bin/fx
+has-command acg && alias a='acg chat'
+
+# with args
+alias ,,=popd
+alias ,.=pushd
+alias quote='sed "s/^\|$/\"/g"'
+alias mv='mv -i'
+alias tailff='tail --follow=name --retry'
+alias bell='echo -e "\\a"'
+alias grep="grep --color"
+alias dog='cat > /dev/null'
+
+# chezmoi
+alias cza='chezmoi apply'
+alias czd='chezmoi diff --exclude=scripts'
+
+# vim
+alias v="gvim"
+alias vil='find . -maxdepth 3 -type f | egrep -v "/(\\..*|classes)" | nvim -c "setlocal readonly nomodified" - '
+
+# Get My IP
+alias myip='curl ipv4.icanhazip.com'
+
+# global
+alias -g A='| awk'
+alias -g CL='| chop-lines'
+alias -g G='| grep --line-buffered --color'
+alias -g EG='| egrep --color'
+alias -g GI='| grep --line-buffered -i'
+alias -g H='| head'
+alias -g HU='| humanize --min 2099 --padding --date'
+alias -g L='| less -R'
+alias -g LS='| less -R --chop-long-lines'
+alias -g M='| more'
+alias -g T='| tail'
+alias -g W='| wc'
+alias -g WL='| wc -l'
+alias -g S='| sed --unbuffered'
+alias -g X='| xargs'
+alias -g Q='| quote'
+alias -g V='| vim -R -'
+alias -g GV='| panty summon --stdin'
+alias -g HTML='| w3m -T "text/html"'
+alias -g HTMLD='| w3m -cols `tput cols` -dump -T "text/html"'
+alias -g 1N='> /dev/null'
+alias -g 2N='2> /dev/null'
+alias -g 12N='&> /dev/null'
+alias -g YMD='date +%Y-%m-%d'
+has-command jq && alias -g JQ='| jq'
+
+# H1 〜 H100、T1 〜 T100
+function () {
+  local i=0
+  for i in {1..100}
+  do
+    alias -g H$i="| head -$i"
+    alias -g T$i="| tail -$i"
+  done
+}
+
+alias eclear="echo -ne '\026\033c'"
+
+function _anekos_input() {
+  local prompt="${1:-}"
+  if [ -n "$prompt" ]
+  then
+    echo -n "${prompt}: " 1>&2
+  fi
+  local input
+  read -r input
+  echo -n "$input"
+}
+
+alias -g ASK='_anekos_input'
+
+if has-command longcat
+then
+  function fitcat () {
+    local wait="$1"
+    [ -z "$1"] && wait=1
+    (echo '' ; tput clear; longcat $((`tput lines` - 20)); sleep $wait)
+  }
+fi
+
+if has-command yazi
+then
+  function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+      builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+  }
+fi
+
+# OS
+case "$HOST_OS_TYPE" in
+  linux)
+    # clipboard
+    alias -g GC='clipboard-pull'
+  ;;
+  windows)
+    has-command gopaste && alias -g GC=gopaste
+  ;;
+esac
+
+alias -g GC='~/bin/clipboard-pull'
+alias -g QQ='$(GC)'
+alias -g QQQ='"$(GC)"'
+alias -g PC="| ~/bin/clipboard-push"
+alias -g EPC='| ~/bin/esclr PC'
+
+# TMUX
+[ -n "$TMUX" ] && alias copy=~/script/tmux/copy
+
+# workaround
+alias gitk='LC_ALL=C gitk'
+
+# }}}
+
+# 外部コマンドを使うためのエイリアス {{{
+
+[ -x /bin/time ] && alias time=/bin/time
+
+# }}}
+
+# Plugin {{{
+
+if [ -d ~/.zsh_plugin ]
+then
+  for plugin_name in ~/.zsh_plugin/*
+  do
+    [ -e ~/.zsh_plugin/$plugin_name ] && source $plugin_name
+  done
+fi
+
+# }}}
+
+# 履歴 history-all {{{
+
+function history-all { history -E 1 } # 全履歴の一覧を出力する
+
+# }}}
+
+# マウントしながら cd {{{
+function cdmount () {
+  mount "$@"
+  cd "$1"
+}
+# }}}
+
+# パスをクリップボードへコピー {{{
+function cpwd () {
+  echo -n `realpath "${1:-.}"` | clipboard-push
+}
+# }}}
+
+# mkdir + cd {{{
+function mkcd () {
+  mkdir "$@"
+  cd "${@: - 1}"
+}
+# }}}
+
+# コマンドの成否を報告 {{{
+
+function zsay {
+  if [ "$HOST" = "ildjarn.local.anekos.com" ]
+  then
+    say "$_anekos_longtimeago_name おわたで"
+  fi
+}
+
+function saycode {
+  if [ $? -ne 0 ];
+  then
+    zsay しっぱい
+  else
+    zsay せいこう
+  fi
+}
+
+# }}}
+
+# 履歴に記録する条件 {{{
+# http://d.hatena.ne.jp/mollifier/20090728/p1
+_zshaddhistory_impl() {
+  local line=${1%%$'\n'}
+  local cmd_path="${line%% *}"
+  local cmd="${cmd_path:t}"
+  local exists=0
+
+  if has-command "$cmd" || [[ $cmd_path =~ [~/] ]]
+  then
+    exists=1
+  fi
+
+  # 以下の条件をすべて満たすものだけをヒストリに追加する
+  [[ ${#line} -ge 4
+      && ${cmd} != (exit|halt|reboot)
+      && ${cmd} != (rm|rmdir)
+      && ${cmd} != (man)
+      && ${cmd} != (l[salr])
+      && ${cmd} != (c|cd)
+      && ${exists} -eq 1
+  ]]
+}
+
+zshaddhistory() {
+  # 本体でエラーが起きても入力行の実行を巻き込まないよう subshell で隔離する
+  ( _zshaddhistory_impl "$1" ) 2>/dev/null
+}
+# }}}
+
+# TMUX の自動タイトル {{{
+if [ -n "$TMUX" ]
+then
+  function _anekos_tmux_window_title_preexec () {
+    local -a cmd
+    cmd=(${(z)2})
+
+    _anekos_tmux_window_title_do_set=0
+
+    if [ "$_anekos_tmux_window_title_set" -ne 1 ] && [ "$cmd[1]" = "cd" ] || [ "$cmd[1]" = "j" ]
+    then
+      _anekos_tmux_window_title_set=1
+      _anekos_tmux_window_title_do_set=1
+    fi
+  }
+
+  function _anekos_tmux_window_title_precmd () {
+    if [ "$_anekos_tmux_window_title_do_set" = 1 ]
+    then
+      local title=`basename "$PWD"`
+      tmux rename-window "$title"
+    fi
+  }
+
+  precmd_functions=($precmd_functions _anekos_tmux_window_title_precmd)
+  preexec_functions=($preexec_functions _anekos_tmux_window_title_preexec)
+fi
+# }}}
+
+# zoxide - autojump {{{
+
+has-command zoxide && eval "$(zoxide init zsh)"
+
+# }}}
+
+# reload functions {{{
+function reload-functions () {
+  local f
+  f=(~/.zsh_func/*(.))
+  unfunction $f:t 2> /dev/null
+  autoload -U $f:t
+}
+# }}}
+
+# MD5 / SHA-256 コピー {{{
+function copy-md5sum () {
+  md5sum -b "$@" | cut -d ' ' -f1 | tr --delete "\n" | clipboard-push
+  echo
+}
+
+function copy-sha256sum () {
+  sha256sum -b "$@" | cut -d ' ' -f1 | tr --delete "\n" | clipboard-push
+  echo
+}
+# }}}
+
+# Shell Title {{{
+
+function _anekos_auto_shell_title_preexec {
+  echo -n "\e]2; [$USER@$HOST] $1\a"
+}
+
+if [ "$TERM" = "screen" ]
+then
+  preexec_functions=($preexec_functions _anekos_auto_shell_title_preexec)
+fi
+
+# }}}
+
+# 長い処理が終わったときに通知する {{{
+
+function _anekos_longtimeago_preexec {
+  # マッチするコマンドの時は無視する
+  [[ $1 == (mfc|axe|weechat*|sc|vi*|screen|ssh|vim|git ci|man|ack|ghci|gprolog|irb|lein repl)\ * ]] && return
+
+  local -a cmd
+  cmd=(${(z)2})
+  local name=$cmd[1]
+  [ "$name" = "sudo" ] && local name=$cmd[2]
+
+  _anekos_longtimeago_name="$name"
+  _anekos_longtimeago_cmd="$1"
+  _anekos_longtimeago_time=`date +%s`
+}
+
+function _anekos_longtimeago_precmd {
+  local rc=$(( `echo \$status` ))
+
+  [ ${+_anekos_longtimeago_time} = 1 ] || return
+
+  local time=$((`date +%s` - $_anekos_longtimeago_time))
+  unset _anekos_longtimeago_time
+
+  # 120 秒以上かかるか、隠れたウィンドウで終了していたら、お知らせ
+  if [ $time -gt 120 ] || is-unmapped
+  then
+    bell
+    local short_name=$(echo "$_anekos_longtimeago_name" | awk "{print $1}")
+    if [ $rc = 0 ]
+    then
+      has-command notify-send && notify-send Success "$_anekos_longtimeago_cmd"
+      # zsay "$_anekos_longtimeago_name おわたで"
+    else
+      has-command notify-send && notify-send Fail "$_anekos_longtimeago_cmd"
+      # zsay "$_anekos_longtimeago_name 失敗したで"
+    fi
+  fi
+}
+
+if has-command notify-send
+then
+  TRAPZERR_functions=($TRAPZERR_functions _anekos_longtimeago_TRAPZERR)
+  preexec_functions=($preexec_functions _anekos_longtimeago_preexec)
+  precmd_functions=($precmd_functions _anekos_longtimeago_precmd)
+fi
+
+# }}}
+
+# zsh マニュアル {{{
+
+# http://qiita.com/yuyuchu3333/items/67630d597c7700a51b95
+## man zshall
+# zman [search word]
+zman() {
+    if [[ -n $1 ]]; then
+        PAGER="less -g -s '+/"$1"'" man zshall
+        echo "Search word: $1"
+    else
+        man zshall
+    fi
+}
+# zsh 用語検索
+# http://qiita.com/mollifier/items/14bbea7503910300b3ba
+zwman() {
+    zman "^       $1"
+}
+
+# zsh フラグ検索
+zfman() {
+    local w='^'
+    w=${(r:8:)w}
+    w="$w${(r:7:)1}|$w$1(\[.*\].*)|$w$1:.*:|$w$1/.*/.*"
+    zman "$w"
+}
+# }}}
+
+# RPN 電卓 {{{
+
+function _calc {
+  if [[ -z $@ ]] then
+    dc | while read r
+    do
+      echo -e "\e[2m"$(( $r )) 0x$(([##16] $r )) 0b$(([##2] $r ))"\e[m"
+    done
+  else
+    #echo $(( $@ )) 0x$(([##16] $@ )) 0b$(([##2] $@ ))
+    local R=`dc -e "$* p"`
+    local LR=`echo $R | tail -n 1`
+    echo $R | head -n -1
+    echo -e "\e[2m"$(( $LR )) 0x$(([##16] $LR )) 0b$(([##2] $LR ))"\e[m"
+  fi
+}
+
+function _rpncalc () {
+  /bin/rpncalc "$@"
+}
+
+# alias c="noglob _calc"
+alias mfc="noglob mfc"
+
+# }}}
+
+# コマンドラインを編集 {{{
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey "^Xe" edit-command-line
+bindkey "^XE" edit-command-line
+
+# }}}
+
+# ファイルを選択してパスを挿入 {{{
+
+function __anekos_select_file_and_insert () {
+  local selected
+  selected="$(
+    find -type f | anything
+  )"
+  [ -z "$selected" ] && return
+  selected="$( printf '%q' "$selected" )"
+  BUFFER=" ${selected}"
+  CURSOR=0
+}
+
+zle -N __anekos_select_file_and_insert
+bindkey "^Xf" __anekos_select_file_and_insert
+
+# }}}
+
+# ruby - rbenv {{{
+
+has-command rbenv && define-lazy-command 'rbenv ruby irb gem' 'eval "$(rbenv init -)"'
+
+# }}}
+
+# node.js - nvm {{{
+
+define-lazy-command nvm '[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh'
+
+# }}}
+
+# anything {{{
+
+if has-command anything
+then
+  function __anekos_zoxide_cd() {
+    local selected
+    # "$LBUFFER"
+    selected=$(
+      _ZO_FZF_OPTS=$(
+        echo -n "${_ZO_FZF_OPTS} "
+        printf '-q %q' "$LBUFFER"
+      ) zoxide query --interactive --all
+    )
+    if [ -z "$selected" ]
+    then
+      return;
+    fi
+
+    cd "$selected"
+    BUFFER=""
+    zle reset-prompt
+  }
+
+  function anything_select_history() {
+    local tac
+    has-command gtac && tac="gtac" || { has-command tac && tac="tac" || { tac="tail -r" } }
+    BUFFER=$(fc -l -n 1 | eval $tac | unique | anything -q "$LBUFFER")
+    CURSOR=$#BUFFER         # move cursor
+    zle -R -c               # refresh
+  }
+
+  zle -N anything_select_history
+  bindkey '^R' anything_select_history
+
+  # function anything_jump() {
+  #   zi "$LBUFFER"
+  #   BUFFER=""
+  #   zle reset-prompt
+  # }
+
+  zle -N __anekos_zoxide_cd
+  bindkey '^Xd' __anekos_zoxide_cd
+fi
+
+# }}}
+
+# AWS {{{
+
+function __aws-region-selector () {
+  echo '
+us-east-1 = US East (N. Virginia)
+us-east-2 = US East (Ohio)
+us-west-1 = US West (N. California)
+us-west-2 = US West (Oregon)
+ca-central-1 = Canada (Central)
+eu-west-1 = EU (Ireland)
+eu-central-1 = EU (Frankfurt)
+eu-west-2 = EU (London)
+ap-northeast-1 = Asia Pacific (Tokyo)
+ap-northeast-2 = Asia Pacific (Seoul)
+ap-southeast-1 = Asia Pacific (Singapore)
+ap-southeast-2 = Asia Pacific (Sydney)
+ap-south-1 = Asia Pacific (Mumbai)
+sa-east-1 = South America (São Paulo)
+  ' | anything | awk -F ' = ' '{print $1}'
+}
+
+function aws-select-region () {
+  export AWS_DEFAULT_REGION="$(__aws-region-selector)"
+  env | grep '^AWS'
+  has-command hugo && hugo zsh-aws-env set --ttl '6 hours' "REGION" "$AWS_DEFAULT_REGION"
+}
+
+alias asr=aws-select-region
+
+function __anekos_aws_profiles() {
+  cat ~/.aws/{config,credentials} | grep '^\[' | sed 's/profile //' | tr --delete '[] ' | grep -v '^default$' | sort
+}
+
+function aws-select-profile () {
+  local selected=""
+  selected="$(__anekos_aws_profiles | anything)"
+  [ -z "$selected" ] && return 1
+  export AWS_PROFILE="$selected"
+  env | grep '^AWS' | sed -e 's/^/export /'
+  if [ -n "$AWS_PROFILE" ]
+  then
+    export AWS_DEFAULT_REGION=ap-northeast-1
+  fi
+  has-command hugo && hugo zsh-aws-env set --ttl '6 hours' "PROFILE" "$AWS_PROFILE"
+}
+
+function aws-sso-login () {
+  aws-select-profile && aws sso login
+}
+
+alias asp=aws-select-profile
+alias asl=aws-sso-login
+
+function aws-select-profile-for-directory () {
+  export AWS_PROFILE="$(__anekos_aws_profiles | anything)"
+  has-command hugo && hugo aws-profile-for-directory set "$PWD" "$AWS_PROFILE"
+}
+
+alias aspd=aws-select-profile-for-directory
+
+function aws-select () {
+  aws-select-region
+  aws-select-profile
+}
+
+# 同じ TMUX セッションであれば、プロファイルを使いまわす
+
+if has-command hugo
+then
+  function __initialize_aws_env () {
+    local profile="$(hugo zsh-aws-env get "PROFILE")"
+    [ -n "$profile" ] && export AWS_PROFILE="$profile"
+    local region="$(hugo zsh-aws-env get "REGION")"
+    if [ -n "$region" ]
+    then
+      export AWS_DEFAULT_REGION="$region"
+    else
+      [ -z "$AWS_DEFAULT_REGION" ] && export AWS_DEFAULT_REGION=ap-northeast-1
+    fi
+  }
+
+  function __set_aws_profile_automatically() {
+    local profile
+    local target_dir="$PWD"
+    local depth=0
+    while [ "$target_dir" != '/' ] && [ "$depth" -lt 5 ]
+    do
+      profile="$(hugo aws-profile-for-directory get "$target_dir")"
+      if [ -n "$profile" ]
+      then
+        export AWS_PROFILE="$profile"
+        break
+      fi
+      target_dir="$(dirname "$target_dir")"
+      depth="$(( depth + 1 ))"
+    done
+  }
+
+  add-zsh-hook chpwd __set_aws_profile_automatically
+fi
+
+# }}}
+
+# GIT {{{
+
+# AWS CodeCommit などの設定切り替え用
+
+function __anekos_set_git_config() {
+  local config="$1"
+
+  local config_file=~/.ssh/"${config}.config"
+  export GIT_SSH_COMMAND="ssh -F ${config_file}"
+  export X_GIT_SSH_PROFILE="$config"
+  env | grep GIT_SSH_COMMAND
+
+  local identity_file
+  while read -r identity_file
+  do
+    [ -n "$identity_file" ] && bash -c "ssh-add ${identity_file}"
+  done < <(
+    cat "$config_file" | awk -F ' ' '$1 == "IdentityFile" {print $2}'
+  )
+}
+
+function git-select-ssh () {
+  __anekos_set_git_config "$(find ~/.ssh/ -name '*.config' | sed 's/\([^\/]*\/\)\{4\}//' | sed 's/\.config$//' | anything)"
+}
+
+function git-select-ssh-for-directory () {
+  git-select-ssh
+  has-command hugo && hugo zsh-git-env-for-directory set "$PWD" "$X_GIT_SSH_PROFILE"
+}
+
+alias gss=git-select-ssh
+alias gssd=git-select-ssh-for-directory
+alias gsc=git-select-checkout
+
+# }}}
+
+# herdr {{{
+
+if has-command herdr
+then
+  source <(herdr completion zsh)
+  alias h=herdr
+fi
+
+# }}}
+
+# Locale を変更する  {{{
+
+function select-locale () {
+  local new
+  if new="$(awk '!/^#/ && $2 == "UTF-8" {print $1}' /etc/locale.gen | anything)"
+  then
+    export LC_ALL="$new"
+  fi
+}
+
+# }}}
+
+# Script finder <C-s> {{{
+
+__anekos_script_dirs=()
+__anekos_init_script_dirs(){
+  local d
+  local roots=(~/script/ ~/local/script/ ~/bin/ ~/lin/ ~/local/bin/)
+  [ "$DESKTOP_SESSION" = hyprland ] && roots+=(~/.config/hypr/script)
+  for d in $roots
+  do
+    [ -d "$d" ] && __anekos_script_dirs+=("$d")
+  done
+}
+__anekos_init_script_dirs
+
+find_script() {
+  local home=~/
+  {
+    find "${__anekos_script_dirs[@]}" \( -type f -executable -or -type l \) | sed "s/^.\{${#home}\}//" | sed -e 's/^/!/'
+    (
+      print -l ${(ok)functions}
+      alias -r | sed 's/=.*//'
+    ) | grep '^[a-z]' | sort | sed -e 's/^/#/'
+  } | grep '.\+'
+}
+
+select_script () {
+  local found
+  local cmd
+  found=$(find_script | anything)
+  found_type="${found:0:1}"
+  found_path="${found:1}"
+  if [ "$found_type" = '#' ]
+  then
+    cmd="$found_path"
+  elif [[ $found_path =~ (^|/)bin/ ]]
+  then
+    cmd="$(basename "$found_path")"
+  else
+    cmd="~/$found_path"
+  fi
+  if [ -z "$BUFFER" ]
+  then
+    BUFFER="$cmd"
+  else
+    BUFFER="${BUFFER} ${cmd}"
+  fi
+  CURSOR=$#BUFFER         # move cursor
+  zle -R -c               # refresh
+}
+
+zle -N select_script
+bindkey '^S' select_script
+
+# }}}
+
+# opam - OCaml {{{
+
+# 初期化を初回呼びだしのときに遅延する
+function opam {
+  unfunction opam
+  if has-command opam
+  then
+    eval "$(opam env)"
+  else
+    echo 'opam not installed' 1>&2
+  fi
+  opam "$@"
+}
+
+# }}}
+
+# kitty 端末用の設定 {{{
+
+if [ -n "$KITTY_WINDOW_ID" ] && has-command kitty
+then
+  alias icat='kitty +kitten icat'
+  alias d='kitty +kitten diff'
+  # kitty + complete setup zsh | source /dev/stdin
+
+  function _anekos_kitty_tab_title_preexec() {
+    local -a cmd
+    # cmd=(${(z)2})
+    # kitty @ set-tab-title "${cmd[1]}"
+  }
+
+  function _anekos_kitty_tab_title_precmd() {
+    # kitty @ set-tab-title "$(basename "$PWD")"
+    true
+  }
+
+  preexec_functions=($preexec_functions _anekos_kitty_tab_title_preexec)
+  precmd_functions=($precmd_functions _anekos_kitty_tab_title_precmd)
+fi
+# }}}
+
+# Enter 連打 {{{
+
+# zshでEnterを連打したときにいろいろ実行する - @znz blog - https://blog.n-z.jp/blog/2014-12-06-zsh-enter.html
+
+__anekos_ce_count=0
+
+function consecutive_enter {
+  if [[ -n "$BUFFER" ]]
+  then
+    builtin zle .accept-line
+    return 0
+  fi
+
+  case $[ __anekos_ce_count++ ] in
+    0)
+      echo ''
+      ls
+      ;;
+    1)
+      if git rev-parse --is-inside-work-tree >/dev/null 2>&1
+      then
+        echo ''
+        git status -sb
+      fi
+      __anekos_ce_count=0
+      ;;
+    *)
+      __anekos_ce_count=0
+      ;;
+  esac
+  builtin zle .accept-line
+}
+
+zle -N consecutive_enter
+bindkey '^m' consecutive_enter
+
+# }}}
+
+# Set variable from clipboard {{{
+
+function set-from-clipbaord() {
+  local variable_name="$1"
+  eval "${variable_name}=\"\$(GC)\""
+  GC
+}
+
+# }}}
+
+# 指定のコマンドをキャッシュ付きにする {{{
+function enable-cache {
+  local name="$1"
+  local command_path="$( command -v "$name" )"
+
+  eval "
+    function $name () {
+      caching $command_path \"\$@\"
+    }
+"
+}
+# }}}
+
+# Starship {{{
+
+if has-command starship
+then
+  eval "$(starship init zsh)"
+fi
+
+# }}}
+
+# .env などのロード {{{
+
+# Supported:
+#   - Python Virtual env
+
+__anekos_env_filename_patterns=(
+  .env/bin/activate
+  .venv/bin/activate
+  venv/bin/activate
+  .beethovenv
+)
+
+function __anekos_find_named_beethovenv() {
+  local dir="${1:-./}"
+  find "$dir" -maxdepth 1 -mindepth 1 -name '.beethovenv.*' -type f | sed 's/.*\.beethovenv\.//'
+}
+
+function __anekos_find_env_dir() {
+  local tried="$1"
+  local dir="$2"
+
+  [ "$dir" = '/' ] && return 1
+
+  # printf '\e[41mCheck: %q\e[41m\n' "$dir" 1>&2
+
+  if [ "$tried" -gt 10 ]
+  then
+    echo '\e[41mEnv not found\e[41m' 1>&2
+    return 1
+  fi
+
+  for pattern in "${__anekos_env_filename_patterns[@]}"
+  do
+    if [ -f "${dir}/${pattern}" ]
+    then
+      echo "$dir"
+      return 0
+    fi
+  done
+
+  local beethovenv_named=0
+  beethovenv_named="$(__anekos_find_named_beethovenv "$dir" | wc -l)"
+  if [ "$beethovenv_named" -gt 0 ]
+  then
+    echo "$dir"
+    return 0
+  fi
+
+  __anekos_find_env_dir "$(( tried + 1 ))" "$(dirname "$dir")"
+}
+
+function load-env {
+  local dir="$( __anekos_find_env_dir 0 "$PWD" )"
+  if [ -z "$dir" ]
+  then
+    echo -e '\e[41menv dir is not found\e[0m'
+    return
+  fi
+
+  local backto="$PWD"
+
+  for pattern in "${__anekos_env_filename_patterns[@]}"
+  do
+    [ -f "${dir}/${pattern}" ] || continue
+    local env="$(realpath --relative-to "$PWD" "${dir}/${pattern}")"
+    if [ -f "$env" ]
+    then
+      echo -e "\e[44msource ${env}\e[0m" 1>&2
+      on_dir "$dir" source "${dir}/${pattern}"
+    fi
+  done
+
+  local named names
+  names="$(__anekos_find_named_beethovenv)"
+  if [ -n "$names" ]
+  then
+    named="$(echo "$names" | anything)"
+    if [ -n "$named" ]
+    then
+      local env="$(realpath --relative-to "$PWD" ./".beethovenv.${named}")"
+      echo -e "\e[44msource ${env}\e[0m" 1>&2
+      on_dir "$dir" source "${env}"
+    fi
+  fi
+}
+
+function on_dir() {
+  local target="$(realpath "$1")"
+  local current="$PWD"
+  shift 1
+  # 1>&2 echo "${target} == ${current}"
+  [ "$target" = "$current" ] || pushd "$target" > /dev/null
+  "$@"
+  [ "$target" = "$current" ] || popd > /dev/null
+}
+
+alias le=load-env
+
+# }}}
+
+# STDIN から export などを受けとる {{{
+
+function source-cat () {
+  eval "$(cat)"
+}
+
+# }}}
+
+# uv {{{
+
+# `uv run` でパスが補完できない問題の回避
+# https://github.com/astral-sh/uv/issues/8432#issuecomment-2453494736
+_uv_run_mod() {
+  if [[ "$words[2]" == "run" && "$words[CURRENT]" != -* ]]
+  then
+    # _arguments '*:filename:_files'
+    _arguments '*:filename:_files -g "*.py"'  # Only `*.py`
+  else
+    _uv "$@"
+  fi
+}
+compdef _uv_run_mod uv
+
+# }}}
+
+# Neovim {{{
+
+if [ -n "${NVIM:-}" ]
+then
+  alias t="nvr --remote-tab"
+  alias s="nvr "
+fi
+
+# }}}
+
+# keychain {{{
+
+function __anekos_keychain_init() {
+  local args=("$@")
+  # local _kc_host
+  # _kc_host=${HOST:-$(uname -n)}
+  # if [[ -f ~/.keychain/${_kc_host}-sh ]] \
+  #   && source ~/.keychain/${_kc_host}-sh \
+  #   && ssh-add -l &>/dev/null; then
+  #   source ~/.keychain/${_kc_host}-sh-gpg 2>/dev/null
+  # else
+    eval $(keychain --eval "${args[@]}" --quiet) ||:
+  # fi
+}
+
+# }}}
+
+# Local zshrc {{{
+
+stty erase '^h'
+
+# __anekos_keychain_init ed25519 EA2D... などを↓で行う
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+[ -e ~/.zshrc.local.[[[- .chezmoi.hostname ]]] ] && source ~/.zshrc.local.[[[- .chezmoi.hostname ]]]
+
+# }}}
+
+# AI {{{
+function __query_ai () {
+  zle -I
+  local prompt_prefix='Generate a single-line shell command based on the following instruction. Output ONLY the command without any explanation or additional information or any quotes. Use appropriate options and pipelines as needed. Command to generate:'
+  local user_prompt=$BUFFER
+  aichat -e "$user_prompt"
+  BUFFER=""
+  zle reset-prompt
+}
+
+zle -N __query_ai
+bindkey '^Xa' __query_ai
+# }}}
+
+# Hyprland {{{
+
+[ -z "$VSCODE_INJECTION" ] && [ -z "$YAZI_LEVEL" ] && [ -f ~/.config/hypr/zshrc ] && source ~/.config/hypr/zshrc
+
+# }}}
+
+# 現在のディレクトリに基づく処理 {{{
+
+typeset -f __set_aws_profile_automatically > /dev/null && __set_aws_profile_automatically
+
+if has-command hugo && has-command aws
+then
+  __initialize_aws_env
+fi
+
+# }}}
+
+# LAST {{{
+
+if [ -n "$__anekos_start_at" ]
+then
+  __anekos_start_time=$(( $(date +%s.%3N) - __anekos_start_at ))
+  echo "$__anekos_start_time msec"
+fi
+
+# プロファイラ http://qiita.com/scalper/items/86da115e6c76a692d687
+(which zprof > /dev/null) && zprof | less || :
+
+# }}}

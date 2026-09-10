@@ -1,0 +1,171 @@
+#!/bin/bash
+# chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+# vim: set ft=sh :
+
+# Set {{{
+
+# Language {{{
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8  # Mac がわけわからんロケールを設定するので…
+
+# }}}
+
+# Java {{{
+if [ -d /usr/lib/jvm/default ]
+then
+  export JAVA_HOME=/usr/lib/jvm/default # archlinux-java でリンクされている場所
+fi
+# }}}
+
+# GO {{{
+export GOPATH=~/go
+# }}}
+
+# Python {{{
+export PYTHONDONTWRITEBYTECODE=0
+export UV_PYTHON=
+# shellcheck disable=1091
+[ -f "$HOME/.rye/env" ] && source "$HOME/.rye/env"
+# }}}
+
+# XDG {{{
+if [ -f ~/.config/user-dirs.dirs ]
+then
+  # shellcheck disable=1090
+  . ~/.config/user-dirs.dirs
+fi
+# }}}
+
+# Android {{{
+export ANDROID_SDK_ROOT=~/dev/Android/sdk
+# }}}
+
+# neovide {{{
+export NEOVIDE_MULTIGRID=1
+# }}}
+
+# Workaround {{{
+# Pip install block waiting forever for a keyring to unlock · Issue #7883 · pypa/pip - https://github.com/pypa/pip/issues/7883
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+
+# For mac https://github.com/kovidgoyal/kitty/issues/2825
+if [ -z "${TERMINFO:-}" ] && [ -d /Applications/kitty.app/Contents/Resources/kitty/terminfo ]
+then
+  export TERMINFO=/Applications/kitty.app/Contents/Resources/kitty/terminfo
+fi
+# }}}
+
+# MISC {{{
+export EDITOR=nvim
+export ANSIBLE_NOCOWS=1
+export EITARO_PROMPT="🐈 "
+export RIPGREP_CONFIG_PATH=~/.config/ripgreprc
+export _ZO_FZF_OPTS="--height=100% --layout=reverse --preview 'eza {2..}' --preview-window=down:3"
+export YAZI_SESSION_DIR=~/.local/state/yazi/sessions
+export GHCUP_USE_XDG_DIRS=1
+# }}}
+
+# }}}
+
+# Load local rc {{{
+# shellcheck disable=1090
+[ -e ~/.envrc.local.[[[- .chezmoi.hostname ]]] ] && source ~/.envrc.local.[[[- .chezmoi.hostname ]]]
+# }}}
+
+# Load secret rc {{{
+# shellcheck disable=1090
+[ -e ~/.envrc.secret ] && source ~/.envrc.secret
+[ -e ~/.envrc.secret.[[[- .chezmoi.hostname ]]] ] && source ~/.envrc.secret.[[[- .chezmoi.hostname ]]]
+# }}}
+
+# Dont reload {{{
+if [ "${ENVRC_LOADED:-}" = 1 ]
+then
+  return
+else
+  ENVRC_LOADED=1
+  export ENVRC_LOADED
+fi
+# }}}
+
+# Append {{{
+
+# PATH {{{
+function _add_path() {
+  local p="$1"
+  if [ -z "$p" ]
+  then
+    echo "_add_path: missing argument" >&2
+    return
+  fi
+  local check="${2:-1}"
+  if [ "$check" -eq 1  ] && [ ! -d "$p" ]
+  then
+    # echo "No such directory: $p" >&2
+    return
+  fi
+  if [ -n "$PATH" ]
+  then
+    PATH="${PATH}:${p}"
+  else
+    PATH="$p"
+  fi
+}
+
+original_path="$PATH"
+# echo "original_path: $original_path" >&2
+export PATH=""
+
+_add_path ~/.local/bin
+_add_path ~/.cargo/bin
+
+# For Mac {{{
+if [ -d /opt/homebrew/opt ]
+then
+  # グロブだと zsh はマッチなしをエラーにするので find で列挙する
+  # (-L: /opt/homebrew/opt/* は Cellar への symlink)
+  while IFS= read -r dir
+  do
+    _add_path "$dir"
+  done < <(/usr/bin/find -L /opt/homebrew/opt -mindepth 3 -maxdepth 3 -type d -path '*/libexec/gnubin' 2>/dev/null)
+  # Rustup
+  command -v brew > /dev/null && command -v rustup > /dev/null && _add_path "$(brew --prefix rustup)/bin"
+fi
+if [ -d /opt/homebrew/opt/util-linux ]
+then
+  _add_path '/opt/homebrew/opt/util-linux/bin'
+  _add_path '/opt/homebrew/opt/util-linux/sbin'
+fi
+# }}}
+
+_add_path ~/bin
+_add_path ~/local/bin
+_add_path ~/lin
+
+_add_path "$original_path" 0
+
+_add_path ~/.cabal/bin
+_add_path ~/go/bin
+_add_path ~/.vim-temp/plug/vim-iced/bin
+_add_path ~/.rye/shims
+
+[ -d ~/.gem/ruby/3.3.0/bin ] && _add_path ~/.gem/ruby/3.3.0/bin
+
+if command -v rustc > /dev/null
+then
+  RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src/"
+  export RUST_SRC_PATH
+fi
+
+export PATH
+# }}}
+
+# perl ENV {{{
+export PERL_LOCAL_LIB_ROOT="$HOME/perl5"
+export PERL_MB_OPT="--install_base $HOME/perl5"
+export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"
+export PERL5LIB="$HOME/perl5/lib/perl5/x86_64-linux-thread-multi:$HOME/perl5/lib/perl5"
+# }}}
+
+# }}}

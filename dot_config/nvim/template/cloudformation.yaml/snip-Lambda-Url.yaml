@@ -1,0 +1,22 @@
+  LambdaUrl:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-url.html
+    Type: AWS::Lambda::Url
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-url.html
+      TargetFunctionArn: # String
+      # Qualifier: # String
+      AuthType: # String
+      # InvokeMode: # String
+      # Cors:
+      #   # AllowCredentials: # Boolean
+      #   # AllowHeaders:
+      #   # - # String
+      #   # AllowMethods:
+      #   # - # String
+      #   # AllowOrigins:
+      #   # - # String
+      #   # ExposeHeaders:
+      #   # - # String
+      #   # MaxAge: # Integer
+    # !GetAtt THIS.FunctionArn (String)
+    # !GetAtt THIS.FunctionUrl (String)

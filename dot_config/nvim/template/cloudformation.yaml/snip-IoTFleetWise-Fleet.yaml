@@ -1,0 +1,14 @@
+  IoTFleetWiseFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-fleet.html
+    Type: AWS::IoTFleetWise::Fleet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-fleet.html
+      # Description: # String
+      Id: # String
+      SignalCatalogArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.LastModificationTime (String)

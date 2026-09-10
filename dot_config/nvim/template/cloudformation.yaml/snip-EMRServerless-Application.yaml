@@ -1,0 +1,35 @@
+  EMRServerlessApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emrserverless-application.html
+    Type: AWS::EMRServerless::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emrserverless-application.html
+      # Name: # String
+      ReleaseLabel: # String
+      Type: # String
+      # InitialCapacity:
+      #   - Key: # String
+      #     # Value:
+      #     # WorkerCount: # Integer
+      #     # # WorkerConfiguration:
+      #     #   # Cpu: # String
+      #     #   # Memory: # String
+      #     #   # # Disk: # String
+      # MaximumCapacity:
+      #   Cpu: # String
+      #   Memory: # String
+      #   # Disk: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AutoStartConfiguration:
+      #   # Enabled: # Boolean
+      # AutoStopConfiguration:
+      #   # Enabled: # Boolean
+      #   # IdleTimeoutMinutes: # Integer
+      # NetworkConfiguration:
+      #   # SubnetIds:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ApplicationId (String)

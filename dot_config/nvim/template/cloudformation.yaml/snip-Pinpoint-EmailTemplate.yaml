@@ -1,0 +1,13 @@
+  PinpointEmailTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html
+    Type: AWS::Pinpoint::EmailTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailtemplate.html
+      # HtmlPart: # String
+      # TextPart: # String
+      TemplateName: # String
+      # TemplateDescription: # String
+      # DefaultSubstitutions: # String
+      Subject: # String
+      # Tags: # Json
+    # !GetAtt THIS.Arn (String)

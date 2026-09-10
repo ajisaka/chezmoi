@@ -1,0 +1,14 @@
+  EventSchemasDiscoverer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-discoverer.html
+    Type: AWS::EventSchemas::Discoverer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-discoverer.html
+      # CrossAccount: # Boolean
+      # Description: # String
+      SourceArn: # String
+      # Tags:
+      #   - Value: # String
+      #     Key: # String
+    # !GetAtt THIS.DiscovererArn (String)
+    # !GetAtt THIS.DiscovererId (String)
+    # !GetAtt THIS.CrossAccount (Boolean)

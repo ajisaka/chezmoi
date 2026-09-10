@@ -1,0 +1,15 @@
+  CodeGuruProfilerProfilingGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html
+    Type: AWS::CodeGuruProfiler::ProfilingGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeguruprofiler-profilinggroup.html
+      ProfilingGroupName: # String
+      # ComputePlatform: # String
+      # AgentPermissions: # Json
+      # AnomalyDetectionNotificationConfiguration:
+      #   - # channelId: # String
+      #     channelUri: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

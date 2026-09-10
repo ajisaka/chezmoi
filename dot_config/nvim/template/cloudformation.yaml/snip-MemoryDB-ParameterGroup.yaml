@@ -1,0 +1,13 @@
+  MemoryDBParameterGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-parametergroup.html
+    Type: AWS::MemoryDB::ParameterGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-parametergroup.html
+      ParameterGroupName: # String
+      Family: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Parameters: # Json
+    # !GetAtt THIS.ARN (String)

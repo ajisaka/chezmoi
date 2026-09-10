@@ -1,0 +1,10 @@
+  CognitoUserPoolGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html
+    Type: AWS::Cognito::UserPoolGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html
+      # GroupName: # String
+      # Description: # String
+      UserPoolId: # String
+      # Precedence: # Double
+      # RoleArn: # String

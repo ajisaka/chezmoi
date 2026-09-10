@@ -1,0 +1,9 @@
+  LambdaLayerVersionPermission:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html
+    Type: AWS::Lambda::LayerVersionPermission
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html
+      Action: # String
+      LayerVersionArn: # String
+      # OrganizationId: # String
+      Principal: # String

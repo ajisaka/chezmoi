@@ -1,0 +1,22 @@
+  ConnectQuickConnect:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-quickconnect.html
+    Type: AWS::Connect::QuickConnect
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-quickconnect.html
+      InstanceArn: # String
+      Name: # String
+      # Description: # String
+      # QuickConnectConfig:
+      #   QuickConnectType: # String
+      #   # PhoneConfig:
+      #   # PhoneNumber: # String
+      #   # QueueConfig:
+      #   # ContactFlowArn: # String
+      #   # QueueArn: # String
+      #   # UserConfig:
+      #   # ContactFlowArn: # String
+      #   # UserArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.QuickConnectArn (String)

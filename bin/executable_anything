@@ -1,0 +1,114 @@
+#!/usr/bin/env bash
+#!/bin/bash
+
+set -euC
+
+# exec 5> /tmp/xmosh/shell-script-debug.$$.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+function usage() {
+  echo "anything [-q <QUERY>]"
+}
+
+
+query=''
+
+# 後ろに `:` があるオプションは値を取る
+# 先頭に `:` があると、自動エラー検知が省略される
+while getopts 'q:' OPTION
+do
+  case "$OPTION" in
+    q)
+      query=$OPTARG
+      ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+
+
+function has () {
+  command -v "$1" > /dev/null
+}
+
+function poor () {
+  local items
+  items="$(cat)"
+
+  exec </dev/tty
+
+  IFS=$'\n'
+  select it in $items
+  do
+    [ -z "$it" ] && exit 1
+    echo "$it"
+    break
+  done
+}
+
+function _fzf () {
+  local args=()
+  [ -n "$query" ] && args+=(--query "$query")
+
+  exec fzf \
+    --no-sort \
+    --reverse \
+    --prompt '🐱 ' \
+    --pointer '👉' \
+    --border none \
+    --color 'gutter:-1' \
+    --algo v1 \
+    --exact \
+    --cycle \
+    --multi \
+    --preview 'echo {}' \
+    --preview-window=down,30%,wrap \
+    "${args[@]}"
+}
+
+function _percol () {
+  local args=()
+  [ -n "$query" ] && args+=(--query "$query")
+
+  exec percol "${args[@]}"
+}
+
+function _peco () {
+  local args=()
+  [ -n "$query" ] && args+=(--query "$query")
+
+  exec peco "${args[@]}"
+}
+
+function _fuzzel () {
+  local args=()
+  [ -n "$query" ] && args+=(--query "$query")
+  exec fuzzel \
+    --lines 30 \
+    --width 80 \
+    --prompt '🐱 ' \
+    --dmenu
+}
+
+function _vicinae () {
+  local args=()
+  [ -n "$query" ] && args+=(--query "$query")
+  exec vicinae \
+    dmenu \
+    --no-quick-look
+}
+
+if on-gui
+then
+  has fuzzel && _vicinae || has fuzzel && _fuzzel
+else
+  has fzf && _fzf
+  has percol && _percol
+  has peco && exec _peco
+  poor
+fi

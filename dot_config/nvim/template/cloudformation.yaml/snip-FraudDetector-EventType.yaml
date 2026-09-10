@@ -1,0 +1,47 @@
+  FraudDetectorEventType:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-frauddetector-eventtype.html
+    Type: AWS::FraudDetector::EventType
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-frauddetector-eventtype.html
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Description: # String
+      EventVariables:
+        - # Arn: # String
+          # Inline: # Boolean
+          # Name: # String
+          # DataSource: # String
+          # DataType: # String
+          # DefaultValue: # String
+          # VariableType: # String
+          # Description: # String
+          # Tags:
+          #   - Key: # String
+          #     Value: # String
+          # CreatedTime: # String
+          # LastUpdatedTime: # String
+      Labels:
+        - # Arn: # String
+          # Inline: # Boolean
+          # Name: # String
+          # Description: # String
+          # Tags:
+          #   - Key: # String
+          #     Value: # String
+          # CreatedTime: # String
+          # LastUpdatedTime: # String
+      EntityTypes:
+        - # Arn: # String
+          # Inline: # Boolean
+          # Name: # String
+          # Description: # String
+          # Tags:
+          #   - Key: # String
+          #     Value: # String
+          # CreatedTime: # String
+          # LastUpdatedTime: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)

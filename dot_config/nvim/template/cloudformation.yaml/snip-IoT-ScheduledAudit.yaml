@@ -1,0 +1,15 @@
+  IoTScheduledAudit:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-scheduledaudit.html
+    Type: AWS::IoT::ScheduledAudit
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-scheduledaudit.html
+      # ScheduledAuditName: # String
+      Frequency: # String
+      # DayOfMonth: # String
+      # DayOfWeek: # String
+      TargetCheckNames:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ScheduledAuditArn (String)

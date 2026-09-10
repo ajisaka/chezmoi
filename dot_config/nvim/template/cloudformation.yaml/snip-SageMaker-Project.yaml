@@ -1,0 +1,15 @@
+  SageMakerProject:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-project.html
+    Type: AWS::SageMaker::Project
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-project.html
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      ProjectName: # String
+      # ProjectDescription: # String
+      ServiceCatalogProvisioningDetails: # Json
+    # !GetAtt THIS.ProjectArn (String)
+    # !GetAtt THIS.ProjectId (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.ProjectStatus (String)

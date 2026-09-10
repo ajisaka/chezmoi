@@ -1,0 +1,13 @@
+  CloudFormationPublicTypeVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-publictypeversion.html
+    Type: AWS::CloudFormation::PublicTypeVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-publictypeversion.html
+      # Arn: # String
+      # PublicVersionNumber: # String
+      # TypeName: # String
+      # LogDeliveryBucket: # String
+      # Type: # String
+    # !GetAtt THIS.TypeVersionArn (String)
+    # !GetAtt THIS.PublisherId (String)
+    # !GetAtt THIS.PublicTypeArn (String)

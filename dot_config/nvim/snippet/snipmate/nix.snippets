@@ -1,0 +1,15 @@
+snippet nix/imports
+  {
+    imports = [
+      ${0}
+    ];
+  }
+
+snippet nix/home-packages
+  { pkgs, ... }:
+
+  {
+    home.packages = with pkgs; [
+      ${0}
+    ];
+  }

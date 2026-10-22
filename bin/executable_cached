@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+set -euC
+
+# exec 5> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+if [ "$#" -lt 3 ]
+then
+  echo "$0 <CACHE_FILE> <TIMEOUT_SECONDS> [--refresh] <UPDATE_COMMAND>..." 1>&2
+  exit 1
+fi
+
+up_to_date=0
+refresh=0
+
+
+if [ "$1" = '--refresh' ]
+then
+  refresh=1
+  shift
+fi
+
+cache_file="$1"
+timeout="$2"
+shift 2
+
+
+
+if [ -f "$cache_file" ]
+then
+  delta=$(( $( date +%s ) - $(stat -c %Y "$cache_file") ))
+
+  if [[ "$timeout" -gt $delta ]]
+  then
+    [ "$refresh" = 1 ] && touch "$cache_file"
+    up_to_date=1
+  fi
+else
+  mkdir -p "$(dirname "$cache_file")"
+fi
+
+if [ "$up_to_date" = 0 ]
+then
+  "$@" | tee "$cache_file"
+else
+  cat "$cache_file"
+fi

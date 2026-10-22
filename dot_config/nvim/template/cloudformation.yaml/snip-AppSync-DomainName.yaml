@@ -1,0 +1,10 @@
+  AppSyncDomainName:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-domainname.html
+    Type: AWS::AppSync::DomainName
+    Properties:
+      DomainName: # String
+      # Description: # String
+      CertificateArn: # String
+    # !GetAtt THIS.DomainName (String)
+    # !GetAtt THIS.AppSyncDomainName (String)
+    # !GetAtt THIS.HostedZoneId (String)

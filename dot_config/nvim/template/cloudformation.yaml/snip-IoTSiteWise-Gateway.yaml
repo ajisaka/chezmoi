@@ -1,0 +1,18 @@
+  IoTSiteWiseGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-gateway.html
+    Type: AWS::IoTSiteWise::Gateway
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-gateway.html
+      GatewayName: # String
+      # GatewayPlatform:
+      #   # Greengrass:
+      #   # GroupArn: # String
+      #   # GreengrassV2:
+      #   # CoreDeviceThingName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # GatewayCapabilitySummaries:
+      #   - CapabilityNamespace: # String
+      #     # CapabilityConfiguration: # String
+    # !GetAtt THIS.GatewayId (String)

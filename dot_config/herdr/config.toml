@@ -1,0 +1,7 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+q"
+
+[terminal]
+new_cwd = "~/workspace/claude-code/common"

@@ -1,0 +1,51 @@
+  QuickSightDashboard:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html
+    Type: AWS::QuickSight::Dashboard
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html
+      AwsAccountId: # String
+      DashboardId: # String
+      # DashboardPublishOptions:
+      #   # SheetControlsOption:
+      #   # # VisibilityState: # String
+      #   # ExportToCSVOption:
+      #   # # AvailabilityStatus: # String
+      #   # AdHocFilteringOption:
+      #   # # AvailabilityStatus: # String
+      # Name: # String
+      # Parameters:
+      #   # StringParameters:
+      #   # - Values:
+      #   # - # String
+      #   # Name: # String
+      #   # DecimalParameters:
+      #   # - Values:
+      #   # - # Double
+      #   # Name: # String
+      #   # IntegerParameters:
+      #   # - Values:
+      #   # - # Double
+      #   # Name: # String
+      #   # DateTimeParameters:
+      #   # - Values:
+      #   # - # String
+      #   # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # SourceEntity:
+      #   # SourceTemplate:
+      #   # DataSetReferences:
+      #   # - DataSetArn: # String
+      #   # DataSetPlaceholder: # String
+      #   # Arn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ThemeArn: # String
+      # VersionDescription: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastPublishedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)

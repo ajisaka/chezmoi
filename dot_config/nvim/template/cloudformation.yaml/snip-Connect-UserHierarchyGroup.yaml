@@ -1,0 +1,8 @@
+  ConnectUserHierarchyGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-userhierarchygroup.html
+    Type: AWS::Connect::UserHierarchyGroup
+    Properties:
+      InstanceArn: # String
+      # ParentGroupArn: # String
+      Name: # String
+    # !GetAtt THIS.UserHierarchyGroupArn (String)

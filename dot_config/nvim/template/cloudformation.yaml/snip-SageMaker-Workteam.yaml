@@ -1,0 +1,22 @@
+  SageMakerWorkteam:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html
+    Type: AWS::SageMaker::Workteam
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-workteam.html
+      # Description: # String
+      # NotificationConfiguration:
+      #   NotificationTopicArn: # String
+      # WorkteamName: # String
+      # MemberDefinitions:
+      #   - # OidcMemberDefinition:
+      #     # OidcGroups:
+      #     # - # String
+      #     # CognitoMemberDefinition:
+      #     # CognitoUserPool: # String
+      #     # CognitoClientId: # String
+      #     # CognitoUserGroup: # String
+      # WorkforceName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.WorkteamName (String)

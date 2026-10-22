@@ -1,0 +1,16 @@
+  EC2NetworkInsightsAccessScopeAnalysis:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightsaccessscopeanalysis.html
+    Type: AWS::EC2::NetworkInsightsAccessScopeAnalysis
+    Properties:
+      NetworkInsightsAccessScopeId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.NetworkInsightsAccessScopeAnalysisId (String)
+    # !GetAtt THIS.NetworkInsightsAccessScopeAnalysisArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusMessage (String)
+    # !GetAtt THIS.StartDate (String)
+    # !GetAtt THIS.EndDate (String)
+    # !GetAtt THIS.FindingsFound (String)
+    # !GetAtt THIS.AnalyzedEniCount (Integer)

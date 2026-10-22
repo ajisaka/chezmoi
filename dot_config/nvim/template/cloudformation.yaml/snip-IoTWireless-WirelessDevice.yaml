@@ -1,0 +1,40 @@
+  IoTWirelessWirelessDevice:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-wirelessdevice.html
+    Type: AWS::IoTWireless::WirelessDevice
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-wirelessdevice.html
+      Type: # String
+      # Name: # String
+      # Description: # String
+      DestinationName: # String
+      # LoRaWAN:
+      #   # DevEui: # String
+      #   # DeviceProfileId: # String
+      #   # ServiceProfileId: # String
+      #   # OtaaV11:
+      #   # AppKey: # String
+      #   # NwkKey: # String
+      #   # JoinEui: # String
+      #   # OtaaV10x:
+      #   # AppKey: # String
+      #   # AppEui: # String
+      #   # AbpV11:
+      #   # DevAddr: # String
+      #   # # SessionKeys:
+      #   #   # FNwkSIntKey: # String
+      #   #   # SNwkSIntKey: # String
+      #   #   # NwkSEncKey: # String
+      #   #   # AppSKey: # String
+      #   # AbpV10x:
+      #   # DevAddr: # String
+      #   # # SessionKeys:
+      #   #   # NwkSKey: # String
+      #   #   # AppSKey: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ThingArn: # String
+      # LastUplinkReceivedAt: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.ThingName (String)

@@ -1,0 +1,52 @@
+  EMRInstanceGroupConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
+    Type: AWS::EMR::InstanceGroupConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
+      # AutoScalingPolicy:
+      #   # Constraints:
+      #   # MaxCapacity: # Integer
+      #   # MinCapacity: # Integer
+      #   Rules:
+      #     - # Action:
+      #       # # Market: # String
+      #       # # SimpleScalingPolicyConfiguration:
+      #       #   # # AdjustmentType: # String
+      #       #   # # CoolDown: # Integer
+      #       #   # ScalingAdjustment: # Integer
+      #       # Description: # String
+      #       Name: # String
+      #       # Trigger:
+      #       # # CloudWatchAlarmDefinition:
+      #       #   # ComparisonOperator: # String
+      #       #   # # Dimensions:
+      #       #   #   # - Key: # String
+      #       #   #   # Value: # String
+      #       #   # # EvaluationPeriods: # Integer
+      #       #   # MetricName: # String
+      #       #   # # Namespace: # String
+      #       #   # Period: # Integer
+      #       #   # # Statistic: # String
+      #       #   # Threshold: # Double
+      #       #   # # Unit: # String
+      # BidPrice: # String
+      # Configurations:
+      #   - # Classification: # String
+      #     # ConfigurationProperties:
+      #     # ANY_KEY: # String
+      #     # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html#cfn-emr-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Immutable'}
+      # CustomAmiId: # String
+      # EbsConfiguration:
+      #   # EbsBlockDeviceConfigs:
+      #   # - # VolumeSpecification:
+      #   #     # # Iops: # Integer
+      #   #     # SizeInGB: # Integer
+      #   #     # VolumeType: # String
+      #   # # VolumesPerInstance: # Integer
+      #   # EbsOptimized: # Boolean
+      InstanceCount: # Integer
+      InstanceRole: # String
+      InstanceType: # String
+      JobFlowId: # String
+      # Market: # String
+      # Name: # String

@@ -1,0 +1,35 @@
+  OpsWorksCMServer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html
+    Type: AWS::OpsWorksCM::Server
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html
+      # KeyPair: # String
+      # EngineVersion: # String
+      ServiceRoleArn: # String
+      # DisableAutomatedBackup: # Boolean
+      # BackupId: # String
+      # EngineModel: # String
+      # PreferredMaintenanceWindow: # String
+      # AssociatePublicIpAddress: # Boolean
+      InstanceProfileArn: # String
+      # CustomCertificate: # String
+      # PreferredBackupWindow: # String
+      # SecurityGroupIds:
+      #   - # String
+      # SubnetIds:
+      #   - # String
+      # CustomDomain: # String
+      # CustomPrivateKey: # String
+      # ServerName: # String
+      # EngineAttributes:
+      #   - # Value: # String
+      #     # Name: # String
+      # BackupRetentionCount: # Integer
+      InstanceType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Engine: # String
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

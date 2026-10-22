@@ -1,0 +1,16 @@
+  S3ObjectLambdaAccessPoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3objectlambda-accesspoint.html
+    Type: AWS::S3ObjectLambda::AccessPoint
+    Properties:
+      # Name: # String
+      # ObjectLambdaConfiguration:
+      #   SupportingAccessPoint: # String
+      #   # AllowedFeatures:
+      #   # - # String
+      #   # CloudWatchMetricsEnabled: # Boolean
+      #   TransformationConfigurations:
+      #     - Actions:
+      #         - # String
+      #       ContentTransformation: # Json
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationDate (String)

@@ -1,0 +1,11 @@
+  SSMContactsContactChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmcontacts-contactchannel.html
+    Type: AWS::SSMContacts::ContactChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmcontacts-contactchannel.html
+      ContactId: # String
+      ChannelName: # String
+      ChannelType: # String
+      # DeferActivation: # Boolean
+      ChannelAddress: # String
+    # !GetAtt THIS.Arn (String)

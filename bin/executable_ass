@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+
+instance_id=$(
+  aws ec2 describe-instances --output json \
+    | jq --raw-output '
+        .Reservations[].Instances[]
+        | [
+            .InstanceId,
+            (.Tags // [] | map(select(.Key == "Name")) | first | .Value // "(no name)"),
+            .InstanceType,
+            .State.Name,
+            (.PrivateIpAddress // "-")
+          ]
+        | @tsv
+      ' \
+    | column --table --separator $'\t' \
+    | anything \
+    | awk '{print $1}'
+)
+
+aws ssm start-session --target "$instance_id"

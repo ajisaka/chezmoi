@@ -1,0 +1,198 @@
+  BatchJobDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
+    Type: AWS::Batch::JobDefinition
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
+      Type: # String
+      # Parameters: # Json
+      # NodeProperties:
+      #   MainNode: # Integer
+      #   NodeRangeProperties:
+      #     - # Container:
+      #       # # User: # String
+      #       # # Secrets:
+      #       #   # - ValueFrom: # String
+      #       #   # Name: # String
+      #       # # Memory: # Integer
+      #       # # Privileged: # Boolean
+      #       # # LinuxParameters:
+      #       #   # # Swappiness: # Integer
+      #       #   # # Tmpfs:
+      #       #   #   # - Size: # Integer
+      #       #   #   # ContainerPath: # String
+      #       #   #   # # MountOptions:
+      #       #   #   #     # - # String
+      #       #   # # SharedMemorySize: # Integer
+      #       #   # # Devices:
+      #       #   #   # - # HostPath: # String
+      #       #   #   # # Permissions:
+      #       #   #   #     # - # String
+      #       #   #   # # ContainerPath: # String
+      #       #   # # InitProcessEnabled: # Boolean
+      #       #   # # MaxSwap: # Integer
+      #       # # FargatePlatformConfiguration:
+      #       #   # # PlatformVersion: # String
+      #       # # JobRoleArn: # String
+      #       # # ReadonlyRootFilesystem: # Boolean
+      #       # # Vcpus: # Integer
+      #       # Image: # String
+      #       # # ResourceRequirements:
+      #       #   # - # Type: # String
+      #       #   # # Value: # String
+      #       # # LogConfiguration:
+      #       #   # # SecretOptions:
+      #       #   #   # - ValueFrom: # String
+      #       #   #   # Name: # String
+      #       #   # # Options: # Json
+      #       #   # LogDriver: # String
+      #       # # MountPoints:
+      #       #   # - # ReadOnly: # Boolean
+      #       #   # # SourceVolume: # String
+      #       #   # # ContainerPath: # String
+      #       # # ExecutionRoleArn: # String
+      #       # # Volumes:
+      #       #   # - # Host:
+      #       #   #     # # SourcePath: # String
+      #       #   # # EfsVolumeConfiguration:
+      #       #   #     # # TransitEncryption: # String
+      #       #   #     # # AuthorizationConfig:
+      #       #   #     #   # # Iam: # String
+      #       #   #     #   # # AccessPointId: # String
+      #       #   #     # FileSystemId: # String
+      #       #   #     # # RootDirectory: # String
+      #       #   #     # # TransitEncryptionPort: # Integer
+      #       #   # # Name: # String
+      #       # # Command:
+      #       #   # - # String
+      #       # # Environment:
+      #       #   # - # Value: # String
+      #       #   # # Name: # String
+      #       # # Ulimits:
+      #       #   # - SoftLimit: # Integer
+      #       #   # HardLimit: # Integer
+      #       #   # Name: # String
+      #       # # NetworkConfiguration:
+      #       #   # # AssignPublicIp: # String
+      #       # # InstanceType: # String
+      #       TargetNodes: # String
+      #   NumNodes: # Integer
+      # SchedulingPriority: # Integer
+      # Timeout:
+      #   # AttemptDurationSeconds: # Integer
+      # ContainerProperties:
+      #   # User: # String
+      #   # Secrets:
+      #   # - ValueFrom: # String
+      #   # Name: # String
+      #   # Memory: # Integer
+      #   # Privileged: # Boolean
+      #   # LinuxParameters:
+      #   # # Swappiness: # Integer
+      #   # # Tmpfs:
+      #   #   # - Size: # Integer
+      #   #   # ContainerPath: # String
+      #   #   # # MountOptions:
+      #   #   #     # - # String
+      #   # # SharedMemorySize: # Integer
+      #   # # Devices:
+      #   #   # - # HostPath: # String
+      #   #   # # Permissions:
+      #   #   #     # - # String
+      #   #   # # ContainerPath: # String
+      #   # # InitProcessEnabled: # Boolean
+      #   # # MaxSwap: # Integer
+      #   # FargatePlatformConfiguration:
+      #   # # PlatformVersion: # String
+      #   # JobRoleArn: # String
+      #   # ReadonlyRootFilesystem: # Boolean
+      #   # Vcpus: # Integer
+      #   Image: # String
+      #   # ResourceRequirements:
+      #   # - # Type: # String
+      #   # # Value: # String
+      #   # LogConfiguration:
+      #   # # SecretOptions:
+      #   #   # - ValueFrom: # String
+      #   #   # Name: # String
+      #   # # Options: # Json
+      #   # LogDriver: # String
+      #   # MountPoints:
+      #   # - # ReadOnly: # Boolean
+      #   # # SourceVolume: # String
+      #   # # ContainerPath: # String
+      #   # ExecutionRoleArn: # String
+      #   # Volumes:
+      #   # - # Host:
+      #   #     # # SourcePath: # String
+      #   # # EfsVolumeConfiguration:
+      #   #     # # TransitEncryption: # String
+      #   #     # # AuthorizationConfig:
+      #   #     #   # # Iam: # String
+      #   #     #   # # AccessPointId: # String
+      #   #     # FileSystemId: # String
+      #   #     # # RootDirectory: # String
+      #   #     # # TransitEncryptionPort: # Integer
+      #   # # Name: # String
+      #   # Command:
+      #   # - # String
+      #   # Environment:
+      #   # - # Value: # String
+      #   # # Name: # String
+      #   # Ulimits:
+      #   # - SoftLimit: # Integer
+      #   # HardLimit: # Integer
+      #   # Name: # String
+      #   # NetworkConfiguration:
+      #   # # AssignPublicIp: # String
+      #   # InstanceType: # String
+      # JobDefinitionName: # String
+      # PropagateTags: # Boolean
+      # PlatformCapabilities:
+      #   - # String
+      # EksProperties:
+      #   # PodProperties:
+      #   # # Volumes:
+      #   #   # - # Secret:
+      #   #   #     # ValueFrom: # String
+      #   #   #     # Name: # String
+      #   #   # # EmptyDir:
+      #   #   #     # # Medium: # String
+      #   #   #     # # SizeLimit: # String
+      #   #   # # HostPath:
+      #   #   #     # # Path: # String
+      #   #   # Name: # String
+      #   # # DnsPolicy: # String
+      #   # # Containers:
+      #   #   # - # Args:
+      #   #   #     # - # String
+      #   #   # # VolumeMounts:
+      #   #   #     # - # MountPath: # String
+      #   #   #     # # ReadOnly: # Boolean
+      #   #   #     # # Name: # String
+      #   #   # # ImagePullPolicy: # String
+      #   #   # # Command:
+      #   #   #     # - # String
+      #   #   # # SecurityContext:
+      #   #   #     # # RunAsUser: # Integer
+      #   #   #     # # RunAsNonRoot: # Boolean
+      #   #   #     # # Privileged: # Boolean
+      #   #   #     # # ReadOnlyRootFilesystem: # Boolean
+      #   #   #     # # RunAsGroup: # Integer
+      #   #   # # Resources:
+      #   #   #     # # Limits: # Json
+      #   #   #     # # Requests: # Json
+      #   #   # Image: # String
+      #   #   # # Env:
+      #   #   #     # - # Value: # String
+      #   #   #     # Name: # String
+      #   #   # # Name: # String
+      #   # # ServiceAccountName: # String
+      #   # # HostNetwork: # Boolean
+      # RetryStrategy:
+      #   # EvaluateOnExit:
+      #   # - Action: # String
+      #   # # OnExitCode: # String
+      #   # # OnReason: # String
+      #   # # OnStatusReason: # String
+      #   # Attempts: # Integer
+      # Tags: # Json

@@ -1,0 +1,154 @@
+  AppFlowConnectorProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-connectorprofile.html
+    Type: AWS::AppFlow::ConnectorProfile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-connectorprofile.html
+      # ConnectorLabel: # String
+      ConnectorProfileName: # String
+      # KMSArn: # String
+      ConnectorType: # String
+      ConnectionMode: # String
+      # ConnectorProfileConfig:
+      #   # ConnectorProfileProperties:
+      #   # # Datadog:
+      #   #   # InstanceUrl: # String
+      #   # # Dynatrace:
+      #   #   # InstanceUrl: # String
+      #   # # InforNexus:
+      #   #   # InstanceUrl: # String
+      #   # # Marketo:
+      #   #   # InstanceUrl: # String
+      #   # # Redshift:
+      #   #   # DatabaseUrl: # String
+      #   #   # BucketName: # String
+      #   #   # # BucketPrefix: # String
+      #   #   # RoleArn: # String
+      #   # # SAPOData:
+      #   #   # # ApplicationHostUrl: # String
+      #   #   # # ApplicationServicePath: # String
+      #   #   # # PortNumber: # Integer
+      #   #   # # ClientNumber: # String
+      #   #   # # LogonLanguage: # String
+      #   #   # # PrivateLinkServiceName: # String
+      #   #   # # OAuthProperties:
+      #   #   #   # # AuthCodeUrl: # String
+      #   #   #   # # TokenUrl: # String
+      #   #   #   # # OAuthScopes:
+      #   #   #   #   # - # String
+      #   # # Salesforce:
+      #   #   # # InstanceUrl: # String
+      #   #   # # isSandboxEnvironment: # Boolean
+      #   # # ServiceNow:
+      #   #   # InstanceUrl: # String
+      #   # # Slack:
+      #   #   # InstanceUrl: # String
+      #   # # Snowflake:
+      #   #   # Warehouse: # String
+      #   #   # Stage: # String
+      #   #   # BucketName: # String
+      #   #   # # BucketPrefix: # String
+      #   #   # # PrivateLinkServiceName: # String
+      #   #   # # AccountName: # String
+      #   #   # # Region: # String
+      #   # # Veeva:
+      #   #   # InstanceUrl: # String
+      #   # # Zendesk:
+      #   #   # InstanceUrl: # String
+      #   # # CustomConnector:
+      #   #   # # ProfileProperties: <Unknown>: None
+      #   #   # # OAuth2Properties:
+      #   #   #   # # TokenUrl: # String
+      #   #   #   # # OAuth2GrantType: # String
+      #   #   #   # # TokenUrlCustomProperties: <Unknown>: None
+      #   # ConnectorProfileCredentials:
+      #   # # Amplitude:
+      #   #   # ApiKey: # String
+      #   #   # SecretKey: # String
+      #   # # Datadog:
+      #   #   # ApiKey: # String
+      #   #   # ApplicationKey: # String
+      #   # # Dynatrace:
+      #   #   # ApiToken: # String
+      #   # # GoogleAnalytics:
+      #   #   # ClientId: # String
+      #   #   # ClientSecret: # String
+      #   #   # # AccessToken: # String
+      #   #   # # RefreshToken: # String
+      #   #   # # ConnectorOAuthRequest:
+      #   #   #   # # AuthCode: # String
+      #   #   #   # # RedirectUri: # String
+      #   # # InforNexus:
+      #   #   # AccessKeyId: # String
+      #   #   # UserId: # String
+      #   #   # SecretAccessKey: # String
+      #   #   # Datakey: # String
+      #   # # Marketo:
+      #   #   # ClientId: # String
+      #   #   # ClientSecret: # String
+      #   #   # # AccessToken: # String
+      #   #   # # ConnectorOAuthRequest:
+      #   #   #   # # AuthCode: # String
+      #   #   #   # # RedirectUri: # String
+      #   # # Redshift:
+      #   #   # Username: # String
+      #   #   # Password: # String
+      #   # # SAPOData:
+      #   #   # # BasicAuthCredentials:
+      #   #   #   # Username: # String
+      #   #   #   # Password: # String
+      #   #   # # OAuthCredentials: # Json
+      #   # # Salesforce:
+      #   #   # # AccessToken: # String
+      #   #   # # RefreshToken: # String
+      #   #   # # ConnectorOAuthRequest:
+      #   #   #   # # AuthCode: # String
+      #   #   #   # # RedirectUri: # String
+      #   #   # # ClientCredentialsArn: # String
+      #   # # ServiceNow:
+      #   #   # Username: # String
+      #   #   # Password: # String
+      #   # # Singular:
+      #   #   # ApiKey: # String
+      #   # # Slack:
+      #   #   # ClientId: # String
+      #   #   # ClientSecret: # String
+      #   #   # # AccessToken: # String
+      #   #   # # ConnectorOAuthRequest:
+      #   #   #   # # AuthCode: # String
+      #   #   #   # # RedirectUri: # String
+      #   # # Snowflake:
+      #   #   # Username: # String
+      #   #   # Password: # String
+      #   # # Trendmicro:
+      #   #   # ApiSecretKey: # String
+      #   # # Veeva:
+      #   #   # Username: # String
+      #   #   # Password: # String
+      #   # # Zendesk:
+      #   #   # ClientId: # String
+      #   #   # ClientSecret: # String
+      #   #   # # AccessToken: # String
+      #   #   # # ConnectorOAuthRequest:
+      #   #   #   # # AuthCode: # String
+      #   #   #   # # RedirectUri: # String
+      #   # # CustomConnector:
+      #   #   # AuthenticationType: # String
+      #   #   # # Basic:
+      #   #   #   # Username: # String
+      #   #   #   # Password: # String
+      #   #   # # Oauth2:
+      #   #   #   # # ClientId: # String
+      #   #   #   # # ClientSecret: # String
+      #   #   #   # # AccessToken: # String
+      #   #   #   # # RefreshToken: # String
+      #   #   #   # # OAuthRequest:
+      #   #   #   #   # # AuthCode: # String
+      #   #   #   #   # # RedirectUri: # String
+      #   #   # # ApiKey:
+      #   #   #   # ApiKey: # String
+      #   #   #   # # ApiSecretKey: # String
+      #   #   # # Custom:
+      #   #   #   # CustomAuthenticationType: # String
+      #   #   #   # # CredentialsMap: <Unknown>: None
+    # !GetAtt THIS.ConnectorProfileArn (String)
+    # !GetAtt THIS.CredentialsArn (String)

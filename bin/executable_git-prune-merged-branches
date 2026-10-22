@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -euC
+
+# TODO origin に正規表現の特殊文字が入ると、意図しない挙動になりそう
+
+remote="${1:-origin}"
+
+
+current=$(git rev-parse --abbrev-ref HEAD)
+
+git branch --merged | grep -v '^\(\* .*\|  master\|  develop\)' | xargs -I % git branch -d %
+
+temp_file=$(mktemp)
+
+echo "Remote branches merged into current branch ($current):"
+targets=$(
+  git branch -r --merged | grep -v '^\(\* .*\|  '"$remote"'/main\|  '"$remote"'/master\|  '"$remote"'/develop\)$' | perl -pE 's!^\s*'"$remote"'/!!' | grep -F -v -x "$current"
+)
+echo "${targets}" >| "$temp_file"
+
+"$EDITOR" "$temp_file"
+
+mapfile -t targets < "$temp_file"
+
+echo "Branches to be deleted:"
+printf '%s\n' "${targets[@]}"
+
+echo -n "Prune remote? (yes/No): "
+read -r q
+if [ "$q" = "yes" ]
+then
+  git fetch --prune
+  printf '%s\n' "${targets[@]}" | xargs -I % git push --delete "$remote" %
+fi

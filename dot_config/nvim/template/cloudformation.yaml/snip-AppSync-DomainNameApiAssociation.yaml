@@ -1,0 +1,7 @@
+  AppSyncDomainNameApiAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-domainnameapiassociation.html
+    Type: AWS::AppSync::DomainNameApiAssociation
+    Properties:
+      DomainName: # String
+      ApiId: # String
+    # !GetAtt THIS.ApiAssociationIdentifier (String)

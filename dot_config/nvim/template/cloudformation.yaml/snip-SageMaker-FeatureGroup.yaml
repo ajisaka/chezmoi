@@ -1,0 +1,18 @@
+  SageMakerFeatureGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-featuregroup.html
+    Type: AWS::SageMaker::FeatureGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-featuregroup.html
+      FeatureGroupName: # String
+      RecordIdentifierFeatureName: # String
+      EventTimeFeatureName: # String
+      FeatureDefinitions:
+        - FeatureName: # String
+          FeatureType: # String
+      # OnlineStoreConfig: # Json
+      # OfflineStoreConfig: # Json
+      # RoleArn: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

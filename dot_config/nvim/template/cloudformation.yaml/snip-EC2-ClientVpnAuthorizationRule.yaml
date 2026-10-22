@@ -1,0 +1,10 @@
+  EC2ClientVpnAuthorizationRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnauthorizationrule.html
+    Type: AWS::EC2::ClientVpnAuthorizationRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnauthorizationrule.html
+      ClientVpnEndpointId: # String
+      # Description: # String
+      # AccessGroupId: # String
+      TargetNetworkCidr: # String
+      # AuthorizeAllGroups: # Boolean

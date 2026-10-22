@@ -1,0 +1,13 @@
+  ConfigStoredQuery:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-storedquery.html
+    Type: AWS::Config::StoredQuery
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-storedquery.html
+      QueryName: # String
+      # QueryDescription: # String
+      QueryExpression: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.QueryArn (String)
+    # !GetAtt THIS.QueryId (String)

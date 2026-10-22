@@ -1,0 +1,12 @@
+  SageMakerDevice:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-device.html
+    Type: AWS::SageMaker::Device
+    Properties:
+      DeviceFleetName: # String
+      # Device:
+      #   # Description: # String
+      #   DeviceName: # String
+      #   # IotThingName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

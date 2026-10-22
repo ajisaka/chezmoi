@@ -1,0 +1,41 @@
+  SSMPatchBaseline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
+    Type: AWS::SSM::PatchBaseline
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
+      # OperatingSystem: # String
+      # Description: # String
+      # ApprovalRules:
+      #   # PatchRules:
+      #   # - # ApproveUntilDate: # String
+      #   # # EnableNonSecurity: # Boolean
+      #   # # PatchFilterGroup:
+      #   #     # # PatchFilters:
+      #   #     #   # - # Values:
+      #   #     #   #     # - # String
+      #   #     #   # # Key: # String
+      #   # # ApproveAfterDays: # Integer
+      #   # # ComplianceLevel: # String
+      # Sources:
+      #   - # Products:
+      #     # - # String
+      #     # Configuration: # String
+      #     # Name: # String
+      Name: # String
+      # RejectedPatches:
+      #   - # String
+      # ApprovedPatches:
+      #   - # String
+      # RejectedPatchesAction: # String
+      # PatchGroups:
+      #   - # String
+      # ApprovedPatchesComplianceLevel: # String
+      # ApprovedPatchesEnableNonSecurity: # Boolean
+      # GlobalFilters:
+      #   # PatchFilters:
+      #   # - # Values:
+      #   #     # - # String
+      #   # # Key: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

@@ -1,0 +1,14 @@
+  WAFWebACL:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
+    Type: AWS::WAF::WebACL
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
+      # DefaultAction:
+      #   Type: # String
+      MetricName: # String
+      Name: # String
+      # Rules:
+      #   - # Action:
+      #     # Type: # String
+      #     Priority: # Integer
+      #     RuleId: # String

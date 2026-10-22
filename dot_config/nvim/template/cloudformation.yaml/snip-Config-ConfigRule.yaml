@@ -1,0 +1,29 @@
+  ConfigConfigRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html
+    Type: AWS::Config::ConfigRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html
+      # ConfigRuleName: # String
+      # Description: # String
+      # InputParameters: # Json
+      # MaximumExecutionFrequency: # String
+      # Scope:
+      #   # ComplianceResourceId: # String
+      #   # ComplianceResourceTypes:
+      #   # - # String
+      #   # TagKey: # String
+      #   # TagValue: # String
+      # Source:
+      #   # CustomPolicyDetails:
+      #   # # EnableDebugLogDelivery: # Boolean
+      #   # # PolicyRuntime: # String
+      #   # # PolicyText: # String
+      #   Owner: # String
+      #   # SourceDetails:
+      #   # - EventSource: # String
+      #   # # MaximumExecutionFrequency: # String
+      #   # MessageType: # String
+      #   # SourceIdentifier: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Compliance.Type (String)
+    # !GetAtt THIS.ConfigRuleId (String)

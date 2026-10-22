@@ -1,0 +1,12 @@
+  WAFRegionalSizeConstraintSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html
+    Type: AWS::WAFRegional::SizeConstraintSet
+    Properties:
+      # SizeConstraints:
+      #   - ComparisonOperator: # String
+      #     Size: # Integer
+      #     TextTransformation: # String
+      #     # FieldToMatch:
+      #     # Type: # String
+      #     # # Data: # String
+      Name: # String

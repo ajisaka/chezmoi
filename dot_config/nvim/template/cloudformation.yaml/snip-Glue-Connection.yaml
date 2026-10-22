@@ -1,0 +1,17 @@
+  GlueConnection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html
+    Type: AWS::Glue::Connection
+    Properties:
+      # ConnectionInput:
+      #   # Description: # String
+      #   ConnectionType: # String
+      #   # MatchCriteria:
+      #   # - # String
+      #   # PhysicalConnectionRequirements:
+      #   # # AvailabilityZone: # String
+      #   # # SecurityGroupIdList:
+      #   #   # - # String
+      #   # # SubnetId: # String
+      #   # ConnectionProperties: # Json
+      #   # Name: # String
+      CatalogId: # String

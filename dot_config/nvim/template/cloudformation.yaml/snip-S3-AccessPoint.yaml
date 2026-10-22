@@ -1,0 +1,20 @@
+  S3AccessPoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html
+    Type: AWS::S3::AccessPoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-accesspoint.html
+      # Name: # String
+      Bucket: # String
+      # VpcConfiguration:
+      #   # VpcId: # String
+      # PublicAccessBlockConfiguration:
+      #   # BlockPublicAcls: # Boolean
+      #   # IgnorePublicAcls: # Boolean
+      #   # BlockPublicPolicy: # Boolean
+      #   # RestrictPublicBuckets: # Boolean
+      # Policy: # Json
+      # PolicyStatus: # Json
+    # !GetAtt THIS.Name (String)
+    # !GetAtt THIS.Alias (String)
+    # !GetAtt THIS.NetworkOrigin (String)
+    # !GetAtt THIS.Arn (String)

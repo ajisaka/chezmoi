@@ -1,0 +1,13 @@
+  XRayGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-xray-group.html
+    Type: AWS::XRay::Group
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-xray-group.html
+      # FilterExpression: # String
+      # GroupName: # String
+      # InsightsConfiguration:
+      #   # InsightsEnabled: # Boolean
+      #   # NotificationsEnabled: # Boolean
+      # Tags:
+      #   - # Json
+    # !GetAtt THIS.GroupARN (String)

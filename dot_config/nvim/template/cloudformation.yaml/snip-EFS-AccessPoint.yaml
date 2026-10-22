@@ -1,0 +1,23 @@
+  EFSAccessPoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-accesspoint.html
+    Type: AWS::EFS::AccessPoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-accesspoint.html
+      # ClientToken: # String
+      # AccessPointTags:
+      #   - # Key: # String
+      #     # Value: # String
+      FileSystemId: # String
+      # PosixUser:
+      #   Uid: # String
+      #   Gid: # String
+      #   # SecondaryGids:
+      #   # - # String
+      # RootDirectory:
+      #   # Path: # String
+      #   # CreationInfo:
+      #   # OwnerUid: # String
+      #   # OwnerGid: # String
+      #   # Permissions: # String
+    # !GetAtt THIS.AccessPointId (String)
+    # !GetAtt THIS.Arn (String)

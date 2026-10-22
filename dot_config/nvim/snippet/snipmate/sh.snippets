@@ -1,0 +1,52 @@
+snippet cc/hooks/stop-check
+  INPUT=$(cat)
+  # 既に Stop hook が動いている場合はスキップ
+  if echo "$INPUT" | jq -e '.stop_hook_active == true' > /dev/null 2>&1
+  then
+    exit 0
+  fi
+
+snippet debug-print
+  # exec 5>> /tmp/xmosh/shell-script-debug.out
+  # BASH_XTRACEFD="5"
+  # PS4='\$LINENO: '
+  # set -x
+
+
+snippet env/scale
+  export GDK_SCALE=2
+  export QT_SCALE_FACTOR=2
+
+
+snippet hyprland/lib
+  # shellcheck disable=1090
+  source ~/.config/hypr/script/palette/lib
+
+
+snippet jq/array-to-object
+  | reduce .[] as $it ({}; .[$it.OutputKey] = $it.OutputValue)
+
+
+snippet main
+  #!/bin/bash
+
+  set -euC
+  # set -o pipefail
+
+snippet notification/series
+  notification_id=""
+  notification_level=""  # low, normal, critical
+
+  function notify() {
+    local args=() title="\$1"
+    local body="\${2:-${title}}"
+    [ -n "$notification_id" ] && args+=("--replace-id" "notification_id")
+    [ -n "$notification_level" ] && args+=("--urgency" "notification_level")
+    notification_id=$(
+      notify-send --print-id "\${args[@]}" "$title" "$body"
+    )
+  }
+
+
+snippet shellcheck/ignore
+  # shellcheck disable=${1}

@@ -1,0 +1,33 @@
+[package]
+name = "FIXME"
+version = "0.1.0"
+authors = ["anekos <anekos@snca.net>"]
+repository = "https://github.com/anekos/FIXME"
+categories = []
+keywords = []
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "FIXME"
+edition = "2021"
+# documentation = "http://anekos.github.io/FIXME"
+
+[[bin]]
+name = "FIXME"
+doc = false
+
+[dependencies]
+clap = "*"
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]
+
+[build-dependencies]
+skeptic = "0.13"
+
+[dev-dependencies]
+skeptic = "0.13"
+
+[badges]
+travis-ci = { repository = "anekos/FIXME" }

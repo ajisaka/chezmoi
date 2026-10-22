@@ -1,0 +1,17 @@
+  RolesAnywhereTrustAnchor:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-trustanchor.html
+    Type: AWS::RolesAnywhere::TrustAnchor
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rolesanywhere-trustanchor.html
+      # Enabled: # Boolean
+      # Name: # String
+      # Source:
+      #   # SourceType: # String
+      #   # SourceData:
+      #   # # X509CertificateData: # String
+      #   # # AcmPcaArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.TrustAnchorId (String)
+    # !GetAtt THIS.TrustAnchorArn (String)

@@ -1,0 +1,30 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+
+[[[- if eq .chezmoi.os "linux" -]]]
+[".config/quickshell/hyprmenu"]
+type = "git-repo"
+url = "git@github.com:anekos/quickshell-hyprmenu.git"
+refreshPeriod = "168h"
+
+[".config/quickshell/timer"]
+type = "git-repo"
+url = "git@github.com:anekos/quickshell-timer.git"
+refreshPeriod = "168h"
+
+[".config/quickshell/launcher"]
+type = "git-repo"
+url = "git@github.com:anekos/quickshell-launcher.git"
+refreshPeriod = "168h"
+
+[".config/quickshell/overview"]
+type = "git-repo"
+url = "git@github.com:anekos/quickshell-overview.git"
+refreshPeriod = "168h"
+[".config/quickshell/overview".clone]
+args = ["--branch", "anekos"]
+[[[- end ]]]
+
+[".config/yazi/plugins/session-save.yazi"]
+type = "git-repo"
+url = "https://github.com/anekos/session-save.yazi.git"
+refreshPeriod = "168h"

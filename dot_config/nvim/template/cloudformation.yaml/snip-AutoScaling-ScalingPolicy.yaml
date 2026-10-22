@@ -1,0 +1,94 @@
+  AutoScalingScalingPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-scalingpolicy.html
+    Type: AWS::AutoScaling::ScalingPolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-scalingpolicy.html
+      # MetricAggregationType: # String
+      # PolicyType: # String
+      # PredictiveScalingConfiguration:
+      #   MetricSpecifications:
+      #     - # CustomizedCapacityMetricSpecification:
+      #       # MetricDataQueries:
+      #       # - # Label: # String
+      #       # # MetricStat:
+      #       #       # # Metric:
+      #       #       #   # MetricName: # String
+      #       #       #   # # Dimensions:
+      #       #       #   #   # - Value: # String
+      #       #       #   #   # Name: # String
+      #       #       #   # Namespace: # String
+      #       #       # Stat: # String
+      #       #       # # Unit: # String
+      #       # Id: # String
+      #       # # ReturnData: # Boolean
+      #       # # Expression: # String
+      #       # CustomizedLoadMetricSpecification:
+      #       # MetricDataQueries:
+      #       # - # Label: # String
+      #       # # MetricStat:
+      #       #       # # Metric:
+      #       #       #   # MetricName: # String
+      #       #       #   # # Dimensions:
+      #       #       #   #   # - Value: # String
+      #       #       #   #   # Name: # String
+      #       #       #   # Namespace: # String
+      #       #       # Stat: # String
+      #       #       # # Unit: # String
+      #       # Id: # String
+      #       # # ReturnData: # Boolean
+      #       # # Expression: # String
+      #       # CustomizedScalingMetricSpecification:
+      #       # MetricDataQueries:
+      #       # - # Label: # String
+      #       # # MetricStat:
+      #       #       # # Metric:
+      #       #       #   # MetricName: # String
+      #       #       #   # # Dimensions:
+      #       #       #   #   # - Value: # String
+      #       #       #   #   # Name: # String
+      #       #       #   # Namespace: # String
+      #       #       # Stat: # String
+      #       #       # # Unit: # String
+      #       # Id: # String
+      #       # # ReturnData: # Boolean
+      #       # # Expression: # String
+      #       # PredefinedLoadMetricSpecification:
+      #       # # ResourceLabel: # String
+      #       # PredefinedMetricType: # String
+      #       TargetValue: # Double
+      #       # PredefinedScalingMetricSpecification:
+      #       # # ResourceLabel: # String
+      #       # PredefinedMetricType: # String
+      #       # PredefinedMetricPairSpecification:
+      #       # # ResourceLabel: # String
+      #       # PredefinedMetricType: # String
+      #   # MaxCapacityBreachBehavior: # String
+      #   # MaxCapacityBuffer: # Integer
+      #   # SchedulingBufferTime: # Integer
+      #   # Mode: # String
+      # ScalingAdjustment: # Integer
+      # Cooldown: # String
+      # StepAdjustments:
+      #   - # MetricIntervalUpperBound: # Double
+      #     # MetricIntervalLowerBound: # Double
+      #     ScalingAdjustment: # Integer
+      AutoScalingGroupName: # String
+      # MinAdjustmentMagnitude: # Integer
+      # TargetTrackingConfiguration:
+      #   # CustomizedMetricSpecification:
+      #   # MetricName: # String
+      #   # # Dimensions:
+      #   #   # - Value: # String
+      #   #   # Name: # String
+      #   # Statistic: # String
+      #   # # Unit: # String
+      #   # Namespace: # String
+      #   TargetValue: # Double
+      #   # DisableScaleIn: # Boolean
+      #   # PredefinedMetricSpecification:
+      #   # # ResourceLabel: # String
+      #   # PredefinedMetricType: # String
+      # EstimatedInstanceWarmup: # Integer
+      # AdjustmentType: # String
+    # !GetAtt THIS.PolicyName (String)
+    # !GetAtt THIS.Arn (String)

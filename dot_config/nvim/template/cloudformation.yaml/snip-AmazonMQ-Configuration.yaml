@@ -1,0 +1,17 @@
+  AmazonMQConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
+    Type: AWS::AmazonMQ::Configuration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
+      EngineVersion: # String
+      # Description: # String
+      # AuthenticationStrategy: # String
+      EngineType: # String
+      Data: # String
+      # Tags:
+      #   - Value: # String
+      #     Key: # String
+      Name: # String
+    # !GetAtt THIS.Revision (Integer)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

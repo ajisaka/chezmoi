@@ -1,0 +1,18 @@
+  IoTJobTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-jobtemplate.html
+    Type: AWS::IoT::JobTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-jobtemplate.html
+      # JobArn: # String
+      # TimeoutConfig: # Json
+      # JobExecutionsRolloutConfig: # Json
+      Description: # String
+      # DocumentSource: # String
+      # AbortConfig: # Json
+      JobTemplateId: # String
+      # Document: # String
+      # PresignedUrlConfig: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

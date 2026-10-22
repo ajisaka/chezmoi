@@ -1,0 +1,8 @@
+  EC2TransitGatewayRouteTable:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetable.html
+    Type: AWS::EC2::TransitGatewayRouteTable
+    Properties:
+      TransitGatewayId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

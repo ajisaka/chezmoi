@@ -1,0 +1,12 @@
+  EventsArchive:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html
+    Type: AWS::Events::Archive
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html
+      # ArchiveName: # String
+      SourceArn: # String
+      # Description: # String
+      # EventPattern: # Json
+      # RetentionDays: # Integer
+    # !GetAtt THIS.ArchiveName (String)
+    # !GetAtt THIS.Arn (String)

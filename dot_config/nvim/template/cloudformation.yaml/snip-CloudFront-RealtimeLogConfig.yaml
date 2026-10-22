@@ -1,0 +1,15 @@
+  CloudFrontRealtimeLogConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-realtimelogconfig.html
+    Type: AWS::CloudFront::RealtimeLogConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-realtimelogconfig.html
+      EndPoints:
+        - # KinesisStreamConfig:
+          #   RoleArn: # String
+          #   StreamArn: # String
+          StreamType: # String
+      Fields:
+        - # String
+      Name: # String
+      SamplingRate: # Double
+    # !GetAtt THIS.Arn (String)

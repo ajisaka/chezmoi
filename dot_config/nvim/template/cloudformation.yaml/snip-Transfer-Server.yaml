@@ -1,0 +1,47 @@
+  TransferServer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html
+    Type: AWS::Transfer::Server
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-server.html
+      # LoggingRole: # String
+      # Protocols:
+      #   - # String
+      # IdentityProviderDetails:
+      #   # Function: # String
+      #   # DirectoryId: # String
+      #   # InvocationRole: # String
+      #   # Url: # String
+      # EndpointDetails:
+      #   # AddressAllocationIds:
+      #   # - # String
+      #   # VpcId: # String
+      #   # VpcEndpointId: # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # PreAuthenticationLoginBanner: # String
+      # PostAuthenticationLoginBanner: # String
+      # EndpointType: # String
+      # SecurityPolicyName: # String
+      # ProtocolDetails:
+      #   # As2Transports:
+      #   # - # String
+      #   # PassiveIp: # String
+      #   # SetStatOption: # String
+      #   # TlsSessionResumptionMode: # String
+      # WorkflowDetails:
+      #   # OnUpload:
+      #   # - WorkflowId: # String
+      #   # ExecutionRole: # String
+      #   # OnPartialUpload:
+      #   # - WorkflowId: # String
+      #   # ExecutionRole: # String
+      # Domain: # String
+      # IdentityProviderType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Certificate: # String
+    # !GetAtt THIS.ServerId (String)
+    # !GetAtt THIS.Arn (String)

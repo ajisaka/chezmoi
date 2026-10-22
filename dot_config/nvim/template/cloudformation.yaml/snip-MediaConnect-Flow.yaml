@@ -1,0 +1,40 @@
+  MediaConnectFlow:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flow.html
+    Type: AWS::MediaConnect::Flow
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconnect-flow.html
+      Name: # String
+      # AvailabilityZone: # String
+      # Source:
+      #   # SourceArn: # String
+      #   # Decryption:
+      #   # # Algorithm: # String
+      #   # # ConstantInitializationVector: # String
+      #   # # DeviceId: # String
+      #   # # KeyType: # String
+      #   # # Region: # String
+      #   # # ResourceId: # String
+      #   # RoleArn: # String
+      #   # # SecretArn: # String
+      #   # # Url: # String
+      #   # Description: # String
+      #   # EntitlementArn: # String
+      #   # IngestIp: # String
+      #   # IngestPort: # Integer
+      #   # MaxBitrate: # Integer
+      #   # MaxLatency: # Integer
+      #   # MinLatency: # Integer
+      #   # Name: # String
+      #   # Protocol: # String
+      #   # StreamId: # String
+      #   # SourceIngestPort: # String
+      #   # VpcInterfaceName: # String
+      #   # WhitelistCidr: # String
+      # SourceFailoverConfig:
+      #   # State: # String
+      #   # RecoveryWindow: # Integer
+    # !GetAtt THIS.FlowArn (String)
+    # !GetAtt THIS.FlowAvailabilityZone (String)
+    # !GetAtt THIS.Source.SourceArn (String)
+    # !GetAtt THIS.Source.IngestIp (String)
+    # !GetAtt THIS.Source.SourceIngestPort (String)

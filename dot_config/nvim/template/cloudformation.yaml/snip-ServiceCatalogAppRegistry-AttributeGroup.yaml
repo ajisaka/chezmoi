@@ -1,0 +1,12 @@
+  ServiceCatalogAppRegistryAttributeGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroup.html
+    Type: AWS::ServiceCatalogAppRegistry::AttributeGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroup.html
+      Name: # String
+      # Description: # String
+      Attributes: # Json
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

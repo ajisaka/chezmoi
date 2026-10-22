@@ -1,0 +1,15 @@
+  CodeArtifactDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeartifact-domain.html
+    Type: AWS::CodeArtifact::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codeartifact-domain.html
+      DomainName: # String
+      # EncryptionKey: # String
+      # PermissionsPolicyDocument: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Name (String)
+    # !GetAtt THIS.Owner (String)
+    # !GetAtt THIS.EncryptionKey (String)
+    # !GetAtt THIS.Arn (String)

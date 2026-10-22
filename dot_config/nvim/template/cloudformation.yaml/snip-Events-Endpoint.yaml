@@ -1,0 +1,23 @@
+  EventsEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-endpoint.html
+    Type: AWS::Events::Endpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-endpoint.html
+      Name: # String
+      # RoleArn: # String
+      # Description: # String
+      # RoutingConfig:
+      #   # FailoverConfig:
+      #   # # Primary:
+      #   #   # HealthCheck: # String
+      #   # # Secondary:
+      #   #   # Route: # String
+      # ReplicationConfig:
+      #   State: # String
+      EventBuses:
+        - EventBusArn: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.EndpointId (String)
+    # !GetAtt THIS.EndpointUrl (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.StateReason (String)

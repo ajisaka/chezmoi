@@ -1,0 +1,40 @@
+  SSMIncidentsResponsePlan:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmincidents-responseplan.html
+    Type: AWS::SSMIncidents::ResponsePlan
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmincidents-responseplan.html
+      Name: # String
+      # DisplayName: # String
+      # ChatChannel:
+      #   # ChatbotSns:
+      #   # - # String
+      # Engagements:
+      #   - # String
+      # Actions:
+      #   - # SsmAutomation:
+      #     # RoleArn: # String
+      #     # DocumentName: # String
+      #     # # DocumentVersion: # String
+      #     # # TargetAccount: # String
+      #     # # Parameters:
+      #     #   # - Key: # String
+      #     #   # Values:
+      #     #   # - # String
+      #     # # DynamicParameters:
+      #     #   # - Key: # String
+      #     #   # # Value:
+      #     #   #     # # Variable: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # IncidentTemplate:
+      #   # DedupeString: # String
+      #   Impact: # Integer
+      #   # NotificationTargets:
+      #   # - # SnsTopicArn: # String
+      #   # Summary: # String
+      #   Title: # String
+      #   # IncidentTags:
+      #   # - Key: # String
+      #   # Value: # String
+    # !GetAtt THIS.Arn (String)

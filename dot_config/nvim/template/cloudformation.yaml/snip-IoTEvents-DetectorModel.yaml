@@ -1,0 +1,341 @@
+  IoTEventsDetectorModel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html
+    Type: AWS::IoTEvents::DetectorModel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-detectormodel.html
+      # DetectorModelDefinition:
+      #   InitialStateName: # String
+      #   States:
+      #     - # OnEnter:
+      #       # # Events:
+      #       #   # - # Actions:
+      #       #   #     # - # ClearTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # DynamoDB:
+      #       #   #     #     # HashKeyField: # String
+      #       #   #     #     # # HashKeyType: # String
+      #       #   #     #     # HashKeyValue: # String
+      #       #   #     #     # # Operation: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # PayloadField: # String
+      #       #   #     #     # # RangeKeyField: # String
+      #       #   #     #     # # RangeKeyType: # String
+      #       #   #     #     # # RangeKeyValue: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # DynamoDBv2:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # Firehose:
+      #       #   #     #     # DeliveryStreamName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # Separator: # String
+      #       #   #     # # IotEvents:
+      #       #   #     #     # InputName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # IotSiteWise:
+      #       #   #     #     # # AssetId: # String
+      #       #   #     #     # # EntryId: # String
+      #       #   #     #     # # PropertyAlias: # String
+      #       #   #     #     # # PropertyId: # String
+      #       #   #     #     # # PropertyValue:
+      #       #   #     #     #   # # Quality: # String
+      #       #   #     #     #   # # Timestamp:
+      #       #   #     #     #   #   # # OffsetInNanos: # String
+      #       #   #     #     #   #   # TimeInSeconds: # String
+      #       #   #     #     #   # # Value:
+      #       #   #     #     #   #   # # BooleanValue: # String
+      #       #   #     #     #   #   # # DoubleValue: # String
+      #       #   #     #     #   #   # # IntegerValue: # String
+      #       #   #     #     #   #   # # StringValue: # String
+      #       #   #     # # IotTopicPublish:
+      #       #   #     #     # MqttTopic: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # Lambda:
+      #       #   #     #     # FunctionArn: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # ResetTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetTimer:
+      #       #   #     #     # # DurationExpression: # String
+      #       #   #     #     # # Seconds: # Integer
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetVariable:
+      #       #   #     #     # Value: # String
+      #       #   #     #     # VariableName: # String
+      #       #   #     # # Sns:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TargetArn: # String
+      #       #   #     # # Sqs:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # QueueUrl: # String
+      #       #   #     #     # # UseBase64: # Boolean
+      #       #   # # Condition: # String
+      #       #   # EventName: # String
+      #       # OnExit:
+      #       # # Events:
+      #       #   # - # Actions:
+      #       #   #     # - # ClearTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # DynamoDB:
+      #       #   #     #     # HashKeyField: # String
+      #       #   #     #     # # HashKeyType: # String
+      #       #   #     #     # HashKeyValue: # String
+      #       #   #     #     # # Operation: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # PayloadField: # String
+      #       #   #     #     # # RangeKeyField: # String
+      #       #   #     #     # # RangeKeyType: # String
+      #       #   #     #     # # RangeKeyValue: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # DynamoDBv2:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # Firehose:
+      #       #   #     #     # DeliveryStreamName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # Separator: # String
+      #       #   #     # # IotEvents:
+      #       #   #     #     # InputName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # IotSiteWise:
+      #       #   #     #     # # AssetId: # String
+      #       #   #     #     # # EntryId: # String
+      #       #   #     #     # # PropertyAlias: # String
+      #       #   #     #     # # PropertyId: # String
+      #       #   #     #     # # PropertyValue:
+      #       #   #     #     #   # # Quality: # String
+      #       #   #     #     #   # # Timestamp:
+      #       #   #     #     #   #   # # OffsetInNanos: # String
+      #       #   #     #     #   #   # TimeInSeconds: # String
+      #       #   #     #     #   # # Value:
+      #       #   #     #     #   #   # # BooleanValue: # String
+      #       #   #     #     #   #   # # DoubleValue: # String
+      #       #   #     #     #   #   # # IntegerValue: # String
+      #       #   #     #     #   #   # # StringValue: # String
+      #       #   #     # # IotTopicPublish:
+      #       #   #     #     # MqttTopic: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # Lambda:
+      #       #   #     #     # FunctionArn: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # ResetTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetTimer:
+      #       #   #     #     # # DurationExpression: # String
+      #       #   #     #     # # Seconds: # Integer
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetVariable:
+      #       #   #     #     # Value: # String
+      #       #   #     #     # VariableName: # String
+      #       #   #     # # Sns:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TargetArn: # String
+      #       #   #     # # Sqs:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # QueueUrl: # String
+      #       #   #     #     # # UseBase64: # Boolean
+      #       #   # # Condition: # String
+      #       #   # EventName: # String
+      #       # OnInput:
+      #       # # Events:
+      #       #   # - # Actions:
+      #       #   #     # - # ClearTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # DynamoDB:
+      #       #   #     #     # HashKeyField: # String
+      #       #   #     #     # # HashKeyType: # String
+      #       #   #     #     # HashKeyValue: # String
+      #       #   #     #     # # Operation: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # PayloadField: # String
+      #       #   #     #     # # RangeKeyField: # String
+      #       #   #     #     # # RangeKeyType: # String
+      #       #   #     #     # # RangeKeyValue: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # DynamoDBv2:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # Firehose:
+      #       #   #     #     # DeliveryStreamName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # Separator: # String
+      #       #   #     # # IotEvents:
+      #       #   #     #     # InputName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # IotSiteWise:
+      #       #   #     #     # # AssetId: # String
+      #       #   #     #     # # EntryId: # String
+      #       #   #     #     # # PropertyAlias: # String
+      #       #   #     #     # # PropertyId: # String
+      #       #   #     #     # # PropertyValue:
+      #       #   #     #     #   # # Quality: # String
+      #       #   #     #     #   # # Timestamp:
+      #       #   #     #     #   #   # # OffsetInNanos: # String
+      #       #   #     #     #   #   # TimeInSeconds: # String
+      #       #   #     #     #   # # Value:
+      #       #   #     #     #   #   # # BooleanValue: # String
+      #       #   #     #     #   #   # # DoubleValue: # String
+      #       #   #     #     #   #   # # IntegerValue: # String
+      #       #   #     #     #   #   # # StringValue: # String
+      #       #   #     # # IotTopicPublish:
+      #       #   #     #     # MqttTopic: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # Lambda:
+      #       #   #     #     # FunctionArn: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # ResetTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetTimer:
+      #       #   #     #     # # DurationExpression: # String
+      #       #   #     #     # # Seconds: # Integer
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetVariable:
+      #       #   #     #     # Value: # String
+      #       #   #     #     # VariableName: # String
+      #       #   #     # # Sns:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TargetArn: # String
+      #       #   #     # # Sqs:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # QueueUrl: # String
+      #       #   #     #     # # UseBase64: # Boolean
+      #       #   # # Condition: # String
+      #       #   # EventName: # String
+      #       # # TransitionEvents:
+      #       #   # - # Actions:
+      #       #   #     # - # ClearTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # DynamoDB:
+      #       #   #     #     # HashKeyField: # String
+      #       #   #     #     # # HashKeyType: # String
+      #       #   #     #     # HashKeyValue: # String
+      #       #   #     #     # # Operation: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # PayloadField: # String
+      #       #   #     #     # # RangeKeyField: # String
+      #       #   #     #     # # RangeKeyType: # String
+      #       #   #     #     # # RangeKeyValue: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # DynamoDBv2:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TableName: # String
+      #       #   #     # # Firehose:
+      #       #   #     #     # DeliveryStreamName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # # Separator: # String
+      #       #   #     # # IotEvents:
+      #       #   #     #     # InputName: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # IotSiteWise:
+      #       #   #     #     # # AssetId: # String
+      #       #   #     #     # # EntryId: # String
+      #       #   #     #     # # PropertyAlias: # String
+      #       #   #     #     # # PropertyId: # String
+      #       #   #     #     # # PropertyValue:
+      #       #   #     #     #   # # Quality: # String
+      #       #   #     #     #   # # Timestamp:
+      #       #   #     #     #   #   # # OffsetInNanos: # String
+      #       #   #     #     #   #   # TimeInSeconds: # String
+      #       #   #     #     #   # # Value:
+      #       #   #     #     #   #   # # BooleanValue: # String
+      #       #   #     #     #   #   # # DoubleValue: # String
+      #       #   #     #     #   #   # # IntegerValue: # String
+      #       #   #     #     #   #   # # StringValue: # String
+      #       #   #     # # IotTopicPublish:
+      #       #   #     #     # MqttTopic: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # Lambda:
+      #       #   #     #     # FunctionArn: # String
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     # # ResetTimer:
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetTimer:
+      #       #   #     #     # # DurationExpression: # String
+      #       #   #     #     # # Seconds: # Integer
+      #       #   #     #     # TimerName: # String
+      #       #   #     # # SetVariable:
+      #       #   #     #     # Value: # String
+      #       #   #     #     # VariableName: # String
+      #       #   #     # # Sns:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # TargetArn: # String
+      #       #   #     # # Sqs:
+      #       #   #     #     # # Payload:
+      #       #   #     #     #   # ContentExpression: # String
+      #       #   #     #     #   # Type: # String
+      #       #   #     #     # QueueUrl: # String
+      #       #   #     #     # # UseBase64: # Boolean
+      #       #   # Condition: # String
+      #       #   # EventName: # String
+      #       #   # NextState: # String
+      #       StateName: # String
+      # DetectorModelDescription: # String
+      # DetectorModelName: # String
+      # EvaluationMethod: # String
+      # Key: # String
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

@@ -1,0 +1,13 @@
+  LambdaPermission:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
+    Type: AWS::Lambda::Permission
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
+      Action: # String
+      # EventSourceToken: # String
+      FunctionName: # String
+      # FunctionUrlAuthType: # String
+      Principal: # String
+      # PrincipalOrgID: # String
+      # SourceAccount: # String
+      # SourceArn: # String

@@ -1,0 +1,26 @@
+  SQSQueue:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html
+    Type: AWS::SQS::Queue
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sqs-queue.html
+      # ContentBasedDeduplication: # Boolean
+      # DeduplicationScope: # String
+      # DelaySeconds: # Integer
+      # FifoQueue: # Boolean
+      # FifoThroughputLimit: # String
+      # KmsDataKeyReusePeriodSeconds: # Integer
+      # KmsMasterKeyId: # String
+      # SqsManagedSseEnabled: # Boolean
+      # MaximumMessageSize: # Integer
+      # MessageRetentionPeriod: # Integer
+      # QueueName: # String
+      # ReceiveMessageWaitTimeSeconds: # Integer
+      # RedriveAllowPolicy: # Json
+      # RedrivePolicy: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VisibilityTimeout: # Integer
+    # !GetAtt THIS.QueueUrl (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.QueueName (String)

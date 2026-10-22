@@ -1,0 +1,11 @@
+  Route53CidrCollection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-cidrcollection.html
+    Type: AWS::Route53::CidrCollection
+    Properties:
+      Name: # String
+      # Locations:
+      #   - LocationName: # String
+      #     CidrList:
+      #       - # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,17 @@
+  EC2VPNConnection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpnconnection.html
+    Type: AWS::EC2::VPNConnection
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpnconnection.html
+      CustomerGatewayId: # String
+      # StaticRoutesOnly: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TransitGatewayId: # String
+      Type: # String
+      # VpnGatewayId: # String
+      # VpnTunnelOptionsSpecifications:
+      #   - # PreSharedKey: # String
+      #     # TunnelInsideCidr: # String
+    # !GetAtt THIS.VpnConnectionId (String)

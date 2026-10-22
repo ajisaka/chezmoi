@@ -1,0 +1,50 @@
+  GreengrassV2ComponentVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrassv2-componentversion.html
+    Type: AWS::GreengrassV2::ComponentVersion
+    Properties:
+      # InlineRecipe: # String
+      # LambdaFunction:
+      #   # LambdaArn: # String
+      #   # ComponentName: # String
+      #   # ComponentVersion: # String
+      #   # ComponentPlatforms:
+      #   # - # Name: # String
+      #   # # Attributes:
+      #   #     # ANY_KEY: # String
+      #   # ComponentDependencies:
+      #   # ANY_KEY: # VersionRequirement: # String
+      #   # # DependencyType: # String
+      #   # ComponentLambdaParameters:
+      #   # # EventSources:
+      #   #   # - # Topic: # String
+      #   #   # # Type: # String
+      #   # # MaxQueueSize: # Integer
+      #   # # MaxInstancesCount: # Integer
+      #   # # MaxIdleTimeInSeconds: # Integer
+      #   # # TimeoutInSeconds: # Integer
+      #   # # StatusTimeoutInSeconds: # Integer
+      #   # # Pinned: # Boolean
+      #   # # InputPayloadEncodingType: # String
+      #   # # ExecArgs:
+      #   #   # - # String
+      #   # # EnvironmentVariables:
+      #   #   # ANY_KEY: # String
+      #   # # LinuxProcessParams:
+      #   #   # # IsolationMode: # String
+      #   #   # # ContainerParams:
+      #   #   #   # # MemorySizeInKB: # Integer
+      #   #   #   # # MountROSysfs: # Boolean
+      #   #   #   # # Volumes:
+      #   #   #   #   # - # SourcePath: # String
+      #   #   #   #   # # DestinationPath: # String
+      #   #   #   #   # # Permission: # String
+      #   #   #   #   # # AddGroupOwner: # Boolean
+      #   #   #   # # Devices:
+      #   #   #   #   # - # Path: # String
+      #   #   #   #   # # Permission: # String
+      #   #   #   #   # # AddGroupOwner: # Boolean
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ComponentName (String)
+    # !GetAtt THIS.ComponentVersion (String)

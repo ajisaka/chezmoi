@@ -1,0 +1,72 @@
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+YAZI_SESSION_DIR="${YAZI_SESSION_DIR:-/home/anekos/.local/state/yazi/sessions}"
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+function usage() {
+  cat << EOF
+  Usage: ys [options]
+  Options:
+    -d    Show session directory
+    -h    Show this help message
+EOF
+}
+
+operation=""
+while getopts 'dh' OPTION
+do
+  case "$OPTION" in
+    d)
+      operation=show_sesssion_dir
+      ;;
+    h)
+      usage
+      exit
+    ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+function main() {
+  YAZI_SESSION_FILE=$(
+    find "$YAZI_SESSION_DIR" -type f \
+      | cut -c $(( ${#YAZI_SESSION_DIR} + 2 ))- \
+      | sort \
+      | anything
+  )
+
+  YAZI_SESSION_FILE="${YAZI_SESSION_DIR}/${YAZI_SESSION_FILE}"
+
+  if [ -f "$YAZI_SESSION_FILE" ]
+  then
+    mapfile -t cwds < "$YAZI_SESSION_FILE"
+  else
+    cwds=()
+  fi
+
+  export YAZI_SESSION_FILE
+  exec yazi "${cwds[@]}"
+}
+
+function show_sesssion_dir() {
+  yazi "$YAZI_SESSION_DIR"
+}
+
+case "$operation" in
+  show_sesssion_dir)
+    show_sesssion_dir
+    ;;
+  *)
+    main
+    ;;
+esac

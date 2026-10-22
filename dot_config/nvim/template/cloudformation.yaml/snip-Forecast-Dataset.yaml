@@ -1,0 +1,14 @@
+  ForecastDataset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-forecast-dataset.html
+    Type: AWS::Forecast::Dataset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-forecast-dataset.html
+      DatasetName: # String
+      DatasetType: # String
+      # DataFrequency: # String
+      Domain: # String
+      # EncryptionConfig: # Json
+      Schema: # Json
+      # Tags:
+      #   - # Json
+    # !GetAtt THIS.Arn (String)

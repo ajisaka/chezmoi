@@ -1,0 +1,17 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+[[[- if eq .chezmoi.os "darwin" -]]]
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Enable External Display
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon 🖥️
+
+set -euC
+source "$(dirname "$0")/lib-display"
+
+displayplacer "id:$EXTERNAL_ID enabled:true"
+[[[- end -]]]

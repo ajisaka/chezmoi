@@ -1,0 +1,8 @@
+  RoboMakerRobotApplicationVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplicationversion.html
+    Type: AWS::RoboMaker::RobotApplicationVersion
+    Properties:
+      Application: # String
+      # CurrentRevisionId: # String
+    # !GetAtt THIS.ApplicationVersion (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,120 @@
+  InspectorV2Filter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspectorv2-filter.html
+    Type: AWS::InspectorV2::Filter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspectorv2-filter.html
+      Name: # String
+      # Description: # String
+      # FilterCriteria:
+      #   # AwsAccountId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # ComponentId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # ComponentType:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # Ec2InstanceImageId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # Ec2InstanceSubnetId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # Ec2InstanceVpcId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # EcrImageArchitecture:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # EcrImageHash:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # EcrImageTags:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # EcrImagePushedAt:
+      #   # - # EndInclusive: # Integer
+      #   # # StartInclusive: # Integer
+      #   # EcrImageRegistry:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # EcrImageRepositoryName:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # FindingArn:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # FindingStatus:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # FindingType:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # FirstObservedAt:
+      #   # - # EndInclusive: # Integer
+      #   # # StartInclusive: # Integer
+      #   # InspectorScore:
+      #   # - # LowerInclusive: # Double
+      #   # # UpperInclusive: # Double
+      #   # LastObservedAt:
+      #   # - # EndInclusive: # Integer
+      #   # # StartInclusive: # Integer
+      #   # NetworkProtocol:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # PortRange:
+      #   # - # BeginInclusive: # Integer
+      #   # # EndInclusive: # Integer
+      #   # RelatedVulnerabilities:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # ResourceId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # ResourceTags:
+      #   # - Comparison: # String
+      #   # # Key: # String
+      #   # # Value: # String
+      #   # ResourceType:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # Severity:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # Title:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # UpdatedAt:
+      #   # - # EndInclusive: # Integer
+      #   # # StartInclusive: # Integer
+      #   # VendorSeverity:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # VulnerabilityId:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # VulnerabilitySource:
+      #   # - Comparison: # String
+      #   # Value: # String
+      #   # VulnerablePackages:
+      #   # - # Architecture:
+      #   #     # Comparison: # String
+      #   #     # Value: # String
+      #   # # Epoch:
+      #   #     # # LowerInclusive: # Double
+      #   #     # # UpperInclusive: # Double
+      #   # # Name:
+      #   #     # Comparison: # String
+      #   #     # Value: # String
+      #   # # Release:
+      #   #     # Comparison: # String
+      #   #     # Value: # String
+      #   # # SourceLayerHash:
+      #   #     # Comparison: # String
+      #   #     # Value: # String
+      #   # # Version:
+      #   #     # Comparison: # String
+      #   #     # Value: # String
+      FilterAction: # String
+    # !GetAtt THIS.Arn (String)

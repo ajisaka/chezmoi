@@ -1,0 +1,15 @@
+  LambdaAlias:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html
+    Type: AWS::Lambda::Alias
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html
+      # Description: # String
+      FunctionName: # String
+      FunctionVersion: # String
+      Name: # String
+      # ProvisionedConcurrencyConfig:
+      #   ProvisionedConcurrentExecutions: # Integer
+      # RoutingConfig:
+      #   AdditionalVersionWeights:
+      #     - FunctionVersion: # String
+      #       FunctionWeight: # Double

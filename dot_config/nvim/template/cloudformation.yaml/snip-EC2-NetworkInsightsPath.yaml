@@ -1,0 +1,17 @@
+  EC2NetworkInsightsPath:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightspath.html
+    Type: AWS::EC2::NetworkInsightsPath
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightspath.html
+      # SourceIp: # String
+      # DestinationIp: # String
+      Source: # String
+      Destination: # String
+      Protocol: # String
+      # DestinationPort: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.NetworkInsightsPathId (String)
+    # !GetAtt THIS.NetworkInsightsPathArn (String)
+    # !GetAtt THIS.CreatedDate (String)

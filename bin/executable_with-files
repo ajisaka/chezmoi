@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+if [ "$#" -lt 1 ]
+then
+  echo "$0 <FILE_LIST_PATH> <COMMAND> <ARGS>..." 1>&2
+  exit 1
+fi
+
+filelist="$1"
+shift
+
+mapfile -t files < "$filelist"
+
+exec "$@" "${files[@]}"
+
+

@@ -1,0 +1,10 @@
+  SageMakerNotebookInstanceLifecycleConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html
+    Type: AWS::SageMaker::NotebookInstanceLifecycleConfig
+    Properties:
+      # OnStart:
+      #   - # Content: # String
+      # NotebookInstanceLifecycleConfigName: # String
+      # OnCreate:
+      #   - # Content: # String
+    # !GetAtt THIS.NotebookInstanceLifecycleConfigName (String)

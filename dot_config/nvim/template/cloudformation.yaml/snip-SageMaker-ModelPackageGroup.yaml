@@ -1,0 +1,14 @@
+  SageMakerModelPackageGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelpackagegroup.html
+    Type: AWS::SageMaker::ModelPackageGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelpackagegroup.html
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      ModelPackageGroupName: # String
+      # ModelPackageGroupDescription: # String
+      # ModelPackageGroupPolicy: # Json
+    # !GetAtt THIS.ModelPackageGroupArn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.ModelPackageGroupStatus (String)

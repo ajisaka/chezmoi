@@ -1,0 +1,40 @@
+  LightsailContainer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-container.html
+    Type: AWS::Lightsail::Container
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-container.html
+      ServiceName: # String
+      Power: # String
+      Scale: # Integer
+      # PublicDomainNames:
+      #   - # CertificateName: # String
+      #     # DomainNames:
+      #     # - # String
+      # ContainerServiceDeployment:
+      #   # Containers:
+      #   # - # ContainerName: # String
+      #   # # Command:
+      #   #     # - # String
+      #   # # Environment:
+      #   #     # - # Variable: # String
+      #   #     # # Value: # String
+      #   # # Image: # String
+      #   # # Ports:
+      #   #     # - # Port: # String
+      #   #     # # Protocol: # String
+      #   # PublicEndpoint:
+      #   # # ContainerName: # String
+      #   # # ContainerPort: # Integer
+      #   # # HealthCheckConfig:
+      #   #   # # HealthyThreshold: # Integer
+      #   #   # # IntervalSeconds: # Integer
+      #   #   # # Path: # String
+      #   #   # # SuccessCodes: # String
+      #   #   # # TimeoutSeconds: # Integer
+      #   #   # # UnhealthyThreshold: # Integer
+      # IsDisabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ContainerArn (String)
+    # !GetAtt THIS.Url (String)

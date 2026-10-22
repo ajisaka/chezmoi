@@ -1,0 +1,14 @@
+  TransferConnector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-connector.html
+    Type: AWS::Transfer::Connector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-connector.html
+      AccessRole: # String
+      As2Config: # Json
+      # LoggingRole: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Url: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ConnectorId (String)

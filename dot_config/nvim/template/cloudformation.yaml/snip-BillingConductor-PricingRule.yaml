@@ -1,0 +1,19 @@
+  BillingConductorPricingRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-pricingrule.html
+    Type: AWS::BillingConductor::PricingRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-pricingrule.html
+      Name: # String
+      # Description: # String
+      Scope: # String
+      Type: # String
+      ModifierPercentage: # Double
+      # Service: # String
+      # BillingEntity: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.AssociatedPricingPlanCount (Integer)
+    # !GetAtt THIS.CreationTime (Integer)
+    # !GetAtt THIS.LastModifiedTime (Integer)

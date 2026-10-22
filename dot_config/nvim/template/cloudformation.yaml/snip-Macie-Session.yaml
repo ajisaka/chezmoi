@@ -1,0 +1,8 @@
+  MacieSession:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-session.html
+    Type: AWS::Macie::Session
+    Properties:
+      # Status: # String
+      # FindingPublishingFrequency: # String
+    # !GetAtt THIS.AwsAccountId (String)
+    # !GetAtt THIS.ServiceRole (String)

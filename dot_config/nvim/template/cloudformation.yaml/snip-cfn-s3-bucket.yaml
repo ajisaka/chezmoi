@@ -1,0 +1,24 @@
+
+    Type: AWS::S3::Bucket
+    # https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+    Properties:
+      # AccelerateConfiguration:
+      # AccessControl: String
+      # AnalyticsConfigurations:
+      # BucketEncryption:
+      # BucketName: String
+      # CorsConfiguration:
+      # InventoryConfigurations:
+      # LifecycleConfiguration:
+      # LoggingConfiguration:
+      # MetricsConfigurations:
+      # NotificationConfiguration:
+      # ObjectLockConfiguration:
+      # ObjectLockEnabled: Boolean
+      # PublicAccessBlockConfiguration:
+      # ReplicationConfiguration:
+      # Tags:
+      # VersioningConfiguration:
+      # WebsiteConfiguration:
+
+

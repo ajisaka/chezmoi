@@ -1,0 +1,18 @@
+  NetworkManagerLink:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-link.html
+    Type: AWS::NetworkManager::Link
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-link.html
+      GlobalNetworkId: # String
+      SiteId: # String
+      # Bandwidth:
+      #   # DownloadSpeed: # Integer
+      #   # UploadSpeed: # Integer
+      # Provider: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Type: # String
+    # !GetAtt THIS.LinkArn (String)
+    # !GetAtt THIS.LinkId (String)

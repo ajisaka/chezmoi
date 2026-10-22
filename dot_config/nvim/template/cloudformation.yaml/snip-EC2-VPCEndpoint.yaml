@@ -1,0 +1,19 @@
+  EC2VPCEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
+    Type: AWS::EC2::VPCEndpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
+      # PolicyDocument: # Json
+      # PrivateDnsEnabled: # Boolean
+      # RouteTableIds:
+      #   - # String
+      # SecurityGroupIds:
+      #   - # String
+      ServiceName: # String
+      # SubnetIds:
+      #   - # String
+      # VpcEndpointType: # String
+      VpcId: # String
+    # !GetAtt THIS.CreationTimestamp (String)
+    # !GetAtt THIS.DnsEntries (List)
+    # !GetAtt THIS.NetworkInterfaceIds (List)

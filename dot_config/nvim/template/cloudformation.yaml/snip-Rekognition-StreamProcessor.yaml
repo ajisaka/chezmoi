@@ -1,0 +1,41 @@
+  RekognitionStreamProcessor:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rekognition-streamprocessor.html
+    Type: AWS::Rekognition::StreamProcessor
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rekognition-streamprocessor.html
+      # Name: # String
+      # KmsKeyId: # String
+      RoleArn: # String
+      # KinesisVideoStream:
+      #   Arn: # String
+      # FaceSearchSettings:
+      #   CollectionId: # String
+      #   # FaceMatchThreshold: # Double
+      # ConnectedHomeSettings:
+      #   Labels:
+      #     - # String
+      #   # MinConfidence: # Double
+      # KinesisDataStream:
+      #   Arn: # String
+      # S3Destination:
+      #   BucketName: # String
+      #   # ObjectKeyPrefix: # String
+      # NotificationChannel:
+      #   Arn: # String
+      # DataSharingPreference:
+      #   OptIn: # Boolean
+      # PolygonRegionsOfInterest:
+      #   - Polygon:
+      #       - X: # Integer
+      #         Y: # Integer
+      # BoundingBoxRegionsOfInterest:
+      #   - Height: # Double
+      #     Width: # Double
+      #     Left: # Double
+      #     Top: # Double
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusMessage (String)

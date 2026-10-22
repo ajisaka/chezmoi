@@ -1,0 +1,10 @@
+  EC2TrafficMirrorFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilter.html
+    Type: AWS::EC2::TrafficMirrorFilter
+    Properties:
+      # Description: # String
+      # NetworkServices:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

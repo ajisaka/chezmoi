@@ -1,0 +1,11 @@
+  GameLiftAlias:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html
+    Type: AWS::GameLift::Alias
+    Properties:
+      # Description: # String
+      Name: # String
+      # RoutingStrategy:
+      #   # Message: # String
+      #   # FleetId: # String
+      #   Type: # String
+    # !GetAtt THIS.AliasId (String)

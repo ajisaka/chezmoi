@@ -1,0 +1,12 @@
+  LambdaCodeSigningConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-codesigningconfig.html
+    Type: AWS::Lambda::CodeSigningConfig
+    Properties:
+      # Description: # String
+      # AllowedPublishers:
+      #   SigningProfileVersionArns:
+      #     - # String
+      # CodeSigningPolicies:
+      #   UntrustedArtifactOnDeployment: # String
+    # !GetAtt THIS.CodeSigningConfigId (String)
+    # !GetAtt THIS.CodeSigningConfigArn (String)

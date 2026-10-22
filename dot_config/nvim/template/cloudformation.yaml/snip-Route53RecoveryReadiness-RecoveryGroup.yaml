@@ -1,0 +1,11 @@
+  Route53RecoveryReadinessRecoveryGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoveryreadiness-recoverygroup.html
+    Type: AWS::Route53RecoveryReadiness::RecoveryGroup
+    Properties:
+      # RecoveryGroupName: # String
+      # Cells:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.RecoveryGroupArn (String)

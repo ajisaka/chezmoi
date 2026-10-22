@@ -1,0 +1,22 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+[[[- if eq .chezmoi.os "darwin" -]]]
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Extended Display
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon 🤖
+
+set -euC
+source "$(dirname "$0")/lib-display"
+
+builtin_w=${BUILTIN_RES%x*}
+origin_x=$(( (builtin_w - 1920) / 2 ))
+
+displayplacer \
+  "id:$BUILTIN_ID res:$BUILTIN_RES hz:$BUILTIN_HZ color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" \
+  "id:$EXTERNAL_ID res:1920x1080 hz:60 color_depth:8 enabled:true scaling:on origin:($origin_x,-1080) degree:0"
+[[[- end -]]]

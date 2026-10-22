@@ -1,0 +1,21 @@
+  ApiGatewayV2Authorizer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html
+    Type: AWS::ApiGatewayV2::Authorizer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-authorizer.html
+      # IdentityValidationExpression: # String
+      # AuthorizerUri: # String
+      # AuthorizerCredentialsArn: # String
+      AuthorizerType: # String
+      # JwtConfiguration:
+      #   # Issuer: # String
+      #   # Audience:
+      #   # - # String
+      # AuthorizerResultTtlInSeconds: # Integer
+      # IdentitySource:
+      #   - # String
+      # AuthorizerPayloadFormatVersion: # String
+      ApiId: # String
+      # EnableSimpleResponses: # Boolean
+      Name: # String
+    # !GetAtt THIS.AuthorizerId (String)

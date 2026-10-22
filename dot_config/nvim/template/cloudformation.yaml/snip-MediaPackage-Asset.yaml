@@ -1,0 +1,16 @@
+  MediaPackageAsset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-asset.html
+    Type: AWS::MediaPackage::Asset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-asset.html
+      Id: # String
+      PackagingGroupId: # String
+      # ResourceId: # String
+      SourceArn: # String
+      SourceRoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.EgressEndpoints (List)

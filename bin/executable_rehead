@@ -1,0 +1,48 @@
+#!/bin/ruby
+
+# Regular Expression Head
+
+# set -euC
+# set -x
+
+require 'time'
+
+inputs = STDIN.readlines
+
+pattern = if ARGV.empty?
+            now = Time.now
+            counts = {:ymd => 0, :ym => 0, :y => 0}
+            inputs[0...10].each do
+              |line|
+              type = case line
+                     when /\d{4}[-\/]\d{1,2}[-\/]\d{1,2}/
+                       :ymd
+                     when /\d{4}[-\/]\d{1,2}/
+                       :ym
+                     when /\d{4}/
+                       :y
+                     else
+                       next
+                     end
+              counts[type] += 1
+            end
+
+            case counts.max_by(&:last).first
+            when :ymd
+              %r<#{now.year}[/-]0?#{now.month}[/-]0?#{now.day}>
+            when :ym
+              %r<#{now.year}[/-]0?#{now.month}>
+            when :y
+              %r<#{now.year}>
+            else
+              raise 'Could not generate pattern'
+            end
+          else
+            pattern = Regexp.new(ARGV.pop)
+          end
+
+inputs.each do
+  |line|
+  puts line
+  break if pattern === line
+end

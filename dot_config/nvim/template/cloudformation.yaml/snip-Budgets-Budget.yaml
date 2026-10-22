@@ -1,0 +1,41 @@
+  BudgetsBudget:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html
+    Type: AWS::Budgets::Budget
+    Properties:
+      # NotificationsWithSubscribers:
+      #   - Subscribers:
+      #       - SubscriptionType: # String
+      #         Address: # String
+      #     # Notification:
+      #     # ComparisonOperator: # String
+      #     # NotificationType: # String
+      #     # Threshold: # Double
+      #     # # ThresholdType: # String
+      # Budget:
+      #   # BudgetLimit:
+      #   # Amount: # Double
+      #   # Unit: # String
+      #   # TimePeriod:
+      #   # # Start: # String
+      #   # # End: # String
+      #   # AutoAdjustData:
+      #   # AutoAdjustType: # String
+      #   # # HistoricalOptions:
+      #   #   # BudgetAdjustmentPeriod: # Integer
+      #   TimeUnit: # String
+      #   # PlannedBudgetLimits: # Json
+      #   # CostFilters: # Json
+      #   # BudgetName: # String
+      #   # CostTypes:
+      #   # # IncludeSupport: # Boolean
+      #   # # IncludeOtherSubscription: # Boolean
+      #   # # IncludeTax: # Boolean
+      #   # # IncludeSubscription: # Boolean
+      #   # # UseBlended: # Boolean
+      #   # # IncludeUpfront: # Boolean
+      #   # # IncludeDiscount: # Boolean
+      #   # # IncludeCredit: # Boolean
+      #   # # IncludeRecurring: # Boolean
+      #   # # UseAmortized: # Boolean
+      #   # # IncludeRefund: # Boolean
+      #   BudgetType: # String

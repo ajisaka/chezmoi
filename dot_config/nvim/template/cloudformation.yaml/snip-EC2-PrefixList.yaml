@@ -1,0 +1,18 @@
+  EC2PrefixList:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-prefixlist.html
+    Type: AWS::EC2::PrefixList
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-prefixlist.html
+      PrefixListName: # String
+      AddressFamily: # String
+      MaxEntries: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Entries:
+      #   - Cidr: # String
+      #     # Description: # String
+    # !GetAtt THIS.PrefixListId (String)
+    # !GetAtt THIS.OwnerId (String)
+    # !GetAtt THIS.Version (Integer)
+    # !GetAtt THIS.Arn (String)

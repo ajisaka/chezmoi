@@ -1,0 +1,11 @@
+  ServiceCatalogLaunchNotificationConstraint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
+    Type: AWS::ServiceCatalog::LaunchNotificationConstraint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
+      # Description: # String
+      NotificationArns:
+        - # String
+      # AcceptLanguage: # String
+      PortfolioId: # String
+      ProductId: # String

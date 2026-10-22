@@ -1,0 +1,18 @@
+  SSMContactsContact:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmcontacts-contact.html
+    Type: AWS::SSMContacts::Contact
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmcontacts-contact.html
+      Alias: # String
+      DisplayName: # String
+      Type: # String
+      Plan:
+        - DurationInMinutes: # Integer
+          # Targets:
+          #   - # ContactTargetInfo:
+          #     # ContactId: # String
+          #     # IsEssential: # Boolean
+          #     # ChannelTargetInfo:
+          #     # ChannelId: # String
+          #     # RetryIntervalInMinutes: # Integer
+    # !GetAtt THIS.Arn (String)

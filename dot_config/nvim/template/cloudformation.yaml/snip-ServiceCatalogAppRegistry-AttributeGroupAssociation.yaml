@@ -1,0 +1,9 @@
+  ServiceCatalogAppRegistryAttributeGroupAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroupassociation.html
+    Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
+    Properties:
+      Application: # String
+      AttributeGroup: # String
+    # !GetAtt THIS.ApplicationArn (String)
+    # !GetAtt THIS.AttributeGroupArn (String)
+    # !GetAtt THIS.Id (String)

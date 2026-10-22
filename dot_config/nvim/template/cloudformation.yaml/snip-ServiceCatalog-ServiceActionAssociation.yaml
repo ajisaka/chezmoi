@@ -1,0 +1,7 @@
+  ServiceCatalogServiceActionAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-serviceactionassociation.html
+    Type: AWS::ServiceCatalog::ServiceActionAssociation
+    Properties:
+      ProductId: # String
+      ProvisioningArtifactId: # String
+      ServiceActionId: # String

@@ -1,0 +1,5 @@
+  SESReceiptRuleSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html
+    Type: AWS::SES::ReceiptRuleSet
+    Properties:
+      # RuleSetName: # String

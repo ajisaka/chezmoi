@@ -1,0 +1,11 @@
+  MSKConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-configuration.html
+    Type: AWS::MSK::Configuration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-configuration.html
+      Name: # String
+      # Description: # String
+      ServerProperties: # String
+      # KafkaVersionsList:
+      #   - # String
+    # !GetAtt THIS.Arn (String)

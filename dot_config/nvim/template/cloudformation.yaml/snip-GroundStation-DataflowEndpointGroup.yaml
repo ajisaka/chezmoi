@@ -1,0 +1,22 @@
+  GroundStationDataflowEndpointGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-groundstation-dataflowendpointgroup.html
+    Type: AWS::GroundStation::DataflowEndpointGroup
+    Properties:
+      EndpointDetails:
+        - # SecurityDetails:
+          #   # SubnetIds:
+          #   # - # String
+          #   # SecurityGroupIds:
+          #   # - # String
+          #   # RoleArn: # String
+          # Endpoint:
+          #   # Name: # String
+          #   # Address:
+          #   # # Name: # String
+          #   # # Port: # Integer
+          #   # Mtu: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

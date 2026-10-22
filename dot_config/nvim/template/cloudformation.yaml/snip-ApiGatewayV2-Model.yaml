@@ -1,0 +1,11 @@
+  ApiGatewayV2Model:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-model.html
+    Type: AWS::ApiGatewayV2::Model
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-model.html
+      # Description: # String
+      # ContentType: # String
+      Schema: # Json
+      ApiId: # String
+      Name: # String
+    # !GetAtt THIS.ModelId (String)

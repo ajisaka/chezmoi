@@ -1,0 +1,179 @@
+  EC2LaunchTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
+      # LaunchTemplateName: # String
+      # LaunchTemplateData:
+      #   # SecurityGroups:
+      #   # - # String
+      #   # TagSpecifications:
+      #   # - # ResourceType: # String
+      #   # # Tags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # UserData: # String
+      #   # BlockDeviceMappings:
+      #   # - # Ebs:
+      #   #     # # SnapshotId: # String
+      #   #     # # VolumeType: # String
+      #   #     # # KmsKeyId: # String
+      #   #     # # Encrypted: # Boolean
+      #   #     # # Throughput: # Integer
+      #   #     # # Iops: # Integer
+      #   #     # # VolumeSize: # Integer
+      #   #     # # DeleteOnTermination: # Boolean
+      #   # # NoDevice: # String
+      #   # # VirtualName: # String
+      #   # # DeviceName: # String
+      #   # MaintenanceOptions:
+      #   # # AutoRecovery: # String
+      #   # IamInstanceProfile:
+      #   # # Arn: # String
+      #   # # Name: # String
+      #   # KernelId: # String
+      #   # EbsOptimized: # Boolean
+      #   # ElasticGpuSpecifications:
+      #   # - # Type: # String
+      #   # ElasticInferenceAccelerators:
+      #   # - # Type: # String
+      #   # # Count: # Integer
+      #   # Placement:
+      #   # # GroupName: # String
+      #   # # Tenancy: # String
+      #   # # SpreadDomain: # String
+      #   # # PartitionNumber: # Integer
+      #   # # AvailabilityZone: # String
+      #   # # Affinity: # String
+      #   # # HostId: # String
+      #   # # HostResourceGroupArn: # String
+      #   # # GroupId: # String
+      #   # NetworkInterfaces:
+      #   # - # Description: # String
+      #   # # PrivateIpAddress: # String
+      #   # # PrivateIpAddresses:
+      #   #     # - # PrivateIpAddress: # String
+      #   #     # # Primary: # Boolean
+      #   # # SecondaryPrivateIpAddressCount: # Integer
+      #   # # Ipv6PrefixCount: # Integer
+      #   # # Ipv4Prefixes:
+      #   #     # - # Ipv4Prefix: # String
+      #   # # DeviceIndex: # Integer
+      #   # # Ipv4PrefixCount: # Integer
+      #   # # Ipv6Prefixes:
+      #   #     # - # Ipv6Prefix: # String
+      #   # # SubnetId: # String
+      #   # # Ipv6Addresses:
+      #   #     # - # Ipv6Address: # String
+      #   # # AssociatePublicIpAddress: # Boolean
+      #   # # NetworkInterfaceId: # String
+      #   # # NetworkCardIndex: # Integer
+      #   # # InterfaceType: # String
+      #   # # AssociateCarrierIpAddress: # Boolean
+      #   # # Ipv6AddressCount: # Integer
+      #   # # Groups:
+      #   #     # - # String
+      #   # # DeleteOnTermination: # Boolean
+      #   # EnclaveOptions:
+      #   # # Enabled: # Boolean
+      #   # ImageId: # String
+      #   # InstanceType: # String
+      #   # Monitoring:
+      #   # # Enabled: # Boolean
+      #   # HibernationOptions:
+      #   # # Configured: # Boolean
+      #   # MetadataOptions:
+      #   # # HttpPutResponseHopLimit: # Integer
+      #   # # HttpTokens: # String
+      #   # # HttpProtocolIpv6: # String
+      #   # # InstanceMetadataTags: # String
+      #   # # HttpEndpoint: # String
+      #   # LicenseSpecifications:
+      #   # - # LicenseConfigurationArn: # String
+      #   # InstanceInitiatedShutdownBehavior: # String
+      #   # DisableApiStop: # Boolean
+      #   # CpuOptions:
+      #   # # ThreadsPerCore: # Integer
+      #   # # CoreCount: # Integer
+      #   # PrivateDnsNameOptions:
+      #   # # EnableResourceNameDnsARecord: # Boolean
+      #   # # HostnameType: # String
+      #   # # EnableResourceNameDnsAAAARecord: # Boolean
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # KeyName: # String
+      #   # DisableApiTermination: # Boolean
+      #   # InstanceMarketOptions:
+      #   # # SpotOptions:
+      #   #   # # SpotInstanceType: # String
+      #   #   # # InstanceInterruptionBehavior: # String
+      #   #   # # MaxPrice: # String
+      #   #   # # BlockDurationMinutes: # Integer
+      #   #   # # ValidUntil: # String
+      #   # # MarketType: # String
+      #   # InstanceRequirements:
+      #   # # LocalStorageTypes:
+      #   #   # - # String
+      #   # # InstanceGenerations:
+      #   #   # - # String
+      #   # # NetworkInterfaceCount:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # MemoryGiBPerVCpu:
+      #   #   # # Min: # Double
+      #   #   # # Max: # Double
+      #   # # AcceleratorTypes:
+      #   #   # - # String
+      #   # # VCpuCount:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # ExcludedInstanceTypes:
+      #   #   # - # String
+      #   # # AcceleratorManufacturers:
+      #   #   # - # String
+      #   # # AllowedInstanceTypes:
+      #   #   # - # String
+      #   # # LocalStorage: # String
+      #   # # CpuManufacturers:
+      #   #   # - # String
+      #   # # AcceleratorCount:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # NetworkBandwidthGbps:
+      #   #   # # Min: # Double
+      #   #   # # Max: # Double
+      #   # # BareMetal: # String
+      #   # # RequireHibernateSupport: # Boolean
+      #   # # SpotMaxPricePercentageOverLowestPrice: # Integer
+      #   # # BaselineEbsBandwidthMbps:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # OnDemandMaxPricePercentageOverLowestPrice: # Integer
+      #   # # AcceleratorNames:
+      #   #   # - # String
+      #   # # AcceleratorTotalMemoryMiB:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # BurstablePerformance: # String
+      #   # # MemoryMiB:
+      #   #   # # Min: # Integer
+      #   #   # # Max: # Integer
+      #   # # TotalLocalStorageGB:
+      #   #   # # Min: # Double
+      #   #   # # Max: # Double
+      #   # RamDiskId: # String
+      #   # CapacityReservationSpecification:
+      #   # # CapacityReservationPreference: # String
+      #   # # CapacityReservationTarget:
+      #   #   # # CapacityReservationResourceGroupArn: # String
+      #   #   # # CapacityReservationId: # String
+      #   # CreditSpecification:
+      #   # # CpuCredits: # String
+      # VersionDescription: # String
+      # TagSpecifications:
+      #   - # ResourceType: # String
+      #     # Tags:
+      #     # - Key: # String
+      #     # Value: # String
+    # !GetAtt THIS.LatestVersionNumber (String)
+    # !GetAtt THIS.DefaultVersionNumber (String)

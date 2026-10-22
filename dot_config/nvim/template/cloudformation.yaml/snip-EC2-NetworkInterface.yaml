@@ -1,0 +1,25 @@
+  EC2NetworkInterface:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterface.html
+    Type: AWS::EC2::NetworkInterface
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterface.html
+      # Description: # String
+      # PrivateIpAddress: # String
+      # PrivateIpAddresses:
+      #   - PrivateIpAddress: # String
+      #     Primary: # Boolean
+      # SecondaryPrivateIpAddressCount: # Integer
+      # GroupSet:
+      #   - # String
+      # Ipv6Addresses:
+      #   - Ipv6Address: # String
+      SubnetId: # String
+      # SourceDestCheck: # Boolean
+      # InterfaceType: # String
+      # Ipv6AddressCount: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PrimaryPrivateIpAddress (String)
+    # !GetAtt THIS.SecondaryPrivateIpAddresses (List)
+    # !GetAtt THIS.Id (String)

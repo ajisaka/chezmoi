@@ -1,0 +1,56 @@
+  PinpointInAppTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-inapptemplate.html
+    Type: AWS::Pinpoint::InAppTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-inapptemplate.html
+      # Content:
+      #   - # BackgroundColor: # String
+      #     # BodyConfig:
+      #     # # Alignment: # String
+      #     # # Body: # String
+      #     # # TextColor: # String
+      #     # HeaderConfig:
+      #     # # Alignment: # String
+      #     # # Header: # String
+      #     # # TextColor: # String
+      #     # ImageUrl: # String
+      #     # PrimaryBtn:
+      #     # # Android:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     # # DefaultConfig:
+      #     #   # # BackgroundColor: # String
+      #     #   # # BorderRadius: # Integer
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     #   # # Text: # String
+      #     #   # # TextColor: # String
+      #     # # IOS:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     # # Web:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     # SecondaryBtn:
+      #     # # Android:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     # # DefaultConfig:
+      #     #   # # BackgroundColor: # String
+      #     #   # # BorderRadius: # Integer
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     #   # # Text: # String
+      #     #   # # TextColor: # String
+      #     # # IOS:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      #     # # Web:
+      #     #   # # ButtonAction: # String
+      #     #   # # Link: # String
+      # CustomConfig: # Json
+      # Layout: # String
+      # Tags: # Json
+      # TemplateDescription: # String
+      TemplateName: # String
+    # !GetAtt THIS.Arn (String)

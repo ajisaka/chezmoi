@@ -1,0 +1,18 @@
+  AppMeshMesh:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html
+    Type: AWS::AppMesh::Mesh
+    Properties:
+      # MeshName: # String
+      # Spec:
+      #   # EgressFilter:
+      #   # Type: # String
+      #   # ServiceDiscovery:
+      #   # # IpPreference: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.Arn (String)

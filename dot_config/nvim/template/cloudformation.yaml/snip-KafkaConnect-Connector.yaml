@@ -1,0 +1,55 @@
+  KafkaConnectConnector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kafkaconnect-connector.html
+    Type: AWS::KafkaConnect::Connector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kafkaconnect-connector.html
+      # Capacity:
+      #   # AutoScaling:
+      #   # MaxWorkerCount: # Integer
+      #   # MinWorkerCount: # Integer
+      #   # # ScaleInPolicy:
+      #   #   # CpuUtilizationPercentage: # Integer
+      #   # # ScaleOutPolicy:
+      #   #   # CpuUtilizationPercentage: # Integer
+      #   # McuCount: # Integer
+      #   # ProvisionedCapacity:
+      #   # # McuCount: # Integer
+      #   # WorkerCount: # Integer
+      ConnectorConfiguration:
+        ANY_KEY: # String
+      # ConnectorDescription: # String
+      ConnectorName: # String
+      # KafkaCluster:
+      #   # ApacheKafkaCluster:
+      #   # BootstrapServers: # String
+      #   # # Vpc:
+      #   #   # SecurityGroups:
+      #   #   # - # String
+      #   #   # Subnets:
+      #   #   # - # String
+      # KafkaClusterClientAuthentication:
+      #   AuthenticationType: # String
+      # KafkaClusterEncryptionInTransit:
+      #   EncryptionType: # String
+      KafkaConnectVersion: # String
+      # LogDelivery:
+      #   # WorkerLogDelivery:
+      #   # # CloudWatchLogs:
+      #   #   # Enabled: # Boolean
+      #   #   # # LogGroup: # String
+      #   # # Firehose:
+      #   #   # # DeliveryStream: # String
+      #   #   # Enabled: # Boolean
+      #   # # S3:
+      #   #   # # Bucket: # String
+      #   #   # Enabled: # Boolean
+      #   #   # # Prefix: # String
+      Plugins:
+        - # CustomPlugin:
+          #   CustomPluginArn: # String
+          #   Revision: # Integer
+      ServiceExecutionRoleArn: # String
+      # WorkerConfiguration:
+      #   Revision: # Integer
+      #   WorkerConfigurationArn: # String
+    # !GetAtt THIS.ConnectorArn (String)

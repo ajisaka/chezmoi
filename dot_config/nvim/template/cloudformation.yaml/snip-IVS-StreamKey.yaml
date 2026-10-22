@@ -1,0 +1,10 @@
+  IVSStreamKey:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ivs-streamkey.html
+    Type: AWS::IVS::StreamKey
+    Properties:
+      ChannelArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Value (String)

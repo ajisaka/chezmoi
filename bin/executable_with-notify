@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# 引数のコマンドの前後で、通知を表示する (axe などと一緒に使う)
+
+set -uC
+# set -x
+
+notify-send -u low "Start" "$*"
+
+"$@"
+
+rc="$?"
+
+if [ "$rc" = 0 ]
+then
+  notify-send -u low "Succeed" "$*"
+else
+  notify-send -u normal "Failed $rc" "$*"
+fi

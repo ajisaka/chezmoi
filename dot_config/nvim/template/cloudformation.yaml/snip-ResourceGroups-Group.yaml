@@ -1,0 +1,29 @@
+  ResourceGroupsGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourcegroups-group.html
+    Type: AWS::ResourceGroups::Group
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourcegroups-group.html
+      Name: # String
+      # Description: # String
+      # ResourceQuery:
+      #   # Type: # String
+      #   # Query:
+      #   # # ResourceTypeFilters:
+      #   #   # - # String
+      #   # # StackIdentifier: # String
+      #   # # TagFilters:
+      #   #   # - # Key: # String
+      #   #   # # Values:
+      #   #   #     # - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Configuration:
+      #   - # Type: # String
+      #     # Parameters:
+      #     # - # Name: # String
+      #     # # Values:
+      #     #     # - # String
+      # Resources:
+      #   - # String
+    # !GetAtt THIS.Arn (String)

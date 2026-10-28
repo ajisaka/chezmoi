@@ -1,0 +1,27 @@
+  TransferUser:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html
+    Type: AWS::Transfer::User
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-user.html
+      # Policy: # String
+      Role: # String
+      # HomeDirectory: # String
+      # HomeDirectoryType: # String
+      ServerId: # String
+      UserName: # String
+      # HomeDirectoryMappings:
+      #   - Entry: # String
+      #     Target: # String
+      # PosixProfile:
+      #   Uid: # Double
+      #   # SecondaryGids:
+      #   # - # Double
+      #   Gid: # Double
+      # SshPublicKeys:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ServerId (String)
+    # !GetAtt THIS.UserName (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,17 @@
+  CloudFormationResourceVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-resourceversion.html
+    Type: AWS::CloudFormation::ResourceVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-resourceversion.html
+      # ExecutionRoleArn: # String
+      # LoggingConfig:
+      #   # LogGroupName: # String
+      #   # LogRoleArn: # String
+      SchemaHandlerPackage: # String
+      TypeName: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.TypeArn (String)
+    # !GetAtt THIS.IsDefaultVersion (Boolean)
+    # !GetAtt THIS.ProvisioningType (String)
+    # !GetAtt THIS.VersionId (String)
+    # !GetAtt THIS.Visibility (String)

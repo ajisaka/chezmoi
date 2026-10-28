@@ -1,0 +1,18 @@
+  CertificateManagerCertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
+      # CertificateAuthorityArn: # String
+      # CertificateTransparencyLoggingPreference: # String
+      DomainName: # String
+      # DomainValidationOptions:
+      #   - DomainName: # String
+      #     # HostedZoneId: # String
+      #     # ValidationDomain: # String
+      # SubjectAlternativeNames:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ValidationMethod: # String

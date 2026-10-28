@@ -1,0 +1,48 @@
+  IoTSecurityProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-securityprofile.html
+    Type: AWS::IoT::SecurityProfile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-securityprofile.html
+      # SecurityProfileName: # String
+      # SecurityProfileDescription: # String
+      # Behaviors:
+      #   - Name: # String
+      #     # Metric: # String
+      #     # MetricDimension:
+      #     # DimensionName: # String
+      #     # # Operator: # String
+      #     # Criteria:
+      #     # # ComparisonOperator: # String
+      #     # # Value:
+      #     #   # # Count: # String
+      #     #   # # Cidrs:
+      #     #   #   # - # String
+      #     #   # # Ports:
+      #     #   #   # - # Integer
+      #     #   # # Number: # Double
+      #     #   # # Numbers:
+      #     #   #   # - # Double
+      #     #   # # Strings:
+      #     #   #   # - # String
+      #     # # DurationSeconds: # Integer
+      #     # # ConsecutiveDatapointsToAlarm: # Integer
+      #     # # ConsecutiveDatapointsToClear: # Integer
+      #     # # StatisticalThreshold:
+      #     #   # # Statistic: # String
+      #     # # MlDetectionConfig:
+      #     #   # # ConfidenceLevel: # String
+      #     # SuppressAlerts: # Boolean
+      # AlertTargets:
+      #   ANY_KEY: AlertTargetArn: # String
+      #     RoleArn: # String
+      # AdditionalMetricsToRetainV2:
+      #   - Metric: # String
+      #     # MetricDimension:
+      #     # DimensionName: # String
+      #     # # Operator: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TargetArns:
+      #   - # String
+    # !GetAtt THIS.SecurityProfileArn (String)

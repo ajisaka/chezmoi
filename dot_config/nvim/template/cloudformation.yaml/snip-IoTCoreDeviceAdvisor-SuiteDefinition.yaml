@@ -1,0 +1,11 @@
+  IoTCoreDeviceAdvisorSuiteDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotcoredeviceadvisor-suitedefinition.html
+    Type: AWS::IoTCoreDeviceAdvisor::SuiteDefinition
+    Properties:
+      SuiteDefinitionConfiguration: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.SuiteDefinitionId (String)
+    # !GetAtt THIS.SuiteDefinitionArn (String)
+    # !GetAtt THIS.SuiteDefinitionVersion (String)

@@ -1,0 +1,14 @@
+  SageMakerPipeline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-pipeline.html
+    Type: AWS::SageMaker::Pipeline
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-pipeline.html
+      PipelineName: # String
+      # PipelineDisplayName: # String
+      # PipelineDescription: # String
+      PipelineDefinition: # Json
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ParallelismConfiguration: # Json

@@ -1,0 +1,15 @@
+  MediaPackageChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-channel.html
+    Type: AWS::MediaPackage::Channel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-channel.html
+      Id: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EgressAccessLogs:
+      #   # LogGroupName: # String
+      # IngressAccessLogs:
+      #   # LogGroupName: # String
+    # !GetAtt THIS.Arn (String)

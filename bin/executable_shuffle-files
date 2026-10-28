@@ -1,0 +1,105 @@
+#!/usr/bin/ruby
+# vim: set fileencoding=utf-8 :
+
+require 'optparse'
+require 'pathname'
+require 'find'
+
+class Options
+  attr_reader :group_pattern, :filter_pattern, :extensions
+
+  def initialize (argv)
+    @group_pattern = nil
+
+    OptionParser.new do
+      |opt|
+      opt.on_head('引数のディレクトリのファイルリストを作り、シャッフルしてから出力する')
+
+      opt.on('-g <GROUP_PATTERN>',  'Grouping by regexp') {|v| @group_pattern = Regexp.new(v) }
+      opt.on('-f <FILTER_PATTERN>', 'Filtering by regexp') {|v| @filter_pattern = Regexp.new(v) }
+      opt.on('-e <EXTENSIONS>',     'Filtering by file extension') {|v| @extensions = v.split(',') }
+
+      opt.on_tail(<<EOT)
+
+「-g <GROUP_PATTERN>」でグループ名のパターンを指定すると同名グループは、固まって出力される。
+また、グループ毎にソートされる。
+EOT
+      opt.parse!(argv)
+    end
+  end
+end
+
+class App
+  attr_reader :result
+
+  def initialize (options)
+    @options = options
+    reset
+  end
+
+  def reset
+    @targets = []
+    @groups = Hash.new {|h, k| h[k] = [] }
+  end
+
+  def add (entry)
+    basename = entry.basename
+
+    return if @options.filter_pattern and not @options.filter_pattern === basename.to_s
+    return if @options.extensions and not @options.extensions.include?(basename.extname.sub(/^\./, ''))
+
+    if @options.group_pattern and m = basename.to_s.match(@options.group_pattern)
+      group_name = m.size > 1 ? m[1] : m[0]
+      @groups[group_name] << entry
+    else
+      @targets << entry
+    end
+  end
+
+  def load (entry)
+    if entry.file?
+      add(entry)
+    else
+      entry.find do
+        |it|
+        next if /\A\.+\Z/ === it.basename.to_s
+        next unless it.file?
+        add(it)
+      end
+    end
+  end
+
+  def finish
+    merged = @targets.dup
+
+    @groups.each do
+      |_, entries|
+      merged << entries
+    end
+
+    merged.shuffle!
+
+    @result = []
+
+    merged.each do
+      |entry|
+      if Array === entry
+        @result.push(*entry.sort_by {|it| it.basename.to_s })
+      else
+        @result << entry
+      end
+    end
+  end
+end
+
+
+if __FILE__ == $0
+  options = Options.new(ARGV)
+  app = App.new(options)
+  ARGV.map {|it| Pathname(it) } .each {|it| app.load(it) }
+  app.finish
+  app.result.each do
+    |entry|
+    puts(entry.expand_path.to_s)
+  end rescue nil
+end

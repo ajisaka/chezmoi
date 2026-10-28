@@ -1,0 +1,16 @@
+  IoTWirelessNetworkAnalyzerConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-networkanalyzerconfiguration.html
+    Type: AWS::IoTWireless::NetworkAnalyzerConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-networkanalyzerconfiguration.html
+      Name: # String
+      # Description: # String
+      # TraceContent: # Json
+      # WirelessDevices:
+      #   - # String
+      # WirelessGateways:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

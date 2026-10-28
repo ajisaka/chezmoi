@@ -1,0 +1,24 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+[[[- if eq .chezmoi.os "darwin" -]]]
+#!/bin/bash
+# Shared display detection library — source this, don't run directly.
+# Sets: BUILTIN_ID, BUILTIN_RES, BUILTIN_HZ, EXTERNAL_ID
+
+eval "$(displayplacer list | awk '
+  /^Persistent screen id:/ { id = $NF }
+  /^Type:/ { is_builtin = ($0 ~ /built in/) }
+  /^Resolution:/ { res = $NF }
+  /^Hertz:/ {
+    if (is_builtin) {
+      printf "BUILTIN_ID=%s\nBUILTIN_RES=%s\nBUILTIN_HZ=%s\n", id, res, $NF
+    } else {
+      printf "EXTERNAL_ID=%s\n", id
+    }
+  }
+')"
+
+if [[ -z "${EXTERNAL_ID:-}" ]]; then
+  echo "No external display found"
+  exit 1
+fi
+[[[- end -]]]

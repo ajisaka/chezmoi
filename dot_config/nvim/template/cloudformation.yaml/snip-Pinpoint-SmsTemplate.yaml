@@ -1,0 +1,11 @@
+  PinpointSmsTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html
+    Type: AWS::Pinpoint::SmsTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-smstemplate.html
+      TemplateName: # String
+      # TemplateDescription: # String
+      # DefaultSubstitutions: # String
+      Body: # String
+      # Tags: # Json
+    # !GetAtt THIS.Arn (String)

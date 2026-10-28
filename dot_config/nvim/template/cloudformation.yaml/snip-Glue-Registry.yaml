@@ -1,0 +1,10 @@
+  GlueRegistry:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-registry.html
+    Type: AWS::Glue::Registry
+    Properties:
+      Name: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

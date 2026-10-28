@@ -1,0 +1,30 @@
+  GameLiftGameServerGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gameservergroup.html
+    Type: AWS::GameLift::GameServerGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gameservergroup.html
+      # AutoScalingPolicy:
+      #   # EstimatedInstanceWarmup: # Double
+      #   # TargetTrackingConfiguration:
+      #   # TargetValue: # Double
+      # BalancingStrategy: # String
+      # DeleteOption: # String
+      GameServerGroupName: # String
+      # GameServerProtectionPolicy: # String
+      InstanceDefinitions:
+        - InstanceType: # String
+          # WeightedCapacity: # String
+      # LaunchTemplate:
+      #   # LaunchTemplateId: # String
+      #   # LaunchTemplateName: # String
+      #   # Version: # String
+      # MaxSize: # Double
+      # MinSize: # Double
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VpcSubnets:
+      #   - # String
+    # !GetAtt THIS.AutoScalingGroupArn (String)
+    # !GetAtt THIS.GameServerGroupArn (String)

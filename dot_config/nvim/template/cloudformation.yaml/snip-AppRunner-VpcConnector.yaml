@@ -1,0 +1,15 @@
+  AppRunnerVpcConnector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-vpcconnector.html
+    Type: AWS::AppRunner::VpcConnector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-vpcconnector.html
+      # VpcConnectorName: # String
+      Subnets:
+        - # String
+      # SecurityGroups:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.VpcConnectorArn (String)
+    # !GetAtt THIS.VpcConnectorRevision (Integer)

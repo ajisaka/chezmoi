@@ -1,0 +1,23 @@
+  RefactorSpacesRoute:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-route.html
+    Type: AWS::RefactorSpaces::Route
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-route.html
+      ApplicationIdentifier: # String
+      EnvironmentIdentifier: # String
+      # RouteType: # String
+      ServiceIdentifier: # String
+      # DefaultRoute:
+      #   ActivationState: # String
+      # UriPathRoute:
+      #   # SourcePath: # String
+      #   ActivationState: # String
+      #   # Methods:
+      #   # - # String
+      #   # IncludeChildPaths: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PathResourceToId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RouteIdentifier (String)

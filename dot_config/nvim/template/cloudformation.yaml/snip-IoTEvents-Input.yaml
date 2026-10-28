@@ -1,0 +1,13 @@
+  IoTEventsInput:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html
+    Type: AWS::IoTEvents::Input
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-input.html
+      # InputDefinition:
+      #   Attributes:
+      #     - JsonPath: # String
+      # InputDescription: # String
+      # InputName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

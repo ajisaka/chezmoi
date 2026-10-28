@@ -1,0 +1,13 @@
+  ApiGatewayV2VpcLink:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-vpclink.html
+    Type: AWS::ApiGatewayV2::VpcLink
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-vpclink.html
+      SubnetIds:
+        - # String
+      # SecurityGroupIds:
+      #   - # String
+      # Tags:
+      #   ANY_KEY: # String
+      Name: # String
+    # !GetAtt THIS.VpcLinkId (String)

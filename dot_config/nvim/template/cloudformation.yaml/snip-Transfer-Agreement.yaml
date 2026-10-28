@@ -1,0 +1,17 @@
+  TransferAgreement:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-agreement.html
+    Type: AWS::Transfer::Agreement
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-agreement.html
+      # Description: # String
+      ServerId: # String
+      LocalProfileId: # String
+      PartnerProfileId: # String
+      BaseDirectory: # String
+      AccessRole: # String
+      # Status: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AgreementId (String)
+    # !GetAtt THIS.Arn (String)

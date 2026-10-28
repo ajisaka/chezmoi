@@ -1,0 +1,15 @@
+  ConnectPhoneNumber:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-phonenumber.html
+    Type: AWS::Connect::PhoneNumber
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-phonenumber.html
+      TargetArn: # String
+      # Description: # String
+      Type: # String
+      CountryCode: # String
+      # Prefix: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PhoneNumberArn (String)
+    # !GetAtt THIS.Address (String)

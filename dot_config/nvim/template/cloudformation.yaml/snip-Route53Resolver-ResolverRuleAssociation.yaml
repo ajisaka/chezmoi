@@ -1,0 +1,11 @@
+  Route53ResolverResolverRuleAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html
+    Type: AWS::Route53Resolver::ResolverRuleAssociation
+    Properties:
+      VPCId: # String
+      ResolverRuleId: # String
+      # Name: # String
+    # !GetAtt THIS.VPCId (String)
+    # !GetAtt THIS.ResolverRuleId (String)
+    # !GetAtt THIS.ResolverRuleAssociationId (String)
+    # !GetAtt THIS.Name (String)

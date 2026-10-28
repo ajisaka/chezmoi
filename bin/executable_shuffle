@@ -1,0 +1,6 @@
+#!/bin/ruby
+
+begin
+  ARGF.readlines.shuffle.each {|it| puts it }
+rescue Errno::EPIPE
+end

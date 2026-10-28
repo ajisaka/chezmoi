@@ -1,0 +1,8 @@
+  ApiGatewayV2Deployment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-deployment.html
+    Type: AWS::ApiGatewayV2::Deployment
+    Properties:
+      # Description: # String
+      # StageName: # String
+      ApiId: # String
+    # !GetAtt THIS.DeploymentId (String)

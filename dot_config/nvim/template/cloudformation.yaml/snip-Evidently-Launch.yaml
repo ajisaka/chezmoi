@@ -1,0 +1,39 @@
+  EvidentlyLaunch:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-launch.html
+    Type: AWS::Evidently::Launch
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-launch.html
+      Name: # String
+      Project: # String
+      # Description: # String
+      # RandomizationSalt: # String
+      ScheduledSplitsConfig:
+        - StartTime: # String
+          GroupWeights:
+            - GroupName: # String
+              SplitWeight: # Integer
+          # SegmentOverrides:
+          #   - Segment: # String
+          #     EvaluationOrder: # Integer
+          #     Weights:
+          #       - GroupName: # String
+          #         SplitWeight: # Integer
+      Groups:
+        - GroupName: # String
+          # Description: # String
+          Feature: # String
+          Variation: # String
+      # MetricMonitors:
+      #   - MetricName: # String
+      #     EntityIdKey: # String
+      #     ValueKey: # String
+      #     EventPattern: # String
+      #     # UnitLabel: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ExecutionStatus:
+      #   Status: # String
+      #   # DesiredState: # String
+      #   # Reason: # String
+    # !GetAtt THIS.Arn (String)

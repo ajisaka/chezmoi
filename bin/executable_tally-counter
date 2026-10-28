@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+echo 'Please enter a key. It will be counted under that key name. Press Esc to exit.'
+
+declare -A counts
+
+function result () {
+  stty "$stty"
+  for i in "${!counts[@]}"
+  do
+    printf "%s\t%d\n" "$i" "${counts[$i]}"
+  done | sort
+}
+trap result EXIT
+
+stty="$(stty -g)"
+stty -echo
+
+while read -rn 1 ch
+do
+  # Press `Esc` to exit
+  [ "$ch" = $'\x1b' ] && exit 0
+
+  [ -z "$ch" ] && ch='??'
+  counts["$ch"]="$(( ${counts["$ch"]:-0} + 1 ))"
+done

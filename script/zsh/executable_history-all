@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+histfile=~/.zsh_history
+[ -f ~/buffer/home/.zsh_history ] && histfile=~/buffer/home/.zsh_history
+
+"$(dirname "$0")/unmetafy-history" < "$histfile" | sed 's/.*;//' | tac | unique

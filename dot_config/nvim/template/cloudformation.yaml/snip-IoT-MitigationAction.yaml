@@ -1,0 +1,28 @@
+  IoTMitigationAction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-mitigationaction.html
+    Type: AWS::IoT::MitigationAction
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-mitigationaction.html
+      # ActionName: # String
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ActionParams:
+      #   # AddThingsToThingGroupParams:
+      #   # # OverrideDynamicGroups: # Boolean
+      #   # ThingGroupNames:
+      #   # - # String
+      #   # EnableIoTLoggingParams:
+      #   # LogLevel: # String
+      #   # RoleArnForLogging: # String
+      #   # PublishFindingToSnsParams:
+      #   # TopicArn: # String
+      #   # ReplaceDefaultPolicyVersionParams:
+      #   # TemplateName: # String
+      #   # UpdateCACertificateParams:
+      #   # Action: # String
+      #   # UpdateDeviceCertificateParams:
+      #   # Action: # String
+    # !GetAtt THIS.MitigationActionArn (String)
+    # !GetAtt THIS.MitigationActionId (String)

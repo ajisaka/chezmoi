@@ -1,0 +1,24 @@
+  ApiGatewayV2Integration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html
+      # Description: # String
+      # TemplateSelectionExpression: # String
+      # ConnectionType: # String
+      # ResponseParameters: # Json
+      # IntegrationMethod: # String
+      # PassthroughBehavior: # String
+      # RequestParameters: # Json
+      # ConnectionId: # String
+      # IntegrationUri: # String
+      # PayloadFormatVersion: # String
+      # CredentialsArn: # String
+      # RequestTemplates: # Json
+      # TimeoutInMillis: # Integer
+      # TlsConfig:
+      #   # ServerNameToVerify: # String
+      # ContentHandlingStrategy: # String
+      # IntegrationSubtype: # String
+      ApiId: # String
+      IntegrationType: # String

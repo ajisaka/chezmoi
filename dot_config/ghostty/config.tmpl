@@ -1,0 +1,69 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /home/anekos/.config/ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# https://github.com/ghostty-org/ghostty/blob/main/src/config/Config.zig
+# https://zenn.dev/rao_mth/articles/ghostty-config-reference
+# https://ghostty.org/docs/config/reference
+
+# Font {{{
+font-family = [[[ .font.terminal.family ]]]
+[[[- if eq .chezmoi.os "darwin" ]]]
+font-size = [[[ int64 (mulf .font.terminal.size 1.3 (index .scales .chezmoi.hostname)) ]]]
+[[[ else ]]]
+font-size = [[[ int64 (mulf .font.terminal.size 0.9 (index .scales .chezmoi.hostname)) ]]]
+[[[ end -]]]
+# }}}
+
+# Mac {{{
+macos-titlebar-style = tabs
+macos-non-native-fullscreen = true
+# }}}
+
+# Keybinds {{{
+keybind = "ctrl+q>c=new_tab"
+keybind = "ctrl+q>x=close_tab"
+
+keybind = "ctrl+q>p=previous_tab"
+keybind = "ctrl+q>n=next_tab"
+
+keybind = "ctrl+q>1=goto_tab:1"
+keybind = "ctrl+q>2=goto_tab:2"
+keybind = "ctrl+q>3=goto_tab:3"
+keybind = "ctrl+q>4=goto_tab:4"
+keybind = "ctrl+q>5=goto_tab:5"
+keybind = "ctrl+q>6=goto_tab:6"
+keybind = "ctrl+q>7=goto_tab:7"
+keybind = "ctrl+q>8=goto_tab:8"
+keybind = "ctrl+q>9=goto_tab:9"
+keybind = "ctrl+q>0=goto_tab:10"
+# }}}
+
+# Quick Terminal {{{
+quick-terminal-position = "center"
+quick-terminal-screen = "main"
+quick-terminal-animation-duration = 0.05
+quick-terminal-size = 50%,50%
+quick-terminal-autohide = true
+
+[[[- if eq .chezmoi.os "darwin" ]]]
+keybind = "global:super+s=toggle_quick_terminal"
+[[[ else ]]]
+keybind = "global:cmd+s=toggle_quick_terminal"
+[[[ end -]]]
+# }}}

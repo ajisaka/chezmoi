@@ -1,0 +1,9 @@
+  EMRStudioSessionMapping:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-studiosessionmapping.html
+    Type: AWS::EMR::StudioSessionMapping
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-studiosessionmapping.html
+      IdentityName: # String
+      IdentityType: # String
+      SessionPolicyArn: # String
+      StudioId: # String

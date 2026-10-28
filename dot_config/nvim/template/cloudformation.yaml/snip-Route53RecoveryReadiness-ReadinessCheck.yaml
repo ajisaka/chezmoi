@@ -1,0 +1,10 @@
+  Route53RecoveryReadinessReadinessCheck:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoveryreadiness-readinesscheck.html
+    Type: AWS::Route53RecoveryReadiness::ReadinessCheck
+    Properties:
+      # ResourceSetName: # String
+      # ReadinessCheckName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ReadinessCheckArn (String)

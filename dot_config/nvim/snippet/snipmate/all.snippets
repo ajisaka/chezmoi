@@ -1,0 +1,23 @@
+snippet cz/delimiter
+  chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+
+snippet cz/watch-directory
+  # {{ range glob (printf "%s/dot_config/waybar/**/*.*" .chezmoi.sourceDir) }}
+  # {{ . }}: {{ include . | sha256sum }}
+  # {{ end }}
+
+snippet cz/if-host-name
+  [[[- if eq .chezmoi.hostname "ildjarn" -]]]
+  [[[- end -]]]
+
+snippet cz/if-host-name-in
+  [[[- if has .chezmoi.hostname .hosts.private -]]]
+  [[[- end -]]]
+
+snippet cz/if-os-linux
+  [[[- if eq .chezmoi.os "linux" -]]]
+  [[[- end -]]]
+
+snippet cz/if-os-mac
+  [[[- if eq .chezmoi.os "darwin" -]]]
+  [[[- end -]]]

@@ -1,0 +1,15 @@
+  IoTSiteWiseProject:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-project.html
+    Type: AWS::IoTSiteWise::Project
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-project.html
+      PortalId: # String
+      ProjectName: # String
+      # ProjectDescription: # String
+      # AssetIds:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ProjectId (String)
+    # !GetAtt THIS.ProjectArn (String)

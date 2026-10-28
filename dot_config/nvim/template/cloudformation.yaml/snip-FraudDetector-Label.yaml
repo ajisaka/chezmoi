@@ -1,0 +1,12 @@
+  FraudDetectorLabel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-frauddetector-label.html
+    Type: AWS::FraudDetector::Label
+    Properties:
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Description: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)

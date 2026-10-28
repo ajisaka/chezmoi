@@ -1,0 +1,153 @@
+# pre-commit {{{
+
+snippet pre-commit/config
+  repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.3.0
+      hooks:
+        - id: check-yaml
+        - id: end-of-file-fixer
+        - id: trailing-whitespace
+    - repo: https://github.com/psf/black
+      rev: 22.10.0
+      hooks:
+        - id: black
+
+snippet pre-commit/whitespaces
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+
+snippet pre-commit/script
+  - repo: local
+    hooks:
+      - id: test
+        name: Test
+        entry: make test
+        language: script
+        files: \.x$
+        pass_filenames: true
+        always_run: true
+
+snippet pre-commit/system
+  - repo: local
+    hooks:
+      - id: test
+        name: Test
+        entry: make test
+        language: system
+        files: \.x$
+        pass_filenames: true
+        always_run: true
+
+snippet pre-commit/lua-format
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.20.0
+    hooks:
+      - id: stylua
+        args:
+          - '--quote-style',
+          - 'AutoPreferSingle',
+          - '--indent-type',
+          - 'Spaces',
+          - '--indent-width',
+          - '2',
+          - '--call-parentheses',
+          - 'NoSingleTable',
+
+snippet pre-commit/python
+  repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.3.0
+      hooks:
+        - id: end-of-file-fixer
+        - id: trailing-whitespace
+    - repo: local
+      hooks:
+        - id: mypy
+          name: mypy
+          language: system
+          entry: uv run mypy
+          types: [python]
+        - id: ruff-format
+          name: ruff format
+          language: system
+          entry: uv run ruff format
+          types: [python]
+        - id: ruff-check
+          name: ruff check --fix
+          language: system
+          entry: uv run ruff check --fix
+          types: [python]
+
+# }}}
+
+# Cloudformation {{{
+
+snippet cfn/ignore
+  Metadata:
+    cfn-lint:
+      config:
+        ignore_checks:
+          - $1
+
+snippet cfn/az/tokyo1
+  ap-northeast-1
+
+snippet cfn/iam-role/lambda
+  FunctionRole:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+    Type: AWS::IAM::Role
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: sts:AssumeRole
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+                - edgelambda.amazonaws.com
+      # Description: # String
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      # MaxSessionDuration: # Integer
+      # Path: # String
+      # PermissionsBoundary: # String
+      Policies:
+        - PolicyName: cloudformation
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Resource: '*'
+                Action:
+                  - cloudformation:DescribeStacks
+              - Effect: Allow
+                Action:
+                  - ec2:AttachNetworkInterface
+                  - ec2:CreateNetworkInterface
+                  - ec2:DeleteNetworkInterface
+                  - ec2:DescribeInstances
+                  - ec2:DescribeNetworkInterfaces
+                Resource: '*'
+      # RoleName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RoleId (String)
+
+
+snippet cfn/policy/vpc
+  - Effect: Allow
+    Action:
+      - ec2:AttachNetworkInterface
+      - ec2:CreateNetworkInterface
+      - ec2:DeleteNetworkInterface
+      - ec2:DescribeInstances
+      - ec2:DescribeNetworkInterfaces
+    Resource: '*'
+
+# }}}

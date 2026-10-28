@@ -1,0 +1,74 @@
+  SageMakerEndpointConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html
+    Type: AWS::SageMaker::EndpointConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html
+      # DataCaptureConfig:
+      #   CaptureOptions:
+      #     - CaptureMode: # String
+      #   # KmsKeyId: # String
+      #   DestinationS3Uri: # String
+      #   InitialSamplingPercentage: # Integer
+      #   # CaptureContentTypeHeader:
+      #   # # JsonContentTypes:
+      #   #   # - # String
+      #   # # CsvContentTypes:
+      #   #   # - # String
+      #   # EnableCapture: # Boolean
+      ProductionVariants:
+        - # ModelDataDownloadTimeoutInSeconds: # Integer
+          ModelName: # String
+          # VolumeSizeInGB: # Integer
+          VariantName: # String
+          # ContainerStartupHealthCheckTimeoutInSeconds: # Integer
+          # InitialInstanceCount: # Integer
+          # ServerlessConfig:
+          #   MaxConcurrency: # Integer
+          #   MemorySizeInMB: # Integer
+          # InstanceType: # String
+          # AcceleratorType: # String
+          InitialVariantWeight: # Double
+      # KmsKeyId: # String
+      # AsyncInferenceConfig:
+      #   # OutputConfig:
+      #   # # KmsKeyId: # String
+      #   # # NotificationConfig:
+      #   #   # # SuccessTopic: # String
+      #   #   # # ErrorTopic: # String
+      #   # S3OutputPath: # String
+      #   # ClientConfig:
+      #   # # MaxConcurrentInvocationsPerInstance: # Integer
+      # EndpointConfigName: # String
+      # ExplainerConfig:
+      #   # ClarifyExplainerConfig:
+      #   # # InferenceConfig:
+      #   #   # # ContentTemplate: # String
+      #   #   # # LabelHeaders:
+      #   #   #   # - # String
+      #   #   # # MaxPayloadInMB: # Integer
+      #   #   # # ProbabilityIndex: # Integer
+      #   #   # # LabelAttribute: # String
+      #   #   # # FeatureTypes:
+      #   #   #   # - # String
+      #   #   # # FeatureHeaders:
+      #   #   #   # - # String
+      #   #   # # LabelIndex: # Integer
+      #   #   # # ProbabilityAttribute: # String
+      #   #   # # FeaturesAttribute: # String
+      #   #   # # MaxRecordCount: # Integer
+      #   # # EnableExplanations: # String
+      #   # # ShapConfig:
+      #   #   # # TextConfig:
+      #   #   #   # Language: # String
+      #   #   #   # Granularity: # String
+      #   #   # # UseLogit: # Boolean
+      #   #   # # Seed: # Integer
+      #   #   # # ShapBaselineConfig:
+      #   #   #   # # ShapBaseline: # String
+      #   #   #   # # ShapBaselineUri: # String
+      #   #   #   # # MimeType: # String
+      #   #   # # NumberOfSamples: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EndpointConfigName (String)

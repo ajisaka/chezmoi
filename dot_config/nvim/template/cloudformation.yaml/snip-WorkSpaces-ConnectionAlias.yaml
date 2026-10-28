@@ -1,0 +1,11 @@
+  WorkSpacesConnectionAlias:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-connectionalias.html
+    Type: AWS::WorkSpaces::ConnectionAlias
+    Properties:
+      ConnectionString: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Associations (List)
+    # !GetAtt THIS.AliasId (String)
+    # !GetAtt THIS.ConnectionAliasState (String)

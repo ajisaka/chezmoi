@@ -1,0 +1,13 @@
+  ECRReplicationConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-replicationconfiguration.html
+    Type: AWS::ECR::ReplicationConfiguration
+    Properties:
+      # ReplicationConfiguration:
+      #   Rules:
+      #     - # RepositoryFilters:
+      #       # - Filter: # String
+      #       # FilterType: # String
+      #       Destinations:
+      #         - Region: # String
+      #           RegistryId: # String
+    # !GetAtt THIS.RegistryId (String)

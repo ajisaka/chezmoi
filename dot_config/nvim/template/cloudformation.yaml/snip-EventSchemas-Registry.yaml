@@ -1,0 +1,11 @@
+  EventSchemasRegistry:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-registry.html
+    Type: AWS::EventSchemas::Registry
+    Properties:
+      # Description: # String
+      # RegistryName: # String
+      # Tags:
+      #   - Value: # String
+      #     Key: # String
+    # !GetAtt THIS.RegistryName (String)
+    # !GetAtt THIS.RegistryArn (String)

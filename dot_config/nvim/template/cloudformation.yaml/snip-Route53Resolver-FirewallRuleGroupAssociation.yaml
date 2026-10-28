@@ -1,0 +1,21 @@
+  Route53ResolverFirewallRuleGroupAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-firewallrulegroupassociation.html
+    Type: AWS::Route53Resolver::FirewallRuleGroupAssociation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-firewallrulegroupassociation.html
+      FirewallRuleGroupId: # String
+      VpcId: # String
+      # Name: # String
+      Priority: # Integer
+      # MutationProtection: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ManagedOwnerName (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusMessage (String)
+    # !GetAtt THIS.CreatorRequestId (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.ModificationTime (String)

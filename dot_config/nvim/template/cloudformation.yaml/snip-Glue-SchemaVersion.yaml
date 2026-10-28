@@ -1,0 +1,10 @@
+  GlueSchemaVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-schemaversion.html
+    Type: AWS::Glue::SchemaVersion
+    Properties:
+      # Schema:
+      #   # SchemaArn: # String
+      #   # SchemaName: # String
+      #   # RegistryName: # String
+      SchemaDefinition: # String
+    # !GetAtt THIS.VersionId (String)

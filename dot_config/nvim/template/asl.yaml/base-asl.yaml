@@ -1,0 +1,13 @@
+---
+# https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html
+Comment: ASL
+StartAt: Start
+States:
+
+  Start:
+    Type: Pass
+    Next: Finish
+
+  Finish:
+    Type: Pass
+    End: True

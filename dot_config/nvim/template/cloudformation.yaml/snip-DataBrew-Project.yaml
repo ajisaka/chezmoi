@@ -1,0 +1,15 @@
+  DataBrewProject:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-project.html
+    Type: AWS::DataBrew::Project
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-project.html
+      DatasetName: # String
+      Name: # String
+      RecipeName: # String
+      RoleArn: # String
+      # Sample:
+      #   # Size: # Integer
+      #   Type: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

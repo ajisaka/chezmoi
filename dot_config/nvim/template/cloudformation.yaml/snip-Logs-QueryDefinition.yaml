@@ -1,0 +1,9 @@
+  LogsQueryDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-querydefinition.html
+    Type: AWS::Logs::QueryDefinition
+    Properties:
+      Name: # String
+      QueryString: # String
+      # LogGroupNames:
+      #   - # String
+    # !GetAtt THIS.QueryDefinitionId (String)

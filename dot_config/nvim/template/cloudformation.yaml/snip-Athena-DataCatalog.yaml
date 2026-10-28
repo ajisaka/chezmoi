@@ -1,0 +1,13 @@
+  AthenaDataCatalog:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-datacatalog.html
+    Type: AWS::Athena::DataCatalog
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-datacatalog.html
+      Name: # String
+      # Description: # String
+      # Parameters:
+      #   ANY_KEY: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Type: # String

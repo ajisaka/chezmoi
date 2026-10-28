@@ -1,0 +1,18 @@
+  EC2Route:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
+    Type: AWS::EC2::Route
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
+      # CarrierGatewayId: # String
+      # DestinationCidrBlock: # String
+      # DestinationIpv6CidrBlock: # String
+      # EgressOnlyInternetGatewayId: # String
+      # GatewayId: # String
+      # InstanceId: # String
+      # LocalGatewayId: # String
+      # NatGatewayId: # String
+      # NetworkInterfaceId: # String
+      RouteTableId: # String
+      # TransitGatewayId: # String
+      # VpcEndpointId: # String
+      # VpcPeeringConnectionId: # String

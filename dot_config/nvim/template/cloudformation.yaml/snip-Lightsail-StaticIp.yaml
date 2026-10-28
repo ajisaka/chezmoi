@@ -1,0 +1,9 @@
+  LightsailStaticIp:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-staticip.html
+    Type: AWS::Lightsail::StaticIp
+    Properties:
+      StaticIpName: # String
+      # AttachedTo: # String
+    # !GetAtt THIS.IsAttached (Boolean)
+    # !GetAtt THIS.IpAddress (String)
+    # !GetAtt THIS.StaticIpArn (String)

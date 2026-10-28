@@ -1,0 +1,10 @@
+  ACMPCACertificateAuthorityActivation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthorityactivation.html
+    Type: AWS::ACMPCA::CertificateAuthorityActivation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthorityactivation.html
+      CertificateAuthorityArn: # String
+      Certificate: # String
+      # CertificateChain: # String
+      # Status: # String
+    # !GetAtt THIS.CompleteCertificateChain (String)

@@ -1,0 +1,9 @@
+  IoT1ClickDevice:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html
+    Type: AWS::IoT1Click::Device
+    Properties:
+      DeviceId: # String
+      Enabled: # Boolean
+    # !GetAtt THIS.DeviceId (String)
+    # !GetAtt THIS.Enabled (Boolean)
+    # !GetAtt THIS.Arn (String)

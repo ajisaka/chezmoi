@@ -1,0 +1,130 @@
+" chezmoi:template:left-delimiter="[[" right-delimiter=]]
+" vim: set foldlevel=0
+
+" Init {{{
+
+scriptencoding utf8
+
+if !has('gui_running') && !(has('nvim'))
+  finish
+endif
+
+" }}}
+
+" One size fits not all {{{
+
+let s:default_font_size = round([[ mulf .font.editor.size 0.8 (index .scales .chezmoi.hostname) ]])
+if g:anekos_vim_neovim_qt_mac || g:anekos_vim_remote
+  let s:default_font_size += 4
+endif
+
+let s:font_size = s:default_font_size
+
+" }}}
+
+" Font Command {{{
+
+function! s:set_font (name, size)
+  if a:name == ''
+    echoerr 'Font name is empty'
+    return
+  endif
+
+  let l:name = a:name
+  let l:name = fnamemodify(l:name, ':t:r')
+  let l:setting = {'font': l:name, 'wide': l:name}
+  let s:font_name = l:name
+
+  if a:size == 0
+    let l:font_size = s:font_size
+  else
+    let l:font_size = a:size
+  endif
+
+  let l:font_size = printf('%.0f', l:font_size)
+
+  if has('nvim')
+    let l:guifont = l:setting.font . ':h' . l:font_size
+    execute 'GuiFont! ' . l:guifont
+    " let &guifontwide = l:setting.wide . ':h' . l:font_size
+    return
+  endif
+
+  let &guifont = l:setting.font . ' ' . l:font_size
+  if has('gui_gtk')
+    let &guifontwide = get(l:setting, 'wide', l:setting.font) . ' ' . l:font_size
+  endif
+endfunction
+
+function! s:font_list ()
+  return map(systemlist('fc-list : family'), 'split(v:val, ",")[0]')
+endfunction
+
+function! s:complete_font (...)
+  let l:fonts = s:font_list()
+  let l:fonts = uniq(sort(l:fonts))
+  return join(l:fonts, "\n")
+endfunction
+
+command! -nargs=* -complete=custom,s:complete_font Font call s:set_font(<q-args>, 0)
+
+" }}}
+
+" Font Size {{{
+
+function! s:set_font_size (size)
+  if a:size[0] == '+'
+    let s:font_size += str2nr(a:size[1:])
+  elseif a:size[0] == '-'
+    let s:font_size -= str2nr(a:size[1:])
+  elseif a:size == ''
+    let s:font_size = s:default_font_size
+  else
+    let s:font_size = str2nr(a:size)
+  endif
+  call s:set_font(s:font_name, 0)
+  echomsg 'Font size: ' . s:font_size
+endfunction
+
+command! -nargs=* -complete=custom,s:complete_font FontSize call s:set_font_size(<q-args>)
+
+" }}}
+
+" Mappings {{{
+
+nnoremap <silent> <Plug>(fontzoom-larger) <Cmd>FontSize +1<CR>
+nnoremap <silent> <Plug>(fontzoom-smaller) <Cmd>FontSize -1<CR>
+
+silent! nmap <silent> <C-ScrollWheelUp> <Plug>(fontzoom-larger)
+silent! nmap <silent> <C-ScrollWheelDown> <Plug>(fontzoom-smaller)
+
+" }}}
+
+let s:candidates = [
+      \ '[[ .font.editor.family ]]',
+      \ ]
+
+set linespace=[[ .font.editor.line_space ]]
+
+" Main {{{
+
+function! s:main()
+  let s:font_name = v:null
+
+  let l:failed_fonts = []
+  for l:cand in s:candidates
+    try
+      call s:set_font(l:cand, 0)
+      return
+    catch /.*/
+      call add(l:failed_fonts, l:cand)
+      continue
+    endtry
+  endfor
+  echomsg 'Failed to set fonts: ' . join(l:failed_fonts, ', ')
+endfunction
+
+command! FontReset call s:main()
+FontReset
+
+" }}}

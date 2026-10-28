@@ -1,0 +1,17 @@
+  SageMakerApp:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-app.html
+    Type: AWS::SageMaker::App
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-app.html
+      AppName: # String
+      AppType: # String
+      DomainId: # String
+      # ResourceSpec:
+      #   # InstanceType: # String
+      #   # SageMakerImageArn: # String
+      #   # SageMakerImageVersionArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      UserProfileName: # String
+    # !GetAtt THIS.AppArn (String)

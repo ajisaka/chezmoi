@@ -1,0 +1,14 @@
+  MacieFindingsFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-findingsfilter.html
+    Type: AWS::Macie::FindingsFilter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-findingsfilter.html
+      Name: # String
+      # Description: # String
+      # FindingCriteria:
+      #   # Criterion: # Json
+      # Action: # String
+      # Position: # Integer
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.FindingsFilterListItems (List)

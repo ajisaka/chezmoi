@@ -1,0 +1,17 @@
+  M2Application:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-m2-application.html
+    Type: AWS::M2::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-m2-application.html
+      # Definition:
+      #   # S3Location:
+      #   # S3Location: # String
+      #   # Content:
+      #   # S3Location: # String
+      # Description: # String
+      EngineType: # String
+      Name: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.ApplicationArn (String)
+    # !GetAtt THIS.ApplicationId (String)

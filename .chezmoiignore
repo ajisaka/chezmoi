@@ -1,0 +1,38 @@
+AGENTS.md
+CLAUDE.md
+key.age
+.last_picked_commit
+
+# Git
+.git/
+.github/
+**/.git/
+*/**/.gitignore
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# mypy
+.mypy_cache/
+**/.mypy_cache/
+
+# pytest
+.pytest_cache/
+**/.pytest_cache/
+.tox/
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/

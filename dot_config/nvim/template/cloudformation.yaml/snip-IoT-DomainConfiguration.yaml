@@ -1,0 +1,21 @@
+  IoTDomainConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-domainconfiguration.html
+    Type: AWS::IoT::DomainConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-domainconfiguration.html
+      # DomainConfigurationName: # String
+      # AuthorizerConfig:
+      #   # AllowAuthorizerOverride: # Boolean
+      #   # DefaultAuthorizerName: # String
+      # DomainName: # String
+      # ServerCertificateArns:
+      #   - # String
+      # ServiceType: # String
+      # ValidationCertificateArn: # String
+      # DomainConfigurationStatus: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DomainType (String)
+    # !GetAtt THIS.ServerCertificates (List)

@@ -1,0 +1,14 @@
+  SSMMaintenanceWindowTarget:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html
+    Type: AWS::SSM::MaintenanceWindowTarget
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtarget.html
+      # OwnerInformation: # String
+      # Description: # String
+      WindowId: # String
+      ResourceType: # String
+      Targets:
+        - Values:
+            - # String
+          Key: # String
+      # Name: # String

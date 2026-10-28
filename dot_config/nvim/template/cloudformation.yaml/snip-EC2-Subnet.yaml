@@ -1,0 +1,25 @@
+  EC2Subnet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html
+    Type: AWS::EC2::Subnet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html
+      # AssignIpv6AddressOnCreation: # Boolean
+      VpcId: # String
+      # MapPublicIpOnLaunch: # Boolean
+      # AvailabilityZone: # String
+      # AvailabilityZoneId: # String
+      # CidrBlock: # String
+      # Ipv6CidrBlock: # String
+      # OutpostArn: # String
+      # Ipv6Native: # Boolean
+      # EnableDns64: # Boolean
+      # PrivateDnsNameOptionsOnLaunch: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.VpcId (String)
+    # !GetAtt THIS.NetworkAclAssociationId (String)
+    # !GetAtt THIS.AvailabilityZone (String)
+    # !GetAtt THIS.SubnetId (String)
+    # !GetAtt THIS.Ipv6CidrBlocks (List)
+    # !GetAtt THIS.OutpostArn (String)

@@ -1,0 +1,43 @@
+  IoTAccountAuditConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-accountauditconfiguration.html
+    Type: AWS::IoT::AccountAuditConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-accountauditconfiguration.html
+      AccountId: # String
+      # AuditCheckConfigurations:
+      #   # AuthenticatedCognitoRoleOverlyPermissiveCheck:
+      #   # # Enabled: # Boolean
+      #   # CaCertificateExpiringCheck:
+      #   # # Enabled: # Boolean
+      #   # CaCertificateKeyQualityCheck:
+      #   # # Enabled: # Boolean
+      #   # ConflictingClientIdsCheck:
+      #   # # Enabled: # Boolean
+      #   # DeviceCertificateExpiringCheck:
+      #   # # Enabled: # Boolean
+      #   # DeviceCertificateKeyQualityCheck:
+      #   # # Enabled: # Boolean
+      #   # DeviceCertificateSharedCheck:
+      #   # # Enabled: # Boolean
+      #   # IotPolicyOverlyPermissiveCheck:
+      #   # # Enabled: # Boolean
+      #   # IotRoleAliasAllowsAccessToUnusedServicesCheck:
+      #   # # Enabled: # Boolean
+      #   # IotRoleAliasOverlyPermissiveCheck:
+      #   # # Enabled: # Boolean
+      #   # LoggingDisabledCheck:
+      #   # # Enabled: # Boolean
+      #   # RevokedCaCertificateStillActiveCheck:
+      #   # # Enabled: # Boolean
+      #   # RevokedDeviceCertificateStillActiveCheck:
+      #   # # Enabled: # Boolean
+      #   # UnauthenticatedCognitoRoleOverlyPermissiveCheck:
+      #   # # Enabled: # Boolean
+      #   # IntermediateCaRevokedForActiveDeviceCertificatesCheck:
+      #   # # Enabled: # Boolean
+      # AuditNotificationTargetConfigurations:
+      #   # Sns:
+      #   # # TargetArn: # String
+      #   # # RoleArn: # String
+      #   # # Enabled: # Boolean
+      RoleArn: # String

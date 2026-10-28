@@ -1,0 +1,18 @@
+  NetworkManagerCoreNetwork:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-corenetwork.html
+    Type: AWS::NetworkManager::CoreNetwork
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-corenetwork.html
+      GlobalNetworkId: # String
+      # PolicyDocument: # Json
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CoreNetworkId (String)
+    # !GetAtt THIS.CoreNetworkArn (String)
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.Segments (List)
+    # !GetAtt THIS.Edges (List)
+    # !GetAtt THIS.OwnerAccount (String)

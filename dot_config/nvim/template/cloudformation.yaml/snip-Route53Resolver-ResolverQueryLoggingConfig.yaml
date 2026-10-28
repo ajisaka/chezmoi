@@ -1,0 +1,14 @@
+  Route53ResolverResolverQueryLoggingConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfig.html
+    Type: AWS::Route53Resolver::ResolverQueryLoggingConfig
+    Properties:
+      # Name: # String
+      # DestinationArn: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.OwnerId (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.ShareStatus (String)
+    # !GetAtt THIS.AssociationCount (Integer)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatorRequestId (String)
+    # !GetAtt THIS.CreationTime (String)

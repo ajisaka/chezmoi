@@ -1,0 +1,56 @@
+  TimestreamScheduledQuery:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-timestream-scheduledquery.html
+    Type: AWS::Timestream::ScheduledQuery
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-timestream-scheduledquery.html
+      # ScheduledQueryName: # String
+      QueryString: # String
+      # ScheduleConfiguration:
+      #   ScheduleExpression: # String
+      # NotificationConfiguration:
+      #   # SnsConfiguration:
+      #   # TopicArn: # String
+      # ClientToken: # String
+      ScheduledQueryExecutionRoleArn: # String
+      # TargetConfiguration:
+      #   # TimestreamConfiguration:
+      #   # DatabaseName: # String
+      #   # TableName: # String
+      #   # TimeColumn: # String
+      #   # DimensionMappings:
+      #   # - Name: # String
+      #   # DimensionValueType: # String
+      #   # # MultiMeasureMappings:
+      #   #   # # TargetMultiMeasureName: # String
+      #   #   # MultiMeasureAttributeMappings:
+      #   #   # - SourceColumn: # String
+      #   #   # MeasureValueType: # String
+      #   #   # # TargetMultiMeasureAttributeName: # String
+      #   # # MixedMeasureMappings:
+      #   #   # - # MeasureName: # String
+      #   #   # # SourceColumn: # String
+      #   #   # # TargetMeasureName: # String
+      #   #   # MeasureValueType: # String
+      #   #   # # MultiMeasureAttributeMappings:
+      #   #   #     # - SourceColumn: # String
+      #   #   #     # MeasureValueType: # String
+      #   #   #     # # TargetMultiMeasureAttributeName: # String
+      #   # # MeasureNameColumn: # String
+      # ErrorReportConfiguration:
+      #   # S3Configuration:
+      #   # BucketName: # String
+      #   # # ObjectKeyPrefix: # String
+      #   # # EncryptionOption: # String
+      # KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.SQName (String)
+    # !GetAtt THIS.SQQueryString (String)
+    # !GetAtt THIS.SQScheduleConfiguration (String)
+    # !GetAtt THIS.SQNotificationConfiguration (String)
+    # !GetAtt THIS.SQScheduledQueryExecutionRoleArn (String)
+    # !GetAtt THIS.SQTargetConfiguration (String)
+    # !GetAtt THIS.SQErrorReportConfiguration (String)
+    # !GetAtt THIS.SQKmsKeyId (String)

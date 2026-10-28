@@ -1,0 +1,41 @@
+  LambdaEventSourceMapping:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
+    Type: AWS::Lambda::EventSourceMapping
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
+      # BatchSize: # Integer
+      # BisectBatchOnFunctionError: # Boolean
+      # DestinationConfig:
+      #   # OnFailure:
+      #   # # Destination: # String
+      # Enabled: # Boolean
+      # EventSourceArn: # String
+      # FilterCriteria:
+      #   # Filters:
+      #   # - # Pattern: # String
+      FunctionName: # String
+      # MaximumBatchingWindowInSeconds: # Integer
+      # MaximumRecordAgeInSeconds: # Integer
+      # MaximumRetryAttempts: # Integer
+      # ParallelizationFactor: # Integer
+      # StartingPosition: # String
+      # StartingPositionTimestamp: # Double
+      # Topics:
+      #   - # String
+      # Queues:
+      #   - # String
+      # SourceAccessConfigurations:
+      #   - # Type: # String
+      #     # URI: # String
+      # TumblingWindowInSeconds: # Integer
+      # FunctionResponseTypes:
+      #   - # String
+      # SelfManagedEventSource:
+      #   # Endpoints:
+      #   # # KafkaBootstrapServers:
+      #   #   # - # String
+      # AmazonManagedKafkaEventSourceConfig:
+      #   # ConsumerGroupId: # String
+      # SelfManagedKafkaEventSourceConfig:
+      #   # ConsumerGroupId: # String
+    # !GetAtt THIS.Id (String)

@@ -1,0 +1,22 @@
+  IoTWirelessMulticastGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-multicastgroup.html
+    Type: AWS::IoTWireless::MulticastGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-multicastgroup.html
+      # Name: # String
+      # Description: # String
+      # LoRaWAN:
+      #   RfRegion: # String
+      #   DlClass: # String
+      #   # NumberOfDevicesRequested: # Integer
+      #   # NumberOfDevicesInGroup: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AssociateWirelessDevice: # String
+      # DisassociateWirelessDevice: # String
+    # !GetAtt THIS.LoRaWAN.NumberOfDevicesRequested (Integer)
+    # !GetAtt THIS.LoRaWAN.NumberOfDevicesInGroup (Integer)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Status (String)

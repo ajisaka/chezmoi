@@ -1,0 +1,13 @@
+  EC2KeyPair:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-keypair.html
+    Type: AWS::EC2::KeyPair
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-keypair.html
+      KeyName: # String
+      # KeyType: # String
+      # PublicKeyMaterial: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.KeyFingerprint (String)
+    # !GetAtt THIS.KeyPairId (String)

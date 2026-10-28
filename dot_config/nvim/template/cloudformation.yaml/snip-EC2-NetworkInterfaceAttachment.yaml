@@ -1,0 +1,9 @@
+  EC2NetworkInterfaceAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
+    Type: AWS::EC2::NetworkInterfaceAttachment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
+      # DeleteOnTermination: # Boolean
+      DeviceIndex: # String
+      InstanceId: # String
+      NetworkInterfaceId: # String

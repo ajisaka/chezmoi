@@ -1,0 +1,11 @@
+  AppSyncApiKey:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html
+    Type: AWS::AppSync::ApiKey
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html
+      # Description: # String
+      # ApiKeyId: # String
+      # Expires: # Double
+      ApiId: # String
+    # !GetAtt THIS.ApiKey (String)
+    # !GetAtt THIS.Arn (String)

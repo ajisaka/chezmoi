@@ -1,0 +1,19 @@
+#!/bin/ruby
+# coding: us-ascii
+
+require 'open3'
+require 'pathname'
+
+unmetafy = (Pathname(__FILE__).dirname + 'unmetafy-history').expand_path
+
+out, error, status = Open3.capture3(unmetafy.to_s, :stdin_data => ARGF.read)
+
+out.split(/\n/).each do
+  |line|
+  line.force_encoding('UTF-8')
+  if line.valid_encoding? and line.count('?') < 5
+    STDOUT
+  else
+    STDERR
+  end.puts(line)
+end

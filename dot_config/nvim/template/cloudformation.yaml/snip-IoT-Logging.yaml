@@ -1,0 +1,7 @@
+  IoTLogging:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-logging.html
+    Type: AWS::IoT::Logging
+    Properties:
+      AccountId: # String
+      RoleArn: # String
+      DefaultLogLevel: # String

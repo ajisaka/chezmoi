@@ -1,0 +1,8 @@
+  CloudFrontCloudFrontOriginAccessIdentity:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      # CloudFrontOriginAccessIdentityConfig:
+      #   Comment: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.S3CanonicalUserId (String)

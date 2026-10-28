@@ -1,0 +1,16 @@
+  CloudFormationHookVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-hookversion.html
+    Type: AWS::CloudFormation::HookVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-hookversion.html
+      # ExecutionRoleArn: # String
+      # LoggingConfig:
+      #   # LogGroupName: # String
+      #   # LogRoleArn: # String
+      SchemaHandlerPackage: # String
+      TypeName: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.TypeArn (String)
+    # !GetAtt THIS.IsDefaultVersion (Boolean)
+    # !GetAtt THIS.VersionId (String)
+    # !GetAtt THIS.Visibility (String)

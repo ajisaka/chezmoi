@@ -1,0 +1,9 @@
+  EC2TransitGatewayRoute:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html
+    Type: AWS::EC2::TransitGatewayRoute
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroute.html
+      TransitGatewayRouteTableId: # String
+      # DestinationCidrBlock: # String
+      # Blackhole: # Boolean
+      # TransitGatewayAttachmentId: # String

@@ -1,0 +1,14 @@
+  CodeGuruReviewerRepositoryAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codegurureviewer-repositoryassociation.html
+    Type: AWS::CodeGuruReviewer::RepositoryAssociation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codegurureviewer-repositoryassociation.html
+      Name: # String
+      Type: # String
+      # Owner: # String
+      # BucketName: # String
+      # ConnectionArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AssociationArn (String)

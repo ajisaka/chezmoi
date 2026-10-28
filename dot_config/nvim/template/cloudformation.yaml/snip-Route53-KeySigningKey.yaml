@@ -1,0 +1,9 @@
+  Route53KeySigningKey:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-keysigningkey.html
+    Type: AWS::Route53::KeySigningKey
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-keysigningkey.html
+      HostedZoneId: # String
+      Status: # String
+      Name: # String
+      KeyManagementServiceArn: # String

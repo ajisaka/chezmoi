@@ -1,0 +1,80 @@
+  SageMakerModelQualityJobDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelqualityjobdefinition.html
+    Type: AWS::SageMaker::ModelQualityJobDefinition
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-modelqualityjobdefinition.html
+      # JobDefinitionName: # String
+      # ModelQualityBaselineConfig:
+      #   # BaseliningJobName: # String
+      #   # ConstraintsResource:
+      #   # # S3Uri: # String
+      # ModelQualityAppSpecification:
+      #   # ContainerArguments:
+      #   # - # String
+      #   # ContainerEntrypoint:
+      #   # - # String
+      #   ImageUri: # String
+      #   # PostAnalyticsProcessorSourceUri: # String
+      #   # RecordPreprocessorSourceUri: # String
+      #   # Environment:
+      #   # ANY_KEY: # String
+      #   ProblemType: # String
+      # ModelQualityJobInput:
+      #   # EndpointInput:
+      #   # EndpointName: # String
+      #   # LocalPath: # String
+      #   # # S3DataDistributionType: # String
+      #   # # S3InputMode: # String
+      #   # # StartTimeOffset: # String
+      #   # # EndTimeOffset: # String
+      #   # # InferenceAttribute: # String
+      #   # # ProbabilityAttribute: # String
+      #   # # ProbabilityThresholdAttribute: # Double
+      #   # BatchTransformInput:
+      #   # DataCapturedDestinationS3Uri: # String
+      #   # # DatasetFormat:
+      #   #   # # Csv:
+      #   #   #   # # Header: # Boolean
+      #   #   # # Json:
+      #   #   #   # # Line: # Boolean
+      #   #   # # Parquet: # Boolean
+      #   # LocalPath: # String
+      #   # # S3DataDistributionType: # String
+      #   # # S3InputMode: # String
+      #   # # StartTimeOffset: # String
+      #   # # EndTimeOffset: # String
+      #   # # InferenceAttribute: # String
+      #   # # ProbabilityAttribute: # String
+      #   # # ProbabilityThresholdAttribute: # Double
+      #   # GroundTruthS3Input:
+      #   # S3Uri: # String
+      # ModelQualityJobOutputConfig:
+      #   # KmsKeyId: # String
+      #   MonitoringOutputs:
+      #     - # S3Output:
+      #       # LocalPath: # String
+      #       # # S3UploadMode: # String
+      #       # S3Uri: # String
+      # JobResources:
+      #   # ClusterConfig:
+      #   # InstanceCount: # Integer
+      #   # InstanceType: # String
+      #   # # VolumeKmsKeyId: # String
+      #   # VolumeSizeInGB: # Integer
+      # NetworkConfig:
+      #   # EnableInterContainerTrafficEncryption: # Boolean
+      #   # EnableNetworkIsolation: # Boolean
+      #   # VpcConfig:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # Subnets:
+      #   # - # String
+      # EndpointName: # String
+      RoleArn: # String
+      # StoppingCondition:
+      #   MaxRuntimeInSeconds: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.JobDefinitionArn (String)
+    # !GetAtt THIS.CreationTime (String)

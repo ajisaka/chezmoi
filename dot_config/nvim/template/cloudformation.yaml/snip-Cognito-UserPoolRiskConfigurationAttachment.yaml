@@ -1,0 +1,44 @@
+  CognitoUserPoolRiskConfigurationAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html
+    Type: AWS::Cognito::UserPoolRiskConfigurationAttachment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolriskconfigurationattachment.html
+      # CompromisedCredentialsRiskConfiguration:
+      #   # Actions:
+      #   # EventAction: # String
+      #   # EventFilter:
+      #   # - # String
+      UserPoolId: # String
+      ClientId: # String
+      # AccountTakeoverRiskConfiguration:
+      #   # Actions:
+      #   # # HighAction:
+      #   #   # Notify: # Boolean
+      #   #   # EventAction: # String
+      #   # # LowAction:
+      #   #   # Notify: # Boolean
+      #   #   # EventAction: # String
+      #   # # MediumAction:
+      #   #   # Notify: # Boolean
+      #   #   # EventAction: # String
+      #   # NotifyConfiguration:
+      #   # # BlockEmail:
+      #   #   # # TextBody: # String
+      #   #   # # HtmlBody: # String
+      #   #   # Subject: # String
+      #   # # ReplyTo: # String
+      #   # SourceArn: # String
+      #   # # NoActionEmail:
+      #   #   # # TextBody: # String
+      #   #   # # HtmlBody: # String
+      #   #   # Subject: # String
+      #   # # From: # String
+      #   # # MfaEmail:
+      #   #   # # TextBody: # String
+      #   #   # # HtmlBody: # String
+      #   #   # Subject: # String
+      # RiskExceptionConfiguration:
+      #   # BlockedIPRangeList:
+      #   # - # String
+      #   # SkippedIPRangeList:
+      #   # - # String

@@ -1,0 +1,23 @@
+  IoTWirelessFuotaTask:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-fuotatask.html
+    Type: AWS::IoTWireless::FuotaTask
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-fuotatask.html
+      # Name: # String
+      # Description: # String
+      # LoRaWAN:
+      #   # StartTime: # String
+      #   RfRegion: # String
+      FirmwareUpdateImage: # String
+      FirmwareUpdateRole: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AssociateWirelessDevice: # String
+      # DisassociateWirelessDevice: # String
+      # AssociateMulticastGroup: # String
+      # DisassociateMulticastGroup: # String
+    # !GetAtt THIS.LoRaWAN.StartTime (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.FuotaTaskStatus (String)

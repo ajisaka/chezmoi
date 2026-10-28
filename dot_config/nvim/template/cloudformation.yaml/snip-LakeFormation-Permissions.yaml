@@ -1,0 +1,32 @@
+  LakeFormationPermissions:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-permissions.html
+      # DataLakePrincipal:
+      #   # DataLakePrincipalIdentifier: # String
+      # Resource:
+      #   # TableResource:
+      #   # # DatabaseName: # String
+      #   # # CatalogId: # String
+      #   # # TableWildcard:
+      #   # # Name: # String
+      #   # DatabaseResource:
+      #   # # CatalogId: # String
+      #   # # Name: # String
+      #   # DataLocationResource:
+      #   # # S3Resource: # String
+      #   # # CatalogId: # String
+      #   # TableWithColumnsResource:
+      #   # # ColumnNames:
+      #   #   # - # String
+      #   # # DatabaseName: # String
+      #   # # CatalogId: # String
+      #   # # Name: # String
+      #   # # ColumnWildcard:
+      #   #   # # ExcludedColumnNames:
+      #   #   #   # - # String
+      # Permissions:
+      #   - # String
+      # PermissionsWithGrantOption:
+      #   - # String

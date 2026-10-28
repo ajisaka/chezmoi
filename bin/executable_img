@@ -1,0 +1,44 @@
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+args=("$@")
+
+
+function _sixel() {
+  exec img2sixel "${args[@]}"
+}
+
+function _kitty() {
+  exec kitty +kitten icat "${args[@]}"
+}
+
+
+
+case "${TERM_PROGRAM:-}" in
+  WezTerm)
+    _sixel
+    ;;
+esac
+
+case "${TERM:-}" in
+  *kitty)
+    _kitty
+    ;;
+  foot)
+    _sixel
+    ;;
+esac
+
+[ -n "${KONSOLE_VERSION:-}" ] && _kitty
+
+
+echo "Unsupported terminal" >&2
+
+xxd -p "${args[@]}" | head

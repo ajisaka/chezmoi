@@ -1,0 +1,30 @@
+  CodePipelineCustomActionType:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
+    Type: AWS::CodePipeline::CustomActionType
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
+      Category: # String
+      # ConfigurationProperties:
+      #   - # Description: # String
+      #     Key: # Boolean
+      #     Name: # String
+      #     # Queryable: # Boolean
+      #     Required: # Boolean
+      #     Secret: # Boolean
+      #     # Type: # String
+      # InputArtifactDetails:
+      #   MaximumCount: # Integer
+      #   MinimumCount: # Integer
+      # OutputArtifactDetails:
+      #   MaximumCount: # Integer
+      #   MinimumCount: # Integer
+      Provider: # String
+      # Settings:
+      #   # EntityUrlTemplate: # String
+      #   # ExecutionUrlTemplate: # String
+      #   # RevisionUrlTemplate: # String
+      #   # ThirdPartyConfigurationUrl: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Version: # String

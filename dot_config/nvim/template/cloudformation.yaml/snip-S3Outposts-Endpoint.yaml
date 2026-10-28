@@ -1,0 +1,16 @@
+  S3OutpostsEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3outposts-endpoint.html
+    Type: AWS::S3Outposts::Endpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3outposts-endpoint.html
+      OutpostId: # String
+      SecurityGroupId: # String
+      SubnetId: # String
+      # AccessType: # String
+      # CustomerOwnedIpv4Pool: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CidrBlock (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.NetworkInterfaces (List)
+    # !GetAtt THIS.Status (String)

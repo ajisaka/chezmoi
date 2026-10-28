@@ -1,0 +1,24 @@
+  IoTFleetMetric:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-fleetmetric.html
+    Type: AWS::IoT::FleetMetric
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-fleetmetric.html
+      MetricName: # String
+      # Description: # String
+      # QueryString: # String
+      # Period: # Integer
+      # AggregationField: # String
+      # QueryVersion: # String
+      # IndexName: # String
+      # Unit: # String
+      # AggregationType:
+      #   Name: # String
+      #   Values:
+      #     - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.MetricArn (String)
+    # !GetAtt THIS.CreationDate (Double)
+    # !GetAtt THIS.LastModifiedDate (Double)
+    # !GetAtt THIS.Version (Double)

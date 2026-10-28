@@ -1,0 +1,21 @@
+  Route53ResolverResolverEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html
+    Type: AWS::Route53Resolver::ResolverEndpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html
+      IpAddresses:
+        - # Ip: # String
+          SubnetId: # String
+      Direction: # String
+      SecurityGroupIds:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+    # !GetAtt THIS.ResolverEndpointId (String)
+    # !GetAtt THIS.IpAddressCount (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Direction (String)
+    # !GetAtt THIS.HostVPCId (String)
+    # !GetAtt THIS.Name (String)

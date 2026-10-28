@@ -1,0 +1,32 @@
+  ApiGatewayV2ApiGatewayManagedOverrides:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-apigatewaymanagedoverrides.html
+    Type: AWS::ApiGatewayV2::ApiGatewayManagedOverrides
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-apigatewaymanagedoverrides.html
+      # Integration:
+      #   # Description: # String
+      #   # PayloadFormatVersion: # String
+      #   # TimeoutInMillis: # Integer
+      #   # IntegrationMethod: # String
+      # Stage:
+      #   # Description: # String
+      #   # AccessLogSettings:
+      #   # # Format: # String
+      #   # # DestinationArn: # String
+      #   # AutoDeploy: # Boolean
+      #   # RouteSettings: # Json
+      #   # StageVariables: # Json
+      #   # DefaultRouteSettings:
+      #   # # LoggingLevel: # String
+      #   # # DataTraceEnabled: # Boolean
+      #   # # ThrottlingBurstLimit: # Integer
+      #   # # DetailedMetricsEnabled: # Boolean
+      #   # # ThrottlingRateLimit: # Double
+      ApiId: # String
+      # Route:
+      #   # Target: # String
+      #   # AuthorizerId: # String
+      #   # OperationName: # String
+      #   # AuthorizationScopes:
+      #   # - # String
+      #   # AuthorizationType: # String

@@ -1,0 +1,157 @@
+# Generic {{{
+
+snippet environ
+  from os import environ
+
+snippet simple/main
+  #!/usr/bin/env python
+
+
+  def main() -> None:
+      pass
+
+
+  if __name__ == "__main__":
+      main()
+
+snippet walk
+  from pathlib import Path
+
+
+  root = Path('/tmp/xmosh')
+  for it in root.glob('**/*.*'):
+      print(it)
+
+snippet command/output
+  def system(*command: str) -> str:
+      output = subprocess.check_output(command, text=True)
+      return output  # .strip()
+
+snippet apppaths
+  from app_paths import AppPaths
+
+  paths = AppPaths.get_paths("FOO-BAR", "anekos", "0.1.0")
+
+  db_dir = paths.user_data / "db"
+  db_file = db_dir / "foo.db"
+
+snippet stdin/lines
+  import sys
+  lines = [line.rstrip('\n') for line in sys.stdin]
+
+# }}}
+
+# Click {{{
+
+snippet click/argument
+  @click.argument('source', type=str, required=True)
+
+snippet click/argument/nargs
+  @click.argument("sources", type=TypePath, required=True, nargs=-1)
+  # sources: Sequence[Path]
+
+snippet click/group
+  @click.group()
+  @click.pass_context
+  def main(ctx: click.Context) -> None:
+      # ctx.obj = App()
+      pass
+
+snippet click/option/flag
+  @click.option('--vertical', type=bool, default=False, is_flag=True)
+
+snippet click/option/path
+  TypePath = click.types.Path(path_type=Path)
+
+  @click.option('--dest', type=TypePath, required=False, help='The person to greet.')
+
+snippet click/main
+  import click
+
+
+  @click.group()
+  @click.pass_context
+  def main(ctx: click.Context) -> None:
+      # ctx.obj = App()
+      pass
+
+
+  @main.command("foo")
+  def main_foo() -> None:
+      print("foo")
+
+
+  if __name__ == "__main__":
+      main()
+
+# }}}
+
+# AWS {{{
+snippet aws/lambda
+  from typing import Any
+  import json
+
+
+  def main() -> Any:
+      return {'message': 'TEST'}
+
+
+  def lambda_handler(event: Any, context: Any) -> Any:
+      print('Received event: ' + json.dumps(event, indent=2))
+
+      body = main()
+
+      return {
+          'statusCode': 200,
+          'headers': {
+              'Content-Type': 'application/json'
+          },
+          'body': json.dumps(body)
+      }
+
+
+  if __name__ == "__main__":
+      main()
+
+# }}}
+
+# uv - pyproject {{{
+snippet uv/script-command
+  [project.scripts]
+  ${1:command_name} = "${2:namespace}.main:main"
+
+  [tool.hatch.build.targets.wheel]
+  packages = ["${2:namespace}"]
+
+# }}}
+
+# Frequently used code {{{
+
+snippet freq/unwrap_or
+  T = TypeVar("T")
+
+  def unwrap_or(value: T | None, default: T) -> T:
+      if value is None:
+          return default
+      return value
+
+# }}}
+
+snippet auto/cloudformation_output_parser
+  import boto3
+
+  from pydantic import BaseModel, Field
+
+  class Outputs(BaseModel):
+      ${1:arn}: str = Field(..., alias="${2:Arn}")
+
+
+  def from_stack_outputs(stack_name: str) -> Outputs:
+      cfn = boto3.client("cloudformation")
+
+      raw = {}
+
+      for entry in cfn.describe_stacks(StackName=stack_name)["Stacks"][0]["Outputs"]:
+          raw[entry["OutputKey"]] = entry["OutputValue"]
+
+      return Outputs.model_validate(raw)

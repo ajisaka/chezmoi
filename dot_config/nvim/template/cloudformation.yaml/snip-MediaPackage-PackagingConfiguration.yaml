@@ -1,0 +1,100 @@
+  MediaPackagePackagingConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-packagingconfiguration.html
+    Type: AWS::MediaPackage::PackagingConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-packagingconfiguration.html
+      Id: # String
+      PackagingGroupId: # String
+      # CmafPackage:
+      #   # Encryption:
+      #   # # SpekeKeyProvider:
+      #   #   # # EncryptionContractConfiguration:
+      #   #   #   # PresetSpeke20Audio: # String
+      #   #   #   # PresetSpeke20Video: # String
+      #   #   # RoleArn: # String
+      #   #   # SystemIds:
+      #   #   # - # String
+      #   #   # Url: # String
+      #   HlsManifests:
+      #     - # AdMarkers: # String
+      #       # IncludeIframeOnlyStream: # Boolean
+      #       # ManifestName: # String
+      #       # ProgramDateTimeIntervalSeconds: # Integer
+      #       # RepeatExtXKey: # Boolean
+      #       # StreamSelection:
+      #       # # MaxVideoBitsPerSecond: # Integer
+      #       # # MinVideoBitsPerSecond: # Integer
+      #       # # StreamOrder: # String
+      #   # SegmentDurationSeconds: # Integer
+      #   # IncludeEncoderConfigurationInSegments: # Boolean
+      # DashPackage:
+      #   DashManifests:
+      #     - # ManifestLayout: # String
+      #       # ManifestName: # String
+      #       # MinBufferTimeSeconds: # Integer
+      #       # Profile: # String
+      #       # ScteMarkersSource: # String
+      #       # StreamSelection:
+      #       # # MaxVideoBitsPerSecond: # Integer
+      #       # # MinVideoBitsPerSecond: # Integer
+      #       # # StreamOrder: # String
+      #   # Encryption:
+      #   # # SpekeKeyProvider:
+      #   #   # # EncryptionContractConfiguration:
+      #   #   #   # PresetSpeke20Audio: # String
+      #   #   #   # PresetSpeke20Video: # String
+      #   #   # RoleArn: # String
+      #   #   # SystemIds:
+      #   #   # - # String
+      #   #   # Url: # String
+      #   # PeriodTriggers:
+      #   # - # String
+      #   # SegmentDurationSeconds: # Integer
+      #   # SegmentTemplateFormat: # String
+      #   # IncludeEncoderConfigurationInSegments: # Boolean
+      # HlsPackage:
+      #   # Encryption:
+      #   # # ConstantInitializationVector: # String
+      #   # # EncryptionMethod: # String
+      #   # # SpekeKeyProvider:
+      #   #   # # EncryptionContractConfiguration:
+      #   #   #   # PresetSpeke20Audio: # String
+      #   #   #   # PresetSpeke20Video: # String
+      #   #   # RoleArn: # String
+      #   #   # SystemIds:
+      #   #   # - # String
+      #   #   # Url: # String
+      #   HlsManifests:
+      #     - # AdMarkers: # String
+      #       # IncludeIframeOnlyStream: # Boolean
+      #       # ManifestName: # String
+      #       # ProgramDateTimeIntervalSeconds: # Integer
+      #       # RepeatExtXKey: # Boolean
+      #       # StreamSelection:
+      #       # # MaxVideoBitsPerSecond: # Integer
+      #       # # MinVideoBitsPerSecond: # Integer
+      #       # # StreamOrder: # String
+      #   # IncludeDvbSubtitles: # Boolean
+      #   # SegmentDurationSeconds: # Integer
+      #   # UseAudioRenditionGroup: # Boolean
+      # MssPackage:
+      #   # Encryption:
+      #   # # SpekeKeyProvider:
+      #   #   # # EncryptionContractConfiguration:
+      #   #   #   # PresetSpeke20Audio: # String
+      #   #   #   # PresetSpeke20Video: # String
+      #   #   # RoleArn: # String
+      #   #   # SystemIds:
+      #   #   # - # String
+      #   #   # Url: # String
+      #   MssManifests:
+      #     - # ManifestName: # String
+      #       # StreamSelection:
+      #       # # MaxVideoBitsPerSecond: # Integer
+      #       # # MinVideoBitsPerSecond: # Integer
+      #       # # StreamOrder: # String
+      #   # SegmentDurationSeconds: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

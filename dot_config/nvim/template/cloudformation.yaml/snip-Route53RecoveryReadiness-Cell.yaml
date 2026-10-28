@@ -1,0 +1,12 @@
+  Route53RecoveryReadinessCell:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoveryreadiness-cell.html
+    Type: AWS::Route53RecoveryReadiness::Cell
+    Properties:
+      # CellName: # String
+      # Cells:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CellArn (String)
+    # !GetAtt THIS.ParentReadinessScopes (List)

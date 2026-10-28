@@ -1,0 +1,47 @@
+  EKSCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html
+    Type: AWS::EKS::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html
+      # EncryptionConfig:
+      #   - # Provider:
+      #     # # KeyArn: # String
+      #     # Resources:
+      #     # - # String
+      # KubernetesNetworkConfig:
+      #   # ServiceIpv4Cidr: # String
+      #   # ServiceIpv6Cidr: # String
+      #   # IpFamily: # String
+      # Logging:
+      #   # ClusterLogging:
+      #   # # EnabledTypes:
+      #   #   # - # Type: # String
+      # Name: # String
+      # ResourcesVpcConfig:
+      #   # EndpointPrivateAccess: # Boolean
+      #   # EndpointPublicAccess: # Boolean
+      #   # PublicAccessCidrs:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   SubnetIds:
+      #     - # String
+      # OutpostConfig:
+      #   OutpostArns:
+      #     - # String
+      #   ControlPlaneInstanceType: # String
+      #   # ControlPlanePlacement:
+      #   # # GroupName: # String
+      RoleArn: # String
+      # Version: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.KubernetesNetworkConfig.ServiceIpv6Cidr (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.CertificateAuthorityData (String)
+    # !GetAtt THIS.ClusterSecurityGroupId (String)
+    # !GetAtt THIS.EncryptionConfigKeyArn (String)
+    # !GetAtt THIS.OpenIdConnectIssuerUrl (String)

@@ -1,0 +1,35 @@
+  BudgetsBudgetsAction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budgetsaction.html
+    Type: AWS::Budgets::BudgetsAction
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budgetsaction.html
+      BudgetName: # String
+      NotificationType: # String
+      ActionType: # String
+      # ActionThreshold:
+      #   Value: # Double
+      #   Type: # String
+      ExecutionRoleArn: # String
+      # ApprovalModel: # String
+      Subscribers:
+        - Type: # String
+          Address: # String
+      # Definition:
+      #   # IamActionDefinition:
+      #   # PolicyArn: # String
+      #   # # Roles:
+      #   #   # - # String
+      #   # # Groups:
+      #   #   # - # String
+      #   # # Users:
+      #   #   # - # String
+      #   # ScpActionDefinition:
+      #   # PolicyId: # String
+      #   # TargetIds:
+      #   # - # String
+      #   # SsmActionDefinition:
+      #   # Subtype: # String
+      #   # Region: # String
+      #   # InstanceIds:
+      #   # - # String
+    # !GetAtt THIS.ActionId (String)

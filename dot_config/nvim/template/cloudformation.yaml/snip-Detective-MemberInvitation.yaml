@@ -1,0 +1,10 @@
+  DetectiveMemberInvitation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html
+    Type: AWS::Detective::MemberInvitation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-detective-memberinvitation.html
+      GraphArn: # String
+      MemberId: # String
+      MemberEmailAddress: # String
+      # DisableEmailNotification: # Boolean
+      # Message: # String

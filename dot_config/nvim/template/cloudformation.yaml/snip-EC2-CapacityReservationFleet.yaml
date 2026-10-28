@@ -1,0 +1,26 @@
+  EC2CapacityReservationFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservationfleet.html
+    Type: AWS::EC2::CapacityReservationFleet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservationfleet.html
+      # AllocationStrategy: # String
+      # TagSpecifications:
+      #   - # ResourceType: # String
+      #     # Tags:
+      #     # - Key: # String
+      #     # Value: # String
+      # InstanceTypeSpecifications:
+      #   - # InstanceType: # String
+      #     # InstancePlatform: # String
+      #     # Weight: # Double
+      #     # AvailabilityZone: # String
+      #     # AvailabilityZoneId: # String
+      #     # EbsOptimized: # Boolean
+      #     # Priority: # Integer
+      # TotalTargetCapacity: # Integer
+      # EndDate: # String
+      # InstanceMatchCriteria: # String
+      # Tenancy: # String
+      # RemoveEndDate: # Boolean
+      # NoRemoveEndDate: # Boolean
+    # !GetAtt THIS.CapacityReservationFleetId (String)

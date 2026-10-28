@@ -1,0 +1,16 @@
+  MediaPackagePackagingGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-packaginggroup.html
+    Type: AWS::MediaPackage::PackagingGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-packaginggroup.html
+      Id: # String
+      # Authorization:
+      #   CdnIdentifierSecret: # String
+      #   SecretsRoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EgressAccessLogs:
+      #   # LogGroupName: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DomainName (String)

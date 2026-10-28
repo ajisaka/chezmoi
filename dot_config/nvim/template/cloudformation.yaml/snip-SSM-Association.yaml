@@ -1,0 +1,32 @@
+  SSMAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
+    Type: AWS::SSM::Association
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
+      # AssociationName: # String
+      # DocumentVersion: # String
+      # InstanceId: # String
+      Name: # String
+      # Parameters:
+      #   ANY_KEY: # Json
+      # ScheduleExpression: # String
+      # Targets:
+      #   - Key: # String
+      #     Values:
+      #       - # String
+      # OutputLocation:
+      #   # S3Location:
+      #   # # OutputS3Region: # String
+      #   # # OutputS3BucketName: # String
+      #   # # OutputS3KeyPrefix: # String
+      # AutomationTargetParameterName: # String
+      # MaxErrors: # String
+      # MaxConcurrency: # String
+      # ComplianceSeverity: # String
+      # SyncCompliance: # String
+      # WaitForSuccessTimeoutSeconds: # Integer
+      # ApplyOnlyAtCronInterval: # Boolean
+      # CalendarNames:
+      #   - # String
+      # ScheduleOffset: # Integer
+    # !GetAtt THIS.AssociationId (String)

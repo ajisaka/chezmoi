@@ -1,0 +1,78 @@
+  ServerlessFunction:
+    # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Type: AWS::Serverless::Function
+    Properties:
+      # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+      # Handler: # String
+      # Runtime: # String
+      # CodeUri:
+      #   # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+      # InlineCode: # String
+      # FunctionName: # String
+      # FileSystemConfigs:
+      #   - # Arn: # String
+      #     # LocalMountPath: # String
+      # Description: # String
+      # MemorySize: # Integer
+      # Timeout: # Integer
+      # Role: # String
+      # Policies:
+      #   # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+      # PermissionsBoundary: # String
+      # Environment:
+      #   Variables:
+      #     ANY_KEY: # String
+      # VpcConfig:
+      #   SecurityGroupIds:
+      #     - # String
+      #   SubnetIds:
+      #     - # String
+      # Events:
+      #   ANY_KEY: Type: # String
+      #     Properties:
+      #       # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#event-source-types
+      # Tags:
+      #   ANY_KEY: # String
+      # Tracing: # String
+      # KmsKeyArn: # String
+      # DeadLetterQueue:
+      #   Type: # String
+      #   TargetArn: # String
+      # DeploymentPreference:
+      #   # Type: # String
+      #   # Alarms:
+      #   # - # String
+      #   # Hooks:
+      #   # ANY_KEY: # String
+      #   # Role: # String
+      #   # Enabled: # Boolean
+      # Layers:
+      #   - # String
+      # AutoPublishAlias: # String
+      # AutoPublishCodeSha256: # String
+      # VersionDescription: # String
+      # ReservedConcurrentExecutions: # Integer
+      # ProvisionedConcurrencyConfig:
+      #   ProvisionedConcurrentExecutions: # String
+      # EventInvokeConfig:
+      #   # MaximumEventAgeInSeconds: # Integer
+      #   # MaximumRetryAttempts: # Integer
+      #   # DestinationConfig:
+      #   # # OnFailure:
+      #   #   # # Type: # String
+      #   #   # Destination: # String
+      #   # # OnSuccess:
+      #   #   # # Type: # String
+      #   #   # Destination: # String
+      # AssumeRolePolicyDocument: # Json
+      # CodeSigningConfigArn: # String
+      # ImageConfig:
+      #   # Command:
+      #   # - # String
+      #   # EntryPoint:
+      #   # - # String
+      #   # WorkingDirectory: # String
+      # ImageUri: # String
+      # PackageType: # String
+      # Architectures:
+      #   - # String

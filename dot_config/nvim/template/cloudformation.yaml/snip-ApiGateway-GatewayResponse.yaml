@@ -1,0 +1,13 @@
+  ApiGatewayGatewayResponse:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
+    Type: AWS::ApiGateway::GatewayResponse
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
+      RestApiId: # String
+      ResponseType: # String
+      # StatusCode: # String
+      # ResponseParameters:
+      #   ANY_KEY: # String
+      # ResponseTemplates:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Id (String)

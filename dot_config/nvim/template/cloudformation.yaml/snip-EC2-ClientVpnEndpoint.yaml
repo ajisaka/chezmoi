@@ -1,0 +1,42 @@
+  EC2ClientVpnEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html
+    Type: AWS::EC2::ClientVpnEndpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-clientvpnendpoint.html
+      ClientCidrBlock: # String
+      # ClientConnectOptions:
+      #   # LambdaFunctionArn: # String
+      #   Enabled: # Boolean
+      # Description: # String
+      # TagSpecifications:
+      #   - ResourceType: # String
+      #     Tags:
+      #       - Key: # String
+      #         Value: # String
+      AuthenticationOptions:
+        - # MutualAuthentication:
+          #   ClientRootCertificateChainArn: # String
+          Type: # String
+          # FederatedAuthentication:
+          #   # SelfServiceSAMLProviderArn: # String
+          #   SAMLProviderArn: # String
+          # ActiveDirectory:
+          #   DirectoryId: # String
+      ServerCertificateArn: # String
+      # SessionTimeoutHours: # Integer
+      # DnsServers:
+      #   - # String
+      # SecurityGroupIds:
+      #   - # String
+      # ConnectionLogOptions:
+      #   # CloudwatchLogStream: # String
+      #   Enabled: # Boolean
+      #   # CloudwatchLogGroup: # String
+      # SplitTunnel: # Boolean
+      # ClientLoginBannerOptions:
+      #   Enabled: # Boolean
+      #   # BannerText: # String
+      # VpcId: # String
+      # SelfServicePortal: # String
+      # TransportProtocol: # String
+      # VpnPort: # Integer

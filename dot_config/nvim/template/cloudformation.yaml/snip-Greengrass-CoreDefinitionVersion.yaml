@@ -1,0 +1,10 @@
+  GreengrassCoreDefinitionVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html
+    Type: AWS::Greengrass::CoreDefinitionVersion
+    Properties:
+      Cores:
+        - # SyncShadow: # Boolean
+          ThingArn: # String
+          Id: # String
+          CertificateArn: # String
+      CoreDefinitionId: # String

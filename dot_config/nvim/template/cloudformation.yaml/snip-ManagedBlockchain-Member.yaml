@@ -1,0 +1,29 @@
+  ManagedBlockchainMember:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html
+    Type: AWS::ManagedBlockchain::Member
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-managedblockchain-member.html
+      # MemberConfiguration:
+      #   # Description: # String
+      #   # MemberFrameworkConfiguration:
+      #   # # MemberFabricConfiguration:
+      #   #   # AdminUsername: # String
+      #   #   # AdminPassword: # String
+      #   Name: # String
+      # NetworkConfiguration:
+      #   # Description: # String
+      #   FrameworkVersion: # String
+      #   # VotingPolicy:
+      #   # # ApprovalThresholdPolicy:
+      #   #   # # ThresholdComparator: # String
+      #   #   # # ThresholdPercentage: # Integer
+      #   #   # # ProposalDurationInHours: # Integer
+      #   Framework: # String
+      #   Name: # String
+      #   # NetworkFrameworkConfiguration:
+      #   # # NetworkFabricConfiguration:
+      #   #   # Edition: # String
+      # NetworkId: # String
+      # InvitationId: # String
+    # !GetAtt THIS.MemberId (String)
+    # !GetAtt THIS.NetworkId (String)

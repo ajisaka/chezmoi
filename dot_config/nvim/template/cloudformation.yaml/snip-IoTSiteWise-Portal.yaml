@@ -1,0 +1,19 @@
+  IoTSiteWisePortal:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-portal.html
+    Type: AWS::IoTSiteWise::Portal
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-portal.html
+      # PortalAuthMode: # String
+      PortalContactEmail: # String
+      # PortalDescription: # String
+      PortalName: # String
+      RoleArn: # String
+      # NotificationSenderEmail: # String
+      # Alarms: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PortalArn (String)
+    # !GetAtt THIS.PortalClientId (String)
+    # !GetAtt THIS.PortalId (String)
+    # !GetAtt THIS.PortalStartUrl (String)

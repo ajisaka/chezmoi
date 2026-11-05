@@ -1,0 +1,40 @@
+  AutoScalingLaunchConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-launchconfiguration.html
+    Type: AWS::AutoScaling::LaunchConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-launchconfiguration.html
+      # AssociatePublicIpAddress: # Boolean
+      # BlockDeviceMappings:
+      #   - # NoDevice: # Boolean
+      #     # VirtualName: # String
+      #     # Ebs:
+      #     # # SnapshotId: # String
+      #     # # VolumeType: # String
+      #     # # Encrypted: # Boolean
+      #     # # Iops: # Integer
+      #     # # VolumeSize: # Integer
+      #     # # DeleteOnTermination: # Boolean
+      #     # # Throughput: # Integer
+      #     DeviceName: # String
+      # ClassicLinkVPCId: # String
+      # ClassicLinkVPCSecurityGroups:
+      #   - # String
+      # EbsOptimized: # Boolean
+      # IamInstanceProfile: # String
+      ImageId: # String
+      # InstanceId: # String
+      # InstanceMonitoring: # Boolean
+      InstanceType: # String
+      # KernelId: # String
+      # KeyName: # String
+      # LaunchConfigurationName: # String
+      # MetadataOptions:
+      #   # HttpPutResponseHopLimit: # Integer
+      #   # HttpTokens: # String
+      #   # HttpEndpoint: # String
+      # PlacementTenancy: # String
+      # RamDiskId: # String
+      # SecurityGroups:
+      #   - # String
+      # SpotPrice: # String
+      # UserData: # String

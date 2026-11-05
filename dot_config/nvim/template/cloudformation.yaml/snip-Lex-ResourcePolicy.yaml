@@ -1,0 +1,8 @@
+  LexResourcePolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-resourcepolicy.html
+    Type: AWS::Lex::ResourcePolicy
+    Properties:
+      ResourceArn: # String
+      # Policy: # Json
+    # !GetAtt THIS.RevisionId (String)
+    # !GetAtt THIS.Id (String)

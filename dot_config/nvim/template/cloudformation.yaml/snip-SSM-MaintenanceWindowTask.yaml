@@ -1,0 +1,53 @@
+  SSMMaintenanceWindowTask:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
+    Type: AWS::SSM::MaintenanceWindowTask
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
+      # MaxErrors: # String
+      # Description: # String
+      # ServiceRoleArn: # String
+      Priority: # Integer
+      # MaxConcurrency: # String
+      # Targets:
+      #   - Values:
+      #       - # String
+      #     Key: # String
+      # Name: # String
+      TaskArn: # String
+      # TaskInvocationParameters:
+      #   # MaintenanceWindowRunCommandParameters:
+      #   # # TimeoutSeconds: # Integer
+      #   # # Comment: # String
+      #   # # OutputS3KeyPrefix: # String
+      #   # # Parameters: # Json
+      #   # # CloudWatchOutputConfig:
+      #   #   # # CloudWatchOutputEnabled: # Boolean
+      #   #   # # CloudWatchLogGroupName: # String
+      #   # # DocumentHashType: # String
+      #   # # ServiceRoleArn: # String
+      #   # # NotificationConfig:
+      #   #   # NotificationArn: # String
+      #   #   # # NotificationType: # String
+      #   #   # # NotificationEvents:
+      #   #   #   # - # String
+      #   # # DocumentVersion: # String
+      #   # # OutputS3BucketName: # String
+      #   # # DocumentHash: # String
+      #   # MaintenanceWindowAutomationParameters:
+      #   # # Parameters: # Json
+      #   # # DocumentVersion: # String
+      #   # MaintenanceWindowStepFunctionsParameters:
+      #   # # Input: # String
+      #   # # Name: # String
+      #   # MaintenanceWindowLambdaParameters:
+      #   # # ClientContext: # String
+      #   # # Qualifier: # String
+      #   # # Payload: # String
+      WindowId: # String
+      # TaskParameters: # Json
+      TaskType: # String
+      # CutoffBehavior: # String
+      # LoggingInfo:
+      #   S3Bucket: # String
+      #   Region: # String
+      #   # S3Prefix: # String

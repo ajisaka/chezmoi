@@ -1,0 +1,38 @@
+  GreengrassFunctionDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html
+    Type: AWS::Greengrass::FunctionDefinition
+    Properties:
+      # InitialVersion:
+      #   # DefaultConfig:
+      #   # # Execution:
+      #   #   # # IsolationMode: # String
+      #   #   # # RunAs:
+      #   #   #   # # Uid: # Integer
+      #   #   #   # # Gid: # Integer
+      #   Functions:
+      #     - FunctionArn: # String
+      #       # FunctionConfiguration:
+      #       # # MemorySize: # Integer
+      #       # # Pinned: # Boolean
+      #       # # ExecArgs: # String
+      #       # # Timeout: # Integer
+      #       # # EncodingType: # String
+      #       # # Environment:
+      #       #   # # Variables: # Json
+      #       #   # # Execution:
+      #       #   #   # # IsolationMode: # String
+      #       #   #   # # RunAs:
+      #       #   #   #   # # Uid: # Integer
+      #       #   #   #   # # Gid: # Integer
+      #       #   # # ResourceAccessPolicies:
+      #       #   #   # - ResourceId: # String
+      #       #   #   # # Permission: # String
+      #       #   # # AccessSysfs: # Boolean
+      #       # # Executable: # String
+      #       Id: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.LatestVersionArn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

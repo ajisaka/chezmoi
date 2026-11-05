@@ -1,0 +1,21 @@
+  ConfigConfigurationAggregator:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
+    Type: AWS::Config::ConfigurationAggregator
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
+      # AccountAggregationSources:
+      #   - # AllAwsRegions: # Boolean
+      #     # AwsRegions:
+      #     # - # String
+      #     AccountIds:
+      #       - # String
+      # ConfigurationAggregatorName: # String
+      # OrganizationAggregationSource:
+      #   # AllAwsRegions: # Boolean
+      #   # AwsRegions:
+      #   # - # String
+      #   RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ConfigurationAggregatorArn (String)

@@ -1,0 +1,38 @@
+  IoTFleetWiseCampaign:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-campaign.html
+    Type: AWS::IoTFleetWise::Campaign
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-campaign.html
+      Action: # String
+      # Compression: # String
+      # Description: # String
+      # Priority: # Integer
+      # SignalsToCollect:
+      #   - # MaxSampleCount: # Double
+      #     Name: # String
+      #     # MinimumSamplingIntervalMs: # Double
+      # StartTime: # String
+      Name: # String
+      # ExpiryTime: # String
+      # SpoolingMode: # String
+      SignalCatalogArn: # String
+      # PostTriggerCollectionDuration: # Double
+      # DataExtraDimensions:
+      #   - # String
+      # DiagnosticsMode: # String
+      TargetArn: # String
+      # CollectionScheme:
+      #   # TimeBasedCollectionScheme:
+      #   # PeriodMs: # Double
+      #   # ConditionBasedCollectionScheme:
+      #   # # MinimumTriggerIntervalMs: # Double
+      #   # Expression: # String
+      #   # # TriggerMode: # String
+      #   # # ConditionLanguageVersion: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.LastModificationTime (String)
+    # !GetAtt THIS.Arn (String)

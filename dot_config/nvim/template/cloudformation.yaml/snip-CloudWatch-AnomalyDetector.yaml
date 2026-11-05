@@ -1,0 +1,41 @@
+  CloudWatchAnomalyDetector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html
+    Type: AWS::CloudWatch::AnomalyDetector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-anomalydetector.html
+      # MetricName: # String
+      # Stat: # String
+      # Configuration:
+      #   # MetricTimeZone: # String
+      #   # ExcludedTimeRanges:
+      #   # - EndTime: # String
+      #   # StartTime: # String
+      # MetricMathAnomalyDetector:
+      #   # MetricDataQueries:
+      #   # - # AccountId: # String
+      #   # # ReturnData: # Boolean
+      #   # # Expression: # String
+      #   # # MetricStat:
+      #   #     # Stat: # String
+      #   #     # Period: # Integer
+      #   #     # # Metric:
+      #   #     #   # MetricName: # String
+      #   #     #   # # Dimensions:
+      #   #     #   #   # - Value: # String
+      #   #     #   #   # Name: # String
+      #   #     #   # Namespace: # String
+      #   #     # # Unit: # String
+      #   # # Label: # String
+      #   # # Period: # Integer
+      #   # Id: # String
+      # Dimensions:
+      #   - Value: # String
+      #     Name: # String
+      # Namespace: # String
+      # SingleMetricAnomalyDetector:
+      #   # MetricName: # String
+      #   # Stat: # String
+      #   # Dimensions:
+      #   # - Value: # String
+      #   # Name: # String
+      #   # Namespace: # String

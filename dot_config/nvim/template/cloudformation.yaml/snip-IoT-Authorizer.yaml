@@ -1,0 +1,17 @@
+  IoTAuthorizer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-authorizer.html
+    Type: AWS::IoT::Authorizer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-authorizer.html
+      AuthorizerFunctionArn: # String
+      # AuthorizerName: # String
+      # SigningDisabled: # Boolean
+      # Status: # String
+      # TokenKeyName: # String
+      # TokenSigningPublicKeys:
+      #   ANY_KEY: # String
+      # EnableCachingForHttp: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

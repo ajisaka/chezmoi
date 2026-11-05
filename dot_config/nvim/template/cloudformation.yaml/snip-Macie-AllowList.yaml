@@ -1,0 +1,18 @@
+  MacieAllowList:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-allowlist.html
+    Type: AWS::Macie::AllowList
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-macie-allowlist.html
+      Name: # String
+      # Description: # String
+      # Criteria:
+      #   # Regex: # String
+      #   # S3WordsList:
+      #   # BucketName: # String
+      #   # ObjectKey: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Status (String)

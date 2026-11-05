@@ -1,0 +1,25 @@
+  DataSyncLocationFSxONTAP:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxontap.html
+    Type: AWS::DataSync::LocationFSxONTAP
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxontap.html
+      StorageVirtualMachineArn: # String
+      SecurityGroupArns:
+        - # String
+      # Protocol:
+      #   # NFS:
+      #   # # MountOptions:
+      #   #   # # Version: # String
+      #   # SMB:
+      #   # # MountOptions:
+      #   #   # # Version: # String
+      #   # # Domain: # String
+      #   # Password: # String
+      #   # User: # String
+      # Subdirectory: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.FsxFilesystemArn (String)
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

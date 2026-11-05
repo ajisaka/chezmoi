@@ -1,0 +1,11 @@
+  GreengrassLoggerDefinitionVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html
+    Type: AWS::Greengrass::LoggerDefinitionVersion
+    Properties:
+      LoggerDefinitionId: # String
+      Loggers:
+        - # Space: # Integer
+          Type: # String
+          Level: # String
+          Id: # String
+          Component: # String

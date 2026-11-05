@@ -1,0 +1,9 @@
+  ServiceCatalogPortfolioShare:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
+    Type: AWS::ServiceCatalog::PortfolioShare
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
+      AccountId: # String
+      # AcceptLanguage: # String
+      PortfolioId: # String
+      # ShareTagOptions: # Boolean

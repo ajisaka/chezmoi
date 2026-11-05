@@ -1,0 +1,36 @@
+  LicenseManagerLicense:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-licensemanager-license.html
+    Type: AWS::LicenseManager::License
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-licensemanager-license.html
+      # ProductSKU: # String
+      # Issuer:
+      #   Name: # String
+      #   # SignKey: # String
+      LicenseName: # String
+      ProductName: # String
+      HomeRegion: # String
+      # Validity:
+      #   Begin: # String
+      #   End: # String
+      Entitlements:
+        - Name: # String
+          # Value: # String
+          # MaxCount: # Integer
+          # Overage: # Boolean
+          Unit: # String
+          # AllowCheckIn: # Boolean
+      # Beneficiary: # String
+      # ConsumptionConfiguration:
+      #   # RenewType: # String
+      #   # ProvisionalConfiguration:
+      #   # MaxTimeToLiveInMinutes: # Integer
+      #   # BorrowConfiguration:
+      #   # MaxTimeToLiveInMinutes: # Integer
+      #   # AllowEarlyCheckIn: # Boolean
+      # LicenseMetadata:
+      #   - Name: # String
+      #     Value: # String
+      # Status: # String
+    # !GetAtt THIS.LicenseArn (String)
+    # !GetAtt THIS.Version (String)

@@ -1,0 +1,15 @@
+  LocationTracker:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-tracker.html
+    Type: AWS::Location::Tracker
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-tracker.html
+      # Description: # String
+      # KmsKeyId: # String
+      # PricingPlan: # String
+      # PricingPlanDataSource: # String
+      # PositionFiltering: # String
+      TrackerName: # String
+    # !GetAtt THIS.CreateTime (String)
+    # !GetAtt THIS.TrackerArn (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.UpdateTime (String)

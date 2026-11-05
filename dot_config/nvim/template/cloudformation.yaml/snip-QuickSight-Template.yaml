@@ -1,0 +1,27 @@
+  QuickSightTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html
+    Type: AWS::QuickSight::Template
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html
+      AwsAccountId: # String
+      # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # SourceEntity:
+      #   # SourceAnalysis:
+      #   # DataSetReferences:
+      #   # - DataSetArn: # String
+      #   # DataSetPlaceholder: # String
+      #   # Arn: # String
+      #   # SourceTemplate:
+      #   # Arn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      TemplateId: # String
+      # VersionDescription: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)

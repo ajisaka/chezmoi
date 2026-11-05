@@ -1,0 +1,10 @@
+  SESTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html
+    Type: AWS::SES::Template
+    Properties:
+      # Template:
+      #   # TemplateName: # String
+      #   SubjectPart: # String
+      #   # TextPart: # String
+      #   # HtmlPart: # String
+    # !GetAtt THIS.Id (String)

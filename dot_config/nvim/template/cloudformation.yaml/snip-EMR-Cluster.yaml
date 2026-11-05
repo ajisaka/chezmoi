@@ -1,0 +1,316 @@
+  EMRCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html
+    Type: AWS::EMR::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html
+      # AdditionalInfo: # Json
+      # Applications:
+      #   - # AdditionalInfo:
+      #     # ANY_KEY: # String
+      #     # Args:
+      #     # - # String
+      #     # Name: # String
+      #     # Version: # String
+      # AutoScalingRole: # String
+      # AutoTerminationPolicy:
+      #   # IdleTimeout: # Long
+      # BootstrapActions:
+      #   - Name: # String
+      #     # ScriptBootstrapAction:
+      #     # # Args:
+      #     #   # - # String
+      #     # Path: # String
+      # Configurations:
+      #   - # Classification: # String
+      #     # ConfigurationProperties:
+      #     # ANY_KEY: # String
+      #     # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      # CustomAmiId: # String
+      # EbsRootVolumeSize: # Integer
+      # Instances:
+      #   # AdditionalMasterSecurityGroups:
+      #   # - # String
+      #   # AdditionalSlaveSecurityGroups:
+      #   # - # String
+      #   # CoreInstanceFleet:
+      #   # # InstanceTypeConfigs:
+      #   #   # - # BidPrice: # String
+      #   #   # # BidPriceAsPercentageOfOnDemandPrice: # Double
+      #   #   # # Configurations:
+      #   #   #     # - # Classification: # String
+      #   #   #     # # ConfigurationProperties:
+      #   #   #     #     # ANY_KEY: # String
+      #   #   #     # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   #   # # CustomAmiId: # String
+      #   #   # # EbsConfiguration:
+      #   #   #     # # EbsBlockDeviceConfigs:
+      #   #   #     #   # - # VolumeSpecification:
+      #   #   #     #   #     # # Iops: # Integer
+      #   #   #     #   #     # SizeInGB: # Integer
+      #   #   #     #   #     # VolumeType: # String
+      #   #   #     #   # # VolumesPerInstance: # Integer
+      #   #   #     # # EbsOptimized: # Boolean
+      #   #   # InstanceType: # String
+      #   #   # # WeightedCapacity: # Integer
+      #   # # LaunchSpecifications:
+      #   #   # # OnDemandSpecification:
+      #   #   #   # AllocationStrategy: # String
+      #   #   # # SpotSpecification:
+      #   #   #   # # AllocationStrategy: # String
+      #   #   #   # # BlockDurationMinutes: # Integer
+      #   #   #   # TimeoutAction: # String
+      #   #   #   # TimeoutDurationMinutes: # Integer
+      #   # # Name: # String
+      #   # # TargetOnDemandCapacity: # Integer
+      #   # # TargetSpotCapacity: # Integer
+      #   # CoreInstanceGroup:
+      #   # # AutoScalingPolicy:
+      #   #   # # Constraints:
+      #   #   #   # MaxCapacity: # Integer
+      #   #   #   # MinCapacity: # Integer
+      #   #   # Rules:
+      #   #   # - # Action:
+      #   #   #       # # Market: # String
+      #   #   #       # # SimpleScalingPolicyConfiguration:
+      #   #   #       #   # # AdjustmentType: # String
+      #   #   #       #   # # CoolDown: # Integer
+      #   #   #       #   # ScalingAdjustment: # Integer
+      #   #   # # Description: # String
+      #   #   # Name: # String
+      #   #   # # Trigger:
+      #   #   #       # # CloudWatchAlarmDefinition:
+      #   #   #       #   # ComparisonOperator: # String
+      #   #   #       #   # # Dimensions:
+      #   #   #       #   #   # - Key: # String
+      #   #   #       #   #   # Value: # String
+      #   #   #       #   # # EvaluationPeriods: # Integer
+      #   #   #       #   # MetricName: # String
+      #   #   #       #   # # Namespace: # String
+      #   #   #       #   # Period: # Integer
+      #   #   #       #   # # Statistic: # String
+      #   #   #       #   # Threshold: # Double
+      #   #   #       #   # # Unit: # String
+      #   # # BidPrice: # String
+      #   # # Configurations:
+      #   #   # - # Classification: # String
+      #   #   # # ConfigurationProperties:
+      #   #   #     # ANY_KEY: # String
+      #   #   # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   # # CustomAmiId: # String
+      #   # # EbsConfiguration:
+      #   #   # # EbsBlockDeviceConfigs:
+      #   #   #   # - # VolumeSpecification:
+      #   #   #   #     # # Iops: # Integer
+      #   #   #   #     # SizeInGB: # Integer
+      #   #   #   #     # VolumeType: # String
+      #   #   #   # # VolumesPerInstance: # Integer
+      #   #   # # EbsOptimized: # Boolean
+      #   # InstanceCount: # Integer
+      #   # InstanceType: # String
+      #   # # Market: # String
+      #   # # Name: # String
+      #   # Ec2KeyName: # String
+      #   # Ec2SubnetId: # String
+      #   # Ec2SubnetIds:
+      #   # - # String
+      #   # EmrManagedMasterSecurityGroup: # String
+      #   # EmrManagedSlaveSecurityGroup: # String
+      #   # HadoopVersion: # String
+      #   # KeepJobFlowAliveWhenNoSteps: # Boolean
+      #   # MasterInstanceFleet:
+      #   # # InstanceTypeConfigs:
+      #   #   # - # BidPrice: # String
+      #   #   # # BidPriceAsPercentageOfOnDemandPrice: # Double
+      #   #   # # Configurations:
+      #   #   #     # - # Classification: # String
+      #   #   #     # # ConfigurationProperties:
+      #   #   #     #     # ANY_KEY: # String
+      #   #   #     # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   #   # # CustomAmiId: # String
+      #   #   # # EbsConfiguration:
+      #   #   #     # # EbsBlockDeviceConfigs:
+      #   #   #     #   # - # VolumeSpecification:
+      #   #   #     #   #     # # Iops: # Integer
+      #   #   #     #   #     # SizeInGB: # Integer
+      #   #   #     #   #     # VolumeType: # String
+      #   #   #     #   # # VolumesPerInstance: # Integer
+      #   #   #     # # EbsOptimized: # Boolean
+      #   #   # InstanceType: # String
+      #   #   # # WeightedCapacity: # Integer
+      #   # # LaunchSpecifications:
+      #   #   # # OnDemandSpecification:
+      #   #   #   # AllocationStrategy: # String
+      #   #   # # SpotSpecification:
+      #   #   #   # # AllocationStrategy: # String
+      #   #   #   # # BlockDurationMinutes: # Integer
+      #   #   #   # TimeoutAction: # String
+      #   #   #   # TimeoutDurationMinutes: # Integer
+      #   # # Name: # String
+      #   # # TargetOnDemandCapacity: # Integer
+      #   # # TargetSpotCapacity: # Integer
+      #   # MasterInstanceGroup:
+      #   # # AutoScalingPolicy:
+      #   #   # # Constraints:
+      #   #   #   # MaxCapacity: # Integer
+      #   #   #   # MinCapacity: # Integer
+      #   #   # Rules:
+      #   #   # - # Action:
+      #   #   #       # # Market: # String
+      #   #   #       # # SimpleScalingPolicyConfiguration:
+      #   #   #       #   # # AdjustmentType: # String
+      #   #   #       #   # # CoolDown: # Integer
+      #   #   #       #   # ScalingAdjustment: # Integer
+      #   #   # # Description: # String
+      #   #   # Name: # String
+      #   #   # # Trigger:
+      #   #   #       # # CloudWatchAlarmDefinition:
+      #   #   #       #   # ComparisonOperator: # String
+      #   #   #       #   # # Dimensions:
+      #   #   #       #   #   # - Key: # String
+      #   #   #       #   #   # Value: # String
+      #   #   #       #   # # EvaluationPeriods: # Integer
+      #   #   #       #   # MetricName: # String
+      #   #   #       #   # # Namespace: # String
+      #   #   #       #   # Period: # Integer
+      #   #   #       #   # # Statistic: # String
+      #   #   #       #   # Threshold: # Double
+      #   #   #       #   # # Unit: # String
+      #   # # BidPrice: # String
+      #   # # Configurations:
+      #   #   # - # Classification: # String
+      #   #   # # ConfigurationProperties:
+      #   #   #     # ANY_KEY: # String
+      #   #   # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   # # CustomAmiId: # String
+      #   # # EbsConfiguration:
+      #   #   # # EbsBlockDeviceConfigs:
+      #   #   #   # - # VolumeSpecification:
+      #   #   #   #     # # Iops: # Integer
+      #   #   #   #     # SizeInGB: # Integer
+      #   #   #   #     # VolumeType: # String
+      #   #   #   # # VolumesPerInstance: # Integer
+      #   #   # # EbsOptimized: # Boolean
+      #   # InstanceCount: # Integer
+      #   # InstanceType: # String
+      #   # # Market: # String
+      #   # # Name: # String
+      #   # Placement:
+      #   # AvailabilityZone: # String
+      #   # ServiceAccessSecurityGroup: # String
+      #   # TaskInstanceFleets:
+      #   # - # InstanceTypeConfigs:
+      #   #     # - # BidPrice: # String
+      #   #     # # BidPriceAsPercentageOfOnDemandPrice: # Double
+      #   #     # # Configurations:
+      #   #     #     # - # Classification: # String
+      #   #     #     # # ConfigurationProperties:
+      #   #     #     #     # ANY_KEY: # String
+      #   #     #     # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   #     # # CustomAmiId: # String
+      #   #     # # EbsConfiguration:
+      #   #     #     # # EbsBlockDeviceConfigs:
+      #   #     #     #   # - # VolumeSpecification:
+      #   #     #     #   #     # # Iops: # Integer
+      #   #     #     #   #     # SizeInGB: # Integer
+      #   #     #     #   #     # VolumeType: # String
+      #   #     #     #   # # VolumesPerInstance: # Integer
+      #   #     #     # # EbsOptimized: # Boolean
+      #   #     # InstanceType: # String
+      #   #     # # WeightedCapacity: # Integer
+      #   # # LaunchSpecifications:
+      #   #     # # OnDemandSpecification:
+      #   #     #   # AllocationStrategy: # String
+      #   #     # # SpotSpecification:
+      #   #     #   # # AllocationStrategy: # String
+      #   #     #   # # BlockDurationMinutes: # Integer
+      #   #     #   # TimeoutAction: # String
+      #   #     #   # TimeoutDurationMinutes: # Integer
+      #   # # Name: # String
+      #   # # TargetOnDemandCapacity: # Integer
+      #   # # TargetSpotCapacity: # Integer
+      #   # TaskInstanceGroups:
+      #   # - # AutoScalingPolicy:
+      #   #     # # Constraints:
+      #   #     #   # MaxCapacity: # Integer
+      #   #     #   # MinCapacity: # Integer
+      #   #     # Rules:
+      #   #     # - # Action:
+      #   #     #       # # Market: # String
+      #   #     #       # # SimpleScalingPolicyConfiguration:
+      #   #     #       #   # # AdjustmentType: # String
+      #   #     #       #   # # CoolDown: # Integer
+      #   #     #       #   # ScalingAdjustment: # Integer
+      #   #     # # Description: # String
+      #   #     # Name: # String
+      #   #     # # Trigger:
+      #   #     #       # # CloudWatchAlarmDefinition:
+      #   #     #       #   # ComparisonOperator: # String
+      #   #     #       #   # # Dimensions:
+      #   #     #       #   #   # - Key: # String
+      #   #     #       #   #   # Value: # String
+      #   #     #       #   # # EvaluationPeriods: # Integer
+      #   #     #       #   # MetricName: # String
+      #   #     #       #   # # Namespace: # String
+      #   #     #       #   # Period: # Integer
+      #   #     #       #   # # Statistic: # String
+      #   #     #       #   # Threshold: # Double
+      #   #     #       #   # # Unit: # String
+      #   # # BidPrice: # String
+      #   # # Configurations:
+      #   #     # - # Classification: # String
+      #   #     # # ConfigurationProperties:
+      #   #     #     # ANY_KEY: # String
+      #   #     # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Mutable'}
+      #   # # CustomAmiId: # String
+      #   # # EbsConfiguration:
+      #   #     # # EbsBlockDeviceConfigs:
+      #   #     #   # - # VolumeSpecification:
+      #   #     #   #     # # Iops: # Integer
+      #   #     #   #     # SizeInGB: # Integer
+      #   #     #   #     # VolumeType: # String
+      #   #     #   # # VolumesPerInstance: # Integer
+      #   #     # # EbsOptimized: # Boolean
+      #   # InstanceCount: # Integer
+      #   # InstanceType: # String
+      #   # # Market: # String
+      #   # # Name: # String
+      #   # TerminationProtected: # Boolean
+      JobFlowRole: # String
+      # KerberosAttributes:
+      #   # ADDomainJoinPassword: # String
+      #   # ADDomainJoinUser: # String
+      #   # CrossRealmTrustPrincipalPassword: # String
+      #   KdcAdminPassword: # String
+      #   Realm: # String
+      # LogEncryptionKmsKeyId: # String
+      # LogUri: # String
+      # ManagedScalingPolicy:
+      #   # ComputeLimits:
+      #   # MaximumCapacityUnits: # Integer
+      #   # # MaximumCoreCapacityUnits: # Integer
+      #   # # MaximumOnDemandCapacityUnits: # Integer
+      #   # MinimumCapacityUnits: # Integer
+      #   # UnitType: # String
+      Name: # String
+      # OSReleaseLabel: # String
+      # ReleaseLabel: # String
+      # ScaleDownBehavior: # String
+      # SecurityConfiguration: # String
+      ServiceRole: # String
+      # StepConcurrencyLevel: # Integer
+      # Steps:
+      #   - # ActionOnFailure: # String
+      #     # HadoopJarStep:
+      #     # # Args:
+      #     #   # - # String
+      #     # Jar: # String
+      #     # # MainClass: # String
+      #     # # StepProperties:
+      #     #   # - # Key: # String
+      #     #   # # Value: # String
+      #     Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VisibleToAllUsers: # Boolean
+    # !GetAtt THIS.MasterPublicDNS (String)

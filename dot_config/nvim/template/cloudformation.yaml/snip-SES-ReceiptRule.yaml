@@ -1,0 +1,41 @@
+  SESReceiptRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html
+    Type: AWS::SES::ReceiptRule
+    Properties:
+      # After: # String
+      # Rule:
+      #   # ScanEnabled: # Boolean
+      #   # Recipients:
+      #   # - # String
+      #   # Actions:
+      #   # - # BounceAction:
+      #   #     # Sender: # String
+      #   #     # SmtpReplyCode: # String
+      #   #     # Message: # String
+      #   #     # # TopicArn: # String
+      #   #     # # StatusCode: # String
+      #   # # S3Action:
+      #   #     # BucketName: # String
+      #   #     # # KmsKeyArn: # String
+      #   #     # # TopicArn: # String
+      #   #     # # ObjectKeyPrefix: # String
+      #   # # StopAction:
+      #   #     # Scope: # String
+      #   #     # # TopicArn: # String
+      #   # # SNSAction:
+      #   #     # # TopicArn: # String
+      #   #     # # Encoding: # String
+      #   # # WorkmailAction:
+      #   #     # # TopicArn: # String
+      #   #     # OrganizationArn: # String
+      #   # # AddHeaderAction:
+      #   #     # HeaderValue: # String
+      #   #     # HeaderName: # String
+      #   # # LambdaAction:
+      #   #     # FunctionArn: # String
+      #   #     # # TopicArn: # String
+      #   #     # # InvocationType: # String
+      #   # Enabled: # Boolean
+      #   # Name: # String
+      #   # TlsPolicy: # String
+      RuleSetName: # String

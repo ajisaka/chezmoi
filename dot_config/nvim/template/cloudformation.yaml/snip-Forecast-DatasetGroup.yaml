@@ -1,0 +1,13 @@
+  ForecastDatasetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-forecast-datasetgroup.html
+    Type: AWS::Forecast::DatasetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-forecast-datasetgroup.html
+      # DatasetArns:
+      #   - # String
+      DatasetGroupName: # String
+      Domain: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DatasetGroupArn (String)

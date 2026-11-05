@@ -1,0 +1,19 @@
+  GroundStationMissionProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-groundstation-missionprofile.html
+    Type: AWS::GroundStation::MissionProfile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-groundstation-missionprofile.html
+      Name: # String
+      # ContactPrePassDurationSeconds: # Integer
+      # ContactPostPassDurationSeconds: # Integer
+      MinimumViableContactDurationSeconds: # Integer
+      DataflowEdges:
+        - # Source: # String
+          # Destination: # String
+      TrackingConfigArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Region (String)

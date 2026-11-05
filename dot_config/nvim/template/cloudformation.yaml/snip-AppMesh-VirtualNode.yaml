@@ -1,0 +1,168 @@
+  AppMeshVirtualNode:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html
+    Type: AWS::AppMesh::VirtualNode
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html
+      MeshName: # String
+      # MeshOwner: # String
+      # Spec:
+      #   # Logging:
+      #   # # AccessLog:
+      #   #   # # File:
+      #   #   #   # Path: # String
+      #   #   #   # # Format:
+      #   #   #   #   # # Text: # String
+      #   #   #   #   # # Json:
+      #   #   #   #   #   # - Value: # String
+      #   #   #   #   #   # Key: # String
+      #   # Backends:
+      #   # - # VirtualService:
+      #   #     # # ClientPolicy:
+      #   #     #   # # TLS:
+      #   #     #   #   # # Validation:
+      #   #     #   #   #   # # SubjectAlternativeNames:
+      #   #     #   #   #   #   # # Match:
+      #   #     #   #   #   #   #   # # Exact:
+      #   #     #   #   #   #   #   #   # - # String
+      #   #     #   #   #   # # Trust:
+      #   #     #   #   #   #   # # SDS:
+      #   #     #   #   #   #   #   # SecretName: # String
+      #   #     #   #   #   #   # # ACM:
+      #   #     #   #   #   #   #   # CertificateAuthorityArns:
+      #   #     #   #   #   #   #   # - # String
+      #   #     #   #   #   #   # # File:
+      #   #     #   #   #   #   #   # CertificateChain: # String
+      #   #     #   #   # # Enforce: # Boolean
+      #   #     #   #   # # Ports:
+      #   #     #   #   #   # - # Integer
+      #   #     #   #   # # Certificate:
+      #   #     #   #   #   # # SDS:
+      #   #     #   #   #   #   # SecretName: # String
+      #   #     #   #   #   # # File:
+      #   #     #   #   #   #   # PrivateKey: # String
+      #   #     #   #   #   #   # CertificateChain: # String
+      #   #     # VirtualServiceName: # String
+      #   # Listeners:
+      #   # - # ConnectionPool:
+      #   #     # # TCP:
+      #   #     #   # MaxConnections: # Integer
+      #   #     # # HTTP2:
+      #   #     #   # MaxRequests: # Integer
+      #   #     # # HTTP:
+      #   #     #   # MaxConnections: # Integer
+      #   #     #   # # MaxPendingRequests: # Integer
+      #   #     # # GRPC:
+      #   #     #   # MaxRequests: # Integer
+      #   # # Timeout:
+      #   #     # # TCP:
+      #   #     #   # # Idle:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     # # HTTP2:
+      #   #     #   # # PerRequest:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     #   # # Idle:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     # # HTTP:
+      #   #     #   # # PerRequest:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     #   # # Idle:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     # # GRPC:
+      #   #     #   # # PerRequest:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   #     #   # # Idle:
+      #   #     #   #   # Value: # Integer
+      #   #     #   #   # Unit: # String
+      #   # # HealthCheck:
+      #   #     # # Path: # String
+      #   #     # UnhealthyThreshold: # Integer
+      #   #     # # Port: # Integer
+      #   #     # HealthyThreshold: # Integer
+      #   #     # TimeoutMillis: # Integer
+      #   #     # Protocol: # String
+      #   #     # IntervalMillis: # Integer
+      #   # # TLS:
+      #   #     # # Validation:
+      #   #     #   # # SubjectAlternativeNames:
+      #   #     #   #   # # Match:
+      #   #     #   #   #   # # Exact:
+      #   #     #   #   #   #   # - # String
+      #   #     #   # # Trust:
+      #   #     #   #   # # SDS:
+      #   #     #   #   #   # SecretName: # String
+      #   #     #   #   # # File:
+      #   #     #   #   #   # CertificateChain: # String
+      #   #     # Mode: # String
+      #   #     # # Certificate:
+      #   #     #   # # SDS:
+      #   #     #   #   # SecretName: # String
+      #   #     #   # # ACM:
+      #   #     #   #   # CertificateArn: # String
+      #   #     #   # # File:
+      #   #     #   #   # PrivateKey: # String
+      #   #     #   #   # CertificateChain: # String
+      #   # # PortMapping:
+      #   #     # Port: # Integer
+      #   #     # Protocol: # String
+      #   # # OutlierDetection:
+      #   #     # MaxEjectionPercent: # Integer
+      #   #     # # BaseEjectionDuration:
+      #   #     #   # Value: # Integer
+      #   #     #   # Unit: # String
+      #   #     # MaxServerErrors: # Integer
+      #   #     # # Interval:
+      #   #     #   # Value: # Integer
+      #   #     #   # Unit: # String
+      #   # BackendDefaults:
+      #   # # ClientPolicy:
+      #   #   # # TLS:
+      #   #   #   # # Validation:
+      #   #   #   #   # # SubjectAlternativeNames:
+      #   #   #   #   #   # # Match:
+      #   #   #   #   #   #   # # Exact:
+      #   #   #   #   #   #   #   # - # String
+      #   #   #   #   # # Trust:
+      #   #   #   #   #   # # SDS:
+      #   #   #   #   #   #   # SecretName: # String
+      #   #   #   #   #   # # ACM:
+      #   #   #   #   #   #   # CertificateAuthorityArns:
+      #   #   #   #   #   #   # - # String
+      #   #   #   #   #   # # File:
+      #   #   #   #   #   #   # CertificateChain: # String
+      #   #   #   # # Enforce: # Boolean
+      #   #   #   # # Ports:
+      #   #   #   #   # - # Integer
+      #   #   #   # # Certificate:
+      #   #   #   #   # # SDS:
+      #   #   #   #   #   # SecretName: # String
+      #   #   #   #   # # File:
+      #   #   #   #   #   # PrivateKey: # String
+      #   #   #   #   #   # CertificateChain: # String
+      #   # ServiceDiscovery:
+      #   # # DNS:
+      #   #   # # IpPreference: # String
+      #   #   # Hostname: # String
+      #   #   # # ResponseType: # String
+      #   # # AWSCloudMap:
+      #   #   # NamespaceName: # String
+      #   #   # ServiceName: # String
+      #   #   # # IpPreference: # String
+      #   #   # # Attributes:
+      #   #   #   # - Value: # String
+      #   #   #   # Key: # String
+      # VirtualNodeName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.VirtualNodeName (String)

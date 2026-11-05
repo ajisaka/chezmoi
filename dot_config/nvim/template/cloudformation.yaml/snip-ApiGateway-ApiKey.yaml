@@ -1,0 +1,18 @@
+  ApiGatewayApiKey:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
+    Type: AWS::ApiGateway::ApiKey
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
+      # CustomerId: # String
+      # Description: # String
+      # Enabled: # Boolean
+      # GenerateDistinctId: # Boolean
+      # Name: # String
+      # StageKeys:
+      #   - # RestApiId: # String
+      #     # StageName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Value: # String
+    # !GetAtt THIS.APIKeyId (String)

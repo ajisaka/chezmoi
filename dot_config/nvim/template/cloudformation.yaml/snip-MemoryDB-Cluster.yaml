@@ -1,0 +1,38 @@
+  MemoryDBCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-cluster.html
+    Type: AWS::MemoryDB::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-cluster.html
+      ClusterName: # String
+      # Description: # String
+      NodeType: # String
+      # NumShards: # Integer
+      # NumReplicasPerShard: # Integer
+      # SubnetGroupName: # String
+      # SecurityGroupIds:
+      #   - # String
+      # MaintenanceWindow: # String
+      # ParameterGroupName: # String
+      # Port: # Integer
+      # SnapshotRetentionLimit: # Integer
+      # SnapshotWindow: # String
+      ACLName: # String
+      # SnsTopicArn: # String
+      # SnsTopicStatus: # String
+      # TLSEnabled: # Boolean
+      # DataTiering: # String
+      # KmsKeyId: # String
+      # SnapshotArns:
+      #   - # String
+      # SnapshotName: # String
+      # FinalSnapshotName: # String
+      # EngineVersion: # String
+      # AutoMinorVersionUpgrade: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.ParameterGroupStatus (String)
+    # !GetAtt THIS.ARN (String)
+    # !GetAtt THIS.ClusterEndpoint.Address (String)
+    # !GetAtt THIS.ClusterEndpoint.Port (Integer)

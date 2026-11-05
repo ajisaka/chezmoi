@@ -1,0 +1,3 @@
+[dependencies.FOO]
+git = "https://github.com/anekos/FOO.git"
+rev = "a123456"

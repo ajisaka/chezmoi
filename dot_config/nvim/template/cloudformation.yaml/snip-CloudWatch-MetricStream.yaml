@@ -1,0 +1,26 @@
+  CloudWatchMetricStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-metricstream.html
+    Type: AWS::CloudWatch::MetricStream
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-metricstream.html
+      # StatisticsConfigurations:
+      #   - IncludeMetrics:
+      #       - MetricName: # String
+      #         Namespace: # String
+      #     AdditionalStatistics:
+      #       - # String
+      FirehoseArn: # String
+      OutputFormat: # String
+      # ExcludeFilters:
+      #   - Namespace: # String
+      RoleArn: # String
+      # Name: # String
+      # IncludeFilters:
+      #   - Namespace: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CreationDate (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.LastUpdateDate (String)

@@ -1,0 +1,27 @@
+  ElasticBeanstalkEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-environment.html
+    Type: AWS::ElasticBeanstalk::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-environment.html
+      # PlatformArn: # String
+      ApplicationName: # String
+      # Description: # String
+      # EnvironmentName: # String
+      # OperationsRole: # String
+      # Tier:
+      #   # Type: # String
+      #   # Version: # String
+      #   # Name: # String
+      # VersionLabel: # String
+      # OptionSettings:
+      #   - # ResourceName: # String
+      #     # Value: # String
+      #     Namespace: # String
+      #     OptionName: # String
+      # TemplateName: # String
+      # SolutionStackName: # String
+      # CNAMEPrefix: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EndpointURL (String)

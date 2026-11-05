@@ -1,0 +1,7 @@
+  PinpointGCMChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-gcmchannel.html
+    Type: AWS::Pinpoint::GCMChannel
+    Properties:
+      ApiKey: # String
+      # Enabled: # Boolean
+      ApplicationId: # String

@@ -1,0 +1,49 @@
+  EventsConnection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-connection.html
+    Type: AWS::Events::Connection
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-connection.html
+      # Name: # String
+      # Description: # String
+      AuthorizationType: # String
+      # AuthParameters:
+      #   # ApiKeyAuthParameters:
+      #   # ApiKeyName: # String
+      #   # ApiKeyValue: # String
+      #   # BasicAuthParameters:
+      #   # Username: # String
+      #   # Password: # String
+      #   # OAuthParameters:
+      #   # # ClientParameters:
+      #   #   # ClientID: # String
+      #   #   # ClientSecret: # String
+      #   # AuthorizationEndpoint: # String
+      #   # HttpMethod: # String
+      #   # # OAuthHttpParameters:
+      #   #   # # HeaderParameters:
+      #   #   #   # - Key: # String
+      #   #   #   # Value: # String
+      #   #   #   # # IsValueSecret: # Boolean
+      #   #   # # QueryStringParameters:
+      #   #   #   # - Key: # String
+      #   #   #   # Value: # String
+      #   #   #   # # IsValueSecret: # Boolean
+      #   #   # # BodyParameters:
+      #   #   #   # - Key: # String
+      #   #   #   # Value: # String
+      #   #   #   # # IsValueSecret: # Boolean
+      #   # InvocationHttpParameters:
+      #   # # HeaderParameters:
+      #   #   # - Key: # String
+      #   #   # Value: # String
+      #   #   # # IsValueSecret: # Boolean
+      #   # # QueryStringParameters:
+      #   #   # - Key: # String
+      #   #   # Value: # String
+      #   #   # # IsValueSecret: # Boolean
+      #   # # BodyParameters:
+      #   #   # - Key: # String
+      #   #   # Value: # String
+      #   #   # # IsValueSecret: # Boolean
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.SecretArn (String)

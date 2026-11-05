@@ -1,0 +1,20 @@
+  RedshiftServerlessWorkgroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshiftserverless-workgroup.html
+    Type: AWS::RedshiftServerless::Workgroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshiftserverless-workgroup.html
+      WorkgroupName: # String
+      # NamespaceName: # String
+      # BaseCapacity: # Integer
+      # EnhancedVpcRouting: # Boolean
+      # ConfigParameters:
+      #   - # ParameterKey: # String
+      #     # ParameterValue: # String
+      # SecurityGroupIds:
+      #   - # String
+      # SubnetIds:
+      #   - # String
+      # PubliclyAccessible: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

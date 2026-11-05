@@ -1,0 +1,17 @@
+  LookoutMetricsAlert:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutmetrics-alert.html
+    Type: AWS::LookoutMetrics::Alert
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutmetrics-alert.html
+      # AlertName: # String
+      # AlertDescription: # String
+      AnomalyDetectorArn: # String
+      AlertSensitivityThreshold: # Integer
+      # Action:
+      #   # SNSConfiguration:
+      #   # RoleArn: # String
+      #   # SnsTopicArn: # String
+      #   # LambdaConfiguration:
+      #   # RoleArn: # String
+      #   # LambdaArn: # String
+    # !GetAtt THIS.Arn (String)

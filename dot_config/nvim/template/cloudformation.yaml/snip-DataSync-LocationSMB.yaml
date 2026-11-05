@@ -1,0 +1,19 @@
+  DataSyncLocationSMB:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationsmb.html
+    Type: AWS::DataSync::LocationSMB
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationsmb.html
+      AgentArns:
+        - # String
+      # Domain: # String
+      # MountOptions:
+      #   # Version: # String
+      Password: # String
+      ServerHostname: # String
+      Subdirectory: # String
+      User: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

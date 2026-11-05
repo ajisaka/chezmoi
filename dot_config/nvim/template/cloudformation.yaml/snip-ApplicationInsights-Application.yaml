@@ -1,0 +1,126 @@
+  ApplicationInsightsApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationinsights-application.html
+    Type: AWS::ApplicationInsights::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationinsights-application.html
+      ResourceGroupName: # String
+      # CWEMonitorEnabled: # Boolean
+      # OpsCenterEnabled: # Boolean
+      # OpsItemSNSTopicArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CustomComponents:
+      #   - ComponentName: # String
+      #     ResourceList:
+      #       - # String
+      # LogPatternSets:
+      #   - PatternSetName: # String
+      #     LogPatterns:
+      #       - PatternName: # String
+      #         Pattern: # String
+      #         Rank: # Integer
+      # AutoConfigurationEnabled: # Boolean
+      # ComponentMonitoringSettings:
+      #   - # ComponentName: # String
+      #     # ComponentARN: # String
+      #     Tier: # String
+      #     ComponentConfigurationMode: # String
+      #     # DefaultOverwriteComponentConfiguration:
+      #     # # ConfigurationDetails:
+      #     #   # # AlarmMetrics:
+      #     #   #   # - AlarmMetricName: # String
+      #     #   # # Logs:
+      #     #   #   # - # LogGroupName: # String
+      #     #   #   # # LogPath: # String
+      #     #   #   # LogType: # String
+      #     #   #   # # Encoding: # String
+      #     #   #   # # PatternSet: # String
+      #     #   # # WindowsEvents:
+      #     #   #   # - LogGroupName: # String
+      #     #   #   # EventName: # String
+      #     #   #   # EventLevels:
+      #     #   #   # - # String
+      #     #   #   # # PatternSet: # String
+      #     #   # # Alarms:
+      #     #   #   # - AlarmName: # String
+      #     #   #   # # Severity: # String
+      #     #   # # JMXPrometheusExporter:
+      #     #   #   # # JMXURL: # String
+      #     #   #   # # HostPort: # String
+      #     #   #   # # PrometheusPort: # String
+      #     #   # # HANAPrometheusExporter:
+      #     #   #   # HANASID: # String
+      #     #   #   # HANAPort: # String
+      #     #   #   # HANASecretName: # String
+      #     #   #   # AgreeToInstallHANADBClient: # Boolean
+      #     #   #   # # PrometheusPort: # String
+      #     #   # # HAClusterPrometheusExporter:
+      #     #   #   # # PrometheusPort: # String
+      #     # # SubComponentTypeConfigurations:
+      #     #   # - SubComponentType: # String
+      #     #   # # SubComponentConfigurationDetails:
+      #     #   #     # # AlarmMetrics:
+      #     #   #     #   # - AlarmMetricName: # String
+      #     #   #     # # Logs:
+      #     #   #     #   # - # LogGroupName: # String
+      #     #   #     #   # # LogPath: # String
+      #     #   #     #   # LogType: # String
+      #     #   #     #   # # Encoding: # String
+      #     #   #     #   # # PatternSet: # String
+      #     #   #     # # WindowsEvents:
+      #     #   #     #   # - LogGroupName: # String
+      #     #   #     #   # EventName: # String
+      #     #   #     #   # EventLevels:
+      #     #   #     #   # - # String
+      #     #   #     #   # # PatternSet: # String
+      #     # CustomComponentConfiguration:
+      #     # # ConfigurationDetails:
+      #     #   # # AlarmMetrics:
+      #     #   #   # - AlarmMetricName: # String
+      #     #   # # Logs:
+      #     #   #   # - # LogGroupName: # String
+      #     #   #   # # LogPath: # String
+      #     #   #   # LogType: # String
+      #     #   #   # # Encoding: # String
+      #     #   #   # # PatternSet: # String
+      #     #   # # WindowsEvents:
+      #     #   #   # - LogGroupName: # String
+      #     #   #   # EventName: # String
+      #     #   #   # EventLevels:
+      #     #   #   # - # String
+      #     #   #   # # PatternSet: # String
+      #     #   # # Alarms:
+      #     #   #   # - AlarmName: # String
+      #     #   #   # # Severity: # String
+      #     #   # # JMXPrometheusExporter:
+      #     #   #   # # JMXURL: # String
+      #     #   #   # # HostPort: # String
+      #     #   #   # # PrometheusPort: # String
+      #     #   # # HANAPrometheusExporter:
+      #     #   #   # HANASID: # String
+      #     #   #   # HANAPort: # String
+      #     #   #   # HANASecretName: # String
+      #     #   #   # AgreeToInstallHANADBClient: # Boolean
+      #     #   #   # # PrometheusPort: # String
+      #     #   # # HAClusterPrometheusExporter:
+      #     #   #   # # PrometheusPort: # String
+      #     # # SubComponentTypeConfigurations:
+      #     #   # - SubComponentType: # String
+      #     #   # # SubComponentConfigurationDetails:
+      #     #   #     # # AlarmMetrics:
+      #     #   #     #   # - AlarmMetricName: # String
+      #     #   #     # # Logs:
+      #     #   #     #   # - # LogGroupName: # String
+      #     #   #     #   # # LogPath: # String
+      #     #   #     #   # LogType: # String
+      #     #   #     #   # # Encoding: # String
+      #     #   #     #   # # PatternSet: # String
+      #     #   #     # # WindowsEvents:
+      #     #   #     #   # - LogGroupName: # String
+      #     #   #     #   # EventName: # String
+      #     #   #     #   # EventLevels:
+      #     #   #     #   # - # String
+      #     #   #     #   # # PatternSet: # String
+      # GroupingType: # String
+    # !GetAtt THIS.ApplicationARN (String)

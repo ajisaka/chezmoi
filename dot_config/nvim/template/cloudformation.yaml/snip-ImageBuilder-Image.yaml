@@ -1,0 +1,19 @@
+  ImageBuilderImage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html
+    Type: AWS::ImageBuilder::Image
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-image.html
+      # ImageTestsConfiguration:
+      #   # ImageTestsEnabled: # Boolean
+      #   # TimeoutMinutes: # Integer
+      # ImageRecipeArn: # String
+      # ContainerRecipeArn: # String
+      # DistributionConfigurationArn: # String
+      InfrastructureConfigurationArn: # String
+      # EnhancedImageMetadataEnabled: # Boolean
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)
+    # !GetAtt THIS.ImageId (String)
+    # !GetAtt THIS.ImageUri (String)

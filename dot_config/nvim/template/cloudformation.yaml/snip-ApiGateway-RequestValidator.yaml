@@ -1,0 +1,10 @@
+  ApiGatewayRequestValidator:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
+    Type: AWS::ApiGateway::RequestValidator
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
+      # Name: # String
+      RestApiId: # String
+      # ValidateRequestBody: # Boolean
+      # ValidateRequestParameters: # Boolean
+    # !GetAtt THIS.RequestValidatorId (String)

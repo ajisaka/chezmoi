@@ -1,0 +1,7 @@
+  XRayResourcePolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-xray-resourcepolicy.html
+    Type: AWS::XRay::ResourcePolicy
+    Properties:
+      PolicyName: # String
+      PolicyDocument: # String
+      # BypassPolicyLockoutCheck: # Boolean

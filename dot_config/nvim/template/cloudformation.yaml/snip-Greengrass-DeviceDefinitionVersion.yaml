@@ -1,0 +1,10 @@
+  GreengrassDeviceDefinitionVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinitionversion.html
+    Type: AWS::Greengrass::DeviceDefinitionVersion
+    Properties:
+      DeviceDefinitionId: # String
+      Devices:
+        - # SyncShadow: # Boolean
+          ThingArn: # String
+          Id: # String
+          CertificateArn: # String

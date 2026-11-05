@@ -1,0 +1,44 @@
+  ImageBuilderContainerRecipe:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-containerrecipe.html
+    Type: AWS::ImageBuilder::ContainerRecipe
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-containerrecipe.html
+      Name: # String
+      # Description: # String
+      Version: # String
+      Components:
+        - # ComponentArn: # String
+          # Parameters:
+          #   - Name: # String
+          #     Value:
+          #       - # String
+      # InstanceConfiguration:
+      #   # Image: # String
+      #   # BlockDeviceMappings:
+      #   # - # DeviceName: # String
+      #   # # VirtualName: # String
+      #   # # NoDevice: # String
+      #   # # Ebs:
+      #   #     # # Encrypted: # Boolean
+      #   #     # # DeleteOnTermination: # Boolean
+      #   #     # # Iops: # Integer
+      #   #     # # KmsKeyId: # String
+      #   #     # # SnapshotId: # String
+      #   #     # # Throughput: # Integer
+      #   #     # # VolumeSize: # Integer
+      #   #     # # VolumeType: # String
+      # DockerfileTemplateData: # String
+      # DockerfileTemplateUri: # String
+      # PlatformOverride: # String
+      ContainerType: # String
+      # ImageOsVersionOverride: # String
+      # TargetRepository:
+      #   # Service: # String
+      #   # RepositoryName: # String
+      # KmsKeyId: # String
+      ParentImage: # String
+      # WorkingDirectory: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

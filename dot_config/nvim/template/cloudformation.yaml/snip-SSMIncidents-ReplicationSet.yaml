@@ -1,0 +1,10 @@
+  SSMIncidentsReplicationSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssmincidents-replicationset.html
+    Type: AWS::SSMIncidents::ReplicationSet
+    Properties:
+      Regions:
+        - # RegionName: # String
+          # RegionConfiguration:
+          #   SseKmsKeyId: # String
+      # DeletionProtected: # Boolean
+    # !GetAtt THIS.Arn (String)

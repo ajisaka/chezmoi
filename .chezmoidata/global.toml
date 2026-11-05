@@ -1,0 +1,43 @@
+[hosts]
+private = ["ildjarn", "pest", "alcest"]
+mobile = ["pest", "alcest"]
+work = []
+
+[scales]
+ildjarn = 2.0
+pest = 1.5
+PC-05360 = 1.0
+alcest = 1.0
+
+[speaker.notification]
+ildjarn = "pulse/alsa_output.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-stereo"
+
+# リガチャ対応フォント - https://claude.ai/chat/98026e20-2adf-4fdd-8ab4-58e9f77219f1
+
+[font.fallback]
+family = 'Noto Sans CJK JP'
+
+[font.main]
+family = "Agave Nerd Font"
+size = 14
+
+[font.emoji]
+family = "Noto Color Emoji"
+size = 14
+
+[font.terminal]
+family = "Agave Nerd Font Mono"
+size = 14
+
+# AlphaNum only: Waybar
+[font.basic]
+family = "Terminess Nerd Font"
+size = 16
+
+[font.editor]
+# https://github.com/equalsraf/neovim-qt/issues/1149
+family = "Agave Nerd Font Mono"
+# family = "Source Code Pro"
+# family = "JetBrainsMono Nerd Font Mono"
+size = 14
+line_space = 4

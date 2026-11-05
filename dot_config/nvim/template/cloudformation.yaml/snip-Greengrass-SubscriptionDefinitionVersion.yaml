@@ -1,0 +1,10 @@
+  GreengrassSubscriptionDefinitionVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinitionversion.html
+    Type: AWS::Greengrass::SubscriptionDefinitionVersion
+    Properties:
+      SubscriptionDefinitionId: # String
+      Subscriptions:
+        - Target: # String
+          Id: # String
+          Source: # String
+          Subject: # String

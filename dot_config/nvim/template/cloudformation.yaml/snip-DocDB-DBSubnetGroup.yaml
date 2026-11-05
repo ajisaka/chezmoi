@@ -1,0 +1,12 @@
+  DocDBDBSubnetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbsubnetgroup.html
+    Type: AWS::DocDB::DBSubnetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbsubnetgroup.html
+      # DBSubnetGroupName: # String
+      DBSubnetGroupDescription: # String
+      SubnetIds:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

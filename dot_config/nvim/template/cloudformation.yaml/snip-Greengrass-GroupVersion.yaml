@@ -1,0 +1,13 @@
+  GreengrassGroupVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html
+    Type: AWS::Greengrass::GroupVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html
+      # LoggerDefinitionVersionArn: # String
+      # DeviceDefinitionVersionArn: # String
+      # FunctionDefinitionVersionArn: # String
+      # CoreDefinitionVersionArn: # String
+      # ResourceDefinitionVersionArn: # String
+      # ConnectorDefinitionVersionArn: # String
+      # SubscriptionDefinitionVersionArn: # String
+      GroupId: # String

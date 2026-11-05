@@ -1,0 +1,29 @@
+  FinSpaceEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-finspace-environment.html
+    Type: AWS::FinSpace::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-finspace-environment.html
+      Name: # String
+      # Description: # String
+      # KmsKeyId: # String
+      # FederationMode: # String
+      # FederationParameters:
+      #   # SamlMetadataURL: # String
+      #   # FederationProviderName: # String
+      #   # SamlMetadataDocument: # String
+      #   # ApplicationCallBackURL: # String
+      #   # FederationURN: # String
+      #   # AttributeMap: # Json
+      # SuperuserParameters:
+      #   # FirstName: # String
+      #   # LastName: # String
+      #   # EmailAddress: # String
+      # DataBundles:
+      #   - # String
+    # !GetAtt THIS.EnvironmentId (String)
+    # !GetAtt THIS.AwsAccountId (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.EnvironmentUrl (String)
+    # !GetAtt THIS.EnvironmentArn (String)
+    # !GetAtt THIS.SageMakerStudioDomainUrl (String)
+    # !GetAtt THIS.DedicatedServiceAccountId (String)

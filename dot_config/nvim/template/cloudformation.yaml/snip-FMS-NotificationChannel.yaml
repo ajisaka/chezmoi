@@ -1,0 +1,6 @@
+  FMSNotificationChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fms-notificationchannel.html
+    Type: AWS::FMS::NotificationChannel
+    Properties:
+      SnsRoleName: # String
+      SnsTopicArn: # String

@@ -1,0 +1,29 @@
+  AppSyncFunctionConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html
+    Type: AWS::AppSync::FunctionConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html
+      # Description: # String
+      # RequestMappingTemplate: # String
+      # ResponseMappingTemplate: # String
+      # MaxBatchSize: # Integer
+      # SyncConfig:
+      #   # ConflictHandler: # String
+      #   ConflictDetection: # String
+      #   # LambdaConflictHandlerConfig:
+      #   # # LambdaConflictHandlerArn: # String
+      # Code: # String
+      Name: # String
+      # ResponseMappingTemplateS3Location: # String
+      # Runtime:
+      #   RuntimeVersion: # String
+      #   Name: # String
+      # CodeS3Location: # String
+      DataSourceName: # String
+      # FunctionVersion: # String
+      # RequestMappingTemplateS3Location: # String
+      ApiId: # String
+    # !GetAtt THIS.FunctionId (String)
+    # !GetAtt THIS.FunctionArn (String)
+    # !GetAtt THIS.DataSourceName (String)
+    # !GetAtt THIS.Name (String)

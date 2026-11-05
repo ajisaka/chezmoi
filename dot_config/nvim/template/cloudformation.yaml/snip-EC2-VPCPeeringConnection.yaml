@@ -1,0 +1,14 @@
+  EC2VPCPeeringConnection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
+    Type: AWS::EC2::VPCPeeringConnection
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
+      # PeerOwnerId: # String
+      # PeerRegion: # String
+      # PeerRoleArn: # String
+      PeerVpcId: # String
+      VpcId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)

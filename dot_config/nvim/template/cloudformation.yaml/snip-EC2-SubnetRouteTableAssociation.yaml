@@ -1,0 +1,7 @@
+  EC2SubnetRouteTableAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetroutetableassociation.html
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: # String
+      SubnetId: # String
+    # !GetAtt THIS.Id (String)

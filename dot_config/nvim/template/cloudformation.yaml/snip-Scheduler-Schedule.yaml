@@ -1,0 +1,67 @@
+  SchedulerSchedule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-scheduler-schedule.html
+    Type: AWS::Scheduler::Schedule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-scheduler-schedule.html
+      # Description: # String
+      # EndDate: # String
+      # FlexibleTimeWindow:
+      #   Mode: # String
+      #   # MaximumWindowInMinutes: # Double
+      # GroupName: # String
+      # KmsKeyArn: # String
+      # Name: # String
+      ScheduleExpression: # String
+      # ScheduleExpressionTimezone: # String
+      # StartDate: # String
+      # State: # String
+      # Target:
+      #   Arn: # String
+      #   RoleArn: # String
+      #   # DeadLetterConfig:
+      #   # # Arn: # String
+      #   # RetryPolicy:
+      #   # # MaximumEventAgeInSeconds: # Double
+      #   # # MaximumRetryAttempts: # Double
+      #   # Input: # String
+      #   # EcsParameters:
+      #   # TaskDefinitionArn: # String
+      #   # # TaskCount: # Double
+      #   # # LaunchType: # String
+      #   # # NetworkConfiguration:
+      #   #   # # AwsvpcConfiguration:
+      #   #   #   # Subnets:
+      #   #   #   # - # String
+      #   #   #   # # SecurityGroups:
+      #   #   #   #   # - # String
+      #   #   #   # # AssignPublicIp: # String
+      #   # # PlatformVersion: # String
+      #   # # Group: # String
+      #   # # CapacityProviderStrategy:
+      #   #   # - CapacityProvider: # String
+      #   #   # # Weight: # Double
+      #   #   # # Base: # Double
+      #   # # EnableECSManagedTags: # Boolean
+      #   # # EnableExecuteCommand: # Boolean
+      #   # # PlacementConstraints:
+      #   #   # - # Type: # String
+      #   #   # # Expression: # String
+      #   # # PlacementStrategy:
+      #   #   # - # Type: # String
+      #   #   # # Field: # String
+      #   # # PropagateTags: # String
+      #   # # ReferenceId: # String
+      #   # # Tags:
+      #   #   # - # Json
+      #   # EventBridgeParameters:
+      #   # DetailType: # String
+      #   # Source: # String
+      #   # KinesisParameters:
+      #   # PartitionKey: # String
+      #   # SageMakerPipelineParameters:
+      #   # # PipelineParameterList:
+      #   #   # - Name: # String
+      #   #   # Value: # String
+      #   # SqsParameters:
+      #   # # MessageGroupId: # String
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,11 @@
+  EC2LocalGatewayRoute:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html
+    Type: AWS::EC2::LocalGatewayRoute
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-localgatewayroute.html
+      DestinationCidrBlock: # String
+      LocalGatewayRouteTableId: # String
+      # LocalGatewayVirtualInterfaceGroupId: # String
+      # NetworkInterfaceId: # String
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.Type (String)

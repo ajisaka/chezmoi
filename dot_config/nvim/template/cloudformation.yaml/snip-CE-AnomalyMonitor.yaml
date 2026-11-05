@@ -1,0 +1,17 @@
+  CEAnomalyMonitor:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-anomalymonitor.html
+    Type: AWS::CE::AnomalyMonitor
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ce-anomalymonitor.html
+      MonitorType: # String
+      MonitorName: # String
+      # MonitorDimension: # String
+      # MonitorSpecification: # String
+      # ResourceTags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.MonitorArn (String)
+    # !GetAtt THIS.CreationDate (String)
+    # !GetAtt THIS.LastEvaluatedDate (String)
+    # !GetAtt THIS.LastUpdatedDate (String)
+    # !GetAtt THIS.DimensionalValueCount (Integer)

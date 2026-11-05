@@ -1,0 +1,36 @@
+  ApplicationAutoScalingScalingPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html
+    Type: AWS::ApplicationAutoScaling::ScalingPolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html
+      PolicyName: # String
+      PolicyType: # String
+      # ResourceId: # String
+      # ScalableDimension: # String
+      # ScalingTargetId: # String
+      # ServiceNamespace: # String
+      # StepScalingPolicyConfiguration:
+      #   # AdjustmentType: # String
+      #   # Cooldown: # Integer
+      #   # MetricAggregationType: # String
+      #   # MinAdjustmentMagnitude: # Integer
+      #   # StepAdjustments:
+      #   # - # MetricIntervalLowerBound: # Double
+      #   # # MetricIntervalUpperBound: # Double
+      #   # ScalingAdjustment: # Integer
+      # TargetTrackingScalingPolicyConfiguration:
+      #   # CustomizedMetricSpecification:
+      #   # # Dimensions:
+      #   #   # - Name: # String
+      #   #   # Value: # String
+      #   # MetricName: # String
+      #   # Namespace: # String
+      #   # Statistic: # String
+      #   # # Unit: # String
+      #   # DisableScaleIn: # Boolean
+      #   # PredefinedMetricSpecification:
+      #   # PredefinedMetricType: # String
+      #   # # ResourceLabel: # String
+      #   # ScaleInCooldown: # Integer
+      #   # ScaleOutCooldown: # Integer
+      #   TargetValue: # Double

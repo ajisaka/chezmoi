@@ -1,0 +1,15 @@
+  APSWorkspace:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-workspace.html
+    Type: AWS::APS::Workspace
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-workspace.html
+      # Alias: # String
+      # AlertManagerDefinition: # String
+      # LoggingConfiguration:
+      #   # LogGroupArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.WorkspaceId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.PrometheusEndpoint (String)

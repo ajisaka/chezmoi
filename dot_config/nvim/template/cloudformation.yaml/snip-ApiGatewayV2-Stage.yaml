@@ -1,0 +1,24 @@
+  ApiGatewayV2Stage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html
+    Type: AWS::ApiGatewayV2::Stage
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html
+      # ClientCertificateId: # String
+      # DeploymentId: # String
+      # Description: # String
+      # AccessLogSettings:
+      #   # Format: # String
+      #   # DestinationArn: # String
+      # AutoDeploy: # Boolean
+      # RouteSettings: # Json
+      StageName: # String
+      # StageVariables: # Json
+      # AccessPolicyId: # String
+      ApiId: # String
+      # DefaultRouteSettings:
+      #   # LoggingLevel: # String
+      #   # DataTraceEnabled: # Boolean
+      #   # ThrottlingBurstLimit: # Integer
+      #   # DetailedMetricsEnabled: # Boolean
+      #   # ThrottlingRateLimit: # Double
+      # Tags: # Json

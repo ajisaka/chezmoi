@@ -1,0 +1,23 @@
+  EFSFileSystem:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
+    Type: AWS::EFS::FileSystem
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
+      # Encrypted: # Boolean
+      # FileSystemTags:
+      #   - Key: # String
+      #     Value: # String
+      # KmsKeyId: # String
+      # LifecyclePolicies:
+      #   - # TransitionToIA: # String
+      #     # TransitionToPrimaryStorageClass: # String
+      # PerformanceMode: # String
+      # ProvisionedThroughputInMibps: # Double
+      # ThroughputMode: # String
+      # FileSystemPolicy: # Json
+      # BypassPolicyLockoutSafetyCheck: # Boolean
+      # BackupPolicy:
+      #   Status: # String
+      # AvailabilityZoneName: # String
+    # !GetAtt THIS.FileSystemId (String)
+    # !GetAtt THIS.Arn (String)

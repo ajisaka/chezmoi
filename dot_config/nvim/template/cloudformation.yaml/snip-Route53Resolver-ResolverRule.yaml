@@ -1,0 +1,21 @@
+  Route53ResolverResolverRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html
+    Type: AWS::Route53Resolver::ResolverRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html
+      # ResolverEndpointId: # String
+      DomainName: # String
+      # Name: # String
+      RuleType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TargetIps:
+      #   - Ip: # String
+      #     # Port: # String
+    # !GetAtt THIS.ResolverEndpointId (String)
+    # !GetAtt THIS.DomainName (String)
+    # !GetAtt THIS.Name (String)
+    # !GetAtt THIS.TargetIps (List)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ResolverRuleId (String)

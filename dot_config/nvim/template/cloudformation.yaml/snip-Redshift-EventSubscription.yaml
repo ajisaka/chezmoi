@@ -1,0 +1,23 @@
+  RedshiftEventSubscription:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-eventsubscription.html
+    Type: AWS::Redshift::EventSubscription
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-eventsubscription.html
+      SubscriptionName: # String
+      # SnsTopicArn: # String
+      # SourceType: # String
+      # SourceIds:
+      #   - # String
+      # EventCategories:
+      #   - # String
+      # Severity: # String
+      # Enabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CustomerAwsId (String)
+    # !GetAtt THIS.CustSubscriptionId (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.SubscriptionCreationTime (String)
+    # !GetAtt THIS.SourceIdsList (List)
+    # !GetAtt THIS.EventCategoriesList (List)

@@ -1,0 +1,12 @@
+  EvidentlySegment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-segment.html
+    Type: AWS::Evidently::Segment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-segment.html
+      Name: # String
+      # Description: # String
+      # Pattern: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

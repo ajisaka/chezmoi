@@ -1,0 +1,31 @@
+  BackupBackupPlan:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupplan.html
+    Type: AWS::Backup::BackupPlan
+    Properties:
+      # BackupPlan:
+      #   BackupPlanName: # String
+      #   # AdvancedBackupSettings:
+      #   # - BackupOptions: # Json
+      #   # ResourceType: # String
+      #   BackupPlanRule:
+      #     - RuleName: # String
+      #       TargetBackupVault: # String
+      #       # StartWindowMinutes: # Double
+      #       # CompletionWindowMinutes: # Double
+      #       # ScheduleExpression: # String
+      #       # RecoveryPointTags:
+      #       # ANY_KEY: # String
+      #       # CopyActions:
+      #       # - # Lifecycle:
+      #       #     # # MoveToColdStorageAfterDays: # Double
+      #       #     # # DeleteAfterDays: # Double
+      #       # DestinationBackupVaultArn: # String
+      #       # Lifecycle:
+      #       # # MoveToColdStorageAfterDays: # Double
+      #       # # DeleteAfterDays: # Double
+      #       # EnableContinuousBackup: # Boolean
+      # BackupPlanTags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.BackupPlanArn (String)
+    # !GetAtt THIS.BackupPlanId (String)
+    # !GetAtt THIS.VersionId (String)

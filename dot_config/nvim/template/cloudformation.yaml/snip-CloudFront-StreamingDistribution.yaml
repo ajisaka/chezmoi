@@ -1,0 +1,25 @@
+  CloudFrontStreamingDistribution:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html
+    Type: AWS::CloudFront::StreamingDistribution
+    Properties:
+      # StreamingDistributionConfig:
+      #   # Logging:
+      #   # Bucket: # String
+      #   # Enabled: # Boolean
+      #   # Prefix: # String
+      #   Comment: # String
+      #   # PriceClass: # String
+      #   # S3Origin:
+      #   # DomainName: # String
+      #   # OriginAccessIdentity: # String
+      #   Enabled: # Boolean
+      #   # Aliases:
+      #   # - # String
+      #   # TrustedSigners:
+      #   # Enabled: # Boolean
+      #   # # AwsAccountNumbers:
+      #   #   # - # String
+      Tags:
+        - Key: # String
+          Value: # String
+    # !GetAtt THIS.DomainName (String)

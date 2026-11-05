@@ -1,0 +1,14 @@
+  BatchSchedulingPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-schedulingpolicy.html
+    Type: AWS::Batch::SchedulingPolicy
+    Properties:
+      # Name: # String
+      # FairsharePolicy:
+      #   # ShareDecaySeconds: # Double
+      #   # ComputeReservation: # Double
+      #   # ShareDistribution:
+      #   # - # ShareIdentifier: # String
+      #   # # WeightFactor: # Double
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)

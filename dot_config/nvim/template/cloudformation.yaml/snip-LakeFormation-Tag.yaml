@@ -1,0 +1,8 @@
+  LakeFormationTag:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-tag.html
+    Type: AWS::LakeFormation::Tag
+    Properties:
+      # CatalogId: # String
+      TagKey: # String
+      TagValues:
+        - # String

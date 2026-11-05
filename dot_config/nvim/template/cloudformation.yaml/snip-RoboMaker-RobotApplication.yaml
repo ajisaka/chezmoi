@@ -1,0 +1,19 @@
+  RoboMakerRobotApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html
+    Type: AWS::RoboMaker::RobotApplication
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html
+      # Name: # String
+      # Sources:
+      #   - S3Bucket: # String
+      #     S3Key: # String
+      #     Architecture: # String
+      # Environment: # String
+      # RobotSoftwareSuite:
+      #   Name: # String
+      #   # Version: # String
+      # CurrentRevisionId: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.CurrentRevisionId (String)
+    # !GetAtt THIS.Arn (String)

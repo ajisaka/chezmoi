@@ -1,0 +1,104 @@
+  PinpointSegment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html
+    Type: AWS::Pinpoint::Segment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-segment.html
+      # SegmentGroups:
+      #   # Groups:
+      #   # - # Type: # String
+      #   # # SourceType: # String
+      #   # # Dimensions:
+      #   #     # - # Demographic:
+      #   #     #     # # AppVersion:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     #     # # DeviceType:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     #     # # Platform:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     #     # # Channel:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     #     # # Model:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     #     # # Make:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   #     # # Metrics: # Json
+      #   #     # # Attributes: # Json
+      #   #     # # Behavior:
+      #   #     #     # # Recency:
+      #   #     #     #   # Duration: # String
+      #   #     #     #   # RecencyType: # String
+      #   #     # # UserAttributes: # Json
+      #   #     # # Location:
+      #   #     #     # # GPSPoint:
+      #   #     #     #   # RangeInKilometers: # Double
+      #   #     #     #   # # Coordinates:
+      #   #     #     #   #   # Latitude: # Double
+      #   #     #     #   #   # Longitude: # Double
+      #   #     #     # # Country:
+      #   #     #     #   # # DimensionType: # String
+      #   #     #     #   # # Values:
+      #   #     #     #   #   # - # String
+      #   # # SourceSegments:
+      #   #     # - # Version: # Integer
+      #   #     # Id: # String
+      #   # Include: # String
+      # Dimensions:
+      #   # Demographic:
+      #   # # AppVersion:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # # DeviceType:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # # Platform:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # # Channel:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # # Model:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # # Make:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      #   # Metrics: # Json
+      #   # Attributes: # Json
+      #   # Behavior:
+      #   # # Recency:
+      #   #   # Duration: # String
+      #   #   # RecencyType: # String
+      #   # UserAttributes: # Json
+      #   # Location:
+      #   # # GPSPoint:
+      #   #   # RangeInKilometers: # Double
+      #   #   # # Coordinates:
+      #   #   #   # Latitude: # Double
+      #   #   #   # Longitude: # Double
+      #   # # Country:
+      #   #   # # DimensionType: # String
+      #   #   # # Values:
+      #   #   #   # - # String
+      ApplicationId: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.SegmentId (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,11 @@
+  PinpointEmailChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailchannel.html
+    Type: AWS::Pinpoint::EmailChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-emailchannel.html
+      # ConfigurationSet: # String
+      FromAddress: # String
+      # Enabled: # Boolean
+      ApplicationId: # String
+      Identity: # String
+      # RoleArn: # String

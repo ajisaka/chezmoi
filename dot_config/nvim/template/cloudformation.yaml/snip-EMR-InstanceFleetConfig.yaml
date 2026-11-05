@@ -1,0 +1,37 @@
+  EMRInstanceFleetConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
+    Type: AWS::EMR::InstanceFleetConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
+      ClusterId: # String
+      InstanceFleetType: # String
+      # InstanceTypeConfigs:
+      #   - # BidPrice: # String
+      #     # BidPriceAsPercentageOfOnDemandPrice: # Double
+      #     # Configurations:
+      #     # - # Classification: # String
+      #     # # ConfigurationProperties:
+      #     #     # ANY_KEY: # String
+      #     # # Configurations: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-configuration.html#cfn-elasticmapreduce-instancefleetconfig-configuration-configurations', 'DuplicatesAllowed': False, 'ItemType': 'Configuration', 'Required': False, 'Type': 'List', 'UpdateType': 'Immutable'}
+      #     # CustomAmiId: # String
+      #     # EbsConfiguration:
+      #     # # EbsBlockDeviceConfigs:
+      #     #   # - # VolumeSpecification:
+      #     #   #     # # Iops: # Integer
+      #     #   #     # SizeInGB: # Integer
+      #     #   #     # VolumeType: # String
+      #     #   # # VolumesPerInstance: # Integer
+      #     # # EbsOptimized: # Boolean
+      #     InstanceType: # String
+      #     # WeightedCapacity: # Integer
+      # LaunchSpecifications:
+      #   # OnDemandSpecification:
+      #   # AllocationStrategy: # String
+      #   # SpotSpecification:
+      #   # # AllocationStrategy: # String
+      #   # # BlockDurationMinutes: # Integer
+      #   # TimeoutAction: # String
+      #   # TimeoutDurationMinutes: # Integer
+      # Name: # String
+      # TargetOnDemandCapacity: # Integer
+      # TargetSpotCapacity: # Integer

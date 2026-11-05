@@ -1,0 +1,7 @@
+  PinpointEventStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-eventstream.html
+    Type: AWS::Pinpoint::EventStream
+    Properties:
+      ApplicationId: # String
+      DestinationStreamArn: # String
+      RoleArn: # String

@@ -1,0 +1,79 @@
+  AmplifyUIBuilderForm:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-form.html
+    Type: AWS::AmplifyUIBuilder::Form
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-form.html
+      # AppId: # String
+      # Cta:
+      #   # Position: # String
+      #   # Clear:
+      #   # # Excluded: # Boolean
+      #   # # Children: # String
+      #   # # Position:
+      #   #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formbutton.html#cfn-amplifyuibuilder-form-formbutton-position
+      #   # Cancel:
+      #   # # Excluded: # Boolean
+      #   # # Children: # String
+      #   # # Position:
+      #   #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formbutton.html#cfn-amplifyuibuilder-form-formbutton-position
+      #   # Submit:
+      #   # # Excluded: # Boolean
+      #   # # Children: # String
+      #   # # Position:
+      #   #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formbutton.html#cfn-amplifyuibuilder-form-formbutton-position
+      # DataType:
+      #   DataSourceType: # String
+      #   DataTypeName: # String
+      # EnvironmentName: # String
+      Fields:
+        ANY_KEY: # Label: # String
+          # Position:
+          #   # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-fieldconfig.html#cfn-amplifyuibuilder-form-fieldconfig-position
+          # Excluded: # Boolean
+          # InputType:
+          #   Type: # String
+          #   # Required: # Boolean
+          #   # ReadOnly: # Boolean
+          #   # Placeholder: # String
+          #   # DefaultValue: # String
+          #   # DescriptiveText: # String
+          #   # DefaultChecked: # Boolean
+          #   # DefaultCountryCode: # String
+          #   # ValueMappings:
+          #   # Values:
+          #   # - # DisplayValue:
+          #   #       # # Value: # String
+          #   # # Value:
+          #   #       # # Value: # String
+          #   # Name: # String
+          #   # MinValue: # Double
+          #   # MaxValue: # Double
+          #   # Step: # Double
+          #   # Value: # String
+          # Validations:
+          #   - Type: # String
+          #     # StrValues:
+          #     # - # String
+          #     # NumValues:
+          #     # - # Double
+          #     # ValidationMessage: # String
+      FormActionType: # String
+      Name: # String
+      SchemaVersion: # String
+      SectionalElements:
+        ANY_KEY: Type: # String
+          # Position:
+          #   # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-sectionalelement.html#cfn-amplifyuibuilder-form-sectionalelement-position
+          # Text: # String
+          # Level: # Double
+          # Orientation: # String
+      # Style:
+      #   # HorizontalGap:
+      #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formstyle.html#cfn-amplifyuibuilder-form-formstyle-horizontalgap
+      #   # VerticalGap:
+      #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formstyle.html#cfn-amplifyuibuilder-form-formstyle-verticalgap
+      #   # OuterPadding:
+      #   # # ref: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-form-formstyle.html#cfn-amplifyuibuilder-form-formstyle-outerpadding
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Id (String)

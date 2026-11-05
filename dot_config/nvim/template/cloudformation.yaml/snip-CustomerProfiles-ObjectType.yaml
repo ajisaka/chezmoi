@@ -1,0 +1,30 @@
+  CustomerProfilesObjectType:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-objecttype.html
+    Type: AWS::CustomerProfiles::ObjectType
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-objecttype.html
+      DomainName: # String
+      # ObjectTypeName: # String
+      # AllowProfileCreation: # Boolean
+      # Description: # String
+      # EncryptionKey: # String
+      # ExpirationDays: # Integer
+      # Fields:
+      #   - # Name: # String
+      #     # ObjectTypeField:
+      #     # # Source: # String
+      #     # # Target: # String
+      #     # # ContentType: # String
+      # Keys:
+      #   - # Name: # String
+      #     # ObjectTypeKeyList:
+      #     # - # FieldNames:
+      #     #     # - # String
+      #     # # StandardIdentifiers:
+      #     #     # - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TemplateId: # String
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.LastUpdatedAt (String)

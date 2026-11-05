@@ -1,0 +1,36 @@
+  KinesisAnalyticsApplication:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html
+    Type: AWS::KinesisAnalytics::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html
+      # ApplicationName: # String
+      Inputs:
+        - NamePrefix: # String
+          # InputSchema:
+          #   # RecordEncoding: # String
+          #   RecordColumns:
+          #     - # Mapping: # String
+          #       SqlType: # String
+          #       Name: # String
+          #   # RecordFormat:
+          #   # # MappingParameters:
+          #   #   # # JSONMappingParameters:
+          #   #   #   # RecordRowPath: # String
+          #   #   # # CSVMappingParameters:
+          #   #   #   # RecordRowDelimiter: # String
+          #   #   #   # RecordColumnDelimiter: # String
+          #   # RecordFormatType: # String
+          # KinesisStreamsInput:
+          #   ResourceARN: # String
+          #   RoleARN: # String
+          # KinesisFirehoseInput:
+          #   ResourceARN: # String
+          #   RoleARN: # String
+          # InputProcessingConfiguration:
+          #   # InputLambdaProcessor:
+          #   # ResourceARN: # String
+          #   # RoleARN: # String
+          # InputParallelism:
+          #   # Count: # Integer
+      # ApplicationDescription: # String
+      # ApplicationCode: # String

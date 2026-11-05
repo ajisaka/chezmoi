@@ -1,0 +1,25 @@
+  DAXCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html
+    Type: AWS::DAX::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html
+      # SSESpecification:
+      #   # SSEEnabled: # Boolean
+      # Description: # String
+      ReplicationFactor: # Integer
+      # ParameterGroupName: # String
+      # AvailabilityZones:
+      #   - # String
+      IAMRoleARN: # String
+      # SubnetGroupName: # String
+      # PreferredMaintenanceWindow: # String
+      # ClusterEndpointEncryptionType: # String
+      # NotificationTopicARN: # String
+      # SecurityGroupIds:
+      #   - # String
+      NodeType: # String
+      # ClusterName: # String
+      # Tags: # Json
+    # !GetAtt THIS.ClusterDiscoveryEndpointURL (String)
+    # !GetAtt THIS.ClusterDiscoveryEndpoint (String)
+    # !GetAtt THIS.Arn (String)

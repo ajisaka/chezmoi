@@ -1,0 +1,43 @@
+  LightsailDistribution:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-distribution.html
+    Type: AWS::Lightsail::Distribution
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-distribution.html
+      DistributionName: # String
+      BundleId: # String
+      # IpAddressType: # String
+      # CacheBehaviors:
+      #   - # Behavior: # String
+      #     # Path: # String
+      # CacheBehaviorSettings:
+      #   # AllowedHTTPMethods: # String
+      #   # CachedHTTPMethods: # String
+      #   # DefaultTTL: # Integer
+      #   # MaximumTTL: # Integer
+      #   # MinimumTTL: # Integer
+      #   # ForwardedCookies:
+      #   # # CookiesAllowList:
+      #   #   # - # String
+      #   # # Option: # String
+      #   # ForwardedHeaders:
+      #   # # HeadersAllowList:
+      #   #   # - # String
+      #   # # Option: # String
+      #   # ForwardedQueryStrings:
+      #   # # QueryStringsAllowList:
+      #   #   # - # String
+      #   # # Option: # Boolean
+      # DefaultCacheBehavior:
+      #   # Behavior: # String
+      # Origin:
+      #   # Name: # String
+      #   # ProtocolPolicy: # String
+      #   # RegionName: # String
+      # IsEnabled: # Boolean
+      # CertificateName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DistributionArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.AbleToUpdateBundle (Boolean)

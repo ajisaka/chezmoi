@@ -1,0 +1,11 @@
+  AppConfigHostedConfigurationVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-hostedconfigurationversion.html
+    Type: AWS::AppConfig::HostedConfigurationVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-hostedconfigurationversion.html
+      ConfigurationProfileId: # String
+      # Description: # String
+      ContentType: # String
+      # LatestVersionNumber: # Double
+      Content: # String
+      ApplicationId: # String

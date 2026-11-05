@@ -1,0 +1,20 @@
+  LightsailAlarm:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-alarm.html
+    Type: AWS::Lightsail::Alarm
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-alarm.html
+      AlarmName: # String
+      MonitoredResourceName: # String
+      MetricName: # String
+      ComparisonOperator: # String
+      # ContactProtocols:
+      #   - # String
+      # DatapointsToAlarm: # Integer
+      EvaluationPeriods: # Integer
+      # NotificationEnabled: # Boolean
+      # NotificationTriggers:
+      #   - # String
+      Threshold: # Double
+      # TreatMissingData: # String
+    # !GetAtt THIS.AlarmArn (String)
+    # !GetAtt THIS.State (String)

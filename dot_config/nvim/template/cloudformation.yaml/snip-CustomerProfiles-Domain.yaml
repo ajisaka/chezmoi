@@ -1,0 +1,14 @@
+  CustomerProfilesDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-domain.html
+    Type: AWS::CustomerProfiles::Domain
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-domain.html
+      DomainName: # String
+      # DeadLetterQueueUrl: # String
+      # DefaultEncryptionKey: # String
+      # DefaultExpirationDays: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.LastUpdatedAt (String)

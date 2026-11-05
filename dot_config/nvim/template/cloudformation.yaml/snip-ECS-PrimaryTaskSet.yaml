@@ -1,0 +1,7 @@
+  ECSPrimaryTaskSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-primarytaskset.html
+    Type: AWS::ECS::PrimaryTaskSet
+    Properties:
+      Cluster: # String
+      TaskSetId: # String
+      Service: # String

@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+DEFAULT_TTL=2h
+
+if [ "$#" -eq 0 ]
+then
+  exec 1>&2
+  echo "
+Usage: caching [-t <TTL>] <COMMAND>...
+       CACHING_TTL=<TTL> caching <COMMAND>...
+       caching -d <COMMAND>...
+
+OPTIONS
+  -t      TTL (Default: $DEFAULT_TTL)
+  -d      Delete the cache
+  -c      If the command has been cached, this command succeeds
+" | tail -n +2 >&2
+
+  exit 1
+fi
+
+ttl="${CACHING_TTL:-$DEFAULT_TTL}"
+delete=0
+check=0
+
+while getopts 'cdt:' OPTION
+do
+  case "$OPTION" in
+    t) ttl="$OPTARG" ;;
+    d) delete=1 ;;
+    c) check=1 ;;
+    *)
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+
+if [ "$check" -eq 1 ]
+then
+  exec hugo cached-command has "$*"
+fi
+
+if [ "$delete" -eq 1 ]
+then
+  hugo cached-command unset "$*" ||:
+fi
+
+if ! hugo cached-command get "$*"
+then
+  result="$("$@")"
+  hugo cached-command set --stdin --ttl "$ttl" "$*" < <(echo -n "$result")
+  echo "$result"
+fi

@@ -1,0 +1,14 @@
+  LocationGeofenceCollection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-geofencecollection.html
+    Type: AWS::Location::GeofenceCollection
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-geofencecollection.html
+      CollectionName: # String
+      # Description: # String
+      # KmsKeyId: # String
+      # PricingPlan: # String
+      # PricingPlanDataSource: # String
+    # !GetAtt THIS.CollectionArn (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreateTime (String)
+    # !GetAtt THIS.UpdateTime (String)

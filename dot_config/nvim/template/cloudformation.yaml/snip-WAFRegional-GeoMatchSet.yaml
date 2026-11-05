@@ -1,0 +1,8 @@
+  WAFRegionalGeoMatchSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-geomatchset.html
+    Type: AWS::WAFRegional::GeoMatchSet
+    Properties:
+      # GeoMatchConstraints:
+      #   - Type: # String
+      #     Value: # String
+      Name: # String

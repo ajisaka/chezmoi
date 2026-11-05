@@ -1,0 +1,131 @@
+  AutoScalingAutoScalingGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
+      # AutoScalingGroupName: # String
+      # AvailabilityZones:
+      #   - # String
+      # CapacityRebalance: # Boolean
+      # Context: # String
+      # Cooldown: # String
+      # DefaultInstanceWarmup: # Integer
+      # DesiredCapacity: # String
+      # DesiredCapacityType: # String
+      # HealthCheckGracePeriod: # Integer
+      # HealthCheckType: # String
+      # InstanceId: # String
+      # LaunchConfigurationName: # String
+      # LaunchTemplate:
+      #   # LaunchTemplateId: # String
+      #   # LaunchTemplateName: # String
+      #   Version: # String
+      # LifecycleHookSpecificationList:
+      #   - # DefaultResult: # String
+      #     # HeartbeatTimeout: # Integer
+      #     LifecycleHookName: # String
+      #     LifecycleTransition: # String
+      #     # NotificationMetadata: # String
+      #     # NotificationTargetARN: # String
+      #     # RoleARN: # String
+      # LoadBalancerNames:
+      #   - # String
+      # MaxInstanceLifetime: # Integer
+      MaxSize: # String
+      # MetricsCollection:
+      #   - Granularity: # String
+      #     # Metrics:
+      #     # - # String
+      MinSize: # String
+      # MixedInstancesPolicy:
+      #   # InstancesDistribution:
+      #   # # OnDemandAllocationStrategy: # String
+      #   # # OnDemandBaseCapacity: # Integer
+      #   # # OnDemandPercentageAboveBaseCapacity: # Integer
+      #   # # SpotAllocationStrategy: # String
+      #   # # SpotInstancePools: # Integer
+      #   # # SpotMaxPrice: # String
+      #   # LaunchTemplate:
+      #   # # LaunchTemplateSpecification:
+      #   #   # # LaunchTemplateId: # String
+      #   #   # # LaunchTemplateName: # String
+      #   #   # Version: # String
+      #   # # Overrides:
+      #   #   # - # InstanceRequirements:
+      #   #   #     # # AcceleratorCount:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # AcceleratorManufacturers:
+      #   #   #     #   # - # String
+      #   #   #     # # AcceleratorNames:
+      #   #   #     #   # - # String
+      #   #   #     # # AcceleratorTotalMemoryMiB:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # AcceleratorTypes:
+      #   #   #     #   # - # String
+      #   #   #     # # AllowedInstanceTypes:
+      #   #   #     #   # - # String
+      #   #   #     # # BareMetal: # String
+      #   #   #     # # BaselineEbsBandwidthMbps:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # BurstablePerformance: # String
+      #   #   #     # # CpuManufacturers:
+      #   #   #     #   # - # String
+      #   #   #     # # ExcludedInstanceTypes:
+      #   #   #     #   # - # String
+      #   #   #     # # InstanceGenerations:
+      #   #   #     #   # - # String
+      #   #   #     # # LocalStorage: # String
+      #   #   #     # # LocalStorageTypes:
+      #   #   #     #   # - # String
+      #   #   #     # # MemoryGiBPerVCpu:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # MemoryMiB:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # NetworkBandwidthGbps:
+      #   #   #     #   # # Max: # Double
+      #   #   #     #   # # Min: # Double
+      #   #   #     # # NetworkInterfaceCount:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # OnDemandMaxPricePercentageOverLowestPrice: # Integer
+      #   #   #     # # RequireHibernateSupport: # Boolean
+      #   #   #     # # SpotMaxPricePercentageOverLowestPrice: # Integer
+      #   #   #     # # TotalLocalStorageGB:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   #     # # VCpuCount:
+      #   #   #     #   # # Max: # Integer
+      #   #   #     #   # # Min: # Integer
+      #   #   # # InstanceType: # String
+      #   #   # # LaunchTemplateSpecification:
+      #   #   #     # # LaunchTemplateId: # String
+      #   #   #     # # LaunchTemplateName: # String
+      #   #   #     # Version: # String
+      #   #   # # WeightedCapacity: # String
+      # NewInstancesProtectedFromScaleIn: # Boolean
+      # NotificationConfigurations:
+      #   - # NotificationTypes:
+      #     # - # String
+      #     TopicARN: # String
+      # PlacementGroup: # String
+      # ServiceLinkedRoleARN: # String
+      # Tags:
+      #   - Key: # String
+      #     PropagateAtLaunch: # Boolean
+      #     Value: # String
+      # TargetGroupARNs:
+      #   - # String
+      # TerminationPolicies:
+      #   - # String
+      # VPCZoneIdentifier:
+      #   - # String
+    # !GetAtt THIS.LaunchConfigurationName (String)
+    # !GetAtt THIS.LaunchTemplateSpecification (String)
+    # !GetAtt THIS.MixedInstancesPolicy (String)
+    # !GetAtt THIS.PlacementGroup (String)
+    # !GetAtt THIS.VPCZoneIdentifier (String)

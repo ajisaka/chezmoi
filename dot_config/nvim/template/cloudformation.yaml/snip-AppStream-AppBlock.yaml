@@ -1,0 +1,23 @@
+  AppStreamAppBlock:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-appblock.html
+    Type: AWS::AppStream::AppBlock
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-appblock.html
+      Name: # String
+      # Description: # String
+      # DisplayName: # String
+      # SourceS3Location:
+      #   S3Bucket: # String
+      #   S3Key: # String
+      # SetupScriptDetails:
+      #   # ScriptS3Location:
+      #   # S3Bucket: # String
+      #   # S3Key: # String
+      #   ExecutablePath: # String
+      #   # ExecutableParameters: # String
+      #   TimeoutInSeconds: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)

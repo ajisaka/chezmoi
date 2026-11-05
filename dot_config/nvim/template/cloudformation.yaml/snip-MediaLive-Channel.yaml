@@ -1,0 +1,765 @@
+  MediaLiveChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html
+    Type: AWS::MediaLive::Channel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-channel.html
+      # InputAttachments:
+      #   - # InputAttachmentName: # String
+      #     # InputId: # String
+      #     # AutomaticInputFailoverSettings:
+      #     # # FailoverConditions:
+      #     #   # - # FailoverConditionSettings:
+      #     #   #     # # AudioSilenceSettings:
+      #     #   #     #   # # AudioSelectorName: # String
+      #     #   #     #   # # AudioSilenceThresholdMsec: # Integer
+      #     #   #     # # VideoBlackSettings:
+      #     #   #     #   # # VideoBlackThresholdMsec: # Integer
+      #     #   #     #   # # BlackDetectThreshold: # Double
+      #     #   #     # # InputLossSettings:
+      #     #   #     #   # # InputLossThresholdMsec: # Integer
+      #     # # InputPreference: # String
+      #     # # SecondaryInputId: # String
+      #     # # ErrorClearTimeMsec: # Integer
+      #     # InputSettings:
+      #     # # Scte35Pid: # Integer
+      #     # # DeblockFilter: # String
+      #     # # FilterStrength: # Integer
+      #     # # InputFilter: # String
+      #     # # SourceEndBehavior: # String
+      #     # # VideoSelector:
+      #     #   # # ColorSpaceSettings:
+      #     #   #   # # Hdr10Settings:
+      #     #   #   #   # # MaxCll: # Integer
+      #     #   #   #   # # MaxFall: # Integer
+      #     #   # # SelectorSettings:
+      #     #   #   # # VideoSelectorProgramId:
+      #     #   #   #   # # ProgramId: # Integer
+      #     #   #   # # VideoSelectorPid:
+      #     #   #   #   # # Pid: # Integer
+      #     #   # # ColorSpace: # String
+      #     #   # # ColorSpaceUsage: # String
+      #     # # Smpte2038DataPreference: # String
+      #     # # AudioSelectors:
+      #     #   # - # SelectorSettings:
+      #     #   #     # # AudioPidSelection:
+      #     #   #     #   # # Pid: # Integer
+      #     #   #     # # AudioLanguageSelection:
+      #     #   #     #   # # LanguageCode: # String
+      #     #   #     #   # # LanguageSelectionPolicy: # String
+      #     #   #     # # AudioTrackSelection:
+      #     #   #     #   # # Tracks:
+      #     #   #     #   #   # - # Track: # Integer
+      #     #   #     # # AudioHlsRenditionSelection:
+      #     #   #     #   # # GroupId: # String
+      #     #   #     #   # # Name: # String
+      #     #   # # Name: # String
+      #     # # CaptionSelectors:
+      #     #   # - # LanguageCode: # String
+      #     #   # # SelectorSettings:
+      #     #   #     # # DvbSubSourceSettings:
+      #     #   #     #   # # OcrLanguage: # String
+      #     #   #     #   # # Pid: # Integer
+      #     #   #     # # Scte27SourceSettings:
+      #     #   #     #   # # OcrLanguage: # String
+      #     #   #     #   # # Pid: # Integer
+      #     #   #     # # AribSourceSettings:
+      #     #   #     # # EmbeddedSourceSettings:
+      #     #   #     #   # # Source608ChannelNumber: # Integer
+      #     #   #     #   # # Scte20Detection: # String
+      #     #   #     #   # # Source608TrackNumber: # Integer
+      #     #   #     #   # # Convert608To708: # String
+      #     #   #     # # Scte20SourceSettings:
+      #     #   #     #   # # Source608ChannelNumber: # Integer
+      #     #   #     #   # # Convert608To708: # String
+      #     #   #     # # TeletextSourceSettings:
+      #     #   #     #   # # OutputRectangle:
+      #     #   #     #   #   # # TopOffset: # Double
+      #     #   #     #   #   # # Height: # Double
+      #     #   #     #   #   # # Width: # Double
+      #     #   #     #   #   # # LeftOffset: # Double
+      #     #   #     #   # # PageNumber: # String
+      #     #   #     # # AncillarySourceSettings:
+      #     #   #     #   # # SourceAncillaryChannelNumber: # Integer
+      #     #   # # Name: # String
+      #     # # DenoiseFilter: # String
+      #     # # NetworkInputSettings:
+      #     #   # # ServerValidation: # String
+      #     #   # # HlsInputSettings:
+      #     #   #   # # Scte35Source: # String
+      #     #   #   # # BufferSegments: # Integer
+      #     #   #   # # Retries: # Integer
+      #     #   #   # # Bandwidth: # Integer
+      #     #   #   # # RetryInterval: # Integer
+      # InputSpecification:
+      #   # Codec: # String
+      #   # MaximumBitrate: # String
+      #   # Resolution: # String
+      # ChannelClass: # String
+      # EncoderSettings:
+      #   # AudioDescriptions:
+      #   # - # AudioNormalizationSettings:
+      #   #     # # TargetLkfs: # Double
+      #   #     # # Algorithm: # String
+      #   #     # # AlgorithmControl: # String
+      #   # # LanguageCode: # String
+      #   # # RemixSettings:
+      #   #     # # ChannelsOut: # Integer
+      #   #     # # ChannelMappings:
+      #   #     #   # - # OutputChannel: # Integer
+      #   #     #   # # InputChannelLevels:
+      #   #     #   #     # - # InputChannel: # Integer
+      #   #     #   #     # # Gain: # Integer
+      #   #     # # ChannelsIn: # Integer
+      #   # # AudioSelectorName: # String
+      #   # # StreamName: # String
+      #   # # LanguageCodeControl: # String
+      #   # # AudioType: # String
+      #   # # AudioTypeControl: # String
+      #   # # CodecSettings:
+      #   #     # # Eac3Settings:
+      #   #     #   # # CodingMode: # String
+      #   #     #   # # SurroundMode: # String
+      #   #     #   # # PassthroughControl: # String
+      #   #     #   # # Dialnorm: # Integer
+      #   #     #   # # LoRoSurroundMixLevel: # Double
+      #   #     #   # # PhaseControl: # String
+      #   #     #   # # LtRtCenterMixLevel: # Double
+      #   #     #   # # LfeFilter: # String
+      #   #     #   # # LfeControl: # String
+      #   #     #   # # Bitrate: # Double
+      #   #     #   # # DrcLine: # String
+      #   #     #   # # DcFilter: # String
+      #   #     #   # # MetadataControl: # String
+      #   #     #   # # LtRtSurroundMixLevel: # Double
+      #   #     #   # # LoRoCenterMixLevel: # Double
+      #   #     #   # # DrcRf: # String
+      #   #     #   # # AttenuationControl: # String
+      #   #     #   # # BitstreamMode: # String
+      #   #     #   # # SurroundExMode: # String
+      #   #     #   # # StereoDownmix: # String
+      #   #     # # Ac3Settings:
+      #   #     #   # # CodingMode: # String
+      #   #     #   # # DrcProfile: # String
+      #   #     #   # # MetadataControl: # String
+      #   #     #   # # Dialnorm: # Integer
+      #   #     #   # # LfeFilter: # String
+      #   #     #   # # BitstreamMode: # String
+      #   #     #   # # Bitrate: # Double
+      #   #     # # Mp2Settings:
+      #   #     #   # # CodingMode: # String
+      #   #     #   # # SampleRate: # Double
+      #   #     #   # # Bitrate: # Double
+      #   #     # # PassThroughSettings:
+      #   #     # # WavSettings:
+      #   #     #   # # CodingMode: # String
+      #   #     #   # # SampleRate: # Double
+      #   #     #   # # BitDepth: # Double
+      #   #     # # AacSettings:
+      #   #     #   # # CodingMode: # String
+      #   #     #   # # RateControlMode: # String
+      #   #     #   # # SampleRate: # Double
+      #   #     #   # # InputType: # String
+      #   #     #   # # VbrQuality: # String
+      #   #     #   # # RawFormat: # String
+      #   #     #   # # Spec: # String
+      #   #     #   # # Bitrate: # Double
+      #   #     #   # # Profile: # String
+      #   # # Name: # String
+      #   # # AudioWatermarkingSettings:
+      #   #     # # NielsenWatermarksSettings:
+      #   #     #   # # NielsenDistributionType: # String
+      #   #     #   # # NielsenCbetSettings:
+      #   #     #   #   # # CbetCheckDigitString: # String
+      #   #     #   #   # # CbetStepaside: # String
+      #   #     #   #   # # Csid: # String
+      #   #     #   # # NielsenNaesIiNwSettings:
+      #   #     #   #   # # CheckDigitString: # String
+      #   #     #   #   # # Sid: # Double
+      #   # VideoDescriptions:
+      #   # - # ScalingBehavior: # String
+      #   # # RespondToAfd: # String
+      #   # # Height: # Integer
+      #   # # Sharpness: # Integer
+      #   # # Width: # Integer
+      #   # # CodecSettings:
+      #   #     # # Mpeg2Settings:
+      #   #     #   # # ColorSpace: # String
+      #   #     #   # # FixedAfd: # String
+      #   #     #   # # GopSizeUnits: # String
+      #   #     #   # # FramerateNumerator: # Integer
+      #   #     #   # # GopClosedCadence: # Integer
+      #   #     #   # # AfdSignaling: # String
+      #   #     #   # # DisplayAspectRatio: # String
+      #   #     #   # # ScanType: # String
+      #   #     #   # # TimecodeInsertion: # String
+      #   #     #   # # ColorMetadata: # String
+      #   #     #   # # FramerateDenominator: # Integer
+      #   #     #   # # GopSize: # Double
+      #   #     #   # # AdaptiveQuantization: # String
+      #   #     #   # # SubgopLength: # String
+      #   #     #   # # FilterSettings:
+      #   #     #   #   # # TemporalFilterSettings:
+      #   #     #   #   #   # # PostFilterSharpening: # String
+      #   #     #   #   #   # # Strength: # String
+      #   #     #   # # GopNumBFrames: # Integer
+      #   #     # # FrameCaptureSettings:
+      #   #     #   # # CaptureInterval: # Integer
+      #   #     #   # # CaptureIntervalUnits: # String
+      #   #     # # H264Settings:
+      #   #     #   # # NumRefFrames: # Integer
+      #   #     #   # # TemporalAq: # String
+      #   #     #   # # Slices: # Integer
+      #   #     #   # # FramerateControl: # String
+      #   #     #   # # QvbrQualityLevel: # Integer
+      #   #     #   # # FramerateNumerator: # Integer
+      #   #     #   # # ParControl: # String
+      #   #     #   # # GopClosedCadence: # Integer
+      #   #     #   # # FlickerAq: # String
+      #   #     #   # # Profile: # String
+      #   #     #   # # QualityLevel: # String
+      #   #     #   # # MinIInterval: # Integer
+      #   #     #   # # SceneChangeDetect: # String
+      #   #     #   # # ForceFieldPictures: # String
+      #   #     #   # # FramerateDenominator: # Integer
+      #   #     #   # # Softness: # Integer
+      #   #     #   # # GopSize: # Double
+      #   #     #   # # AdaptiveQuantization: # String
+      #   #     #   # # FilterSettings:
+      #   #     #   #   # # TemporalFilterSettings:
+      #   #     #   #   #   # # PostFilterSharpening: # String
+      #   #     #   #   #   # # Strength: # String
+      #   #     #   # # ColorSpaceSettings:
+      #   #     #   #   # # Rec601Settings:
+      #   #     #   #   # # Rec709Settings:
+      #   #     #   #   # # ColorSpacePassthroughSettings:
+      #   #     #   # # EntropyEncoding: # String
+      #   #     #   # # SpatialAq: # String
+      #   #     #   # # ParDenominator: # Integer
+      #   #     #   # # FixedAfd: # String
+      #   #     #   # # GopSizeUnits: # String
+      #   #     #   # # AfdSignaling: # String
+      #   #     #   # # Bitrate: # Integer
+      #   #     #   # # ParNumerator: # Integer
+      #   #     #   # # RateControlMode: # String
+      #   #     #   # # ScanType: # String
+      #   #     #   # # BufSize: # Integer
+      #   #     #   # # TimecodeInsertion: # String
+      #   #     #   # # ColorMetadata: # String
+      #   #     #   # # BufFillPct: # Integer
+      #   #     #   # # GopBReference: # String
+      #   #     #   # # LookAheadRateControl: # String
+      #   #     #   # # Level: # String
+      #   #     #   # # MaxBitrate: # Integer
+      #   #     #   # # Syntax: # String
+      #   #     #   # # SubgopLength: # String
+      #   #     #   # # GopNumBFrames: # Integer
+      #   #     # # H265Settings:
+      #   #     #   # # Slices: # Integer
+      #   #     #   # # QvbrQualityLevel: # Integer
+      #   #     #   # # FramerateNumerator: # Integer
+      #   #     #   # # GopClosedCadence: # Integer
+      #   #     #   # # FlickerAq: # String
+      #   #     #   # # Profile: # String
+      #   #     #   # # MinIInterval: # Integer
+      #   #     #   # # SceneChangeDetect: # String
+      #   #     #   # # FramerateDenominator: # Integer
+      #   #     #   # # GopSize: # Double
+      #   #     #   # # AdaptiveQuantization: # String
+      #   #     #   # # FilterSettings:
+      #   #     #   #   # # TemporalFilterSettings:
+      #   #     #   #   #   # # PostFilterSharpening: # String
+      #   #     #   #   #   # # Strength: # String
+      #   #     #   # # AlternativeTransferFunction: # String
+      #   #     #   # # ColorSpaceSettings:
+      #   #     #   #   # # Rec601Settings:
+      #   #     #   #   # # Rec709Settings:
+      #   #     #   #   # # ColorSpacePassthroughSettings:
+      #   #     #   #   # # Hdr10Settings:
+      #   #     #   #   #   # # MaxCll: # Integer
+      #   #     #   #   #   # # MaxFall: # Integer
+      #   #     #   # # Tier: # String
+      #   #     #   # # ParDenominator: # Integer
+      #   #     #   # # FixedAfd: # String
+      #   #     #   # # GopSizeUnits: # String
+      #   #     #   # # AfdSignaling: # String
+      #   #     #   # # Bitrate: # Integer
+      #   #     #   # # ParNumerator: # Integer
+      #   #     #   # # RateControlMode: # String
+      #   #     #   # # ScanType: # String
+      #   #     #   # # BufSize: # Integer
+      #   #     #   # # TimecodeInsertion: # String
+      #   #     #   # # ColorMetadata: # String
+      #   #     #   # # LookAheadRateControl: # String
+      #   #     #   # # Level: # String
+      #   #     #   # # MaxBitrate: # Integer
+      #   # # Name: # String
+      #   # FeatureActivations:
+      #   # # InputPrepareScheduleActions: # String
+      #   # GlobalConfiguration:
+      #   # # InputEndAction: # String
+      #   # # OutputTimingSource: # String
+      #   # # OutputLockingMode: # String
+      #   # # SupportLowFramerateInputs: # String
+      #   # # InitialAudioGain: # Integer
+      #   # # InputLossBehavior:
+      #   #   # # InputLossImageColor: # String
+      #   #   # # BlackFrameMsec: # Integer
+      #   #   # # InputLossImageType: # String
+      #   #   # # InputLossImageSlate:
+      #   #   #   # # Username: # String
+      #   #   #   # # PasswordParam: # String
+      #   #   #   # # Uri: # String
+      #   #   # # RepeatFrameMsec: # Integer
+      #   # CaptionDescriptions:
+      #   # - # DestinationSettings:
+      #   #     # # AribDestinationSettings:
+      #   #     # # EbuTtDDestinationSettings:
+      #   #     #   # # FontFamily: # String
+      #   #     #   # # FillLineGap: # String
+      #   #     #   # # StyleControl: # String
+      #   #     #   # # CopyrightHolder: # String
+      #   #     # # SmpteTtDestinationSettings:
+      #   #     # # EmbeddedPlusScte20DestinationSettings:
+      #   #     # # TtmlDestinationSettings:
+      #   #     #   # # StyleControl: # String
+      #   #     # # Scte20PlusEmbeddedDestinationSettings:
+      #   #     # # DvbSubDestinationSettings:
+      #   #     #   # # BackgroundOpacity: # Integer
+      #   #     #   # # FontResolution: # Integer
+      #   #     #   # # OutlineColor: # String
+      #   #     #   # # FontColor: # String
+      #   #     #   # # ShadowColor: # String
+      #   #     #   # # ShadowOpacity: # Integer
+      #   #     #   # # Font:
+      #   #     #   #   # # Username: # String
+      #   #     #   #   # # PasswordParam: # String
+      #   #     #   #   # # Uri: # String
+      #   #     #   # # ShadowYOffset: # Integer
+      #   #     #   # # Alignment: # String
+      #   #     #   # # XPosition: # Integer
+      #   #     #   # # FontSize: # String
+      #   #     #   # # YPosition: # Integer
+      #   #     #   # # OutlineSize: # Integer
+      #   #     #   # # TeletextGridControl: # String
+      #   #     #   # # FontOpacity: # Integer
+      #   #     #   # # ShadowXOffset: # Integer
+      #   #     #   # # BackgroundColor: # String
+      #   #     # # TeletextDestinationSettings:
+      #   #     # # BurnInDestinationSettings:
+      #   #     #   # # BackgroundOpacity: # Integer
+      #   #     #   # # FontResolution: # Integer
+      #   #     #   # # OutlineColor: # String
+      #   #     #   # # FontColor: # String
+      #   #     #   # # ShadowColor: # String
+      #   #     #   # # ShadowOpacity: # Integer
+      #   #     #   # # Font:
+      #   #     #   #   # # Username: # String
+      #   #     #   #   # # PasswordParam: # String
+      #   #     #   #   # # Uri: # String
+      #   #     #   # # ShadowYOffset: # Integer
+      #   #     #   # # Alignment: # String
+      #   #     #   # # XPosition: # Integer
+      #   #     #   # # FontSize: # String
+      #   #     #   # # YPosition: # Integer
+      #   #     #   # # OutlineSize: # Integer
+      #   #     #   # # TeletextGridControl: # String
+      #   #     #   # # FontOpacity: # Integer
+      #   #     #   # # ShadowXOffset: # Integer
+      #   #     #   # # BackgroundColor: # String
+      #   #     # # WebvttDestinationSettings:
+      #   #     #   # # StyleControl: # String
+      #   #     # # EmbeddedDestinationSettings:
+      #   #     # # RtmpCaptionInfoDestinationSettings:
+      #   #     # # Scte27DestinationSettings:
+      #   # # LanguageCode: # String
+      #   # # LanguageDescription: # String
+      #   # # CaptionSelectorName: # String
+      #   # # Name: # String
+      #   # AvailConfiguration:
+      #   # # AvailSettings:
+      #   #   # # Scte35SpliceInsert:
+      #   #   #   # # AdAvailOffset: # Integer
+      #   #   #   # # WebDeliveryAllowedFlag: # String
+      #   #   #   # # NoRegionalBlackoutFlag: # String
+      #   #   # # Scte35TimeSignalApos:
+      #   #   #   # # AdAvailOffset: # Integer
+      #   #   #   # # WebDeliveryAllowedFlag: # String
+      #   #   #   # # NoRegionalBlackoutFlag: # String
+      #   # MotionGraphicsConfiguration:
+      #   # # MotionGraphicsSettings:
+      #   #   # # HtmlMotionGraphicsSettings:
+      #   # # MotionGraphicsInsertion: # String
+      #   # OutputGroups:
+      #   # - # Outputs:
+      #   #     # - # OutputSettings:
+      #   #     #     # # MediaPackageOutputSettings:
+      #   #     #     # # MsSmoothOutputSettings:
+      #   #     #     #   # # NameModifier: # String
+      #   #     #     #   # # H265PackagingType: # String
+      #   #     #     # # FrameCaptureOutputSettings:
+      #   #     #     #   # # NameModifier: # String
+      #   #     #     # # HlsOutputSettings:
+      #   #     #     #   # # NameModifier: # String
+      #   #     #     #   # # HlsSettings:
+      #   #     #     #   #   # # StandardHlsSettings:
+      #   #     #     #   #   #   # # AudioRenditionSets: # String
+      #   #     #     #   #   #   # # M3u8Settings:
+      #   #     #     #   #   #   #   # # PatInterval: # Integer
+      #   #     #     #   #   #   #   # # ProgramNum: # Integer
+      #   #     #     #   #   #   #   # # PcrPeriod: # Integer
+      #   #     #     #   #   #   #   # # PmtInterval: # Integer
+      #   #     #     #   #   #   #   # # NielsenId3Behavior: # String
+      #   #     #     #   #   #   #   # # PcrPid: # String
+      #   #     #     #   #   #   #   # # VideoPid: # String
+      #   #     #     #   #   #   #   # # AudioFramesPerPes: # Integer
+      #   #     #     #   #   #   #   # # TransportStreamId: # Integer
+      #   #     #     #   #   #   #   # # PmtPid: # String
+      #   #     #     #   #   #   #   # # Scte35Pid: # String
+      #   #     #     #   #   #   #   # # Scte35Behavior: # String
+      #   #     #     #   #   #   #   # # EcmPid: # String
+      #   #     #     #   #   #   #   # # TimedMetadataPid: # String
+      #   #     #     #   #   #   #   # # AudioPids: # String
+      #   #     #     #   #   #   #   # # PcrControl: # String
+      #   #     #     #   #   #   #   # # TimedMetadataBehavior: # String
+      #   #     #     #   #   # # AudioOnlyHlsSettings:
+      #   #     #     #   #   #   # # SegmentType: # String
+      #   #     #     #   #   #   # # AudioTrackType: # String
+      #   #     #     #   #   #   # # AudioOnlyImage:
+      #   #     #     #   #   #   #   # # Username: # String
+      #   #     #     #   #   #   #   # # PasswordParam: # String
+      #   #     #     #   #   #   #   # # Uri: # String
+      #   #     #     #   #   #   # # AudioGroupId: # String
+      #   #     #     #   #   # # Fmp4HlsSettings:
+      #   #     #     #   #   #   # # AudioRenditionSets: # String
+      #   #     #     #   #   #   # # NielsenId3Behavior: # String
+      #   #     #     #   #   #   # # TimedMetadataBehavior: # String
+      #   #     #     #   #   # # FrameCaptureHlsSettings:
+      #   #     #     #   # # H265PackagingType: # String
+      #   #     #     #   # # SegmentModifier: # String
+      #   #     #     # # RtmpOutputSettings:
+      #   #     #     #   # # Destination:
+      #   #     #     #   #   # # DestinationRefId: # String
+      #   #     #     #   # # CertificateMode: # String
+      #   #     #     #   # # NumRetries: # Integer
+      #   #     #     #   # # ConnectionRetryInterval: # Integer
+      #   #     #     # # UdpOutputSettings:
+      #   #     #     #   # # Destination:
+      #   #     #     #   #   # # DestinationRefId: # String
+      #   #     #     #   # # FecOutputSettings:
+      #   #     #     #   #   # # RowLength: # Integer
+      #   #     #     #   #   # # ColumnDepth: # Integer
+      #   #     #     #   #   # # IncludeFec: # String
+      #   #     #     #   # # ContainerSettings:
+      #   #     #     #   #   # # M2tsSettings:
+      #   #     #     #   #   #   # # EtvPlatformPid: # String
+      #   #     #     #   #   #   # # PatInterval: # Integer
+      #   #     #     #   #   #   # # ProgramNum: # Integer
+      #   #     #     #   #   #   # # RateMode: # String
+      #   #     #     #   #   #   # # KlvDataPids: # String
+      #   #     #     #   #   #   # # NullPacketBitrate: # Double
+      #   #     #     #   #   #   # # PmtInterval: # Integer
+      #   #     #     #   #   #   # # AribCaptionsPid: # String
+      #   #     #     #   #   #   # # EsRateInPes: # String
+      #   #     #     #   #   #   # # VideoPid: # String
+      #   #     #     #   #   #   # # TransportStreamId: # Integer
+      #   #     #     #   #   #   # # EbpPlacement: # String
+      #   #     #     #   #   #   # # DvbSubPids: # String
+      #   #     #     #   #   #   # # SegmentationStyle: # String
+      #   #     #     #   #   #   # # Scte35Pid: # String
+      #   #     #     #   #   #   # # AudioStreamType: # String
+      #   #     #     #   #   #   # # Klv: # String
+      #   #     #     #   #   #   # # EbpLookaheadMs: # Integer
+      #   #     #     #   #   #   # # DvbTdtSettings:
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   # # TimedMetadataBehavior: # String
+      #   #     #     #   #   #   # # EbpAudioInterval: # String
+      #   #     #     #   #   #   # # FragmentTime: # Double
+      #   #     #     #   #   #   # # DvbTeletextPid: # String
+      #   #     #     #   #   #   # # Scte35Control: # String
+      #   #     #     #   #   #   # # PcrPeriod: # Integer
+      #   #     #     #   #   #   # # NielsenId3Behavior: # String
+      #   #     #     #   #   #   # # PcrPid: # String
+      #   #     #     #   #   #   # # SegmentationTime: # Double
+      #   #     #     #   #   #   # # CcDescriptor: # String
+      #   #     #     #   #   #   # # AudioFramesPerPes: # Integer
+      #   #     #     #   #   #   # # AbsentInputAudioBehavior: # String
+      #   #     #     #   #   #   # # Bitrate: # Integer
+      #   #     #     #   #   #   # # PmtPid: # String
+      #   #     #     #   #   #   # # Scte27Pids: # String
+      #   #     #     #   #   #   # # SegmentationMarkers: # String
+      #   #     #     #   #   #   # # DvbNitSettings:
+      #   #     #     #   #   #   #   # # NetworkName: # String
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   #   # # NetworkId: # Integer
+      #   #     #     #   #   #   # # DvbSdtSettings:
+      #   #     #     #   #   #   #   # # ServiceProviderName: # String
+      #   #     #     #   #   #   #   # # OutputSdt: # String
+      #   #     #     #   #   #   #   # # ServiceName: # String
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   # # EtvSignalPid: # String
+      #   #     #     #   #   #   # # Arib: # String
+      #   #     #     #   #   #   # # BufferModel: # String
+      #   #     #     #   #   #   # # EcmPid: # String
+      #   #     #     #   #   #   # # TimedMetadataPid: # String
+      #   #     #     #   #   #   # # AudioPids: # String
+      #   #     #     #   #   #   # # AudioBufferModel: # String
+      #   #     #     #   #   #   # # Ebif: # String
+      #   #     #     #   #   #   # # AribCaptionsPidControl: # String
+      #   #     #     #   #   #   # # PcrControl: # String
+      #   #     #     #   # # BufferMsec: # Integer
+      #   #     #     # # MultiplexOutputSettings:
+      #   #     #     #   # # Destination:
+      #   #     #     #   #   # # DestinationRefId: # String
+      #   #     #     # # ArchiveOutputSettings:
+      #   #     #     #   # # Extension: # String
+      #   #     #     #   # # NameModifier: # String
+      #   #     #     #   # # ContainerSettings:
+      #   #     #     #   #   # # RawSettings:
+      #   #     #     #   #   # # M2tsSettings:
+      #   #     #     #   #   #   # # EtvPlatformPid: # String
+      #   #     #     #   #   #   # # PatInterval: # Integer
+      #   #     #     #   #   #   # # ProgramNum: # Integer
+      #   #     #     #   #   #   # # RateMode: # String
+      #   #     #     #   #   #   # # KlvDataPids: # String
+      #   #     #     #   #   #   # # NullPacketBitrate: # Double
+      #   #     #     #   #   #   # # PmtInterval: # Integer
+      #   #     #     #   #   #   # # AribCaptionsPid: # String
+      #   #     #     #   #   #   # # EsRateInPes: # String
+      #   #     #     #   #   #   # # VideoPid: # String
+      #   #     #     #   #   #   # # TransportStreamId: # Integer
+      #   #     #     #   #   #   # # EbpPlacement: # String
+      #   #     #     #   #   #   # # DvbSubPids: # String
+      #   #     #     #   #   #   # # SegmentationStyle: # String
+      #   #     #     #   #   #   # # Scte35Pid: # String
+      #   #     #     #   #   #   # # AudioStreamType: # String
+      #   #     #     #   #   #   # # Klv: # String
+      #   #     #     #   #   #   # # EbpLookaheadMs: # Integer
+      #   #     #     #   #   #   # # DvbTdtSettings:
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   # # TimedMetadataBehavior: # String
+      #   #     #     #   #   #   # # EbpAudioInterval: # String
+      #   #     #     #   #   #   # # FragmentTime: # Double
+      #   #     #     #   #   #   # # DvbTeletextPid: # String
+      #   #     #     #   #   #   # # Scte35Control: # String
+      #   #     #     #   #   #   # # PcrPeriod: # Integer
+      #   #     #     #   #   #   # # NielsenId3Behavior: # String
+      #   #     #     #   #   #   # # PcrPid: # String
+      #   #     #     #   #   #   # # SegmentationTime: # Double
+      #   #     #     #   #   #   # # CcDescriptor: # String
+      #   #     #     #   #   #   # # AudioFramesPerPes: # Integer
+      #   #     #     #   #   #   # # AbsentInputAudioBehavior: # String
+      #   #     #     #   #   #   # # Bitrate: # Integer
+      #   #     #     #   #   #   # # PmtPid: # String
+      #   #     #     #   #   #   # # Scte27Pids: # String
+      #   #     #     #   #   #   # # SegmentationMarkers: # String
+      #   #     #     #   #   #   # # DvbNitSettings:
+      #   #     #     #   #   #   #   # # NetworkName: # String
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   #   # # NetworkId: # Integer
+      #   #     #     #   #   #   # # DvbSdtSettings:
+      #   #     #     #   #   #   #   # # ServiceProviderName: # String
+      #   #     #     #   #   #   #   # # OutputSdt: # String
+      #   #     #     #   #   #   #   # # ServiceName: # String
+      #   #     #     #   #   #   #   # # RepInterval: # Integer
+      #   #     #     #   #   #   # # EtvSignalPid: # String
+      #   #     #     #   #   #   # # Arib: # String
+      #   #     #     #   #   #   # # BufferModel: # String
+      #   #     #     #   #   #   # # EcmPid: # String
+      #   #     #     #   #   #   # # TimedMetadataPid: # String
+      #   #     #     #   #   #   # # AudioPids: # String
+      #   #     #     #   #   #   # # AudioBufferModel: # String
+      #   #     #     #   #   #   # # Ebif: # String
+      #   #     #     #   #   #   # # AribCaptionsPidControl: # String
+      #   #     #     #   #   #   # # PcrControl: # String
+      #   #     # # CaptionDescriptionNames:
+      #   #     #     # - # String
+      #   #     # # AudioDescriptionNames:
+      #   #     #     # - # String
+      #   #     # # OutputName: # String
+      #   #     # # VideoDescriptionName: # String
+      #   # # OutputGroupSettings:
+      #   #     # # HlsGroupSettings:
+      #   #     #   # # SegmentationMode: # String
+      #   #     #   # # Destination:
+      #   #     #   #   # # DestinationRefId: # String
+      #   #     #   # # CodecSpecification: # String
+      #   #     #   # # IvSource: # String
+      #   #     #   # # TimedMetadataId3Frame: # String
+      #   #     #   # # KeyFormatVersions: # String
+      #   #     #   # # RedundantManifest: # String
+      #   #     #   # # OutputSelection: # String
+      #   #     #   # # KeyProviderSettings:
+      #   #     #   #   # # StaticKeySettings:
+      #   #     #   #   #   # # KeyProviderServer:
+      #   #     #   #   #   #   # # Username: # String
+      #   #     #   #   #   #   # # PasswordParam: # String
+      #   #     #   #   #   #   # # Uri: # String
+      #   #     #   #   #   # # StaticKeyValue: # String
+      #   #     #   # # StreamInfResolution: # String
+      #   #     #   # # CaptionLanguageMappings:
+      #   #     #   #   # - # LanguageCode: # String
+      #   #     #   #   # # LanguageDescription: # String
+      #   #     #   #   # # CaptionChannel: # Integer
+      #   #     #   # # HlsId3SegmentTagging: # String
+      #   #     #   # # IFrameOnlyPlaylists: # String
+      #   #     #   # # CaptionLanguageSetting: # String
+      #   #     #   # # KeepSegments: # Integer
+      #   #     #   # # ConstantIv: # String
+      #   #     #   # # DirectoryStructure: # String
+      #   #     #   # # EncryptionType: # String
+      #   #     #   # # AdMarkers:
+      #   #     #   #   # - # String
+      #   #     #   # # HlsCdnSettings:
+      #   #     #   #   # # HlsWebdavSettings:
+      #   #     #   #   #   # # FilecacheDuration: # Integer
+      #   #     #   #   #   # # NumRetries: # Integer
+      #   #     #   #   #   # # RestartDelay: # Integer
+      #   #     #   #   #   # # ConnectionRetryInterval: # Integer
+      #   #     #   #   #   # # HttpTransferMode: # String
+      #   #     #   #   # # HlsS3Settings:
+      #   #     #   #   #   # # CannedAcl: # String
+      #   #     #   #   # # HlsAkamaiSettings:
+      #   #     #   #   #   # # Salt: # String
+      #   #     #   #   #   # # FilecacheDuration: # Integer
+      #   #     #   #   #   # # NumRetries: # Integer
+      #   #     #   #   #   # # Token: # String
+      #   #     #   #   #   # # RestartDelay: # Integer
+      #   #     #   #   #   # # ConnectionRetryInterval: # Integer
+      #   #     #   #   #   # # HttpTransferMode: # String
+      #   #     #   #   # # HlsBasicPutSettings:
+      #   #     #   #   #   # # FilecacheDuration: # Integer
+      #   #     #   #   #   # # NumRetries: # Integer
+      #   #     #   #   #   # # RestartDelay: # Integer
+      #   #     #   #   #   # # ConnectionRetryInterval: # Integer
+      #   #     #   #   # # HlsMediaStoreSettings:
+      #   #     #   #   #   # # FilecacheDuration: # Integer
+      #   #     #   #   #   # # NumRetries: # Integer
+      #   #     #   #   #   # # MediaStoreStorageClass: # String
+      #   #     #   #   #   # # RestartDelay: # Integer
+      #   #     #   #   #   # # ConnectionRetryInterval: # Integer
+      #   #     #   # # IndexNSegments: # Integer
+      #   #     #   # # DiscontinuityTags: # String
+      #   #     #   # # InputLossAction: # String
+      #   #     #   # # Mode: # String
+      #   #     #   # # TsFileMode: # String
+      #   #     #   # # BaseUrlManifest1: # String
+      #   #     #   # # ClientCache: # String
+      #   #     #   # # MinSegmentLength: # Integer
+      #   #     #   # # KeyFormat: # String
+      #   #     #   # # IvInManifest: # String
+      #   #     #   # # BaseUrlContent1: # String
+      #   #     #   # # ProgramDateTimeClock: # String
+      #   #     #   # # ManifestCompression: # String
+      #   #     #   # # ManifestDurationFormat: # String
+      #   #     #   # # TimedMetadataId3Period: # Integer
+      #   #     #   # # IncompleteSegmentBehavior: # String
+      #   #     #   # # ProgramDateTimePeriod: # Integer
+      #   #     #   # # SegmentLength: # Integer
+      #   #     #   # # TimestampDeltaMilliseconds: # Integer
+      #   #     #   # # ProgramDateTime: # String
+      #   #     #   # # SegmentsPerSubdirectory: # Integer
+      #   #     #   # # BaseUrlContent: # String
+      #   #     #   # # BaseUrlManifest: # String
+      #   #     # # FrameCaptureGroupSettings:
+      #   #     #   # # FrameCaptureCdnSettings:
+      #   #     #   #   # # FrameCaptureS3Settings:
+      #   #     #   #   #   # # CannedAcl: # String
+      #   #     #   # # Destination:
+      #   #     #   #   # # DestinationRefId: # String
+      #   #     # # MultiplexGroupSettings:
+      #   #     # # ArchiveGroupSettings:
+      #   #     #   # # Destination:
+      #   #     #   #   # # DestinationRefId: # String
+      #   #     #   # # ArchiveCdnSettings:
+      #   #     #   #   # # ArchiveS3Settings:
+      #   #     #   #   #   # # CannedAcl: # String
+      #   #     #   # # RolloverInterval: # Integer
+      #   #     # # MediaPackageGroupSettings:
+      #   #     #   # # Destination:
+      #   #     #   #   # # DestinationRefId: # String
+      #   #     # # UdpGroupSettings:
+      #   #     #   # # TimedMetadataId3Frame: # String
+      #   #     #   # # TimedMetadataId3Period: # Integer
+      #   #     #   # # InputLossAction: # String
+      #   #     # # MsSmoothGroupSettings:
+      #   #     #   # # SegmentationMode: # String
+      #   #     #   # # Destination:
+      #   #     #   #   # # DestinationRefId: # String
+      #   #     #   # # EventStopBehavior: # String
+      #   #     #   # # FilecacheDuration: # Integer
+      #   #     #   # # CertificateMode: # String
+      #   #     #   # # AcquisitionPointId: # String
+      #   #     #   # # StreamManifestBehavior: # String
+      #   #     #   # # InputLossAction: # String
+      #   #     #   # # FragmentLength: # Integer
+      #   #     #   # # RestartDelay: # Integer
+      #   #     #   # # SparseTrackType: # String
+      #   #     #   # # EventIdMode: # String
+      #   #     #   # # TimestampOffsetMode: # String
+      #   #     #   # # AudioOnlyTimecodeControl: # String
+      #   #     #   # # NumRetries: # Integer
+      #   #     #   # # TimestampOffset: # String
+      #   #     #   # # EventId: # String
+      #   #     #   # # SendDelayMs: # Integer
+      #   #     #   # # ConnectionRetryInterval: # Integer
+      #   #     # # RtmpGroupSettings:
+      #   #     #   # # AuthenticationScheme: # String
+      #   #     #   # # CacheLength: # Integer
+      #   #     #   # # AdMarkers:
+      #   #     #   #   # - # String
+      #   #     #   # # InputLossAction: # String
+      #   #     #   # # RestartDelay: # Integer
+      #   #     #   # # CaptionData: # String
+      #   #     #   # # CacheFullBehavior: # String
+      #   # # Name: # String
+      #   # AvailBlanking:
+      #   # # State: # String
+      #   # # AvailBlankingImage:
+      #   #   # # Username: # String
+      #   #   # # PasswordParam: # String
+      #   #   # # Uri: # String
+      #   # NielsenConfiguration:
+      #   # # DistributorId: # String
+      #   # # NielsenPcmToId3Tagging: # String
+      #   # BlackoutSlate:
+      #   # # NetworkEndBlackout: # String
+      #   # # State: # String
+      #   # # NetworkId: # String
+      #   # # NetworkEndBlackoutImage:
+      #   #   # # Username: # String
+      #   #   # # PasswordParam: # String
+      #   #   # # Uri: # String
+      #   # # BlackoutSlateImage:
+      #   #   # # Username: # String
+      #   #   # # PasswordParam: # String
+      #   #   # # Uri: # String
+      #   # TimecodeConfig:
+      #   # # SyncThreshold: # Integer
+      #   # # Source: # String
+      # Destinations:
+      #   - # MultiplexSettings:
+      #     # # MultiplexId: # String
+      #     # # ProgramName: # String
+      #     # Id: # String
+      #     # Settings:
+      #     # - # StreamName: # String
+      #     # # Username: # String
+      #     # # PasswordParam: # String
+      #     # # Url: # String
+      #     # MediaPackageSettings:
+      #     # - # ChannelId: # String
+      # Vpc:
+      #   # PublicAddressAllocationIds:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # CdiInputSpecification:
+      #   # Resolution: # String
+      # LogLevel: # String
+      # RoleArn: # String
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Inputs (List)

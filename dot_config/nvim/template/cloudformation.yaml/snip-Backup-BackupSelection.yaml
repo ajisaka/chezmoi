@@ -1,0 +1,20 @@
+  BackupBackupSelection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-backupselection.html
+    Type: AWS::Backup::BackupSelection
+    Properties:
+      BackupPlanId: # String
+      # BackupSelection:
+      #   IamRoleArn: # String
+      #   # ListOfTags:
+      #   # - ConditionKey: # String
+      #   # ConditionValue: # String
+      #   # ConditionType: # String
+      #   # Resources:
+      #   # - # String
+      #   SelectionName: # String
+      #   # NotResources:
+      #   # - # String
+      #   # Conditions: # Json
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.BackupPlanId (String)
+    # !GetAtt THIS.SelectionId (String)

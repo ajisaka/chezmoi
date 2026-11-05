@@ -1,0 +1,61 @@
+  IoTAnalyticsDataset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html
+    Type: AWS::IoTAnalytics::Dataset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html
+      Actions:
+        - ActionName: # String
+          # ContainerAction:
+          #   # Variables:
+          #   # - VariableName: # String
+          #   # # DatasetContentVersionValue:
+          #   #     # DatasetName: # String
+          #   # # StringValue: # String
+          #   # # DoubleValue: # Double
+          #   # # OutputFileUriValue:
+          #   #     # FileName: # String
+          #   ExecutionRoleArn: # String
+          #   Image: # String
+          #   # ResourceConfiguration:
+          #   # VolumeSizeInGB: # Integer
+          #   # ComputeType: # String
+          # QueryAction:
+          #   # Filters:
+          #   # - # DeltaTime:
+          #   #     # OffsetSeconds: # Integer
+          #   #     # TimeExpression: # String
+          #   SqlQuery: # String
+      # LateDataRules:
+      #   - # RuleConfiguration:
+      #     # # DeltaTimeSessionWindowConfiguration:
+      #     #   # TimeoutInMinutes: # Integer
+      #     # RuleName: # String
+      # DatasetName: # String
+      # ContentDeliveryRules:
+      #   - # Destination:
+      #     # # IotEventsDestinationConfiguration:
+      #     #   # InputName: # String
+      #     #   # RoleArn: # String
+      #     # # S3DestinationConfiguration:
+      #     #   # # GlueConfiguration:
+      #     #   #   # DatabaseName: # String
+      #     #   #   # TableName: # String
+      #     #   # Bucket: # String
+      #     #   # Key: # String
+      #     #   # RoleArn: # String
+      #     # EntryName: # String
+      # Triggers:
+      #   - # TriggeringDataset:
+      #     # DatasetName: # String
+      #     # Schedule:
+      #     # ScheduleExpression: # String
+      # VersioningConfiguration:
+      #   # Unlimited: # Boolean
+      #   # MaxVersions: # Integer
+      # RetentionPeriod:
+      #   # NumberOfDays: # Integer
+      #   # Unlimited: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)

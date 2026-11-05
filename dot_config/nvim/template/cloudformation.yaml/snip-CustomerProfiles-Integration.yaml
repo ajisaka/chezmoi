@@ -1,0 +1,64 @@
+  CustomerProfilesIntegration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-integration.html
+    Type: AWS::CustomerProfiles::Integration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-customerprofiles-integration.html
+      DomainName: # String
+      # Uri: # String
+      # FlowDefinition:
+      #   FlowName: # String
+      #   # Description: # String
+      #   KmsArn: # String
+      #   Tasks:
+      #     - # ConnectorOperator:
+      #       # # Marketo: # String
+      #       # # S3: # String
+      #       # # Salesforce: # String
+      #       # # ServiceNow: # String
+      #       # # Zendesk: # String
+      #       SourceFields:
+      #         - # String
+      #       # DestinationField: # String
+      #       TaskType: # String
+      #       # TaskProperties:
+      #       # - OperatorPropertyKey: # String
+      #       # Property: # String
+      #   # TriggerConfig:
+      #   # TriggerType: # String
+      #   # # TriggerProperties:
+      #   #   # # Scheduled:
+      #   #   #   # ScheduleExpression: # String
+      #   #   #   # # DataPullMode: # String
+      #   #   #   # # ScheduleStartTime: # Double
+      #   #   #   # # ScheduleEndTime: # Double
+      #   #   #   # # Timezone: # String
+      #   #   #   # # ScheduleOffset: # Integer
+      #   #   #   # # FirstExecutionFrom: # Double
+      #   # SourceFlowConfig:
+      #   # ConnectorType: # String
+      #   # # ConnectorProfileName: # String
+      #   # # IncrementalPullConfig:
+      #   #   # # DatetimeTypeFieldName: # String
+      #   # # SourceConnectorProperties:
+      #   #   # # Marketo:
+      #   #   #   # Object: # String
+      #   #   # # S3:
+      #   #   #   # BucketName: # String
+      #   #   #   # # BucketPrefix: # String
+      #   #   # # Salesforce:
+      #   #   #   # Object: # String
+      #   #   #   # # EnableDynamicFieldUpdate: # Boolean
+      #   #   #   # # IncludeDeletedRecords: # Boolean
+      #   #   # # ServiceNow:
+      #   #   #   # Object: # String
+      #   #   # # Zendesk:
+      #   #   #   # Object: # String
+      # ObjectTypeName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ObjectTypeNames:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.LastUpdatedAt (String)

@@ -1,0 +1,14 @@
+  RefactorSpacesEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-environment.html
+    Type: AWS::RefactorSpaces::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-environment.html
+      # Description: # String
+      # Name: # String
+      # NetworkFabricType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EnvironmentIdentifier (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.TransitGatewayId (String)

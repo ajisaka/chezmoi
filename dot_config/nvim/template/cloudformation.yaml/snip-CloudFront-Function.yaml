@@ -1,0 +1,14 @@
+  CloudFrontFunction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-function.html
+    Type: AWS::CloudFront::Function
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-function.html
+      # AutoPublish: # Boolean
+      # FunctionCode: # String
+      # FunctionConfig:
+      #   Comment: # String
+      #   Runtime: # String
+      Name: # String
+    # !GetAtt THIS.FunctionARN (String)
+    # !GetAtt THIS.FunctionMetadata.FunctionARN (String)
+    # !GetAtt THIS.Stage (String)

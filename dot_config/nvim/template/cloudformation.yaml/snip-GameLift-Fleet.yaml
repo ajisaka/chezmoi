@@ -1,0 +1,44 @@
+  GameLiftFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
+    Type: AWS::GameLift::Fleet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
+      # CertificateConfiguration:
+      #   CertificateType: # String
+      # Description: # String
+      # DesiredEC2Instances: # Integer
+      # EC2InboundPermissions:
+      #   - FromPort: # Integer
+      #     IpRange: # String
+      #     Protocol: # String
+      #     ToPort: # Integer
+      # EC2InstanceType: # String
+      # FleetType: # String
+      # InstanceRoleARN: # String
+      # Locations:
+      #   - Location: # String
+      #     # LocationCapacity:
+      #     # DesiredEC2Instances: # Integer
+      #     # MinSize: # Integer
+      #     # MaxSize: # Integer
+      # MaxSize: # Integer
+      # MetricGroups:
+      #   - # String
+      # MinSize: # Integer
+      # Name: # String
+      # NewGameSessionProtectionPolicy: # String
+      # PeerVpcAwsAccountId: # String
+      # PeerVpcId: # String
+      # ResourceCreationLimitPolicy:
+      #   # NewGameSessionsPerCreator: # Integer
+      #   # PolicyPeriodInMinutes: # Integer
+      # BuildId: # String
+      # ScriptId: # String
+      # RuntimeConfiguration:
+      #   # GameSessionActivationTimeoutSeconds: # Integer
+      #   # MaxConcurrentGameSessionActivations: # Integer
+      #   # ServerProcesses:
+      #   # - ConcurrentExecutions: # Integer
+      #   # LaunchPath: # String
+      #   # # Parameters: # String
+    # !GetAtt THIS.FleetId (String)

@@ -1,0 +1,7 @@
+  CognitoUserPoolUserToGroupAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html
+    Type: AWS::Cognito::UserPoolUserToGroupAttachment
+    Properties:
+      GroupName: # String
+      UserPoolId: # String
+      Username: # String

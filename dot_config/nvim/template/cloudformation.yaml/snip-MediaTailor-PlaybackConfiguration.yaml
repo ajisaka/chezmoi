@@ -1,0 +1,40 @@
+  MediaTailorPlaybackConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediatailor-playbackconfiguration.html
+    Type: AWS::MediaTailor::PlaybackConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediatailor-playbackconfiguration.html
+      AdDecisionServerUrl: # String
+      # AvailSuppression:
+      #   # Mode: # String
+      #   # Value: # String
+      # Bumper:
+      #   # StartUrl: # String
+      #   # EndUrl: # String
+      # CdnConfiguration:
+      #   # AdSegmentUrlPrefix: # String
+      #   # ContentSegmentUrlPrefix: # String
+      # ConfigurationAliases:
+      #   ANY_KEY: # Json
+      # DashConfiguration:
+      #   # MpdLocation: # String
+      #   # OriginManifestType: # String
+      #   # ManifestEndpointPrefix: # String
+      # LivePreRollConfiguration:
+      #   # AdDecisionServerUrl: # String
+      #   # MaxDurationSeconds: # Integer
+      # ManifestProcessingRules:
+      #   # AdMarkerPassthrough:
+      #   # # Enabled: # Boolean
+      Name: # String
+      # PersonalizationThresholdSeconds: # Integer
+      # SlateAdUrl: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TranscodeProfileName: # String
+      VideoContentSourceUrl: # String
+    # !GetAtt THIS.DashConfiguration.ManifestEndpointPrefix (String)
+    # !GetAtt THIS.SessionInitializationEndpointPrefix (String)
+    # !GetAtt THIS.HlsConfiguration.ManifestEndpointPrefix (String)
+    # !GetAtt THIS.PlaybackConfigurationArn (String)
+    # !GetAtt THIS.PlaybackEndpointPrefix (String)

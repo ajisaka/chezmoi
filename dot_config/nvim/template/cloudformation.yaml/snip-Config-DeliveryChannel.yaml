@@ -1,0 +1,12 @@
+  ConfigDeliveryChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
+    Type: AWS::Config::DeliveryChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
+      # ConfigSnapshotDeliveryProperties:
+      #   # DeliveryFrequency: # String
+      # Name: # String
+      S3BucketName: # String
+      # S3KeyPrefix: # String
+      # S3KmsKeyArn: # String
+      # SnsTopicARN: # String

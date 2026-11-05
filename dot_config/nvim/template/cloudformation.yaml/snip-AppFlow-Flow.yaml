@@ -1,0 +1,195 @@
+  AppFlowFlow:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html
+    Type: AWS::AppFlow::Flow
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html
+      FlowName: # String
+      # Description: # String
+      # KMSArn: # String
+      # TriggerConfig:
+      #   TriggerType: # String
+      #   # TriggerProperties:
+      #   # ScheduleExpression: # String
+      #   # # DataPullMode: # String
+      #   # # ScheduleStartTime: # Double
+      #   # # ScheduleEndTime: # Double
+      #   # # FirstExecutionFrom: # Double
+      #   # # TimeZone: # String
+      #   # # ScheduleOffset: # Double
+      #   # # FlowErrorDeactivationThreshold: # Integer
+      # SourceFlowConfig:
+      #   ConnectorType: # String
+      #   # ApiVersion: # String
+      #   # ConnectorProfileName: # String
+      #   # SourceConnectorProperties:
+      #   # # Amplitude:
+      #   #   # Object: # String
+      #   # # Datadog:
+      #   #   # Object: # String
+      #   # # Dynatrace:
+      #   #   # Object: # String
+      #   # # GoogleAnalytics:
+      #   #   # Object: # String
+      #   # # InforNexus:
+      #   #   # Object: # String
+      #   # # Marketo:
+      #   #   # Object: # String
+      #   # # S3:
+      #   #   # BucketName: # String
+      #   #   # BucketPrefix: # String
+      #   #   # # S3InputFormatConfig:
+      #   #   #   # # S3InputFileType: # String
+      #   # # SAPOData:
+      #   #   # ObjectPath: # String
+      #   # # Salesforce:
+      #   #   # Object: # String
+      #   #   # # EnableDynamicFieldUpdate: # Boolean
+      #   #   # # IncludeDeletedRecords: # Boolean
+      #   #   # # DataTransferApi: # String
+      #   # # ServiceNow:
+      #   #   # Object: # String
+      #   # # Singular:
+      #   #   # Object: # String
+      #   # # Slack:
+      #   #   # Object: # String
+      #   # # Trendmicro:
+      #   #   # Object: # String
+      #   # # Veeva:
+      #   #   # Object: # String
+      #   #   # # DocumentType: # String
+      #   #   # # IncludeSourceFiles: # Boolean
+      #   #   # # IncludeRenditions: # Boolean
+      #   #   # # IncludeAllVersions: # Boolean
+      #   # # Zendesk:
+      #   #   # Object: # String
+      #   # # CustomConnector:
+      #   #   # EntityName: # String
+      #   #   # # CustomProperties: <Unknown>: None
+      #   # IncrementalPullConfig:
+      #   # # DatetimeTypeFieldName: # String
+      DestinationFlowConfigList:
+        - ConnectorType: # String
+          # ApiVersion: # String
+          # ConnectorProfileName: # String
+          # DestinationConnectorProperties:
+          #   # Redshift:
+          #   # Object: # String
+          #   # IntermediateBucketName: # String
+          #   # # BucketPrefix: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # S3:
+          #   # BucketName: # String
+          #   # # BucketPrefix: # String
+          #   # # S3OutputFormatConfig:
+          #   #   # # FileType: # String
+          #   #   # # PrefixConfig:
+          #   #   #   # # PrefixType: # String
+          #   #   #   # # PrefixFormat: # String
+          #   #   # # AggregationConfig:
+          #   #   #   # # AggregationType: # String
+          #   #   # # PreserveSourceDataTyping: # Boolean
+          #   # Salesforce:
+          #   # Object: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # # IdFieldNames:
+          #   #   # - # String
+          #   # # WriteOperationType: # String
+          #   # # DataTransferApi: # String
+          #   # Snowflake:
+          #   # Object: # String
+          #   # IntermediateBucketName: # String
+          #   # # BucketPrefix: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # EventBridge:
+          #   # Object: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # Upsolver:
+          #   # BucketName: # String
+          #   # # BucketPrefix: # String
+          #   # # S3OutputFormatConfig:
+          #   #   # # FileType: # String
+          #   #   # # PrefixConfig:
+          #   #   #   # # PrefixType: # String
+          #   #   #   # # PrefixFormat: # String
+          #   #   # # AggregationConfig:
+          #   #   #   # # AggregationType: # String
+          #   # LookoutMetrics:
+          #   # # Object: # String
+          #   # Marketo:
+          #   # Object: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # Zendesk:
+          #   # Object: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # # IdFieldNames:
+          #   #   # - # String
+          #   # # WriteOperationType: # String
+          #   # CustomConnector:
+          #   # EntityName: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # # WriteOperationType: # String
+          #   # # IdFieldNames:
+          #   #   # - # String
+          #   # # CustomProperties: <Unknown>: None
+          #   # SAPOData:
+          #   # ObjectPath: # String
+          #   # # ErrorHandlingConfig:
+          #   #   # # FailOnFirstError: # Boolean
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # # SuccessResponseHandlingConfig:
+          #   #   # # BucketPrefix: # String
+          #   #   # # BucketName: # String
+          #   # # IdFieldNames:
+          #   #   # - # String
+          #   # # WriteOperationType: # String
+      Tasks:
+        - SourceFields:
+            - # String
+          # ConnectorOperator:
+          #   # Amplitude: # String
+          #   # Datadog: # String
+          #   # Dynatrace: # String
+          #   # GoogleAnalytics: # String
+          #   # InforNexus: # String
+          #   # Marketo: # String
+          #   # S3: # String
+          #   # SAPOData: # String
+          #   # Salesforce: # String
+          #   # ServiceNow: # String
+          #   # Singular: # String
+          #   # Slack: # String
+          #   # Trendmicro: # String
+          #   # Veeva: # String
+          #   # Zendesk: # String
+          #   # CustomConnector: # String
+          # DestinationField: # String
+          TaskType: # String
+          # TaskProperties:
+          #   - Key: # String
+          #     Value: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.FlowArn (String)

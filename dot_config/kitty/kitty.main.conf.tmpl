@@ -1,0 +1,14 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+# vim:fileencoding=utf-8:ft=conf:foldmethod=marker
+
+kitty_mod ctrl+shift
+clear_all_shortcuts no
+
+[[[ if eq .chezmoi.os "linux" -]]]
+watcher ~/.config/kitty/hyprland-overlay-terminal.py
+[[[- end ]]]
+
+include base16.conf
+include common.conf
+include key.common.conf
+include key.q-prefix.conf

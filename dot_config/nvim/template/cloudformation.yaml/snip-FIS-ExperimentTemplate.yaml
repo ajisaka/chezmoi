@@ -1,0 +1,39 @@
+  FISExperimentTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fis-experimenttemplate.html
+    Type: AWS::FIS::ExperimentTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fis-experimenttemplate.html
+      Description: # String
+      Targets:
+        ANY_KEY: ResourceType: # String
+          # ResourceArns:
+          #   - # String
+          # ResourceTags:
+          #   ANY_KEY: # String
+          # Parameters:
+          #   ANY_KEY: # String
+          # Filters:
+          #   - Path: # String
+          #     Values:
+          #       - # String
+          SelectionMode: # String
+      # Actions:
+      #   ANY_KEY: ActionId: # String
+      #     # Description: # String
+      #     # Parameters:
+      #     # ANY_KEY: # String
+      #     # Targets:
+      #     # ANY_KEY: # String
+      #     # StartAfter:
+      #     # - # String
+      StopConditions:
+        - Source: # String
+          # Value: # String
+      # LogConfiguration:
+      #   # CloudWatchLogsConfiguration: # Json
+      #   # S3Configuration: # Json
+      #   LogSchemaVersion: # Integer
+      RoleArn: # String
+      Tags:
+        ANY_KEY: # String
+    # !GetAtt THIS.Id (String)

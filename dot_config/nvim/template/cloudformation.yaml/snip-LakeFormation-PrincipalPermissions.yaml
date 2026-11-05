@@ -1,0 +1,53 @@
+  LakeFormationPrincipalPermissions:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-principalpermissions.html
+    Type: AWS::LakeFormation::PrincipalPermissions
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-principalpermissions.html
+      # Catalog: # String
+      # Principal:
+      #   # DataLakePrincipalIdentifier: # String
+      # Resource:
+      #   # Catalog: # Json
+      #   # Database:
+      #   # CatalogId: # String
+      #   # Name: # String
+      #   # Table:
+      #   # CatalogId: # String
+      #   # DatabaseName: # String
+      #   # # Name: # String
+      #   # # TableWildcard: # Json
+      #   # TableWithColumns:
+      #   # CatalogId: # String
+      #   # DatabaseName: # String
+      #   # Name: # String
+      #   # # ColumnNames:
+      #   #   # - # String
+      #   # # ColumnWildcard:
+      #   #   # # ExcludedColumnNames:
+      #   #   #   # - # String
+      #   # DataLocation:
+      #   # CatalogId: # String
+      #   # ResourceArn: # String
+      #   # DataCellsFilter:
+      #   # TableCatalogId: # String
+      #   # DatabaseName: # String
+      #   # TableName: # String
+      #   # Name: # String
+      #   # LFTag:
+      #   # CatalogId: # String
+      #   # TagKey: # String
+      #   # TagValues:
+      #   # - # String
+      #   # LFTagPolicy:
+      #   # CatalogId: # String
+      #   # ResourceType: # String
+      #   # Expression:
+      #   # - # TagKey: # String
+      #   # # TagValues:
+      #   #       # - # String
+      Permissions:
+        - # String
+      PermissionsWithGrantOption:
+        - # String
+    # !GetAtt THIS.PrincipalIdentifier (String)
+    # !GetAtt THIS.ResourceIdentifier (String)

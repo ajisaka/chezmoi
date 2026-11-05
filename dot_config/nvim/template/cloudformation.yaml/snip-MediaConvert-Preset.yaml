@@ -1,0 +1,12 @@
+  MediaConvertPreset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-preset.html
+    Type: AWS::MediaConvert::Preset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-preset.html
+      # Category: # String
+      # Description: # String
+      SettingsJson: # Json
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# クリップボードの内容を記憶していく、終了時に一つにまとめてクリップボードに書き込む
+
+# set -euC
+# set -x
+
+
+last=$(clipboard-pull)
+buffer="$(mktemp)"
+
+trap clean EXIT
+
+clean() {
+  clipboard-push < "$buffer"
+  rm "$buffer"
+}
+
+
+while true
+do
+  current=$(clipboard-pull)
+
+  if [ "$last" = "$current" ]
+  then
+    :
+  else
+    echo "$current" | tee --append "$buffer"
+    last="$current"
+  fi
+
+  sleep 0.2
+done

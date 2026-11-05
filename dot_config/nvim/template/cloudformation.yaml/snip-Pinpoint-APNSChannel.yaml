@@ -1,0 +1,14 @@
+  PinpointAPNSChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnschannel.html
+    Type: AWS::Pinpoint::APNSChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnschannel.html
+      # BundleId: # String
+      # PrivateKey: # String
+      # Enabled: # Boolean
+      # DefaultAuthenticationMethod: # String
+      # TokenKey: # String
+      ApplicationId: # String
+      # TeamId: # String
+      # Certificate: # String
+      # TokenKeyId: # String

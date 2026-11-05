@@ -1,0 +1,88 @@
+  FraudDetectorDetector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-frauddetector-detector.html
+    Type: AWS::FraudDetector::Detector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-frauddetector-detector.html
+      DetectorId: # String
+      # DetectorVersionStatus: # String
+      # RuleExecutionMode: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Description: # String
+      Rules:
+        - # RuleId: # String
+          # RuleVersion: # String
+          # DetectorId: # String
+          # Expression: # String
+          # Language: # String
+          # Outcomes:
+          #   - # Arn: # String
+          #     # Inline: # Boolean
+          #     # Name: # String
+          #     # Description: # String
+          #     # Tags:
+          #     # - Key: # String
+          #     # Value: # String
+          #     # CreatedTime: # String
+          #     # LastUpdatedTime: # String
+          # Arn: # String
+          # Description: # String
+          # Tags:
+          #   - Key: # String
+          #     Value: # String
+          # CreatedTime: # String
+          # LastUpdatedTime: # String
+      # EventType:
+      #   # Name: # String
+      #   # Inline: # Boolean
+      #   # Tags:
+      #   # - Key: # String
+      #   # Value: # String
+      #   # Description: # String
+      #   # EventVariables:
+      #   # - # Arn: # String
+      #   # # Inline: # Boolean
+      #   # # Name: # String
+      #   # # DataSource: # String
+      #   # # DataType: # String
+      #   # # DefaultValue: # String
+      #   # # VariableType: # String
+      #   # # Description: # String
+      #   # # Tags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # # CreatedTime: # String
+      #   # # LastUpdatedTime: # String
+      #   # Labels:
+      #   # - # Arn: # String
+      #   # # Inline: # Boolean
+      #   # # Name: # String
+      #   # # Description: # String
+      #   # # Tags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # # CreatedTime: # String
+      #   # # LastUpdatedTime: # String
+      #   # EntityTypes:
+      #   # - # Arn: # String
+      #   # # Inline: # Boolean
+      #   # # Name: # String
+      #   # # Description: # String
+      #   # # Tags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # # CreatedTime: # String
+      #   # # LastUpdatedTime: # String
+      #   # Arn: # String
+      #   # CreatedTime: # String
+      #   # LastUpdatedTime: # String
+      # AssociatedModels:
+      #   - # Arn: # String
+    # !GetAtt THIS.DetectorVersionId (String)
+    # !GetAtt THIS.EventType.Arn (String)
+    # !GetAtt THIS.EventType.CreatedTime (String)
+    # !GetAtt THIS.EventType.LastUpdatedTime (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)

@@ -1,0 +1,23 @@
+  TransferWorkflow:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-workflow.html
+    Type: AWS::Transfer::Workflow
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-workflow.html
+      # OnExceptionSteps:
+      #   - # CopyStepDetails: # Json
+      #     # CustomStepDetails: # Json
+      #     # DeleteStepDetails: # Json
+      #     # TagStepDetails: # Json
+      #     # Type: # String
+      Steps:
+        - # CopyStepDetails: # Json
+          # CustomStepDetails: # Json
+          # DeleteStepDetails: # Json
+          # TagStepDetails: # Json
+          # Type: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Description: # String
+    # !GetAtt THIS.WorkflowId (String)
+    # !GetAtt THIS.Arn (String)

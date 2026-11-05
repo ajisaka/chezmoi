@@ -1,0 +1,38 @@
+  NeptuneDBCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html
+    Type: AWS::Neptune::DBCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html
+      # StorageEncrypted: # Boolean
+      # RestoreToTime: # String
+      # EngineVersion: # String
+      # KmsKeyId: # String
+      # AssociatedRoles:
+      #   - RoleArn: # String
+      #     # FeatureName: # String
+      # AvailabilityZones:
+      #   - # String
+      # SnapshotIdentifier: # String
+      # Port: # Integer
+      # DBClusterIdentifier: # String
+      # PreferredMaintenanceWindow: # String
+      # IamAuthEnabled: # Boolean
+      # DBSubnetGroupName: # String
+      # DeletionProtection: # Boolean
+      # PreferredBackupWindow: # String
+      # UseLatestRestorableTime: # Boolean
+      # VpcSecurityGroupIds:
+      #   - # String
+      # SourceDBClusterIdentifier: # String
+      # DBClusterParameterGroupName: # String
+      # BackupRetentionPeriod: # Integer
+      # RestoreType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EnableCloudwatchLogsExports:
+      #   - # String
+    # !GetAtt THIS.ClusterResourceId (String)
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.Port (String)
+    # !GetAtt THIS.ReadEndpoint (String)

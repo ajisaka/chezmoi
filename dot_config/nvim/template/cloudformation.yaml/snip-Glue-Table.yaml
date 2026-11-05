@@ -1,0 +1,57 @@
+  GlueTable:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html
+    Type: AWS::Glue::Table
+    Properties:
+      # TableInput:
+      #   # Owner: # String
+      #   # ViewOriginalText: # String
+      #   # Description: # String
+      #   # TableType: # String
+      #   # Parameters: # Json
+      #   # ViewExpandedText: # String
+      #   # StorageDescriptor:
+      #   # # StoredAsSubDirectories: # Boolean
+      #   # # Parameters: # Json
+      #   # # BucketColumns:
+      #   #   # - # String
+      #   # # NumberOfBuckets: # Integer
+      #   # # OutputFormat: # String
+      #   # # Columns:
+      #   #   # - # Comment: # String
+      #   #   # # Type: # String
+      #   #   # Name: # String
+      #   # # SerdeInfo:
+      #   #   # # Parameters: # Json
+      #   #   # # SerializationLibrary: # String
+      #   #   # # Name: # String
+      #   # # SortColumns:
+      #   #   # - Column: # String
+      #   #   # SortOrder: # Integer
+      #   # # Compressed: # Boolean
+      #   # # SchemaReference:
+      #   #   # # SchemaVersionId: # String
+      #   #   # # SchemaId:
+      #   #   #   # # RegistryName: # String
+      #   #   #   # # SchemaName: # String
+      #   #   #   # # SchemaArn: # String
+      #   #   # # SchemaVersionNumber: # Integer
+      #   # # SkewedInfo:
+      #   #   # # SkewedColumnNames:
+      #   #   #   # - # String
+      #   #   # # SkewedColumnValues:
+      #   #   #   # - # String
+      #   #   # # SkewedColumnValueLocationMaps: # Json
+      #   # # InputFormat: # String
+      #   # # Location: # String
+      #   # TargetTable:
+      #   # # DatabaseName: # String
+      #   # # CatalogId: # String
+      #   # # Name: # String
+      #   # PartitionKeys:
+      #   # - # Comment: # String
+      #   # # Type: # String
+      #   # Name: # String
+      #   # Retention: # Integer
+      #   # Name: # String
+      DatabaseName: # String
+      CatalogId: # String

@@ -1,0 +1,11 @@
+  Route53RecoveryControlCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoverycontrol-cluster.html
+    Type: AWS::Route53RecoveryControl::Cluster
+    Properties:
+      # Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ClusterArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.ClusterEndpoints (List)

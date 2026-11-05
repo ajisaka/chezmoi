@@ -1,0 +1,21 @@
+  CloudFrontOriginRequestPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-originrequestpolicy.html
+    Type: AWS::CloudFront::OriginRequestPolicy
+    Properties:
+      # OriginRequestPolicyConfig:
+      #   # Comment: # String
+      #   # CookiesConfig:
+      #   # CookieBehavior: # String
+      #   # # Cookies:
+      #   #   # - # String
+      #   # HeadersConfig:
+      #   # HeaderBehavior: # String
+      #   # # Headers:
+      #   #   # - # String
+      #   Name: # String
+      #   # QueryStringsConfig:
+      #   # QueryStringBehavior: # String
+      #   # # QueryStrings:
+      #   #   # - # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.LastModifiedTime (String)

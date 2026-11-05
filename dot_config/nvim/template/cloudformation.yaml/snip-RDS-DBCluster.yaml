@@ -1,0 +1,72 @@
+  RDSDBCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
+    Type: AWS::RDS::DBCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
+      # AllocatedStorage: # Integer
+      # AssociatedRoles:
+      #   - # FeatureName: # String
+      #     RoleArn: # String
+      # AvailabilityZones:
+      #   - # String
+      # AutoMinorVersionUpgrade: # Boolean
+      # BacktrackWindow: # Integer
+      # BackupRetentionPeriod: # Integer
+      # CopyTagsToSnapshot: # Boolean
+      # DatabaseName: # String
+      # DBClusterInstanceClass: # String
+      # DBInstanceParameterGroupName: # String
+      # GlobalClusterIdentifier: # String
+      # DBClusterIdentifier: # String
+      # DBClusterParameterGroupName: # String
+      # DBSubnetGroupName: # String
+      # DeletionProtection: # Boolean
+      # Domain: # String
+      # DomainIAMRoleName: # String
+      # EnableCloudwatchLogsExports:
+      #   - # String
+      # EnableHttpEndpoint: # Boolean
+      # EnableIAMDatabaseAuthentication: # Boolean
+      Engine: # String
+      # EngineMode: # String
+      # EngineVersion: # String
+      # Iops: # Integer
+      # KmsKeyId: # String
+      # MasterUsername: # String
+      # MasterUserPassword: # String
+      # MonitoringInterval: # Integer
+      # MonitoringRoleArn: # String
+      # NetworkType: # String
+      # PerformanceInsightsEnabled: # Boolean
+      # PerformanceInsightsKmsKeyId: # String
+      # PerformanceInsightsRetentionPeriod: # Integer
+      # Port: # Integer
+      # PreferredBackupWindow: # String
+      # PreferredMaintenanceWindow: # String
+      # PubliclyAccessible: # Boolean
+      # ReplicationSourceIdentifier: # String
+      # RestoreType: # String
+      # ServerlessV2ScalingConfiguration:
+      #   # MinCapacity: # Double
+      #   # MaxCapacity: # Double
+      # ScalingConfiguration:
+      #   # AutoPause: # Boolean
+      #   # MaxCapacity: # Integer
+      #   # MinCapacity: # Integer
+      #   # SecondsUntilAutoPause: # Integer
+      #   # TimeoutAction: # String
+      # SnapshotIdentifier: # String
+      # SourceDBClusterIdentifier: # String
+      # SourceRegion: # String
+      # StorageEncrypted: # Boolean
+      # StorageType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # UseLatestRestorableTime: # Boolean
+      # VpcSecurityGroupIds:
+      #   - # String
+    # !GetAtt THIS.ReadEndpoint.Address (String)
+    # !GetAtt THIS.DBClusterArn (String)
+    # !GetAtt THIS.Endpoint.Address (String)
+    # !GetAtt THIS.Endpoint.Port (String)

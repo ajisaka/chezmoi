@@ -1,0 +1,112 @@
+# chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+# https://starship.rs/ja-JP/config/
+
+add_newline = false
+
+format = """
+$cmd_duration\
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$ruby\
+$rust\
+$swift\
+$terraform\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$custom\
+$time\
+$battery\
+$line_break\
+$directory\
+$lua\
+$jobs\
+$status\
+$character"""
+
+[aws]
+disabled = true
+format = '[$symbol$profile]($style) [$region](yellow) '
+symbol = '☁️'
+
+[battery]
+disabled = [[[ if has .chezmoi.hostname .hosts.mobile ]]]true[[[ else ]]]false[[[ end ]]]
+full_symbol = '🔋'
+charging_symbol = '⚡️'
+discharging_symbol = '💀'
+[[battery.display]]
+threshold = 90
+
+[cmd_duration]
+format = "took [$duration]($style)\n\n"
+
+[gcloud]
+disabled = true
+
+[git_branch]
+format = '[$symbol$branch]($style) '
+symbol = '🌱'
+
+[hostname]
+ssh_only = false
+format =  "[💻$hostname](bold red) "
+trim_at = ".example.com"
+disabled = false
+
+[nodejs]
+disabled = false
+
+[package]
+format = '[$symbol$version]($style) '
+symbol = '📦'
+
+[status]
+style = 'bg:blue'
+symbol = '🔴'
+format = '[$symbol$status]($style)'
+map_symbol = true
+disabled = false
+
+[time]
+disabled = false
+format = '🕙[$time]($style) '
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )($virtualenv)]($style) '
+symbol = '🐍'
+pyenv_prefix = '.venv'
+disabled = true

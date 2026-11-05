@@ -1,0 +1,63 @@
+  RedshiftCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
+    Type: AWS::Redshift::Cluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
+      # ClusterIdentifier: # String
+      MasterUsername: # String
+      MasterUserPassword: # String
+      NodeType: # String
+      # AllowVersionUpgrade: # Boolean
+      # AutomatedSnapshotRetentionPeriod: # Integer
+      # AvailabilityZone: # String
+      # ClusterParameterGroupName: # String
+      ClusterType: # String
+      # ClusterVersion: # String
+      # ClusterSubnetGroupName: # String
+      DBName: # String
+      # ElasticIp: # String
+      # Encrypted: # Boolean
+      # HsmClientCertificateIdentifier: # String
+      # HsmConfigurationIdentifier: # String
+      # KmsKeyId: # String
+      # NumberOfNodes: # Integer
+      # Port: # Integer
+      # PreferredMaintenanceWindow: # String
+      # PubliclyAccessible: # Boolean
+      # ClusterSecurityGroups:
+      #   - # String
+      # IamRoles:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VpcSecurityGroupIds:
+      #   - # String
+      # SnapshotClusterIdentifier: # String
+      # SnapshotIdentifier: # String
+      # OwnerAccount: # String
+      # LoggingProperties:
+      #   BucketName: # String
+      #   # S3KeyPrefix: # String
+      # DestinationRegion: # String
+      # SnapshotCopyRetentionPeriod: # Integer
+      # SnapshotCopyGrantName: # String
+      # ManualSnapshotRetentionPeriod: # Integer
+      # SnapshotCopyManual: # Boolean
+      # AvailabilityZoneRelocation: # Boolean
+      # AvailabilityZoneRelocationStatus: # String
+      # AquaConfigurationStatus: # String
+      # Classic: # Boolean
+      # EnhancedVpcRouting: # Boolean
+      # MaintenanceTrackName: # String
+      # DeferMaintenance: # Boolean
+      # DeferMaintenanceStartTime: # String
+      # DeferMaintenanceEndTime: # String
+      # DeferMaintenanceDuration: # Integer
+      # RevisionTarget: # String
+      # ResourceAction: # String
+      # RotateEncryptionKey: # Boolean
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Endpoint.Port (String)
+    # !GetAtt THIS.Endpoint.Address (String)
+    # !GetAtt THIS.DeferMaintenanceIdentifier (String)

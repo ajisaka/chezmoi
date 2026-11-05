@@ -1,0 +1,56 @@
+  GroundStationConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-groundstation-config.html
+    Type: AWS::GroundStation::Config
+    Properties:
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ConfigData:
+      #   # AntennaDownlinkConfig:
+      #   # # SpectrumConfig:
+      #   #   # # CenterFrequency:
+      #   #   #   # # Value: # Double
+      #   #   #   # # Units: # String
+      #   #   # # Bandwidth:
+      #   #   #   # # Value: # Double
+      #   #   #   # # Units: # String
+      #   #   # # Polarization: # String
+      #   # TrackingConfig:
+      #   # # Autotrack: # String
+      #   # DataflowEndpointConfig:
+      #   # # DataflowEndpointName: # String
+      #   # # DataflowEndpointRegion: # String
+      #   # AntennaDownlinkDemodDecodeConfig:
+      #   # # SpectrumConfig:
+      #   #   # # CenterFrequency:
+      #   #   #   # # Value: # Double
+      #   #   #   # # Units: # String
+      #   #   # # Bandwidth:
+      #   #   #   # # Value: # Double
+      #   #   #   # # Units: # String
+      #   #   # # Polarization: # String
+      #   # # DemodulationConfig:
+      #   #   # # UnvalidatedJSON: # String
+      #   # # DecodeConfig:
+      #   #   # # UnvalidatedJSON: # String
+      #   # AntennaUplinkConfig:
+      #   # # SpectrumConfig:
+      #   #   # # CenterFrequency:
+      #   #   #   # # Value: # Double
+      #   #   #   # # Units: # String
+      #   #   # # Polarization: # String
+      #   # # TargetEirp:
+      #   #   # # Value: # Double
+      #   #   # # Units: # String
+      #   # # TransmitDisabled: # Boolean
+      #   # UplinkEchoConfig:
+      #   # # Enabled: # Boolean
+      #   # # AntennaUplinkConfigArn: # String
+      #   # S3RecordingConfig:
+      #   # # BucketArn: # String
+      #   # # RoleArn: # String
+      #   # # Prefix: # String
+    # !GetAtt THIS.Type (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

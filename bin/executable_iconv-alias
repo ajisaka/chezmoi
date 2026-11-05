@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# ln -s ./iconv-alias ~/bin/to-iso-2022-jp
+# ln -s ./iconv-alias ~/bin/to-euc-jp
+# ln -s ./iconv-alias ~/bin/to-ms932
+# ln -s ./iconv-alias ~/bin/from-iso-2022-jp
+# ln -s ./iconv-alias ~/bin/from-euc-jp
+# ln -s ./iconv-alias ~/bin/from-ms932
+
+set -eu
+
+cmd_name="$(basename "$0")"
+encoding_name="${cmd_name#*-}"  # remove 'from/to' prefix
+direction="${cmd_name%%-*}"     # remove encoding
+
+# echo "encoding_name = $encoding_name, direction = $direction"
+
+case "$direction" in
+  from)
+    iconv --from "$encoding_name" --to 'UTF-8'          "$@"
+    ;;
+  to)
+    iconv --from 'UTF-8'          --to "$encoding_name" "$@"
+    ;;
+  *)
+    echo 'WTF?'
+    exit 1
+    ;;
+esac

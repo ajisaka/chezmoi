@@ -1,0 +1,8 @@
+  IoTThingsGraphFlowTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotthingsgraph-flowtemplate.html
+    Type: AWS::IoTThingsGraph::FlowTemplate
+    Properties:
+      # CompatibleNamespaceVersion: # Double
+      # Definition:
+      #   Language: # String
+      #   Text: # String

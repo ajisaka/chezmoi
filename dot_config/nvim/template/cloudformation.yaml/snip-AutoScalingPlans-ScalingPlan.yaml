@@ -1,0 +1,52 @@
+  AutoScalingPlansScalingPlan:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html
+    Type: AWS::AutoScalingPlans::ScalingPlan
+    Properties:
+      # ApplicationSource:
+      #   # CloudFormationStackARN: # String
+      #   # TagFilters:
+      #   # - # Values:
+      #   #     # - # String
+      #   # Key: # String
+      ScalingInstructions:
+        - # DisableDynamicScaling: # Boolean
+          ServiceNamespace: # String
+          # PredictiveScalingMaxCapacityBehavior: # String
+          ScalableDimension: # String
+          # ScalingPolicyUpdateBehavior: # String
+          MinCapacity: # Integer
+          TargetTrackingConfigurations:
+            - # ScaleOutCooldown: # Integer
+              TargetValue: # Double
+              # PredefinedScalingMetricSpecification:
+              #   # ResourceLabel: # String
+              #   PredefinedScalingMetricType: # String
+              # DisableScaleIn: # Boolean
+              # ScaleInCooldown: # Integer
+              # EstimatedInstanceWarmup: # Integer
+              # CustomizedScalingMetricSpecification:
+              #   MetricName: # String
+              #   Statistic: # String
+              #   # Dimensions:
+              #   # - Value: # String
+              #   # Name: # String
+              #   # Unit: # String
+              #   Namespace: # String
+          # PredictiveScalingMaxCapacityBuffer: # Integer
+          # CustomizedLoadMetricSpecification:
+          #   MetricName: # String
+          #   Statistic: # String
+          #   # Dimensions:
+          #   # - Value: # String
+          #   # Name: # String
+          #   # Unit: # String
+          #   Namespace: # String
+          # PredefinedLoadMetricSpecification:
+          #   PredefinedLoadMetricType: # String
+          #   # ResourceLabel: # String
+          ResourceId: # String
+          # ScheduledActionBufferTime: # Integer
+          MaxCapacity: # Integer
+          # PredictiveScalingMode: # String
+    # !GetAtt THIS.ScalingPlanName (String)
+    # !GetAtt THIS.ScalingPlanVersion (String)

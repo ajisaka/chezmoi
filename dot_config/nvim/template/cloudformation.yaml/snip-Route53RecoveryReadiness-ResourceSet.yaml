@@ -1,0 +1,27 @@
+  Route53RecoveryReadinessResourceSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoveryreadiness-resourceset.html
+    Type: AWS::Route53RecoveryReadiness::ResourceSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoveryreadiness-resourceset.html
+      # ResourceSetName: # String
+      Resources:
+        - # ResourceArn: # String
+          # ComponentId: # String
+          # DnsTargetResource:
+          #   # DomainName: # String
+          #   # RecordSetId: # String
+          #   # HostedZoneArn: # String
+          #   # RecordType: # String
+          #   # TargetResource:
+          #   # # NLBResource:
+          #   #   # # Arn: # String
+          #   # # R53Resource:
+          #   #   # # DomainName: # String
+          #   #   # # RecordSetId: # String
+          # ReadinessScopes:
+          #   - # String
+      ResourceSetType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ResourceSetArn (String)

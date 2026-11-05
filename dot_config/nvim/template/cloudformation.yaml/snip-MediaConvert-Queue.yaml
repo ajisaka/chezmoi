@@ -1,0 +1,12 @@
+  MediaConvertQueue:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-queue.html
+    Type: AWS::MediaConvert::Queue
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediaconvert-queue.html
+      # Status: # String
+      # Description: # String
+      # PricingPlan: # String
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

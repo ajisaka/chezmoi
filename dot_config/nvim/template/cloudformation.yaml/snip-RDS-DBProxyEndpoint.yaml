@@ -1,0 +1,19 @@
+  RDSDBProxyEndpoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxyendpoint.html
+    Type: AWS::RDS::DBProxyEndpoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxyendpoint.html
+      DBProxyEndpointName: # String
+      DBProxyName: # String
+      # VpcSecurityGroupIds:
+      #   - # String
+      VpcSubnetIds:
+        - # String
+      # TargetRole: # String
+      # Tags:
+      #   - # Key: # String
+      #     # Value: # String
+    # !GetAtt THIS.DBProxyEndpointArn (String)
+    # !GetAtt THIS.VpcId (String)
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.IsDefault (Boolean)

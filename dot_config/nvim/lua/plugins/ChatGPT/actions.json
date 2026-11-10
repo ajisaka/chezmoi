@@ -1,0 +1,18 @@
+{
+  "test": {
+    "type": "chat",
+    "opts": {
+      "template": "{{argument}}",
+      "strategy": "append",
+      "params": {
+        "model": "gpt-4"
+      }
+    },
+    "args": {
+      "argument": {
+        "type": "string",
+        "optional": "false"
+      }
+    }
+  }
+}

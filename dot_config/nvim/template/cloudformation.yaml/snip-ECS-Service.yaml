@@ -1,0 +1,74 @@
+  ECSService:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
+    Type: AWS::ECS::Service
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
+      # CapacityProviderStrategy:
+      #   - # Base: # Integer
+      #     # CapacityProvider: # String
+      #     # Weight: # Integer
+      # Cluster: # String
+      # DeploymentConfiguration:
+      #   # DeploymentCircuitBreaker:
+      #   # Enable: # Boolean
+      #   # Rollback: # Boolean
+      #   # MaximumPercent: # Integer
+      #   # MinimumHealthyPercent: # Integer
+      # DeploymentController:
+      #   # Type: # String
+      # DesiredCount: # Integer
+      # EnableECSManagedTags: # Boolean
+      # EnableExecuteCommand: # Boolean
+      # HealthCheckGracePeriodSeconds: # Integer
+      # LaunchType: # String
+      # LoadBalancers:
+      #   - # ContainerName: # String
+      #     # ContainerPort: # Integer
+      #     # LoadBalancerName: # String
+      #     # TargetGroupArn: # String
+      # NetworkConfiguration:
+      #   # AwsvpcConfiguration:
+      #   # # AssignPublicIp: # String
+      #   # # SecurityGroups:
+      #   #   # - # String
+      #   # # Subnets:
+      #   #   # - # String
+      # PlacementConstraints:
+      #   - # Expression: # String
+      #     Type: # String
+      # PlacementStrategies:
+      #   - # Field: # String
+      #     Type: # String
+      # PlatformVersion: # String
+      # PropagateTags: # String
+      # Role: # String
+      # SchedulingStrategy: # String
+      # ServiceConnectConfiguration:
+      #   Enabled: # Boolean
+      #   # Namespace: # String
+      #   # Services:
+      #   # - PortName: # String
+      #   # # DiscoveryName: # String
+      #   # # ClientAliases:
+      #   #     # - Port: # Integer
+      #   #     # # DnsName: # String
+      #   # # IngressPortOverride: # Integer
+      #   # LogConfiguration:
+      #   # # LogDriver: # String
+      #   # # Options:
+      #   #   # ANY_KEY: # String
+      #   # # SecretOptions:
+      #   #   # - Name: # String
+      #   #   # ValueFrom: # String
+      # ServiceName: # String
+      # ServiceRegistries:
+      #   - # ContainerName: # String
+      #     # ContainerPort: # Integer
+      #     # Port: # Integer
+      #     # RegistryArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TaskDefinition: # String
+    # !GetAtt THIS.ServiceArn (String)
+    # !GetAtt THIS.Name (String)

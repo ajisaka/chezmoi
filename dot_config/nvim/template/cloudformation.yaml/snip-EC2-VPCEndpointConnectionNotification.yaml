@@ -1,0 +1,10 @@
+  EC2VPCEndpointConnectionNotification:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html
+    Type: AWS::EC2::VPCEndpointConnectionNotification
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html
+      ConnectionEvents:
+        - # String
+      # VPCEndpointId: # String
+      # ServiceId: # String
+      ConnectionNotificationArn: # String

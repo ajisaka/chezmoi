@@ -1,0 +1,61 @@
+  # Pessimists will die {{{
+  PessimisticEventsRule:
+    Type: AWS::Events::Rule
+    Properties:
+      ScheduleExpression: 'cron(0 2 * * ? *)'  # UTC
+      State: ENABLED
+      Targets:
+        - Id: PessimisticFunction
+          Arn: !GetAtt PessimisticFunction.Arn
+
+  PessimisticFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        ZipFile: |
+          import boto3
+          import os
+          cfn = boto3.client('cloudformation')
+          def lambda_handler(event, context):
+            cfn.delete_stack(
+              StackName=os.environ['StackName'],
+              RetainResources=[
+                # S3 バケットの ARN など
+              ]
+            )
+      Environment:
+        Variables:
+          StackName: !Ref AWS::StackName
+      Handler: index.lambda_handler
+      Role: !GetAtt PessimisticFunctionRole.Arn
+      Runtime: python3.8
+
+  PessimisticFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: sts:AssumeRole
+            Principal:
+              Service: lambda.amazonaws.com
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: cloudformation
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Resource: '*'
+                Action: '*'
+
+  PessimisticLambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !GetAtt PessimisticFunction.Arn
+      Principal: events.amazonaws.com
+      SourceAccount: !Ref AWS::AccountId
+      SourceArn: !GetAtt PessimisticEventsRule.Arn
+  # }}}

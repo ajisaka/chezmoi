@@ -1,0 +1,48 @@
+  QuickSightAnalysis:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html
+    Type: AWS::QuickSight::Analysis
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html
+      AnalysisId: # String
+      AwsAccountId: # String
+      # Errors:
+      #   - # Type: # String
+      #     # Message: # String
+      # Name: # String
+      # Parameters:
+      #   # StringParameters:
+      #   # - Values:
+      #   # - # String
+      #   # Name: # String
+      #   # DecimalParameters:
+      #   # - Values:
+      #   # - # Double
+      #   # Name: # String
+      #   # IntegerParameters:
+      #   # - Values:
+      #   # - # Double
+      #   # Name: # String
+      #   # DateTimeParameters:
+      #   # - Values:
+      #   # - # String
+      #   # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # SourceEntity:
+      #   # SourceTemplate:
+      #   # DataSetReferences:
+      #   # - DataSetArn: # String
+      #   # DataSetPlaceholder: # String
+      #   # Arn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ThemeArn: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.DataSetArns (List)
+    # !GetAtt THIS.LastUpdatedTime (String)
+    # !GetAtt THIS.Sheets (List)
+    # !GetAtt THIS.Status (String)

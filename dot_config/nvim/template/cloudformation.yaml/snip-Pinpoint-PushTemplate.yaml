@@ -1,0 +1,50 @@
+  PinpointPushTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html
+    Type: AWS::Pinpoint::PushTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-pushtemplate.html
+      # GCM:
+      #   # Action: # String
+      #   # ImageUrl: # String
+      #   # SmallImageIconUrl: # String
+      #   # Title: # String
+      #   # ImageIconUrl: # String
+      #   # Sound: # String
+      #   # Body: # String
+      #   # Url: # String
+      # Baidu:
+      #   # Action: # String
+      #   # ImageUrl: # String
+      #   # SmallImageIconUrl: # String
+      #   # Title: # String
+      #   # ImageIconUrl: # String
+      #   # Sound: # String
+      #   # Body: # String
+      #   # Url: # String
+      TemplateName: # String
+      # ADM:
+      #   # Action: # String
+      #   # ImageUrl: # String
+      #   # SmallImageIconUrl: # String
+      #   # Title: # String
+      #   # ImageIconUrl: # String
+      #   # Sound: # String
+      #   # Body: # String
+      #   # Url: # String
+      # APNS:
+      #   # Action: # String
+      #   # MediaUrl: # String
+      #   # Title: # String
+      #   # Sound: # String
+      #   # Body: # String
+      #   # Url: # String
+      # TemplateDescription: # String
+      # DefaultSubstitutions: # String
+      # Default:
+      #   # Action: # String
+      #   # Title: # String
+      #   # Sound: # String
+      #   # Body: # String
+      #   # Url: # String
+      # Tags: # Json
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,8 @@
+  PersonalizeSchema:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-personalize-schema.html
+    Type: AWS::Personalize::Schema
+    Properties:
+      Name: # String
+      Schema: # String
+      # Domain: # String
+    # !GetAtt THIS.SchemaArn (String)

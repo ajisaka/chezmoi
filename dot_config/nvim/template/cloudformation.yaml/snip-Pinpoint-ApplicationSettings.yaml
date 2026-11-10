@@ -1,0 +1,19 @@
+  PinpointApplicationSettings:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html
+    Type: AWS::Pinpoint::ApplicationSettings
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-applicationsettings.html
+      # QuietTime:
+      #   Start: # String
+      #   End: # String
+      # Limits:
+      #   # Daily: # Integer
+      #   # MaximumDuration: # Integer
+      #   # Total: # Integer
+      #   # MessagesPerSecond: # Integer
+      ApplicationId: # String
+      # CampaignHook:
+      #   # Mode: # String
+      #   # WebUrl: # String
+      #   # LambdaFunctionName: # String
+      # CloudWatchMetricsEnabled: # Boolean

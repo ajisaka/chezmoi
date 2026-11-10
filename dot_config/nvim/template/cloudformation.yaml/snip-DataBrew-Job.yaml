@@ -1,0 +1,97 @@
+  DataBrewJob:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html
+    Type: AWS::DataBrew::Job
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html
+      # DatasetName: # String
+      # EncryptionKeyArn: # String
+      # EncryptionMode: # String
+      Name: # String
+      Type: # String
+      # LogSubscription: # String
+      # MaxCapacity: # Integer
+      # MaxRetries: # Integer
+      # Outputs:
+      #   - # CompressionFormat: # String
+      #     # Format: # String
+      #     # FormatOptions:
+      #     # # Csv:
+      #     #   # # Delimiter: # String
+      #     # PartitionColumns:
+      #     # - # String
+      #     # Location:
+      #     # Bucket: # String
+      #     # # Key: # String
+      #     # # BucketOwner: # String
+      #     # Overwrite: # Boolean
+      #     # MaxOutputFiles: # Integer
+      # DataCatalogOutputs:
+      #   - # CatalogId: # String
+      #     DatabaseName: # String
+      #     TableName: # String
+      #     # S3Options:
+      #     # # Location:
+      #     #   # Bucket: # String
+      #     #   # # Key: # String
+      #     #   # # BucketOwner: # String
+      #     # DatabaseOptions:
+      #     # # TempDirectory:
+      #     #   # Bucket: # String
+      #     #   # # Key: # String
+      #     #   # # BucketOwner: # String
+      #     # TableName: # String
+      #     # Overwrite: # Boolean
+      # DatabaseOutputs:
+      #   - GlueConnectionName: # String
+      #     # DatabaseOutputMode: # String
+      #     # DatabaseOptions:
+      #     # # TempDirectory:
+      #     #   # Bucket: # String
+      #     #   # # Key: # String
+      #     #   # # BucketOwner: # String
+      #     # TableName: # String
+      # OutputLocation:
+      #   Bucket: # String
+      #   # Key: # String
+      #   # BucketOwner: # String
+      # ProjectName: # String
+      # Recipe:
+      #   Name: # String
+      #   # Version: # String
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Timeout: # Integer
+      # JobSample:
+      #   # Mode: # String
+      #   # Size: # Integer
+      # ProfileConfiguration:
+      #   # DatasetStatisticsConfiguration:
+      #   # # IncludedStatistics:
+      #   #   # - # String
+      #   # # Overrides:
+      #   #   # - Statistic: # String
+      #   #   # # Parameters: # Json
+      #   # ProfileColumns:
+      #   # - # Regex: # String
+      #   # # Name: # String
+      #   # ColumnStatisticsConfigurations:
+      #   # - # Selectors:
+      #   #     # - # Regex: # String
+      #   #     # # Name: # String
+      #   # # Statistics:
+      #   #     # # IncludedStatistics:
+      #   #     #   # - # String
+      #   #     # # Overrides:
+      #   #     #   # - Statistic: # String
+      #   #     #   # # Parameters: # Json
+      #   # EntityDetectorConfiguration:
+      #   # EntityTypes:
+      #   # - # String
+      #   # # AllowedStatistics:
+      #   #   # Statistics:
+      #   #   # - # String
+      # ValidationConfigurations:
+      #   - RulesetArn: # String
+      #     # ValidationMode: # String

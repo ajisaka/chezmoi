@@ -1,0 +1,53 @@
+  ApiGatewayDeployment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
+    Type: AWS::ApiGateway::Deployment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
+      # DeploymentCanarySettings:
+      #   # PercentTraffic: # Double
+      #   # StageVariableOverrides:
+      #   # ANY_KEY: # String
+      #   # UseStageCache: # Boolean
+      # Description: # String
+      RestApiId: # String
+      # StageDescription:
+      #   # AccessLogSetting:
+      #   # # DestinationArn: # String
+      #   # # Format: # String
+      #   # CacheClusterEnabled: # Boolean
+      #   # CacheClusterSize: # String
+      #   # CacheDataEncrypted: # Boolean
+      #   # CacheTtlInSeconds: # Integer
+      #   # CachingEnabled: # Boolean
+      #   # CanarySetting:
+      #   # # PercentTraffic: # Double
+      #   # # StageVariableOverrides:
+      #   #   # ANY_KEY: # String
+      #   # # UseStageCache: # Boolean
+      #   # ClientCertificateId: # String
+      #   # DataTraceEnabled: # Boolean
+      #   # Description: # String
+      #   # DocumentationVersion: # String
+      #   # LoggingLevel: # String
+      #   # MethodSettings:
+      #   # - # CacheDataEncrypted: # Boolean
+      #   # # CacheTtlInSeconds: # Integer
+      #   # # CachingEnabled: # Boolean
+      #   # # DataTraceEnabled: # Boolean
+      #   # # HttpMethod: # String
+      #   # # LoggingLevel: # String
+      #   # # MetricsEnabled: # Boolean
+      #   # # ResourcePath: # String
+      #   # # ThrottlingBurstLimit: # Integer
+      #   # # ThrottlingRateLimit: # Double
+      #   # MetricsEnabled: # Boolean
+      #   # Tags:
+      #   # - Key: # String
+      #   # Value: # String
+      #   # ThrottlingBurstLimit: # Integer
+      #   # ThrottlingRateLimit: # Double
+      #   # TracingEnabled: # Boolean
+      #   # Variables:
+      #   # ANY_KEY: # String
+      # StageName: # String
+    # !GetAtt THIS.DeploymentId (String)

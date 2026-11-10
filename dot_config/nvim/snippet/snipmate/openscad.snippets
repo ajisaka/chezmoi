@@ -1,0 +1,39 @@
+snippet config
+  // Config {{{
+
+  // filename: ${1:main}-v{version}
+
+  // }}}
+
+snippet lib.fillet2d
+  module fillet2d(r, d = 0) {
+      offset(r=r - d) offset(delta=-r) children(0);
+  }
+
+
+snippet lib.fillet3d
+  module fillet3d(r) {
+      minkowski()
+      {
+          children(0);
+          sphere(r = 1.5);
+      }
+  }
+
+snippet lib.regular_polygon
+  module regular_polygon(order = 4, d = 1, as_inner = false) // {{{
+  {
+      _d = as_inner ? d / cos(180 / order) : d;
+      echo(_d);
+      circle(r = _d / 2, $fn = order);
+  } // }}}
+
+snippet grid.rebuilt.use
+  use <rebuilt/src/core/gridfinity-rebuilt-holes.scad>
+  use <rebuilt/src/core/gridfinity-rebuilt-utility.scad>
+
+snippet grid.rebuilt.init
+  gridfinityInit(gx = 2, gy = 2, h = height(6), h0 = 0, sl = 0)
+  {
+  }
+  gridfinityBase([ columns, rows ]);

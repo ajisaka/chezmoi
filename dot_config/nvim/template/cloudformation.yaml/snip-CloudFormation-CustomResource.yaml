@@ -1,0 +1,5 @@
+  CloudFormationCustomResource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
+    Type: AWS::CloudFormation::CustomResource
+    Properties:
+      ServiceToken: # String

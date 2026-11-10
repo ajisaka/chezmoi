@@ -1,0 +1,13 @@
+  IAMPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
+    Type: AWS::IAM::Policy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
+      # Groups:
+      #   - # String
+      PolicyDocument: # Json
+      PolicyName: # String
+      # Roles:
+      #   - # String
+      # Users:
+      #   - # String

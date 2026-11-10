@@ -1,0 +1,51 @@
+  ServerlessHttpApi:
+    # https://github.com/aws/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesshttpapi
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      # https://github.com/aws/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesshttpapi
+      # StageName: # String
+      # DefinitionUri:
+      #   # ref: https://github.com/aws/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesshttpapi
+      # DefinitionBody: # Json
+      # Auth:
+      #   # DefaultAuthorizer: # String
+      #   # Authorizers: # Json
+      # Tags:
+      #   ANY_KEY: # String
+      # AccessLogSetting:
+      #   # DestinationArn: # String
+      #   # Format: # String
+      # CorsConfiguration:
+      #   # ref: https://github.com/aws/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesshttpapi
+      # DefaultRouteSettings:
+      #   # DataTraceEnabled: # Boolean
+      #   # DetailedMetricsEnabled: # Boolean
+      #   # LoggingLevel: # String
+      #   # ThrottlingBurstLimit: # Integer
+      #   # ThrottlingRateLimit: # Double
+      # RouteSettings:
+      #   # DataTraceEnabled: # Boolean
+      #   # DetailedMetricsEnabled: # Boolean
+      #   # LoggingLevel: # String
+      #   # ThrottlingBurstLimit: # Integer
+      #   # ThrottlingRateLimit: # Double
+      # Domain:
+      #   DomainName: # String
+      #   CertificateArn: # String
+      #   # EndpointConfiguration: # String
+      #   # BasePath: # String
+      #   # Route53:
+      #   # # DistributedDomainName: # String
+      #   # # EvaluateTargetHealth: # Boolean
+      #   # # HostedZoneId: # String
+      #   # # HostedZoneName: # String
+      #   # # IpV6: # Boolean
+      #   # SecurityPolicy: # String
+      #   # MutualTlsAuthentication:
+      #   # # TruststoreUri: # String
+      #   # # TruststoreVersion: # Boolean
+      # StageVariables:
+      #   ANY_KEY: # String
+      # FailOnWarnings: # Boolean
+      # Description: # String
+      # DisableExecuteApiEndpoint: # Boolean

@@ -1,0 +1,14 @@
+  EKSAddon:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-addon.html
+    Type: AWS::EKS::Addon
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-addon.html
+      ClusterName: # String
+      AddonName: # String
+      # AddonVersion: # String
+      # ResolveConflicts: # String
+      # ServiceAccountRoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

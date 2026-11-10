@@ -1,0 +1,25 @@
+  ElastiCacheGlobalReplicationGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-globalreplicationgroup.html
+    Type: AWS::ElastiCache::GlobalReplicationGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-globalreplicationgroup.html
+      # GlobalReplicationGroupIdSuffix: # String
+      # AutomaticFailoverEnabled: # Boolean
+      # CacheNodeType: # String
+      # EngineVersion: # String
+      # CacheParameterGroupName: # String
+      # GlobalNodeGroupCount: # Integer
+      # GlobalReplicationGroupDescription: # String
+      Members:
+        - # ReplicationGroupId: # String
+          # ReplicationGroupRegion: # String
+          # Role: # String
+      # RegionalConfigurations:
+      #   - # ReplicationGroupId: # String
+      #     # ReplicationGroupRegion: # String
+      #     # ReshardingConfigurations:
+      #     # - # NodeGroupId: # String
+      #     # # PreferredAvailabilityZones:
+      #     #     # - # String
+    # !GetAtt THIS.GlobalReplicationGroupId (String)
+    # !GetAtt THIS.Status (String)

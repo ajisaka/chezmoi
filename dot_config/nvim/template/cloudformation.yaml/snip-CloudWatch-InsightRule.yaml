@@ -1,0 +1,13 @@
+  CloudWatchInsightRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-insightrule.html
+    Type: AWS::CloudWatch::InsightRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-insightrule.html
+      RuleState: # String
+      RuleBody: # String
+      RuleName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RuleName (String)

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+[ -z "${KITTY_PID:-}" ] && [ "${XDG_BACKEND:-}" = wayland ]

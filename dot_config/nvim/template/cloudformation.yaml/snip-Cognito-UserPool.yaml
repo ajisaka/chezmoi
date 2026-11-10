@@ -1,0 +1,100 @@
+  CognitoUserPool:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
+    Type: AWS::Cognito::UserPool
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html
+      # UserPoolTags: # Json
+      # Policies:
+      #   # PasswordPolicy:
+      #   # # RequireNumbers: # Boolean
+      #   # # MinimumLength: # Integer
+      #   # # TemporaryPasswordValidityDays: # Integer
+      #   # # RequireUppercase: # Boolean
+      #   # # RequireLowercase: # Boolean
+      #   # # RequireSymbols: # Boolean
+      # VerificationMessageTemplate:
+      #   # EmailMessageByLink: # String
+      #   # EmailMessage: # String
+      #   # SmsMessage: # String
+      #   # EmailSubject: # String
+      #   # DefaultEmailOption: # String
+      #   # EmailSubjectByLink: # String
+      # MfaConfiguration: # String
+      # Schema:
+      #   - # DeveloperOnlyAttribute: # Boolean
+      #     # Mutable: # Boolean
+      #     # AttributeDataType: # String
+      #     # StringAttributeConstraints:
+      #     # # MinLength: # String
+      #     # # MaxLength: # String
+      #     # Required: # Boolean
+      #     # NumberAttributeConstraints:
+      #     # # MinValue: # String
+      #     # # MaxValue: # String
+      #     # Name: # String
+      # AdminCreateUserConfig:
+      #   # InviteMessageTemplate:
+      #   # # EmailMessage: # String
+      #   # # SMSMessage: # String
+      #   # # EmailSubject: # String
+      #   # UnusedAccountValidityDays: # Integer
+      #   # AllowAdminCreateUserOnly: # Boolean
+      # DeletionProtection: # String
+      # SmsAuthenticationMessage: # String
+      # UsernameConfiguration:
+      #   # CaseSensitive: # Boolean
+      # UserPoolName: # String
+      # SmsVerificationMessage: # String
+      # UserPoolAddOns:
+      #   # AdvancedSecurityMode: # String
+      # UserAttributeUpdateSettings:
+      #   AttributesRequireVerificationBeforeUpdate:
+      #     - # String
+      # EmailConfiguration:
+      #   # ReplyToEmailAddress: # String
+      #   # ConfigurationSet: # String
+      #   # EmailSendingAccount: # String
+      #   # SourceArn: # String
+      #   # From: # String
+      # SmsConfiguration:
+      #   # SnsRegion: # String
+      #   # ExternalId: # String
+      #   # SnsCallerArn: # String
+      # AliasAttributes:
+      #   - # String
+      # EnabledMfas:
+      #   - # String
+      # EmailVerificationSubject: # String
+      # LambdaConfig:
+      #   # CreateAuthChallenge: # String
+      #   # PreSignUp: # String
+      #   # KMSKeyID: # String
+      #   # UserMigration: # String
+      #   # PostAuthentication: # String
+      #   # VerifyAuthChallengeResponse: # String
+      #   # PreAuthentication: # String
+      #   # DefineAuthChallenge: # String
+      #   # PreTokenGeneration: # String
+      #   # CustomSMSSender:
+      #   # # LambdaArn: # String
+      #   # # LambdaVersion: # String
+      #   # PostConfirmation: # String
+      #   # CustomMessage: # String
+      #   # CustomEmailSender:
+      #   # # LambdaArn: # String
+      #   # # LambdaVersion: # String
+      # UsernameAttributes:
+      #   - # String
+      # AutoVerifiedAttributes:
+      #   - # String
+      # DeviceConfiguration:
+      #   # DeviceOnlyRememberedOnUserPrompt: # Boolean
+      #   # ChallengeRequiredOnNewDevice: # Boolean
+      # EmailVerificationMessage: # String
+      # AccountRecoverySetting:
+      #   # RecoveryMechanisms:
+      #   # - # Priority: # Integer
+      #   # # Name: # String
+    # !GetAtt THIS.ProviderName (String)
+    # !GetAtt THIS.ProviderURL (String)
+    # !GetAtt THIS.Arn (String)

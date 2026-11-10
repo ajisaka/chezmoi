@@ -1,0 +1,7 @@
+snippet project_name
+    PROJECT_NAME=$(shell basename $(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+
+snippet target
+    .PHONY: ${1:target}
+    ${1:target}:
+    	${2:command}

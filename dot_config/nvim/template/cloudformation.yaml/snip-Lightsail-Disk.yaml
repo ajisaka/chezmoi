@@ -1,0 +1,25 @@
+  LightsailDisk:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-disk.html
+    Type: AWS::Lightsail::Disk
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-disk.html
+      DiskName: # String
+      # AvailabilityZone: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AddOns:
+      #   - AddOnType: # String
+      #     # Status: # String
+      #     # AutoSnapshotAddOnRequest:
+      #     # # SnapshotTimeOfDay: # String
+      SizeInGb: # Integer
+    # !GetAtt THIS.DiskArn (String)
+    # !GetAtt THIS.SupportCode (String)
+    # !GetAtt THIS.ResourceType (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.AttachmentState (String)
+    # !GetAtt THIS.Iops (Integer)
+    # !GetAtt THIS.IsAttached (Boolean)
+    # !GetAtt THIS.Path (String)
+    # !GetAtt THIS.AttachedTo (String)

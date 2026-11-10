@@ -1,0 +1,33 @@
+  EC2SecurityGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
+      GroupDescription: # String
+      # GroupName: # String
+      # SecurityGroupEgress:
+      #   - # CidrIp: # String
+      #     # CidrIpv6: # String
+      #     # Description: # String
+      #     # DestinationPrefixListId: # String
+      #     # DestinationSecurityGroupId: # String
+      #     # FromPort: # Integer
+      #     IpProtocol: # String
+      #     # ToPort: # Integer
+      # SecurityGroupIngress:
+      #   - # CidrIp: # String
+      #     # CidrIpv6: # String
+      #     # Description: # String
+      #     # FromPort: # Integer
+      #     IpProtocol: # String
+      #     # SourcePrefixListId: # String
+      #     # SourceSecurityGroupId: # String
+      #     # SourceSecurityGroupName: # String
+      #     # SourceSecurityGroupOwnerId: # String
+      #     # ToPort: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VpcId: # String
+    # !GetAtt THIS.GroupId (String)
+    # !GetAtt THIS.VpcId (String)

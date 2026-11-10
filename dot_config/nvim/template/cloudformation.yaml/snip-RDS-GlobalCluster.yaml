@@ -1,0 +1,11 @@
+  RDSGlobalCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-globalcluster.html
+    Type: AWS::RDS::GlobalCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-globalcluster.html
+      # Engine: # String
+      # EngineVersion: # String
+      # DeletionProtection: # Boolean
+      # GlobalClusterIdentifier: # String
+      # SourceDBClusterIdentifier: # String
+      # StorageEncrypted: # Boolean

@@ -1,0 +1,21 @@
+  LightsailBucket:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-bucket.html
+    Type: AWS::Lightsail::Bucket
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-bucket.html
+      BucketName: # String
+      BundleId: # String
+      # ObjectVersioning: # Boolean
+      # AccessRules:
+      #   # GetObject: # String
+      #   # AllowPublicOverrides: # Boolean
+      # ResourcesReceivingAccess:
+      #   - # String
+      # ReadOnlyAccessAccounts:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.BucketArn (String)
+    # !GetAtt THIS.Url (String)
+    # !GetAtt THIS.AbleToUpdateBundle (Boolean)

@@ -1,0 +1,9 @@
+  OpsWorksVolume:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html
+    Type: AWS::OpsWorks::Volume
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html
+      Ec2VolumeId: # String
+      # MountPoint: # String
+      # Name: # String
+      StackId: # String

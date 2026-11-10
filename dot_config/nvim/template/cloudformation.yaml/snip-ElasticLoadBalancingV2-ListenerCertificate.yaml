@@ -1,0 +1,7 @@
+  ElasticLoadBalancingV2ListenerCertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
+    Type: AWS::ElasticLoadBalancingV2::ListenerCertificate
+    Properties:
+      Certificates:
+        - # CertificateArn: # String
+      ListenerArn: # String

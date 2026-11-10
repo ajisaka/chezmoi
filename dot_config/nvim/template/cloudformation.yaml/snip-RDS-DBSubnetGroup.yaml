@@ -1,0 +1,12 @@
+  RDSDBSubnetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnetgroup.html
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnetgroup.html
+      DBSubnetGroupDescription: # String
+      # DBSubnetGroupName: # String
+      SubnetIds:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

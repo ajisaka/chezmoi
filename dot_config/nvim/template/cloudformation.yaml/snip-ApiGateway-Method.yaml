@@ -1,0 +1,50 @@
+  ApiGatewayMethod:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
+    Type: AWS::ApiGateway::Method
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
+      # ApiKeyRequired: # Boolean
+      # AuthorizationScopes:
+      #   - # String
+      # AuthorizationType: # String
+      # AuthorizerId: # String
+      HttpMethod: # String
+      # Integration:
+      #   # CacheKeyParameters:
+      #   # - # String
+      #   # CacheNamespace: # String
+      #   # ConnectionId: # String
+      #   # ConnectionType: # String
+      #   # ContentHandling: # String
+      #   # Credentials: # String
+      #   # IntegrationHttpMethod: # String
+      #   # IntegrationResponses:
+      #   # - # ContentHandling: # String
+      #   # # ResponseParameters:
+      #   #     # ANY_KEY: # String
+      #   # # ResponseTemplates:
+      #   #     # ANY_KEY: # String
+      #   # # SelectionPattern: # String
+      #   # StatusCode: # String
+      #   # PassthroughBehavior: # String
+      #   # RequestParameters:
+      #   # ANY_KEY: # String
+      #   # RequestTemplates:
+      #   # ANY_KEY: # String
+      #   # TimeoutInMillis: # Integer
+      #   # Type: # String
+      #   # Uri: # String
+      # MethodResponses:
+      #   - # ResponseModels:
+      #     # ANY_KEY: # String
+      #     # ResponseParameters:
+      #     # ANY_KEY: # Boolean
+      #     StatusCode: # String
+      # OperationName: # String
+      # RequestModels:
+      #   ANY_KEY: # String
+      # RequestParameters:
+      #   ANY_KEY: # Boolean
+      # RequestValidatorId: # String
+      ResourceId: # String
+      RestApiId: # String

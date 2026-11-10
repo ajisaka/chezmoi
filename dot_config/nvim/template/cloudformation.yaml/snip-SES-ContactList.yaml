@@ -1,0 +1,15 @@
+  SESContactList:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-contactlist.html
+    Type: AWS::SES::ContactList
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-contactlist.html
+      # ContactListName: # String
+      # Description: # String
+      # Topics:
+      #   - TopicName: # String
+      #     DisplayName: # String
+      #     # Description: # String
+      #     DefaultSubscriptionStatus: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

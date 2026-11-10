@@ -1,0 +1,58 @@
+  IoTAnalyticsPipeline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html
+    Type: AWS::IoTAnalytics::Pipeline
+    Properties:
+      # PipelineName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      PipelineActivities:
+        - # SelectAttributes:
+          #   # Next: # String
+          #   Attributes:
+          #     - # String
+          #   Name: # String
+          # Datastore:
+          #   DatastoreName: # String
+          #   Name: # String
+          # Filter:
+          #   Filter: # String
+          #   # Next: # String
+          #   Name: # String
+          # AddAttributes:
+          #   # Next: # String
+          #   Attributes:
+          #     ANY_KEY: # String
+          #   Name: # String
+          # Channel:
+          #   ChannelName: # String
+          #   # Next: # String
+          #   Name: # String
+          # DeviceShadowEnrich:
+          #   Attribute: # String
+          #   # Next: # String
+          #   ThingName: # String
+          #   RoleArn: # String
+          #   Name: # String
+          # Math:
+          #   Attribute: # String
+          #   # Next: # String
+          #   Math: # String
+          #   Name: # String
+          # Lambda:
+          #   BatchSize: # Integer
+          #   # Next: # String
+          #   LambdaName: # String
+          #   Name: # String
+          # DeviceRegistryEnrich:
+          #   Attribute: # String
+          #   # Next: # String
+          #   ThingName: # String
+          #   RoleArn: # String
+          #   Name: # String
+          # RemoveAttributes:
+          #   # Next: # String
+          #   Attributes:
+          #     - # String
+          #   Name: # String
+    # !GetAtt THIS.Id (String)

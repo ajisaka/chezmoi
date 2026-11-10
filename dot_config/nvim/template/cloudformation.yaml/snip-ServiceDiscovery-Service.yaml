@@ -1,0 +1,27 @@
+  ServiceDiscoveryService:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html
+    Type: AWS::ServiceDiscovery::Service
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html
+      # Type: # String
+      # Description: # String
+      # HealthCheckCustomConfig:
+      #   # FailureThreshold: # Double
+      # DnsConfig:
+      #   DnsRecords:
+      #     - Type: # String
+      #       TTL: # Double
+      #   # RoutingPolicy: # String
+      #   # NamespaceId: # String
+      # NamespaceId: # String
+      # HealthCheckConfig:
+      #   Type: # String
+      #   # ResourcePath: # String
+      #   # FailureThreshold: # Double
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

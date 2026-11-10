@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+sub_command="${1:-}"
+
+if [ -n "$sub_command" ] && command -v "cz-${sub_command}" >/dev/null 2>&1
+then
+  shift
+  exec "cz-${sub_command}" "$@"
+fi
+
+exec chezmoi "$@"

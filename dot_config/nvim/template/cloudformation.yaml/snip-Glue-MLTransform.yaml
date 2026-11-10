@@ -1,0 +1,33 @@
+  GlueMLTransform:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html
+    Type: AWS::Glue::MLTransform
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-mltransform.html
+      # MaxRetries: # Integer
+      # Description: # String
+      # TransformEncryption:
+      #   # MLUserDataEncryption:
+      #   # MLUserDataEncryptionMode: # String
+      #   # # KmsKeyId: # String
+      #   # TaskRunSecurityConfigurationName: # String
+      # Timeout: # Integer
+      # Name: # String
+      Role: # String
+      # WorkerType: # String
+      # GlueVersion: # String
+      # TransformParameters:
+      #   TransformType: # String
+      #   # FindMatchesParameters:
+      #   # # PrecisionRecallTradeoff: # Double
+      #   # # EnforceProvidedLabels: # Boolean
+      #   # PrimaryKeyColumnName: # String
+      #   # # AccuracyCostTradeoff: # Double
+      # InputRecordTables:
+      #   # GlueTables:
+      #   # - # ConnectionName: # String
+      #   # TableName: # String
+      #   # DatabaseName: # String
+      #   # # CatalogId: # String
+      # NumberOfWorkers: # Integer
+      # Tags: # Json
+      # MaxCapacity: # Double

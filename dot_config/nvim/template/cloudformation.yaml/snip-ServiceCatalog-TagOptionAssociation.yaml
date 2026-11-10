@@ -1,0 +1,6 @@
+  ServiceCatalogTagOptionAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html
+    Type: AWS::ServiceCatalog::TagOptionAssociation
+    Properties:
+      TagOptionId: # String
+      ResourceId: # String

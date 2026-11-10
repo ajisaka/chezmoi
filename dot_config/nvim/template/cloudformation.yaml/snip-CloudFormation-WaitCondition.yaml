@@ -1,0 +1,8 @@
+  CloudFormationWaitCondition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html
+    Type: AWS::CloudFormation::WaitCondition
+    Properties:
+      # Count: # Integer
+      # Handle: # String
+      # Timeout: # String
+    # !GetAtt THIS.Data (Json)

@@ -1,0 +1,19 @@
+  EvidentlyProject:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-project.html
+    Type: AWS::Evidently::Project
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-project.html
+      Name: # String
+      # Description: # String
+      # DataDelivery:
+      #   # S3:
+      #   # BucketName: # String
+      #   # # Prefix: # String
+      #   # LogGroup: # String
+      # AppConfigResource:
+      #   ApplicationId: # String
+      #   EnvironmentId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,14 @@
+  TransferProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-profile.html
+    Type: AWS::Transfer::Profile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-profile.html
+      As2Id: # String
+      ProfileType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CertificateIds:
+      #   - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ProfileId (String)

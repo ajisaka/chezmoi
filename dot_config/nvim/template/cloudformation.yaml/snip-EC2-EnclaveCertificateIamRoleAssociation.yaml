@@ -1,0 +1,9 @@
+  EC2EnclaveCertificateIamRoleAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-enclavecertificateiamroleassociation.html
+    Type: AWS::EC2::EnclaveCertificateIamRoleAssociation
+    Properties:
+      CertificateArn: # String
+      RoleArn: # String
+    # !GetAtt THIS.CertificateS3BucketName (String)
+    # !GetAtt THIS.CertificateS3ObjectKey (String)
+    # !GetAtt THIS.EncryptionKmsKeyId (String)

@@ -1,0 +1,21 @@
+  ImageBuilderComponent:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-component.html
+    Type: AWS::ImageBuilder::Component
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-component.html
+      Name: # String
+      Version: # String
+      # Description: # String
+      # ChangeDescription: # String
+      Platform: # String
+      # Data: # String
+      # KmsKeyId: # String
+      # Tags:
+      #   ANY_KEY: # String
+      # Uri: # String
+      # SupportedOsVersions:
+      #   - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)
+    # !GetAtt THIS.Type (String)
+    # !GetAtt THIS.Encrypted (Boolean)

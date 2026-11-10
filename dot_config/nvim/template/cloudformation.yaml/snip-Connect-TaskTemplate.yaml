@@ -1,0 +1,27 @@
+  ConnectTaskTemplate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-tasktemplate.html
+    Type: AWS::Connect::TaskTemplate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-tasktemplate.html
+      InstanceArn: # String
+      # Name: # String
+      # Description: # String
+      # ContactFlowArn: # String
+      # Constraints: # Json
+      # Defaults:
+      #   - # Id:
+      #     # Name: # String
+      #     DefaultValue: # String
+      # Fields:
+      #   - # Id:
+      #     # Name: # String
+      #     # Description: # String
+      #     Type: # String
+      #     # SingleSelectOptions:
+      #     # - # String
+      # Status: # String
+      # ClientToken: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

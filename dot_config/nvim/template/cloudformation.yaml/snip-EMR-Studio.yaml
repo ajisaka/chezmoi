@@ -1,0 +1,24 @@
+  EMRStudio:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-studio.html
+    Type: AWS::EMR::Studio
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-studio.html
+      AuthMode: # String
+      DefaultS3Location: # String
+      # Description: # String
+      EngineSecurityGroupId: # String
+      Name: # String
+      ServiceRole: # String
+      SubnetIds:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # UserRole: # String
+      VpcId: # String
+      WorkspaceSecurityGroupId: # String
+      # IdpAuthUrl: # String
+      # IdpRelayStateParameterName: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.StudioId (String)
+    # !GetAtt THIS.Url (String)

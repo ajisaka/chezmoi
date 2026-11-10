@@ -1,0 +1,18 @@
+  MSKServerlessCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-serverlesscluster.html
+    Type: AWS::MSK::ServerlessCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-msk-serverlesscluster.html
+      ClusterName: # String
+      VpcConfigs:
+        - # SecurityGroups:
+          #   - # String
+          SubnetIds:
+            - # String
+      # ClientAuthentication:
+      #   # Sasl:
+      #   # # Iam:
+      #   #   # Enabled: # Boolean
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)

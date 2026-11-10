@@ -1,0 +1,25 @@
+  SSOPermissionSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sso-permissionset.html
+    Type: AWS::SSO::PermissionSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sso-permissionset.html
+      Name: # String
+      # Description: # String
+      InstanceArn: # String
+      # SessionDuration: # String
+      # RelayStateType: # String
+      # ManagedPolicies:
+      #   - # String
+      # InlinePolicy: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CustomerManagedPolicyReferences:
+      #   - Name: # String
+      #     # Path: # String
+      # PermissionsBoundary:
+      #   # CustomerManagedPolicyReference:
+      #   # Name: # String
+      #   # # Path: # String
+      #   # ManagedPolicyArn: # String
+    # !GetAtt THIS.PermissionSetArn (String)

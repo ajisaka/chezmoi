@@ -1,0 +1,36 @@
+  RUMAppMonitor:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rum-appmonitor.html
+    Type: AWS::RUM::AppMonitor
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rum-appmonitor.html
+      Name: # String
+      Domain: # String
+      # CwLogEnabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AppMonitorConfiguration:
+      #   # IdentityPoolId: # String
+      #   # ExcludedPages:
+      #   # - # String
+      #   # IncludedPages:
+      #   # - # String
+      #   # FavoritePages:
+      #   # - # String
+      #   # SessionSampleRate: # Double
+      #   # GuestRoleArn: # String
+      #   # AllowCookies: # Boolean
+      #   # Telemetries:
+      #   # - # String
+      #   # EnableXRay: # Boolean
+      #   # MetricDestinations:
+      #   # - Destination: # String
+      #   # # DestinationArn: # String
+      #   # # IamRoleArn: # String
+      #   # # MetricDefinitions:
+      #   #     # - Name: # String
+      #   #     # # ValueKey: # String
+      #   #     # # UnitLabel: # String
+      #   #     # # DimensionKeys:
+      #   #     #     # ANY_KEY: # String
+      #   #     # # EventPattern: # String

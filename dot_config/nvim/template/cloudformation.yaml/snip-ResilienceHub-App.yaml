@@ -1,0 +1,23 @@
+  ResilienceHubApp:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resiliencehub-app.html
+    Type: AWS::ResilienceHub::App
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resiliencehub-app.html
+      Name: # String
+      # Description: # String
+      # ResiliencyPolicyArn: # String
+      # Tags:
+      #   ANY_KEY: # String
+      AppTemplateBody: # String
+      ResourceMappings:
+        - # LogicalStackName: # String
+          MappingType: # String
+          # ResourceName: # String
+          # TerraformSourceName: # String
+          # PhysicalResourceId:
+          #   # AwsAccountId: # String
+          #   # AwsRegion: # String
+          #   Identifier: # String
+          #   Type: # String
+      # AppAssessmentSchedule: # String
+    # !GetAtt THIS.AppArn (String)

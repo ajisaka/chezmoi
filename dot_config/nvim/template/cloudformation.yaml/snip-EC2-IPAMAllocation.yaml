@@ -1,0 +1,10 @@
+  EC2IPAMAllocation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipamallocation.html
+    Type: AWS::EC2::IPAMAllocation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipamallocation.html
+      IpamPoolId: # String
+      # Cidr: # String
+      # NetmaskLength: # Integer
+      # Description: # String
+    # !GetAtt THIS.IpamPoolAllocationId (String)

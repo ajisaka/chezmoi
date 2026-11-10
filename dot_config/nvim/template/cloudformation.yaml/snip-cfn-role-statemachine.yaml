@@ -1,0 +1,21 @@
+
+  StateMachineRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - states.amazonaws.com
+                - !Sub 'states.${AWS::Region}.amazonaws.com'
+            Action: sts:AssumeRole
+      Path: /
+      Policies:
+        - PolicyName: function-invoker
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: lambda:*
+                Resource: '*'

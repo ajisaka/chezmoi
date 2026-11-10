@@ -1,0 +1,12 @@
+  ECRPublicRepository:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-publicrepository.html
+    Type: AWS::ECR::PublicRepository
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-publicrepository.html
+      # RepositoryName: # String
+      # RepositoryPolicyText: # Json
+      # RepositoryCatalogData: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

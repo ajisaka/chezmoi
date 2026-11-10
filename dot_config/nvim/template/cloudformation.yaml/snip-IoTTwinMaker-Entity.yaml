@@ -1,0 +1,40 @@
+  IoTTwinMakerEntity:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iottwinmaker-entity.html
+    Type: AWS::IoTTwinMaker::Entity
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iottwinmaker-entity.html
+      # EntityId: # String
+      EntityName: # String
+      # ParentEntityId: # String
+      # Description: # String
+      # Tags:
+      #   ANY_KEY: # String
+      WorkspaceId: # String
+      # Components:
+      #   ANY_KEY: # ComponentName: # String
+      #     # ComponentTypeId: # String
+      #     # Description: # String
+      #     # DefinedIn: # String
+      #     # Properties:
+      #     # ANY_KEY: # Definition: # Json
+      #     # # Value:
+      #     #     # # BooleanValue: # Boolean
+      #     #     # # DoubleValue: # Double
+      #     #     # # Expression: # String
+      #     #     # # IntegerValue: # Integer
+      #     #     # # ListValue: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iottwinmaker-entity-datavalue.html#cfn-iottwinmaker-entity-datavalue-listvalue', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'DataValue', 'DuplicatesAllowed': True}
+      #     #     # # LongValue: # Double
+      #     #     # # StringValue: # String
+      #     #     # # MapValue: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iottwinmaker-entity-datavalue.html#cfn-iottwinmaker-entity-datavalue-mapvalue', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'Map', 'ItemType': 'DataValue'}
+      #     #     # # RelationshipValue: # Json
+      #     # PropertyGroups:
+      #     # ANY_KEY: # GroupType: # String
+      #     # # PropertyNames:
+      #     #     # - # String
+      #     # Status:
+      #     # # State: # String
+      #     # # Error: # Json
+    # !GetAtt THIS.HasChildEntities (Boolean)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationDateTime (String)
+    # !GetAtt THIS.UpdateDateTime (String)

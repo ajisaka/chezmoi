@@ -1,0 +1,19 @@
+  DataSyncLocationObjectStorage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationobjectstorage.html
+    Type: AWS::DataSync::LocationObjectStorage
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationobjectstorage.html
+      # AccessKey: # String
+      AgentArns:
+        - # String
+      BucketName: # String
+      # SecretKey: # String
+      ServerHostname: # String
+      # ServerPort: # Integer
+      # ServerProtocol: # String
+      # Subdirectory: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

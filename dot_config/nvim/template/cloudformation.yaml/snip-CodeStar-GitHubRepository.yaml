@@ -1,0 +1,17 @@
+  CodeStarGitHubRepository:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html
+    Type: AWS::CodeStar::GitHubRepository
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codestar-githubrepository.html
+      # EnableIssues: # Boolean
+      # ConnectionArn: # String
+      RepositoryName: # String
+      # RepositoryAccessToken: # String
+      RepositoryOwner: # String
+      # IsPrivate: # Boolean
+      # Code:
+      #   # S3:
+      #   # # ObjectVersion: # String
+      #   # Bucket: # String
+      #   # Key: # String
+      # RepositoryDescription: # String

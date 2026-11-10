@@ -1,0 +1,20 @@
+  WorkSpacesWorkspace:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
+    Type: AWS::WorkSpaces::Workspace
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
+      BundleId: # String
+      DirectoryId: # String
+      # RootVolumeEncryptionEnabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      UserName: # String
+      # UserVolumeEncryptionEnabled: # Boolean
+      # VolumeEncryptionKey: # String
+      # WorkspaceProperties:
+      #   # ComputeTypeName: # String
+      #   # RootVolumeSizeGib: # Integer
+      #   # RunningMode: # String
+      #   # RunningModeAutoStopTimeoutInMinutes: # Integer
+      #   # UserVolumeSizeGib: # Integer

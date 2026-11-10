@@ -1,0 +1,12 @@
+  KinesisVideoSignalingChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisvideo-signalingchannel.html
+    Type: AWS::KinesisVideo::SignalingChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisvideo-signalingchannel.html
+      # Name: # String
+      # Type: # String
+      # MessageTtlSeconds: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

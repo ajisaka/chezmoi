@@ -1,0 +1,28 @@
+  SageMakerNotebookInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html
+    Type: AWS::SageMaker::NotebookInstance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html
+      # KmsKeyId: # String
+      # VolumeSizeInGB: # Integer
+      # AdditionalCodeRepositories:
+      #   - # String
+      # DefaultCodeRepository: # String
+      # DirectInternetAccess: # String
+      # PlatformIdentifier: # String
+      # AcceleratorTypes:
+      #   - # String
+      # SubnetId: # String
+      # SecurityGroupIds:
+      #   - # String
+      RoleArn: # String
+      # InstanceMetadataServiceConfiguration:
+      #   MinimumInstanceMetadataServiceVersion: # String
+      # RootAccess: # String
+      # NotebookInstanceName: # String
+      InstanceType: # String
+      # LifecycleConfigName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.NotebookInstanceName (String)

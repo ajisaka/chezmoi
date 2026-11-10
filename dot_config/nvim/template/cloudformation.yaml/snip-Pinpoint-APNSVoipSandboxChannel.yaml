@@ -1,0 +1,14 @@
+  PinpointAPNSVoipSandboxChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnsvoipsandboxchannel.html
+    Type: AWS::Pinpoint::APNSVoipSandboxChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-apnsvoipsandboxchannel.html
+      # BundleId: # String
+      # PrivateKey: # String
+      # Enabled: # Boolean
+      # DefaultAuthenticationMethod: # String
+      # TokenKey: # String
+      ApplicationId: # String
+      # TeamId: # String
+      # Certificate: # String
+      # TokenKeyId: # String

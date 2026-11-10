@@ -1,0 +1,56 @@
+  MWAAEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mwaa-environment.html
+    Type: AWS::MWAA::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mwaa-environment.html
+      Name: # String
+      # ExecutionRoleArn: # String
+      # KmsKey: # String
+      # AirflowVersion: # String
+      # SourceBucketArn: # String
+      # DagS3Path: # String
+      # PluginsS3Path: # String
+      # PluginsS3ObjectVersion: # String
+      # RequirementsS3Path: # String
+      # RequirementsS3ObjectVersion: # String
+      # AirflowConfigurationOptions: # Json
+      # EnvironmentClass: # String
+      # MaxWorkers: # Integer
+      # MinWorkers: # Integer
+      # Schedulers: # Integer
+      # NetworkConfiguration:
+      #   # SubnetIds:
+      #   # - # String
+      #   # SecurityGroupIds:
+      #   # - # String
+      # LoggingConfiguration:
+      #   # DagProcessingLogs:
+      #   # # Enabled: # Boolean
+      #   # # LogLevel: # String
+      #   # # CloudWatchLogGroupArn: # String
+      #   # SchedulerLogs:
+      #   # # Enabled: # Boolean
+      #   # # LogLevel: # String
+      #   # # CloudWatchLogGroupArn: # String
+      #   # WebserverLogs:
+      #   # # Enabled: # Boolean
+      #   # # LogLevel: # String
+      #   # # CloudWatchLogGroupArn: # String
+      #   # WorkerLogs:
+      #   # # Enabled: # Boolean
+      #   # # LogLevel: # String
+      #   # # CloudWatchLogGroupArn: # String
+      #   # TaskLogs:
+      #   # # Enabled: # Boolean
+      #   # # LogLevel: # String
+      #   # # CloudWatchLogGroupArn: # String
+      # WeeklyMaintenanceWindowStart: # String
+      # Tags: # Json
+      # WebserverAccessMode: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.WebserverUrl (String)
+    # !GetAtt THIS.LoggingConfiguration.DagProcessingLogs.CloudWatchLogGroupArn (String)
+    # !GetAtt THIS.LoggingConfiguration.SchedulerLogs.CloudWatchLogGroupArn (String)
+    # !GetAtt THIS.LoggingConfiguration.WebserverLogs.CloudWatchLogGroupArn (String)
+    # !GetAtt THIS.LoggingConfiguration.WorkerLogs.CloudWatchLogGroupArn (String)
+    # !GetAtt THIS.LoggingConfiguration.TaskLogs.CloudWatchLogGroupArn (String)

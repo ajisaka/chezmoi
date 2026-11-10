@@ -1,0 +1,2 @@
+[dependencies.FOO]
+path = "../foo"

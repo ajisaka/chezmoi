@@ -1,0 +1,13 @@
+  SageMakerCodeRepository:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-coderepository.html
+    Type: AWS::SageMaker::CodeRepository
+    Properties:
+      # CodeRepositoryName: # String
+      # GitConfig:
+      #   # SecretArn: # String
+      #   # Branch: # String
+      #   RepositoryUrl: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CodeRepositoryName (String)

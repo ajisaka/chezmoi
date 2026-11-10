@@ -1,0 +1,64 @@
+  ServerlessApi:
+    # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
+    Type: AWS::Serverless::Api
+    Properties:
+      # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
+      # Name: # String
+      StageName: # String
+      # DefinitionUri:
+      #   # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
+      # DefinitionBody: # Json
+      # CacheClusterEnabled: # Boolean
+      # CacheClusterSize: # String
+      # Variables:
+      #   ANY_KEY: # String
+      # MethodSettings:
+      #   - # Json
+      # EndpointConfiguration:
+      #   # Type: # String
+      #   # VpcEndpointIds:
+      #   # - # String
+      # BinaryMediaTypes:
+      #   - # String
+      # Cors:
+      #   # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
+      # Auth:
+      #   # DefaultAuthorizer: # String
+      #   # Authorizers: # Json
+      #   # AddDefaultAuthorizerToCorsPreflight: # Boolean
+      # TracingEnabled: # Boolean
+      # AccessLogSetting:
+      #   # DestinationArn: # String
+      #   # Format: # String
+      # OpenApiVersion: # String
+      # CanarySetting:
+      #   # DeploymentId: # String
+      #   # PercentTraffic: # Double
+      #   # StageVariableOverrides:
+      #   # ANY_KEY: # String
+      #   # UseStageCache: # Boolean
+      # Description: # String
+      # GatewayResponses:
+      #   ANY_KEY: # String
+      # MinimumCompressionSize: # Integer
+      # Models:
+      #   ANY_KEY: # String
+      # Tags:
+      #   ANY_KEY: # String
+      # Domain:
+      #   # BasePath:
+      #   # - # String
+      #   CertificateArn: # String
+      #   DomainName: # String
+      #   # EndpointConfiguration: # String
+      #   # MutualTlsAuthentication:
+      #   # # TruststoreUri: # String
+      #   # # TruststoreVersion: # String
+      #   # OwnershipVerificationCertificateArn: # String
+      #   # Route53:
+      #   # # DistributedDomainName: # String
+      #   # # EvaluateTargetHealth: # Boolean
+      #   # # HostedZoneId: # String
+      #   # # HostedZoneName: # String
+      #   # # IpV6: # Boolean
+      #   # SecurityPolicy: # String

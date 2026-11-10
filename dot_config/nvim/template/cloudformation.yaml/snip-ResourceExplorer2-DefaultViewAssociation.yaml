@@ -1,0 +1,6 @@
+  ResourceExplorer2DefaultViewAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourceexplorer2-defaultviewassociation.html
+    Type: AWS::ResourceExplorer2::DefaultViewAssociation
+    Properties:
+      ViewArn: # String
+    # !GetAtt THIS.AssociatedAwsPrincipal (String)

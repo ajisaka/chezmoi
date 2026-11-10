@@ -1,0 +1,28 @@
+  BillingConductorCustomLineItem:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-customlineitem.html
+    Type: AWS::BillingConductor::CustomLineItem
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-customlineitem.html
+      Name: # String
+      # Description: # String
+      # CustomLineItemChargeDetails:
+      #   # Flat:
+      #   # ChargeValue: # Double
+      #   # Percentage:
+      #   # # ChildAssociatedResources:
+      #   #   # - # String
+      #   # PercentageValue: # Double
+      #   Type: # String
+      BillingGroupArn: # String
+      # BillingPeriodRange:
+      #   # InclusiveStartBillingPeriod: # String
+      #   # ExclusiveEndBillingPeriod: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationTime (Integer)
+    # !GetAtt THIS.LastModifiedTime (Integer)
+    # !GetAtt THIS.AssociationSize (Integer)
+    # !GetAtt THIS.ProductCode (String)
+    # !GetAtt THIS.CurrencyCode (String)

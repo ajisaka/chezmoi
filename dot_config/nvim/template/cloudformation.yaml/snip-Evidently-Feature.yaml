@@ -1,0 +1,23 @@
+  EvidentlyFeature:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-feature.html
+    Type: AWS::Evidently::Feature
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-feature.html
+      Project: # String
+      Name: # String
+      # Description: # String
+      # EvaluationStrategy: # String
+      Variations:
+        - # VariationName: # String
+          # BooleanValue: # Boolean
+          # StringValue: # String
+          # LongValue: # Double
+          # DoubleValue: # Double
+      # DefaultVariation: # String
+      # EntityOverrides:
+      #   - # EntityId: # String
+      #     # Variation: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

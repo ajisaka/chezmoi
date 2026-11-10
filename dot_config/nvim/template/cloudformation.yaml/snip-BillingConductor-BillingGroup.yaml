@@ -1,0 +1,22 @@
+  BillingConductorBillingGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-billinggroup.html
+    Type: AWS::BillingConductor::BillingGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-billingconductor-billinggroup.html
+      Name: # String
+      # Description: # String
+      PrimaryAccountId: # String
+      # ComputationPreference:
+      #   PricingPlanArn: # String
+      # AccountGrouping:
+      #   LinkedAccountIds:
+      #     - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Size (Integer)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusReason (String)
+    # !GetAtt THIS.CreationTime (Integer)
+    # !GetAtt THIS.LastModifiedTime (Integer)

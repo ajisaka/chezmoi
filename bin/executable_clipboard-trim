@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+function do_trim () {
+  local name="$1"
+  xsel --output "--$name" | trim | xsel --input "--$name"
+}
+
+do_trim clipboard
+do_trim primary
+do_trim secondary

@@ -1,0 +1,162 @@
+  AppMeshRoute:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html
+    Type: AWS::AppMesh::Route
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html
+      MeshName: # String
+      VirtualRouterName: # String
+      # MeshOwner: # String
+      # RouteName: # String
+      # Spec:
+      #   # HttpRoute:
+      #   # # Action:
+      #   #   # WeightedTargets:
+      #   #   # - VirtualNode: # String
+      #   #   # # Port: # Integer
+      #   #   # Weight: # Integer
+      #   # # Timeout:
+      #   #   # # PerRequest:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # Idle:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   # # RetryPolicy:
+      #   #   # MaxRetries: # Integer
+      #   #   # # PerRetryTimeout:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # HttpRetryEvents:
+      #   #   #   # - # String
+      #   #   # # TcpRetryEvents:
+      #   #   #   # - # String
+      #   # # Match:
+      #   #   # # Path:
+      #   #   #   # # Regex: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Scheme: # String
+      #   #   # # Headers:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      #   #   # # Port: # Integer
+      #   #   # # Prefix: # String
+      #   #   # # Method: # String
+      #   #   # # QueryParameters:
+      #   #   #   # - Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Exact: # String
+      #   # Priority: # Integer
+      #   # Http2Route:
+      #   # # Action:
+      #   #   # WeightedTargets:
+      #   #   # - VirtualNode: # String
+      #   #   # # Port: # Integer
+      #   #   # Weight: # Integer
+      #   # # Timeout:
+      #   #   # # PerRequest:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # Idle:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   # # RetryPolicy:
+      #   #   # MaxRetries: # Integer
+      #   #   # # PerRetryTimeout:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # HttpRetryEvents:
+      #   #   #   # - # String
+      #   #   # # TcpRetryEvents:
+      #   #   #   # - # String
+      #   # # Match:
+      #   #   # # Path:
+      #   #   #   # # Regex: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Scheme: # String
+      #   #   # # Headers:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      #   #   # # Port: # Integer
+      #   #   # # Prefix: # String
+      #   #   # # Method: # String
+      #   #   # # QueryParameters:
+      #   #   #   # - Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Exact: # String
+      #   # GrpcRoute:
+      #   # # Action:
+      #   #   # WeightedTargets:
+      #   #   # - VirtualNode: # String
+      #   #   # # Port: # Integer
+      #   #   # Weight: # Integer
+      #   # # Timeout:
+      #   #   # # PerRequest:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # Idle:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   # # RetryPolicy:
+      #   #   # MaxRetries: # Integer
+      #   #   # # PerRetryTimeout:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   #   # # GrpcRetryEvents:
+      #   #   #   # - # String
+      #   #   # # HttpRetryEvents:
+      #   #   #   # - # String
+      #   #   # # TcpRetryEvents:
+      #   #   #   # - # String
+      #   # # Match:
+      #   #   # # ServiceName: # String
+      #   #   # # Port: # Integer
+      #   #   # # Metadata:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      #   #   # # MethodName: # String
+      #   # TcpRoute:
+      #   # # Action:
+      #   #   # WeightedTargets:
+      #   #   # - VirtualNode: # String
+      #   #   # # Port: # Integer
+      #   #   # Weight: # Integer
+      #   # # Timeout:
+      #   #   # # Idle:
+      #   #   #   # Value: # Integer
+      #   #   #   # Unit: # String
+      #   # # Match:
+      #   #   # # Port: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.VirtualRouterName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.RouteName (String)
+    # !GetAtt THIS.Arn (String)

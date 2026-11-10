@@ -1,0 +1,10 @@
+  CloudFormationMacro:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-macro.html
+    Type: AWS::CloudFormation::Macro
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-macro.html
+      # Description: # String
+      FunctionName: # String
+      # LogGroupName: # String
+      # LogRoleARN: # String
+      Name: # String

@@ -1,0 +1,26 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+"=============================================
+"                         /
+" |\   |\__   /|\ |\      |     |\  /| |\  /|
+" |\ \ |   \   |  |\ \/  /\     | /\ | | \/ |
+" |  \ |    |  |  | \/  |   \   |/  \| | /\ |
+" |    |    |  |  |     /     \ |    | |/  \|
+"=============================================
+
+scriptencoding utf8
+
+autocmd BufNewFile,BufRead .beethovenv            set ft=beethovenv.sh
+autocmd BufNewFile,BufRead .hledger.journal       set ft=hledger
+autocmd BufNewFile,BufRead chrysoberyl.*          set ft=chrysoberyl
+autocmd BufNewFile,BufRead template.yaml,template.*.yaml,template-*.yaml          set ft=cloudformation.yaml
+autocmd BufNewFile,BufRead template.yml,template.*.yml,template-*.yml             set ft=cloudformation.yaml
+autocmd BufNewFile,BufRead setup.cfg              set ft=python-config
+autocmd BufNewFile,BufRead *.liname              set ft=liname
+
+autocmd BufEnter *         setlocal path+=.
+
+autocmd FileType snippets              set expandtab shiftwidth=2 tabstop=2 foldlevel=0
+
+[[[ if eq .chezmoi.os "darwin" -]]]
+autocmd BufLeave,CmdwinLeave,InsertLeave,TermLeave,FocusGained * call system('im-select com.apple.keylayout.ABC')
+[[[- end -]]]

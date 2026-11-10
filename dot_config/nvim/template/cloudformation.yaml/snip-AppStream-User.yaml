@@ -1,0 +1,10 @@
+  AppStreamUser:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html
+    Type: AWS::AppStream::User
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html
+      UserName: # String
+      # FirstName: # String
+      # MessageAction: # String
+      # LastName: # String
+      AuthenticationType: # String

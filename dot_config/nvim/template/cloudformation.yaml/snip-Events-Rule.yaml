@@ -1,0 +1,92 @@
+  EventsRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
+    Type: AWS::Events::Rule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
+      # Description: # String
+      # EventBusName: # String
+      # EventPattern: # Json
+      # Name: # String
+      # RoleArn: # String
+      # ScheduleExpression: # String
+      # State: # String
+      # Targets:
+      #   - Arn: # String
+      #     # BatchParameters:
+      #     # # ArrayProperties:
+      #     #   # # Size: # Integer
+      #     # JobDefinition: # String
+      #     # JobName: # String
+      #     # # RetryStrategy:
+      #     #   # # Attempts: # Integer
+      #     # DeadLetterConfig:
+      #     # # Arn: # String
+      #     # EcsParameters:
+      #     # # CapacityProviderStrategy:
+      #     #   # - # Base: # Integer
+      #     #   # CapacityProvider: # String
+      #     #   # # Weight: # Integer
+      #     # # EnableECSManagedTags: # Boolean
+      #     # # EnableExecuteCommand: # Boolean
+      #     # # Group: # String
+      #     # # LaunchType: # String
+      #     # # NetworkConfiguration:
+      #     #   # # AwsVpcConfiguration:
+      #     #   #   # # AssignPublicIp: # String
+      #     #   #   # # SecurityGroups:
+      #     #   #   #   # - # String
+      #     #   #   # Subnets:
+      #     #   #   # - # String
+      #     # # PlacementConstraints:
+      #     #   # - # Expression: # String
+      #     #   # # Type: # String
+      #     # # PlacementStrategies:
+      #     #   # - # Field: # String
+      #     #   # # Type: # String
+      #     # # PlatformVersion: # String
+      #     # # PropagateTags: # String
+      #     # # ReferenceId: # String
+      #     # # TagList:
+      #     #   # - Key: # String
+      #     #   # Value: # String
+      #     # # TaskCount: # Integer
+      #     # TaskDefinitionArn: # String
+      #     # HttpParameters:
+      #     # # HeaderParameters:
+      #     #   # ANY_KEY: # String
+      #     # # PathParameterValues:
+      #     #   # - # String
+      #     # # QueryStringParameters:
+      #     #   # ANY_KEY: # String
+      #     Id: # String
+      #     # Input: # String
+      #     # InputPath: # String
+      #     # InputTransformer:
+      #     # # InputPathsMap:
+      #     #   # ANY_KEY: # String
+      #     # InputTemplate: # String
+      #     # KinesisParameters:
+      #     # PartitionKeyPath: # String
+      #     # RedshiftDataParameters:
+      #     # Database: # String
+      #     # # DbUser: # String
+      #     # # SecretManagerArn: # String
+      #     # Sql: # String
+      #     # # StatementName: # String
+      #     # # WithEvent: # Boolean
+      #     # RetryPolicy:
+      #     # # MaximumEventAgeInSeconds: # Integer
+      #     # # MaximumRetryAttempts: # Integer
+      #     # RoleArn: # String
+      #     # RunCommandParameters:
+      #     # RunCommandTargets:
+      #     # - Key: # String
+      #     # Values:
+      #     #   - # String
+      #     # SageMakerPipelineParameters:
+      #     # # PipelineParameterList:
+      #     #   # - Name: # String
+      #     #   # Value: # String
+      #     # SqsParameters:
+      #     # MessageGroupId: # String
+    # !GetAtt THIS.Arn (String)

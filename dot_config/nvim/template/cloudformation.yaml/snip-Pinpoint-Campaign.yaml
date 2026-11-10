@@ -1,0 +1,358 @@
+  PinpointCampaign:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html
+    Type: AWS::Pinpoint::Campaign
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-campaign.html
+      # Description: # String
+      SegmentId: # String
+      # Priority: # Integer
+      # TemplateConfiguration:
+      #   # SMSTemplate:
+      #   # # Version: # String
+      #   # # Name: # String
+      #   # EmailTemplate:
+      #   # # Version: # String
+      #   # # Name: # String
+      #   # PushTemplate:
+      #   # # Version: # String
+      #   # # Name: # String
+      #   # VoiceTemplate:
+      #   # # Version: # String
+      #   # # Name: # String
+      # IsPaused: # Boolean
+      # AdditionalTreatments:
+      #   - # TreatmentDescription: # String
+      #     # MessageConfiguration:
+      #     # # APNSMessage:
+      #     #   # # JsonBody: # String
+      #     #   # # Action: # String
+      #     #   # # MediaUrl: # String
+      #     #   # # TimeToLive: # Integer
+      #     #   # # ImageSmallIconUrl: # String
+      #     #   # # ImageUrl: # String
+      #     #   # # Title: # String
+      #     #   # # ImageIconUrl: # String
+      #     #   # # SilentPush: # Boolean
+      #     #   # # Body: # String
+      #     #   # # RawContent: # String
+      #     #   # # Url: # String
+      #     # # BaiduMessage:
+      #     #   # # JsonBody: # String
+      #     #   # # Action: # String
+      #     #   # # MediaUrl: # String
+      #     #   # # TimeToLive: # Integer
+      #     #   # # ImageSmallIconUrl: # String
+      #     #   # # ImageUrl: # String
+      #     #   # # Title: # String
+      #     #   # # ImageIconUrl: # String
+      #     #   # # SilentPush: # Boolean
+      #     #   # # Body: # String
+      #     #   # # RawContent: # String
+      #     #   # # Url: # String
+      #     # # DefaultMessage:
+      #     #   # # JsonBody: # String
+      #     #   # # Action: # String
+      #     #   # # MediaUrl: # String
+      #     #   # # TimeToLive: # Integer
+      #     #   # # ImageSmallIconUrl: # String
+      #     #   # # ImageUrl: # String
+      #     #   # # Title: # String
+      #     #   # # ImageIconUrl: # String
+      #     #   # # SilentPush: # Boolean
+      #     #   # # Body: # String
+      #     #   # # RawContent: # String
+      #     #   # # Url: # String
+      #     # # InAppMessage:
+      #     #   # # CustomConfig: # Json
+      #     #   # # Layout: # String
+      #     #   # # Content:
+      #     #   #   # - # BodyConfig:
+      #     #   #   #     # # Alignment: # String
+      #     #   #   #     # # TextColor: # String
+      #     #   #   #     # # Body: # String
+      #     #   #   # # SecondaryBtn:
+      #     #   #   #     # # Web:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     # # DefaultConfig:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # BorderRadius: # Integer
+      #     #   #   #     #   # # Text: # String
+      #     #   #   #     #   # # TextColor: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     #   # # BackgroundColor: # String
+      #     #   #   #     # # IOS:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     # # Android:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   # # ImageUrl: # String
+      #     #   #   # # PrimaryBtn:
+      #     #   #   #     # # Web:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     # # DefaultConfig:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # BorderRadius: # Integer
+      #     #   #   #     #   # # Text: # String
+      #     #   #   #     #   # # TextColor: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     #   # # BackgroundColor: # String
+      #     #   #   #     # # IOS:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   #     # # Android:
+      #     #   #   #     #   # # ButtonAction: # String
+      #     #   #   #     #   # # Link: # String
+      #     #   #   # # HeaderConfig:
+      #     #   #   #     # # Alignment: # String
+      #     #   #   #     # # Header: # String
+      #     #   #   #     # # TextColor: # String
+      #     #   #   # # BackgroundColor: # String
+      #     # # EmailMessage:
+      #     #   # # FromAddress: # String
+      #     #   # # HtmlBody: # String
+      #     #   # # Title: # String
+      #     #   # # Body: # String
+      #     # # GCMMessage:
+      #     #   # # JsonBody: # String
+      #     #   # # Action: # String
+      #     #   # # MediaUrl: # String
+      #     #   # # TimeToLive: # Integer
+      #     #   # # ImageSmallIconUrl: # String
+      #     #   # # ImageUrl: # String
+      #     #   # # Title: # String
+      #     #   # # ImageIconUrl: # String
+      #     #   # # SilentPush: # Boolean
+      #     #   # # Body: # String
+      #     #   # # RawContent: # String
+      #     #   # # Url: # String
+      #     # # SMSMessage:
+      #     #   # # EntityId: # String
+      #     #   # # OriginationNumber: # String
+      #     #   # # SenderId: # String
+      #     #   # # Body: # String
+      #     #   # # MessageType: # String
+      #     #   # # TemplateId: # String
+      #     # # CustomMessage:
+      #     #   # # Data: # String
+      #     # # ADMMessage:
+      #     #   # # JsonBody: # String
+      #     #   # # Action: # String
+      #     #   # # MediaUrl: # String
+      #     #   # # TimeToLive: # Integer
+      #     #   # # ImageSmallIconUrl: # String
+      #     #   # # ImageUrl: # String
+      #     #   # # Title: # String
+      #     #   # # ImageIconUrl: # String
+      #     #   # # SilentPush: # Boolean
+      #     #   # # Body: # String
+      #     #   # # RawContent: # String
+      #     #   # # Url: # String
+      #     # Schedule:
+      #     # # TimeZone: # String
+      #     # # QuietTime:
+      #     #   # Start: # String
+      #     #   # End: # String
+      #     # # EndTime: # String
+      #     # # StartTime: # String
+      #     # # Frequency: # String
+      #     # # EventFilter:
+      #     #   # # FilterType: # String
+      #     #   # # Dimensions:
+      #     #   #   # # Metrics: # Json
+      #     #   #   # # EventType:
+      #     #   #   #   # # DimensionType: # String
+      #     #   #   #   # # Values:
+      #     #   #   #   #   # - # String
+      #     #   #   # # Attributes: # Json
+      #     # # IsLocalTime: # Boolean
+      #     # TemplateConfiguration:
+      #     # # SMSTemplate:
+      #     #   # # Version: # String
+      #     #   # # Name: # String
+      #     # # EmailTemplate:
+      #     #   # # Version: # String
+      #     #   # # Name: # String
+      #     # # PushTemplate:
+      #     #   # # Version: # String
+      #     #   # # Name: # String
+      #     # # VoiceTemplate:
+      #     #   # # Version: # String
+      #     #   # # Name: # String
+      #     # CustomDeliveryConfiguration:
+      #     # # DeliveryUri: # String
+      #     # # EndpointTypes:
+      #     #   # - # String
+      #     # SizePercent: # Integer
+      #     # TreatmentName: # String
+      Name: # String
+      # SegmentVersion: # Integer
+      # TreatmentDescription: # String
+      # MessageConfiguration:
+      #   # APNSMessage:
+      #   # # JsonBody: # String
+      #   # # Action: # String
+      #   # # MediaUrl: # String
+      #   # # TimeToLive: # Integer
+      #   # # ImageSmallIconUrl: # String
+      #   # # ImageUrl: # String
+      #   # # Title: # String
+      #   # # ImageIconUrl: # String
+      #   # # SilentPush: # Boolean
+      #   # # Body: # String
+      #   # # RawContent: # String
+      #   # # Url: # String
+      #   # BaiduMessage:
+      #   # # JsonBody: # String
+      #   # # Action: # String
+      #   # # MediaUrl: # String
+      #   # # TimeToLive: # Integer
+      #   # # ImageSmallIconUrl: # String
+      #   # # ImageUrl: # String
+      #   # # Title: # String
+      #   # # ImageIconUrl: # String
+      #   # # SilentPush: # Boolean
+      #   # # Body: # String
+      #   # # RawContent: # String
+      #   # # Url: # String
+      #   # DefaultMessage:
+      #   # # JsonBody: # String
+      #   # # Action: # String
+      #   # # MediaUrl: # String
+      #   # # TimeToLive: # Integer
+      #   # # ImageSmallIconUrl: # String
+      #   # # ImageUrl: # String
+      #   # # Title: # String
+      #   # # ImageIconUrl: # String
+      #   # # SilentPush: # Boolean
+      #   # # Body: # String
+      #   # # RawContent: # String
+      #   # # Url: # String
+      #   # InAppMessage:
+      #   # # CustomConfig: # Json
+      #   # # Layout: # String
+      #   # # Content:
+      #   #   # - # BodyConfig:
+      #   #   #     # # Alignment: # String
+      #   #   #     # # TextColor: # String
+      #   #   #     # # Body: # String
+      #   #   # # SecondaryBtn:
+      #   #   #     # # Web:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     # # DefaultConfig:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # BorderRadius: # Integer
+      #   #   #     #   # # Text: # String
+      #   #   #     #   # # TextColor: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     #   # # BackgroundColor: # String
+      #   #   #     # # IOS:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     # # Android:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   # # ImageUrl: # String
+      #   #   # # PrimaryBtn:
+      #   #   #     # # Web:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     # # DefaultConfig:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # BorderRadius: # Integer
+      #   #   #     #   # # Text: # String
+      #   #   #     #   # # TextColor: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     #   # # BackgroundColor: # String
+      #   #   #     # # IOS:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   #     # # Android:
+      #   #   #     #   # # ButtonAction: # String
+      #   #   #     #   # # Link: # String
+      #   #   # # HeaderConfig:
+      #   #   #     # # Alignment: # String
+      #   #   #     # # Header: # String
+      #   #   #     # # TextColor: # String
+      #   #   # # BackgroundColor: # String
+      #   # EmailMessage:
+      #   # # FromAddress: # String
+      #   # # HtmlBody: # String
+      #   # # Title: # String
+      #   # # Body: # String
+      #   # GCMMessage:
+      #   # # JsonBody: # String
+      #   # # Action: # String
+      #   # # MediaUrl: # String
+      #   # # TimeToLive: # Integer
+      #   # # ImageSmallIconUrl: # String
+      #   # # ImageUrl: # String
+      #   # # Title: # String
+      #   # # ImageIconUrl: # String
+      #   # # SilentPush: # Boolean
+      #   # # Body: # String
+      #   # # RawContent: # String
+      #   # # Url: # String
+      #   # SMSMessage:
+      #   # # EntityId: # String
+      #   # # OriginationNumber: # String
+      #   # # SenderId: # String
+      #   # # Body: # String
+      #   # # MessageType: # String
+      #   # # TemplateId: # String
+      #   # CustomMessage:
+      #   # # Data: # String
+      #   # ADMMessage:
+      #   # # JsonBody: # String
+      #   # # Action: # String
+      #   # # MediaUrl: # String
+      #   # # TimeToLive: # Integer
+      #   # # ImageSmallIconUrl: # String
+      #   # # ImageUrl: # String
+      #   # # Title: # String
+      #   # # ImageIconUrl: # String
+      #   # # SilentPush: # Boolean
+      #   # # Body: # String
+      #   # # RawContent: # String
+      #   # # Url: # String
+      # Limits:
+      #   # Daily: # Integer
+      #   # MaximumDuration: # Integer
+      #   # Total: # Integer
+      #   # MessagesPerSecond: # Integer
+      #   # Session: # Integer
+      # HoldoutPercent: # Integer
+      # Schedule:
+      #   # TimeZone: # String
+      #   # QuietTime:
+      #   # Start: # String
+      #   # End: # String
+      #   # EndTime: # String
+      #   # StartTime: # String
+      #   # Frequency: # String
+      #   # EventFilter:
+      #   # # FilterType: # String
+      #   # # Dimensions:
+      #   #   # # Metrics: # Json
+      #   #   # # EventType:
+      #   #   #   # # DimensionType: # String
+      #   #   #   # # Values:
+      #   #   #   #   # - # String
+      #   #   # # Attributes: # Json
+      #   # IsLocalTime: # Boolean
+      # CustomDeliveryConfiguration:
+      #   # DeliveryUri: # String
+      #   # EndpointTypes:
+      #   # - # String
+      ApplicationId: # String
+      # CampaignHook:
+      #   # Mode: # String
+      #   # WebUrl: # String
+      #   # LambdaFunctionName: # String
+      # Tags: # Json
+      # TreatmentName: # String
+    # !GetAtt THIS.CampaignId (String)
+    # !GetAtt THIS.Arn (String)

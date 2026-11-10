@@ -1,0 +1,38 @@
+  LexBotAlias:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-botalias.html
+    Type: AWS::Lex::BotAlias
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-botalias.html
+      BotId: # String
+      # BotAliasLocaleSettings:
+      #   - LocaleId: # String
+      #     # BotAliasLocaleSetting:
+      #     # # CodeHookSpecification:
+      #     #   # # LambdaCodeHook:
+      #     #   #   # CodeHookInterfaceVersion: # String
+      #     #   #   # LambdaArn: # String
+      #     # Enabled: # Boolean
+      BotAliasName: # String
+      # BotVersion: # String
+      # ConversationLogSettings:
+      #   # AudioLogSettings:
+      #   # - # Destination:
+      #   #     # # S3Bucket:
+      #   #     #   # S3BucketArn: # String
+      #   #     #   # LogPrefix: # String
+      #   #     #   # # KmsKeyArn: # String
+      #   # Enabled: # Boolean
+      #   # TextLogSettings:
+      #   # - # Destination:
+      #   #     # # CloudWatch:
+      #   #     #   # CloudWatchLogGroupArn: # String
+      #   #     #   # LogPrefix: # String
+      #   # Enabled: # Boolean
+      # Description: # String
+      # SentimentAnalysisSettings: # Json
+      # BotAliasTags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.BotAliasId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.BotAliasStatus (String)

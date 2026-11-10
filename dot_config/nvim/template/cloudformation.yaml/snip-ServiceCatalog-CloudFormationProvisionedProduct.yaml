@@ -1,0 +1,34 @@
+  ServiceCatalogCloudFormationProvisionedProduct:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
+    Type: AWS::ServiceCatalog::CloudFormationProvisionedProduct
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
+      # AcceptLanguage: # String
+      # NotificationArns:
+      #   - # String
+      # PathId: # String
+      # PathName: # String
+      # ProductId: # String
+      # ProductName: # String
+      # ProvisionedProductName: # String
+      # ProvisioningArtifactId: # String
+      # ProvisioningArtifactName: # String
+      # ProvisioningParameters:
+      #   - Key: # String
+      #     Value: # String
+      # ProvisioningPreferences:
+      #   # StackSetAccounts:
+      #   # - # String
+      #   # StackSetFailureToleranceCount: # Integer
+      #   # StackSetFailureTolerancePercentage: # Integer
+      #   # StackSetMaxConcurrencyCount: # Integer
+      #   # StackSetMaxConcurrencyPercentage: # Integer
+      #   # StackSetOperationType: # String
+      #   # StackSetRegions:
+      #   # - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ProvisionedProductId (String)
+    # !GetAtt THIS.RecordId (String)
+    # !GetAtt THIS.CloudformationStackArn (String)

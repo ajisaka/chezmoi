@@ -1,0 +1,90 @@
+  IoTEventsAlarmModel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-alarmmodel.html
+    Type: AWS::IoTEvents::AlarmModel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotevents-alarmmodel.html
+      # AlarmModelName: # String
+      # AlarmModelDescription: # String
+      RoleArn: # String
+      # Key: # String
+      # Severity: # Integer
+      # AlarmRule:
+      #   # SimpleRule:
+      #   # InputProperty: # String
+      #   # ComparisonOperator: # String
+      #   # Threshold: # String
+      # AlarmEventActions:
+      #   # AlarmActions:
+      #   # - # DynamoDB:
+      #   #     # HashKeyField: # String
+      #   #     # # HashKeyType: # String
+      #   #     # HashKeyValue: # String
+      #   #     # # Operation: # String
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   #     # # PayloadField: # String
+      #   #     # # RangeKeyField: # String
+      #   #     # # RangeKeyType: # String
+      #   #     # # RangeKeyValue: # String
+      #   #     # TableName: # String
+      #   # # DynamoDBv2:
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   #     # TableName: # String
+      #   # # Firehose:
+      #   #     # DeliveryStreamName: # String
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   #     # # Separator: # String
+      #   # # IotEvents:
+      #   #     # InputName: # String
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   # # IotSiteWise:
+      #   #     # # AssetId: # String
+      #   #     # # EntryId: # String
+      #   #     # # PropertyAlias: # String
+      #   #     # # PropertyId: # String
+      #   #     # # PropertyValue:
+      #   #     #   # # Quality: # String
+      #   #     #   # # Timestamp:
+      #   #     #   #   # # OffsetInNanos: # String
+      #   #     #   #   # TimeInSeconds: # String
+      #   #     #   # # Value:
+      #   #     #   #   # # BooleanValue: # String
+      #   #     #   #   # # DoubleValue: # String
+      #   #     #   #   # # IntegerValue: # String
+      #   #     #   #   # # StringValue: # String
+      #   # # IotTopicPublish:
+      #   #     # MqttTopic: # String
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   # # Lambda:
+      #   #     # FunctionArn: # String
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   # # Sns:
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   #     # TargetArn: # String
+      #   # # Sqs:
+      #   #     # # Payload:
+      #   #     #   # ContentExpression: # String
+      #   #     #   # Type: # String
+      #   #     # QueueUrl: # String
+      #   #     # # UseBase64: # Boolean
+      # AlarmCapabilities:
+      #   # InitializationConfiguration:
+      #   # DisabledOnInitialization: # Boolean
+      #   # AcknowledgeFlow:
+      #   # # Enabled: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

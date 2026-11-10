@@ -1,0 +1,13 @@
+  EC2TransitGatewayMulticastDomain:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewaymulticastdomain.html
+    Type: AWS::EC2::TransitGatewayMulticastDomain
+    Properties:
+      TransitGatewayId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Options: # Json
+    # !GetAtt THIS.TransitGatewayMulticastDomainId (String)
+    # !GetAtt THIS.TransitGatewayMulticastDomainArn (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.CreationTime (String)

@@ -1,0 +1,32 @@
+  GuardDutyFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
+    Type: AWS::GuardDuty::Filter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
+      Action: # String
+      Description: # String
+      DetectorId: # String
+      # FindingCriteria:
+      #   # Criterion: # Json
+      #   # ItemType:
+      #   # # Equals:
+      #   #   # - # String
+      #   # # LessThan: # Integer
+      #   # # LessThanOrEqual: # Integer
+      #   # # GreaterThan: # Integer
+      #   # # Lt: # Integer
+      #   # # Gte: # Integer
+      #   # # GreaterThanOrEqual: # Integer
+      #   # # Neq:
+      #   #   # - # String
+      #   # # Eq:
+      #   #   # - # String
+      #   # # Lte: # Integer
+      #   # # Gt: # Integer
+      #   # # NotEquals:
+      #   #   # - # String
+      Rank: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String

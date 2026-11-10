@@ -1,0 +1,13 @@
+  BackupReportPlan:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-reportplan.html
+    Type: AWS::Backup::ReportPlan
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-reportplan.html
+      # ReportPlanName: # String
+      # ReportPlanDescription: # String
+      # ReportPlanTags:
+      #   - Key: # String
+      #     Value: # String
+      ReportDeliveryChannel: # Json
+      ReportSetting: # Json
+    # !GetAtt THIS.ReportPlanArn (String)

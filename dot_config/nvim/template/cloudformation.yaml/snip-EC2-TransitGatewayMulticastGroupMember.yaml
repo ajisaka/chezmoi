@@ -1,0 +1,15 @@
+  EC2TransitGatewayMulticastGroupMember:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewaymulticastgroupmember.html
+    Type: AWS::EC2::TransitGatewayMulticastGroupMember
+    Properties:
+      GroupIpAddress: # String
+      TransitGatewayMulticastDomainId: # String
+      NetworkInterfaceId: # String
+    # !GetAtt THIS.TransitGatewayAttachmentId (String)
+    # !GetAtt THIS.SubnetId (String)
+    # !GetAtt THIS.ResourceId (String)
+    # !GetAtt THIS.ResourceType (String)
+    # !GetAtt THIS.GroupMember (Boolean)
+    # !GetAtt THIS.GroupSource (Boolean)
+    # !GetAtt THIS.MemberType (String)
+    # !GetAtt THIS.SourceType (String)

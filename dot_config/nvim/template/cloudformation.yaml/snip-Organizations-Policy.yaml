@@ -1,0 +1,17 @@
+  OrganizationsPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-organizations-policy.html
+    Type: AWS::Organizations::Policy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-organizations-policy.html
+      Name: # String
+      Type: # String
+      Content: # String
+      # Description: # String
+      # TargetIds:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.AwsManaged (Boolean)

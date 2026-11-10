@@ -1,0 +1,88 @@
+  ACMPCACertificateAuthority:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthority.html
+    Type: AWS::ACMPCA::CertificateAuthority
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthority.html
+      Type: # String
+      KeyAlgorithm: # String
+      SigningAlgorithm: # String
+      # Subject:
+      #   # Country: # String
+      #   # Organization: # String
+      #   # OrganizationalUnit: # String
+      #   # DistinguishedNameQualifier: # String
+      #   # State: # String
+      #   # CommonName: # String
+      #   # SerialNumber: # String
+      #   # Locality: # String
+      #   # Title: # String
+      #   # Surname: # String
+      #   # GivenName: # String
+      #   # Initials: # String
+      #   # Pseudonym: # String
+      #   # GenerationQualifier: # String
+      #   # CustomAttributes:
+      #   # - ObjectIdentifier: # String
+      #   # Value: # String
+      # RevocationConfiguration:
+      #   # CrlConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # ExpirationInDays: # Integer
+      #   # # CustomCname: # String
+      #   # # S3BucketName: # String
+      #   # # S3ObjectAcl: # String
+      #   # OcspConfiguration:
+      #   # # Enabled: # Boolean
+      #   # # OcspCustomCname: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CsrExtensions:
+      #   # KeyUsage:
+      #   # # DigitalSignature: # Boolean
+      #   # # NonRepudiation: # Boolean
+      #   # # KeyEncipherment: # Boolean
+      #   # # DataEncipherment: # Boolean
+      #   # # KeyAgreement: # Boolean
+      #   # # KeyCertSign: # Boolean
+      #   # # CRLSign: # Boolean
+      #   # # EncipherOnly: # Boolean
+      #   # # DecipherOnly: # Boolean
+      #   # SubjectInformationAccess:
+      #   # - # AccessMethod:
+      #   #     # # CustomObjectIdentifier: # String
+      #   #     # # AccessMethodType: # String
+      #   # # AccessLocation:
+      #   #     # # OtherName:
+      #   #     #   # TypeId: # String
+      #   #     #   # Value: # String
+      #   #     # # Rfc822Name: # String
+      #   #     # # DnsName: # String
+      #   #     # # DirectoryName:
+      #   #     #   # # Country: # String
+      #   #     #   # # Organization: # String
+      #   #     #   # # OrganizationalUnit: # String
+      #   #     #   # # DistinguishedNameQualifier: # String
+      #   #     #   # # State: # String
+      #   #     #   # # CommonName: # String
+      #   #     #   # # SerialNumber: # String
+      #   #     #   # # Locality: # String
+      #   #     #   # # Title: # String
+      #   #     #   # # Surname: # String
+      #   #     #   # # GivenName: # String
+      #   #     #   # # Initials: # String
+      #   #     #   # # Pseudonym: # String
+      #   #     #   # # GenerationQualifier: # String
+      #   #     #   # # CustomAttributes:
+      #   #     #   #   # - ObjectIdentifier: # String
+      #   #     #   #   # Value: # String
+      #   #     # # EdiPartyName:
+      #   #     #   # PartyName: # String
+      #   #     #   # NameAssigner: # String
+      #   #     # # UniformResourceIdentifier: # String
+      #   #     # # IpAddress: # String
+      #   #     # # RegisteredId: # String
+      # KeyStorageSecurityStandard: # String
+      # UsageMode: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CertificateSigningRequest (String)

@@ -1,0 +1,22 @@
+  GreengrassGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html
+    Type: AWS::Greengrass::Group
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html
+      # InitialVersion:
+      #   # LoggerDefinitionVersionArn: # String
+      #   # DeviceDefinitionVersionArn: # String
+      #   # FunctionDefinitionVersionArn: # String
+      #   # CoreDefinitionVersionArn: # String
+      #   # ResourceDefinitionVersionArn: # String
+      #   # ConnectorDefinitionVersionArn: # String
+      #   # SubscriptionDefinitionVersionArn: # String
+      # RoleArn: # String
+      # Tags: # Json
+      Name: # String
+    # !GetAtt THIS.RoleAttachedAt (String)
+    # !GetAtt THIS.LatestVersionArn (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RoleArn (String)
+    # !GetAtt THIS.Name (String)

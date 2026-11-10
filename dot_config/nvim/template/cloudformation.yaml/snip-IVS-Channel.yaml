@@ -1,0 +1,16 @@
+  IVSChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ivs-channel.html
+    Type: AWS::IVS::Channel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ivs-channel.html
+      # Name: # String
+      # Authorized: # Boolean
+      # LatencyMode: # String
+      # Type: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # RecordingConfigurationArn: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.PlaybackUrl (String)
+    # !GetAtt THIS.IngestEndpoint (String)

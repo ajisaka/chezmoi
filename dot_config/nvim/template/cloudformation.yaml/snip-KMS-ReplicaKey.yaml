@@ -1,0 +1,15 @@
+  KMSReplicaKey:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-replicakey.html
+    Type: AWS::KMS::ReplicaKey
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-replicakey.html
+      PrimaryKeyArn: # String
+      # Description: # String
+      # Enabled: # Boolean
+      KeyPolicy: # Json
+      # PendingWindowInDays: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.KeyId (String)

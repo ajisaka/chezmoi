@@ -1,0 +1,15 @@
+  NimbleStudioStreamingImage:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-nimblestudio-streamingimage.html
+    Type: AWS::NimbleStudio::StreamingImage
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-nimblestudio-streamingimage.html
+      # Description: # String
+      Ec2ImageId: # String
+      Name: # String
+      StudioId: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.EulaIds (List)
+    # !GetAtt THIS.Owner (String)
+    # !GetAtt THIS.Platform (String)
+    # !GetAtt THIS.StreamingImageId (String)

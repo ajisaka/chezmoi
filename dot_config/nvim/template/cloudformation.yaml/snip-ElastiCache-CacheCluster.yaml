@@ -1,0 +1,48 @@
+  ElastiCacheCacheCluster:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
+    Type: AWS::ElastiCache::CacheCluster
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
+      # AZMode: # String
+      # AutoMinorVersionUpgrade: # Boolean
+      CacheNodeType: # String
+      # CacheParameterGroupName: # String
+      # CacheSecurityGroupNames:
+      #   - # String
+      # CacheSubnetGroupName: # String
+      # ClusterName: # String
+      Engine: # String
+      # EngineVersion: # String
+      # IpDiscovery: # String
+      # LogDeliveryConfigurations:
+      #   - # DestinationDetails:
+      #     # # CloudWatchLogsDetails:
+      #     #   # LogGroup: # String
+      #     # # KinesisFirehoseDetails:
+      #     #   # DeliveryStream: # String
+      #     DestinationType: # String
+      #     LogFormat: # String
+      #     LogType: # String
+      # NetworkType: # String
+      # NotificationTopicArn: # String
+      NumCacheNodes: # Integer
+      # Port: # Integer
+      # PreferredAvailabilityZone: # String
+      # PreferredAvailabilityZones:
+      #   - # String
+      # PreferredMaintenanceWindow: # String
+      # SnapshotArns:
+      #   - # String
+      # SnapshotName: # String
+      # SnapshotRetentionLimit: # Integer
+      # SnapshotWindow: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TransitEncryptionEnabled: # Boolean
+      # VpcSecurityGroupIds:
+      #   - # String
+    # !GetAtt THIS.ConfigurationEndpoint.Address (String)
+    # !GetAtt THIS.ConfigurationEndpoint.Port (String)
+    # !GetAtt THIS.RedisEndpoint.Address (String)
+    # !GetAtt THIS.RedisEndpoint.Port (String)

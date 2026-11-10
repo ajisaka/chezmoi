@@ -1,0 +1,10 @@
+  IAMSAMLProvider:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-samlprovider.html
+    Type: AWS::IAM::SAMLProvider
+    Properties:
+      # Name: # String
+      SamlMetadataDocument: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

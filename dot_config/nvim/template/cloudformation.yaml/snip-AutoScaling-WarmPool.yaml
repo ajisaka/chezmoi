@@ -1,0 +1,11 @@
+  AutoScalingWarmPool:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-warmpool.html
+    Type: AWS::AutoScaling::WarmPool
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-warmpool.html
+      AutoScalingGroupName: # String
+      # MaxGroupPreparedCapacity: # Integer
+      # MinSize: # Integer
+      # PoolState: # String
+      # InstanceReusePolicy:
+      #   # ReuseOnScaleIn: # Boolean

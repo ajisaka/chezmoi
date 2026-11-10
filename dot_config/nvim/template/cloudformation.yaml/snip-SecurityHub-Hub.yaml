@@ -1,0 +1,5 @@
+  SecurityHubHub:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html
+    Type: AWS::SecurityHub::Hub
+    Properties:
+      # Tags: # Json

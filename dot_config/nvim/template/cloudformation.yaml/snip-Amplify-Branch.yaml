@@ -1,0 +1,27 @@
+  AmplifyBranch:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html
+    Type: AWS::Amplify::Branch
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-branch.html
+      AppId: # String
+      # BasicAuthConfig:
+      #   # EnableBasicAuth: # Boolean
+      #   Username: # String
+      #   Password: # String
+      BranchName: # String
+      # BuildSpec: # String
+      # Description: # String
+      # EnableAutoBuild: # Boolean
+      # EnablePerformanceMode: # Boolean
+      # EnablePullRequestPreview: # Boolean
+      # EnvironmentVariables:
+      #   - Name: # String
+      #     Value: # String
+      # Framework: # String
+      # PullRequestEnvironmentName: # String
+      # Stage: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.BranchName (String)

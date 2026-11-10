@@ -1,0 +1,50 @@
+  CodePipelinePipeline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html
+    Type: AWS::CodePipeline::Pipeline
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html
+      # ArtifactStore:
+      #   # EncryptionKey:
+      #   # Id: # String
+      #   # Type: # String
+      #   Location: # String
+      #   Type: # String
+      # ArtifactStores:
+      #   - # ArtifactStore:
+      #     # # EncryptionKey:
+      #     #   # Id: # String
+      #     #   # Type: # String
+      #     # Location: # String
+      #     # Type: # String
+      #     Region: # String
+      # DisableInboundStageTransitions:
+      #   - Reason: # String
+      #     StageName: # String
+      # Name: # String
+      # RestartExecutionOnUpdate: # Boolean
+      RoleArn: # String
+      Stages:
+        - Actions:
+            - # ActionTypeId:
+              #   Category: # String
+              #   Owner: # String
+              #   Provider: # String
+              #   Version: # String
+              # Configuration: # Json
+              # InputArtifacts:
+              #   - Name: # String
+              Name: # String
+              # Namespace: # String
+              # OutputArtifacts:
+              #   - Name: # String
+              # Region: # String
+              # RoleArn: # String
+              # RunOrder: # Integer
+          # Blockers:
+          #   - Name: # String
+          #     Type: # String
+          Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Version (String)

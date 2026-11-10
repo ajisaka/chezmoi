@@ -1,0 +1,25 @@
+  DMSReplicationInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
+    Type: AWS::DMS::ReplicationInstance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
+      # ReplicationInstanceIdentifier: # String
+      # EngineVersion: # String
+      # KmsKeyId: # String
+      # AvailabilityZone: # String
+      # PreferredMaintenanceWindow: # String
+      # AutoMinorVersionUpgrade: # Boolean
+      # ReplicationSubnetGroupIdentifier: # String
+      # AllocatedStorage: # Integer
+      # ResourceIdentifier: # String
+      # VpcSecurityGroupIds:
+      #   - # String
+      # AllowMajorVersionUpgrade: # Boolean
+      ReplicationInstanceClass: # String
+      # PubliclyAccessible: # Boolean
+      # MultiAZ: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ReplicationInstancePublicIpAddresses (String)
+    # !GetAtt THIS.ReplicationInstancePrivateIpAddresses (String)

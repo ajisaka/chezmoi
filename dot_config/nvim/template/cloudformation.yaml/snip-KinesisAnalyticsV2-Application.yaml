@@ -1,0 +1,104 @@
+  KinesisAnalyticsV2Application:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html
+    Type: AWS::KinesisAnalyticsV2::Application
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html
+      # ApplicationConfiguration:
+      #   # ApplicationCodeConfiguration:
+      #   # # CodeContent:
+      #   #   # # ZipFileContent: # String
+      #   #   # # S3ContentLocation:
+      #   #   #   # BucketARN: # String
+      #   #   #   # FileKey: # String
+      #   #   #   # # ObjectVersion: # String
+      #   #   # # TextContent: # String
+      #   # CodeContentType: # String
+      #   # ApplicationSnapshotConfiguration:
+      #   # SnapshotsEnabled: # Boolean
+      #   # EnvironmentProperties:
+      #   # # PropertyGroups:
+      #   #   # - # PropertyGroupId: # String
+      #   #   # # PropertyMap:
+      #   #   #     # ANY_KEY: # String
+      #   # FlinkApplicationConfiguration:
+      #   # # CheckpointConfiguration:
+      #   #   # ConfigurationType: # String
+      #   #   # # CheckpointingEnabled: # Boolean
+      #   #   # # CheckpointInterval: # Integer
+      #   #   # # MinPauseBetweenCheckpoints: # Integer
+      #   # # MonitoringConfiguration:
+      #   #   # ConfigurationType: # String
+      #   #   # # MetricsLevel: # String
+      #   #   # # LogLevel: # String
+      #   # # ParallelismConfiguration:
+      #   #   # ConfigurationType: # String
+      #   #   # # ParallelismPerKPU: # Integer
+      #   #   # # Parallelism: # Integer
+      #   #   # # AutoScalingEnabled: # Boolean
+      #   # SqlApplicationConfiguration:
+      #   # # Inputs:
+      #   #   # - NamePrefix: # String
+      #   #   # # InputSchema:
+      #   #   #     # # RecordEncoding: # String
+      #   #   #     # RecordColumns:
+      #   #   #     # - # Mapping: # String
+      #   #   #     # Name: # String
+      #   #   #     # SqlType: # String
+      #   #   #     # # RecordFormat:
+      #   #   #     #   # RecordFormatType: # String
+      #   #   #     #   # # MappingParameters:
+      #   #   #     #   #   # # CSVMappingParameters:
+      #   #   #     #   #   #   # RecordColumnDelimiter: # String
+      #   #   #     #   #   #   # RecordRowDelimiter: # String
+      #   #   #     #   #   # # JSONMappingParameters:
+      #   #   #     #   #   #   # RecordRowPath: # String
+      #   #   # # KinesisStreamsInput:
+      #   #   #     # ResourceARN: # String
+      #   #   # # KinesisFirehoseInput:
+      #   #   #     # ResourceARN: # String
+      #   #   # # InputProcessingConfiguration:
+      #   #   #     # # InputLambdaProcessor:
+      #   #   #     #   # ResourceARN: # String
+      #   #   # # InputParallelism:
+      #   #   #     # # Count: # Integer
+      #   # ZeppelinApplicationConfiguration:
+      #   # # CatalogConfiguration:
+      #   #   # # GlueDataCatalogConfiguration:
+      #   #   #   # # DatabaseARN: # String
+      #   # # MonitoringConfiguration:
+      #   #   # # LogLevel: # String
+      #   # # DeployAsApplicationConfiguration:
+      #   #   # # S3ContentLocation:
+      #   #   #   # BucketARN: # String
+      #   #   #   # # BasePath: # String
+      #   # # CustomArtifactsConfiguration:
+      #   #   # - ArtifactType: # String
+      #   #   # # MavenReference:
+      #   #   #     # ArtifactId: # String
+      #   #   #     # GroupId: # String
+      #   #   #     # Version: # String
+      #   #   # # S3ContentLocation:
+      #   #   #     # BucketARN: # String
+      #   #   #     # FileKey: # String
+      #   #   #     # # ObjectVersion: # String
+      #   # VpcConfigurations:
+      #   # - SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # ApplicationDescription: # String
+      # ApplicationMode: # String
+      # ApplicationName: # String
+      RuntimeEnvironment: # String
+      ServiceExecutionRole: # String
+      # RunConfiguration:
+      #   # ApplicationRestoreConfiguration:
+      #   # ApplicationRestoreType: # String
+      #   # # SnapshotName: # String
+      #   # FlinkRunConfiguration:
+      #   # # AllowNonRestoredState: # Boolean
+      # ApplicationMaintenanceConfiguration:
+      #   ApplicationMaintenanceWindowStartTime: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

@@ -1,0 +1,97 @@
+  DLMLifecyclePolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html
+    Type: AWS::DLM::LifecyclePolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html
+      # ExecutionRoleArn: # String
+      # Description: # String
+      # State: # String
+      # PolicyDetails:
+      #   # ResourceTypes:
+      #   # - # String
+      #   # Schedules:
+      #   # - # ShareRules:
+      #   #     # - # TargetAccounts:
+      #   #     #     # - # String
+      #   #     # # UnshareIntervalUnit: # String
+      #   #     # # UnshareInterval: # Integer
+      #   # # DeprecateRule:
+      #   #     # # IntervalUnit: # String
+      #   #     # # Count: # Integer
+      #   #     # # Interval: # Integer
+      #   # # TagsToAdd:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # # CreateRule:
+      #   #     # # IntervalUnit: # String
+      #   #     # # Times:
+      #   #     #   # - # String
+      #   #     # # CronExpression: # String
+      #   #     # # Interval: # Integer
+      #   #     # # Location: # String
+      #   # # VariableTags:
+      #   #     # - Key: # String
+      #   #     # Value: # String
+      #   # # FastRestoreRule:
+      #   #     # # IntervalUnit: # String
+      #   #     # # AvailabilityZones:
+      #   #     #   # - # String
+      #   #     # # Count: # Integer
+      #   #     # # Interval: # Integer
+      #   # # ArchiveRule:
+      #   #     # # RetainRule:
+      #   #     #   # # RetentionArchiveTier:
+      #   #     #   #   # # IntervalUnit: # String
+      #   #     #   #   # # Count: # Integer
+      #   #     #   #   # # Interval: # Integer
+      #   # # RetainRule:
+      #   #     # # IntervalUnit: # String
+      #   #     # # Count: # Integer
+      #   #     # # Interval: # Integer
+      #   # # CrossRegionCopyRules:
+      #   #     # - # TargetRegion: # String
+      #   #     # # Target: # String
+      #   #     # # DeprecateRule:
+      #   #     #     # IntervalUnit: # String
+      #   #     #     # Interval: # Integer
+      #   #     # Encrypted: # Boolean
+      #   #     # # CmkArn: # String
+      #   #     # # RetainRule:
+      #   #     #     # IntervalUnit: # String
+      #   #     #     # Interval: # Integer
+      #   #     # # CopyTags: # Boolean
+      #   # # Name: # String
+      #   # # CopyTags: # Boolean
+      #   # PolicyType: # String
+      #   # EventSource:
+      #   # Type: # String
+      #   # # Parameters:
+      #   #   # EventType: # String
+      #   #   # SnapshotOwner:
+      #   #   # - # String
+      #   #   # # DescriptionRegex: # String
+      #   # Parameters:
+      #   # # ExcludeBootVolume: # Boolean
+      #   # # ExcludeDataVolumeTags:
+      #   #   # - Key: # String
+      #   #   # Value: # String
+      #   # # NoReboot: # Boolean
+      #   # Actions:
+      #   # - CrossRegionCopy:
+      #   # - Target: # String
+      #   #   # EncryptionConfiguration:
+      #   #         # Encrypted: # Boolean
+      #   #         # # CmkArn: # String
+      #   #   # RetainRule:
+      #   #         # IntervalUnit: # String
+      #   #         # Interval: # Integer
+      #   # Name: # String
+      #   # TargetTags:
+      #   # - Key: # String
+      #   # Value: # String
+      #   # ResourceLocations:
+      #   # - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

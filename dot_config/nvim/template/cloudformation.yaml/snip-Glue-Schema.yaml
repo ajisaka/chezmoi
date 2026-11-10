@@ -1,0 +1,21 @@
+  GlueSchema:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-schema.html
+    Type: AWS::Glue::Schema
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-schema.html
+      # Registry:
+      #   # Name: # String
+      #   # Arn: # String
+      Name: # String
+      # Description: # String
+      DataFormat: # String
+      Compatibility: # String
+      SchemaDefinition: # String
+      # CheckpointVersion:
+      #   # IsLatest: # Boolean
+      #   # VersionNumber: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.InitialSchemaVersionId (String)

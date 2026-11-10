@@ -1,0 +1,6 @@
+  EC2SubnetCidrBlock:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html
+    Type: AWS::EC2::SubnetCidrBlock
+    Properties:
+      Ipv6CidrBlock: # String
+      SubnetId: # String

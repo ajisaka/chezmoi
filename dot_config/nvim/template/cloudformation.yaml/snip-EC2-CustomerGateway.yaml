@@ -1,0 +1,12 @@
+  EC2CustomerGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customergateway.html
+    Type: AWS::EC2::CustomerGateway
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customergateway.html
+      BgpAsn: # Integer
+      IpAddress: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Type: # String
+    # !GetAtt THIS.CustomerGatewayId (String)

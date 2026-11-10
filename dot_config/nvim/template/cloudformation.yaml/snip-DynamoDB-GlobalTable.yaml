@@ -1,0 +1,100 @@
+  DynamoDBGlobalTable:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-globaltable.html
+    Type: AWS::DynamoDB::GlobalTable
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-globaltable.html
+      AttributeDefinitions:
+        - AttributeName: # String
+          AttributeType: # String
+      # BillingMode: # String
+      # GlobalSecondaryIndexes:
+      #   - IndexName: # String
+      #     KeySchema:
+      #       - AttributeName: # String
+      #         KeyType: # String
+      #     # Projection:
+      #     # # NonKeyAttributes:
+      #     #   # - # String
+      #     # # ProjectionType: # String
+      #     # WriteProvisionedThroughputSettings:
+      #     # # WriteCapacityAutoScalingSettings:
+      #     #   # MinCapacity: # Integer
+      #     #   # MaxCapacity: # Integer
+      #     #   # # SeedCapacity: # Integer
+      #     #   # # TargetTrackingScalingPolicyConfiguration:
+      #     #   #   # # DisableScaleIn: # Boolean
+      #     #   #   # # ScaleInCooldown: # Integer
+      #     #   #   # # ScaleOutCooldown: # Integer
+      #     #   #   # TargetValue: # Double
+      KeySchema:
+        - AttributeName: # String
+          KeyType: # String
+      # LocalSecondaryIndexes:
+      #   - IndexName: # String
+      #     KeySchema:
+      #       - AttributeName: # String
+      #         KeyType: # String
+      #     # Projection:
+      #     # # NonKeyAttributes:
+      #     #   # - # String
+      #     # # ProjectionType: # String
+      # WriteProvisionedThroughputSettings:
+      #   # WriteCapacityAutoScalingSettings:
+      #   # MinCapacity: # Integer
+      #   # MaxCapacity: # Integer
+      #   # # SeedCapacity: # Integer
+      #   # # TargetTrackingScalingPolicyConfiguration:
+      #   #   # # DisableScaleIn: # Boolean
+      #   #   # # ScaleInCooldown: # Integer
+      #   #   # # ScaleOutCooldown: # Integer
+      #   #   # TargetValue: # Double
+      Replicas:
+        - Region: # String
+          # GlobalSecondaryIndexes:
+          #   - IndexName: # String
+          #     # ContributorInsightsSpecification:
+          #     # Enabled: # Boolean
+          #     # ReadProvisionedThroughputSettings:
+          #     # # ReadCapacityUnits: # Integer
+          #     # # ReadCapacityAutoScalingSettings:
+          #     #   # MinCapacity: # Integer
+          #     #   # MaxCapacity: # Integer
+          #     #   # # SeedCapacity: # Integer
+          #     #   # # TargetTrackingScalingPolicyConfiguration:
+          #     #   #   # # DisableScaleIn: # Boolean
+          #     #   #   # # ScaleInCooldown: # Integer
+          #     #   #   # # ScaleOutCooldown: # Integer
+          #     #   #   # TargetValue: # Double
+          # ContributorInsightsSpecification:
+          #   Enabled: # Boolean
+          # PointInTimeRecoverySpecification:
+          #   # PointInTimeRecoveryEnabled: # Boolean
+          # TableClass: # String
+          # SSESpecification:
+          #   KMSMasterKeyId: # String
+          # Tags:
+          #   - Key: # String
+          #     Value: # String
+          # ReadProvisionedThroughputSettings:
+          #   # ReadCapacityUnits: # Integer
+          #   # ReadCapacityAutoScalingSettings:
+          #   # MinCapacity: # Integer
+          #   # MaxCapacity: # Integer
+          #   # # SeedCapacity: # Integer
+          #   # # TargetTrackingScalingPolicyConfiguration:
+          #   #   # # DisableScaleIn: # Boolean
+          #   #   # # ScaleInCooldown: # Integer
+          #   #   # # ScaleOutCooldown: # Integer
+          #   #   # TargetValue: # Double
+      # SSESpecification:
+      #   SSEEnabled: # Boolean
+      #   # SSEType: # String
+      # StreamSpecification:
+      #   StreamViewType: # String
+      # TableName: # String
+      # TimeToLiveSpecification:
+      #   # AttributeName: # String
+      #   Enabled: # Boolean
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.StreamArn (String)
+    # !GetAtt THIS.TableId (String)

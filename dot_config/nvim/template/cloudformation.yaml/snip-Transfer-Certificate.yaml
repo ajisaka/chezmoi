@@ -1,0 +1,22 @@
+  TransferCertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-certificate.html
+    Type: AWS::Transfer::Certificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-transfer-certificate.html
+      Usage: # String
+      Certificate: # String
+      # CertificateChain: # String
+      # PrivateKey: # String
+      # ActiveDate: # String
+      # InactiveDate: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CertificateId (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.Type (String)
+    # !GetAtt THIS.Serial (String)
+    # !GetAtt THIS.NotBeforeDate (String)
+    # !GetAtt THIS.NotAfterDate (String)

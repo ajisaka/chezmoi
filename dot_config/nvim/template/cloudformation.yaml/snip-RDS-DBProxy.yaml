@@ -1,0 +1,27 @@
+  RDSDBProxy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html
+    Type: AWS::RDS::DBProxy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html
+      Auth:
+        - # AuthScheme: # String
+          # Description: # String
+          # IAMAuth: # String
+          # SecretArn: # String
+          # UserName: # String
+      DBProxyName: # String
+      # DebugLogging: # Boolean
+      EngineFamily: # String
+      # IdleClientTimeout: # Integer
+      # RequireTLS: # Boolean
+      RoleArn: # String
+      # Tags:
+      #   - # Key: # String
+      #     # Value: # String
+      # VpcSecurityGroupIds:
+      #   - # String
+      VpcSubnetIds:
+        - # String
+    # !GetAtt THIS.DBProxyArn (String)
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.VpcId (String)

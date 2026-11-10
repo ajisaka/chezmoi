@@ -1,0 +1,14 @@
+  WAFRegionalWebACL:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html
+    Type: AWS::WAFRegional::WebACL
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html
+      MetricName: # String
+      # DefaultAction:
+      #   Type: # String
+      # Rules:
+      #   - # Action:
+      #     # Type: # String
+      #     Priority: # Integer
+      #     RuleId: # String
+      Name: # String

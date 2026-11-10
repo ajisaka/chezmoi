@@ -1,0 +1,47 @@
+  AppSyncGraphQLApi:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
+    Type: AWS::AppSync::GraphQLApi
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
+      # OpenIDConnectConfig:
+      #   # Issuer: # String
+      #   # ClientId: # String
+      #   # AuthTTL: # Double
+      #   # IatTTL: # Double
+      # LambdaAuthorizerConfig:
+      #   # IdentityValidationExpression: # String
+      #   # AuthorizerUri: # String
+      #   # AuthorizerResultTtlInSeconds: # Double
+      # XrayEnabled: # Boolean
+      # UserPoolConfig:
+      #   # AppIdClientRegex: # String
+      #   # UserPoolId: # String
+      #   # AwsRegion: # String
+      #   # DefaultAction: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+      AuthenticationType: # String
+      # LogConfig:
+      #   # CloudWatchLogsRoleArn: # String
+      #   # ExcludeVerboseContent: # Boolean
+      #   # FieldLogLevel: # String
+      # AdditionalAuthenticationProviders:
+      #   - # OpenIDConnectConfig:
+      #     # # Issuer: # String
+      #     # # ClientId: # String
+      #     # # AuthTTL: # Double
+      #     # # IatTTL: # Double
+      #     # LambdaAuthorizerConfig:
+      #     # # IdentityValidationExpression: # String
+      #     # # AuthorizerUri: # String
+      #     # # AuthorizerResultTtlInSeconds: # Double
+      #     # UserPoolConfig:
+      #     # # AppIdClientRegex: # String
+      #     # # UserPoolId: # String
+      #     # # AwsRegion: # String
+      #     AuthenticationType: # String
+    # !GetAtt THIS.GraphQLUrl (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ApiId (String)

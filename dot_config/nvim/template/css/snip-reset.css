@@ -1,0 +1,5 @@
+/* https://qiita.com/70ki8suda/items/584581c457b50dc13b1d */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)){
+    all: unset;
+    display: revert;
+}

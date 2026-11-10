@@ -1,0 +1,22 @@
+  EKSIdentityProviderConfig:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-identityproviderconfig.html
+    Type: AWS::EKS::IdentityProviderConfig
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-identityproviderconfig.html
+      ClusterName: # String
+      Type: # String
+      # IdentityProviderConfigName: # String
+      # Oidc:
+      #   ClientId: # String
+      #   # GroupsClaim: # String
+      #   # GroupsPrefix: # String
+      #   IssuerUrl: # String
+      #   # RequiredClaims:
+      #   # - Key: # String
+      #   # Value: # String
+      #   # UsernameClaim: # String
+      #   # UsernamePrefix: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.IdentityProviderConfigArn (String)

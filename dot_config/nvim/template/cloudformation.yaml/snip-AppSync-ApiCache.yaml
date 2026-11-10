@@ -1,0 +1,11 @@
+  AppSyncApiCache:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html
+    Type: AWS::AppSync::ApiCache
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apicache.html
+      Type: # String
+      # TransitEncryptionEnabled: # Boolean
+      # AtRestEncryptionEnabled: # Boolean
+      ApiId: # String
+      ApiCachingBehavior: # String
+      Ttl: # Double

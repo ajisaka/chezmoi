@@ -1,0 +1,18 @@
+  OrganizationsAccount:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-organizations-account.html
+    Type: AWS::Organizations::Account
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-organizations-account.html
+      AccountName: # String
+      Email: # String
+      # RoleName: # String
+      # ParentIds:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AccountId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.JoinedMethod (String)
+    # !GetAtt THIS.JoinedTimestamp (String)
+    # !GetAtt THIS.Status (String)

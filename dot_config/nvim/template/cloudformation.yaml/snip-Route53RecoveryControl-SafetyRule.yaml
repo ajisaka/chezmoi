@@ -1,0 +1,26 @@
+  Route53RecoveryControlSafetyRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoverycontrol-safetyrule.html
+    Type: AWS::Route53RecoveryControl::SafetyRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53recoverycontrol-safetyrule.html
+      # AssertionRule:
+      #   WaitPeriodMs: # Integer
+      #   AssertedControls:
+      #     - # String
+      # GatingRule:
+      #   GatingControls:
+      #     - # String
+      #   TargetControls:
+      #     - # String
+      #   WaitPeriodMs: # Integer
+      Name: # String
+      ControlPanelArn: # String
+      # RuleConfig:
+      #   Type: # String
+      #   Threshold: # Integer
+      #   Inverted: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.SafetyRuleArn (String)
+    # !GetAtt THIS.Status (String)

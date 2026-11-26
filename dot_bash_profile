@@ -1,0 +1,4 @@
+
+[ -r ~/.envrc ] && source ~/.envrc
+[ -r ~/.bashrc ] && source ~/.bashrc
+[ -f ~/.bash_profile.local ] && source ~/.bash_profile.local

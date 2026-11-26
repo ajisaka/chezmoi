@@ -1,0 +1,27 @@
+  DataPipelinePipeline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
+    Type: AWS::DataPipeline::Pipeline
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
+      # Activate: # Boolean
+      # Description: # String
+      Name: # String
+      # ParameterObjects:
+      #   - Attributes:
+      #       - Key: # String
+      #         StringValue: # String
+      #     Id: # String
+      # ParameterValues:
+      #   - Id: # String
+      #     StringValue: # String
+      # PipelineObjects:
+      #   - Fields:
+      #       - Key: # String
+      #         # RefValue: # String
+      #         # StringValue: # String
+      #     Id: # String
+      #     Name: # String
+      # PipelineTags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PipelineId (String)

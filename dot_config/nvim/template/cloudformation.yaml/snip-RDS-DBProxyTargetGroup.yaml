@@ -1,0 +1,19 @@
+  RDSDBProxyTargetGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html
+    Type: AWS::RDS::DBProxyTargetGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html
+      DBProxyName: # String
+      TargetGroupName: # String
+      # ConnectionPoolConfigurationInfo:
+      #   # MaxConnectionsPercent: # Integer
+      #   # MaxIdleConnectionsPercent: # Integer
+      #   # ConnectionBorrowTimeout: # Integer
+      #   # SessionPinningFilters:
+      #   # - # String
+      #   # InitQuery: # String
+      # DBInstanceIdentifiers:
+      #   - # String
+      # DBClusterIdentifiers:
+      #   - # String
+    # !GetAtt THIS.TargetGroupArn (String)

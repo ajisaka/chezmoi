@@ -1,0 +1,53 @@
+  ImageBuilderDistributionConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-distributionconfiguration.html
+    Type: AWS::ImageBuilder::DistributionConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-distributionconfiguration.html
+      Name: # String
+      # Description: # String
+      Distributions:
+        - Region: # String
+          # AmiDistributionConfiguration:
+          #   # Name: # String
+          #   # KmsKeyId: # String
+          #   # Description: # String
+          #   # AmiTags:
+          #   # ANY_KEY: # String
+          #   # TargetAccountIds:
+          #   # - # String
+          #   # LaunchPermissionConfiguration:
+          #   # # UserIds:
+          #   #   # - # String
+          #   # # UserGroups:
+          #   #   # - # String
+          #   # # OrganizationArns:
+          #   #   # - # String
+          #   # # OrganizationalUnitArns:
+          #   #   # - # String
+          # ContainerDistributionConfiguration:
+          #   # Description: # String
+          #   # ContainerTags:
+          #   # - # String
+          #   # TargetRepository:
+          #   # # Service: # String
+          #   # # RepositoryName: # String
+          # LicenseConfigurationArns:
+          #   - # String
+          # LaunchTemplateConfigurations:
+          #   - # LaunchTemplateId: # String
+          #     # AccountId: # String
+          #     # SetDefaultVersion: # Boolean
+          # FastLaunchConfigurations:
+          #   - # AccountId: # String
+          #     # Enabled: # Boolean
+          #     # LaunchTemplate:
+          #     # # LaunchTemplateId: # String
+          #     # # LaunchTemplateName: # String
+          #     # # LaunchTemplateVersion: # String
+          #     # MaxParallelLaunches: # Integer
+          #     # SnapshotConfiguration:
+          #     # # TargetResourceCount: # Integer
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

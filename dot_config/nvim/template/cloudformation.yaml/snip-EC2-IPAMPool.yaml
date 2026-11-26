@@ -1,0 +1,32 @@
+  EC2IPAMPool:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipampool.html
+    Type: AWS::EC2::IPAMPool
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipampool.html
+      # SourceIpamPoolId: # String
+      IpamScopeId: # String
+      # Locale: # String
+      # Description: # String
+      # AutoImport: # Boolean
+      # PubliclyAdvertisable: # Boolean
+      AddressFamily: # String
+      # AllocationMinNetmaskLength: # Integer
+      # AllocationDefaultNetmaskLength: # Integer
+      # AllocationMaxNetmaskLength: # Integer
+      # AllocationResourceTags:
+      #   - Key: # String
+      #     Value: # String
+      # ProvisionedCidrs:
+      #   - Cidr: # String
+      # AwsService: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.IpamPoolId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.IpamScopeArn (String)
+    # !GetAtt THIS.IpamScopeType (String)
+    # !GetAtt THIS.IpamArn (String)
+    # !GetAtt THIS.PoolDepth (Integer)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.StateMessage (String)

@@ -1,0 +1,11 @@
+  ServiceCatalogLaunchRoleConstraint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
+    Type: AWS::ServiceCatalog::LaunchRoleConstraint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
+      # Description: # String
+      # LocalRoleName: # String
+      # AcceptLanguage: # String
+      PortfolioId: # String
+      ProductId: # String
+      # RoleArn: # String

@@ -1,0 +1,75 @@
+  NetworkFirewallRuleGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-rulegroup.html
+    Type: AWS::NetworkFirewall::RuleGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-rulegroup.html
+      RuleGroupName: # String
+      # RuleGroup:
+      #   # RuleVariables:
+      #   # # IPSets:
+      #   #   # ANY_KEY: # Definition:
+      #   #   #     # - # String
+      #   # # PortSets:
+      #   #   # ANY_KEY: # Definition:
+      #   #   #     # - # String
+      #   # RulesSource:
+      #   # # RulesString: # String
+      #   # # RulesSourceList:
+      #   #   # Targets:
+      #   #   # - # String
+      #   #   # TargetTypes:
+      #   #   # - # String
+      #   #   # GeneratedRulesType: # String
+      #   # # StatefulRules:
+      #   #   # - Action: # String
+      #   #   # # Header:
+      #   #   #     # Protocol: # String
+      #   #   #     # Source: # String
+      #   #   #     # SourcePort: # String
+      #   #   #     # Direction: # String
+      #   #   #     # Destination: # String
+      #   #   #     # DestinationPort: # String
+      #   #   # RuleOptions:
+      #   #   # - Keyword: # String
+      #   #   # # Settings:
+      #   #   #         # - # String
+      #   # # StatelessRulesAndCustomActions:
+      #   #   # StatelessRules:
+      #   #   # - # RuleDefinition:
+      #   #   #       # # MatchAttributes:
+      #   #   #       #   # # Sources:
+      #   #   #       #   #   # - AddressDefinition: # String
+      #   #   #       #   # # Destinations:
+      #   #   #       #   #   # - AddressDefinition: # String
+      #   #   #       #   # # SourcePorts:
+      #   #   #       #   #   # - FromPort: # Integer
+      #   #   #       #   #   # ToPort: # Integer
+      #   #   #       #   # # DestinationPorts:
+      #   #   #       #   #   # - FromPort: # Integer
+      #   #   #       #   #   # ToPort: # Integer
+      #   #   #       #   # # Protocols:
+      #   #   #       #   #   # - # Integer
+      #   #   #       #   # # TCPFlags:
+      #   #   #       #   #   # - Flags:
+      #   #   #       #   #   # - # String
+      #   #   #       #   #   # # Masks:
+      #   #   #       #   #   #     # - # String
+      #   #   #       # Actions:
+      #   #   #       # - # String
+      #   #   # Priority: # Integer
+      #   #   # # CustomActions:
+      #   #   #   # - ActionName: # String
+      #   #   #   # # ActionDefinition:
+      #   #   #   #     # # PublishMetricAction:
+      #   #   #   #     #   # Dimensions:
+      #   #   #   #     #   # - Value: # String
+      #   # StatefulRuleOptions:
+      #   # # RuleOrder: # String
+      Type: # String
+      Capacity: # Integer
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.RuleGroupArn (String)
+    # !GetAtt THIS.RuleGroupId (String)

@@ -1,0 +1,11 @@
+  IoT1ClickPlacement:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
+    Type: AWS::IoT1Click::Placement
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
+      # PlacementName: # String
+      ProjectName: # String
+      # AssociatedDevices: # Json
+      # Attributes: # Json
+    # !GetAtt THIS.PlacementName (String)
+    # !GetAtt THIS.ProjectName (String)

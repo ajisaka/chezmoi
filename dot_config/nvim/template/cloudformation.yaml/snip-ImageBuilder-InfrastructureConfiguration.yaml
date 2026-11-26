@@ -1,0 +1,29 @@
+  ImageBuilderInfrastructureConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-infrastructureconfiguration.html
+    Type: AWS::ImageBuilder::InfrastructureConfiguration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-infrastructureconfiguration.html
+      Name: # String
+      # Description: # String
+      # InstanceTypes:
+      #   - # String
+      # SecurityGroupIds:
+      #   - # String
+      # Logging:
+      #   # S3Logs:
+      #   # # S3BucketName: # String
+      #   # # S3KeyPrefix: # String
+      # SubnetId: # String
+      # KeyPair: # String
+      # TerminateInstanceOnFailure: # Boolean
+      InstanceProfileName: # String
+      # InstanceMetadataOptions:
+      #   # HttpPutResponseHopLimit: # Integer
+      #   # HttpTokens: # String
+      # SnsTopicArn: # String
+      # ResourceTags:
+      #   ANY_KEY: # String
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# set -euC
+# set -x
+
+if [ -n "$DISPLAY" ] && which panty > /dev/null 2>&1 && pgrep -x panty > /dev/null 2>&1
+then
+  # shellcheck disable=SC2016
+  exec panty --silent summon --nofork --after 'xc important $PANTY_WINDOWID' "$@"
+else
+  nvim "$@"
+fi

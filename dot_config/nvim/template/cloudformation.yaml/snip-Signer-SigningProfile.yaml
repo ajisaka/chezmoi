@@ -1,0 +1,15 @@
+  SignerSigningProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-signer-signingprofile.html
+    Type: AWS::Signer::SigningProfile
+    Properties:
+      # SignatureValidityPeriod:
+      #   # Value: # Integer
+      #   # Type: # String
+      PlatformId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ProfileName (String)
+    # !GetAtt THIS.ProfileVersion (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ProfileVersionArn (String)

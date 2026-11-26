@@ -1,0 +1,16 @@
+  NetworkManagerSite:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-site.html
+    Type: AWS::NetworkManager::Site
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-site.html
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      GlobalNetworkId: # String
+      # Location:
+      #   # Address: # String
+      #   # Latitude: # String
+      #   # Longitude: # String
+    # !GetAtt THIS.SiteArn (String)
+    # !GetAtt THIS.SiteId (String)

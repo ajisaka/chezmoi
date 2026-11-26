@@ -1,0 +1,27 @@
+  DataSyncLocationHDFS:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationhdfs.html
+    Type: AWS::DataSync::LocationHDFS
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationhdfs.html
+      NameNodes:
+        - Hostname: # String
+          Port: # Integer
+      # BlockSize: # Integer
+      # ReplicationFactor: # Integer
+      # KmsKeyProviderUri: # String
+      # QopConfiguration:
+      #   # RpcProtection: # String
+      #   # DataTransferProtection: # String
+      AuthenticationType: # String
+      # SimpleUser: # String
+      # KerberosPrincipal: # String
+      # KerberosKeytab: # String
+      # KerberosKrb5Conf: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      AgentArns:
+        - # String
+      # Subdirectory: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

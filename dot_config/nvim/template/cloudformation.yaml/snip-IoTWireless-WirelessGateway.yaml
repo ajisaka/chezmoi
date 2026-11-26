@@ -1,0 +1,18 @@
+  IoTWirelessWirelessGateway:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-wirelessgateway.html
+    Type: AWS::IoTWireless::WirelessGateway
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotwireless-wirelessgateway.html
+      # Name: # String
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # LoRaWAN:
+      #   GatewayEui: # String
+      #   RfRegion: # String
+      # ThingArn: # String
+      # ThingName: # String
+      # LastUplinkReceivedAt: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

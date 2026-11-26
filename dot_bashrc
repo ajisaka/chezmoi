@@ -1,0 +1,188 @@
+# Load common envs {{{
+# shellcheck disable=1090
+[ -e ~/.envrc ] && source ~/.envrc
+# }}}
+
+# If not running interactively, don't do anything {{{
+[[ $- != *i* ]] && return
+# }}}
+
+# Simple prompt {{{
+PS1='[\u@\h \W]\$ '
+if command -v starship > /dev/null
+then
+  eval "$(starship init bash)"
+fi
+# }}}
+
+# Load local settings {{{
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
+# }}}
+
+# Disable <C-s> {{{
+# Linuxの「端末」で最もウザいキーバインド「Ctrl+S」を無効化する方法 | LFI - https://linuxfan.info/disable-ctrl-s
+if [ -t 0 ]
+then
+  stty stop undef
+  stty start undef
+fi
+# }}}
+
+# Aliases {{{
+alias ls='ls --color=auto'
+alias ll='ls -la --color=auto'
+# }}}
+
+# Script finder {{{
+find_script() {
+  local home=~/
+  local root roots=()
+  for root in ~/script/ ~/local/script/ ~/bin/ ~/lin/ ~/local/bin/
+  do
+    [ -e "$root" ] && roots+=("$root")
+  done
+
+  {
+    find "${roots[@]}" \( -type f -executable -or -type l \) | sed "s/^.\{${#home}\}//" | sed -e 's/^/!/'
+    (
+      alias -p | sed 's/^alias *//' | sed 's/=.*//'
+    ) | grep '^[a-z]' | sort | sed -e 's/^/#/'
+  } | grep '.\+'
+}
+
+select_script () {
+  local found
+  local cmd
+  found=$(find_script | anything)
+  found_type="${found:0:1}"
+  found_path="${found:1}"
+  if [ "$found_type" = '#' ]
+  then
+    cmd="$found_path"
+  elif [[ $found_path =~ (^|/)bin/ ]]
+  then
+    cmd="$(basename "$found_path")"
+  else
+  # shellcheck disable=2088
+    cmd="~/$found_path"
+  fi
+  if [ -z "$READLINE_LINE" ]
+  then
+    READLINE_LINE="$cmd"
+  else
+    READLINE_LINE="${READLINE_LINE} ${cmd}"
+  fi
+  READLINE_POINT="${#READLINE_LINE}"
+  # zle -R -c               # refresh
+}
+
+bind -x '"\C-s": select_script'
+
+# }}}
+
+# コマンド履歴検索 {{{
+_replace_by_history() {
+  local line
+  line="$(
+    HISTTIMEFORMAT='' history \
+      | sort -k1,1nr \
+      | sed -e 's/^[[:space:]]*[0-9]\+[[:space:]]*//' \
+      | unique \
+      | anything
+  )"
+  READLINE_LINE="$line"
+  READLINE_POINT=${#line}
+}
+bind -x '"\C-r": _replace_by_history' # Override `<C-r>`
+# }}}
+
+# nvm {{{
+
+[ -x /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
+
+# }}}
+
+# .env などを読み込む {{{
+__bashrc_env_filename_patterns=(
+  .env/bin/activate
+  .venv/bin/activate
+  venv/bin/activate
+  .beethovenv
+)
+
+function __bashrc_find_named_beethovenv() {
+  find ./ -maxdepth 1 -mindepth 1 -name '.beethovenv.*' -type f | sed 's/.*\.beethovenv\.//'
+}
+
+function __bashrc_find_env_dir() {
+  local tried="$1"
+  local dir="$2"
+
+  # printf '\e[41mCheck: %q\e[41m\n' "$dir" 1>&2
+
+  if [ "$tried" -gt 10 ]
+  then
+    # echo '\e[41mEnv not found\e[41m' 1>&2
+    return 1
+  fi
+
+  for pattern in "${__bashrc_env_filename_patterns[@]}"
+  do
+    if [ -f "${dir}/${pattern}" ]
+    then
+      echo "$dir"
+      return 0
+    fi
+  done
+
+  local beethovenv_named=0
+  beethovenv_named="$(__bashrc_find_named_beethovenv | wc -l)"
+  if [ "$beethovenv_named" -gt 0 ]
+  then
+    echo "$dir"
+    return 0
+  fi
+
+  __bashrc_find_env_dir "$(( tried + 1 ))" "$(dirname "$dir")"
+}
+
+function load-env {
+  local dir
+  dir="$( __bashrc_find_env_dir 0 "$PWD" )"
+  if [ -z "$dir" ]
+  then
+    echo -e '\e[41menv dir is not found\e[0m'
+    return
+  fi
+
+  for pattern in "${__bashrc_env_filename_patterns[@]}"
+  do
+    [ -f "${dir}/${pattern}" ] || continue
+    local env
+    env="$(realpath --relative-to "$PWD" "${dir}/${pattern}")"
+    if [ -f "$env" ]
+    then
+      echo -e "\e[44msource ${env}\e[0m" 1>&2
+      source "${dir}/${pattern}"
+    fi
+  done
+
+  local named names
+  names="$(__bashrc_find_named_beethovenv)"
+  if [ -n "$names" ]
+  then
+    named="$(echo "$names" | anything)"
+    if [ -n "$named" ]
+    then
+      local env
+      env="$(realpath --relative-to "$PWD" ./".beethovenv.${named}")"
+      echo -e "\e[44msource ${env}\e[0m" 1>&2
+      source "${env}"
+    fi
+  fi
+}
+
+alias le=load-env
+# }}}
+
+cd ~/ || return

@@ -1,0 +1,10 @@
+  ConfigAggregationAuthorization:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html
+    Type: AWS::Config::AggregationAuthorization
+    Properties:
+      AuthorizedAccountId: # String
+      AuthorizedAwsRegion: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AggregationAuthorizationArn (String)

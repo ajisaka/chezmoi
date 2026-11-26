@@ -1,0 +1,219 @@
+  QuickSightDataSource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-datasource.html
+    Type: AWS::QuickSight::DataSource
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-datasource.html
+      # AlternateDataSourceParameters:
+      #   - # AuroraPostgreSqlParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # TeradataParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # RdsParameters:
+      #     # InstanceId: # String
+      #     # Database: # String
+      #     # AthenaParameters:
+      #     # # WorkGroup: # String
+      #     # SparkParameters:
+      #     # Port: # Double
+      #     # Host: # String
+      #     # MariaDbParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # OracleParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # PrestoParameters:
+      #     # Port: # Double
+      #     # Host: # String
+      #     # Catalog: # String
+      #     # RedshiftParameters:
+      #     # # ClusterId: # String
+      #     # # Port: # Double
+      #     # Database: # String
+      #     # # Host: # String
+      #     # MySqlParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # SqlServerParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # SnowflakeParameters:
+      #     # Warehouse: # String
+      #     # Database: # String
+      #     # Host: # String
+      #     # AmazonElasticsearchParameters:
+      #     # Domain: # String
+      #     # AmazonOpenSearchParameters:
+      #     # Domain: # String
+      #     # PostgreSqlParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # AuroraParameters:
+      #     # Port: # Double
+      #     # Database: # String
+      #     # Host: # String
+      #     # S3Parameters:
+      #     # # ManifestFileLocation:
+      #     #   # Bucket: # String
+      #     #   # Key: # String
+      # AwsAccountId: # String
+      # Credentials:
+      #   # CopySourceArn: # String
+      #   # CredentialPair:
+      #   # # AlternateDataSourceParameters:
+      #   #   # - # AuroraPostgreSqlParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # TeradataParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # RdsParameters:
+      #   #   #     # InstanceId: # String
+      #   #   #     # Database: # String
+      #   #   # # AthenaParameters:
+      #   #   #     # # WorkGroup: # String
+      #   #   # # SparkParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Host: # String
+      #   #   # # MariaDbParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # OracleParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # PrestoParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Host: # String
+      #   #   #     # Catalog: # String
+      #   #   # # RedshiftParameters:
+      #   #   #     # # ClusterId: # String
+      #   #   #     # # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # # Host: # String
+      #   #   # # MySqlParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # SqlServerParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # SnowflakeParameters:
+      #   #   #     # Warehouse: # String
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # AmazonElasticsearchParameters:
+      #   #   #     # Domain: # String
+      #   #   # # AmazonOpenSearchParameters:
+      #   #   #     # Domain: # String
+      #   #   # # PostgreSqlParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # AuroraParameters:
+      #   #   #     # Port: # Double
+      #   #   #     # Database: # String
+      #   #   #     # Host: # String
+      #   #   # # S3Parameters:
+      #   #   #     # # ManifestFileLocation:
+      #   #   #     #   # Bucket: # String
+      #   #   #     #   # Key: # String
+      #   # Username: # String
+      #   # Password: # String
+      #   # SecretArn: # String
+      # DataSourceId: # String
+      # DataSourceParameters:
+      #   # AuroraPostgreSqlParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # TeradataParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # RdsParameters:
+      #   # InstanceId: # String
+      #   # Database: # String
+      #   # AthenaParameters:
+      #   # # WorkGroup: # String
+      #   # SparkParameters:
+      #   # Port: # Double
+      #   # Host: # String
+      #   # MariaDbParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # OracleParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # PrestoParameters:
+      #   # Port: # Double
+      #   # Host: # String
+      #   # Catalog: # String
+      #   # RedshiftParameters:
+      #   # # ClusterId: # String
+      #   # # Port: # Double
+      #   # Database: # String
+      #   # # Host: # String
+      #   # MySqlParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # SqlServerParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # SnowflakeParameters:
+      #   # Warehouse: # String
+      #   # Database: # String
+      #   # Host: # String
+      #   # AmazonElasticsearchParameters:
+      #   # Domain: # String
+      #   # AmazonOpenSearchParameters:
+      #   # Domain: # String
+      #   # PostgreSqlParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # AuroraParameters:
+      #   # Port: # Double
+      #   # Database: # String
+      #   # Host: # String
+      #   # S3Parameters:
+      #   # # ManifestFileLocation:
+      #   #   # Bucket: # String
+      #   #   # Key: # String
+      # ErrorInfo:
+      #   # Type: # String
+      #   # Message: # String
+      # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # SslProperties:
+      #   # DisableSsl: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Type: # String
+      # VpcConnectionProperties:
+      #   VpcConnectionArn: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)
+    # !GetAtt THIS.Status (String)

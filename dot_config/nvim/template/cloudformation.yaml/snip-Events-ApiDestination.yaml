@@ -1,0 +1,12 @@
+  EventsApiDestination:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-apidestination.html
+    Type: AWS::Events::ApiDestination
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-apidestination.html
+      # Name: # String
+      # Description: # String
+      ConnectionArn: # String
+      # InvocationRateLimitPerSecond: # Integer
+      InvocationEndpoint: # String
+      HttpMethod: # String
+    # !GetAtt THIS.Arn (String)

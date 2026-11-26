@@ -1,0 +1,6 @@
+  SupportAppSlackWorkspaceConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-supportapp-slackworkspaceconfiguration.html
+    Type: AWS::SupportApp::SlackWorkspaceConfiguration
+    Properties:
+      TeamId: # String
+      # VersionId: # String

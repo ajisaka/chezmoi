@@ -1,0 +1,13 @@
+  LocationRouteCalculator:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-routecalculator.html
+    Type: AWS::Location::RouteCalculator
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-routecalculator.html
+      CalculatorName: # String
+      DataSource: # String
+      # Description: # String
+      # PricingPlan: # String
+    # !GetAtt THIS.CalculatorArn (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreateTime (String)
+    # !GetAtt THIS.UpdateTime (String)

@@ -1,0 +1,15 @@
+  EC2IPAM:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ipam.html
+    Type: AWS::EC2::IPAM
+    Properties:
+      # Description: # String
+      # OperatingRegions:
+      #   - RegionName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.IpamId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.PublicDefaultScopeId (String)
+    # !GetAtt THIS.PrivateDefaultScopeId (String)
+    # !GetAtt THIS.ScopeCount (Integer)

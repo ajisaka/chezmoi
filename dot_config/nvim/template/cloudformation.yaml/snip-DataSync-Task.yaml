@@ -1,0 +1,42 @@
+  DataSyncTask:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-task.html
+    Type: AWS::DataSync::Task
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-task.html
+      # Excludes:
+      #   - # FilterType: # String
+      #     # Value: # String
+      # Includes:
+      #   - # FilterType: # String
+      #     # Value: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # CloudWatchLogGroupArn: # String
+      DestinationLocationArn: # String
+      # Name: # String
+      # Options:
+      #   # Atime: # String
+      #   # BytesPerSecond: # Integer
+      #   # Gid: # String
+      #   # LogLevel: # String
+      #   # Mtime: # String
+      #   # OverwriteMode: # String
+      #   # PosixPermissions: # String
+      #   # PreserveDeletedFiles: # String
+      #   # PreserveDevices: # String
+      #   # SecurityDescriptorCopyFlags: # String
+      #   # TaskQueueing: # String
+      #   # TransferMode: # String
+      #   # Uid: # String
+      #   # VerifyMode: # String
+      #   # ObjectTags: # String
+      # Schedule:
+      #   ScheduleExpression: # String
+      SourceLocationArn: # String
+    # !GetAtt THIS.TaskArn (String)
+    # !GetAtt THIS.ErrorCode (String)
+    # !GetAtt THIS.ErrorDetail (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.SourceNetworkInterfaceArns (List)
+    # !GetAtt THIS.DestinationNetworkInterfaceArns (List)

@@ -1,0 +1,72 @@
+  DynamoDBTable:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+    Type: AWS::DynamoDB::Table
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html
+      # AttributeDefinitions:
+      #   - AttributeName: # String
+      #     AttributeType: # String
+      # BillingMode: # String
+      # GlobalSecondaryIndexes:
+      #   - IndexName: # String
+      #     KeySchema:
+      #       - AttributeName: # String
+      #         KeyType: # String
+      #     # Projection:
+      #     # # NonKeyAttributes:
+      #     #   # - # String
+      #     # # ProjectionType: # String
+      #     # ProvisionedThroughput:
+      #     # ReadCapacityUnits: # Integer
+      #     # WriteCapacityUnits: # Integer
+      #     # ContributorInsightsSpecification:
+      #     # Enabled: # Boolean
+      KeySchema:
+        - AttributeName: # String
+          KeyType: # String
+      # LocalSecondaryIndexes:
+      #   - IndexName: # String
+      #     KeySchema:
+      #       - AttributeName: # String
+      #         KeyType: # String
+      #     # Projection:
+      #     # # NonKeyAttributes:
+      #     #   # - # String
+      #     # # ProjectionType: # String
+      # PointInTimeRecoverySpecification:
+      #   # PointInTimeRecoveryEnabled: # Boolean
+      # TableClass: # String
+      # ProvisionedThroughput:
+      #   ReadCapacityUnits: # Integer
+      #   WriteCapacityUnits: # Integer
+      # SSESpecification:
+      #   # KMSMasterKeyId: # String
+      #   SSEEnabled: # Boolean
+      #   # SSEType: # String
+      # StreamSpecification:
+      #   StreamViewType: # String
+      # TableName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TimeToLiveSpecification:
+      #   AttributeName: # String
+      #   Enabled: # Boolean
+      # ContributorInsightsSpecification:
+      #   Enabled: # Boolean
+      # KinesisStreamSpecification:
+      #   StreamArn: # String
+      # ImportSourceSpecification:
+      #   # S3BucketSource:
+      #   # # S3BucketOwner: # String
+      #   # S3Bucket: # String
+      #   # # S3KeyPrefix: # String
+      #   InputFormat: # String
+      #   # InputFormatOptions:
+      #   # # Csv:
+      #   #   # # HeaderList:
+      #   #   #   # - # String
+      #   #   # # Delimiter: # String
+      #   # InputCompressionType: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.StreamArn (String)

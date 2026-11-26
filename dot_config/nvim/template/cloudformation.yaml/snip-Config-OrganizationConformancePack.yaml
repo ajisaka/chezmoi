@@ -1,0 +1,15 @@
+  ConfigOrganizationConformancePack:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html
+    Type: AWS::Config::OrganizationConformancePack
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconformancepack.html
+      OrganizationConformancePackName: # String
+      # TemplateS3Uri: # String
+      # TemplateBody: # String
+      # DeliveryS3Bucket: # String
+      # DeliveryS3KeyPrefix: # String
+      # ConformancePackInputParameters:
+      #   - ParameterName: # String
+      #     ParameterValue: # String
+      # ExcludedAccounts:
+      #   - # String

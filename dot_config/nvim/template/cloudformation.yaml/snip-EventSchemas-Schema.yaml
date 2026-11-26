@@ -1,0 +1,16 @@
+  EventSchemasSchema:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-schema.html
+    Type: AWS::EventSchemas::Schema
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eventschemas-schema.html
+      Type: # String
+      # Description: # String
+      Content: # String
+      RegistryName: # String
+      # SchemaName: # String
+      # Tags:
+      #   - Value: # String
+      #     Key: # String
+    # !GetAtt THIS.SchemaVersion (String)
+    # !GetAtt THIS.SchemaArn (String)
+    # !GetAtt THIS.SchemaName (String)

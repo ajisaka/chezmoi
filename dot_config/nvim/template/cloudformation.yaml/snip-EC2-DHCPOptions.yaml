@@ -1,0 +1,17 @@
+  EC2DHCPOptions:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcpoptions.html
+    Type: AWS::EC2::DHCPOptions
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcpoptions.html
+      # DomainName: # String
+      # DomainNameServers:
+      #   - # String
+      # NetbiosNameServers:
+      #   - # String
+      # NetbiosNodeType: # Integer
+      # NtpServers:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.DhcpOptionsId (String)

@@ -1,0 +1,14 @@
+  EC2SecurityGroupEgress:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
+      # CidrIp: # String
+      # CidrIpv6: # String
+      # Description: # String
+      # DestinationPrefixListId: # String
+      # DestinationSecurityGroupId: # String
+      # FromPort: # Integer
+      GroupId: # String
+      IpProtocol: # String
+      # ToPort: # Integer

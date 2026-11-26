@@ -1,0 +1,42 @@
+snippet rye/script
+  [project.scripts]
+  ${1:command} = "${2:package}:main"
+
+  [build-system]
+  requires = ["hatchling"]
+  build-backend = "hatchling.build"
+
+  [tool.hatch.build.targets.wheel]
+  include = ["main.py"]
+
+
+snippet pyproject/uv
+  [dependency-groups]
+  dev = [
+      "mypy>=1.16.0",
+      "ruff>=0.11.12",
+  ]
+
+  [tool.ruff.lint]
+  select = ["I", "E4", "E7", "E9", "F", "W", "UP"]
+  ignore = []
+  fixable = ["ALL"]
+  unfixable = []
+
+  [tool.mypy]
+  python_version = "3.12"
+  warn_unused_configs = true
+  show_error_codes = true
+  check_untyped_defs = true
+  namespace_packages = true
+  disallow_untyped_defs = true
+
+  [[tool.mypy.overrides]]
+  module = "boto3"
+  ignore_missing_imports = true
+
+
+snippet pyproject/ignore
+  [[tool.mypy.overrides]]
+  module = "${1:package}"
+  ignore_missing_imports = true

@@ -1,0 +1,48 @@
+  CloudWatchAlarm:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-alarm.html
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-alarm.html
+      # ActionsEnabled: # Boolean
+      # AlarmActions:
+      #   - # String
+      # AlarmDescription: # String
+      # AlarmName: # String
+      ComparisonOperator: # String
+      # DatapointsToAlarm: # Integer
+      # Dimensions:
+      #   - Name: # String
+      #     Value: # String
+      # EvaluateLowSampleCountPercentile: # String
+      EvaluationPeriods: # Integer
+      # ExtendedStatistic: # String
+      # InsufficientDataActions:
+      #   - # String
+      # MetricName: # String
+      # Metrics:
+      #   - # AccountId: # String
+      #     # Expression: # String
+      #     Id: # String
+      #     # Label: # String
+      #     # MetricStat:
+      #     # # Metric:
+      #     #   # # Dimensions:
+      #     #   #   # - Name: # String
+      #     #   #   # Value: # String
+      #     #   # # MetricName: # String
+      #     #   # # Namespace: # String
+      #     # Period: # Integer
+      #     # Stat: # String
+      #     # # Unit: # String
+      #     # Period: # Integer
+      #     # ReturnData: # Boolean
+      # Namespace: # String
+      # OKActions:
+      #   - # String
+      # Period: # Integer
+      # Statistic: # String
+      # Threshold: # Double
+      # ThresholdMetricId: # String
+      # TreatMissingData: # String
+      # Unit: # String
+    # !GetAtt THIS.Arn (String)

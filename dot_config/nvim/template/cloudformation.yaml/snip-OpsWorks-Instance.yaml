@@ -1,0 +1,57 @@
+  OpsWorksInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
+    Type: AWS::OpsWorks::Instance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
+      # AgentVersion: # String
+      # AmiId: # String
+      # Architecture: # String
+      # AutoScalingType: # String
+      # AvailabilityZone: # String
+      # BlockDeviceMappings:
+      #   - # DeviceName: # String
+      #     # Ebs:
+      #     # # DeleteOnTermination: # Boolean
+      #     # # Iops: # Integer
+      #     # # SnapshotId: # String
+      #     # # VolumeSize: # Integer
+      #     # # VolumeType: # String
+      #     # NoDevice: # String
+      #     # VirtualName: # String
+      # EbsOptimized: # Boolean
+      # ElasticIps:
+      #   - # String
+      # Hostname: # String
+      # InstallUpdatesOnBoot: # Boolean
+      InstanceType: # String
+      LayerIds:
+        - # String
+      # Os: # String
+      # RootDeviceType: # String
+      # SshKeyName: # String
+      StackId: # String
+      # SubnetId: # String
+      # Tenancy: # String
+      # TimeBasedAutoScaling:
+      #   # Friday:
+      #   # ANY_KEY: # String
+      #   # Monday:
+      #   # ANY_KEY: # String
+      #   # Saturday:
+      #   # ANY_KEY: # String
+      #   # Sunday:
+      #   # ANY_KEY: # String
+      #   # Thursday:
+      #   # ANY_KEY: # String
+      #   # Tuesday:
+      #   # ANY_KEY: # String
+      #   # Wednesday:
+      #   # ANY_KEY: # String
+      # VirtualizationType: # String
+      # Volumes:
+      #   - # String
+    # !GetAtt THIS.AvailabilityZone (String)
+    # !GetAtt THIS.PrivateDnsName (String)
+    # !GetAtt THIS.PrivateIp (String)
+    # !GetAtt THIS.PublicDnsName (String)
+    # !GetAtt THIS.PublicIp (String)

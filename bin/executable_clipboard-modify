@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+export LC_ALL=ja_JP.UTF-8
+
+if command -v logged-temp > /dev/null
+then
+  tmpfile=$(logged-temp clipboard-modify)
+else
+  tmpfile=$(mktemp)
+fi
+
+~/bin/clipboard-pull > "$tmpfile" ||:
+# nv --nofork "$tmpfile"
+if [ "$XDG_BACKEND" = wayland ]
+then
+  nyprctl floating-term --wait -m middle -i clipboard nvim "$tmpfile"
+else
+  ~/bin/nv --nofork "$tmpfile"
+fi
+awk '
+  /[^[:space:]]/ {
+    if (started) printf "\n%s", pending
+    started = 1
+    printf "%s", $0
+    pending = ""
+    next
+  }
+  started { pending = pending "\n" }
+' "$tmpfile" | ~/bin/clipboard-push

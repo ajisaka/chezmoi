@@ -1,0 +1,57 @@
+  QuickSightTheme:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html
+    Type: AWS::QuickSight::Theme
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html
+      AwsAccountId: # String
+      # BaseThemeId: # String
+      # Configuration:
+      #   # DataColorPalette:
+      #   # # EmptyFillColor: # String
+      #   # # Colors:
+      #   #   # - # String
+      #   # # MinMaxGradient:
+      #   #   # - # String
+      #   # UIColorPalette:
+      #   # # Warning: # String
+      #   # # Accent: # String
+      #   # # AccentForeground: # String
+      #   # # SecondaryBackground: # String
+      #   # # DangerForeground: # String
+      #   # # PrimaryBackground: # String
+      #   # # Dimension: # String
+      #   # # SecondaryForeground: # String
+      #   # # WarningForeground: # String
+      #   # # DimensionForeground: # String
+      #   # # PrimaryForeground: # String
+      #   # # Success: # String
+      #   # # Danger: # String
+      #   # # SuccessForeground: # String
+      #   # # Measure: # String
+      #   # # MeasureForeground: # String
+      #   # Sheet:
+      #   # # TileLayout:
+      #   #   # # Gutter:
+      #   #   #   # # Show: # Boolean
+      #   #   # # Margin:
+      #   #   #   # # Show: # Boolean
+      #   # # Tile:
+      #   #   # # Border:
+      #   #   #   # # Show: # Boolean
+      #   # Typography:
+      #   # # FontFamilies:
+      #   #   # - # FontFamily: # String
+      # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      ThemeId: # String
+      # VersionDescription: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)
+    # !GetAtt THIS.Type (String)

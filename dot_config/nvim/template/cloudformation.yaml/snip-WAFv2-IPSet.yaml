@@ -1,0 +1,16 @@
+  WAFv2IPSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-ipset.html
+    Type: AWS::WAFv2::IPSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-ipset.html
+      # Description: # String
+      # Name: # String
+      Scope: # String
+      IPAddressVersion: # String
+      Addresses:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

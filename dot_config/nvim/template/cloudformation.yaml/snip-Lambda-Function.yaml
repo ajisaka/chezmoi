@@ -1,0 +1,53 @@
+  LambdaFunction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html
+    Type: AWS::Lambda::Function
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html
+      # Description: # String
+      # TracingConfig:
+      #   # Mode: # String
+      # VpcConfig:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # ReservedConcurrentExecutions: # Integer
+      # FileSystemConfigs:
+      #   - Arn: # String
+      #     LocalMountPath: # String
+      # FunctionName: # String
+      # Runtime: # String
+      # KmsKeyArn: # String
+      # PackageType: # String
+      # CodeSigningConfigArn: # String
+      # Layers:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ImageConfig:
+      #   # WorkingDirectory: # String
+      #   # Command:
+      #   # - # String
+      #   # EntryPoint:
+      #   # - # String
+      # MemorySize: # Integer
+      # DeadLetterConfig:
+      #   # TargetArn: # String
+      # Timeout: # Integer
+      # Handler: # String
+      # Code:
+      #   # S3ObjectVersion: # String
+      #   # S3Bucket: # String
+      #   # ZipFile: # String
+      #   # S3Key: # String
+      #   # ImageUri: # String
+      Role: # String
+      # Environment:
+      #   # Variables:
+      #   # ANY_KEY: # String
+      # EphemeralStorage:
+      #   Size: # Integer
+      # Architectures:
+      #   - # String
+    # !GetAtt THIS.Arn (String)

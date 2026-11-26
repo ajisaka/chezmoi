@@ -1,0 +1,14 @@
+  TimestreamTable:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-timestream-table.html
+    Type: AWS::Timestream::Table
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-timestream-table.html
+      DatabaseName: # String
+      # TableName: # String
+      # RetentionProperties: # Json
+      # MagneticStoreWriteProperties: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

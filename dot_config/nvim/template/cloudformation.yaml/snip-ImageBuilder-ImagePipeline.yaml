@@ -1,0 +1,23 @@
+  ImageBuilderImagePipeline:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-imagepipeline.html
+    Type: AWS::ImageBuilder::ImagePipeline
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-imagebuilder-imagepipeline.html
+      Name: # String
+      # Description: # String
+      # ImageTestsConfiguration:
+      #   # ImageTestsEnabled: # Boolean
+      #   # TimeoutMinutes: # Integer
+      # Status: # String
+      # Schedule:
+      #   # ScheduleExpression: # String
+      #   # PipelineExecutionStartCondition: # String
+      # ImageRecipeArn: # String
+      # ContainerRecipeArn: # String
+      # DistributionConfigurationArn: # String
+      InfrastructureConfigurationArn: # String
+      # EnhancedImageMetadataEnabled: # Boolean
+      # Tags:
+      #   ANY_KEY: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

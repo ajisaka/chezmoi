@@ -1,0 +1,194 @@
+# Generic {{{
+
+snippet module
+  local M = {}
+
+  ${0}
+
+  return M
+
+# }}}
+
+# Lazy.nvim {{{
+
+snippet lazy/plugin
+  return {
+    '$1',
+    $0
+  }
+
+snippet lazy/cmd
+  cmd = {
+    '${0}',
+  },
+
+snippet lazy/key
+  keys = {
+    { '${1:lhs}', '${2:rhs}', mode = { '${3:n}' } },
+  },
+
+snippet lazy/deps
+  dependencies = {
+    'nvim-telescope/telescope.nvim', -- Only needed if you want to use sesssion lens
+  },
+
+snippet lazy/event
+  event = { '${0}' },
+
+snippet lazy/config
+  config = function ()
+    require('${0:module}').setup {
+    }
+  end
+
+snippet lazy/filetype
+  ft = { '${0}' },
+
+snippet lazy/load-plugins
+  require('lazy').load { plugins = { '${1}' } }
+
+# }}}
+
+# Plugin {{{
+
+snippet nvim/option/set
+  vim.api.nvim_set_option_value('${1}', true, { scope = 'global', win = win, buf = buf })
+
+snippet nvim/option/get
+  vim.api.nvim_get_option_value('${1}', { scope = 'global' })
+
+snippet nvim/autocmd
+    vim.api.nvim_create_autocmd(
+      { '${1:FileType}' },
+      {
+        pattern = { '${2:*}', },
+        callback = function ()
+          ${0}
+        end,
+      }
+    )
+
+snippet nvim/command
+  vim.api.nvim_create_user_command('${1}', function(args)
+    ${0:print(vim.inspect(args))}
+  end, {
+    nargs = '*',
+  })
+
+snippet nvim/keymap
+  vim.api.nvim_set_keymap('t', '${1}', '${2}', { noremap = true })
+
+snippet nvim/keymap/func
+  vim.keymap.set('n', '<Leader><Leader>b', function()
+    print(1)
+  end, { silent = true, desc = 'DESCRIPTION' })
+
+snippet nvim/keymap/buf
+  vim.api.nvim_buf_set_keymap(0, 't', '${1}', '${2}', { noremap = true })
+
+snippet nvim/feedkeys
+  -- str, from_part, do_lt, special
+  local keys = vim.api.nvim_replace_termcodes(':<C-u>NoxOpen ' .. hit.id, true, false, true)
+  -- keys, mode, escape_ks
+  vim.api.nvim_feedkeys(keys, 'n', false)
+
+snippet nvim/select
+  vim.ui.select(${1:items}, {
+    prompt = '${2:Select an item}',
+    format_item = tostring,
+  }, function (selected)
+    ${3:vim.print(selected)}
+  end)
+
+snippet nvim/debug
+  local function debug(...)
+    vim.fn.writefile({ vim.fn.json_encode { ... } }, '/tmp/xmosh/nvim-debug.log', 'a')
+  end
+
+snippet nvim/debug/schedule
+  local function debug(...)
+    local args = { ... }
+    vim.schedule(function()
+      vim.fn.writefile({ vim.fn.json_encode(args) }, '/tmp/xmosh/nvim-debug.log', 'a')
+    end)
+  end
+
+snippet nvim/fn/buf/insert-text
+  function M.insert_text(text)
+    local _, line, col, _ = unpack(vim.fn.getcurpos())
+    local buf = vim.api.nvim_get_current_buf()
+    vim.api.nvim_buf_set_text(buf, line - 1, col - 1, line - 1, col - 1, { text })
+  end
+
+# }}}
+
+# Overseer {{{
+snippet overseer/task
+  local overseer = require('overseer')
+
+  return {
+    name = '${1:TaskName}',
+    builder = function(params)
+      -- This must return an overseer.TaskDefinition
+      return {
+        -- cmd is the only required field
+        cmd = { 'echo' },
+        -- additional arguments for the cmd
+        args = { 'hello', 'world' },
+        -- the name of the task (defaults to the cmd of the task)
+        name = 'Greet',
+        -- set the working directory for the task
+        cwd = '/tmp',
+        -- additional environment variables
+        env = {
+          VAR = 'FOO',
+        },
+        -- the list of components or component aliases to add to the task
+        components = { 'my_custom_component', 'default' },
+        -- arbitrary table of data for your own personal use
+        metadata = {
+          foo = 'bar',
+        },
+      }
+    end,
+    -- Optional fields
+    desc = 'Optional description of task',
+    -- Tags can be used in overseer.run_template()
+    tags = { overseer.TAG.BUILD },
+    params = {
+      -- See :help overseer-params
+    },
+    -- Determines sort order when choosing tasks. Lower comes first.
+    priority = 50,
+    -- Add requirements for this template. If they are not met, the template will not be visible.
+    -- All fields are optional.
+    condition = {
+      -- A string or list of strings
+      -- Only matches when current buffer is one of the listed filetypes
+      filetype = { 'c', 'cpp' },
+      -- A string or list of strings
+      -- Only matches when cwd is inside one of the listed dirs
+      dir = '/home/user/my_project',
+      -- Arbitrary logic for determining if task is available
+      callback = function(search)
+        print(vim.inspect(search))
+        return true
+      end,
+    },
+  }
+# }}}
+
+# LSP {{{
+
+# https://www.perplexity.ai/search/lua-ls-te-te-ding-xing-nozhen-6HA4OfrFRg2WewJVmCCK8Q
+
+snippet lsp/ignore-next-line
+  ---@diagnostic disable-next-line: ${1:redundant-parameter}
+
+snippet lsp/ignore-this-line
+  --[[@diagnostic disable-line: ${1:redundant-parameter}]]
+
+snippet lsp/ignore-this-file
+  ---@diagnostic disable: ${1:redundant-parameter}
+
+# }}}

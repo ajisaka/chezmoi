@@ -1,0 +1,14 @@
+  SNSSubscription:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
+    Type: AWS::SNS::Subscription
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
+      # DeliveryPolicy: # Json
+      # Endpoint: # String
+      # FilterPolicy: # Json
+      Protocol: # String
+      # RawMessageDelivery: # Boolean
+      # RedrivePolicy: # Json
+      # Region: # String
+      # SubscriptionRoleArn: # String
+      TopicArn: # String

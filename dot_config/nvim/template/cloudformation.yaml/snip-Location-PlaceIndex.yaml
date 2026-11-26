@@ -1,0 +1,15 @@
+  LocationPlaceIndex:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-placeindex.html
+    Type: AWS::Location::PlaceIndex
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-placeindex.html
+      DataSource: # String
+      # DataSourceConfiguration:
+      #   # IntendedUse: # String
+      # Description: # String
+      IndexName: # String
+      # PricingPlan: # String
+    # !GetAtt THIS.CreateTime (String)
+    # !GetAtt THIS.IndexArn (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.UpdateTime (String)

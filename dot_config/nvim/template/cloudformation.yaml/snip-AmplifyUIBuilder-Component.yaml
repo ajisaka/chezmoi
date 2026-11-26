@@ -1,0 +1,278 @@
+  AmplifyUIBuilderComponent:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-component.html
+    Type: AWS::AmplifyUIBuilder::Component
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplifyuibuilder-component.html
+      BindingProperties:
+        ANY_KEY: # Type: # String
+          # BindingProperties:
+          #   # Model: # String
+          #   # Field: # String
+          #   # Predicates:
+          #   # - # Or: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-predicate.html#cfn-amplifyuibuilder-component-predicate-or', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'Predicate'}
+          #   # # And: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-predicate.html#cfn-amplifyuibuilder-component-predicate-and', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'Predicate'}
+          #   # # Field: # String
+          #   # # Operator: # String
+          #   # # Operand: # String
+          #   # UserAttribute: # String
+          #   # Bucket: # String
+          #   # Key: # String
+          #   # DefaultValue: # String
+          # DefaultValue: # String
+      # Children:
+      #   - ComponentType: # String
+      #     Name: # String
+      #     # Properties: # Json
+      #     # Children: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentchild.html#cfn-amplifyuibuilder-component-componentchild-children', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentChild'}
+      #     # Events: # Json
+      # CollectionProperties:
+      #   ANY_KEY: Model: # String
+      #     # Sort:
+      #     # - Field: # String
+      #     # Direction: # String
+      #     # Predicate:
+      #     # # Or: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-predicate.html#cfn-amplifyuibuilder-component-predicate-or', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'Predicate'}
+      #     # # And: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-predicate.html#cfn-amplifyuibuilder-component-predicate-and', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'Predicate'}
+      #     # # Field: # String
+      #     # # Operator: # String
+      #     # # Operand: # String
+      #     # Identifiers:
+      #     # - # String
+      ComponentType: # String
+      # Events:
+      #   ANY_KEY: # Action: # String
+      #     # Parameters:
+      #     # # Type:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Url:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Anchor:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Target:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Global:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Model: # String
+      #     # # Id:
+      #     #   # # Value: # String
+      #     #   # # BindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # CollectionBindingProperties:
+      #     #   #   # Property: # String
+      #     #   #   # # Field: # String
+      #     #   # # DefaultValue: # String
+      #     #   # # Model: # String
+      #     #   # # Bindings: # Json
+      #     #   # # Event: # String
+      #     #   # # UserAttribute: # String
+      #     #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   # # Condition:
+      #     #   #   # # Property: # String
+      #     #   #   # # Field: # String
+      #     #   #   # # Operator: # String
+      #     #   #   # # Operand: # String
+      #     #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   # # OperandType: # String
+      #     #   # # Configured: # Boolean
+      #     #   # # Type: # String
+      #     #   # # ImportedValue: # String
+      #     #   # # ComponentName: # String
+      #     #   # # Property: # String
+      #     # # Fields: # Json
+      #     # # State:
+      #     #   # ComponentName: # String
+      #     #   # Property: # String
+      #     #   # # Set:
+      #     #   #   # # Value: # String
+      #     #   #   # # BindingProperties:
+      #     #   #   #   # Property: # String
+      #     #   #   #   # # Field: # String
+      #     #   #   # # CollectionBindingProperties:
+      #     #   #   #   # Property: # String
+      #     #   #   #   # # Field: # String
+      #     #   #   # # DefaultValue: # String
+      #     #   #   # # Model: # String
+      #     #   #   # # Bindings: # Json
+      #     #   #   # # Event: # String
+      #     #   #   # # UserAttribute: # String
+      #     #   #   # # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+      #     #   #   # # Condition:
+      #     #   #   #   # # Property: # String
+      #     #   #   #   # # Field: # String
+      #     #   #   #   # # Operator: # String
+      #     #   #   #   # # Operand: # String
+      #     #   #   #   # # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   #   # # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+      #     #   #   #   # # OperandType: # String
+      #     #   #   # # Configured: # Boolean
+      #     #   #   # # Type: # String
+      #     #   #   # # ImportedValue: # String
+      #     #   #   # # ComponentName: # String
+      #     #   #   # # Property: # String
+      Name: # String
+      Overrides:
+        ANY_KEY: # Json
+      Properties:
+        ANY_KEY: # Value: # String
+          # BindingProperties:
+          #   Property: # String
+          #   # Field: # String
+          # CollectionBindingProperties:
+          #   Property: # String
+          #   # Field: # String
+          # DefaultValue: # String
+          # Model: # String
+          # Bindings: # Json
+          # Event: # String
+          # UserAttribute: # String
+          # Concat: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentproperty.html#cfn-amplifyuibuilder-component-componentproperty-concat', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'List', 'ItemType': 'ComponentProperty'}
+          # Condition:
+          #   # Property: # String
+          #   # Field: # String
+          #   # Operator: # String
+          #   # Operand: # String
+          #   # Then: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-then', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+          #   # Else: <LOOPED>: {'Documentation': 'http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplifyuibuilder-component-componentconditionproperty.html#cfn-amplifyuibuilder-component-componentconditionproperty-else', 'UpdateType': 'Mutable', 'Required': False, 'Type': 'ComponentProperty'}
+          #   # OperandType: # String
+          # Configured: # Boolean
+          # Type: # String
+          # ImportedValue: # String
+          # ComponentName: # String
+          # Property: # String
+      # SchemaVersion: # String
+      # SourceId: # String
+      # Tags:
+      #   ANY_KEY: # String
+      Variants:
+        - # VariantValues: # Json
+          # Overrides: # Json
+    # !GetAtt THIS.AppId (String)
+    # !GetAtt THIS.EnvironmentName (String)
+    # !GetAtt THIS.Id (String)

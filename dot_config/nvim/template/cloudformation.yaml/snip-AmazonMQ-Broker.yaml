@@ -1,0 +1,62 @@
+  AmazonMQBroker:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
+    Type: AWS::AmazonMQ::Broker
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
+      # SecurityGroups:
+      #   - # String
+      # StorageType: # String
+      EngineVersion: # String
+      # Configuration:
+      #   Revision: # Integer
+      #   Id: # String
+      # AuthenticationStrategy: # String
+      # MaintenanceWindowStartTime:
+      #   DayOfWeek: # String
+      #   TimeOfDay: # String
+      #   TimeZone: # String
+      HostInstanceType: # String
+      AutoMinorVersionUpgrade: # Boolean
+      Users:
+        - Username: # String
+          # Groups:
+          #   - # String
+          # ConsoleAccess: # Boolean
+          Password: # String
+      # Logs:
+      #   # Audit: # Boolean
+      #   # General: # Boolean
+      # SubnetIds:
+      #   - # String
+      BrokerName: # String
+      # LdapServerMetadata:
+      #   Hosts:
+      #     - # String
+      #   # UserRoleName: # String
+      #   UserSearchMatching: # String
+      #   # RoleName: # String
+      #   UserBase: # String
+      #   # UserSearchSubtree: # Boolean
+      #   RoleSearchMatching: # String
+      #   ServiceAccountUsername: # String
+      #   RoleBase: # String
+      #   ServiceAccountPassword: # String
+      #   # RoleSearchSubtree: # Boolean
+      DeploymentMode: # String
+      EngineType: # String
+      PubliclyAccessible: # Boolean
+      # EncryptionOptions:
+      #   # KmsKeyId: # String
+      #   UseAwsOwnedKey: # Boolean
+      # Tags:
+      #   - Value: # String
+      #     Key: # String
+    # !GetAtt THIS.IpAddresses (List)
+    # !GetAtt THIS.OpenWireEndpoints (List)
+    # !GetAtt THIS.ConfigurationRevision (Integer)
+    # !GetAtt THIS.StompEndpoints (List)
+    # !GetAtt THIS.MqttEndpoints (List)
+    # !GetAtt THIS.AmqpEndpoints (List)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ConfigurationId (String)
+    # !GetAtt THIS.WssEndpoints (List)

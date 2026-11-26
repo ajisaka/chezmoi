@@ -1,0 +1,26 @@
+  GlueClassifier:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
+    Type: AWS::Glue::Classifier
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
+      # XMLClassifier:
+      #   RowTag: # String
+      #   Classification: # String
+      #   # Name: # String
+      # JsonClassifier:
+      #   JsonPath: # String
+      #   # Name: # String
+      # CsvClassifier:
+      #   # QuoteSymbol: # String
+      #   # ContainsHeader: # String
+      #   # Delimiter: # String
+      #   # Header:
+      #   # - # String
+      #   # AllowSingleColumn: # Boolean
+      #   # DisableValueTrimming: # Boolean
+      #   # Name: # String
+      # GrokClassifier:
+      #   # CustomPatterns: # String
+      #   GrokPattern: # String
+      #   Classification: # String
+      #   # Name: # String

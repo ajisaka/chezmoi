@@ -1,0 +1,14 @@
+  AppStreamEntitlement:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-entitlement.html
+    Type: AWS::AppStream::Entitlement
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-entitlement.html
+      Name: # String
+      StackName: # String
+      # Description: # String
+      AppVisibility: # String
+      Attributes:
+        - Name: # String
+          Value: # String
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastModifiedTime (String)

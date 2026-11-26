@@ -1,0 +1,11 @@
+  ServiceDiscoveryHttpNamespace:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-httpnamespace.html
+    Type: AWS::ServiceDiscovery::HttpNamespace
+    Properties:
+      # Description: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

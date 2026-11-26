@@ -1,0 +1,64 @@
+  OpsWorksLayer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
+    Type: AWS::OpsWorks::Layer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
+      # Attributes:
+      #   ANY_KEY: # String
+      AutoAssignElasticIps: # Boolean
+      AutoAssignPublicIps: # Boolean
+      # CustomInstanceProfileArn: # String
+      # CustomJson: # Json
+      # CustomRecipes:
+      #   # Configure:
+      #   # - # String
+      #   # Deploy:
+      #   # - # String
+      #   # Setup:
+      #   # - # String
+      #   # Shutdown:
+      #   # - # String
+      #   # Undeploy:
+      #   # - # String
+      # CustomSecurityGroupIds:
+      #   - # String
+      EnableAutoHealing: # Boolean
+      # InstallUpdatesOnBoot: # Boolean
+      # LifecycleEventConfiguration:
+      #   # ShutdownEventConfiguration:
+      #   # # DelayUntilElbConnectionsDrained: # Boolean
+      #   # # ExecutionTimeout: # Integer
+      # LoadBasedAutoScaling:
+      #   # DownScaling:
+      #   # # CpuThreshold: # Double
+      #   # # IgnoreMetricsTime: # Integer
+      #   # # InstanceCount: # Integer
+      #   # # LoadThreshold: # Double
+      #   # # MemoryThreshold: # Double
+      #   # # ThresholdsWaitTime: # Integer
+      #   # Enable: # Boolean
+      #   # UpScaling:
+      #   # # CpuThreshold: # Double
+      #   # # IgnoreMetricsTime: # Integer
+      #   # # InstanceCount: # Integer
+      #   # # LoadThreshold: # Double
+      #   # # MemoryThreshold: # Double
+      #   # # ThresholdsWaitTime: # Integer
+      Name: # String
+      # Packages:
+      #   - # String
+      Shortname: # String
+      StackId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Type: # String
+      # UseEbsOptimizedInstances: # Boolean
+      # VolumeConfigurations:
+      #   - # Encrypted: # Boolean
+      #     # Iops: # Integer
+      #     # MountPoint: # String
+      #     # NumberOfDisks: # Integer
+      #     # RaidLevel: # Integer
+      #     # Size: # Integer
+      #     # VolumeType: # String

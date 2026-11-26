@@ -1,0 +1,11 @@
+  ECSClusterCapacityProviderAssociations:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-clustercapacityproviderassociations.html
+    Type: AWS::ECS::ClusterCapacityProviderAssociations
+    Properties:
+      CapacityProviders:
+        - # String
+      Cluster: # String
+      DefaultCapacityProviderStrategy:
+        - # Base: # Integer
+          # Weight: # Integer
+          CapacityProvider: # String

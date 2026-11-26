@@ -1,0 +1,12 @@
+  GlueDataCatalogEncryptionSettings:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-datacatalogencryptionsettings.html
+    Type: AWS::Glue::DataCatalogEncryptionSettings
+    Properties:
+      # DataCatalogEncryptionSettings:
+      #   # ConnectionPasswordEncryption:
+      #   # # ReturnConnectionPasswordEncrypted: # Boolean
+      #   # # KmsKeyId: # String
+      #   # EncryptionAtRest:
+      #   # # CatalogEncryptionMode: # String
+      #   # # SseAwsKmsKeyId: # String
+      CatalogId: # String

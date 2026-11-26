@@ -1,0 +1,17 @@
+  AppConfigConfigurationProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-configurationprofile.html
+    Type: AWS::AppConfig::ConfigurationProfile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-configurationprofile.html
+      LocationUri: # String
+      # Type: # String
+      # Description: # String
+      # Validators:
+      #   - # Type: # String
+      #     # Content: # String
+      # RetrievalRoleArn: # String
+      ApplicationId: # String
+      # Tags:
+      #   - # Value: # String
+      #     # Key: # String
+      Name: # String

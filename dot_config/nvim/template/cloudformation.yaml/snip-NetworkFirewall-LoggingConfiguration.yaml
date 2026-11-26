@@ -1,0 +1,12 @@
+  NetworkFirewallLoggingConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-loggingconfiguration.html
+    Type: AWS::NetworkFirewall::LoggingConfiguration
+    Properties:
+      # FirewallName: # String
+      FirewallArn: # String
+      # LoggingConfiguration:
+      #   LogDestinationConfigs:
+      #     - LogType: # String
+      #       LogDestinationType: # String
+      #       LogDestination:
+      #         ANY_KEY: # String

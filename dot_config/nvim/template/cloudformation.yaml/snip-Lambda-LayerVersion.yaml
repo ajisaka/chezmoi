@@ -1,0 +1,16 @@
+  LambdaLayerVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html
+    Type: AWS::Lambda::LayerVersion
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html
+      # CompatibleRuntimes:
+      #   - # String
+      # LicenseInfo: # String
+      # Description: # String
+      # LayerName: # String
+      # Content:
+      #   # S3ObjectVersion: # String
+      #   S3Bucket: # String
+      #   S3Key: # String
+      # CompatibleArchitectures:
+      #   - # String

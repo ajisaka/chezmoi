@@ -1,0 +1,15 @@
+  AppIntegrationsEventIntegration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appintegrations-eventintegration.html
+    Type: AWS::AppIntegrations::EventIntegration
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appintegrations-eventintegration.html
+      # Description: # String
+      Name: # String
+      EventBridgeBus: # String
+      # EventFilter:
+      #   Source: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.EventIntegrationArn (String)
+    # !GetAtt THIS.Associations (List)

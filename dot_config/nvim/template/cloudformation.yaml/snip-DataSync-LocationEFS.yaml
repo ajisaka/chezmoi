@@ -1,0 +1,19 @@
+  DataSyncLocationEFS:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationefs.html
+    Type: AWS::DataSync::LocationEFS
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationefs.html
+      # Ec2Config:
+      #   SecurityGroupArns:
+      #     - # String
+      #   SubnetArn: # String
+      EfsFilesystemArn: # String
+      # AccessPointArn: # String
+      # FileSystemAccessRoleArn: # String
+      # InTransitEncryption: # String
+      # Subdirectory: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

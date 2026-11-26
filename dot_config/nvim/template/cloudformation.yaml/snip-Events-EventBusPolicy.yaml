@@ -1,0 +1,14 @@
+  EventsEventBusPolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
+    Type: AWS::Events::EventBusPolicy
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html
+      # EventBusName: # String
+      # Condition:
+      #   # Type: # String
+      #   # Value: # String
+      #   # Key: # String
+      # Action: # String
+      StatementId: # String
+      # Statement: # Json
+      # Principal: # String

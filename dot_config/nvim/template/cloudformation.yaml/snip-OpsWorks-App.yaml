@@ -1,0 +1,34 @@
+  OpsWorksApp:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html
+    Type: AWS::OpsWorks::App
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html
+      # AppSource:
+      #   # Password: # String
+      #   # Revision: # String
+      #   # SshKey: # String
+      #   # Type: # String
+      #   # Url: # String
+      #   # Username: # String
+      # Attributes:
+      #   ANY_KEY: # String
+      # DataSources:
+      #   - # Arn: # String
+      #     # DatabaseName: # String
+      #     # Type: # String
+      # Description: # String
+      # Domains:
+      #   - # String
+      # EnableSsl: # Boolean
+      # Environment:
+      #   - Key: # String
+      #     # Secure: # Boolean
+      #     Value: # String
+      Name: # String
+      # Shortname: # String
+      # SslConfiguration:
+      #   # Certificate: # String
+      #   # Chain: # String
+      #   # PrivateKey: # String
+      StackId: # String
+      Type: # String

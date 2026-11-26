@@ -1,0 +1,13 @@
+  ServerlessLayerVersion:
+    # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesslayerversion
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesslayerversion
+      # LayerName: # String
+      # Description: # String
+      # ContentUri:
+      #   # ref: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesslayerversion
+      # CompatibleRuntimes:
+      #   - # String
+      # LicenseInfo: # String
+      # RetentionPolicy: # String

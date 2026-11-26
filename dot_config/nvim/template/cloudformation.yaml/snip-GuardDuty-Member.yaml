@@ -1,0 +1,11 @@
+  GuardDutyMember:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
+    Type: AWS::GuardDuty::Member
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
+      # Status: # String
+      MemberId: # String
+      Email: # String
+      # Message: # String
+      # DisableEmailNotification: # Boolean
+      DetectorId: # String

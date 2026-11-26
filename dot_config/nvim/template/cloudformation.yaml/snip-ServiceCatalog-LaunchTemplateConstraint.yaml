@@ -1,0 +1,10 @@
+  ServiceCatalogLaunchTemplateConstraint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
+    Type: AWS::ServiceCatalog::LaunchTemplateConstraint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
+      # Description: # String
+      # AcceptLanguage: # String
+      PortfolioId: # String
+      ProductId: # String
+      Rules: # String

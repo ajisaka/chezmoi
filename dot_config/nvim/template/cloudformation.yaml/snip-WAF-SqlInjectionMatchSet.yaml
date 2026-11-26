@@ -1,0 +1,10 @@
+  WAFSqlInjectionMatchSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html
+    Type: AWS::WAF::SqlInjectionMatchSet
+    Properties:
+      Name: # String
+      # SqlInjectionMatchTuples:
+      #   - # FieldToMatch:
+      #     # # Data: # String
+      #     # Type: # String
+      #     TextTransformation: # String

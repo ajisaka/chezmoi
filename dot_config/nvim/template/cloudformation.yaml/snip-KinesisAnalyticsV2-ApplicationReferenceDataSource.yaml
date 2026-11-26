@@ -1,0 +1,24 @@
+  KinesisAnalyticsV2ApplicationReferenceDataSource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html
+    Type: AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource
+    Properties:
+      ApplicationName: # String
+      # ReferenceDataSource:
+      #   # ReferenceSchema:
+      #   # # RecordEncoding: # String
+      #   # RecordColumns:
+      #   # - # Mapping: # String
+      #   # SqlType: # String
+      #   # Name: # String
+      #   # # RecordFormat:
+      #   #   # # MappingParameters:
+      #   #   #   # # JSONMappingParameters:
+      #   #   #   #   # RecordRowPath: # String
+      #   #   #   # # CSVMappingParameters:
+      #   #   #   #   # RecordRowDelimiter: # String
+      #   #   #   #   # RecordColumnDelimiter: # String
+      #   #   # RecordFormatType: # String
+      #   # TableName: # String
+      #   # S3ReferenceDataSource:
+      #   # BucketARN: # String
+      #   # FileKey: # String

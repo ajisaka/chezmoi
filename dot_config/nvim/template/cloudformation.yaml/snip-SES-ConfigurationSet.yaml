@@ -1,0 +1,23 @@
+  SESConfigurationSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationset.html
+    Type: AWS::SES::ConfigurationSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationset.html
+      # Name: # String
+      # TrackingOptions:
+      #   # CustomRedirectDomain: # String
+      # DeliveryOptions:
+      #   # TlsPolicy: # String
+      #   # SendingPoolName: # String
+      # ReputationOptions:
+      #   # ReputationMetricsEnabled: # Boolean
+      # SendingOptions:
+      #   # SendingEnabled: # Boolean
+      # SuppressionOptions:
+      #   # SuppressedReasons:
+      #   # - # String
+      # VdmOptions:
+      #   # DashboardOptions:
+      #   # EngagementMetrics: # String
+      #   # GuardianOptions:
+      #   # OptimizedSharedDelivery: # String

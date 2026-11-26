@@ -1,0 +1,112 @@
+  QuickSightDataSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dataset.html
+    Type: AWS::QuickSight::DataSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dataset.html
+      # AwsAccountId: # String
+      # ColumnGroups:
+      #   - # GeoSpatialColumnGroup:
+      #     # Columns:
+      #     # - # String
+      #     # # CountryCode: # String
+      #     # Name: # String
+      # ColumnLevelPermissionRules:
+      #   - # ColumnNames:
+      #     # - # String
+      #     # Principals:
+      #     # - # String
+      # DataSetId: # String
+      # FieldFolders:
+      #   ANY_KEY: # Description: # String
+      #     # Columns:
+      #     # - # String
+      # ImportMode: # String
+      # LogicalTableMap:
+      #   ANY_KEY: Alias: # String
+      #     # DataTransforms:
+      #     # - # TagColumnOperation:
+      #     #     # ColumnName: # String
+      #     #     # Tags:
+      #     #     # - # ColumnGeographicRole: # String
+      #     #     # # ColumnDescription:
+      #     #     #       # # Text: # String
+      #     # # FilterOperation:
+      #     #     # ConditionExpression: # String
+      #     # # CastColumnTypeOperation:
+      #     #     # ColumnName: # String
+      #     #     # # Format: # String
+      #     #     # NewColumnType: # String
+      #     # # CreateColumnsOperation:
+      #     #     # Columns:
+      #     #     # - ColumnId: # String
+      #     #     # ColumnName: # String
+      #     #     # Expression: # String
+      #     # # RenameColumnOperation:
+      #     #     # NewColumnName: # String
+      #     #     # ColumnName: # String
+      #     # # ProjectOperation:
+      #     #     # ProjectedColumns:
+      #     #     # - # String
+      #     # Source:
+      #     # # PhysicalTableId: # String
+      #     # # JoinInstruction:
+      #     #   # OnClause: # String
+      #     #   # Type: # String
+      #     #   # # LeftJoinKeyProperties:
+      #     #   #   # # UniqueKey: # Boolean
+      #     #   # LeftOperand: # String
+      #     #   # RightOperand: # String
+      #     #   # # RightJoinKeyProperties:
+      #     #   #   # # UniqueKey: # Boolean
+      #     # # DataSetArn: # String
+      # Name: # String
+      # Permissions:
+      #   - Actions:
+      #       - # String
+      #     Principal: # String
+      # PhysicalTableMap:
+      #   ANY_KEY: # RelationalTable:
+      #     # DataSourceArn: # String
+      #     # InputColumns:
+      #     # - Type: # String
+      #     # Name: # String
+      #     # # Schema: # String
+      #     # # Catalog: # String
+      #     # Name: # String
+      #     # CustomSql:
+      #     # DataSourceArn: # String
+      #     # SqlQuery: # String
+      #     # Columns:
+      #     # - Type: # String
+      #     # Name: # String
+      #     # Name: # String
+      #     # S3Source:
+      #     # DataSourceArn: # String
+      #     # InputColumns:
+      #     # - Type: # String
+      #     # Name: # String
+      #     # # UploadSettings:
+      #     #   # # ContainsHeader: # Boolean
+      #     #   # # TextQualifier: # String
+      #     #   # # Format: # String
+      #     #   # # StartFromRow: # Double
+      #     #   # # Delimiter: # String
+      # RowLevelPermissionDataSet:
+      #   Arn: # String
+      #   # Namespace: # String
+      #   PermissionPolicy: # String
+      #   # FormatVersion: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # IngestionWaitPolicy:
+      #   # WaitForSpiceIngestion: # Boolean
+      #   # IngestionWaitTimeInHours: # Double
+      # DataSetUsageConfiguration:
+      #   # DisableUseAsDirectQuerySource: # Boolean
+      #   # DisableUseAsImportedSource: # Boolean
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ConsumedSpiceCapacityInBytes (Double)
+    # !GetAtt THIS.CreatedTime (String)
+    # !GetAtt THIS.LastUpdatedTime (String)
+    # !GetAtt THIS.OutputColumns (List)

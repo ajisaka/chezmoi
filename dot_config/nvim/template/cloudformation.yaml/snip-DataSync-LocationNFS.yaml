@@ -1,0 +1,17 @@
+  DataSyncLocationNFS:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationnfs.html
+    Type: AWS::DataSync::LocationNFS
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationnfs.html
+      # MountOptions:
+      #   # Version: # String
+      # OnPremConfig:
+      #   AgentArns:
+      #     - # String
+      ServerHostname: # String
+      Subdirectory: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

@@ -1,0 +1,52 @@
+  IoTFleetWiseSignalCatalog:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-signalcatalog.html
+    Type: AWS::IoTFleetWise::SignalCatalog
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotfleetwise-signalcatalog.html
+      # Description: # String
+      # Name: # String
+      # Nodes:
+      #   - # Branch:
+      #     # FullyQualifiedName: # String
+      #     # # Description: # String
+      #     # Sensor:
+      #     # FullyQualifiedName: # String
+      #     # DataType: # String
+      #     # # Description: # String
+      #     # # Unit: # String
+      #     # # AllowedValues:
+      #     #   # - # String
+      #     # # Min: # Double
+      #     # # Max: # Double
+      #     # Actuator:
+      #     # FullyQualifiedName: # String
+      #     # DataType: # String
+      #     # # Description: # String
+      #     # # Unit: # String
+      #     # # AllowedValues:
+      #     #   # - # String
+      #     # # Min: # Double
+      #     # # Max: # Double
+      #     # # AssignedValue: # String
+      #     # Attribute:
+      #     # FullyQualifiedName: # String
+      #     # DataType: # String
+      #     # # Description: # String
+      #     # # Unit: # String
+      #     # # AllowedValues:
+      #     #   # - # String
+      #     # # Min: # Double
+      #     # # Max: # Double
+      #     # # AssignedValue: # String
+      #     # # DefaultValue: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.LastModificationTime (String)
+    # !GetAtt THIS.NodeCounts.TotalNodes (Double)
+    # !GetAtt THIS.NodeCounts.TotalBranches (Double)
+    # !GetAtt THIS.NodeCounts.TotalSensors (Double)
+    # !GetAtt THIS.NodeCounts.TotalAttributes (Double)
+    # !GetAtt THIS.NodeCounts.TotalActuators (Double)

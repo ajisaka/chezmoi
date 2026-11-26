@@ -1,0 +1,12 @@
+  RoboMakerRobot:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robot.html
+    Type: AWS::RoboMaker::Robot
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robot.html
+      # Fleet: # String
+      Architecture: # String
+      GreengrassGroupId: # String
+      # Tags:
+      #   ANY_KEY: # String
+      # Name: # String
+    # !GetAtt THIS.Arn (String)

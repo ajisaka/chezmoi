@@ -1,0 +1,15 @@
+  GlueSecurityConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-securityconfiguration.html
+    Type: AWS::Glue::SecurityConfiguration
+    Properties:
+      # EncryptionConfiguration:
+      #   # S3Encryptions:
+      #   # - # KmsKeyArn: # String
+      #   # # S3EncryptionMode: # String
+      #   # CloudWatchEncryption:
+      #   # # KmsKeyArn: # String
+      #   # # CloudWatchEncryptionMode: # String
+      #   # JobBookmarksEncryption:
+      #   # # KmsKeyArn: # String
+      #   # # JobBookmarksEncryptionMode: # String
+      Name: # String

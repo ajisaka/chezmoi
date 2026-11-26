@@ -1,0 +1,98 @@
+  FSxFileSystem:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html
+    Type: AWS::FSx::FileSystem
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html
+      # StorageType: # String
+      # KmsKeyId: # String
+      # StorageCapacity: # Integer
+      # LustreConfiguration:
+      #   # DataCompressionType: # String
+      #   # DriveCacheType: # String
+      #   # ImportPath: # String
+      #   # WeeklyMaintenanceStartTime: # String
+      #   # AutoImportPolicy: # String
+      #   # ImportedFileChunkSize: # Integer
+      #   # DeploymentType: # String
+      #   # DailyAutomaticBackupStartTime: # String
+      #   # CopyTagsToBackups: # Boolean
+      #   # ExportPath: # String
+      #   # PerUnitStorageThroughput: # Integer
+      #   # AutomaticBackupRetentionDays: # Integer
+      # BackupId: # String
+      # OntapConfiguration:
+      #   # FsxAdminPassword: # String
+      #   # RouteTableIds:
+      #   # - # String
+      #   # WeeklyMaintenanceStartTime: # String
+      #   # DiskIopsConfiguration:
+      #   # # Mode: # String
+      #   # # Iops: # Integer
+      #   DeploymentType: # String
+      #   # DailyAutomaticBackupStartTime: # String
+      #   # ThroughputCapacity: # Integer
+      #   # AutomaticBackupRetentionDays: # Integer
+      #   # EndpointIpAddressRange: # String
+      #   # PreferredSubnetId: # String
+      SubnetIds:
+        - # String
+      # SecurityGroupIds:
+      #   - # String
+      # WindowsConfiguration:
+      #   # SelfManagedActiveDirectoryConfiguration:
+      #   # # FileSystemAdministratorsGroup: # String
+      #   # # UserName: # String
+      #   # # DomainName: # String
+      #   # # OrganizationalUnitDistinguishedName: # String
+      #   # # DnsIps:
+      #   #   # - # String
+      #   # # Password: # String
+      #   # AuditLogConfiguration:
+      #   # FileAccessAuditLogLevel: # String
+      #   # FileShareAccessAuditLogLevel: # String
+      #   # # AuditLogDestination: # String
+      #   # WeeklyMaintenanceStartTime: # String
+      #   # ActiveDirectoryId: # String
+      #   # DeploymentType: # String
+      #   # Aliases:
+      #   # - # String
+      #   ThroughputCapacity: # Integer
+      #   # CopyTagsToBackups: # Boolean
+      #   # DailyAutomaticBackupStartTime: # String
+      #   # AutomaticBackupRetentionDays: # Integer
+      #   # PreferredSubnetId: # String
+      # FileSystemTypeVersion: # String
+      # OpenZFSConfiguration:
+      #   # Options:
+      #   # - # String
+      #   # WeeklyMaintenanceStartTime: # String
+      #   # DiskIopsConfiguration:
+      #   # # Mode: # String
+      #   # # Iops: # Integer
+      #   # CopyTagsToVolumes: # Boolean
+      #   DeploymentType: # String
+      #   # DailyAutomaticBackupStartTime: # String
+      #   # CopyTagsToBackups: # Boolean
+      #   # ThroughputCapacity: # Integer
+      #   # RootVolumeConfiguration:
+      #   # # ReadOnly: # Boolean
+      #   # # DataCompressionType: # String
+      #   # # NfsExports:
+      #   #   # - # ClientConfigurations:
+      #   #   #     # - # Options:
+      #   #   #     #     # - # String
+      #   #   #     # # Clients: # String
+      #   # # CopyTagsToSnapshots: # Boolean
+      #   # # RecordSizeKiB: # Integer
+      #   # # UserAndGroupQuotas:
+      #   #   # - # Type: # String
+      #   #   # # Id: # Integer
+      #   #   # # StorageCapacityQuotaGiB: # Integer
+      #   # AutomaticBackupRetentionDays: # Integer
+      FileSystemType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.RootVolumeId (String)
+    # !GetAtt THIS.DNSName (String)
+    # !GetAtt THIS.LustreMountName (String)

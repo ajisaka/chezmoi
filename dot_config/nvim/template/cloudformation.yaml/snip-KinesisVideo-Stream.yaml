@@ -1,0 +1,14 @@
+  KinesisVideoStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisvideo-stream.html
+    Type: AWS::KinesisVideo::Stream
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisvideo-stream.html
+      # Name: # String
+      # DataRetentionInHours: # Integer
+      # DeviceName: # String
+      # KmsKeyId: # String
+      # MediaType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

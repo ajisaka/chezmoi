@@ -1,0 +1,8 @@
+  AmazonMQConfigurationAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html
+    Type: AWS::AmazonMQ::ConfigurationAssociation
+    Properties:
+      Broker: # String
+      # Configuration:
+      #   Revision: # Integer
+      #   Id: # String

@@ -1,0 +1,7 @@
+  ServiceCatalogTagOption:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html
+    Type: AWS::ServiceCatalog::TagOption
+    Properties:
+      # Active: # Boolean
+      Value: # String
+      Key: # String

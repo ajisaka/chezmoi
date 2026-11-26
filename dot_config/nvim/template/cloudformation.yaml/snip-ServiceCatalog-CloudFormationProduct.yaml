@@ -1,0 +1,25 @@
+  ServiceCatalogCloudFormationProduct:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html
+    Type: AWS::ServiceCatalog::CloudFormationProduct
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html
+      # ReplaceProvisioningArtifacts: # Boolean
+      Owner: # String
+      # SupportDescription: # String
+      # Description: # String
+      # Distributor: # String
+      # SupportEmail: # String
+      # AcceptLanguage: # String
+      # SupportUrl: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+      ProvisioningArtifactParameters:
+        - # Description: # String
+          # DisableTemplateValidation: # Boolean
+          Info: # Json
+          # Name: # String
+    # !GetAtt THIS.ProductName (String)
+    # !GetAtt THIS.ProvisioningArtifactIds (String)
+    # !GetAtt THIS.ProvisioningArtifactNames (String)

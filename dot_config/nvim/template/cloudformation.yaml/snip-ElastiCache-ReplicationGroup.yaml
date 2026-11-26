@@ -1,0 +1,73 @@
+  ElastiCacheReplicationGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
+    Type: AWS::ElastiCache::ReplicationGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
+      # AtRestEncryptionEnabled: # Boolean
+      # AuthToken: # String
+      # AutoMinorVersionUpgrade: # Boolean
+      # AutomaticFailoverEnabled: # Boolean
+      # CacheNodeType: # String
+      # CacheParameterGroupName: # String
+      # CacheSecurityGroupNames:
+      #   - # String
+      # CacheSubnetGroupName: # String
+      # DataTieringEnabled: # Boolean
+      # Engine: # String
+      # EngineVersion: # String
+      # GlobalReplicationGroupId: # String
+      # IpDiscovery: # String
+      # KmsKeyId: # String
+      # LogDeliveryConfigurations:
+      #   - # DestinationDetails:
+      #     # # CloudWatchLogsDetails:
+      #     #   # LogGroup: # String
+      #     # # KinesisFirehoseDetails:
+      #     #   # DeliveryStream: # String
+      #     DestinationType: # String
+      #     LogFormat: # String
+      #     LogType: # String
+      # MultiAZEnabled: # Boolean
+      # NetworkType: # String
+      # NodeGroupConfiguration:
+      #   - # NodeGroupId: # String
+      #     # PrimaryAvailabilityZone: # String
+      #     # ReplicaAvailabilityZones:
+      #     # - # String
+      #     # ReplicaCount: # Integer
+      #     # Slots: # String
+      # NotificationTopicArn: # String
+      # NumCacheClusters: # Integer
+      # NumNodeGroups: # Integer
+      # Port: # Integer
+      # PreferredCacheClusterAZs:
+      #   - # String
+      # PreferredMaintenanceWindow: # String
+      # PrimaryClusterId: # String
+      # ReplicasPerNodeGroup: # Integer
+      ReplicationGroupDescription: # String
+      # ReplicationGroupId: # String
+      # SecurityGroupIds:
+      #   - # String
+      # SnapshotArns:
+      #   - # String
+      # SnapshotName: # String
+      # SnapshotRetentionLimit: # Integer
+      # SnapshotWindow: # String
+      # SnapshottingClusterId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TransitEncryptionEnabled: # Boolean
+      # UserGroupIds:
+      #   - # String
+    # !GetAtt THIS.ConfigurationEndPoint.Address (String)
+    # !GetAtt THIS.ConfigurationEndPoint.Port (String)
+    # !GetAtt THIS.PrimaryEndPoint.Address (String)
+    # !GetAtt THIS.PrimaryEndPoint.Port (String)
+    # !GetAtt THIS.ReadEndPoint.Addresses (String)
+    # !GetAtt THIS.ReadEndPoint.Addresses.List (List)
+    # !GetAtt THIS.ReadEndPoint.Ports (String)
+    # !GetAtt THIS.ReadEndPoint.Ports.List (List)
+    # !GetAtt THIS.ReaderEndPoint.Address (String)
+    # !GetAtt THIS.ReaderEndPoint.Port (String)

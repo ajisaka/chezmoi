@@ -1,0 +1,56 @@
+  XRaySamplingRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-xray-samplingrule.html
+    Type: AWS::XRay::SamplingRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-xray-samplingrule.html
+      # SamplingRule:
+      #   # Attributes:
+      #   # ANY_KEY: # String
+      #   # FixedRate: # Double
+      #   # Host: # String
+      #   # HTTPMethod: # String
+      #   # Priority: # Integer
+      #   # ReservoirSize: # Integer
+      #   # ResourceARN: # String
+      #   # RuleARN: # String
+      #   # RuleName: # String
+      #   # ServiceName: # String
+      #   # ServiceType: # String
+      #   # URLPath: # String
+      #   # Version: # Integer
+      # SamplingRuleRecord:
+      #   # CreatedAt: # String
+      #   # ModifiedAt: # String
+      #   # SamplingRule:
+      #   # # Attributes:
+      #   #   # ANY_KEY: # String
+      #   # # FixedRate: # Double
+      #   # # Host: # String
+      #   # # HTTPMethod: # String
+      #   # # Priority: # Integer
+      #   # # ReservoirSize: # Integer
+      #   # # ResourceARN: # String
+      #   # # RuleARN: # String
+      #   # # RuleName: # String
+      #   # # ServiceName: # String
+      #   # # ServiceType: # String
+      #   # # URLPath: # String
+      #   # # Version: # Integer
+      # SamplingRuleUpdate:
+      #   # Attributes:
+      #   # ANY_KEY: # String
+      #   # FixedRate: # Double
+      #   # Host: # String
+      #   # HTTPMethod: # String
+      #   # Priority: # Integer
+      #   # ReservoirSize: # Integer
+      #   # ResourceARN: # String
+      #   # RuleARN: # String
+      #   # RuleName: # String
+      #   # ServiceName: # String
+      #   # ServiceType: # String
+      #   # URLPath: # String
+      # RuleName: # String
+      # Tags:
+      #   - # Json
+    # !GetAtt THIS.RuleARN (String)

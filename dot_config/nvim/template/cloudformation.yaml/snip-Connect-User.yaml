@@ -1,0 +1,28 @@
+  ConnectUser:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-user.html
+    Type: AWS::Connect::User
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-user.html
+      InstanceArn: # String
+      # DirectoryUserId: # String
+      # HierarchyGroupArn: # String
+      Username: # String
+      # Password: # String
+      RoutingProfileArn: # String
+      # IdentityInfo:
+      #   # FirstName: # String
+      #   # LastName: # String
+      #   # Email: # String
+      #   # SecondaryEmail: # String
+      #   # Mobile: # String
+      # PhoneConfig:
+      #   # AfterContactWorkTimeLimit: # Integer
+      #   # AutoAccept: # Boolean
+      #   # DeskPhoneNumber: # String
+      #   PhoneType: # String
+      SecurityProfileArns:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.UserArn (String)

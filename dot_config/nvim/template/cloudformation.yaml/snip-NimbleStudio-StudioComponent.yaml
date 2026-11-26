@@ -1,0 +1,41 @@
+  NimbleStudioStudioComponent:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-nimblestudio-studiocomponent.html
+    Type: AWS::NimbleStudio::StudioComponent
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-nimblestudio-studiocomponent.html
+      # Configuration:
+      #   # LicenseServiceConfiguration:
+      #   # # Endpoint: # String
+      #   # ComputeFarmConfiguration:
+      #   # # ActiveDirectoryUser: # String
+      #   # # Endpoint: # String
+      #   # ActiveDirectoryConfiguration:
+      #   # # DirectoryId: # String
+      #   # # OrganizationalUnitDistinguishedName: # String
+      #   # # ComputerAttributes:
+      #   #   # - # Value: # String
+      #   #   # # Name: # String
+      #   # SharedFileSystemConfiguration:
+      #   # # Endpoint: # String
+      #   # # FileSystemId: # String
+      #   # # ShareName: # String
+      #   # # WindowsMountDrive: # String
+      #   # # LinuxMountPoint: # String
+      # Description: # String
+      # Ec2SecurityGroupIds:
+      #   - # String
+      # InitializationScripts:
+      #   - # Script: # String
+      #     # LaunchProfileProtocolVersion: # String
+      #     # Platform: # String
+      #     # RunContext: # String
+      Name: # String
+      # ScriptParameters:
+      #   - # Value: # String
+      #     # Key: # String
+      StudioId: # String
+      # Subtype: # String
+      # Tags:
+      #   ANY_KEY: # String
+      Type: # String
+    # !GetAtt THIS.StudioComponentId (String)

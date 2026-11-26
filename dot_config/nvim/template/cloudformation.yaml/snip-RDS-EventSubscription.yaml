@@ -1,0 +1,16 @@
+  RDSEventSubscription:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
+    Type: AWS::RDS::EventSubscription
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # SubscriptionName: # String
+      # Enabled: # Boolean
+      # EventCategories:
+      #   - # String
+      SnsTopicArn: # String
+      # SourceIds:
+      #   - # String
+      # SourceType: # String

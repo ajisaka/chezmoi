@@ -1,0 +1,13 @@
+  MemoryDBUser:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-user.html
+    Type: AWS::MemoryDB::User
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-user.html
+      UserName: # String
+      AccessString: # String
+      AuthenticationMode: # Json
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,342 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+function repo_root() {
+  local selected="$1"
+  local root
+
+  if ! git -C "$selected" rev-parse --git-dir > /dev/null 2>&1
+  then
+    echo "Not inside a git repository: $selected" >&2
+    return 1
+  fi
+
+  # worktree 一覧の先頭は常にメイン worktree なので、worktree の中からでも root が引ける
+  root=$(git -C "$selected" worktree list --porcelain | sed -n '1s/^worktree //p')
+  if [ -z "$root" ]
+  then
+    echo "Cannot resolve the repository root: $selected" >&2
+    return 1
+  fi
+
+  echo "$root"
+}
+
+# 既定のパターンは常にコピーし、元リポジトリにこのファイルがあれば記述したパターンを追加する
+COPY_LIST_FILE='.hrdd-copy'
+DEFAULT_COPY_PATTERNS=('.env*' '.beethovenv')
+
+function copy_patterns() {
+  local root="$1"
+  local line
+
+  printf '%s\n' "${DEFAULT_COPY_PATTERNS[@]}"
+
+  if [ ! -f "$root/$COPY_LIST_FILE" ]
+  then
+    return
+  fi
+
+  # 1 行 1 パターン。空行と # 始まりの行は無視し、前後の空白は落とす
+  while IFS= read -r line || [ -n "$line" ]
+  do
+    line="${line#"${line%%[![:space:]]*}"}"
+    line="${line%"${line##*[![:space:]]}"}"
+    if [ -z "$line" ] || [ "${line:0:1}" = '#' ]
+    then
+      continue
+    fi
+    echo "$line"
+  done < "$root/$COPY_LIST_FILE"
+}
+
+function copy_file_if_absent() {
+  local root="$1" dest="$2" file="$3"
+  local rel
+
+  rel="${file#"$root"/}"
+  if [ -e "$dest/$rel" ]
+  then
+    return
+  fi
+  mkdir -p "$dest/$(dirname "$rel")"
+  cp --preserve=mode "$file" "$dest/$rel"
+  echo "Copied: $rel" >&2
+}
+
+function copy_untracked_env_files() {
+  local root="$1"
+  local dest="$2"
+  local found file pattern
+  local -a conditions=() match=()
+
+  # `/` を含むパターンは root からの相対パス、含まないものは名前として扱う。
+  # 末尾の `/` はディレクトリだけに当てる指定とみなす (gitignore と同じ)
+  while IFS= read -r pattern
+  do
+    match=()
+    if [[ "$pattern" == */ ]]
+    then
+      pattern="${pattern%/}"
+      match=(-type d)
+    fi
+
+    if [[ "$pattern" == */* ]]
+    then
+      match+=(-path "$root/${pattern#/}")
+    else
+      match+=(-name "$pattern")
+    fi
+
+    if [ "${#conditions[@]}" -gt 0 ]
+    then
+      conditions+=(-o)
+    fi
+    conditions+=(\( "${match[@]}" \))
+  done < <(copy_patterns "$root")
+
+  if [ "${#conditions[@]}" -eq 0 ]
+  then
+    return
+  fi
+
+  # .env* などは gitignore されがちで clone に含まれないため、元リポジトリからコピーする。
+  # ディレクトリに当たったら中身ごとコピーし、その下はそれ以上探さない
+  while IFS= read -r found
+  do
+    if [ -d "$found" ]
+    then
+      while IFS= read -r file
+      do
+        copy_file_if_absent "$root" "$dest" "$file"
+      done < <(find "$found" -type f)
+    else
+      copy_file_if_absent "$root" "$dest" "$found"
+    fi
+  done < <(
+    find "$root" \
+      \( -name .git -o -name .wkspc \) -prune \
+      -o \( "${conditions[@]}" \) \( -type d -prune -print -o -type f -print \)
+  )
+}
+
+function create_clone() {
+  local root="$1"
+  local name dest remote url
+
+  name=''
+  read -r -p 'Workspace name: ' name || true
+  if [ -z "$name" ]
+  then
+    name=$(date '+%Y%m%d-%H%M%S')
+  fi
+
+  dest="$root/.wkspc/$name"
+  if [ -e "$dest" ]
+  then
+    echo "Already exists: $dest" >&2
+    return 1
+  fi
+
+  mkdir -p "$root/.wkspc"
+  git -c checkout.workers=0 clone --local "$root" "$dest" >&2
+
+  # clone --local は origin をローカルパスにしてしまうので、元リポジトリの remote を引き継ぐ。
+  # origin は set-url で差し替える (remove + add だと追跡設定ごと消えてしまう)
+  while IFS= read -r remote
+  do
+    url=$(git -C "$root" remote get-url "$remote")
+    if git -C "$dest" remote get-url "$remote" > /dev/null 2>&1
+    then
+      git -C "$dest" remote set-url "$remote" "$url"
+    else
+      git -C "$dest" remote add "$remote" "$url"
+    fi
+  done < <(git -C "$root" remote)
+
+  # ワークスペース間で直接やりとりできるように、元リポジトリも残しておく
+  if ! git -C "$dest" remote get-url local > /dev/null 2>&1
+  then
+    git -C "$dest" remote add local "$root"
+  fi
+
+  copy_untracked_env_files "$root" "$dest"
+
+  echo "$dest"
+}
+
+function select_workspace() {
+  local root="$1"
+  local kind path parent label key entry choice
+  local -a entries=()
+  local -A by_label=() seen=() count=()
+
+  # 候補を `<kind>\t<path>` で集めつつ、basename の重複を数える
+  while IFS=$'\t' read -r kind path
+  do
+    if [ -z "$path" ] || [ -n "${seen[$path]:-}" ]
+    then
+      continue
+    fi
+    seen[$path]=1
+    entries+=("$kind"$'\t'"$path")
+
+    key="$kind:${path##*/}"
+    count[$key]=$(( ${count[$key]:-0} + 1 ))
+  done < <(
+    git -C "$root" worktree list --porcelain \
+      | sed -n 's/^worktree //p' \
+      | tail -n +2 \
+      | sed 's/^/w\t/'
+    if [ -d "$root/.wkspc" ]
+    then
+      find "$root/.wkspc" -mindepth 1 -maxdepth 1 -type d \
+        | sed 's/^/c\t/'
+    fi
+  )
+
+  # 短いラベルから実パスを引ける辞書にする。重複する basename だけ親を足す
+  for entry in "${entries[@]}"
+  do
+    kind="${entry%%$'\t'*}"
+    path="${entry#*$'\t'}"
+
+    label="$kind:${path##*/}"
+    if [ "${count[$label]}" -gt 1 ]
+    then
+      parent="${path%/*}"
+      label="$kind:${parent##*/}/${path##*/}"
+    fi
+    if [ -n "${by_label[$label]:-}" ]
+    then
+      label="$kind:$path"
+    fi
+    by_label[$label]="$path"
+  done
+
+  if [ "${#by_label[@]}" -eq 0 ]
+  then
+    echo "No workspace found in $root" >&2
+    return 1
+  fi
+
+  choice=$(printf '%s\n' "${!by_label[@]}" | sort | anything | head -1)
+  if [ -z "$choice" ] || [ -z "${by_label[$choice]:-}" ]
+  then
+    echo "No workspace selected" >&2
+    return 1
+  fi
+
+  echo "${choice#*:}"$'\t'"${by_label[$choice]}"
+}
+
+function main() {
+  local selected="$1" use_sandbox="$2" use_fence="$3" use_clone="$4" use_workspace="$5" print_only="$6"
+  local created_pane_id root label
+  local -a label_option=()
+
+  if [ -n "$selected" ]
+  then
+    selected=$(realpath "$selected")
+  else
+    if on-gui
+    then
+      selected=$(zoxide query --list --all | anything)
+    else
+      selected=$(zoxide query --interactive --all)
+    fi
+  fi
+
+  if [ "$use_clone" -eq 1 ] || [ "$use_workspace" -eq 1 ]
+  then
+    root=$(repo_root "$selected")
+
+    # 選択したラベルの `c:` / `w:` を除いた部分をワークスペース名にする
+    IFS=$'\t' read -r label selected < <(select_workspace "$root")
+    label_option=(--label "$label")
+  fi
+
+  # 呼び出し元シェルで cd するなど、パスだけ使いたい場合
+  if [ "$print_only" -eq 1 ]
+  then
+    echo "$selected"
+    return
+  fi
+
+  created_pane_id=$(
+    herdr workspace create --cwd "$selected" "${label_option[@]}" --focus \
+      | jq --raw-output '.result.root_pane.pane_id'
+  )
+  if [ "$use_sandbox" -eq 1 ]
+  then
+    herdr pane send-text "$created_pane_id" "HERDR_AGENT=claude ccs"
+  elif [ "$use_fence" -eq 1 ]
+  then
+    herdr pane send-text "$created_pane_id" "HERDR_AGENT=claude fence claude"
+  else
+    herdr pane send-text "$created_pane_id" "HERDR_AGENT=claude claude"
+  fi
+  herdr pane send-keys "$created_pane_id" Return
+}
+
+function usage() {
+  echo "Usage: $0 [-s] [-f] [-c | -w] [-P] [<path>]"
+  echo "Options:"
+  echo "  -s    Use sandbox mode (default: off)"
+  echo "  -f    Use fence (default: off)"
+  echo "  -c    Clone the repository into <repo-root>/.wkspc/<name> and use it"
+  echo "        Untracked .env* / .beethovenv and patterns listed in <repo-root>/$COPY_LIST_FILE are copied"
+  echo "  -w    Select an existing workspace (c:<clone> / w:<worktree>) and use it"
+  echo "  -P    Print the resolved path instead of opening a herdr workspace"
+  echo "  -h    Show this help message"
+}
+
+use_sandbox=0
+use_fence=0
+use_clone=0
+use_workspace=0
+print_only=0
+
+while getopts 'sfcwPh' OPTION
+do
+  case "$OPTION" in
+    s)
+      use_sandbox=1
+      ;;
+    f)
+      use_fence=1
+      ;;
+    c)
+      use_clone=1
+      ;;
+    w)
+      use_workspace=1
+      ;;
+    P)
+      print_only=1
+      ;;
+    h)
+      usage
+      exit
+    ;;
+    *)
+      usage
+      exit 1
+  esac
+done
+shift $((OPTIND - 1))
+
+if [ "$use_clone" -eq 1 ] && [ "$use_workspace" -eq 1 ]
+then
+  echo "-c and -w are mutually exclusive" >&2
+  exit 1
+fi
+
+main "${1:-}" "$use_sandbox" "$use_fence" "$use_clone" "$use_workspace" "$print_only"

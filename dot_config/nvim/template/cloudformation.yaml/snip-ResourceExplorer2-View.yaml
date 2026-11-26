@@ -1,0 +1,13 @@
+  ResourceExplorer2View:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourceexplorer2-view.html
+    Type: AWS::ResourceExplorer2::View
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-resourceexplorer2-view.html
+      # IncludedProperties:
+      #   - Name: # String
+      # Filters:
+      #   FilterString: # String
+      # Tags:
+      #   ANY_KEY: # String
+      ViewName: # String
+    # !GetAtt THIS.ViewArn (String)

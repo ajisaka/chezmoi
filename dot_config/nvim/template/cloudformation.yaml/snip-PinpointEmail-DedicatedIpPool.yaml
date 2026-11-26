@@ -1,0 +1,8 @@
+  PinpointEmailDedicatedIpPool:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpointemail-dedicatedippool.html
+    Type: AWS::PinpointEmail::DedicatedIpPool
+    Properties:
+      # PoolName: # String
+      # Tags:
+      #   - # Value: # String
+      #     # Key: # String

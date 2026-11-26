@@ -1,0 +1,9 @@
+  ApiGatewayBasePathMapping:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
+      # BasePath: # String
+      DomainName: # String
+      # RestApiId: # String
+      # Stage: # String

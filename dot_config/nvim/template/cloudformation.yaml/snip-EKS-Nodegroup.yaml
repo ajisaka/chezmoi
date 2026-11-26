@@ -1,0 +1,43 @@
+  EKSNodegroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-nodegroup.html
+    Type: AWS::EKS::Nodegroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-nodegroup.html
+      # AmiType: # String
+      # CapacityType: # String
+      ClusterName: # String
+      # DiskSize: # Integer
+      # ForceUpdateEnabled: # Boolean
+      # InstanceTypes:
+      #   - # String
+      # Labels: # Json
+      # LaunchTemplate:
+      #   # Id: # String
+      #   # Version: # String
+      #   # Name: # String
+      # NodegroupName: # String
+      NodeRole: # String
+      # ReleaseVersion: # String
+      # RemoteAccess:
+      #   # SourceSecurityGroups:
+      #   # - # String
+      #   Ec2SshKey: # String
+      # ScalingConfig:
+      #   # MinSize: # Integer
+      #   # DesiredSize: # Integer
+      #   # MaxSize: # Integer
+      Subnets:
+        - # String
+      # Tags: # Json
+      # Taints:
+      #   - # Key: # String
+      #     # Value: # String
+      #     # Effect: # String
+      # UpdateConfig:
+      #   # MaxUnavailable: # Double
+      #   # MaxUnavailablePercentage: # Double
+      # Version: # String
+    # !GetAtt THIS.ClusterName (String)
+    # !GetAtt THIS.NodegroupName (String)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

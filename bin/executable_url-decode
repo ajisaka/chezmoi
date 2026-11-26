@@ -1,0 +1,35 @@
+#!/usr/bin/ruby
+# vim: set fileencoding=utf-8 :
+
+require 'uri'
+require 'optparse'
+
+
+class Options
+  attr_reader :encoding, :targets
+
+  def initialize (argv)
+    @encoding = 'UTF-8'
+
+    OptionParser.new do
+      |opt|
+      opt.on_head('URL デコードします')
+      opt.on('-e <ENCODING>',  'Character encoding') {|v| @encoding = v }
+      opt.parse!(argv)
+    end
+
+    @targets = argv.dup
+  end
+end
+
+
+options = Options.new(ARGV)
+
+if STDIN.tty?
+  options.targets.each do
+    |arg|
+    puts(URI.decode_www_form_component(arg).encode(options.encoding))
+  end
+else
+  puts(URI.decode_www_form_component(ARGF.read).encode(options.encoding))
+end

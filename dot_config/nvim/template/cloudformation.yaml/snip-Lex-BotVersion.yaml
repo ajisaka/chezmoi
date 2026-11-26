@@ -1,0 +1,11 @@
+  LexBotVersion:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lex-botversion.html
+    Type: AWS::Lex::BotVersion
+    Properties:
+      BotId: # String
+      # Description: # String
+      BotVersionLocaleSpecification:
+        - LocaleId: # String
+          # BotVersionLocaleDetails:
+          #   SourceBotVersion: # String
+    # !GetAtt THIS.BotVersion (String)

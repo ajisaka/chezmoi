@@ -1,0 +1,17 @@
+  DirectoryServiceMicrosoftAD:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
+    Type: AWS::DirectoryService::MicrosoftAD
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
+      # CreateAlias: # Boolean
+      # Edition: # String
+      # EnableSso: # Boolean
+      Name: # String
+      Password: # String
+      # ShortName: # String
+      # VpcSettings:
+      #   SubnetIds:
+      #     - # String
+      #   VpcId: # String
+    # !GetAtt THIS.Alias (String)
+    # !GetAtt THIS.DnsIpAddresses (List)

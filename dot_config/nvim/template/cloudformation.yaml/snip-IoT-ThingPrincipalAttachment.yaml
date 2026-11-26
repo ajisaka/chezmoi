@@ -1,0 +1,6 @@
+  IoTThingPrincipalAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html
+    Type: AWS::IoT::ThingPrincipalAttachment
+    Properties:
+      Principal: # String
+      ThingName: # String

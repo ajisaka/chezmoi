@@ -1,0 +1,33 @@
+  CloudTrailTrail:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
+    Type: AWS::CloudTrail::Trail
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
+      # CloudWatchLogsLogGroupArn: # String
+      # CloudWatchLogsRoleArn: # String
+      # EnableLogFileValidation: # Boolean
+      # EventSelectors:
+      #   - # DataResources:
+      #     # - Type: # String
+      #     # # Values:
+      #     #     # - # String
+      #     # IncludeManagementEvents: # Boolean
+      #     # ReadWriteType: # String
+      #     # ExcludeManagementEventSources:
+      #     # - # String
+      # IncludeGlobalServiceEvents: # Boolean
+      IsLogging: # Boolean
+      # IsMultiRegionTrail: # Boolean
+      # IsOrganizationTrail: # Boolean
+      # KMSKeyId: # String
+      S3BucketName: # String
+      # S3KeyPrefix: # String
+      # SnsTopicName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TrailName: # String
+      # InsightSelectors:
+      #   - # InsightType: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.SnsTopicArn (String)

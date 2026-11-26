@@ -1,0 +1,13 @@
+  AutoScalingLifecycleHook:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-lifecyclehook.html
+    Type: AWS::AutoScaling::LifecycleHook
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscaling-lifecyclehook.html
+      AutoScalingGroupName: # String
+      # DefaultResult: # String
+      # HeartbeatTimeout: # Integer
+      # LifecycleHookName: # String
+      LifecycleTransition: # String
+      # NotificationMetadata: # String
+      # NotificationTargetARN: # String
+      # RoleARN: # String

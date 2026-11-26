@@ -1,0 +1,16 @@
+  AppRunnerVpcIngressConnection:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-vpcingressconnection.html
+    Type: AWS::AppRunner::VpcIngressConnection
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-vpcingressconnection.html
+      # VpcIngressConnectionName: # String
+      ServiceArn: # String
+      # IngressVpcConfiguration:
+      #   VpcId: # String
+      #   VpcEndpointId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.VpcIngressConnectionArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.DomainName (String)

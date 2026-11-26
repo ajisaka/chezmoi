@@ -1,0 +1,11 @@
+  S3OutpostsAccessPoint:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3outposts-accesspoint.html
+    Type: AWS::S3Outposts::AccessPoint
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3outposts-accesspoint.html
+      Bucket: # String
+      Name: # String
+      # VpcConfiguration:
+      #   # VpcId: # String
+      # Policy: # Json
+    # !GetAtt THIS.Arn (String)

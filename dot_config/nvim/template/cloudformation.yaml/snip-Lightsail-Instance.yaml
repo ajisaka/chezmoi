@@ -1,0 +1,62 @@
+  LightsailInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-instance.html
+    Type: AWS::Lightsail::Instance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-instance.html
+      # Hardware:
+      #   # CpuCount: # Integer
+      #   # RamSizeInGb: # Integer
+      #   # Disks:
+      #   # - DiskName: # String
+      #   # # SizeInGb: # String
+      #   # # IsSystemDisk: # Boolean
+      #   # # IOPS: # Integer
+      #   # Path: # String
+      #   # # AttachedTo: # String
+      #   # # AttachmentState: # String
+      # Networking:
+      #   Ports:
+      #     - # FromPort: # Integer
+      #       # ToPort: # Integer
+      #       # Protocol: # String
+      #       # AccessFrom: # String
+      #       # AccessType: # String
+      #       # CommonName: # String
+      #       # AccessDirection: # String
+      #       # Ipv6Cidrs:
+      #       # - # String
+      #       # CidrListAliases:
+      #       # - # String
+      #       # Cidrs:
+      #       # - # String
+      #   # MonthlyTransfer:
+      #   # # GbPerMonthAllocated: # String
+      InstanceName: # String
+      # AvailabilityZone: # String
+      BundleId: # String
+      BlueprintId: # String
+      # AddOns:
+      #   - AddOnType: # String
+      #     # Status: # String
+      #     # AutoSnapshotAddOnRequest:
+      #     # # SnapshotTimeOfDay: # String
+      # UserData: # String
+      # KeyPairName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.SupportCode (String)
+    # !GetAtt THIS.ResourceType (String)
+    # !GetAtt THIS.IsStaticIp (Boolean)
+    # !GetAtt THIS.PrivateIpAddress (String)
+    # !GetAtt THIS.PublicIpAddress (String)
+    # !GetAtt THIS.Location.AvailabilityZone (String)
+    # !GetAtt THIS.Location.RegionName (String)
+    # !GetAtt THIS.Hardware.CpuCount (Integer)
+    # !GetAtt THIS.Hardware.RamSizeInGb (Integer)
+    # !GetAtt THIS.State.Code (Integer)
+    # !GetAtt THIS.State.Name (String)
+    # !GetAtt THIS.Networking.MonthlyTransfer.GbPerMonthAllocated (String)
+    # !GetAtt THIS.UserName (String)
+    # !GetAtt THIS.SshKeyName (String)
+    # !GetAtt THIS.InstanceArn (String)

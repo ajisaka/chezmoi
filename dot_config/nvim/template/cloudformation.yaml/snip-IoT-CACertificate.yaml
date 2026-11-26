@@ -1,0 +1,20 @@
+  IoTCACertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-cacertificate.html
+    Type: AWS::IoT::CACertificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-cacertificate.html
+      CACertificatePem: # String
+      # VerificationCertificatePem: # String
+      Status: # String
+      # CertificateMode: # String
+      # AutoRegistrationStatus: # String
+      # RemoveAutoRegistration: # Boolean
+      # RegistrationConfig:
+      #   # TemplateBody: # String
+      #   # RoleArn: # String
+      #   # TemplateName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

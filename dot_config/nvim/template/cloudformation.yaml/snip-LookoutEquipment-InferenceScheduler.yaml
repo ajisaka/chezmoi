@@ -1,0 +1,17 @@
+  LookoutEquipmentInferenceScheduler:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutequipment-inferencescheduler.html
+    Type: AWS::LookoutEquipment::InferenceScheduler
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutequipment-inferencescheduler.html
+      # DataDelayOffsetInMinutes: # Integer
+      DataInputConfiguration: # Json
+      DataOutputConfiguration: # Json
+      DataUploadFrequency: # String
+      # InferenceSchedulerName: # String
+      ModelName: # String
+      RoleArn: # String
+      # ServerSideKmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.InferenceSchedulerArn (String)

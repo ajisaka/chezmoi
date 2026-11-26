@@ -1,0 +1,90 @@
+# Default: https://github.com/sxyazi/yazi/blob/shipped/yazi-config/preset/keymap-default.toml
+
+[mgr]
+
+prepend_keymap = [
+  { on = ['a'], run = 'create --dir', desc = 'Create a directory' },
+
+  { on = ['f'], run = 'plugin jump-to-char', desc = 'Jump to char' },
+
+  { on = ['g', 'j'], run = 'plugin zoxide' },
+  { on = ['g', 'k'], run = 'tab_create --current', desc = 'Create a tab' },
+  { on = ['g', 'x'], run = 'close', desc = 'Close a tab' },
+
+  { on = ['o', 'm'], run = 'sort --dir-first=yes --reverse=yes  mtime', desc = 'Sort by mtime' },
+  { on = ['o', 'M'], run = 'sort --dir-first=yes --reverse=no   mtime', desc = 'Sort by mtime (reverse)' },
+  { on = ['o', 'e'], run = 'sort --dir-first=yes --reverse=no   extension', desc = 'Sort by extension' },
+  { on = ['o', 'E'], run = 'sort --dir-first=yes --reverse=yes extension', desc = 'Sort by extension (reverse)' },
+  { on = ['o', 'a'], run = 'sort --dir-first=yes --reverse=no  alphabetical', desc = 'Sort by name' },
+  { on = ['o', 'A'], run = 'sort --dir-first=yes --reverse=yes alphabetical', desc = 'Sort by name (reverse)' },
+  { on = ['o', 'n'], run = 'sort --dir-first=yes --reverse=no  natrual', desc = 'Sort by natural' },
+  { on = ['o', 'N'], run = 'sort --dir-first=yes --reverse=yes natrual', desc = 'Sort by natural (reverse)' },
+  { on = ['o', 'r'], run = 'sort --dir-first=yes               random', desc = 'Sort by random' },
+  { on = ['o', 's'], run = 'sort --dir-first=yes --reverse=no  size', desc = 'Sort by size' },
+  { on = ['o', 'S'], run = 'sort --dir-first=yes --reverse=yes size', desc = 'Sort by size (reverse) fucking' },
+
+  { on = ['o', 'o', 'm'], run = 'sort --dir-first=no --reverse=yes  mtime', desc = 'Sort by mtime' },
+  { on = ['o', 'o', 'M'], run = 'sort --dir-first=no --reverse=no   mtime', desc = 'Sort by mtime (reverse)' },
+  { on = ['o', 'o', 'e'], run = 'sort --dir-first=no -reverse=no   extension', desc = 'Sort by extension' },
+  { on = ['o', 'o', 'E'], run = 'sort --dir-first=no --reverse=yes extension', desc = 'Sort by extension (reverse)' },
+  { on = ['o', 'o', 'a'], run = 'sort --dir-first=no --reverse=no  alphabetical', desc = 'Sort by name' },
+  { on = ['o', 'o', 'A'], run = 'sort --dir-first=no --reverse=yes alphabetical', desc = 'Sort by name (reverse)' },
+  { on = ['o', 'o', 'n'], run = 'sort --dir-first=no --reverse=no  natrual', desc = 'Sort by natural' },
+  { on = ['o', 'o', 'N'], run = 'sort --dir-first=no --reverse=yes natrual', desc = 'Sort by natural (reverse)' },
+  { on = ['o', 'o', 'r'], run = 'sort --dir-first=no               random', desc = 'Sort by random' },
+  { on = ['o', 'o', 's'], run = 'sort --dir-first=no --reverse=yes size', desc = 'Sort by size' },
+  { on = ['o', 'o', 'S'], run = 'sort --dir-first=no --reverse=no  size', desc = 'Sort by size (reverse) fucking' },
+
+  { on = ['m', 'a'], run = "toggle_all --state=on", desc = "Select all files" },
+  { on = ['m', 'c'], run = "escape --select", desc = "Clear selection" },
+  { on = ['m', 'v'], run = "toggle_all",            desc = "Invert selection of all files" },
+  { on = ['m', 'r'], run = "toggle_all",            desc = "Invert selection of all files" },
+
+  { on = ['M'], run = 'plugin bookmarks save', desc = 'Bookmark it' },
+  { on = ["'"], run = 'plugin bookmarks jump', desc = 'Jump to the bookmark' },
+
+  { on = ['p', 'p'], run = 'paste' },
+  { on = ['p', 'o'], run = 'paste --force' },
+  { on = ['p', 'l'], run = 'link' },
+  { on = ['p', 'L'], run = 'link --relative' },
+
+  { on = ['q'], run = 'shell --orphan --block=no ~/.config/yazi/script/quit-or-hide', desc = 'Jump to char' },
+
+  { on = ['r', 'r'], run = 'rename' },
+  { on = ['r', 'l'], run = '''shell --block 'liname -C -R %s'''', desc = 'liname' },
+  { on = ['r', 'L'], run = '''shell --block 'liname -C   %s'''', desc = "liname 'recursive'" },
+  { on = ['r', 'b'], run = 'rename --empty=stem --cursor=start', desc = 'Rename (base)' },
+  { on = ['r', 'e'], run = 'rename --empty=ext --cursor=end', desc = 'Rename (extension)' },
+
+  { on = ['s'], run = 'shell --interactive' },
+  { on = ['S'], run = 'shell --block zsh' },
+
+  { on = ['z', 'i'], run = 'spot' },
+  { on = ['z', 'j'], run = 'plugin zoxide' },
+  { on = ['z', 'J'], run = 'plugin fzf' },
+  { on = ['z', 'f'], run = 'filter --interactive --smart' },
+  { on = ['z', 'h'], run = 'hidden toggle' },
+  { on = ['z', 's'], run = 'search --via=rg' },
+  { on = ['z', 'S'], run = 'search --via=fd' },
+  { on = ['z', 'z'], run = 'shell "zoxide add \"$PWD\""',   desc = 'zoxide add' },
+  { on = ['z', 'n'], run = 'plugin session-save',   desc = 'Save session' },
+
+  { on = ['z', 'm', 'b'], run = 'linemode btime',       desc = 'Linemode: btime' },
+  { on = ['z', 'm', 'c'], run = 'linemode page_count',  desc = 'Linemode: page count' },
+  { on = ['z', 'm', 'g'], run = 'linemode git',         desc = 'Linemode: git' },
+  { on = ['z', 'm', 'm'], run = 'linemode mtime',       desc = 'Linemode: mtime' },
+  { on = ['z', 'm', 'n'], run = 'linemode none',        desc = 'Linemode: none' },
+  { on = ['z', 'm', 'o'], run = 'linemode owner',       desc = 'Linemode: owner' },
+  { on = ['z', 'm', 'p'], run = 'linemode permissions', desc = 'Linemode: permissions' },
+  { on = ['z', 'm', 's'], run = 'linemode size',        desc = 'Linemode: size' },
+
+  { on = [';'], run = 'plugin command' },
+
+  { on = [',', 'm'], run = 'plugin chmod', desc = 'Change file mode' },
+
+  { on = ['<C-n>'], run = 'tab_switch --relative 1', desc = 'Next tab' },
+  { on = ['<C-p>'], run = 'tab_switch --relative -1', desc = 'Previous tab' },
+
+  { on = ['<C-o>'], run = 'back', desc = 'Go previous directory' },
+  { on = ['<C-i>'], run = 'forward', desc = 'Go next directory' },
+]

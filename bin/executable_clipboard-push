@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euC
+
+# exec 5> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+command -v clip.exe > /dev/null && exec tee >(clip.exe)
+
+[ "${XDG_BACKEND:-}" = wayland ] && exec tee >(wl-copy)
+# [ "${XDG_BACKEND:-}" = wayland ] && exec clipse -c
+
+[[ "${TERM_PROGRAM:-}" =~ .*\.app$  ]] && exec pbcopy
+[ "${TERM_PROGRAM:-}" = 'Apple_Terminal' ] && exec pbcopy
+[ -n "${__CFBundleIdentifier:-}" ] && exec pbcopy
+
+command -v tpipe > /dev/null && cat \
+  | exec tpipe 'xsel --input --clipboard' \
+  | tpipe 'xsel --input --primary' \
+  | tpipe 'xsel --input --secondary' \
+  | tee
+
+ cat \
+   | exec tee >(xsel --input --clipboard) \
+   | tee >(xsel --input --primary) \
+   | tee >(xsel --input --secondary)

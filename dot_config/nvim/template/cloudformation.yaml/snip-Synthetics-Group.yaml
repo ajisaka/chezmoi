@@ -1,0 +1,11 @@
+  SyntheticsGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-group.html
+    Type: AWS::Synthetics::Group
+    Properties:
+      Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # ResourceArns:
+      #   - # String
+    # !GetAtt THIS.Id (String)

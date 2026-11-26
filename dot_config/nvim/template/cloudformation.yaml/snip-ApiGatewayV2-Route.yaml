@@ -1,0 +1,18 @@
+  ApiGatewayV2Route:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-route.html
+      # Target: # String
+      # RouteResponseSelectionExpression: # String
+      # AuthorizerId: # String
+      # RequestModels: # Json
+      # OperationName: # String
+      # AuthorizationScopes:
+      #   - # String
+      # ApiKeyRequired: # Boolean
+      RouteKey: # String
+      # AuthorizationType: # String
+      # ModelSelectionExpression: # String
+      ApiId: # String
+      # RequestParameters: # Json

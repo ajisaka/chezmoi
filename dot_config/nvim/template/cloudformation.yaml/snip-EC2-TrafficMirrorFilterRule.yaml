@@ -1,0 +1,19 @@
+  EC2TrafficMirrorFilterRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html
+    Type: AWS::EC2::TrafficMirrorFilterRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trafficmirrorfilterrule.html
+      # DestinationPortRange:
+      #   FromPort: # Integer
+      #   ToPort: # Integer
+      # Description: # String
+      # SourcePortRange:
+      #   FromPort: # Integer
+      #   ToPort: # Integer
+      RuleAction: # String
+      SourceCidrBlock: # String
+      RuleNumber: # Integer
+      DestinationCidrBlock: # String
+      TrafficMirrorFilterId: # String
+      TrafficDirection: # String
+      # Protocol: # Integer

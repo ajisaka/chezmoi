@@ -1,0 +1,8 @@
+  ApiGatewayResource:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      RestApiId: # String
+      ParentId: # String
+      PathPart: # String
+    # !GetAtt THIS.ResourceId (String)

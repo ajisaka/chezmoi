@@ -1,0 +1,20 @@
+  EC2NetworkInsightsAnalysis:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightsanalysis.html
+    Type: AWS::EC2::NetworkInsightsAnalysis
+    Properties:
+      NetworkInsightsPathId: # String
+      # FilterInArns:
+      #   - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.NetworkInsightsAnalysisId (String)
+    # !GetAtt THIS.NetworkInsightsAnalysisArn (String)
+    # !GetAtt THIS.StartDate (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusMessage (String)
+    # !GetAtt THIS.NetworkPathFound (Boolean)
+    # !GetAtt THIS.ForwardPathComponents (List)
+    # !GetAtt THIS.ReturnPathComponents (List)
+    # !GetAtt THIS.Explanations (List)
+    # !GetAtt THIS.AlternatePathHints (List)

@@ -1,0 +1,14 @@
+  EC2VPCCidrBlock:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
+    Type: AWS::EC2::VPCCidrBlock
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
+      # AmazonProvidedIpv6CidrBlock: # Boolean
+      # CidrBlock: # String
+      # Ipv4IpamPoolId: # String
+      # Ipv4NetmaskLength: # Integer
+      # Ipv6CidrBlock: # String
+      # Ipv6IpamPoolId: # String
+      # Ipv6NetmaskLength: # Integer
+      # Ipv6Pool: # String
+      VpcId: # String

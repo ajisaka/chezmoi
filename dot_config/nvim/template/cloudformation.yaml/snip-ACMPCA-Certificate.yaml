@@ -1,0 +1,90 @@
+  ACMPCACertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html
+    Type: AWS::ACMPCA::Certificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificate.html
+      # ApiPassthrough:
+      #   # Extensions:
+      #   # # CertificatePolicies:
+      #   #   # - CertPolicyId: # String
+      #   #   # # PolicyQualifiers:
+      #   #   #     # - PolicyQualifierId: # String
+      #   #   #     # # Qualifier:
+      #   #   #     #     # CpsUri: # String
+      #   # # ExtendedKeyUsage:
+      #   #   # - # ExtendedKeyUsageType: # String
+      #   #   # # ExtendedKeyUsageObjectIdentifier: # String
+      #   # # KeyUsage:
+      #   #   # # DigitalSignature: # Boolean
+      #   #   # # NonRepudiation: # Boolean
+      #   #   # # KeyEncipherment: # Boolean
+      #   #   # # DataEncipherment: # Boolean
+      #   #   # # KeyAgreement: # Boolean
+      #   #   # # KeyCertSign: # Boolean
+      #   #   # # CRLSign: # Boolean
+      #   #   # # EncipherOnly: # Boolean
+      #   #   # # DecipherOnly: # Boolean
+      #   # # SubjectAlternativeNames:
+      #   #   # - # OtherName:
+      #   #   #     # TypeId: # String
+      #   #   #     # Value: # String
+      #   #   # # Rfc822Name: # String
+      #   #   # # DnsName: # String
+      #   #   # # DirectoryName:
+      #   #   #     # # Country: # String
+      #   #   #     # # Organization: # String
+      #   #   #     # # OrganizationalUnit: # String
+      #   #   #     # # DistinguishedNameQualifier: # String
+      #   #   #     # # State: # String
+      #   #   #     # # CommonName: # String
+      #   #   #     # # SerialNumber: # String
+      #   #   #     # # Locality: # String
+      #   #   #     # # Title: # String
+      #   #   #     # # Surname: # String
+      #   #   #     # # GivenName: # String
+      #   #   #     # # Initials: # String
+      #   #   #     # # Pseudonym: # String
+      #   #   #     # # GenerationQualifier: # String
+      #   #   #     # # CustomAttributes:
+      #   #   #     #   # - ObjectIdentifier: # String
+      #   #   #     #   # Value: # String
+      #   #   # # EdiPartyName:
+      #   #   #     # PartyName: # String
+      #   #   #     # NameAssigner: # String
+      #   #   # # UniformResourceIdentifier: # String
+      #   #   # # IpAddress: # String
+      #   #   # # RegisteredId: # String
+      #   # # CustomExtensions:
+      #   #   # - # Critical: # Boolean
+      #   #   # ObjectIdentifier: # String
+      #   #   # Value: # String
+      #   # Subject:
+      #   # # Country: # String
+      #   # # Organization: # String
+      #   # # OrganizationalUnit: # String
+      #   # # DistinguishedNameQualifier: # String
+      #   # # State: # String
+      #   # # CommonName: # String
+      #   # # SerialNumber: # String
+      #   # # Locality: # String
+      #   # # Title: # String
+      #   # # Surname: # String
+      #   # # GivenName: # String
+      #   # # Initials: # String
+      #   # # Pseudonym: # String
+      #   # # GenerationQualifier: # String
+      #   # # CustomAttributes:
+      #   #   # - ObjectIdentifier: # String
+      #   #   # Value: # String
+      CertificateAuthorityArn: # String
+      CertificateSigningRequest: # String
+      SigningAlgorithm: # String
+      # TemplateArn: # String
+      # Validity:
+      #   Value: # Double
+      #   Type: # String
+      # ValidityNotBefore:
+      #   Value: # Double
+      #   Type: # String
+    # !GetAtt THIS.Certificate (String)
+    # !GetAtt THIS.Arn (String)

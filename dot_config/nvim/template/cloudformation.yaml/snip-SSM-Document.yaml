@@ -1,0 +1,23 @@
+  SSMDocument:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
+    Type: AWS::SSM::Document
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
+      Content: # Json
+      # Attachments:
+      #   - # Key: # String
+      #     # Values:
+      #     # - # String
+      #     # Name: # String
+      # Name: # String
+      # VersionName: # String
+      # DocumentType: # String
+      # DocumentFormat: # String
+      # TargetType: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Requires:
+      #   - # Name: # String
+      #     # Version: # String
+      # UpdateMethod: # String

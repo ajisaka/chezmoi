@@ -1,0 +1,13 @@
+  ServiceCatalogPortfolio:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
+    Type: AWS::ServiceCatalog::Portfolio
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
+      ProviderName: # String
+      # Description: # String
+      DisplayName: # String
+      # AcceptLanguage: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.PortfolioName (String)

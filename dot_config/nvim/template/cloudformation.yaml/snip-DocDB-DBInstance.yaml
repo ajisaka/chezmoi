@@ -1,0 +1,17 @@
+  DocDBDBInstance:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html
+    Type: AWS::DocDB::DBInstance
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html
+      DBInstanceClass: # String
+      DBClusterIdentifier: # String
+      # AvailabilityZone: # String
+      # PreferredMaintenanceWindow: # String
+      # EnablePerformanceInsights: # Boolean
+      # AutoMinorVersionUpgrade: # Boolean
+      # DBInstanceIdentifier: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Endpoint (String)
+    # !GetAtt THIS.Port (String)

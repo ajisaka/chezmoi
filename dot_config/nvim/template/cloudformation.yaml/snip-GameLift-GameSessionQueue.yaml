@@ -1,0 +1,27 @@
+  GameLiftGameSessionQueue:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html
+    Type: AWS::GameLift::GameSessionQueue
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html
+      # TimeoutInSeconds: # Integer
+      # PlayerLatencyPolicies:
+      #   - # PolicyDurationSeconds: # Integer
+      #     # MaximumIndividualPlayerLatencyMilliseconds: # Integer
+      # Destinations:
+      #   - # DestinationArn: # String
+      # NotificationTarget: # String
+      # FilterConfiguration:
+      #   # AllowedLocations:
+      #   # - # String
+      # CustomEventData: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+      # PriorityConfiguration:
+      #   # PriorityOrder:
+      #   # - # String
+      #   # LocationOrder:
+      #   # - # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

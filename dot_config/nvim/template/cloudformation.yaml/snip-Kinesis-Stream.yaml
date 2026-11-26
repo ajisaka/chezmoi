@@ -1,0 +1,17 @@
+  KinesisStream:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html
+    Type: AWS::Kinesis::Stream
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html
+      # StreamModeDetails:
+      #   StreamMode: # String
+      # StreamEncryption:
+      #   EncryptionType: # String
+      #   KeyId: # String
+      # RetentionPeriodHours: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+      # ShardCount: # Integer
+    # !GetAtt THIS.Arn (String)

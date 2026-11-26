@@ -1,0 +1,13 @@
+  GameLiftBuild:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
+    Type: AWS::GameLift::Build
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
+      # Name: # String
+      # OperatingSystem: # String
+      # StorageLocation:
+      #   Bucket: # String
+      #   Key: # String
+      #   # ObjectVersion: # String
+      #   RoleArn: # String
+      # Version: # String

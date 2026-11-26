@@ -1,0 +1,14 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+[[[- if eq .chezmoi.os "darwin" -]]]
+#!/usr/bin/env bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title iTerm Window
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon 🤖
+
+exec open -na iTerm
+[[[- end -]]]

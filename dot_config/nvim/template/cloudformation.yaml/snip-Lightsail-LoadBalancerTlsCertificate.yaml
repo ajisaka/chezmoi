@@ -1,0 +1,14 @@
+  LightsailLoadBalancerTlsCertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-loadbalancertlscertificate.html
+    Type: AWS::Lightsail::LoadBalancerTlsCertificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lightsail-loadbalancertlscertificate.html
+      LoadBalancerName: # String
+      CertificateName: # String
+      CertificateDomainName: # String
+      # CertificateAlternativeNames:
+      #   - # String
+      # IsAttached: # Boolean
+      # HttpsRedirectionEnabled: # Boolean
+    # !GetAtt THIS.LoadBalancerTlsCertificateArn (String)
+    # !GetAtt THIS.Status (String)

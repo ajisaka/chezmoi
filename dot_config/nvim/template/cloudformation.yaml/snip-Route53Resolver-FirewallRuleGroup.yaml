@@ -1,0 +1,26 @@
+  Route53ResolverFirewallRuleGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-firewallrulegroup.html
+    Type: AWS::Route53Resolver::FirewallRuleGroup
+    Properties:
+      # Name: # String
+      # FirewallRules:
+      #   - FirewallDomainListId: # String
+      #     Priority: # Integer
+      #     Action: # String
+      #     # BlockResponse: # String
+      #     # BlockOverrideDomain: # String
+      #     # BlockOverrideDnsType: # String
+      #     # BlockOverrideTtl: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RuleCount (Integer)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.StatusMessage (String)
+    # !GetAtt THIS.OwnerId (String)
+    # !GetAtt THIS.ShareStatus (String)
+    # !GetAtt THIS.CreatorRequestId (String)
+    # !GetAtt THIS.CreationTime (String)
+    # !GetAtt THIS.ModificationTime (String)

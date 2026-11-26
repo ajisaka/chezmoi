@@ -1,0 +1,25 @@
+  NetworkManagerVpcAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-vpcattachment.html
+    Type: AWS::NetworkManager::VpcAttachment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-vpcattachment.html
+      # CoreNetworkId: # String
+      # VpcArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # SubnetArns:
+      #   - # String
+      # Options:
+      #   # Ipv6Support: # Boolean
+    # !GetAtt THIS.CoreNetworkArn (String)
+    # !GetAtt THIS.AttachmentId (String)
+    # !GetAtt THIS.OwnerAccountId (String)
+    # !GetAtt THIS.AttachmentType (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.EdgeLocation (String)
+    # !GetAtt THIS.ResourceArn (String)
+    # !GetAtt THIS.AttachmentPolicyRuleNumber (Integer)
+    # !GetAtt THIS.SegmentName (String)
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.UpdatedAt (String)

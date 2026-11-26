@@ -1,0 +1,38 @@
+  SageMakerUserProfile:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-userprofile.html
+    Type: AWS::SageMaker::UserProfile
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-userprofile.html
+      DomainId: # String
+      # SingleSignOnUserIdentifier: # String
+      # SingleSignOnUserValue: # String
+      UserProfileName: # String
+      # UserSettings:
+      #   # ExecutionRole: # String
+      #   # JupyterServerAppSettings:
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   # KernelGatewayAppSettings:
+      #   # # CustomImages:
+      #   #   # - AppImageConfigName: # String
+      #   #   # ImageName: # String
+      #   #   # # ImageVersionNumber: # Integer
+      #   # # DefaultResourceSpec:
+      #   #   # # InstanceType: # String
+      #   #   # # SageMakerImageArn: # String
+      #   #   # # SageMakerImageVersionArn: # String
+      #   # RStudioServerProAppSettings:
+      #   # # AccessStatus: # String
+      #   # # UserGroup: # String
+      #   # SecurityGroups:
+      #   # - # String
+      #   # SharingSettings:
+      #   # # NotebookOutputOption: # String
+      #   # # S3KmsKeyId: # String
+      #   # # S3OutputPath: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.UserProfileArn (String)

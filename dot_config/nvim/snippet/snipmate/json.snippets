@@ -1,0 +1,87 @@
+# Claude Code {{{
+# https://code.claude.com/docs/ja/hooks
+# https://json.schemastore.org/claude-code-settings.json
+snippet cc/hooks
+  {
+    "hooks": {
+      "PreToolUse|PostToolUse|PostToolUseFailure|PermissionRequest|Notification|UserPromptSubmit|Stop|StopFailure|SubagentStart|SubagentStop|PreCompact|PostCompact|Elicitation|ElicitationResult|TeammateIdle|TaskCompleted|Setup|InstructionsLoaded|CwdChanged|FileChanged|ConfigChange|WorktreeCreate|WorktreeRemove|SessionStart|SessionEnd": [
+        {
+          "matcher": "Edit|Write|MultiEdit",
+          "hooks": [
+            {
+              "type": "command",
+              "command": "echo 'Hello, World!'"
+            }
+          ]
+        }
+      ]
+    }
+  }
+
+snippet cc/hooks/python/check
+  {
+    "matcher": "Edit|Write|MultiEdit",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "uv run mypy . 1>&2 || exit 2"
+      },
+      {
+        "type": "command",
+        "command": "uv run ruff check --fix 1>&2 || exit 2"
+      },
+      {
+        "type": "command",
+        "command": "uv run ruff format"
+      }
+    ]
+  }
+
+
+snippet cc/hooks/python/test
+  {
+    "matcher": "Edit|Write|MultiEdit",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "uv run pytest 1>&2 || exit 2"
+      }
+    ]
+  }
+
+
+snippet cc/hooks/elm/review
+  {
+    "matcher": "Edit|Write|MultiEdit",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "npx elm-review --fix-all-without-prompt 1>&2 || exit 2"
+      },
+      {
+        "type": "command",
+        "command": "elm-analyse 1>&2 || exit 2"
+      }
+    ]
+  }
+
+
+snippet cc/setting
+  {
+    "permissions": {
+      "allow": [
+        "Bash(uv run:*)",
+        "Bash(uv sync:*)",
+        "Bash(git add:*)",
+        "Bash(git commit:*)"
+      ]
+    }
+  }
+
+snippet cc/setting/permissions/basic-allows
+  "Bash(git add:*)",
+  "Bash(git commit:*)"
+  "Bash(uv run:*)",
+  "Bash(uv sync:*)",
+
+# }}}

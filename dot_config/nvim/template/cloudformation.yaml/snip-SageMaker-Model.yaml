@@ -1,0 +1,47 @@
+  SageMakerModel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html
+    Type: AWS::SageMaker::Model
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html
+      ExecutionRoleArn: # String
+      # EnableNetworkIsolation: # Boolean
+      # PrimaryContainer:
+      #   # ImageConfig:
+      #   # # RepositoryAuthConfig:
+      #   #   # RepositoryCredentialsProviderArn: # String
+      #   # RepositoryAccessMode: # String
+      #   # InferenceSpecificationName: # String
+      #   # ContainerHostname: # String
+      #   # ModelPackageName: # String
+      #   # Mode: # String
+      #   # Environment: # Json
+      #   # ModelDataUrl: # String
+      #   # Image: # String
+      #   # MultiModelConfig:
+      #   # # ModelCacheSetting: # String
+      # ModelName: # String
+      # VpcConfig:
+      #   Subnets:
+      #     - # String
+      #   SecurityGroupIds:
+      #     - # String
+      # Containers:
+      #   - # ImageConfig:
+      #     # # RepositoryAuthConfig:
+      #     #   # RepositoryCredentialsProviderArn: # String
+      #     # RepositoryAccessMode: # String
+      #     # InferenceSpecificationName: # String
+      #     # ContainerHostname: # String
+      #     # ModelPackageName: # String
+      #     # Mode: # String
+      #     # Environment: # Json
+      #     # ModelDataUrl: # String
+      #     # Image: # String
+      #     # MultiModelConfig:
+      #     # # ModelCacheSetting: # String
+      # InferenceExecutionConfig:
+      #   Mode: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ModelName (String)

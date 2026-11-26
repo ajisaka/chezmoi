@@ -1,0 +1,27 @@
+  CloudFrontCachePolicy:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cachepolicy.html
+    Type: AWS::CloudFront::CachePolicy
+    Properties:
+      # CachePolicyConfig:
+      #   # Comment: # String
+      #   DefaultTTL: # Double
+      #   MaxTTL: # Double
+      #   MinTTL: # Double
+      #   Name: # String
+      #   # ParametersInCacheKeyAndForwardedToOrigin:
+      #   # # CookiesConfig:
+      #   #   # CookieBehavior: # String
+      #   #   # # Cookies:
+      #   #   #   # - # String
+      #   # # EnableAcceptEncodingBrotli: # Boolean
+      #   # EnableAcceptEncodingGzip: # Boolean
+      #   # # HeadersConfig:
+      #   #   # HeaderBehavior: # String
+      #   #   # # Headers:
+      #   #   #   # - # String
+      #   # # QueryStringsConfig:
+      #   #   # QueryStringBehavior: # String
+      #   #   # # QueryStrings:
+      #   #   #   # - # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.LastModifiedTime (String)

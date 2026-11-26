@@ -1,0 +1,28 @@
+  CodeCommitRepository:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html
+      RepositoryName: # String
+      # Triggers:
+      #   - Events:
+      #       - # String
+      #     # Branches:
+      #     # - # String
+      #     # CustomData: # String
+      #     DestinationArn: # String
+      #     Name: # String
+      # Code:
+      #   # S3:
+      #   # # ObjectVersion: # String
+      #   # Bucket: # String
+      #   # Key: # String
+      #   # BranchName: # String
+      # RepositoryDescription: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CloneUrlHttp (String)
+    # !GetAtt THIS.CloneUrlSsh (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Name (String)

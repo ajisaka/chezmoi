@@ -1,0 +1,38 @@
+  EvidentlyExperiment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-experiment.html
+    Type: AWS::Evidently::Experiment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-evidently-experiment.html
+      Name: # String
+      Project: # String
+      # Description: # String
+      # RunningStatus:
+      #   # Status: # String
+      #   # AnalysisCompleteTime: # String
+      #   # Reason: # String
+      #   # DesiredState: # String
+      # RandomizationSalt: # String
+      Treatments:
+        - TreatmentName: # String
+          # Description: # String
+          Feature: # String
+          Variation: # String
+      MetricGoals:
+        - MetricName: # String
+          EntityIdKey: # String
+          ValueKey: # String
+          EventPattern: # String
+          # UnitLabel: # String
+          DesiredChange: # String
+      # SamplingRate: # Integer
+      # OnlineAbConfig:
+      #   # ControlTreatmentName: # String
+      #   # TreatmentWeights:
+      #   # - Treatment: # String
+      #   # SplitWeight: # Integer
+      # Segment: # String
+      # RemoveSegment: # Boolean
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

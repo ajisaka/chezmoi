@@ -1,0 +1,14 @@
+  DataSyncLocationFSxLustre:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxlustre.html
+    Type: AWS::DataSync::LocationFSxLustre
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datasync-locationfsxlustre.html
+      FsxFilesystemArn: # String
+      SecurityGroupArns:
+        - # String
+      # Subdirectory: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.LocationArn (String)
+    # !GetAtt THIS.LocationUri (String)

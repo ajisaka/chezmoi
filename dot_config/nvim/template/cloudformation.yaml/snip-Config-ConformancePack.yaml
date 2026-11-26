@@ -1,0 +1,14 @@
+  ConfigConformancePack:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html
+    Type: AWS::Config::ConformancePack
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html
+      ConformancePackName: # String
+      # DeliveryS3Bucket: # String
+      # DeliveryS3KeyPrefix: # String
+      # TemplateBody: # String
+      # TemplateS3Uri: # String
+      # TemplateSSMDocumentDetails: # Json
+      # ConformancePackInputParameters:
+      #   - ParameterName: # String
+      #     ParameterValue: # String

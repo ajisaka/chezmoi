@@ -1,0 +1,29 @@
+  MediaLiveInput:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html
+    Type: AWS::MediaLive::Input
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-medialive-input.html
+      # Type: # String
+      # Destinations:
+      #   - # StreamName: # String
+      # Vpc:
+      #   # SecurityGroupIds:
+      #   # - # String
+      #   # SubnetIds:
+      #   # - # String
+      # MediaConnectFlows:
+      #   - # FlowArn: # String
+      # InputSecurityGroups:
+      #   - # String
+      # InputDevices:
+      #   - # Id: # String
+      # Sources:
+      #   - # Username: # String
+      #     # PasswordParam: # String
+      #     # Url: # String
+      # RoleArn: # String
+      # Tags: # Json
+      # Name: # String
+    # !GetAtt THIS.Destinations (List)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Sources (List)

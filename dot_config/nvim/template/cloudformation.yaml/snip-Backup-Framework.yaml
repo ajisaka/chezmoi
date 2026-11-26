@@ -1,0 +1,20 @@
+  BackupFramework:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-framework.html
+    Type: AWS::Backup::Framework
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-backup-framework.html
+      # FrameworkName: # String
+      # FrameworkDescription: # String
+      FrameworkControls:
+        - ControlName: # String
+          # ControlInputParameters:
+          #   - ParameterName: # String
+          #     ParameterValue: # String
+          # ControlScope: # Json
+      # FrameworkTags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.FrameworkArn (String)
+    # !GetAtt THIS.DeploymentStatus (String)
+    # !GetAtt THIS.CreationTime (Double)
+    # !GetAtt THIS.FrameworkStatus (String)

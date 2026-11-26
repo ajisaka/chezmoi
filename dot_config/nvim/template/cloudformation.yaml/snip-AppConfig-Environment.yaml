@@ -1,0 +1,14 @@
+  AppConfigEnvironment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-environment.html
+    Type: AWS::AppConfig::Environment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appconfig-environment.html
+      # Description: # String
+      # Monitors:
+      #   - # AlarmArn: # String
+      #     # AlarmRoleArn: # String
+      ApplicationId: # String
+      # Tags:
+      #   - # Value: # String
+      #     # Key: # String
+      Name: # String

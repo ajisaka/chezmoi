@@ -1,0 +1,6 @@
+#!/bin/ruby
+
+# [zshのhistory fileの文字化けをなんとかする話 - jarp,](http://jarp.does.notwork.org/diary/201402c.html#201402231)
+
+ARGF.binmode
+print ARGF.read.gsub(/\x83(.)/n){ ($1.ord ^ 32).chr }

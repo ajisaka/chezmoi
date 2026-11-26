@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+envfile="$1"
+shift 1
+
+# p-args "$envfile"
+
+while read -r it
+do
+  # shellcheck disable=2163
+  export "$it"
+done < "$envfile"
+
+exec "$@"

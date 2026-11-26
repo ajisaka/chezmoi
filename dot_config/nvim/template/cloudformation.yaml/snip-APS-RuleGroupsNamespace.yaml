@@ -1,0 +1,12 @@
+  APSRuleGroupsNamespace:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-rulegroupsnamespace.html
+    Type: AWS::APS::RuleGroupsNamespace
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-aps-rulegroupsnamespace.html
+      Workspace: # String
+      Name: # String
+      Data: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

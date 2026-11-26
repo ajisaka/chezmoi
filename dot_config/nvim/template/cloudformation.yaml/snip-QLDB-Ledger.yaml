@@ -1,0 +1,12 @@
+  QLDBLedger:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qldb-ledger.html
+    Type: AWS::QLDB::Ledger
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qldb-ledger.html
+      PermissionsMode: # String
+      # DeletionProtection: # Boolean
+      # KmsKey: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String

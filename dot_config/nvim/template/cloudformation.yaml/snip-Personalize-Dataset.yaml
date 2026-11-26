@@ -1,0 +1,16 @@
+  PersonalizeDataset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-personalize-dataset.html
+    Type: AWS::Personalize::Dataset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-personalize-dataset.html
+      Name: # String
+      DatasetType: # String
+      DatasetGroupArn: # String
+      SchemaArn: # String
+      # DatasetImportJob:
+      #   # JobName: # String
+      #   # DatasetImportJobArn: # String
+      #   # DatasetArn: # String
+      #   # DataSource: # Json
+      #   # RoleArn: # String
+    # !GetAtt THIS.DatasetArn (String)

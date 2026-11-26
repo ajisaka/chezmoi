@@ -1,0 +1,23 @@
+  RDSOptionGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
+    Type: AWS::RDS::OptionGroup
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
+      # OptionGroupName: # String
+      OptionGroupDescription: # String
+      EngineName: # String
+      MajorEngineVersion: # String
+      # OptionConfigurations:
+      #   - # DBSecurityGroupMemberships:
+      #     # - # String
+      #     OptionName: # String
+      #     # OptionSettings:
+      #     # - # Name: # String
+      #     # # Value: # String
+      #     # OptionVersion: # String
+      #     # Port: # Integer
+      #     # VpcSecurityGroupMemberships:
+      #     # - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

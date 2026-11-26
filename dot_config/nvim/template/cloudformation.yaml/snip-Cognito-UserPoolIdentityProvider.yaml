@@ -1,0 +1,12 @@
+  CognitoUserPoolIdentityProvider:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolidentityprovider.html
+    Type: AWS::Cognito::UserPoolIdentityProvider
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolidentityprovider.html
+      ProviderName: # String
+      UserPoolId: # String
+      # AttributeMapping: # Json
+      # ProviderDetails: # Json
+      ProviderType: # String
+      # IdpIdentifiers:
+      #   - # String

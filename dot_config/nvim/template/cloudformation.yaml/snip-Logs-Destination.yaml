@@ -1,0 +1,10 @@
+  LogsDestination:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html
+    Type: AWS::Logs::Destination
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html
+      DestinationName: # String
+      # DestinationPolicy: # String
+      RoleArn: # String
+      TargetArn: # String
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,34 @@
+  AppStreamStack:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html
+    Type: AWS::AppStream::Stack
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html
+      # Description: # String
+      # StorageConnectors:
+      #   - # Domains:
+      #     # - # String
+      #     # ResourceIdentifier: # String
+      #     ConnectorType: # String
+      # DeleteStorageConnectors: # Boolean
+      # EmbedHostDomains:
+      #   - # String
+      # UserSettings:
+      #   - Action: # String
+      #     Permission: # String
+      # AttributesToDelete:
+      #   - # String
+      # RedirectURL: # String
+      # StreamingExperienceSettings:
+      #   # PreferredProtocol: # String
+      # Name: # String
+      # FeedbackURL: # String
+      # ApplicationSettings:
+      #   # SettingsGroup: # String
+      #   Enabled: # Boolean
+      # DisplayName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # AccessEndpoints:
+      #   - EndpointType: # String
+      #     VpceId: # String

@@ -1,0 +1,12 @@
+  ApiGatewayV2IntegrationResponse:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html
+    Type: AWS::ApiGatewayV2::IntegrationResponse
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integrationresponse.html
+      # ResponseTemplates: # Json
+      # TemplateSelectionExpression: # String
+      # ResponseParameters: # Json
+      # ContentHandlingStrategy: # String
+      IntegrationId: # String
+      IntegrationResponseKey: # String
+      ApiId: # String

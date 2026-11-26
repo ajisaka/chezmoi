@@ -1,0 +1,19 @@
+  CURReportDefinition:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cur-reportdefinition.html
+    Type: AWS::CUR::ReportDefinition
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cur-reportdefinition.html
+      ReportName: # String
+      TimeUnit: # String
+      Format: # String
+      Compression: # String
+      # AdditionalSchemaElements:
+      #   - # String
+      S3Bucket: # String
+      S3Prefix: # String
+      S3Region: # String
+      # AdditionalArtifacts:
+      #   - # String
+      RefreshClosedReports: # Boolean
+      ReportVersioning: # String
+      # BillingViewArn: # String

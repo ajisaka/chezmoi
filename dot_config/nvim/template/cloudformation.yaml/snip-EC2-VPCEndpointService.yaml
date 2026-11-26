@@ -1,0 +1,12 @@
+  EC2VPCEndpointService:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html
+    Type: AWS::EC2::VPCEndpointService
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html
+      # NetworkLoadBalancerArns:
+      #   - # String
+      # PayerResponsibility: # String
+      # AcceptanceRequired: # Boolean
+      # ContributorInsightsEnabled: # Boolean
+      # GatewayLoadBalancerArns:
+      #   - # String

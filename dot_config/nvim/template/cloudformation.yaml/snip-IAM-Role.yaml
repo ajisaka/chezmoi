@@ -1,0 +1,21 @@
+  IAMRole:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+    Type: AWS::IAM::Role
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
+      AssumeRolePolicyDocument: # Json
+      # Description: # String
+      # ManagedPolicyArns:
+      #   - # String
+      # MaxSessionDuration: # Integer
+      # Path: # String
+      # PermissionsBoundary: # String
+      # Policies:
+      #   - PolicyDocument: # Json
+      #     PolicyName: # String
+      # RoleName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.RoleId (String)

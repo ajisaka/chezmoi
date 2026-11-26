@@ -1,0 +1,50 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+# exec 5>> /tmp/xmosh/shell-script-debug.out
+# BASH_XTRACEFD="5"
+# PS4='$LINENO: '
+# set -x
+
+common_packages=(lazygit uv yazi tree-sitter-cli)
+private_packages=(age)
+linux_packages=(hyprland hyprland-guiutils)
+
+[[[ if eq .chezmoi.os "linux" ]]]
+  echo "Installing apps for Linux... (pacman)"
+  sudo pacman -S --needed "${common_packages[@]}" "${linux_packages[@]}"
+[[[ else if eq .chezmoi.os "darwin" ]]]
+  echo "Installing apps for macOS... (brew)"
+  brew install \
+    "${common_packages[@]}" \
+    node \
+    coreutils \
+    findutils \
+    util-linux \
+    font-agave-nerd-font \
+    font-sf-mono \
+    jannis-baum/tap/vivify \
+    daipeihust/tap/im-select
+[[[ end ]]]
+
+[[[- if has .chezmoi.hostname .hosts.private ]]]
+  go install github.com/gamoutatsumi/mpd-mcp-server@latest
+  uv tool install llm
+  uv tool install git-remote-codecommit
+  uv tool install claude-history
+  uv tool install huggingface_hub
+
+  go install github.com/github/github-mcp-server/cmd/github-mcp-server@latest
+  [[[ if eq .chezmoi.os "linux" ]]]
+    sudo pacman -S --needed "${private_packages[@]}"
+  [[[ else if eq .chezmoi.os "darwin" ]]]
+    brew install "${private_packages[@]}"
+  [[[ end ]]]
+[[[- end ]]]
+
+uv tool install git+https://github.com/anekos/puls
+cargo install --locked --git https://github.com/watiko/zsh-history-utils
+ya pkg add yazi-rs/plugins:piper ||:

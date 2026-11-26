@@ -1,0 +1,12 @@
+  IoTCertificate:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
+    Type: AWS::IoT::Certificate
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
+      # CACertificatePem: # String
+      # CertificatePem: # String
+      # CertificateSigningRequest: # String
+      # CertificateMode: # String
+      Status: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.Arn (String)

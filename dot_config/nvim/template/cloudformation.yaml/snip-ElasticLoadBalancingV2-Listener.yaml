@@ -1,0 +1,60 @@
+  ElasticLoadBalancingV2Listener:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
+      # SslPolicy: # String
+      LoadBalancerArn: # String
+      DefaultActions:
+        - # Order: # Integer
+          # TargetGroupArn: # String
+          # FixedResponseConfig:
+          #   # ContentType: # String
+          #   StatusCode: # String
+          #   # MessageBody: # String
+          # AuthenticateCognitoConfig:
+          #   # OnUnauthenticatedRequest: # String
+          #   UserPoolClientId: # String
+          #   UserPoolDomain: # String
+          #   # SessionTimeout: # String
+          #   # Scope: # String
+          #   # SessionCookieName: # String
+          #   UserPoolArn: # String
+          #   # AuthenticationRequestExtraParams:
+          #   # ANY_KEY: # String
+          Type: # String
+          # RedirectConfig:
+          #   # Path: # String
+          #   # Query: # String
+          #   # Port: # String
+          #   # Host: # String
+          #   # Protocol: # String
+          #   StatusCode: # String
+          # ForwardConfig:
+          #   # TargetGroupStickinessConfig:
+          #   # # Enabled: # Boolean
+          #   # # DurationSeconds: # Integer
+          #   # TargetGroups:
+          #   # - # TargetGroupArn: # String
+          #   # # Weight: # Integer
+          # AuthenticateOidcConfig:
+          #   # OnUnauthenticatedRequest: # String
+          #   TokenEndpoint: # String
+          #   # SessionTimeout: # String
+          #   # Scope: # String
+          #   Issuer: # String
+          #   # ClientSecret: # String
+          #   UserInfoEndpoint: # String
+          #   ClientId: # String
+          #   AuthorizationEndpoint: # String
+          #   # SessionCookieName: # String
+          #   # UseExistingClientSecret: # Boolean
+          #   # AuthenticationRequestExtraParams:
+          #   # ANY_KEY: # String
+      # Port: # Integer
+      # Certificates:
+      #   - # CertificateArn: # String
+      # Protocol: # String
+      # AlpnPolicy:
+      #   - # String
+    # !GetAtt THIS.ListenerArn (String)

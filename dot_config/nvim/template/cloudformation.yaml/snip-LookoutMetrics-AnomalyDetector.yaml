@@ -1,0 +1,76 @@
+  LookoutMetricsAnomalyDetector:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutmetrics-anomalydetector.html
+    Type: AWS::LookoutMetrics::AnomalyDetector
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lookoutmetrics-anomalydetector.html
+      # AnomalyDetectorName: # String
+      # AnomalyDetectorDescription: # String
+      # AnomalyDetectorConfig:
+      #   AnomalyDetectorFrequency: # String
+      MetricSetList:
+        - MetricSetName: # String
+          # MetricSetDescription: # String
+          # MetricSource:
+          #   # S3SourceConfig:
+          #   # RoleArn: # String
+          #   # # TemplatedPathList:
+          #   #   # - # String
+          #   # # HistoricalDataPathList:
+          #   #   # - # String
+          #   # # FileFormatDescriptor:
+          #   #   # # CsvFormatDescriptor:
+          #   #   #   # # FileCompression: # String
+          #   #   #   # # Charset: # String
+          #   #   #   # # Delimiter: # String
+          #   #   #   # # HeaderList:
+          #   #   #   #   # - # String
+          #   #   #   # # QuoteSymbol: # String
+          #   #   #   # # ContainsHeader: # Boolean
+          #   #   # # JsonFormatDescriptor:
+          #   #   #   # # FileCompression: # String
+          #   #   #   # # Charset: # String
+          #   # RDSSourceConfig:
+          #   # DBInstanceIdentifier: # String
+          #   # DatabaseHost: # String
+          #   # DatabasePort: # Integer
+          #   # SecretManagerArn: # String
+          #   # DatabaseName: # String
+          #   # TableName: # String
+          #   # RoleArn: # String
+          #   # # VpcConfiguration:
+          #   #   # SubnetIdList:
+          #   #   # - # String
+          #   #   # SecurityGroupIdList:
+          #   #   # - # String
+          #   # RedshiftSourceConfig:
+          #   # ClusterIdentifier: # String
+          #   # DatabaseHost: # String
+          #   # DatabasePort: # Integer
+          #   # SecretManagerArn: # String
+          #   # DatabaseName: # String
+          #   # TableName: # String
+          #   # RoleArn: # String
+          #   # # VpcConfiguration:
+          #   #   # SubnetIdList:
+          #   #   # - # String
+          #   #   # SecurityGroupIdList:
+          #   #   # - # String
+          #   # CloudwatchConfig:
+          #   # RoleArn: # String
+          #   # AppFlowConfig:
+          #   # RoleArn: # String
+          #   # FlowName: # String
+          MetricList:
+            - MetricName: # String
+              AggregationFunction: # String
+              # Namespace: # String
+          # Offset: # Integer
+          # TimestampColumn:
+          #   # ColumnName: # String
+          #   # ColumnFormat: # String
+          # DimensionList:
+          #   - # String
+          # MetricSetFrequency: # String
+          # Timezone: # String
+      # KmsKeyArn: # String
+    # !GetAtt THIS.Arn (String)

@@ -1,0 +1,13 @@
+  AppRunnerObservabilityConfiguration:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-observabilityconfiguration.html
+    Type: AWS::AppRunner::ObservabilityConfiguration
+    Properties:
+      # ObservabilityConfigurationName: # String
+      # TraceConfiguration:
+      #   Vendor: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.ObservabilityConfigurationArn (String)
+    # !GetAtt THIS.ObservabilityConfigurationRevision (Integer)
+    # !GetAtt THIS.Latest (Boolean)

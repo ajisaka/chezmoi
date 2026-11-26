@@ -1,0 +1,16 @@
+  ServerlessSimpleTable:
+    # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesssimpletable
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlesssimpletable
+      # PrimaryKey:
+      #   # Name: # String
+      #   Type: # String
+      # ProvisionedThroughput:
+      #   # ReadCapacityUnits: # Integer
+      #   WriteCapacityUnits: # Integer
+      # Tags:
+      #   ANY_KEY: # String
+      # TableName: # String
+      # SSESpecification:
+      #   # SSEEnabled: # Boolean

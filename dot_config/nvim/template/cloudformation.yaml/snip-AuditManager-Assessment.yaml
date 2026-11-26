@@ -1,0 +1,33 @@
+  AuditManagerAssessment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-auditmanager-assessment.html
+    Type: AWS::AuditManager::Assessment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-auditmanager-assessment.html
+      # FrameworkId: # String
+      # AwsAccount:
+      #   # Id: # String
+      #   # EmailAddress: # String
+      #   # Name: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Roles:
+      #   - # RoleArn: # String
+      #     # RoleType: # String
+      # Scope:
+      #   # AwsAccounts:
+      #   # - # Id: # String
+      #   # # EmailAddress: # String
+      #   # # Name: # String
+      #   # AwsServices:
+      #   # - # ServiceName: # String
+      # AssessmentReportsDestination:
+      #   # Destination: # String
+      #   # DestinationType: # String
+      # Status: # String
+      # Name: # String
+      # Description: # String
+    # !GetAtt THIS.AssessmentId (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Delegations (List)
+    # !GetAtt THIS.CreationTime (Double)

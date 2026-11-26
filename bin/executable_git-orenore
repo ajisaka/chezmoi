@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+root=$(git rev-parse --show-toplevel)
+dot_git="${root}/.git"
+
+while [ -f "$dot_git" ]
+do
+  dot_git="$(head -1 "$dot_git" | sed 's/gitdir: //')"
+done
+
+mkdir -p "$dot_git/info"
+
+if [ -p /dev/stdin ]
+then
+  cat >> "$dot_git/info/exclude"
+else
+  if [ "$#" -gt 0 ]
+  then
+    for it in "$@"
+    do
+      abspath="$(cd "$(dirname "$it")" && pwd)/$(basename "$it")"
+      relpath="${abspath#"$root"/}"
+      echo "$relpath" | tee -a "$dot_git/info/exclude"
+      echo "Added: ${relpath}"
+    done
+  fi
+fi

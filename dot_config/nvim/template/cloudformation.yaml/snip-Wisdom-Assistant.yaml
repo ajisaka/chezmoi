@@ -1,0 +1,15 @@
+  WisdomAssistant:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wisdom-assistant.html
+    Type: AWS::Wisdom::Assistant
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wisdom-assistant.html
+      Type: # String
+      # Description: # String
+      # ServerSideEncryptionConfiguration:
+      #   # KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+    # !GetAtt THIS.AssistantArn (String)
+    # !GetAtt THIS.AssistantId (String)

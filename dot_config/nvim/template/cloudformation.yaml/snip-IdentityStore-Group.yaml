@@ -1,0 +1,8 @@
+  IdentityStoreGroup:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-identitystore-group.html
+    Type: AWS::IdentityStore::Group
+    Properties:
+      # Description: # String
+      DisplayName: # String
+      IdentityStoreId: # String
+    # !GetAtt THIS.GroupId (String)

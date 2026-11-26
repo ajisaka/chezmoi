@@ -1,0 +1,12 @@
+  ApiGatewayVpcLink:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
+    Type: AWS::ApiGateway::VpcLink
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
+      # Description: # String
+      TargetArns:
+        - # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String

@@ -1,0 +1,45 @@
+  ConfigOrganizationConfigRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconfigrule.html
+    Type: AWS::Config::OrganizationConfigRule
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-organizationconfigrule.html
+      # OrganizationManagedRuleMetadata:
+      #   # TagKeyScope: # String
+      #   # TagValueScope: # String
+      #   # Description: # String
+      #   # ResourceIdScope: # String
+      #   RuleIdentifier: # String
+      #   # ResourceTypesScope:
+      #   # - # String
+      #   # MaximumExecutionFrequency: # String
+      #   # InputParameters: # String
+      OrganizationConfigRuleName: # String
+      # OrganizationCustomRuleMetadata:
+      #   # TagKeyScope: # String
+      #   # TagValueScope: # String
+      #   # Description: # String
+      #   # ResourceIdScope: # String
+      #   LambdaFunctionArn: # String
+      #   OrganizationConfigRuleTriggerTypes:
+      #     - # String
+      #   # ResourceTypesScope:
+      #   # - # String
+      #   # MaximumExecutionFrequency: # String
+      #   # InputParameters: # String
+      # ExcludedAccounts:
+      #   - # String
+      # OrganizationCustomCodeRuleMetadata:
+      #   # TagKeyScope: # String
+      #   # TagValueScope: # String
+      #   Runtime: # String
+      #   # Description: # String
+      #   CodeText: # String
+      #   # ResourceIdScope: # String
+      #   # OrganizationConfigRuleTriggerTypes:
+      #   # - # String
+      #   # DebugLogDeliveryAccounts:
+      #   # - # String
+      #   # ResourceTypesScope:
+      #   # - # String
+      #   # MaximumExecutionFrequency: # String
+      #   # InputParameters: # String

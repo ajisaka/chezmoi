@@ -1,0 +1,65 @@
+#!/usr/bin/ruby
+# vim: set fileencoding=utf-8 :
+
+require 'uri'
+require 'optparse'
+
+
+class Options
+  attr_reader :encoding, :targets, :keep_linebreaks, :keep_chars
+
+  def initialize (argv)
+    @encoding = 'UTF-8'
+    @keep_chars = []
+
+    OptionParser.new do
+      |opt|
+      opt.on_head('URL エンコードします')
+      opt.on('-e <ENCODING>',  'Character encoding') {|v| @encoding = v }
+      opt.on('-r',  'Keep line breaks') {|v| @keep_linebreaks = true }
+      opt.on('-k <CHARS>',  'Characters to keep unencoded (e.g. -k /:@)') {|v| @keep_chars = v.chars }
+      opt.parse!(argv)
+    end
+
+    @targets = argv.dup
+  end
+end
+
+class String
+  def unplus
+    self.gsub('+', '%20')
+  end
+
+  def restore_chars(chars)
+    result = self
+    chars.each do |ch|
+      encoded = URI.encode_www_form_component(ch)
+      result = result.gsub(encoded, ch)
+    end
+    result
+  end
+end
+
+
+options = Options.new(ARGV)
+
+def encode(str, options)
+  URI.encode_www_form_component(str.encode(options.encoding)).unplus.restore_chars(options.keep_chars)
+end
+
+if STDIN.tty? or !options.targets.empty?
+  options.targets.each do
+    |arg|
+    puts(encode(arg, options))
+  end
+else
+  if options.keep_linebreaks
+    ARGF.readlines.each do
+      |line|
+      line.chomp!
+      puts(encode(line, options))
+    end
+  else
+    puts(encode(ARGF.read, options))
+  end
+end

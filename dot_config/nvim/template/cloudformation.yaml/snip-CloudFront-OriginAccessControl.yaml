@@ -1,0 +1,11 @@
+  CloudFrontOriginAccessControl:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-originaccesscontrol.html
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      # OriginAccessControlConfig:
+      #   Name: # String
+      #   # Description: # String
+      #   SigningProtocol: # String
+      #   SigningBehavior: # String
+      #   OriginAccessControlOriginType: # String
+    # !GetAtt THIS.Id (String)

@@ -1,0 +1,11 @@
+  KinesisStreamConsumer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-streamconsumer.html
+    Type: AWS::Kinesis::StreamConsumer
+    Properties:
+      ConsumerName: # String
+      StreamARN: # String
+    # !GetAtt THIS.ConsumerCreationTimestamp (String)
+    # !GetAtt THIS.ConsumerName (String)
+    # !GetAtt THIS.ConsumerARN (String)
+    # !GetAtt THIS.ConsumerStatus (String)
+    # !GetAtt THIS.StreamARN (String)

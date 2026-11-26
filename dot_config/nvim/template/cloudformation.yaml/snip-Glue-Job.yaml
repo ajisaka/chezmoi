@@ -1,0 +1,32 @@
+  GlueJob:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
+    Type: AWS::Glue::Job
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
+      # Connections:
+      #   # Connections:
+      #   # - # String
+      # MaxRetries: # Double
+      # Description: # String
+      # Timeout: # Integer
+      # AllocatedCapacity: # Double
+      # Name: # String
+      Role: # String
+      # DefaultArguments: # Json
+      # NotificationProperty:
+      #   # NotifyDelayAfter: # Integer
+      # WorkerType: # String
+      # ExecutionClass: # String
+      # LogUri: # String
+      # Command:
+      #   # PythonVersion: # String
+      #   # ScriptLocation: # String
+      #   # Name: # String
+      # GlueVersion: # String
+      # ExecutionProperty:
+      #   # MaxConcurrentRuns: # Double
+      # SecurityConfiguration: # String
+      # NumberOfWorkers: # Integer
+      # Tags: # Json
+      # MaxCapacity: # Double
+      # NonOverridableArguments: # Json

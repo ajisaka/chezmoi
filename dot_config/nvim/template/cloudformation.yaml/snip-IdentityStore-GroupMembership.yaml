@@ -1,0 +1,9 @@
+  IdentityStoreGroupMembership:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-identitystore-groupmembership.html
+    Type: AWS::IdentityStore::GroupMembership
+    Properties:
+      GroupId: # String
+      IdentityStoreId: # String
+      # MemberId:
+      #   UserId: # String
+    # !GetAtt THIS.MembershipId (String)

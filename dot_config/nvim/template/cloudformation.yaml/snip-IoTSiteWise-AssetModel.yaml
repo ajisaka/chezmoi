@@ -1,0 +1,76 @@
+  IoTSiteWiseAssetModel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-assetmodel.html
+    Type: AWS::IoTSiteWise::AssetModel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-assetmodel.html
+      AssetModelName: # String
+      # AssetModelDescription: # String
+      # AssetModelProperties:
+      #   - LogicalId: # String
+      #     Name: # String
+      #     DataType: # String
+      #     # DataTypeSpec: # String
+      #     # Unit: # String
+      #     # Type:
+      #     # TypeName: # String
+      #     # # Attribute:
+      #     #   # # DefaultValue: # String
+      #     # # Transform:
+      #     #   # Expression: # String
+      #     #   # Variables:
+      #     #   # - Name: # String
+      #     #   # # Value:
+      #     #   #       # PropertyLogicalId: # String
+      #     #   #       # # HierarchyLogicalId: # String
+      #     # # Metric:
+      #     #   # Expression: # String
+      #     #   # Variables:
+      #     #   # - Name: # String
+      #     #   # # Value:
+      #     #   #       # PropertyLogicalId: # String
+      #     #   #       # # HierarchyLogicalId: # String
+      #     #   # # Window:
+      #     #   #   # # Tumbling:
+      #     #   #   #   # Interval: # String
+      #     #   #   #   # # Offset: # String
+      # AssetModelCompositeModels:
+      #   - # Description: # String
+      #     Name: # String
+      #     Type: # String
+      #     # CompositeModelProperties:
+      #     # - LogicalId: # String
+      #     # Name: # String
+      #     # DataType: # String
+      #     # # DataTypeSpec: # String
+      #     # # Unit: # String
+      #     # # Type:
+      #     #     # TypeName: # String
+      #     #     # # Attribute:
+      #     #     #   # # DefaultValue: # String
+      #     #     # # Transform:
+      #     #     #   # Expression: # String
+      #     #     #   # Variables:
+      #     #     #   # - Name: # String
+      #     #     #   # # Value:
+      #     #     #   #       # PropertyLogicalId: # String
+      #     #     #   #       # # HierarchyLogicalId: # String
+      #     #     # # Metric:
+      #     #     #   # Expression: # String
+      #     #     #   # Variables:
+      #     #     #   # - Name: # String
+      #     #     #   # # Value:
+      #     #     #   #       # PropertyLogicalId: # String
+      #     #     #   #       # # HierarchyLogicalId: # String
+      #     #     #   # # Window:
+      #     #     #   #   # # Tumbling:
+      #     #     #   #   #   # Interval: # String
+      #     #     #   #   #   # # Offset: # String
+      # AssetModelHierarchies:
+      #   - LogicalId: # String
+      #     Name: # String
+      #     ChildAssetModelId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AssetModelId (String)
+    # !GetAtt THIS.AssetModelArn (String)

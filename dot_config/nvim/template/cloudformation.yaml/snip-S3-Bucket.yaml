@@ -1,0 +1,218 @@
+  S3Bucket:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+    Type: AWS::S3::Bucket
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+      # AccelerateConfiguration:
+      #   AccelerationStatus: # String
+      # AccessControl: # String
+      # AnalyticsConfigurations:
+      #   - Id: # String
+      #     # Prefix: # String
+      #     # StorageClassAnalysis:
+      #     # # DataExport:
+      #     #   # # Destination:
+      #     #   #   # # BucketAccountId: # String
+      #     #   #   # BucketArn: # String
+      #     #   #   # Format: # String
+      #     #   #   # # Prefix: # String
+      #     #   # OutputSchemaVersion: # String
+      #     # TagFilters:
+      #     # - Key: # String
+      #     # Value: # String
+      # BucketEncryption:
+      #   ServerSideEncryptionConfiguration:
+      #     - # BucketKeyEnabled: # Boolean
+      #       # ServerSideEncryptionByDefault:
+      #       # # KMSMasterKeyID: # String
+      #       # SSEAlgorithm: # String
+      # BucketName: # String
+      # CorsConfiguration:
+      #   CorsRules:
+      #     - # AllowedHeaders:
+      #       # - # String
+      #       AllowedMethods:
+      #         - # String
+      #       AllowedOrigins:
+      #         - # String
+      #       # ExposedHeaders:
+      #       # - # String
+      #       # Id: # String
+      #       # MaxAge: # Integer
+      # IntelligentTieringConfigurations:
+      #   - Id: # String
+      #     # Prefix: # String
+      #     Status: # String
+      #     # TagFilters:
+      #     # - Key: # String
+      #     # Value: # String
+      #     Tierings:
+      #       - AccessTier: # String
+      #         Days: # Integer
+      # InventoryConfigurations:
+      #   - # Destination:
+      #     # # BucketAccountId: # String
+      #     # BucketArn: # String
+      #     # Format: # String
+      #     # # Prefix: # String
+      #     Enabled: # Boolean
+      #     Id: # String
+      #     IncludedObjectVersions: # String
+      #     # OptionalFields:
+      #     # - # String
+      #     # Prefix: # String
+      #     ScheduleFrequency: # String
+      # LifecycleConfiguration:
+      #   Rules:
+      #     - # AbortIncompleteMultipartUpload:
+      #       # DaysAfterInitiation: # Integer
+      #       # ExpirationDate: # Timestamp
+      #       # ExpirationInDays: # Integer
+      #       # ExpiredObjectDeleteMarker: # Boolean
+      #       # Id: # String
+      #       # NoncurrentVersionExpiration:
+      #       # # NewerNoncurrentVersions: # Integer
+      #       # NoncurrentDays: # Integer
+      #       # NoncurrentVersionExpirationInDays: # Integer
+      #       # NoncurrentVersionTransition:
+      #       # # NewerNoncurrentVersions: # Integer
+      #       # StorageClass: # String
+      #       # TransitionInDays: # Integer
+      #       # NoncurrentVersionTransitions:
+      #       # - # NewerNoncurrentVersions: # Integer
+      #       # StorageClass: # String
+      #       # TransitionInDays: # Integer
+      #       # ObjectSizeGreaterThan: # Long
+      #       # ObjectSizeLessThan: # Long
+      #       # Prefix: # String
+      #       Status: # String
+      #       # TagFilters:
+      #       # - Key: # String
+      #       # Value: # String
+      #       # Transition:
+      #       # StorageClass: # String
+      #       # # TransitionDate: # Timestamp
+      #       # # TransitionInDays: # Integer
+      #       # Transitions:
+      #       # - StorageClass: # String
+      #       # # TransitionDate: # Timestamp
+      #       # # TransitionInDays: # Integer
+      # LoggingConfiguration:
+      #   # DestinationBucketName: # String
+      #   # LogFilePrefix: # String
+      # MetricsConfigurations:
+      #   - # AccessPointArn: # String
+      #     Id: # String
+      #     # Prefix: # String
+      #     # TagFilters:
+      #     # - Key: # String
+      #     # Value: # String
+      # NotificationConfiguration:
+      #   # EventBridgeConfiguration:
+      #   # # EventBridgeEnabled: # Boolean
+      #   # LambdaConfigurations:
+      #   # - Event: # String
+      #   # # Filter:
+      #   #     # # S3Key:
+      #   #     #   # Rules:
+      #   #     #   # - Name: # String
+      #   #     #   # Value: # String
+      #   # Function: # String
+      #   # QueueConfigurations:
+      #   # - Event: # String
+      #   # # Filter:
+      #   #     # # S3Key:
+      #   #     #   # Rules:
+      #   #     #   # - Name: # String
+      #   #     #   # Value: # String
+      #   # Queue: # String
+      #   # TopicConfigurations:
+      #   # - Event: # String
+      #   # # Filter:
+      #   #     # # S3Key:
+      #   #     #   # Rules:
+      #   #     #   # - Name: # String
+      #   #     #   # Value: # String
+      #   # Topic: # String
+      # ObjectLockConfiguration:
+      #   # ObjectLockEnabled: # String
+      #   # Rule:
+      #   # # DefaultRetention:
+      #   #   # # Days: # Integer
+      #   #   # # Mode: # String
+      #   #   # # Years: # Integer
+      # ObjectLockEnabled: # Boolean
+      # OwnershipControls:
+      #   Rules:
+      #     - # ObjectOwnership: # String
+      # PublicAccessBlockConfiguration:
+      #   # BlockPublicAcls: # Boolean
+      #   # BlockPublicPolicy: # Boolean
+      #   # IgnorePublicAcls: # Boolean
+      #   # RestrictPublicBuckets: # Boolean
+      # ReplicationConfiguration:
+      #   Role: # String
+      #   Rules:
+      #     - # DeleteMarkerReplication:
+      #       # # Status: # String
+      #       # Destination:
+      #       # # AccessControlTranslation:
+      #       #   # Owner: # String
+      #       # # Account: # String
+      #       # Bucket: # String
+      #       # # EncryptionConfiguration:
+      #       #   # ReplicaKmsKeyID: # String
+      #       # # Metrics:
+      #       #   # # EventThreshold:
+      #       #   #   # Minutes: # Integer
+      #       #   # Status: # String
+      #       # # ReplicationTime:
+      #       #   # Status: # String
+      #       #   # # Time:
+      #       #   #   # Minutes: # Integer
+      #       # # StorageClass: # String
+      #       # Filter:
+      #       # # And:
+      #       #   # # Prefix: # String
+      #       #   # # TagFilters:
+      #       #   #   # - Key: # String
+      #       #   #   # Value: # String
+      #       # # Prefix: # String
+      #       # # TagFilter:
+      #       #   # Key: # String
+      #       #   # Value: # String
+      #       # Id: # String
+      #       # Prefix: # String
+      #       # Priority: # Integer
+      #       # SourceSelectionCriteria:
+      #       # # ReplicaModifications:
+      #       #   # Status: # String
+      #       # # SseKmsEncryptedObjects:
+      #       #   # Status: # String
+      #       Status: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # VersioningConfiguration:
+      #   Status: # String
+      # WebsiteConfiguration:
+      #   # ErrorDocument: # String
+      #   # IndexDocument: # String
+      #   # RedirectAllRequestsTo:
+      #   # HostName: # String
+      #   # # Protocol: # String
+      #   # RoutingRules:
+      #   # - # RedirectRule:
+      #   #     # # HostName: # String
+      #   #     # # HttpRedirectCode: # String
+      #   #     # # Protocol: # String
+      #   #     # # ReplaceKeyPrefixWith: # String
+      #   #     # # ReplaceKeyWith: # String
+      #   # # RoutingRuleCondition:
+      #   #     # # HttpErrorCodeReturnedEquals: # String
+      #   #     # # KeyPrefixEquals: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.DomainName (String)
+    # !GetAtt THIS.DualStackDomainName (String)
+    # !GetAtt THIS.RegionalDomainName (String)
+    # !GetAtt THIS.WebsiteURL (String)

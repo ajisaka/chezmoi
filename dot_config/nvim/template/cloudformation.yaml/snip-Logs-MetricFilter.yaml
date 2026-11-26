@@ -1,0 +1,17 @@
+  LogsMetricFilter:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
+    Type: AWS::Logs::MetricFilter
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
+      # FilterName: # String
+      FilterPattern: # String
+      LogGroupName: # String
+      MetricTransformations:
+        - # DefaultValue: # Double
+          MetricName: # String
+          MetricNamespace: # String
+          MetricValue: # String
+          # Unit: # String
+          # Dimensions:
+          #   - Key: # String
+          #     Value: # String

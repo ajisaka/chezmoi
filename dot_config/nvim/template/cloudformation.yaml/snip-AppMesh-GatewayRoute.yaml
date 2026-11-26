@@ -1,0 +1,125 @@
+  AppMeshGatewayRoute:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-gatewayroute.html
+    Type: AWS::AppMesh::GatewayRoute
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-gatewayroute.html
+      MeshName: # String
+      VirtualGatewayName: # String
+      # MeshOwner: # String
+      # GatewayRouteName: # String
+      # Spec:
+      #   # HttpRoute:
+      #   # # Action:
+      #   #   # # Target:
+      #   #   #   # # Port: # Integer
+      #   #   #   # # VirtualService:
+      #   #   #   #   # VirtualServiceName: # String
+      #   #   # # Rewrite:
+      #   #   #   # # Path:
+      #   #   #   #   # # Exact: # String
+      #   #   #   # # Hostname:
+      #   #   #   #   # # DefaultTargetHostname: # String
+      #   #   #   # # Prefix:
+      #   #   #   #   # # Value: # String
+      #   #   #   #   # # DefaultPrefix: # String
+      #   # # Match:
+      #   #   # # Path:
+      #   #   #   # # Regex: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Headers:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      #   #   # # Port: # Integer
+      #   #   # # Hostname:
+      #   #   #   # # Suffix: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Prefix: # String
+      #   #   # # Method: # String
+      #   #   # # QueryParameters:
+      #   #   #   # - Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Exact: # String
+      #   # Priority: # Integer
+      #   # Http2Route:
+      #   # # Action:
+      #   #   # # Target:
+      #   #   #   # # Port: # Integer
+      #   #   #   # # VirtualService:
+      #   #   #   #   # VirtualServiceName: # String
+      #   #   # # Rewrite:
+      #   #   #   # # Path:
+      #   #   #   #   # # Exact: # String
+      #   #   #   # # Hostname:
+      #   #   #   #   # # DefaultTargetHostname: # String
+      #   #   #   # # Prefix:
+      #   #   #   #   # # Value: # String
+      #   #   #   #   # # DefaultPrefix: # String
+      #   # # Match:
+      #   #   # # Path:
+      #   #   #   # # Regex: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Headers:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      #   #   # # Port: # Integer
+      #   #   # # Hostname:
+      #   #   #   # # Suffix: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Prefix: # String
+      #   #   # # Method: # String
+      #   #   # # QueryParameters:
+      #   #   #   # - Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Exact: # String
+      #   # GrpcRoute:
+      #   # # Action:
+      #   #   # # Target:
+      #   #   #   # # Port: # Integer
+      #   #   #   # # VirtualService:
+      #   #   #   #   # VirtualServiceName: # String
+      #   #   # # Rewrite:
+      #   #   #   # # Hostname:
+      #   #   #   #   # # DefaultTargetHostname: # String
+      #   # # Match:
+      #   #   # # ServiceName: # String
+      #   #   # # Port: # Integer
+      #   #   # # Hostname:
+      #   #   #   # # Suffix: # String
+      #   #   #   # # Exact: # String
+      #   #   # # Metadata:
+      #   #   #   # - # Invert: # Boolean
+      #   #   #   # Name: # String
+      #   #   #   # # Match:
+      #   #   #   #     # # Suffix: # String
+      #   #   #   #     # # Regex: # String
+      #   #   #   #     # # Exact: # String
+      #   #   #   #     # # Prefix: # String
+      #   #   #   #     # # Range:
+      #   #   #   #     #   # Start: # Integer
+      #   #   #   #     #   # End: # Integer
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Uid (String)
+    # !GetAtt THIS.MeshName (String)
+    # !GetAtt THIS.VirtualGatewayName (String)
+    # !GetAtt THIS.MeshOwner (String)
+    # !GetAtt THIS.ResourceOwner (String)
+    # !GetAtt THIS.GatewayRouteName (String)
+    # !GetAtt THIS.Arn (String)

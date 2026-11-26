@@ -1,0 +1,14 @@
+  SageMakerDeviceFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-devicefleet.html
+    Type: AWS::SageMaker::DeviceFleet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-devicefleet.html
+      # Description: # String
+      DeviceFleetName: # String
+      # OutputConfig:
+      #   S3OutputLocation: # String
+      #   # KmsKeyId: # String
+      RoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String

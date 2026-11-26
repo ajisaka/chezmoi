@@ -1,0 +1,23 @@
+  NetworkManagerConnectAttachment:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-connectattachment.html
+    Type: AWS::NetworkManager::ConnectAttachment
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkmanager-connectattachment.html
+      # CoreNetworkId: # String
+      # EdgeLocation: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # TransportAttachmentId: # String
+      # Options:
+      #   # Protocol: # String
+    # !GetAtt THIS.CoreNetworkArn (String)
+    # !GetAtt THIS.AttachmentId (String)
+    # !GetAtt THIS.OwnerAccountId (String)
+    # !GetAtt THIS.AttachmentType (String)
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.ResourceArn (String)
+    # !GetAtt THIS.AttachmentPolicyRuleNumber (Integer)
+    # !GetAtt THIS.SegmentName (String)
+    # !GetAtt THIS.CreatedAt (String)
+    # !GetAtt THIS.UpdatedAt (String)

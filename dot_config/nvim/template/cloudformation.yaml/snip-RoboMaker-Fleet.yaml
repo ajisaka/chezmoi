@@ -1,0 +1,8 @@
+  RoboMakerFleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html
+    Type: AWS::RoboMaker::Fleet
+    Properties:
+      # Tags:
+      #   ANY_KEY: # String
+      # Name: # String
+    # !GetAtt THIS.Arn (String)

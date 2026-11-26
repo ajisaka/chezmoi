@@ -1,0 +1,9 @@
+  PinpointADMChannel:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-admchannel.html
+    Type: AWS::Pinpoint::ADMChannel
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-admchannel.html
+      ClientSecret: # String
+      # Enabled: # Boolean
+      ClientId: # String
+      ApplicationId: # String

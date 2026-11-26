@@ -1,0 +1,25 @@
+chezmoi:template:left-delimiter="[[[" right-delimiter=]]]
+#!/bin/bash
+
+set -euC
+# set -o pipefail
+
+function install() {
+  local repos="$1"
+  local skill_name="$2"
+
+  npx skills add \
+    "$repos" \
+    --global \
+    --agent claude-code \
+    --skill "$skill_name" \
+    --yes
+}
+
+# cat ~/.agents/.skill-lock.json | jq --raw-output '.skills|to_entries[]|(["install", .value.sourceUrl, .key]|join(" "))' PC
+
+install https://github.com/mattpocock/skills.git grill-me
+install https://github.com/vercel-labs/skills.git find-skills
+install https://github.com/mattpocock/skills.git grill-with-docs
+install https://github.com/addyosmani/agent-skills.git documentation-and-adrs
+install https://github.com/kambleakash0/agent-skills.git english-humanizer

@@ -1,0 +1,19 @@
+
+  FunctionInvokerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: events.amazonaws.com
+          Action: sts:AssumeRole
+      Path: /
+      Policies:
+        - PolicyName: function-invoker
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: lambda:*
+                Resource: '*'
+

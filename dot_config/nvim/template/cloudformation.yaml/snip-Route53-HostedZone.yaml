@@ -1,0 +1,18 @@
+  Route53HostedZone:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
+    Type: AWS::Route53::HostedZone
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
+      # HostedZoneConfig:
+      #   # Comment: # String
+      # HostedZoneTags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+      # QueryLoggingConfig:
+      #   CloudWatchLogsLogGroupArn: # String
+      # VPCs:
+      #   - VPCId: # String
+      #     VPCRegion: # String
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.NameServers (List)

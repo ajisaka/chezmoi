@@ -1,0 +1,27 @@
+  LakeFormationTagAssociation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lakeformation-tagassociation.html
+    Type: AWS::LakeFormation::TagAssociation
+    Properties:
+      # Resource:
+      #   # Catalog: # Json
+      #   # Database:
+      #   # CatalogId: # String
+      #   # Name: # String
+      #   # Table:
+      #   # CatalogId: # String
+      #   # DatabaseName: # String
+      #   # # Name: # String
+      #   # # TableWildcard: # Json
+      #   # TableWithColumns:
+      #   # CatalogId: # String
+      #   # DatabaseName: # String
+      #   # Name: # String
+      #   # ColumnNames:
+      #   # - # String
+      LFTags:
+        - CatalogId: # String
+          TagKey: # String
+          TagValues:
+            - # String
+    # !GetAtt THIS.ResourceIdentifier (String)
+    # !GetAtt THIS.TagsIdentifier (String)

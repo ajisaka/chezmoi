@@ -1,0 +1,25 @@
+  RedshiftScheduledAction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-scheduledaction.html
+    Type: AWS::Redshift::ScheduledAction
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-scheduledaction.html
+      ScheduledActionName: # String
+      # TargetAction:
+      #   # ResizeCluster:
+      #   # ClusterIdentifier: # String
+      #   # # ClusterType: # String
+      #   # # NodeType: # String
+      #   # # NumberOfNodes: # Integer
+      #   # # Classic: # Boolean
+      #   # PauseCluster:
+      #   # ClusterIdentifier: # String
+      #   # ResumeCluster:
+      #   # ClusterIdentifier: # String
+      # Schedule: # String
+      # IamRole: # String
+      # ScheduledActionDescription: # String
+      # StartTime: # String
+      # EndTime: # String
+      # Enable: # Boolean
+    # !GetAtt THIS.State (String)
+    # !GetAtt THIS.NextInvocations (List)

@@ -1,0 +1,22 @@
+  AccessAnalyzerAnalyzer:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-accessanalyzer-analyzer.html
+    Type: AWS::AccessAnalyzer::Analyzer
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-accessanalyzer-analyzer.html
+      # AnalyzerName: # String
+      # ArchiveRules:
+      #   - Filter:
+      #       - # Contains:
+      #         # - # String
+      #         # Eq:
+      #         # - # String
+      #         # Exists: # Boolean
+      #         Property: # String
+      #         # Neq:
+      #         # - # String
+      #     RuleName: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Type: # String
+    # !GetAtt THIS.Arn (String)

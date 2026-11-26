@@ -1,0 +1,34 @@
+  CloudTrailEventDataStore:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-eventdatastore.html
+    Type: AWS::CloudTrail::EventDataStore
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-eventdatastore.html
+      # AdvancedEventSelectors:
+      #   - # Name: # String
+      #     FieldSelectors:
+      #       - Field: # String
+      #         # Equals:
+      #         # - # String
+      #         # StartsWith:
+      #         # - # String
+      #         # EndsWith:
+      #         # - # String
+      #         # NotEquals:
+      #         # - # String
+      #         # NotStartsWith:
+      #         # - # String
+      #         # NotEndsWith:
+      #         # - # String
+      # MultiRegionEnabled: # Boolean
+      # Name: # String
+      # OrganizationEnabled: # Boolean
+      # RetentionPeriod: # Integer
+      # TerminationProtectionEnabled: # Boolean
+      # KmsKeyId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.CreatedTimestamp (String)
+    # !GetAtt THIS.EventDataStoreArn (String)
+    # !GetAtt THIS.Status (String)
+    # !GetAtt THIS.UpdatedTimestamp (String)

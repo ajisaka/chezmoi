@@ -1,0 +1,306 @@
+  IoTTopicRule:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html
+    Type: AWS::IoT::TopicRule
+    Properties:
+      # RuleName: # String
+      # TopicRulePayload:
+      #   # RuleDisabled: # Boolean
+      #   # ErrorAction:
+      #   # # S3:
+      #   #   # BucketName: # String
+      #   #   # Key: # String
+      #   #   # RoleArn: # String
+      #   #   # # CannedAcl: # String
+      #   # # CloudwatchAlarm:
+      #   #   # StateValue: # String
+      #   #   # AlarmName: # String
+      #   #   # StateReason: # String
+      #   #   # RoleArn: # String
+      #   # # CloudwatchLogs:
+      #   #   # LogGroupName: # String
+      #   #   # RoleArn: # String
+      #   # # IotEvents:
+      #   #   # InputName: # String
+      #   #   # RoleArn: # String
+      #   #   # # MessageId: # String
+      #   #   # # BatchMode: # Boolean
+      #   # # Firehose:
+      #   #   # DeliveryStreamName: # String
+      #   #   # RoleArn: # String
+      #   #   # # Separator: # String
+      #   #   # # BatchMode: # Boolean
+      #   # # Republish:
+      #   #   # # Qos: # Integer
+      #   #   # Topic: # String
+      #   #   # RoleArn: # String
+      #   #   # # Headers:
+      #   #   #   # # PayloadFormatIndicator: # String
+      #   #   #   # # ContentType: # String
+      #   #   #   # # ResponseTopic: # String
+      #   #   #   # # CorrelationData: # String
+      #   #   #   # # MessageExpiry: # String
+      #   #   #   # # UserProperties:
+      #   #   #   #   # - Key: # String
+      #   #   #   #   # Value: # String
+      #   # # StepFunctions:
+      #   #   # # ExecutionNamePrefix: # String
+      #   #   # StateMachineName: # String
+      #   #   # RoleArn: # String
+      #   # # DynamoDB:
+      #   #   # TableName: # String
+      #   #   # # PayloadField: # String
+      #   #   # # RangeKeyField: # String
+      #   #   # HashKeyField: # String
+      #   #   # # RangeKeyValue: # String
+      #   #   # # RangeKeyType: # String
+      #   #   # # HashKeyType: # String
+      #   #   # HashKeyValue: # String
+      #   #   # RoleArn: # String
+      #   # # Http:
+      #   #   # # ConfirmationUrl: # String
+      #   #   # # Headers:
+      #   #   #   # - Value: # String
+      #   #   #   # Key: # String
+      #   #   # Url: # String
+      #   #   # # Auth:
+      #   #   #   # # Sigv4:
+      #   #   #   #   # ServiceName: # String
+      #   #   #   #   # SigningRegion: # String
+      #   #   #   #   # RoleArn: # String
+      #   # # DynamoDBv2:
+      #   #   # # PutItem:
+      #   #   #   # TableName: # String
+      #   #   # # RoleArn: # String
+      #   # # CloudwatchMetric:
+      #   #   # MetricName: # String
+      #   #   # MetricValue: # String
+      #   #   # MetricNamespace: # String
+      #   #   # MetricUnit: # String
+      #   #   # RoleArn: # String
+      #   #   # # MetricTimestamp: # String
+      #   # # IotSiteWise:
+      #   #   # RoleArn: # String
+      #   #   # PutAssetPropertyValueEntries:
+      #   #   # - # PropertyAlias: # String
+      #   #   # PropertyValues:
+      #   #   # - # Value:
+      #   #   #           # # StringValue: # String
+      #   #   #           # # DoubleValue: # String
+      #   #   #           # # BooleanValue: # String
+      #   #   #           # # IntegerValue: # String
+      #   #   # # Timestamp:
+      #   #   #           # TimeInSeconds: # String
+      #   #   #           # # OffsetInNanos: # String
+      #   #   # # Quality: # String
+      #   #   # # AssetId: # String
+      #   #   # # EntryId: # String
+      #   #   # # PropertyId: # String
+      #   # # Elasticsearch:
+      #   #   # Type: # String
+      #   #   # Index: # String
+      #   #   # Id: # String
+      #   #   # Endpoint: # String
+      #   #   # RoleArn: # String
+      #   # # Sqs:
+      #   #   # RoleArn: # String
+      #   #   # # UseBase64: # Boolean
+      #   #   # QueueUrl: # String
+      #   # # Kinesis:
+      #   #   # # PartitionKey: # String
+      #   #   # StreamName: # String
+      #   #   # RoleArn: # String
+      #   # # IotAnalytics:
+      #   #   # RoleArn: # String
+      #   #   # ChannelName: # String
+      #   #   # # BatchMode: # Boolean
+      #   # # Sns:
+      #   #   # TargetArn: # String
+      #   #   # # MessageFormat: # String
+      #   #   # RoleArn: # String
+      #   # # Lambda:
+      #   #   # # FunctionArn: # String
+      #   # # Timestream:
+      #   #   # RoleArn: # String
+      #   #   # DatabaseName: # String
+      #   #   # TableName: # String
+      #   #   # Dimensions:
+      #   #   # - Name: # String
+      #   #   # Value: # String
+      #   #   # # Timestamp:
+      #   #   #   # Value: # String
+      #   #   #   # Unit: # String
+      #   # # Kafka:
+      #   #   # DestinationArn: # String
+      #   #   # Topic: # String
+      #   #   # # Key: # String
+      #   #   # # Partition: # String
+      #   #   # ClientProperties:
+      #   #   # ANY_KEY: # String
+      #   # # OpenSearch:
+      #   #   # Type: # String
+      #   #   # Index: # String
+      #   #   # Id: # String
+      #   #   # Endpoint: # String
+      #   #   # RoleArn: # String
+      #   # # Location:
+      #   #   # RoleArn: # String
+      #   #   # TrackerName: # String
+      #   #   # DeviceId: # String
+      #   #   # Latitude: # String
+      #   #   # Longitude: # String
+      #   #   # # Timestamp:
+      #   #   #   # Value: # String
+      #   #   #   # # Unit: # String
+      #   # Description: # String
+      #   # AwsIotSqlVersion: # String
+      #   Actions:
+      #     - # S3:
+      #       # BucketName: # String
+      #       # Key: # String
+      #       # RoleArn: # String
+      #       # # CannedAcl: # String
+      #       # CloudwatchAlarm:
+      #       # StateValue: # String
+      #       # AlarmName: # String
+      #       # StateReason: # String
+      #       # RoleArn: # String
+      #       # CloudwatchLogs:
+      #       # LogGroupName: # String
+      #       # RoleArn: # String
+      #       # IotEvents:
+      #       # InputName: # String
+      #       # RoleArn: # String
+      #       # # MessageId: # String
+      #       # # BatchMode: # Boolean
+      #       # Firehose:
+      #       # DeliveryStreamName: # String
+      #       # RoleArn: # String
+      #       # # Separator: # String
+      #       # # BatchMode: # Boolean
+      #       # Republish:
+      #       # # Qos: # Integer
+      #       # Topic: # String
+      #       # RoleArn: # String
+      #       # # Headers:
+      #       #   # # PayloadFormatIndicator: # String
+      #       #   # # ContentType: # String
+      #       #   # # ResponseTopic: # String
+      #       #   # # CorrelationData: # String
+      #       #   # # MessageExpiry: # String
+      #       #   # # UserProperties:
+      #       #   #   # - Key: # String
+      #       #   #   # Value: # String
+      #       # StepFunctions:
+      #       # # ExecutionNamePrefix: # String
+      #       # StateMachineName: # String
+      #       # RoleArn: # String
+      #       # DynamoDB:
+      #       # TableName: # String
+      #       # # PayloadField: # String
+      #       # # RangeKeyField: # String
+      #       # HashKeyField: # String
+      #       # # RangeKeyValue: # String
+      #       # # RangeKeyType: # String
+      #       # # HashKeyType: # String
+      #       # HashKeyValue: # String
+      #       # RoleArn: # String
+      #       # Http:
+      #       # # ConfirmationUrl: # String
+      #       # # Headers:
+      #       #   # - Value: # String
+      #       #   # Key: # String
+      #       # Url: # String
+      #       # # Auth:
+      #       #   # # Sigv4:
+      #       #   #   # ServiceName: # String
+      #       #   #   # SigningRegion: # String
+      #       #   #   # RoleArn: # String
+      #       # DynamoDBv2:
+      #       # # PutItem:
+      #       #   # TableName: # String
+      #       # # RoleArn: # String
+      #       # CloudwatchMetric:
+      #       # MetricName: # String
+      #       # MetricValue: # String
+      #       # MetricNamespace: # String
+      #       # MetricUnit: # String
+      #       # RoleArn: # String
+      #       # # MetricTimestamp: # String
+      #       # IotSiteWise:
+      #       # RoleArn: # String
+      #       # PutAssetPropertyValueEntries:
+      #       # - # PropertyAlias: # String
+      #       # PropertyValues:
+      #       #   - # Value:
+      #       #           # # StringValue: # String
+      #       #           # # DoubleValue: # String
+      #       #           # # BooleanValue: # String
+      #       #           # # IntegerValue: # String
+      #       #     # Timestamp:
+      #       #           # TimeInSeconds: # String
+      #       #           # # OffsetInNanos: # String
+      #       #     # Quality: # String
+      #       # # AssetId: # String
+      #       # # EntryId: # String
+      #       # # PropertyId: # String
+      #       # Elasticsearch:
+      #       # Type: # String
+      #       # Index: # String
+      #       # Id: # String
+      #       # Endpoint: # String
+      #       # RoleArn: # String
+      #       # Sqs:
+      #       # RoleArn: # String
+      #       # # UseBase64: # Boolean
+      #       # QueueUrl: # String
+      #       # Kinesis:
+      #       # # PartitionKey: # String
+      #       # StreamName: # String
+      #       # RoleArn: # String
+      #       # IotAnalytics:
+      #       # RoleArn: # String
+      #       # ChannelName: # String
+      #       # # BatchMode: # Boolean
+      #       # Sns:
+      #       # TargetArn: # String
+      #       # # MessageFormat: # String
+      #       # RoleArn: # String
+      #       # Lambda:
+      #       # # FunctionArn: # String
+      #       # Timestream:
+      #       # RoleArn: # String
+      #       # DatabaseName: # String
+      #       # TableName: # String
+      #       # Dimensions:
+      #       # - Name: # String
+      #       # Value: # String
+      #       # # Timestamp:
+      #       #   # Value: # String
+      #       #   # Unit: # String
+      #       # Kafka:
+      #       # DestinationArn: # String
+      #       # Topic: # String
+      #       # # Key: # String
+      #       # # Partition: # String
+      #       # ClientProperties:
+      #       # ANY_KEY: # String
+      #       # OpenSearch:
+      #       # Type: # String
+      #       # Index: # String
+      #       # Id: # String
+      #       # Endpoint: # String
+      #       # RoleArn: # String
+      #       # Location:
+      #       # RoleArn: # String
+      #       # TrackerName: # String
+      #       # DeviceId: # String
+      #       # Latitude: # String
+      #       # Longitude: # String
+      #       # # Timestamp:
+      #       #   # Value: # String
+      #       #   # # Unit: # String
+      #   Sql: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)

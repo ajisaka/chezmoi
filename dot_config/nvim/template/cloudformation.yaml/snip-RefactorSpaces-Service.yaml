@@ -1,0 +1,21 @@
+  RefactorSpacesService:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-service.html
+    Type: AWS::RefactorSpaces::Service
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-refactorspaces-service.html
+      ApplicationIdentifier: # String
+      # Description: # String
+      # EndpointType: # String
+      EnvironmentIdentifier: # String
+      # LambdaEndpoint:
+      #   Arn: # String
+      # Name: # String
+      # UrlEndpoint:
+      #   # HealthUrl: # String
+      #   Url: # String
+      # VpcId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.ServiceIdentifier (String)

@@ -1,0 +1,5 @@
+#!/bin/ruby -EASCII-8bit
+
+# [zshのhistoryのmetafy - jarp,](http://jarp.does.notwork.org/diary/201403c.html#201403221)
+
+print ARGF.read.gsub(/[\0\x83-\x9d\xa0]/n) { "\x83".b + ($&.ord ^ 32).chr }

@@ -1,0 +1,15 @@
+  WAFv2RegexPatternSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-regexpatternset.html
+    Type: AWS::WAFv2::RegexPatternSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-regexpatternset.html
+      # Description: # String
+      # Name: # String
+      RegularExpressionList:
+        - # String
+      Scope: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.Id (String)

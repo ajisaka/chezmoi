@@ -1,0 +1,13 @@
+  GuardDutyThreatIntelSet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
+    Type: AWS::GuardDuty::ThreatIntelSet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
+      Format: # String
+      Activate: # Boolean
+      DetectorId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # Name: # String
+      Location: # String

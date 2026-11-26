@@ -1,0 +1,65 @@
+  AppRunnerService:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-service.html
+    Type: AWS::AppRunner::Service
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apprunner-service.html
+      # ServiceName: # String
+      # SourceConfiguration:
+      #   # CodeRepository:
+      #   # RepositoryUrl: # String
+      #   # # SourceCodeVersion:
+      #   #   # Type: # String
+      #   #   # Value: # String
+      #   # # CodeConfiguration:
+      #   #   # ConfigurationSource: # String
+      #   #   # # CodeConfigurationValues:
+      #   #   #   # Runtime: # String
+      #   #   #   # # BuildCommand: # String
+      #   #   #   # # StartCommand: # String
+      #   #   #   # # Port: # String
+      #   #   #   # # RuntimeEnvironmentVariables:
+      #   #   #   #   # - # Name: # String
+      #   #   #   #   # # Value: # String
+      #   # ImageRepository:
+      #   # ImageIdentifier: # String
+      #   # # ImageConfiguration:
+      #   #   # # StartCommand: # String
+      #   #   # # Port: # String
+      #   #   # # RuntimeEnvironmentVariables:
+      #   #   #   # - # Name: # String
+      #   #   #   # # Value: # String
+      #   # ImageRepositoryType: # String
+      #   # AutoDeploymentsEnabled: # Boolean
+      #   # AuthenticationConfiguration:
+      #   # # ConnectionArn: # String
+      #   # # AccessRoleArn: # String
+      # InstanceConfiguration:
+      #   # Cpu: # String
+      #   # Memory: # String
+      #   # InstanceRoleArn: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      # EncryptionConfiguration:
+      #   KmsKey: # String
+      # HealthCheckConfiguration:
+      #   # Protocol: # String
+      #   # Path: # String
+      #   # Interval: # Integer
+      #   # Timeout: # Integer
+      #   # HealthyThreshold: # Integer
+      #   # UnhealthyThreshold: # Integer
+      # ObservabilityConfiguration:
+      #   ObservabilityEnabled: # Boolean
+      #   # ObservabilityConfigurationArn: # String
+      # AutoScalingConfigurationArn: # String
+      # NetworkConfiguration:
+      #   # EgressConfiguration:
+      #   # EgressType: # String
+      #   # # VpcConnectorArn: # String
+      #   # IngressConfiguration:
+      #   # IsPubliclyAccessible: # Boolean
+    # !GetAtt THIS.ServiceId (String)
+    # !GetAtt THIS.ServiceArn (String)
+    # !GetAtt THIS.ServiceUrl (String)
+    # !GetAtt THIS.Status (String)

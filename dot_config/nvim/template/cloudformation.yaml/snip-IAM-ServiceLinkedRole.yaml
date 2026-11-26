@@ -1,0 +1,7 @@
+  IAMServiceLinkedRole:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html
+    Type: AWS::IAM::ServiceLinkedRole
+    Properties:
+      # CustomSuffix: # String
+      # Description: # String
+      AWSServiceName: # String

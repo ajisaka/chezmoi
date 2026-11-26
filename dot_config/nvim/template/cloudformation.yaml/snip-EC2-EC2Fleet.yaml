@@ -1,0 +1,115 @@
+  EC2EC2Fleet:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html
+    Type: AWS::EC2::EC2Fleet
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html
+      # TargetCapacitySpecification:
+      #   # DefaultTargetCapacityType: # String
+      #   # TargetCapacityUnitType: # String
+      #   TotalTargetCapacity: # Integer
+      #   # OnDemandTargetCapacity: # Integer
+      #   # SpotTargetCapacity: # Integer
+      # OnDemandOptions:
+      #   # SingleAvailabilityZone: # Boolean
+      #   # AllocationStrategy: # String
+      #   # SingleInstanceType: # Boolean
+      #   # MinTargetCapacity: # Integer
+      #   # MaxTotalPrice: # String
+      #   # CapacityReservationOptions:
+      #   # # UsageStrategy: # String
+      # Type: # String
+      # ExcessCapacityTerminationPolicy: # String
+      # TagSpecifications:
+      #   - # ResourceType: # String
+      #     # Tags:
+      #     # - Key: # String
+      #     # Value: # String
+      # SpotOptions:
+      #   # MaintenanceStrategies:
+      #   # # CapacityRebalance:
+      #   #   # # ReplacementStrategy: # String
+      #   #   # # TerminationDelay: # Integer
+      #   # SingleAvailabilityZone: # Boolean
+      #   # AllocationStrategy: # String
+      #   # SingleInstanceType: # Boolean
+      #   # MinTargetCapacity: # Integer
+      #   # MaxTotalPrice: # String
+      #   # InstanceInterruptionBehavior: # String
+      #   # InstancePoolsToUseCount: # Integer
+      # ValidFrom: # String
+      # ReplaceUnhealthyInstances: # Boolean
+      LaunchTemplateConfigs:
+        - # LaunchTemplateSpecification:
+          #   # LaunchTemplateName: # String
+          #   # LaunchTemplateId: # String
+          #   Version: # String
+          # Overrides:
+          #   - # WeightedCapacity: # Double
+          #     # Placement:
+          #     # # GroupName: # String
+          #     # # Tenancy: # String
+          #     # # SpreadDomain: # String
+          #     # # PartitionNumber: # Integer
+          #     # # AvailabilityZone: # String
+          #     # # Affinity: # String
+          #     # # HostId: # String
+          #     # # HostResourceGroupArn: # String
+          #     # Priority: # Double
+          #     # AvailabilityZone: # String
+          #     # SubnetId: # String
+          #     # InstanceType: # String
+          #     # InstanceRequirements:
+          #     # # VCpuCount:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # # MemoryMiB:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # # CpuManufacturers:
+          #     #   # - # String
+          #     # # MemoryGiBPerVCpu:
+          #     #   # # Min: # Double
+          #     #   # # Max: # Double
+          #     # # AllowedInstanceTypes:
+          #     #   # - # String
+          #     # # ExcludedInstanceTypes:
+          #     #   # - # String
+          #     # # InstanceGenerations:
+          #     #   # - # String
+          #     # # SpotMaxPricePercentageOverLowestPrice: # Integer
+          #     # # OnDemandMaxPricePercentageOverLowestPrice: # Integer
+          #     # # BareMetal: # String
+          #     # # BurstablePerformance: # String
+          #     # # RequireHibernateSupport: # Boolean
+          #     # # NetworkBandwidthGbps:
+          #     #   # # Min: # Double
+          #     #   # # Max: # Double
+          #     # # NetworkInterfaceCount:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # # LocalStorage: # String
+          #     # # LocalStorageTypes:
+          #     #   # - # String
+          #     # # TotalLocalStorageGB:
+          #     #   # # Min: # Double
+          #     #   # # Max: # Double
+          #     # # BaselineEbsBandwidthMbps:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # # AcceleratorTypes:
+          #     #   # - # String
+          #     # # AcceleratorCount:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # # AcceleratorManufacturers:
+          #     #   # - # String
+          #     # # AcceleratorNames:
+          #     #   # - # String
+          #     # # AcceleratorTotalMemoryMiB:
+          #     #   # # Min: # Integer
+          #     #   # # Max: # Integer
+          #     # MaxPrice: # String
+      # TerminateInstancesWithExpiration: # Boolean
+      # ValidUntil: # String
+      # Context: # String
+    # !GetAtt THIS.FleetId (String)

@@ -1,0 +1,28 @@
+  EC2CapacityReservation:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservation.html
+    Type: AWS::EC2::CapacityReservation
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-capacityreservation.html
+      # Tenancy: # String
+      # EndDateType: # String
+      # TagSpecifications:
+      #   - # ResourceType: # String
+      #     # Tags:
+      #     # - Key: # String
+      #     # Value: # String
+      AvailabilityZone: # String
+      # EndDate: # String
+      # EbsOptimized: # Boolean
+      # OutPostArn: # String
+      InstanceCount: # Integer
+      # PlacementGroupArn: # String
+      InstancePlatform: # String
+      InstanceType: # String
+      # EphemeralStorage: # Boolean
+      # InstanceMatchCriteria: # String
+    # !GetAtt THIS.Tenancy (String)
+    # !GetAtt THIS.AvailabilityZone (String)
+    # !GetAtt THIS.TotalInstanceCount (Integer)
+    # !GetAtt THIS.AvailableInstanceCount (Integer)
+    # !GetAtt THIS.Id (String)
+    # !GetAtt THIS.InstanceType (String)

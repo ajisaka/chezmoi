@@ -1,0 +1,10 @@
+  FSxSnapshot:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-snapshot.html
+    Type: AWS::FSx::Snapshot
+    Properties:
+      VolumeId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+      Name: # String
+    # !GetAtt THIS.ResourceARN (String)

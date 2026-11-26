@@ -1,0 +1,13 @@
+  ServiceCatalogServiceAction:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-serviceaction.html
+    Type: AWS::ServiceCatalog::ServiceAction
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-serviceaction.html
+      # AcceptLanguage: # String
+      Name: # String
+      DefinitionType: # String
+      Definition:
+        - Key: # String
+          Value: # String
+      # Description: # String
+    # !GetAtt THIS.Id (String)

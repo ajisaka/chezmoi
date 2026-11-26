@@ -1,0 +1,15 @@
+  LocationMap:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-map.html
+    Type: AWS::Location::Map
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-location-map.html
+      # Configuration:
+      #   Style: # String
+      # Description: # String
+      MapName: # String
+      # PricingPlan: # String
+    # !GetAtt THIS.CreateTime (String)
+    # !GetAtt THIS.DataSource (String)
+    # !GetAtt THIS.MapArn (String)
+    # !GetAtt THIS.Arn (String)
+    # !GetAtt THIS.UpdateTime (String)

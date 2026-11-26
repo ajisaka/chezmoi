@@ -1,0 +1,21 @@
+  IoTSiteWiseAsset:
+    # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-asset.html
+    Type: AWS::IoTSiteWise::Asset
+    Properties:
+      # http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotsitewise-asset.html
+      AssetModelId: # String
+      AssetName: # String
+      # AssetDescription: # String
+      # AssetProperties:
+      #   - LogicalId: # String
+      #     # Alias: # String
+      #     # NotificationState: # String
+      #     # Unit: # String
+      # AssetHierarchies:
+      #   - LogicalId: # String
+      #     ChildAssetId: # String
+      # Tags:
+      #   - Key: # String
+      #     Value: # String
+    # !GetAtt THIS.AssetId (String)
+    # !GetAtt THIS.AssetArn (String)
